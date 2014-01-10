@@ -1,0 +1,10 @@
+[Core]
+Name = pandoc2
+Module = pandoc2
+
+[Documentation]
+Author = A.Q.
+Version = 0.1
+Website = http://getnikola.com
+Description = Just adds some flags to Nikola's Pandoc compiler
+

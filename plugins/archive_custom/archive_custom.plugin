@@ -1,0 +1,9 @@
+[Core]
+Name = render_archive_custom
+Module = archive_custom
+
+[Documentation]
+Author = A.Q.
+Version = 0.1
+Website = http://quinzi.com.ar
+Description = Generates a single page archive

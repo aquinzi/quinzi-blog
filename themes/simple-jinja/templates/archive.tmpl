@@ -1,0 +1,22 @@
+{#  -*- coding: utf-8 -*- #}
+{% import 'simple_helper.tmpl' as simple with context %}
+{% extends 'base.tmpl' %}
+
+{%- block content %}
+
+{% if not fake_index %} <h2>{{ title }}</h2> {% endif %}
+
+{% for year, months in listing.iteritems() | sort(reverse=True)  %}
+<div class="listing_posts year">
+	<h3>{{ year }}</h3>
+	{% for item in months %}
+	<div class="listing_posts month">
+		<h4>{{ item['month'] }}</h4>
+		{% for post in item['posts'] -%} {% include 'post_listing_dl.tmpl' %} {%- endfor %}
+	</div>
+	{% endfor %}
+</div>
+{% endfor %}
+
+{%- endblock %}
+

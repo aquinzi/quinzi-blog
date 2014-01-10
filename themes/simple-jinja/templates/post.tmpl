@@ -1,0 +1,79 @@
+{#  -*- coding: utf-8 -*- #}
+{% import 'post_helper.tmpl' as helper with context %}
+{% import 'comments_helper.tmpl' as comments with context %}
+{% import 'simple_helper.tmpl' as simple with context %}
+{% extends 'base.tmpl' %}
+
+{% block extra_head %}
+{{ helper.twitter_card_information(post) }}
+{% if post.meta('keywords') %} <meta name="keywords" content="{{ post.meta('keywords')|e }}"> {% endif %}
+{% endblock %}
+
+{% block available_langs %}
+    <h4>{{ messages("Languages") }}</h4>
+    <ul class="languages">
+        {{ simple.html_translations(post, msg="LANGUAGE", include_post=True) }}
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <article class="postbox">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+    <header>
+        {{ helper.html_title() }}
+        <div class="post-meta">
+            <dl>
+                {%- if not post.meta('updated') %}
+                    <dt class="date">{{ messages("Posted") }}</dd>
+                    <dd>{{ simple.date_published(post) }}</dd>
+                    {% else %}
+                    <dt class="date">{{ messages("Posted") }}</dd>
+                    <dd> <del>{{ simple.date_published(post) }}</del>
+                         <ins>{{ simple.date_updated(post) }}</ins> ({{ messages("Updated") }})
+                    </dd>
+                {%- endif %}
+            {%- if not hide_sourcelink and not post.meta('password') %}
+                <dt class="source">Source</dt> 
+                <dd>{{ simple.html_source_link(post, text="Get source") }} </dd>
+            {%- endif %} 
+            </dl>
+        </div>
+    </header>
+    
+    <div class="e-content" itemprop="articleBody text">
+        {{ post.text() }}
+    </div>
+
+    <footer>
+        <meta itemref="vcard" itemprop="author" itemscope itemtype="http://schema.org/Person" />
+        
+        <div class="post-meta">
+            {%- if post.meta('category') %}
+                <dl>
+                    <dt class="categories"> {{ messages('Category') }}: </dt>
+                    <dd> {{ simple.html_category(post) }} </dd>
+                </dl>
+            {%- endif %}
+            {%- if post.alltags %} 
+                <dl>
+                    <dt class="tags"> {{ messages('Tags') }}: </dt>
+                    <dd> {{ simple.html_list_tags(post) }} </dd>
+                </dl>
+            {%- endif %}
+
+        </div>
+    </footer>
+
+    {% if not post.meta('nocomments') %}
+    {{ comments.comment_form(post.permalink(absolute=True), post.title(), post._base_path) }}
+    {% endif %}
+
+    {%- if post.description() %}
+        <meta content="{{ post.description() }}" itemprop="description">
+    {%- endif %}
+
+    {{ helper.mathjax_script(post) }}
+    </div>
+</article>
+{% endblock %}

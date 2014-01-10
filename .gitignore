@@ -1,0 +1,15 @@
+#Custom
+# conf.py
+
+# Python byte-code and libraries, like pyc
+*.py[cdo]
+
+# Nikola cache and output directories
+_output
+cache
+
+# Nikola database
+.doit.db
+
+# Windows
+Thumbs.db
