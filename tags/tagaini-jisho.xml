@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (tagaini jisho)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/tagaini-jisho.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:54 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sincronizar Tagaini Jisho con Dropbox</title><link>http://blog.quinzi.com.ar/tagaini-jisho-sincronizar-bd/</link><description>&lt;p&gt;Buscando programas que me ayuden con mi aprendizaje de japonés,
+andaba en busca de uno que manejara mi listado de vocabularios. Uno que
+no me deje poner duplicados, que me deje categorizar las palabras, con
+un par de datos extras.&lt;/p&gt;
+&lt;p&gt;En mi búsqueda, pense usar un Excel, pero no se puede... bah, hay que
+hacer "mucho lio" para que no deje duplicados y tal. Asique descartado.
+Busqué un par mas: como &lt;a href="http://blog.quinzi.com.ar/tagaini-jisho-sincronizar-bd/wakan.manga.cz/"&gt;wakan&lt;/a&gt; y &lt;a href="http://zkanji.sourceforge.net/"&gt;zkanji&lt;/a&gt;. El primero ademas de
+diccionario y tal (como el segundo) tiene un editor de texto que te pone
+furigana (guia fonética) arriba de los kanji (también leí que se
+pueden poner de costado). Al fin, para lo que yo queria eran
+complicados/mucha &lt;em&gt;learning curve&lt;/em&gt;. Descartado y descartado.&lt;/p&gt;
+&lt;p&gt;Habia decido hacer mi programita, al principio lo iba a hacer en php +
+mysql... me tire para atras. Despues c++ .NET + SQLite... pero no sabia
+mucho de c++ asique me incliné a VB.NET... pero quise hacer una busqueda
+y no me salio. Desisti. Termine "haciendolo" en PHP+SQLite+CakePHP, iba bien, hasta que me dio vagancia seguirlo.&lt;/p&gt;
+&lt;p&gt;Al rato me dije: "hey! los 2 primeros programas que probé eran
+diccionarios con capacidad de ponerlos en lista, voy a usar algo asi",
+ahí se me prendió la lamparita y me acordé que tengo instalado &lt;a href="http://www.tagaini.net/"&gt;Tagaini
+Jisho&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Tagaini Jisho diccionario Japonés-inglés multiplataforma (Windows, MacOS
+X y Linux) re copado y lindo. En realidad, &lt;a href="http://www.tagaini.net/about"&gt;segun la página&lt;/a&gt;, es
+un asistente de estudio, eso es diccionario + flashcards + notas + tags
++ listas + la inclusión de las animación de cómo escribir los kanji con
+colores bonitos.&lt;/p&gt;
+&lt;p&gt;Al grano: ¿Cómo hago para sincronizar los tags + puntaje de
+flashcards + busquedas + listas + etc en Windows con Dropbox? . Los
+pasos son los siguientes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Localizar donde está la &lt;code&gt;user.bd&lt;/code&gt;. Usualmente esta en
+&lt;code&gt;C:\Users\USUARIO\AppData\Local\Tagaini Jisho&lt;/code&gt;.
+Si no esta ahi por alguna razon aparente, basta con iniciar el
+programa, ir a &lt;kbd&gt;Program &amp;gt; Preferences &amp;gt; User Data&lt;/kbd&gt; y fijarse la ruta.&lt;/li&gt;
+&lt;li&gt;Sacarla / copiarla (como quieras) y ponerla dentro de una carpeta en
+tu DropBox.&lt;/li&gt;
+&lt;li&gt;(Opcional) Cambiarle el nombre por uno mas descriptivo&lt;/li&gt;
+&lt;li&gt;Ahora hay que arreglar el acceso directo para que apunte a esa nueva
+locacion: &lt;kbd&gt;click derecho &amp;gt; propiedades&lt;/kbd&gt;. Al final de la caja de texto de &lt;code&gt;destino&lt;/code&gt;, agregarle (despues de &lt;code&gt;"&lt;/code&gt;): &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="code"&gt;&lt;pre&gt;--user-db="[path/a/basededatos.db"
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: Con este método, la ruta que se ve en &lt;kbd&gt;Program &amp;gt; Preferences &amp;gt; User Data&lt;/kbd&gt; NO
+se actualiza. Habia leido que eso se iba a mejorar, dando una opción
+mas visual para cambiar la locacion de la base de datos, pero todavia
+no hay novedades.&lt;/p&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-193"&gt;
+&lt;div id="comment-193"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/4dff540a55fe51a182ab96df59c7fbe8?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.cosas-simples.com.ar" rel="external nofollow" class="url"&gt;asur&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+July 27, 2011 at 9:06 pm    &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;A veces pienso que estas cosas que posteás  están como 5 o 6 niveles más arriba de lo máximo a lo que yo podría siquiera aspirar a tratar de comprender.  :)&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/tagaini-jisho-sincronizar-bd/</guid><pubDate>Tue, 26 Jul 2011 00:00:00 GMT</pubDate></item></channel></rss>

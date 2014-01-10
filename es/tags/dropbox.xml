@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (dropbox)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/dropbox.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Thu, 09 Jan 2014 22:13:54 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Dynamic to Static (Wordpress a Pelican)</title><link>http://blog.quinzi.com.ar/./es/wordpress-to-pelican/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#por-que"&gt;Por qué&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#presentacion"&gt;Presentación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#instalacion-en-windows"&gt;Instalación en Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#configuracion"&gt;Configuración&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#andando"&gt;Andando&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#themes"&gt;Themes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#migracion-wordpress-pelican"&gt;Migración Wordpress -&amp;gt; Pelican&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#posts-y-paginas"&gt;Posts y páginas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#imagenes"&gt;Imágenes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#categorias-y-tags"&gt;Categorías y tags&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#comentarios"&gt;Comentarios&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#pros-y-cons"&gt;Pros y Cons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#conclusion"&gt;Conclusión&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id="por-que"&gt;Por qué&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Because I can&lt;/li&gt;
+&lt;li&gt;Cada vez &lt;strong&gt;me llevo peor con Wordpress&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Soy blogger casual&lt;/strong&gt;, no necesito florecitas que cambian de color según el estado de ánimo de un animal en Samoa.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Todos los posts los escribo en markdown&lt;/strong&gt;, que los conviertos en html para pegarlos en Wordpress. No me tengo que olvidar si tiene imagénes y subirlas (y cambiar las rutas).&lt;/li&gt;
+&lt;li&gt;Puedo juguetear mas con el css y html (porque uso/aba wordpress.com)&lt;/li&gt;
+&lt;li&gt;Soy de ir en contra de la corriente (?)&lt;/li&gt;
+&lt;li&gt;Quiero llegar a los 10 items&lt;/li&gt;
+&lt;li&gt;Odio que haya que descargar 10 mb de javascript para el dashboard de Wordpress + otros 50mb para la cosas internas (relacionado con el punto 2)&lt;/li&gt;
+&lt;li&gt;estoy aprendiendo python&lt;/li&gt;
+&lt;li&gt;ya llegué&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="presentacion"&gt;Presentación&lt;/h2&gt;
+&lt;p&gt;Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.&lt;/p&gt;
+&lt;p&gt;Todo iba bien, hasta que los de Wordpress decidieron &lt;strong&gt;abrirse mas como CMS&lt;/strong&gt; que como sistema de blogging. Lo entiendo, es natural. Bien. No me gusta. No se si porque yo asocio Wordpress con blog y no un CMS completo a lo Joomla! o Drupal, o porque si las cosas en el backend estan mal organizadas para ser CMS/orientadas a blog, o si es mi conexión que no me deja disfrutar al máximo o qué. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Por temas de conexión y que el editor de Wordpress apesta&lt;/strong&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, añadido a tener una wiki en localhost y encariñarme con los &lt;a href="http://en.wikipedia.org/wiki/Lightweight_markup_languages"&gt;LML&lt;/a&gt;, &lt;strong&gt;escribía los posts en markdown&lt;/strong&gt; (que antes no me caía bien, hasta que empecé a usar &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt;), los pasaba a HTML, hacia search &amp;amp; replace para las imágenes (aunque se puede obviar si se suben primero las imágenes), y &lt;strong&gt;recien ahí lo pasaba a Wordpress&lt;/strong&gt;. No es lo mas cómodo del mundo, pero servía.&lt;/p&gt;
+&lt;p&gt;Por alguna razón que ahora no recuerdo, empecé a buscar (o encontré de casualidad) scripts que pasan &lt;code&gt;.txts&lt;/code&gt; con LML a html. Eso me hizo pensar: "hey, capaz me puede servir". Después de descartar un par que no me servían (estan apuntados a los usuarios de Linux y para usarlos en Windows era mucho lio), me decanté por &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pelican es un script de Python que toma archivos de texto con markdown, reStructuredText o AsciiDoc, los pasa por un theme, y te genera un blog estático/html. Puro y duro, a la vieja escuela. Con categorias, tags, rss, páginas. Vamos, lo básico para un blog.&lt;/p&gt;
+&lt;p&gt;Yo lo estoy hosteando en &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;Dropbox&lt;/a&gt;, después de decidir que subir las cosas por FTP era bastante molesto &lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;/las únicas razones por la que quiería un host apache era por el &lt;code&gt;.htaccess&lt;/code&gt; (el rewrite) para hacer magia pero no valía mucho hacer eso para mi humilde blog. &lt;strong&gt;También lo podes hostear en GitHub&lt;/strong&gt; si ya tenes cuenta ahi y no te molesta hacer commits. CAPAZ que algun día lo pase ahi (tengo como pendiente GitHub).&lt;/p&gt;
+&lt;p&gt;Si solo te interesa hacer la parte de archivos de texto en Dropbox SIN generar html y demas, tenes opciones como &lt;a href="http://calepin.co/"&gt;Calepin&lt;/a&gt; y &lt;a href="http://scriptogr.am/"&gt;scriptogr.am&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="instalacion-en-windows"&gt;Instalación en Windows&lt;/h2&gt;
+&lt;p&gt;Porque en Linux este tipo de cosas es mas fácil.&lt;/p&gt;
+&lt;p&gt;Por ahora, &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt; corre bajo &lt;strong&gt;Python 2.7&lt;/strong&gt;, hay un fork para que ande en Python 3 pero no lo pude hacer andar (tampoco probé mucho).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: yo explico como hacer esto manualmente, pero se puede instalar con &lt;code&gt;pip&lt;/code&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;instalación normal de &lt;a href="http://www.python.org/download/"&gt;Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;bajar los source files de &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt; y extraerlos&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;abrir el command line/consola en la carpeta anterior y:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;python setup.py intstall
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Si te pide el setuptools: &lt;a href="http://pypi.python.org/pypi/setuptools/"&gt;http://pypi.python.org/pypi/setuptools/&lt;/a&gt; o &lt;code&gt;pip install setuptools&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Esperar que se haga el chirimbolo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;como quiero usar Markdown, lo &lt;a href="http://packages.python.org/Markdown/install.html"&gt;instalo para python&lt;/a&gt; (de la misma manera que lo anterior)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Y el &lt;a href="http://pygments.org/"&gt;pygments&lt;/a&gt; para el syntax highlighting&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="configuracion"&gt;Configuración&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Se crea un &lt;code&gt;config.py&lt;/code&gt; para las configuración siguiendo &lt;a href="http://pelican.readthedocs.org/en/latest/settings.html"&gt;las variables en los docs&lt;/a&gt; (o usas como base las que ya te vienen en el archivo)&lt;/li&gt;
+&lt;li&gt;Si usas Markdown, vas a querer usar los &lt;a href="http://packages.python.org/Markdown/extensions"&gt;markdown extra&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="andando"&gt;Andando&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Crear un post con el &lt;a href="http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican"&gt;metadata correspondiente&lt;/a&gt;. El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.&lt;/li&gt;
+&lt;li&gt;Ir a la carpeta root de tu Pelican, abrir una linea de comandos y poner: &lt;code&gt;[Python_path]\Scripts\pelican.exe input/ -s config.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: para probar, podes obviar la parte de configuración.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nota 2&lt;/strong&gt;: si se corre en la carpeta del contenido, para el path se puede usar &lt;code&gt;.&lt;/code&gt; (punto)&lt;/p&gt;
+&lt;p&gt;Yo lo puse en un script/bat cosa de no escribir eso todo el tiempo.&lt;/p&gt;
+&lt;h2 id="themes"&gt;Themes&lt;/h2&gt;
+&lt;p&gt;Para los themes/templates, Pelican usa &lt;a href="http://jinja.pocoo.org/"&gt;Jinja2&lt;/a&gt;. Nunca usé un &lt;em&gt;template engine&lt;/em&gt;, siempre lo tildan de complicados y demas, pero este anduvo bien. Es fácil, tan fácil como crear vos un mini-template "engine" en php.&lt;/p&gt;
+&lt;p&gt;Podes &lt;a href="http://pelican.readthedocs.org/en/latest/themes.html"&gt;crear&lt;/a&gt; los tuyos, podes bajar otros &lt;a href="https://github.com/getpelican/pelican-themes"&gt;manualmente&lt;/a&gt; o usar la &lt;a href="http://pelican.readthedocs.org/en/latest/pelican-themes.html"&gt;linea de comandos&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="migracion-wordpress-pelican"&gt;Migración Wordpress -&amp;gt; Pelican&lt;/h2&gt;
+&lt;h3 id="posts-y-paginas"&gt;Posts y páginas&lt;/h3&gt;
+&lt;p&gt;Pelican tiene un &lt;a href="http://docs.getpelican.com/en/latest/importer.html"&gt;conversor&lt;/a&gt;. Como yo lo necesité para Wordpress, me voy a centrar en ese. Necesitas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.crummy.com/software/BeautifulSoup/#Download"&gt;BeautifulSoup-3.2.1&lt;/a&gt; (las 4.x no funcionan)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; (amo pandoc)&lt;/li&gt;
+&lt;li&gt;el export de Wordpress (&lt;code&gt;.xml&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Una vez que tenes eso, corres (cambiar "markdown" por el formato que quieras):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;[Python_path]\Scripts\pelican-import --wpfile -o [path_output] [path_wordpress.xml] -m markdown
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="imagenes"&gt;Imágenes&lt;/h3&gt;
+&lt;p&gt;Como paso de wordpress.com a Pelican, tengo que descargar las imágenes de alguna forma. Se puede mediante cositas guay como PageNest y similares, pero es mucho lio pensar un regex solo para descargarlas.&lt;/p&gt;
+&lt;p&gt;Ya que tenemos el &lt;code&gt;.xml&lt;/code&gt; del export, podemos instalar un Wordpress en localhost (o hosteado en otra parte para hacer pruebas). Como tengo un Wordpress en localhost que hace años que no lo uso, tuve que eliminar todas las cosas que tenia antes (en &lt;kbd&gt;phpmyadmin &amp;gt; eliminar el contenido de las tablas/truncate&lt;/kbd&gt;), actualizarlo + actualizar base de datos + actualizar/instalar el plugin de import (que no viene como funcionalidad/core por alguna razón).&lt;/p&gt;
+&lt;p&gt;Una vez hecho eso, se va a &lt;kbd&gt;tools &amp;gt; import &amp;gt; wordpress &amp;gt; seleccionar archivo &amp;gt; linkear los autores &amp;gt; importar&lt;/kbd&gt; &amp;gt; esperar.&lt;/p&gt;
+&lt;p&gt;Y se espera.&lt;/p&gt;
+&lt;p&gt;Varios minutos.&lt;/p&gt;
+&lt;p&gt;Hasta que esté.&lt;/p&gt;
+&lt;p&gt;Ya con las imágenes en nuestro poder y procesadas/eliminar las duplicadas, hay que ponerlas en la carpeta input de pelican (en &lt;code&gt;images&lt;/code&gt; o como la llamaste). Aca se ve si se quieren poner de alguna estructura en especial o no.&lt;/p&gt;
+&lt;p&gt;Pro tip para las imagenes duplicadas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;primero eliminar las &lt;code&gt;-thumb&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;las demás tienen este nombre: &lt;code&gt;[nombre orig]-300x225.jpg&lt;/code&gt; (donde el numero de tamaño + extension cambian). Esto se puede eliminar facilmente con un script que tengas a mano, o sino con buscadores estilo &lt;a href="http://voidtools.com/"&gt;Everything&lt;/a&gt; poniendo: &lt;code&gt;[path a las imagenes]\ *-*x*&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ahora solo queda hacer un search &amp;amp; replace para cambiar la url del estilo &lt;code&gt;http://[username].files.wordpress.com/[año]/[mes]&lt;/code&gt; a tu estructura actual.&lt;/p&gt;
+&lt;h3 id="categorias-y-tags"&gt;Categorías y tags&lt;/h3&gt;
+&lt;p&gt;Ojito con las categorias. Primero: al hacer un sistema simple, &lt;strong&gt;no tiene jerarquia de categorias&lt;/strong&gt; como Wordpress. Fijate como manejas eso. Segundo: &lt;strong&gt;solo acepta una categoria por post&lt;/strong&gt;. Si estas cosas te molestan, podes optar por usar directamente tags.&lt;/p&gt;
+&lt;h3 id="comentarios"&gt;Comentarios&lt;/h3&gt;
+&lt;p&gt;Al pasar a Pelican, no sabia si incluir comentarios. Mi blog es personal, no tiene muchos o directamente no tiene, pero siempre quise eso de "che, yo resolví eso de otra forma: tal tal tal. Dejo el comentario por si a alguien le sirve", asique opté por usar Disqus (por que es el único que conozco y no tengo muchos comentarios, por eso ni me molesté en buscar alternativas).&lt;/p&gt;
+&lt;p&gt;Si queres transferir los comentarios: Disqus tiene una opción de traer los de Wordpress, pero requiere un plugin (o sea, me jodo). Yo hice copy &amp;amp; paste del html (para hacer algo manual viste, sino era todo automatizado) y los pegué en la entrada correspondiente.&lt;/p&gt;
+&lt;p&gt;Tips:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Conviene desactivar la opcion de conversión de caritas/emoticones ( &lt;code&gt;:D&lt;/code&gt;, &lt;code&gt;:)&lt;/code&gt; ) a imágenes. A no ser que quieras que se referencien al viejo blog o hacer trabajo extra para eliminarlas/pasarlas a texto.&lt;/li&gt;
+&lt;li&gt;Hacete un regex para sacar el link al comentario cuando se clickea en la fecha (yo lo hice, mas que nada, porque tomaba la dirección localhost). Usé este: &lt;code&gt;&amp;lt;a href="http://localhost/wordpress/\?p=\d.+comment-\d.+"&amp;gt;\n(.+)&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="pros-y-cons"&gt;Pros y Cons&lt;/h2&gt;
+&lt;p&gt;Como todo, hay pros y contras por cada sistema.&lt;/p&gt;
+&lt;p&gt;Wordpress, pros:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;es Wordpress&lt;/li&gt;
+&lt;li&gt;si lo hosteas, tenes libertad absoluta&lt;/li&gt;
+&lt;li&gt;es un buen sistema de blogging&lt;/li&gt;
+&lt;li&gt;es popular&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Contras:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;es Wordpress&lt;/li&gt;
+&lt;li&gt;editor de posts feo/lento&lt;/li&gt;
+&lt;li&gt;seguridad (normal)&lt;/li&gt;
+&lt;li&gt;Le falta un par de cosas, como poner footnotes facilmente&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pelican, pros:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;puedo escribir en markdown&lt;/strong&gt;, y usar los &lt;strong&gt;markdown extentions&lt;/strong&gt; (que lo hacen mas copado/completo). Al escribir en puro texto, puedo elegir el editor que yo quiera: &lt;a href="http://www.notepad-plus-plus.org/"&gt;Notepad++&lt;/a&gt;, &lt;a href="http://www.sublimetext.com/"&gt;Sublime Text&lt;/a&gt; &lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:6" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;, o hacerme la cool y abrir un precesador de texto completo de una suite ofimatica, el Wordpad, o algun editor designado para Markdown.&lt;/li&gt;
+&lt;li&gt;para actualizarlo es rapido: escribis, pones el archivo en la carpeta de input, corres el script y listo. Nada de andar loggeandote &amp;gt; click en nuevo post &amp;gt; esperar a que cargue &amp;gt; titulo &amp;gt; esperar que genere el slug &amp;gt; escribir &amp;gt; seleccionar categoria y tags &amp;gt; publicar&lt;/li&gt;
+&lt;li&gt;tenes un "backup"/raw de tus posts, faciles de transportar o convertir a otro formato.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;no tenes que lidear con un WYSIWYG&lt;/strong&gt;. Para ciertas cosas esta bueno, pero muchas veces te obstaculizan al escribir el contenido.&lt;/li&gt;
+&lt;li&gt;es estático = &lt;strong&gt;0 preocupaciones por la seguridad&lt;/strong&gt;. Solo te preocupas por el del host.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;es muy facil escribir posts multilenguajes&lt;/strong&gt;. Esto es para un usuario específico y básicamente es lo mismo que Wordpress (crear un post nuevo), pero por alguna razón se me hace mas simple: los posts solo deben tener el mismo slug y la diferenciación del idioma. Acá hay un ejemplo reciente cuando tuve &lt;a href="link://slug/android-battery-drain"&gt;problemas con android y la bateria&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Puedo/se me hace mas fácil, linkear a otros posts que escribi anteriormente&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Contras:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No tenes los stats, pero eso se puede cambiar por google analytics.&lt;/li&gt;
+&lt;li&gt;No tenes la facilidad de que los lectores califiquen un post, si lo quieren compartir, etc. No me molesta porque no lo uso pero capaz que alguno diga que es indispensable.&lt;/li&gt;
+&lt;li&gt;No tenes la gran disponibilidad de themes hechos (aunque puede ser bueno, hay varios que parecen hechos en front page)&lt;/li&gt;
+&lt;li&gt;No tenes la gran disponibilidad de plugins hechos (hay repetidos, hay muertos, hay de todo. Pero tampoco le quiero meter uno que agregue una carita al titulo del blog dependiendo si se encontraron nuevos fósiles).&lt;/li&gt;
+&lt;li&gt;Es python, todos sabemos como son los errores/debug de python (si sos principiante).&lt;/li&gt;
+&lt;li&gt;Genera contenido estático, nada de comentarios ni base de datos para no se que cosa. Los tenes que agregar vos y con Javascript o algún workaround.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Procon (no se como ponerla): &lt;strong&gt;Te tiene que gustar escribir&lt;/strong&gt;, y por escribir me refiero a escribir variables y demas, tanto del sistema específico (Pelican) y del LML que elegiste. Capaz que a los programadores esto seria un pro, pero para el resto de los mortales seria una contra (a no ser que crees un template).&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusión&lt;/h2&gt;
+&lt;p&gt;Esta mudanza la hice para probar cosas nuevas, solo actualizo el blog una vez al mes/cada 3-6 meses y ni tengo host propio. No es que este todos los dias escribiendo un post, o cada semana; tengo mis periodos de "ay si, hoy escribo y oh! ay mira escribi uno la semana pasada. Me siento re blogger" y de "ah mira, hace 6 meses que no escribo... qué se le va a hacer, no?".&lt;/p&gt;
+&lt;p&gt;Pero cada vez que SI actualizaba, odiaba profundamente el paso a Wordpress. Esta bien, si, podes ponerle un plugin para que tome la sintaxis markdown y todo eso, recordá que yo estoy/aba en wordpress.com y no pienso/aba instalar Wordpress en el host. Ya lo hice una vez y no me gustó, por eso me pasé a .com.&lt;/p&gt;
+&lt;p&gt;La actualización por medio de este sistema&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; es muy cómodo, solo pongo el post terminado en la carpeta (o lo creo ahi directamente), corro el script y listo. Solo tengo que tener Dropbox corriendo para que actualice. Si quiero hacerlo aun mas simple, puedo usar los servicios nombrados más arriba y solo poner el txt en Dropbox y listo. Sitio actualizado. También es muy rápido generar los &lt;code&gt;.html&lt;/code&gt;, con mi blogcito ni tarda 5 segundos (y eso que linkeo a otros posts).&lt;/p&gt;
+&lt;p&gt;Por que no un host cualquiera/FTP? Por que tenia que hacer un paso "extra" y sincronizar a FTP o anotarme a otro servicio para que haga un sync/backup de carpeta X de dropbox a carpeta X del host&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:5" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
+&lt;p&gt;No digo que me vaya a quedar con este sistema, capaz que algun dia diga "para que quiero gastar X espacio en mi disco/dropbox si con wordpress.com no me preocupo" o "hago mucho lio para lo que actualizo", etc., elimino las cosas, hago un par de cambios por alli y por allá y listo, vuelvo a wordpress.com, quien sabe. Solo quiero probar. &lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;y por alguna razón, ya no hay tantos &lt;em&gt;offline blogging systems&lt;/em&gt; como Raven o Windows Live Writer. Creo que Wordpress habia puesto la opción de actualizar por e-mail, pero nunca la probé. Debe ser un dolor si queres poner imágenes &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;en realidad no, podes crearte una cuenta en &lt;a href="http://mybackupbox.com"&gt;mybackupbox&lt;/a&gt; y que se sincronice/backup-ee automáticamente a un FTP. Esto abre la posibilidad de usar cosas como base de datos y php. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;una vez que los usas, no podes parar. Son adictivos. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:6"&gt;
+&lt;p&gt;Que ahora me cae mejor. Te instalas el package control y tenes infinidad de plugins. Mas o menos le tomas la mano en la parte de configuración (puro texto) y lo dejas (casi) como quieras. Solo me falta buscar algo simple para que el editor se haga de dos columnas y pase el archivo activo a la otra "vista", sin presionar 10 teclas por acción. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:6" rev="footnote" title="Jump back to footnote 4 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:4"&gt;
+&lt;p&gt;txt -&amp;gt; pelican -&amp;gt; dropbox &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:4" rev="footnote" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:5"&gt;
+&lt;p&gt;ahora que lo pienso, capaz que se pueda poner el sitio en FTP como disco en red (o como se llame) en Windows. Lo hice una vez para pasar cosas al celular. Ahi puedo hacer las cosas directamente y me ahorraría unos pasos. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:5" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>wordpress</category><category>pelican</category><category>static</category><category>python</category><category>dropbox</category><guid>http://blog.quinzi.com.ar/./es/wordpress-to-pelican/</guid><pubDate>Tue, 22 Jan 2013 00:00:00 GMT</pubDate></item><item><title>Sincronizar Tagaini Jisho con Dropbox</title><link>http://blog.quinzi.com.ar/./es/tagaini-jisho-sincronizar-bd/</link><description>&lt;p&gt;Buscando programas que me ayuden con mi aprendizaje de japonés,
+andaba en busca de uno que manejara mi listado de vocabularios. Uno que
+no me deje poner duplicados, que me deje categorizar las palabras, con
+un par de datos extras.&lt;/p&gt;
+&lt;p&gt;En mi búsqueda, pense usar un Excel, pero no se puede... bah, hay que
+hacer "mucho lio" para que no deje duplicados y tal. Asique descartado.
+Busqué un par mas: como &lt;a href="http://blog.quinzi.com.ar/es/tagaini-jisho-sincronizar-bd/wakan.manga.cz/"&gt;wakan&lt;/a&gt; y &lt;a href="http://zkanji.sourceforge.net/"&gt;zkanji&lt;/a&gt;. El primero ademas de
+diccionario y tal (como el segundo) tiene un editor de texto que te pone
+furigana (guia fonética) arriba de los kanji (también leí que se
+pueden poner de costado). Al fin, para lo que yo queria eran
+complicados/mucha &lt;em&gt;learning curve&lt;/em&gt;. Descartado y descartado.&lt;/p&gt;
+&lt;p&gt;Habia decido hacer mi programita, al principio lo iba a hacer en php +
+mysql... me tire para atras. Despues c++ .NET + SQLite... pero no sabia
+mucho de c++ asique me incliné a VB.NET... pero quise hacer una busqueda
+y no me salio. Desisti. Termine "haciendolo" en PHP+SQLite+CakePHP, iba bien, hasta que me dio vagancia seguirlo.&lt;/p&gt;
+&lt;p&gt;Al rato me dije: "hey! los 2 primeros programas que probé eran
+diccionarios con capacidad de ponerlos en lista, voy a usar algo asi",
+ahí se me prendió la lamparita y me acordé que tengo instalado &lt;a href="http://www.tagaini.net/"&gt;Tagaini
+Jisho&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Tagaini Jisho diccionario Japonés-inglés multiplataforma (Windows, MacOS
+X y Linux) re copado y lindo. En realidad, &lt;a href="http://www.tagaini.net/about"&gt;segun la página&lt;/a&gt;, es
+un asistente de estudio, eso es diccionario + flashcards + notas + tags
++ listas + la inclusión de las animación de cómo escribir los kanji con
+colores bonitos.&lt;/p&gt;
+&lt;p&gt;Al grano: ¿Cómo hago para sincronizar los tags + puntaje de
+flashcards + busquedas + listas + etc en Windows con Dropbox? . Los
+pasos son los siguientes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Localizar donde está la &lt;code&gt;user.bd&lt;/code&gt;. Usualmente esta en
+&lt;code&gt;C:\Users\USUARIO\AppData\Local\Tagaini Jisho&lt;/code&gt;.
+Si no esta ahi por alguna razon aparente, basta con iniciar el
+programa, ir a &lt;kbd&gt;Program &amp;gt; Preferences &amp;gt; User Data&lt;/kbd&gt; y fijarse la ruta.&lt;/li&gt;
+&lt;li&gt;Sacarla / copiarla (como quieras) y ponerla dentro de una carpeta en
+tu DropBox.&lt;/li&gt;
+&lt;li&gt;(Opcional) Cambiarle el nombre por uno mas descriptivo&lt;/li&gt;
+&lt;li&gt;Ahora hay que arreglar el acceso directo para que apunte a esa nueva
+locacion: &lt;kbd&gt;click derecho &amp;gt; propiedades&lt;/kbd&gt;. Al final de la caja de texto de &lt;code&gt;destino&lt;/code&gt;, agregarle (despues de &lt;code&gt;"&lt;/code&gt;): &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="code"&gt;&lt;pre&gt;--user-db="[path/a/basededatos.db"
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: Con este método, la ruta que se ve en &lt;kbd&gt;Program &amp;gt; Preferences &amp;gt; User Data&lt;/kbd&gt; NO
+se actualiza. Habia leido que eso se iba a mejorar, dando una opción
+mas visual para cambiar la locacion de la base de datos, pero todavia
+no hay novedades.&lt;/p&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-193"&gt;
+&lt;div id="comment-193"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/4dff540a55fe51a182ab96df59c7fbe8?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.cosas-simples.com.ar" rel="external nofollow" class="url"&gt;asur&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+July 27, 2011 at 9:06 pm    &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;A veces pienso que estas cosas que posteás  están como 5 o 6 niveles más arriba de lo máximo a lo que yo podría siquiera aspirar a tratar de comprender.  :)&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>nihongo</category><category>tagaini jisho</category><category>dropbox</category><guid>http://blog.quinzi.com.ar/./es/tagaini-jisho-sincronizar-bd/</guid><pubDate>Tue, 26 Jul 2011 00:00:00 GMT</pubDate></item></channel></rss>

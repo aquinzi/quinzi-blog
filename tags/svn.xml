@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (svn)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/svn.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:57 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>svnlog: make changelog from SVN</title><link>http://blog.quinzi.com.ar/svnlog/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; is a python script to create a changelog from a repository log.&lt;/p&gt;
+&lt;p&gt;Examples of output (default):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;2013-11-25:
+    changed arguments (better handling)
+    fix: output path with one file
+    fix: finding &amp;lt;h1&amp;gt;
+
+2013-11-19:
+    fixed: now files are saved according to source dir tree
+    + option to save files in one depth dir
+
+2013-11-19:
+    + relative links for book
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can group that too:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;2013-11-25:
+    changed arguments (better handling)
+    fix: output path with one file
+    fix: finding &amp;lt;h1&amp;gt;
+
+2013-11-19:
+    fixed: now files are saved according to source dir tree
+    + option to save files in one depth dir
+    + relative links for book
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It has some basic options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Show author with &lt;code&gt;--show-author&lt;/code&gt; or &lt;code&gt;-a&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Show revision number with &lt;code&gt;--show-rev&lt;/code&gt; or &lt;code&gt;-r&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Show time with &lt;code&gt;--show-time&lt;/code&gt; or &lt;code&gt;-t&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Prefix with a char using &lt;code&gt;--prefix&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reverse the order (default: new to old) with &lt;code&gt;--reverse&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Specify date or a range (&lt;a href="https://en.wikipedia.org/wiki/ISO_8601"&gt;ISO 8601&lt;/a&gt;) with &lt;code&gt;--date&lt;/code&gt;. You can leave the second date empy (&lt;code&gt;date1:&lt;/code&gt;) to include today&lt;/li&gt;
+&lt;li&gt;If you are better with revision numbers, you can specify one or a range with &lt;code&gt;--revision&lt;/code&gt;. You can leave the second revision empty (&lt;code&gt;rev1:&lt;/code&gt;) to include HEAD revision&lt;/li&gt;
+&lt;li&gt;Group the dates with &lt;code&gt;--group&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Also group revisions with &lt;code&gt;--subgroup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Or group dates but show it inline: &lt;code&gt;--inline&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Just make sure you have a SVN CLI in your path and then run &lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; with the options you desire&lt;/p&gt;</description><category>python</category><category>code</category><category>svn</category><guid>http://blog.quinzi.com.ar/svnlog/</guid><pubDate>Mon, 02 Dec 2013 00:00:00 GMT</pubDate></item></channel></rss>

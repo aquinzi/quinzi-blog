@@ -1,0 +1,371 @@
+<!DOCTYPE html><html><head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="A.Q.">
+    <title>Dynamic to Static (Wordpress a Pelican) | A-Qute blog</title>
+    
+    <!-- firefox is special -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+    
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="../.././es/rss.xml">
+    
+        
+    <link rel="icon" href="../../favicon.ico" sizes="16x16">
+    <link rel="icon" href="../../favicon.png" sizes="16x16">
+    
+
+    
+
+    
+
+
+
+    
+</head>
+<body id="top">
+	<div id="side-left" class="side">
+		<h1 id="blog-title"><a href="../../" title="A-Qute blog" rel="home">A-Qute blog</a></h1>
+		
+		<nav>
+			<ul>
+    
+        <li data-item="archives"><a href="../index.html">Index</a></li>
+        <li data-item="feed"><a href="../rss.xml">RSS</a></li>
+</ul>
+		</nav>
+		
+    <h4>Idiomas</h4>
+    <ul class="languages">
+        
+        <li><a href="../.././es/wordpress-to-pelican/">  Español
+        </a></li>
+    
+        
+        
+    
+
+    </ul>
+
+	</div>
+	
+	<div id="side-right">
+		<div id="content">
+    <article class="postbox">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+    <header>
+        
+    <h1 class="p-name" itemprop="headline name">Dynamic to Static (Wordpress a Pelican)</h1>
+    
+
+        <div class="post-meta">
+            <dl>
+                    <dt class="date">Publicado
+                    </dt><dd>  
+    <time class="published dt-published" itemprop="datePublished" datetime="2013-01-22T00:00:00+00:00">2013-01-22</time>
+</dd>
+                    
+                <dt class="source">Source</dt> 
+                <dd>
+    
+    <a href="../.././es/./wordpress-to-pelican/index.md" id="sourcelink">
+        
+        Obtener código
+        
+    </a>
+    
+ </dd> 
+            </dl>
+        </div>
+    </header>
+    
+    <div class="e-content" itemprop="articleBody text">
+        <div class="toc">
+<ul>
+<li><a href="../.././es/wordpress-to-pelican/#por-que">Por qué</a></li>
+<li><a href="../.././es/wordpress-to-pelican/#presentacion">Presentación</a></li>
+<li><a href="../.././es/wordpress-to-pelican/#instalacion-en-windows">Instalación en Windows</a></li>
+<li><a href="../.././es/wordpress-to-pelican/#configuracion">Configuración</a></li>
+<li><a href="../.././es/wordpress-to-pelican/#andando">Andando</a></li>
+<li><a href="../.././es/wordpress-to-pelican/#themes">Themes</a></li>
+<li><a href="../.././es/wordpress-to-pelican/#migracion-wordpress-pelican">Migración Wordpress -&gt; Pelican</a><ul>
+<li><a href="../.././es/wordpress-to-pelican/#posts-y-paginas">Posts y páginas</a></li>
+<li><a href="../.././es/wordpress-to-pelican/#imagenes">Imágenes</a></li>
+<li><a href="../.././es/wordpress-to-pelican/#categorias-y-tags">Categorías y tags</a></li>
+<li><a href="../.././es/wordpress-to-pelican/#comentarios">Comentarios</a></li>
+</ul>
+</li>
+<li><a href="../.././es/wordpress-to-pelican/#pros-y-cons">Pros y Cons</a></li>
+<li><a href="../.././es/wordpress-to-pelican/#conclusion">Conclusión</a></li>
+</ul>
+</div>
+<h2 id="por-que">Por qué</h2>
+<ol>
+<li>Because I can</li>
+<li>Cada vez <strong>me llevo peor con Wordpress</strong></li>
+<li><strong>Soy blogger casual</strong>, no necesito florecitas que cambian de color según el estado de ánimo de un animal en Samoa.</li>
+<li><strong>Todos los posts los escribo en markdown</strong>, que los conviertos en html para pegarlos en Wordpress. No me tengo que olvidar si tiene imagénes y subirlas (y cambiar las rutas).</li>
+<li>Puedo juguetear mas con el css y html (porque uso/aba wordpress.com)</li>
+<li>Soy de ir en contra de la corriente (?)</li>
+<li>Quiero llegar a los 10 items</li>
+<li>Odio que haya que descargar 10 mb de javascript para el dashboard de Wordpress + otros 50mb para la cosas internas (relacionado con el punto 2)</li>
+<li>estoy aprendiendo python</li>
+<li>ya llegué</li>
+</ol>
+<h2 id="presentacion">Presentación</h2>
+<p>Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.</p>
+<p>Todo iba bien, hasta que los de Wordpress decidieron <strong>abrirse mas como CMS</strong> que como sistema de blogging. Lo entiendo, es natural. Bien. No me gusta. No se si porque yo asocio Wordpress con blog y no un CMS completo a lo Joomla! o Drupal, o porque si las cosas en el backend estan mal organizadas para ser CMS/orientadas a blog, o si es mi conexión que no me deja disfrutar al máximo o qué. </p>
+<p><strong>Por temas de conexión y que el editor de Wordpress apesta</strong><sup id="fnref:1"><a class="footnote-ref" href="../.././es/wordpress-to-pelican/#fn:1" rel="footnote">1</a></sup>, añadido a tener una wiki en localhost y encariñarme con los <a href="http://en.wikipedia.org/wiki/Lightweight_markup_languages">LML</a>, <strong>escribía los posts en markdown</strong> (que antes no me caía bien, hasta que empecé a usar <a href="http://www.johnmacfarlane.net/pandoc/">Pandoc</a>), los pasaba a HTML, hacia search &amp; replace para las imágenes (aunque se puede obviar si se suben primero las imágenes), y <strong>recien ahí lo pasaba a Wordpress</strong>. No es lo mas cómodo del mundo, pero servía.</p>
+<p>Por alguna razón que ahora no recuerdo, empecé a buscar (o encontré de casualidad) scripts que pasan <code>.txts</code> con LML a html. Eso me hizo pensar: "hey, capaz me puede servir". Después de descartar un par que no me servían (estan apuntados a los usuarios de Linux y para usarlos en Windows era mucho lio), me decanté por <a href="https://github.com/getpelican/pelican">Pelican</a>.</p>
+<p>Pelican es un script de Python que toma archivos de texto con markdown, reStructuredText o AsciiDoc, los pasa por un theme, y te genera un blog estático/html. Puro y duro, a la vieja escuela. Con categorias, tags, rss, páginas. Vamos, lo básico para un blog.</p>
+<p>Yo lo estoy hosteando en <a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5">Dropbox</a>, después de decidir que subir las cosas por FTP era bastante molesto <sup id="fnref:2"><a class="footnote-ref" href="../.././es/wordpress-to-pelican/#fn:2" rel="footnote">2</a></sup>/las únicas razones por la que quiería un host apache era por el <code>.htaccess</code> (el rewrite) para hacer magia pero no valía mucho hacer eso para mi humilde blog. <strong>También lo podes hostear en GitHub</strong> si ya tenes cuenta ahi y no te molesta hacer commits. CAPAZ que algun día lo pase ahi (tengo como pendiente GitHub).</p>
+<p>Si solo te interesa hacer la parte de archivos de texto en Dropbox SIN generar html y demas, tenes opciones como <a href="http://calepin.co/">Calepin</a> y <a href="http://scriptogr.am/">scriptogr.am</a></p>
+<h2 id="instalacion-en-windows">Instalación en Windows</h2>
+<p>Porque en Linux este tipo de cosas es mas fácil.</p>
+<p>Por ahora, <a href="https://github.com/getpelican/pelican">Pelican</a> corre bajo <strong>Python 2.7</strong>, hay un fork para que ande en Python 3 pero no lo pude hacer andar (tampoco probé mucho).</p>
+<p><strong>Nota</strong>: yo explico como hacer esto manualmente, pero se puede instalar con <code>pip</code>.</p>
+<ol>
+<li>instalación normal de <a href="http://www.python.org/download/">Python</a></li>
+<li>bajar los source files de <a href="https://github.com/getpelican/pelican">Pelican</a> y extraerlos</li>
+<li>
+<p>abrir el command line/consola en la carpeta anterior y:</p>
+<div class="code"><pre>python setup.py intstall
+</pre></div>
+
+
+<p>Si te pide el setuptools: <a href="http://pypi.python.org/pypi/setuptools/">http://pypi.python.org/pypi/setuptools/</a> o <code>pip install setuptools</code></p>
+<p>Esperar que se haga el chirimbolo.</p>
+</li>
+<li>
+<p>como quiero usar Markdown, lo <a href="http://packages.python.org/Markdown/install.html">instalo para python</a> (de la misma manera que lo anterior)</p>
+</li>
+<li>Y el <a href="http://pygments.org/">pygments</a> para el syntax highlighting</li>
+</ol>
+<h2 id="configuracion">Configuración</h2>
+<ol>
+<li>Se crea un <code>config.py</code> para las configuración siguiendo <a href="http://pelican.readthedocs.org/en/latest/settings.html">las variables en los docs</a> (o usas como base las que ya te vienen en el archivo)</li>
+<li>Si usas Markdown, vas a querer usar los <a href="http://packages.python.org/Markdown/extensions">markdown extra</a></li>
+</ol>
+<h2 id="andando">Andando</h2>
+<ol>
+<li>Crear un post con el <a href="http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican">metadata correspondiente</a>. El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.</li>
+<li>Ir a la carpeta root de tu Pelican, abrir una linea de comandos y poner: <code>[Python_path]\Scripts\pelican.exe input/ -s config.py</code></li>
+</ol>
+<p><strong>Nota</strong>: para probar, podes obviar la parte de configuración.</p>
+<p><strong>Nota 2</strong>: si se corre en la carpeta del contenido, para el path se puede usar <code>.</code> (punto)</p>
+<p>Yo lo puse en un script/bat cosa de no escribir eso todo el tiempo.</p>
+<h2 id="themes">Themes</h2>
+<p>Para los themes/templates, Pelican usa <a href="http://jinja.pocoo.org/">Jinja2</a>. Nunca usé un <em>template engine</em>, siempre lo tildan de complicados y demas, pero este anduvo bien. Es fácil, tan fácil como crear vos un mini-template "engine" en php.</p>
+<p>Podes <a href="http://pelican.readthedocs.org/en/latest/themes.html">crear</a> los tuyos, podes bajar otros <a href="https://github.com/getpelican/pelican-themes">manualmente</a> o usar la <a href="http://pelican.readthedocs.org/en/latest/pelican-themes.html">linea de comandos</a></p>
+<h2 id="migracion-wordpress-pelican">Migración Wordpress -&gt; Pelican</h2>
+<h3 id="posts-y-paginas">Posts y páginas</h3>
+<p>Pelican tiene un <a href="http://docs.getpelican.com/en/latest/importer.html">conversor</a>. Como yo lo necesité para Wordpress, me voy a centrar en ese. Necesitas:</p>
+<ul>
+<li><a href="http://www.crummy.com/software/BeautifulSoup/#Download">BeautifulSoup-3.2.1</a> (las 4.x no funcionan)</li>
+<li><a href="http://www.johnmacfarlane.net/pandoc/">Pandoc</a> (amo pandoc)</li>
+<li>el export de Wordpress (<code>.xml</code>)</li>
+</ul>
+<p>Una vez que tenes eso, corres (cambiar "markdown" por el formato que quieras):</p>
+<div class="code"><pre>[Python_path]\Scripts\pelican-import --wpfile -o [path_output] [path_wordpress.xml] -m markdown
+</pre></div>
+
+
+<h3 id="imagenes">Imágenes</h3>
+<p>Como paso de wordpress.com a Pelican, tengo que descargar las imágenes de alguna forma. Se puede mediante cositas guay como PageNest y similares, pero es mucho lio pensar un regex solo para descargarlas.</p>
+<p>Ya que tenemos el <code>.xml</code> del export, podemos instalar un Wordpress en localhost (o hosteado en otra parte para hacer pruebas). Como tengo un Wordpress en localhost que hace años que no lo uso, tuve que eliminar todas las cosas que tenia antes (en <kbd>phpmyadmin &gt; eliminar el contenido de las tablas/truncate</kbd>), actualizarlo + actualizar base de datos + actualizar/instalar el plugin de import (que no viene como funcionalidad/core por alguna razón).</p>
+<p>Una vez hecho eso, se va a <kbd>tools &gt; import &gt; wordpress &gt; seleccionar archivo &gt; linkear los autores &gt; importar</kbd> &gt; esperar.</p>
+<p>Y se espera.</p>
+<p>Varios minutos.</p>
+<p>Hasta que esté.</p>
+<p>Ya con las imágenes en nuestro poder y procesadas/eliminar las duplicadas, hay que ponerlas en la carpeta input de pelican (en <code>images</code> o como la llamaste). Aca se ve si se quieren poner de alguna estructura en especial o no.</p>
+<p>Pro tip para las imagenes duplicadas:</p>
+<ul>
+<li>primero eliminar las <code>-thumb</code></li>
+<li>las demás tienen este nombre: <code>[nombre orig]-300x225.jpg</code> (donde el numero de tamaño + extension cambian). Esto se puede eliminar facilmente con un script que tengas a mano, o sino con buscadores estilo <a href="http://voidtools.com/">Everything</a> poniendo: <code>[path a las imagenes]\ *-*x*</code></li>
+</ul>
+<p>Ahora solo queda hacer un search &amp; replace para cambiar la url del estilo <code>http://[username].files.wordpress.com/[año]/[mes]</code> a tu estructura actual.</p>
+<h3 id="categorias-y-tags">Categorías y tags</h3>
+<p>Ojito con las categorias. Primero: al hacer un sistema simple, <strong>no tiene jerarquia de categorias</strong> como Wordpress. Fijate como manejas eso. Segundo: <strong>solo acepta una categoria por post</strong>. Si estas cosas te molestan, podes optar por usar directamente tags.</p>
+<h3 id="comentarios">Comentarios</h3>
+<p>Al pasar a Pelican, no sabia si incluir comentarios. Mi blog es personal, no tiene muchos o directamente no tiene, pero siempre quise eso de "che, yo resolví eso de otra forma: tal tal tal. Dejo el comentario por si a alguien le sirve", asique opté por usar Disqus (por que es el único que conozco y no tengo muchos comentarios, por eso ni me molesté en buscar alternativas).</p>
+<p>Si queres transferir los comentarios: Disqus tiene una opción de traer los de Wordpress, pero requiere un plugin (o sea, me jodo). Yo hice copy &amp; paste del html (para hacer algo manual viste, sino era todo automatizado) y los pegué en la entrada correspondiente.</p>
+<p>Tips:</p>
+<ul>
+<li>Conviene desactivar la opcion de conversión de caritas/emoticones ( <code>:D</code>, <code>:)</code> ) a imágenes. A no ser que quieras que se referencien al viejo blog o hacer trabajo extra para eliminarlas/pasarlas a texto.</li>
+<li>Hacete un regex para sacar el link al comentario cuando se clickea en la fecha (yo lo hice, mas que nada, porque tomaba la dirección localhost). Usé este: <code>&lt;a href="http://localhost/wordpress/\?p=\d.+comment-\d.+"&gt;\n(.+)&lt;/a&gt;</code></li>
+</ul>
+<h2 id="pros-y-cons">Pros y Cons</h2>
+<p>Como todo, hay pros y contras por cada sistema.</p>
+<p>Wordpress, pros:</p>
+<ul>
+<li>es Wordpress</li>
+<li>si lo hosteas, tenes libertad absoluta</li>
+<li>es un buen sistema de blogging</li>
+<li>es popular</li>
+</ul>
+<p>Contras:</p>
+<ul>
+<li>es Wordpress</li>
+<li>editor de posts feo/lento</li>
+<li>seguridad (normal)</li>
+<li>Le falta un par de cosas, como poner footnotes facilmente<sup id="fnref:3"><a class="footnote-ref" href="../.././es/wordpress-to-pelican/#fn:3" rel="footnote">3</a></sup></li>
+</ul>
+<p>Pelican, pros:</p>
+<ul>
+<li><strong>puedo escribir en markdown</strong>, y usar los <strong>markdown extentions</strong> (que lo hacen mas copado/completo). Al escribir en puro texto, puedo elegir el editor que yo quiera: <a href="http://www.notepad-plus-plus.org/">Notepad++</a>, <a href="http://www.sublimetext.com/">Sublime Text</a> <sup id="fnref:6"><a class="footnote-ref" href="../.././es/wordpress-to-pelican/#fn:6" rel="footnote">4</a></sup>, o hacerme la cool y abrir un precesador de texto completo de una suite ofimatica, el Wordpad, o algun editor designado para Markdown.</li>
+<li>para actualizarlo es rapido: escribis, pones el archivo en la carpeta de input, corres el script y listo. Nada de andar loggeandote &gt; click en nuevo post &gt; esperar a que cargue &gt; titulo &gt; esperar que genere el slug &gt; escribir &gt; seleccionar categoria y tags &gt; publicar</li>
+<li>tenes un "backup"/raw de tus posts, faciles de transportar o convertir a otro formato.</li>
+<li><strong>no tenes que lidear con un WYSIWYG</strong>. Para ciertas cosas esta bueno, pero muchas veces te obstaculizan al escribir el contenido.</li>
+<li>es estático = <strong>0 preocupaciones por la seguridad</strong>. Solo te preocupas por el del host.</li>
+<li><strong>es muy facil escribir posts multilenguajes</strong>. Esto es para un usuario específico y básicamente es lo mismo que Wordpress (crear un post nuevo), pero por alguna razón se me hace mas simple: los posts solo deben tener el mismo slug y la diferenciación del idioma. Acá hay un ejemplo reciente cuando tuve <a href="../.././es/android-battery-drain">problemas con android y la bateria</a>.</li>
+<li>Puedo/se me hace mas fácil, linkear a otros posts que escribi anteriormente</li>
+</ul>
+<p>Contras:</p>
+<ul>
+<li>No tenes los stats, pero eso se puede cambiar por google analytics.</li>
+<li>No tenes la facilidad de que los lectores califiquen un post, si lo quieren compartir, etc. No me molesta porque no lo uso pero capaz que alguno diga que es indispensable.</li>
+<li>No tenes la gran disponibilidad de themes hechos (aunque puede ser bueno, hay varios que parecen hechos en front page)</li>
+<li>No tenes la gran disponibilidad de plugins hechos (hay repetidos, hay muertos, hay de todo. Pero tampoco le quiero meter uno que agregue una carita al titulo del blog dependiendo si se encontraron nuevos fósiles).</li>
+<li>Es python, todos sabemos como son los errores/debug de python (si sos principiante).</li>
+<li>Genera contenido estático, nada de comentarios ni base de datos para no se que cosa. Los tenes que agregar vos y con Javascript o algún workaround.</li>
+</ul>
+<p>Procon (no se como ponerla): <strong>Te tiene que gustar escribir</strong>, y por escribir me refiero a escribir variables y demas, tanto del sistema específico (Pelican) y del LML que elegiste. Capaz que a los programadores esto seria un pro, pero para el resto de los mortales seria una contra (a no ser que crees un template).</p>
+<h2 id="conclusion">Conclusión</h2>
+<p>Esta mudanza la hice para probar cosas nuevas, solo actualizo el blog una vez al mes/cada 3-6 meses y ni tengo host propio. No es que este todos los dias escribiendo un post, o cada semana; tengo mis periodos de "ay si, hoy escribo y oh! ay mira escribi uno la semana pasada. Me siento re blogger" y de "ah mira, hace 6 meses que no escribo... qué se le va a hacer, no?".</p>
+<p>Pero cada vez que SI actualizaba, odiaba profundamente el paso a Wordpress. Esta bien, si, podes ponerle un plugin para que tome la sintaxis markdown y todo eso, recordá que yo estoy/aba en wordpress.com y no pienso/aba instalar Wordpress en el host. Ya lo hice una vez y no me gustó, por eso me pasé a .com.</p>
+<p>La actualización por medio de este sistema<sup id="fnref:4"><a class="footnote-ref" href="../.././es/wordpress-to-pelican/#fn:4" rel="footnote">5</a></sup> es muy cómodo, solo pongo el post terminado en la carpeta (o lo creo ahi directamente), corro el script y listo. Solo tengo que tener Dropbox corriendo para que actualice. Si quiero hacerlo aun mas simple, puedo usar los servicios nombrados más arriba y solo poner el txt en Dropbox y listo. Sitio actualizado. También es muy rápido generar los <code>.html</code>, con mi blogcito ni tarda 5 segundos (y eso que linkeo a otros posts).</p>
+<p>Por que no un host cualquiera/FTP? Por que tenia que hacer un paso "extra" y sincronizar a FTP o anotarme a otro servicio para que haga un sync/backup de carpeta X de dropbox a carpeta X del host<sup id="fnref:5"><a class="footnote-ref" href="../.././es/wordpress-to-pelican/#fn:5" rel="footnote">6</a></sup>. </p>
+<p>No digo que me vaya a quedar con este sistema, capaz que algun dia diga "para que quiero gastar X espacio en mi disco/dropbox si con wordpress.com no me preocupo" o "hago mucho lio para lo que actualizo", etc., elimino las cosas, hago un par de cambios por alli y por allá y listo, vuelvo a wordpress.com, quien sabe. Solo quiero probar. </p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>y por alguna razón, ya no hay tantos <em>offline blogging systems</em> como Raven o Windows Live Writer. Creo que Wordpress habia puesto la opción de actualizar por e-mail, pero nunca la probé. Debe ser un dolor si queres poner imágenes <a class="footnote-backref" href="../.././es/wordpress-to-pelican/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>en realidad no, podes crearte una cuenta en <a href="http://mybackupbox.com">mybackupbox</a> y que se sincronice/backup-ee automáticamente a un FTP. Esto abre la posibilidad de usar cosas como base de datos y php. <a class="footnote-backref" href="../.././es/wordpress-to-pelican/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>una vez que los usas, no podes parar. Son adictivos. <a class="footnote-backref" href="../.././es/wordpress-to-pelican/#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:6">
+<p>Que ahora me cae mejor. Te instalas el package control y tenes infinidad de plugins. Mas o menos le tomas la mano en la parte de configuración (puro texto) y lo dejas (casi) como quieras. Solo me falta buscar algo simple para que el editor se haga de dos columnas y pase el archivo activo a la otra "vista", sin presionar 10 teclas por acción. <a class="footnote-backref" href="../.././es/wordpress-to-pelican/#fnref:6" rev="footnote" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>txt -&gt; pelican -&gt; dropbox <a class="footnote-backref" href="../.././es/wordpress-to-pelican/#fnref:4" rev="footnote" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p>ahora que lo pienso, capaz que se pueda poner el sitio en FTP como disco en red (o como se llame) en Windows. Lo hice una vez para pasar cosas al celular. Ahi puedo hacer las cosas directamente y me ahorraría unos pasos. <a class="footnote-backref" href="../.././es/wordpress-to-pelican/#fnref:5" rev="footnote" title="Jump back to footnote 6 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+    </div>
+
+    <footer>
+        <meta itemref="vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        
+        <div class="post-meta">
+                <dl>
+                    <dt class="categories"> Categoría: </dt>
+                    <dd> 
+    <span itemprop="keywords"><a class="tag p-category" href="../.././es/tags/cat_entry.html"> entry</a></span>
+ </dd>
+                </dl> 
+                <dl>
+                    <dt class="tags"> Tags: </dt>
+                    <dd>  
+    
+    <span itemprop="keywords"> <a class="tag p-category" href="../.././es/tags/python.html"> 
+    <span class="badge badge-info"> python</span> </a>  <a class="tag p-category" href="../.././es/tags/pelican.html"> 
+    <span class="badge badge-info"> pelican</span> </a>  <a class="tag p-category" href="../.././es/tags/static.html"> 
+    <span class="badge badge-info"> static</span> </a>  <a class="tag p-category" href="../.././es/tags/wordpress.html"> 
+    <span class="badge badge-info"> wordpress</span> </a>  <a class="tag p-category" href="../.././es/tags/dropbox.html"> 
+    <span class="badge badge-info"> dropbox</span> </a> </span>
+ </dd>
+                </dl>
+
+        </div>
+    </footer>
+
+    
+    
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="quinziblog",
+        
+            disqus_url="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/",
+        
+        disqus_title="Dynamic to Static (Wordpress a Pelican)",
+        disqus_identifier="cache/_raw/posts/entry_wordpress-pelican.html",
+        disqus_config = function () {
+            this.language = "./es";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+
+    
+
+    
+    
+
+    </div>
+</article>
+ </div>
+		<footer>
+			<div id="search">
+				<p>Search: </p>
+				
+<!-- Custom search -->
+<form method="get" action="http://duckduckgo.com/" class="navbar-form">
+<input type="hidden" name="sites" value="http://blog.quinzi.com.ar/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="Search">
+</form>
+<!-- End of custom search -->
+
+			</div>
+			
+			
+    <div id="vcard" class="vcard author p-author h-card vcard">
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> A.Q. </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        </p>
+    </div>
+
+		</footer>
+	</div>
+	
+    
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    
+<script src="../../assets/js/analytics.js" type="text/javascript"></script>
+<script src="../../assets/js/github-mod.js" type="text/javascript"></script>
+
+</body></html>

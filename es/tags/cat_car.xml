@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Demo Site (car)</title><link>http://getnikola.com/</link><description></description><atom:link href="http://getnikola.com/es/tags/cat_car.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 07 Jan 2014 14:19:54 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Testing pandoc2</title><link>http://getnikola.com/./es/pandoc-root/</link><description>&lt;div id="TOC"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://getnikola.com/./es/pandoc-root/#h2"&gt;h2&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://getnikola.com/./es/pandoc-root/#h3"&gt;h3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&amp;#13;
+&lt;p&gt;contenido :D&lt;/p&gt;&amp;#13;
+&lt;h2 id="h2"&gt;&lt;a href="http://getnikola.com/./es/pandoc-root/#h2"&gt;h2&lt;/a&gt;&lt;/h2&gt;&amp;#13;
+&lt;p&gt;dfgdfgdfgdff&lt;/p&gt;&amp;#13;
+&lt;h3 id="h3"&gt;&lt;a href="http://getnikola.com/./es/pandoc-root/#h3"&gt;h3&lt;/a&gt;&lt;/h3&gt;&amp;#13;
+&lt;p&gt;sdfsdhjghj&lt;/p&gt;&amp;#13;
+&lt;p&gt;sdfsdhjghj&lt;/p&gt;&amp;#13;
+</description><guid>http://getnikola.com/./es/pandoc-root/</guid><pubDate>Wed, 03 Jul 2013 00:00:00 GMT</pubDate></item></channel></rss>

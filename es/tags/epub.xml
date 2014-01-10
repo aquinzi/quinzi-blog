@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (epub)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/epub.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Thu, 09 Jan 2014 22:13:54 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leer ePUB en Kindle 3</title><link>http://blog.quinzi.com.ar/./es/kindle3-epub/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/kindle3-epub/#jailbreak"&gt;Jailbreak&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/kindle3-epub/#launchpad"&gt;Launchpad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/kindle3-epub/#cool-reader-3"&gt;Cool Reader 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;El otro día andaba buscando si era posible leer ePUBs en el Kindle y, si
+era asi, cómo leerlos. Sólo por curiosidad.&lt;/p&gt;
+&lt;h2 id="jailbreak"&gt;Jailbreak&lt;/h2&gt;
+&lt;p&gt;Primero hacerle Jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;bajando el archivo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Descomprimirlo. Buscar el &lt;code&gt;update_*_install*.bin&lt;/code&gt;, donde * es
+dependiendo del Kindle y firmware que tenga (en el post y dentro del
+comprimido dice cómo) y pasarlo al root del kindle.&lt;/p&gt;
+&lt;p&gt;Liberar/eject el Kindle y apretar &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2 id="launchpad"&gt;Launchpad&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Descargar este archivo&lt;/a&gt; y descomprimirlo.&lt;/p&gt;
+&lt;p&gt;Pasar el &lt;code&gt;update_launchpad_0.0.1c_*_install.bin&lt;/code&gt; (donde * es la version
+del Kindle que tengas) al root del kindle.&lt;/p&gt;
+&lt;p&gt;Liberar/eject el Kindle y apretar &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;Después de esto, hay dos lectores que se les puede instalar: el fbKindle
+y Cool Reader. Cada uno tiene sus pro y contras. De las de "usabilidad"
+uno (fbKindle) acepta links y muestra el furigana como se tendria que
+mostrar cuando un navegador no los puede interpretar (inline) pero no
+muestra bien las tablas, ademas de que parece que no se desarrolla mas.
+El otro (Cool Reader) no acepta links, el furigana los muestra con line
+breaks, muestra bien las tablas y parece que todavia se desarolla. Aca
+sólo "muestro" como se instala el Cool Reader. (el otro es casi lo
+mismo)&lt;/p&gt;
+&lt;h2 id="cool-reader-3"&gt;Cool Reader 3&lt;/h2&gt;
+&lt;p&gt;Los formatos que Cool Reader 3 lee son: fb2, txt, html, rtf, chm, epub,
+mobi. Se creó (y su "principal objetivo") para leer los &lt;a href="http://en.wikipedia.org/wiki/Fb2"&gt;fb2&lt;/a&gt;, por eso
+los epub (y seguro HTML y chm) no los lee "tan bien".&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=148850"&gt;Descargar el archivo&lt;/a&gt; y descomprimirlo.&lt;/p&gt;
+&lt;p&gt;Copiar las carpetas &lt;code&gt;cr3&lt;/code&gt; y &lt;code&gt;qtKindle&lt;/code&gt; en el root del kindle. Copiar el
+archivo de &lt;code&gt;launchpad\cr3.ini&lt;/code&gt; a la carpeta del root &lt;code&gt;launchpad&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Liberar/eject el Kindle. Rapidamente apretar (en el home)
+&lt;kbd&gt;Shift Shift Espacio&lt;/kbd&gt;, aparece un “success!” abajo a la izquierda, y
+apretar &lt;kbd&gt;Shift C R&lt;/kbd&gt;, aparece el “success!” y carga el programa.&lt;/p&gt;
+&lt;p&gt;Para abrir los archivos, se aprieta la tecla &lt;kbd&gt;Menu&lt;/kbd&gt; o apretar &lt;kbd&gt;s&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;Hotkeys básicas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;Alt Back&lt;/kbd&gt; - Sale del programa&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt Shift&lt;/kbd&gt; - Collapse \ deploy Cool Reader&lt;/li&gt;
+&lt;li&gt;En el dialogo de preferencias: &lt;kbd&gt;Home&lt;/kbd&gt; - guarda las opciones,
+&lt;kbd&gt;Back&lt;/kbd&gt; - sale sin guardar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-227"&gt;
+&lt;div id="comment-227"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/ebf1bd99e7fead4d2f84608a397de7f5?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://hookdump.com.ar" rel="external nofollow" class="url"&gt;hookdump&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;       &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+February 9, 2012 at 1:02 pm &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;o.O Esto funca?&lt;br&gt;
+Usualmente soy un freak que jailbreakea/upgradea firmware en todos los dispositivos, desde el iPhone hasta la licuadora(?). &lt;/p&gt;
+&lt;p&gt;PERO… El kindle… el kindle para mi es sagrado. &lt;/p&gt;
+&lt;p&gt;Así que pregunto: ¿Esto es inocente e inocuo?, ¿no podría destruir mi kindle por toda la eternidad?, ¿probaste hacer esto?&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-228"&gt;
+&lt;div id="comment-228"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;       &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;
+February 10, 2012 at 11:25 am       &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Si,si, funca. Por eso lo subi&lt;/p&gt;
+&lt;p&gt;Es inocente. Es un programa que se activa como dice ahi arriba. Podes salir y volver al library reader thing del kindle tranquilamente, apretando las teclitas de ahi/por el menu.&lt;/p&gt;
+&lt;p&gt;Todo lo que escribo esta probado, a no ser que se diga lo contrario&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="post pingback"&gt;
+&lt;p&gt;Pingback: &lt;a href="http://www.taghall.com/epub/" rel="external nofollow" class="url"&gt;Epub | TagHall&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>kindle</category><category>epub</category><guid>http://blog.quinzi.com.ar/./es/kindle3-epub/</guid><pubDate>Fri, 30 Dec 2011 00:00:00 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (battery)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/battery.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:56 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Android: solving battery drain</title><link>http://blog.quinzi.com.ar/android-battery-drain/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/android-battery-drain/#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/android-battery-drain/#tell-me-how-to-solve-the-problem-already-goddamn"&gt;Tell me how to solve the problem already, goddamn!&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/android-battery-drain/#procedure"&gt;Procedure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;Some weeks ago I had these &lt;strong&gt;battery drain&lt;/strong&gt; problem (again). Usually is
+because I openend Google Maps and it's fixed by rebooting the phone; but
+I remembered that I haven't. That puzzled me.&lt;/p&gt;
+&lt;p&gt;I rebooted, stopped some apps that I thought they were the culprit to no
+avail. Everything happened after updating some apps, therefore, I froze,
+uninstalled, deleted widgets, etc., no luck.&lt;/p&gt;
+&lt;p&gt;I let the phone alone so it could stabilize. Days passed by, and I still
+had to charge the phone everyday (I charge the phone every other day
+because of the light usage). &lt;/p&gt;
+&lt;p&gt;From all the apps that I updated, there was one that had the "drains
+battery" comment. I proceeded to uninstall it and change it to another
+one (which is more than I need, uglier looking comparing to previous one
+but funnier and lighter. A keeper but I'm going to miss the little cute
+eyed pillow).&lt;/p&gt;
+&lt;p&gt;That app wasn't the problem.&lt;/p&gt;
+&lt;p&gt;The same comment though, said how the user found out that the app was
+draining the battery. I wrote down and searched for this program. It
+showed that I (the phone) had very bad &lt;strong&gt;deep sleep&lt;/strong&gt;. The &lt;em&gt;deep sleep&lt;/em&gt;
+state is a very important one as it's when the little android robot guy
+it's really sleeping and not doing something else (ex. updating
+statuses, e-mail... and not the other thing you thought, you pervert).&lt;/p&gt;
+&lt;p&gt;Thank you, but the app only does that. It shows the time in the CPU
+frequencies, nothing else... Until I found the solution.&lt;/p&gt;
+&lt;h2 id="tell-me-how-to-solve-the-problem-already-goddamn"&gt;Tell me how to solve the problem already, goddamn!&lt;/h2&gt;
+&lt;p&gt;What you need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;phone or tablet with battery drain problem&lt;/li&gt;
+&lt;li&gt;CPU Spy (possibly optional, BetterBatteryStats has that option)&lt;/li&gt;
+&lt;li&gt;BetterBatteryStats&lt;/li&gt;
+&lt;li&gt;more than 4hrs without using the phone but less than 10hrs for sure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="procedure"&gt;Procedure&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install CPU Spy and BetterBatteryStats. Remember to charge your
+phone fully 'cause you need every single juice porcentage.&lt;/li&gt;
+&lt;li&gt;Write down/take a screenshot of your homescreen or a place where it
+has the battery porcentage and the time.&lt;/li&gt;
+&lt;li&gt;Start CPU Spy and reset the timers.&lt;/li&gt;
+&lt;li&gt;Start BetterBatteryStats &lt;kbd&gt;menu &amp;gt; more &amp;gt; set custom ref&lt;/kbd&gt;.&lt;/li&gt;
+&lt;li&gt;Leave the phone alone (it won't feel lonely, believe me) for at
+least 4hrs (better overnight) with screen off.&lt;/li&gt;
+&lt;li&gt;Forget the phone and take fresh air; pet your pet, feed it, play
+with it; excercise...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After X hours:&lt;/p&gt;
+&lt;p&gt;Write down/take a screenshot of your homescreen or a place where it has
+the battery porcentage and the time. Find out how much the battery
+dropped per hour: &lt;em&gt;[initial battery - now battery] / [hours phone
+asleep]&lt;/em&gt; = xxxx% -&amp;gt; battery drop per hour. If it's around 1%, get the
+hell out and enjoy your life, otherwise, continue.&lt;/p&gt;
+&lt;p&gt;Go to CPU Spy and take the phone's deep sleep time. If it's (around) the
+same as the phone sleep time, everything is fine, otherwise continue.&lt;/p&gt;
+&lt;p&gt;Now go to BetterBatteryStats. In the second option/dropdown choose
+&lt;kbd&gt;since custom ref.&lt;/kbd&gt;. In the first option/dropdown choose &lt;kbd&gt;kernel wakelock&lt;/kbd&gt;. If you have high usage of &lt;code&gt;PowerManagerService&lt;/code&gt;, which is a placeholder for all partial
+wakelocks, you must choose (in the first option/dropdown) &lt;kbd&gt;Partial wakelocks&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;There you can see which app is costing you battery's juice. It can be
+for many reasons, so I can't help you there. My problematic app was &lt;strong&gt;SugarSync&lt;/strong&gt;. I killed (oh no! poor bird D: !) and started
+again, no problem. Don't know what was causing the drain but now it
+seems to work as before.&lt;/p&gt;
+&lt;p&gt;If you have many apps that show draining your battery,
+freeze/uninstall one by one. Don't get crazy.&lt;/p&gt;
+&lt;p&gt;Sources/here you can read more:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://forum.xda-developers.com/showthread.php?t=1308030"&gt;http://forum.xda-developers.com/showthread.php?t=1308030&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://forum.xda-developers.com/showthread.php?t=1878828"&gt;http://forum.xda-developers.com/showthread.php?t=1878828&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://forum.xda-developers.com/showthread.php?t=1179809"&gt;http://forum.xda-developers.com/showthread.php?t=1179809&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><category>android</category><category>battery</category><guid>http://blog.quinzi.com.ar/android-battery-drain/</guid><pubDate>Thu, 01 Nov 2012 00:00:00 GMT</pubDate></item></channel></rss>

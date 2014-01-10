@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (zim)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/zim.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Thu, 09 Jan 2014 22:13:57 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Templates en Zim Wiki</title><link>http://blog.quinzi.com.ar/./es/zim-templates/</link><description>&lt;p&gt;&lt;a href="http://zim-wiki.org/"&gt;Zim&lt;/a&gt; es un programa de wiki de escritorio multiplataforma. En
+los foros decian que iban a presentar templates para las páginas por
+namespaces. Desconozco si las últimas versiones ya lo traen, pero en la versión para Windows no está. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Nota&lt;/em&gt;: es un template para toooodas las paginas nuevas, no por
+namespace.&lt;/p&gt;
+&lt;p&gt;Buscar donde se instaló el programa, e ir a: &lt;code&gt;data\templates\wiki&lt;/code&gt;. Ahi hay un archivo de texto con el nombre &lt;code&gt;Default.txt&lt;/code&gt;. Ese es el archivo a
+modificar para que cada vez que pongas "Crear una nueva pagina" salga
+con ese template.&lt;/p&gt;
+&lt;p&gt;En &lt;a href="http://zim-wiki.org/manual/Help/Templates.html"&gt;esta parte de la página oficial&lt;/a&gt; tenes un poco mas sobre el tema
+de los templates como variables y sintaxis.&lt;/p&gt;</description><category>zim</category><category>windows</category><guid>http://blog.quinzi.com.ar/./es/zim-templates/</guid><pubDate>Fri, 15 Jul 2011 00:00:00 GMT</pubDate></item></channel></rss>

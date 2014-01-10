@@ -1,0 +1,236 @@
+<!DOCTYPE html><html><head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Your Name">
+    <title>Android: resolviendo el problema de batería | Demo Site</title>
+    
+    <!-- firefox is special -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="../../../assets/css/code.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/theme.css" rel="stylesheet" type="text/css">
+    
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="../../.././es/rss.xml">
+    
+        
+    <link rel="icon" href="../../../favicon.ico" sizes="16x16">
+    <link rel="icon" href="../../../favicon.png" sizes="16x16">
+    
+
+    
+
+    
+
+
+
+    
+</head>
+<body>
+	<div id="side-left" class="side">
+		<h1 id="blog-title"><a href="../../../" title="Demo Site" rel="home">Demo Site</a></h1>
+		
+		<nav>
+			<ul>
+    
+        <li data-item="archives"><a href="../../index.html">Index</a></li>
+        <li data-item="feed"><a href="../../rss.xml">RSS</a></li>
+</ul>
+		</nav>
+		
+    <h4>Idiomas</h4>
+    <ul class="languages">
+        <li><a href="../../.././es/clean3_final%20stage/android-battery-drain/">Español</a></li>
+        
+                    <li><a href="../../../clean3_final%20stage/android-battery-drain/">  English
+                    </a> </li>
+                
+            
+        
+        
+    
+
+    </ul>
+
+	</div>
+	
+	<div id="side-right">
+		<div id="content">
+    <article class="postbox">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+    <header>
+        
+    <h1 class="p-name" itemprop="headline name">Android: resolviendo el problema de batería</h1>
+    
+
+        <div class="post-meta">
+            <dl>
+                    <dt class="date">Publicado
+                    </dt><dd>  
+    <time class="published dt-published" datetime="2012-11-01T00:00:00+00:00">2012-11-01</time>
+</dd>
+                    
+                <dt class="source">Source</dt> 
+                <dd>
+    
+    <a href="../../.././es/clean3_final%20stage/android-battery-drain/index.md" id="sourcelink">
+        
+        Obtener código
+        
+    </a>
+    
+ </dd> 
+            </dl>
+        </div>
+    </header>
+    
+    <div class="e-content" itemprop="articleBody text">
+        <div class="toc">
+<ul>
+<li><a href="../../.././es/clean3_final%20stage/android-battery-drain/#contexto">Contexto</a></li>
+<li><a href="../../.././es/clean3_final%20stage/android-battery-drain/#decime-como-resolver-el-problema-maldita-sea">Decime cómo resolver el problema, maldita sea!</a><ul>
+<li><a href="../../.././es/clean3_final%20stage/android-battery-drain/#procedimiento">Procedimiento:</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="contexto">Contexto</h2>
+<p>Hace un par de semanas tuve estos problemas/<strong>drenajes de bateria</strong> (otra
+vez). Normalmente es porque abrí el Google Maps, arreglandose
+reiniciando el teléfono; pero recordé de que no lo había abierto.</p>
+<p>Reinicié, paré algunas apps que pensaba que eran las culpables pero
+nada. Todo pasó después de actualizar algunas apps, asi que <em>congelé</em>,
+desinstalé, eliminé widgets, etc. No hubo suerte.</p>
+<p>Dejé el teléfono para que se estabilizara. Dias pasaron y seguía
+cargando todos los dias (cargo día de por medio por el uso liviano). </p>
+<p>De todas los programas que habia actualizado, había una que tenía el
+comentario de "drena bateria". Procedí a desinstalar y buscar otra
+opción (que es mas de lo que necesito, más feo comparandolo con el
+anterior pero mas gracioso y liviano. Se queda pero voy a extrañar a la
+almohadita con ojos).</p>
+<p>Esa app no era el problema.</p>
+<p>El mismo comentario decía cómo el usuario había encontrado que esta
+aplicación drenaba la batería. Anoté y busqué. Mostraba que el teléfono
+tenia muy mal <strong>deep sleep</strong>. Este estado es muy importante ya que es
+cuando el robotito de android está realmente durmiendo y no haciendo
+otra cosa (ej. actualizando estados, e-mail... y no lo otro que pensabas,
+pervertido).</p>
+<p>Gracias, pero el app hace solo eso. Muestra el tiempo en las frecuencias
+de CPU, nada mas... hasta que encontré la solución.</p>
+<h2 id="decime-como-resolver-el-problema-maldita-sea">Decime cómo resolver el problema, maldita sea!</h2>
+<p>Lo que se necesita:</p>
+<ul>
+<li>teléfono o tablet con problemas (de drenaje) de batería.</li>
+<li>CPU Spy (posiblemente opcional, BetterBatteryStats tiene esa opción)</li>
+<li>BetterBatteryStats</li>
+<li>más de 4hrs sin usar el teléfono pero seguro que menos de 10hrs</li>
+</ul>
+<h3 id="procedimiento">Procedimiento:</h3>
+<ul>
+<li>Instalar CPU Spy y BetterBatteryStats. Recordar de cargar el celular
+al tope por que vamos a necesitar cada gotita de jugo.</li>
+<li>Escribi/sacar una captura de pantalla del <em>homescreen</em> o lugar donde
+se tenga el porcentaje de batería y la hora.</li>
+<li>Iniciar CPU Spy y resetear los <em>timers</em>/relojes</li>
+<li>Iniciar BetterBatteryStats <kbd>menu &gt; more &gt; set custom ref</kbd>.</li>
+<li>Dejar el teléfono (no se va a sentir solo, creeme) por (por lo
+menos) 4hrs (mejor todo una noche) con la pantalla apagada.</li>
+<li>Olvidarte del teléfono y sali a tomar aire; acariciar a tu mascota,
+alimentarla, jugar; hacer ejercicio...</li>
+</ul>
+<p>Después de X horas:</p>
+<p>Escribir/sacar una captura de pantalla del <em>homescreen</em> o lugar donde se
+tenga el porcentaje de batería y hora. Calcular cuanto se gastó la
+batería por hora: <em>[batería inicial - batería ahora] / [horas teléfono
+dormido]</em> = xxxx% -&gt; gasto de batería por hora. Si es cerca de 1%, salí
+de acá y disfrutá la vida, sino proseguir.</p>
+<p>Ir a CPU Spy y ver el tiempo de deep sleep. Si es (aproximadamente) el
+mismo tiempo que el del teéfono durmiendo, todo esta bien, sino
+proseguir.</p>
+<p>Ahora ir a BetterBatteryStats. En la segunda opción/menú desplegable
+elegir <code>since custom ref.</code>. En la primer opción/menú desplegablé
+elegir <code>kernel wakelock</code>. Si se tiene un uso alto de
+<code>PowerManagerService</code>, que es un
+parámetro de sustitución para todos los <em>partial wakelocks</em>, debés
+elegir (en la primera opción/menú desplegable) <code>Partial wakelocks</code>.</p>
+<p>Ahí se puede ver qué app se come tu batería. Puede ser por varias
+razones asi que no te puedo ayudar. El app que me daba problemas era <strong>SugarSync</strong>. Lo maté (oh no! pobre pajarito D: !) e inicié
+nuevamente, ningún problema. No sé qué causaba el prblema de batería
+pero ahora parece andar como antes.</p>
+<p>Si tenes muchas apps que drenan la batería, <em>congelá</em>/desinstalá
+de a una. No seas un maniático.</p>
+<p>Fuentes/acá podes leer más (inglés):</p>
+<ul>
+<li><a href="http://forum.xda-developers.com/showthread.php?t=1308030">http://forum.xda-developers.com/showthread.php?t=1308030</a></li>
+<li><a href="http://forum.xda-developers.com/showthread.php?t=1878828">http://forum.xda-developers.com/showthread.php?t=1878828</a></li>
+<li><a href="http://forum.xda-developers.com/showthread.php?t=1179809">http://forum.xda-developers.com/showthread.php?t=1179809</a></li>
+</ul>
+    </div>
+
+    <footer>
+        <div class="post-meta">
+                <dl>
+                    <dt class="categories"> Categoría: </dt>
+                    <dd> 
+    <span itemprop="keywords"><a class="tag p-category" href="../../.././es/tags/cat_solved.html"><span class="badge badge-info"> solved</span></a></span>
+ </dd>
+                </dl> 
+                <dl>
+                    <dt class="tags"> Tags: </dt>
+                    <dd>  
+    
+    <span itemprop="keywords"> <a class="tag p-category" href="../../.././es/tags/android.html"> 
+    <span class="badge badge-info"> android</span> </a> </span>
+ </dd>
+                </dl>
+
+        </div>
+    </footer>
+
+    
+    
+    
+
+    
+
+    
+    
+
+    </div>
+</article>
+ </div>
+		<footer>
+			<h4>Search</h4> 
+			
+<!-- Custom search -->
+<form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://getnikola.com/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="Search">
+</form>
+<!-- End of custom search -->
+
+			Contents © 2014         <a href="mailto:joe@demo.site">Your Name</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         I'm a license!
+		</footer>
+	</div>
+	
+    
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    
+<script src="../../../assets/js/analytics.js" type="text/javascript"></script>
+<script src="../../../assets/js/github-mod.js" type="text/javascript"></script>
+
+</body></html>

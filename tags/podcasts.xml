@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (podcasts)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/podcasts.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:54 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Conseguir RSS de los canales/channels de YouTube</title><link>http://blog.quinzi.com.ar/rss-youtube/</link><description>&lt;p&gt;Me quejé por Twitter de que &lt;del&gt;YouTube&lt;/del&gt; Google habia toqueteado algo en
+YouTube que rompió el código de los podcasts managers (en mi caso
+gPodder). En todo los pios de twits,
+alguien salto con cómo había hecho para tener las suscripciones de
+YouTube en RSS. Yo pensaba que era algo sabido, pero se ve que no
+(aunque aparece en la ayuda de YouTube.. o asi hace un par de años).&lt;/p&gt;
+&lt;p&gt;Si queres suscribirte al canal de un usuario y no queres hacerte/usar
+una cuenta de YouTube para eso, simplemente pones esta url (cambiando el
+nombre de usuario):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;http://www.youtube.com/rss/user/USERNAME/videos.rss
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Eso te redirecciona a:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;http://gdata.youtube.com/feeds/base/users/USERNAME/uploads?orderby=updated&amp;amp;alt=rss&amp;amp;client=ytapi-youtube-rss-redirect&amp;amp;v=2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ya que estamos, si te queres suscribir a un tag especifico (este no lo
+probé pero lo tengo a mano)&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;http://www.youtube.com/rss/tag/YOURTAGHERE.rss
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-317"&gt;
+&lt;div id="comment-317"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/206877debf6f9420a94ae14a257db803?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;Sebs&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;        &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+October 9, 2012 at 7:01 pm      &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;cofcofAlguienreportándosecofcof :P&lt;/p&gt;
+&lt;p&gt;Thanks! ^^&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/rss-youtube/</guid><pubDate>Fri, 28 Sep 2012 00:00:00 GMT</pubDate></item></channel></rss>

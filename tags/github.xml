@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (github)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/github.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:54 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GitHub Pages for proyects</title><link>http://blog.quinzi.com.ar/gh-pages-project/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#programs-for-windows"&gt;Programs for Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#create-repository"&gt;Create repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#activate-github-pages"&gt;"Activate" GitHub Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#get-it-in-desktop-to-work-with-it"&gt;Get it in desktop (to work with it)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#prepare-gh-pages-branch"&gt;Prepare gh-pages branch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#gh-pages-as-default-and-delete-master"&gt;gh-pages as default and delete master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#its-alive-testing-file-and-upload"&gt;It's alive! (Testing file and upload)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#custom-domain"&gt;Custom domain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#404-pages-everyone-loves-error-pages"&gt;404 pages! (Everyone loves error pages)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Simple steps to create &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; for projects/per repo (not user nor organization) plus some other stuff.&lt;/p&gt;
+&lt;p&gt;The steps are for CLI and for GitHub for Windows (TortoiseGit is "similar" to Git CLI) and Git beginners oriented, who search for easiness and not so much fuss. However, if you're confortable using SVN, you can use it (&lt;a href="https://help.github.com/articles/support-for-subversion-clients"&gt;see clients in GitHub&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Abbreviations and vocabulary:&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;dfn&gt;git CLI&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;Git used in a terminal/command line.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;GW&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="http://windows.github.com/"&gt;GitHub for Windows&lt;/a&gt;.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;Tortoise&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;TortoiseGit.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;Server&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;Where things are "hosted" (like GitHub). This doesn't exist in Git, but this is how beginners can understand better (remote repository).&lt;/dd&gt;
+&lt;dd&gt;"Central server" if you're comming from SVN. &lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;repo&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;To make things easier, take "repo" like "principal or remote repository" or "server" (see definition).&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;origin&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;This is how you name the original "remote repository" and by convention the 'primary' cetralized repository.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;c-p&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;code&gt;commit&lt;/code&gt; followed by &lt;code&gt;push&lt;/code&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h2 id="programs-for-windows"&gt;Programs for Windows&lt;/h2&gt;
+&lt;p&gt;In the beginning, having Git in Windows was hard (because it was created by and for Linux) but now there are many options. Usually, if you are only going to use GitHub, GW is recommended. However, if you want to use Git for other things (like creating "servers" locally to play or test) I recommend &lt;a href="http://tortoisegit.org/"&gt;TortoiseGit&lt;/a&gt; + &lt;a href="http://msysgit.github.io/"&gt;msysgit&lt;/a&gt; (git CLI) instead:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;you can use it for other things and not only for GitHub ("reads" the &lt;code&gt;github://&lt;/code&gt; protocol)&lt;/li&gt;
+&lt;li&gt;you don't have to mess around with the PATH if you want to use git CLI (it installs in &lt;code&gt;%appdata%&lt;/code&gt; and you can't only include &lt;code&gt;bin\&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;msysgit comes with "git Bash"; a cool CLI with colors that shows in which &lt;code&gt;branch&lt;/code&gt; you're in; what is more, you can customize it with &lt;code&gt;.bashrc&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="showing customized git Bash" src="http://blog.quinzi.com.ar/images/2014/git_bash.png"&gt;&lt;/p&gt;
+&lt;h2 id="create-repository"&gt;Create repository&lt;/h2&gt;
+&lt;p&gt;In GitHub, create a repository with the desired name. You can log in and go to &lt;a href="https://github.com/repositories/new"&gt;https://github.com/repositories/new&lt;/a&gt; o clicking in the "&lt;kbd&gt;book&lt;/kbd&gt;".&lt;/p&gt;
+&lt;h2 id="activate-github-pages"&gt;"Activate" GitHub Pages&lt;/h2&gt;
+&lt;p&gt;It automatically activates when you create a &lt;code&gt;branch&lt;/code&gt; called &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;From web click in &lt;kbd&gt;branch master&lt;/kbd&gt;; in GW click in &lt;kbd&gt;master&lt;/kbd&gt; at the top. Search for &lt;kbd&gt;gh-pages&lt;/kbd&gt; and press &lt;kbd&gt;create branch&lt;/kbd&gt;. With CLI would be (previously cloned, look below):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git checkout --orphan gh-pages    # branch local
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="admonition info"&gt;
+&lt;p class="admonition-title"&gt;Info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;--orphan&lt;/code&gt; creates a &lt;code&gt;branch&lt;/code&gt; separated from the rest of the repo (without &lt;em&gt;parents&lt;/em&gt;). First, the &lt;code&gt;branch&lt;/code&gt; is created locally and then sent to &lt;code&gt;origin&lt;/code&gt; (steps below).&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="get-it-in-desktop-to-work-with-it"&gt;Get it in desktop (to work with it)&lt;/h2&gt;
+&lt;p&gt;From GitHub click in &lt;kbd&gt;Clone in desktop&lt;/kbd&gt; (that GW or Tortoise will recieve) or from CLI:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git clone https://github.com/user/nice_repo.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="prepare-gh-pages-branch"&gt;Prepare gh-pages branch&lt;/h2&gt;
+&lt;p&gt;Switch to &lt;code&gt;gh-pages&lt;/code&gt;. In CLI, if you used the above command (&lt;code&gt;git checkout --orphan gh-pages&lt;/code&gt;) it switches automatically, otherwise &lt;code&gt;git checkout -b gh-pages&lt;/code&gt; to switch and create a local &lt;code&gt;branch&lt;/code&gt; called "gh-pages".&lt;/p&gt;
+&lt;div class="admonition info"&gt;
+&lt;p class="admonition-title"&gt;Info&lt;/p&gt;
+&lt;p&gt;When switching &lt;em&gt;branches&lt;/em&gt;, Windows Explorer "refreshes" the folder with the content of the selected &lt;code&gt;branch&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Delete all the files (because they're from &lt;code&gt;master&lt;/code&gt; and we don't want them) and we c-p.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git rm -rf .                      # delete everything
+$ git commit -m "Initiating gh-pages"
+$ git push -u origin gh-pages       # send branch to origin
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="gh-pages-as-default-and-delete-master"&gt;gh-pages as default and delete master&lt;/h2&gt;
+&lt;p&gt;This is optional, depends on your &lt;em&gt;workflow&lt;/em&gt; or usage idea. If you're only going to use &lt;code&gt;gh-pages&lt;/code&gt;, you can use it as default and delete the &lt;code&gt;master branch&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To make it default (and not use &lt;code&gt;master&lt;/code&gt;), in GitHub, go to &lt;kbd&gt;settings &amp;gt; (settings &amp;gt;) Default branch&lt;/kbd&gt; and select &lt;kbd&gt;gh-pages&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;To delete &lt;code&gt;master&lt;/code&gt; you must have &lt;code&gt;gh-pages&lt;/code&gt; as default. Then, go to the &lt;em&gt;branches&lt;/em&gt; listing and click in &lt;kbd&gt;Delete branch&lt;/kbd&gt;. With CLI:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git branch -d master     # delete local
+$ git push origin :master  # delete from repo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="its-alive-testing-file-and-upload"&gt;It's alive! (Testing file and upload)&lt;/h2&gt;
+&lt;p&gt;Create an &lt;code&gt;index.html&lt;/code&gt;, add it and c-p.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git add .                   # adds all
+$ git commit -am "First commit to pages"
+$ git push origin gh-pages
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;(&lt;code&gt;-a&lt;/code&gt; is an abbreviation of &lt;code&gt;add&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;Wait a couple of minutes and check if &lt;code&gt;index&lt;/code&gt; is uploaded in: &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2 id="custom-domain"&gt;Custom domain&lt;/h2&gt;
+&lt;p&gt;As you probably don't want to enter to &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt; because is too long or it's kind of unprofessional, GitHub allows you to assign a custom domain/subdomain to it.&lt;/p&gt;
+&lt;p&gt;You only need to create a &lt;code&gt;CNAME&lt;/code&gt; file which has the domain/subdomain that you want to use, in the root of &lt;code&gt;gh-pages&lt;/code&gt; and change the DNS in host/registrar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;With a root domain (www.example.com): create a new &lt;code&gt;A record&lt;/code&gt; with the IP to &lt;kbd&gt;204.232.175.78&lt;/kbd&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;With a subdomain (sub.example.com): create a &lt;code&gt;CNAME record&lt;/code&gt; that points to GitHub user subdomain (&lt;kbd&gt;user.github.io&lt;/kbd&gt;). This allows the DNS to adjust automatically to GitHub's IP; you can use a &lt;code&gt;A record&lt;/code&gt; but it won't update automatically.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="404-pages-everyone-loves-error-pages"&gt;404 pages! (Everyone loves error pages)&lt;/h2&gt;
+&lt;p&gt;It's easy too: create a &lt;code&gt;404.html&lt;/code&gt; in &lt;code&gt;gh-pages&lt;/code&gt;'s root and done (don't forget to add and c-p).&lt;/p&gt;
+&lt;section id="changes"&gt;
+
+&lt;h2&gt;Changes&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;time&gt;2014-01-02&lt;/time&gt; Rewritten to be more explanatory.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/section&gt;</description><category>git</category><category>github</category><guid>http://blog.quinzi.com.ar/gh-pages-project/</guid><pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate></item></channel></rss>

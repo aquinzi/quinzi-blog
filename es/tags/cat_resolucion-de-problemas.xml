@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Demo Site (resolución de problemas)</title><link>http://getnikola.com/</link><description></description><atom:link href="http://getnikola.com/es/tags/cat_resolucion-de-problemas.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 07 Jan 2014 21:19:46 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Windows 7: Arreglar los iconos en Explorer</title><link>http://getnikola.com/./es/windows7-shell-icons/</link><description>&lt;p&gt;Con esta era de usar programitas varios para sincronizar, otros para control de código, y otros que no puedo recordar ahora; es necesario tener los overlay icons en Windows Explorer:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ejemplo de iconos de estado" src="http://getnikola.com/es/windows7-shell-icons/images/2013/win7_shell_icons.png"&gt;&lt;/p&gt;
+&lt;p&gt;Personalmente se me desaparecían y, aunque limpiara la cache de los programas, nunca aparecían. Hay algunos que podes vivir sin ellos, pero otros no. Capaz instalaste un &lt;a href="http://getnikola.com/es/windows7-shell-icons/copy&amp;gt;"&gt;programa&lt;/a&gt; y te desplazó los de &lt;a href="http://getnikola.com/es/windows7-shell-icons/dropbox&amp;gt;"&gt;otro&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;¿Pero cuál es el problema? Que los genios de Microsoft limitan la cantidad de iconos que se pueden usar a unos meros &lt;strong&gt;11 iconos totales para el usuario&lt;/strong&gt;. WHAT THE HELL.&lt;/p&gt;
+&lt;p&gt;Para arreglar el tema hay que pasar por el registro. Entrá al bonito &lt;code&gt;regedit&lt;/code&gt; y navegá hasta &lt;code&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\&lt;/code&gt;. Antes de tocar mano, hacete un backup del .reg.&lt;/p&gt;
+&lt;p&gt;La idea es que de los 30 que debes tener, solo elegis los 11 mas importantes. ¿Cómo decidis la importancia? renombrandolos, porque Windows los elige por orden alfabético. Poneles números adelante o z, x, y... esas letras que no se usan. Yo prioricé algunos de TortoiseSVN, un par de &lt;a href="http://getnikola.com/es/windows7-shell-icons/dropbox&amp;gt;"&gt;Dropbox&lt;/a&gt;, y el resto como sea el orden.&lt;/p&gt;
+&lt;p&gt;Una vez que estás feliz, reiniciá el explorer.exe: &lt;code&gt;Administrador de tareas &amp;gt; matar explorer&lt;/code&gt;. Después lo inicias en &lt;code&gt;Nueva tarea&lt;/code&gt; (o si queres desloguearte y loguearte hacelo, si queres reiniciar también, pero no hace falta).&lt;/p&gt;
+&lt;p&gt;Fuente: &lt;a href="http://www.oliverpearmain.com/blog/dropbox-and-tortoise-svnsubversion-icon-overlays-in-harmony/"&gt;oliverpearmain: Dropbox and TortoiseSVN icons overlays in harmony&lt;/a&gt;&lt;/p&gt;</description><category>windows</category><guid>http://getnikola.com/./es/windows7-shell-icons/</guid><pubDate>Thu, 12 Dec 2013 00:00:00 GMT</pubDate></item><item><title>Windows 7: Themes Aero Glass</title><link>http://getnikola.com/./es/windows-7-themes-aero/</link><description>&lt;p&gt;(Una continuación o mejora de un &lt;a href="http://getnikola.com/es/windows-7-themes-aero/%7Cfilename%7Cwin7-themes-personalizados.md"&gt;post&lt;/a&gt; previo)&lt;/p&gt;
+&lt;p&gt;Básicamente este post es para decirte cómo activar Aero (full) para themes con mas onda y/o un mejor "theme manager" en un Windows 7 Home Basic o Starter.&lt;/p&gt;
+&lt;h2 id="mejor-theme-manager"&gt;Mejor theme manager&lt;/h2&gt;
+&lt;p&gt;Como viene con Windows 7 Home Basic (yendo por Panel de Control&amp;gt;Cambiar Combinación de colores):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/win7_themes_appearance_settings_diag.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;que al instalar themes, te repite el nombre "Windows 7 Standard/Basic" varias veces. Instalando &lt;a href="http://winaero.com/download.php?view.3"&gt;Personalization Panel&lt;/a&gt; (como administrador) tenes un mejor theme manager:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/win7_themes_personalization_panel.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;ademas de que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Podes cambiar el wallpaper en Windows 7 Starter&lt;/li&gt;
+&lt;li&gt;Te deja cambiar el color de las ventanas en Windows 7 Home Basic&lt;/li&gt;
+&lt;li&gt;Tiene asociaciones de archivos *.theme, *.msstyles y *.themepack (si procedes con la instalación normal/no portable). Basicamente permite hacer doble click sobre el theme y te salta el programa para que eligas.&lt;/li&gt;
+&lt;li&gt;Dependiendo del theme, podes tener cierta transparencia:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/win7_themes_01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Pero yo quiero transparencias y todas esas boludeces! lee mas abajo.&lt;/p&gt;
+&lt;h2 id="tener-transparencia-y-todas-esas-boludeces"&gt;Tener transparencia y todas esas boludeces&lt;/h2&gt;
+&lt;p&gt;Siempre y cuando tu compu lo permita, podes activar el Aero instalando el &lt;a href="http://winaero.com/download.php?view.13"&gt;Aero Patch&lt;/a&gt;. Esto te da:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Aero Glass y coloración&lt;/li&gt;
+&lt;li&gt;soporte full de themes incluyendo RSS y Slideshow&lt;/li&gt;
+&lt;li&gt;Aero peak, shake y WinFlip 3D (y los efectitos cuando minimizas la ventana)&lt;/li&gt;
+&lt;li&gt;Soporte de themes de terceros (con lo que parece no necesitar el &lt;a href="http://uxstyle.com/"&gt;UxStyle Core&lt;/a&gt;, but you tell me)&lt;/li&gt;
+&lt;li&gt;El theme manager de los "Windows 7 polenta":&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/win7_themes_manager.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;e incluso te da la opción al hacer click derecho, que antes no estaba:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/win7_themes_contextmenu.png"&gt;&lt;/p&gt;
+&lt;p&gt;Instalas normalmente (como administrador) y se aplica el patch. No tiene forma grafica de avisarte que terminó (teoricamente se reinicia el sistema solo), asique esperá unos segundos (como 10, o cuando parece que no esta procesando nada) y reiniciá (&lt;strong&gt;REINICIÁ&lt;/strong&gt;, no cierres y entres de nuevo a la sesión, que asi no funciona). Para desinstalar, volves a correr el patch.&lt;/p&gt;
+&lt;p&gt;Transparencia "full":&lt;/p&gt;
+&lt;div class="caption"&gt;&lt;div class="inner"&gt;
+&lt;img src="http://getnikola.com/static/images/2013/win7_themes_soft.jpg"&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href="http://ap-graphik.deviantart.com/art/Soft7-2-0-161602097"&gt;Soft7&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;También podes usar totalmente opaco:&lt;/p&gt;
+&lt;div class="caption"&gt;&lt;div class="inner"&gt;
+&lt;img src="http://getnikola.com/static/images/2013/win7_themes_1.jpg"&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href="http://www.deviantart.com/art/1-268398605"&gt;+1&lt;/a&gt; Dark&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;O miti y miti:&lt;/p&gt;
+&lt;div class="caption"&gt;&lt;div class="inner"&gt;
+&lt;img src="http://getnikola.com/static/images/2013/win7_themes_miniem.jpg"&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href="http://snipes2.deviantart.com/art/mini-em-all-Update-276670844"&gt;mini'em all&lt;/a&gt; alien 1&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Happy Aeroing.&lt;/p&gt;</description><category>Windows 7</category><guid>http://getnikola.com/./es/windows-7-themes-aero/</guid><pubDate>Tue, 06 Aug 2013 00:00:00 GMT</pubDate></item><item><title>Box: acceder por WebDAV</title><link>http://getnikola.com/./es/box-webdav/</link><description>&lt;p&gt;Acceder por &lt;a href="http://en.wikipedia.org/wiki/WebDAV"&gt;WebDAV&lt;/a&gt; a &lt;a href="http://getnikola.com/es/box-webdav/%7Cfilename%7C../entry/goodbye-dropbox.md"&gt;servicios de sincronización&lt;/a&gt; para verlos en tu explorador de archivos sin tener que instalar el cliente -&amp;gt; esperar a que inicie -&amp;gt; indexe -&amp;gt; haga la sincronización solo para sacar un archivo&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://getnikola.com/./es/box-webdav/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, es priceless&lt;sup id="fnref:priceless"&gt;&lt;a class="footnote-ref" href="http://getnikola.com/./es/box-webdav/#fn:priceless" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Me aventuré con esto por que quería hacer un proyecto donde necesitaba un &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;. Ultimamente (o siempre fue así), no te dan la opción de hacerte cuenta de &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;, solo creando un sitio. Not interested. No tengo (es un pendiente) un server/computadora para hacerla server e instalarle &lt;a href="https://filezilla-project.org"&gt;FileZilla&lt;/a&gt;. Damnit. Me acordé de los servicios de sincronización/host de donde tengo cuenta y me aventuré.&lt;/p&gt;
+&lt;p&gt;Elegí &lt;a href="http://www.box.com"&gt;Box&lt;/a&gt;. Pensaba subir los archivos por web, ya que la sincronización es media-media en ese servicio, pero recordé que &lt;a href="https://www.sugarsync.com/referral?rf=eh49qay3q4m0z&amp;amp;utm_source=website&amp;amp;utm_medium=web&amp;amp;utm_campaign=referral&amp;amp;shareEvent=3722394"&gt;SugarSync&lt;/a&gt; tiene el "SugarSync Drive", donde podes acceder a tu cuenta con el explorador de archivos. Me puse a buscar si Box tenía la mismo o similar.&lt;/p&gt;
+&lt;p&gt;Tiene para acceder por &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;, pero solo en cuentas pagas. Después leí sobre WebDAV. Intenté configurarlo y, luego de pelear por bastante tiempo, acá está cómo hacerlo en Windows (7).&lt;/p&gt;
+&lt;h2 id="windows-explorer"&gt;Windows Explorer&lt;/h2&gt;
+&lt;p&gt;En "Equipo" (el viejo "Mi PC"), ir a "Conectar a unidad de red"&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/mapnetwork_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Seleccionar el disco (que no importa mucho parece), tildar "Conectar de nuevo al iniciar sesión". Clickear en "Conectarse a sitio web para usarlo como almacén...."&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/mapnetwork_config_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;En la ventana que aparece, seleccionar "Elegir una ubicación de red personalizada"&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/mapnetwork_location_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Ahora lo divertido y lo que me dió dolores de cabeza: la dirección.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/mapnetwork_address_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Se puede poner:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Para toda la carpeta/cuenta: &lt;code&gt;https://dav.box.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Para carpeta especifica: &lt;code&gt;https://dav.box.com/dav/CARPETITA&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sale la ventana de log in. Poner nombre de usuario/e-mail de Box y la contraseña.&lt;/p&gt;
+&lt;p&gt;Opcional, en la siguiente pantalla renombrar ahora la etiqueta:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/mapnetwork_name_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Y listo, asi queda:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/networks_computer.png"&gt;&lt;/p&gt;
+&lt;p&gt;Si no te funciona, podes usar &lt;a href="http://rei.to/carotdav_en.html"&gt;CarotDAV&lt;/a&gt; (que es para "unir" varios servicios en un mismo programa portable), el famoso &lt;a href="http://www.ghisler.com/download.htm"&gt;Total Commander&lt;/a&gt; o BitKinex.&lt;/p&gt;
+&lt;h2 id="bitkinex"&gt;BitKinex&lt;/h2&gt;
+&lt;p&gt;Descargar el programa de &lt;a href="http://www.bitkinex.com/download"&gt;su sitio&lt;/a&gt;. Instalar normalmente, pero recomiendo (por que leí) destildar el "I want to configure data source now" por que parece que no hace nada).&lt;/p&gt;
+&lt;p&gt;Una vez iniciado (si, aparece asi chiquito por alguna razón), buscar en la lista el Http/WebDAV, click derecho –&amp;gt; New –&amp;gt; Http/WebDAV e ingresar nombre.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/bitkinex_new.png"&gt;&lt;/p&gt;
+&lt;p&gt;Poner datos similares de los de arriba: &lt;code&gt;dav.box.com&lt;/code&gt;, seleccionar "&lt;abbr title="Seguridad ante todo"&gt;SSL&lt;/abbr&gt;". Poner usuario y contraseña en el apartado de abajo:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/bitkinex_server.png"&gt;&lt;/p&gt;
+&lt;p&gt;También lei (opcional) que se puede poner un path al Site map (no se para qué, no noté diferencia). Se configura yendo a "Site Map" (debajo de donde estas ahora/Server) y agregando/modificando el path con &lt;code&gt;/dav&lt;/code&gt;, eligiendo "Directory WebDAV-compliant"&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/bitkinex_sitemap.png"&gt;&lt;/p&gt;
+&lt;p&gt;Y listo, solo falta hacerle doble click a la conexión y tenes los datos:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/bitkinex_connection.png"&gt;&lt;/p&gt;
+&lt;p&gt;Fuente de la nueva dirección de Box &lt;a href="https://box.zendesk.com/entries/21534903"&gt;here, here&lt;/a&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;por que la gente, a veces, lo usa como servicio de hosting (además del de sincronizar) &lt;a class="footnote-backref" href="http://getnikola.com/./es/box-webdav/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:priceless"&gt;
+&lt;p&gt;literalmente. Actualmente, los sistemas opertivos lo traen de fábrica (mas, menos o nulo buggeados) &lt;a class="footnote-backref" href="http://getnikola.com/./es/box-webdav/#fnref:priceless" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>box</category><category>sync</category><guid>http://getnikola.com/./es/box-webdav/</guid><pubDate>Sun, 04 Aug 2013 00:00:00 GMT</pubDate></item><item><title>Android: dpi por app</title><link>http://getnikola.com/./es/android-dpi-app/</link><description>&lt;p&gt;Todos sabemos que Android tiene sus problemas, que Google los esta tratando de mejorar poco a poco. Todos sabemos que Google tiene servicios copados gratuitos. Y todos sabemos que Google dejó de lado las interfaces hechas por ingenieros&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://getnikola.com/./es/android-dpi-app/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; y contrató diseñadores. También sabemos que están tirando a la interfaz flat/minimalista, que no es fácil de dominar para que quede apetecible a los ojos.&lt;/p&gt;
+&lt;p&gt;¿A que voy con esto? Al "moco" que se metió al actualizar la Play Store. Acá te refresco un poco:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/playstoreflat-orig.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;En las tablets no es tan mala. En los celulares con mucha resolución creo que tampoco. El problema va con los celus con poca resolución&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://getnikola.com/./es/android-dpi-app/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;, como el mío (&lt;a href="http://www.gsmarena.com/lg_optimus_one_p500-3516.php"&gt;LG Optimus One (p500)&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;¿Cómo arreglar esto y dejar la Play Store mas usable? Cambiando el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt;. ¿Cómo arreglar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt;? La opción mas popular es instalando &lt;a href="http://paranoid-rom.com/"&gt;Paranoid Android&lt;/a&gt; (me encanta el loguito). Cambiando a esta ROM, podes cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa (cambiar el color de la status bar y nav bar, otras cucherías pero no viene al cuento). La había probado (por otras razones) pero en mi celu era muuy lenta y no daba dejarla solo para cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por uno o dos programas.&lt;/p&gt;
+&lt;p&gt;Dejé de lado esto hasta que encontré otra forma navegando por ahí: instalando el &lt;a href="http://forum.xda-developers.com/showthread.php?t=2072081"&gt;Xposed Framework y el Per App Settings Module&lt;/a&gt; &lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="http://getnikola.com/./es/android-dpi-app/#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;. Esto es algo asi como "instalo esta app y este módulo, y puedo cambiar el dpi :D".&lt;/p&gt;
+&lt;p&gt;Es fácil de usar. Solo tenes que buscar la app que queres toquetear, le pones el "on", toqueteas, ponés guardar y reinicias el programa. Listo. Cambios hechos.&lt;/p&gt;
+&lt;p&gt;Jugando, llegué a poner así la Play Store:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/playstoreflat-squares.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;De cuatro pobres opciones a nueve. Mucho mejor, pero eso de los cuadraditos no me gustaba mucho&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://getnikola.com/./es/android-dpi-app/#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;, asi que lo cambié a lista:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/playstoreflat-list.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;De los 4 originales a 8.5. Nada mal y sigue usable. Eso si, no todo es color de rosas, porque donde te muestra la info + capturas de pantalla + descarga + comentarios + +1&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://getnikola.com/./es/android-dpi-app/#fn:5" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; + etc. (las capturas) se ven medio deformes:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/playstoreflat-info.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Y, obviamente, al cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa, por lo menos en un celu como el mío, tarda unos segundos (contados) en abrir o cambiar de pantalla, pero puedo vivir con eso.&lt;/p&gt;
+&lt;p&gt;Si quieren saber los datos que usé para la Play Store, para que se den una idea:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2013/playstoreflat-settings.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;También "mejoré" la app de DropBox (ahora me entran mas carpetitas en la vista), Contactos, gMail (que no lo uso en el celu, pero queda linda la tablet UI) y la cámara. Si quieren mejorar ésta última, y si usan Android 4.1&lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="http://getnikola.com/./es/android-dpi-app/#fn:6" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt; o superior, por alguna razón, el señorito Google unió la cámara con la galería, y tienen que modificar esa.&lt;/p&gt;
+&lt;p&gt;Asi que si, no necesitan cambiar de ROM para cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa. Instalen lo de arriba y PUM. Listo.&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;y con eso me refiero a los que no les importa el diseño y se centran en la funcionalidad. Como eran antes los productos de Google. &lt;a class="footnote-backref" href="http://getnikola.com/./es/android-dpi-app/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;usualmente los de gama media-baja/antiguos/los de menos de $1500 &lt;a class="footnote-backref" href="http://getnikola.com/./es/android-dpi-app/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;&amp;lt;3 xda developers &lt;a class="footnote-backref" href="http://getnikola.com/./es/android-dpi-app/#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:4"&gt;
+&lt;p&gt;En realidad, me gustaba pero los iconos eran muy grandes, lo cambié y después me olvidé de cómo habia puesto los cuadraditos. &lt;a class="footnote-backref" href="http://getnikola.com/./es/android-dpi-app/#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:5"&gt;
+&lt;p&gt;Maldito Google+ &lt;a class="footnote-backref" href="http://getnikola.com/./es/android-dpi-app/#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:6"&gt;
+&lt;p&gt;JellyBean para los amigos &lt;a class="footnote-backref" href="http://getnikola.com/./es/android-dpi-app/#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>android</category><guid>http://getnikola.com/./es/android-dpi-app/</guid><pubDate>Wed, 29 May 2013 00:00:00 GMT</pubDate></item><item><title>Tutorial: save GPS location to text with Tasker</title><link>http://getnikola.com/./es/save-gps-location-to-text-with-tasker/</link><description>&lt;h2 id="bgi"&gt;BGI&lt;/h2&gt;
+&lt;p&gt;I always wanted a way to say "Hey GPS, see this spot here? the one
+you're indicating, can you pin it with text so I can retrieve it
+later?". All the ways I've found required to install apps. I'm fine with
+that but a) install 5MB or more just to get that functionality? I didn't
+want to change my notes app (not that I use it often but hey, it's nice
+and light) nor have another one; b) install 5MB or more in my low memory
+android phone just to get that? no thank you.&lt;/p&gt;
+&lt;p&gt;Time went by, forgot about it as I'm not needing it right now (but it's
+nice to have). Installed ICS on my LG Optimus One, expanded the
+memory/A2SD, and somehow I found/tried Tasker. Yes, that program that
+it's very cool, everyone recommends it, posts the same common examples
+that you don't need but you want to use it anyway. Yes, that one. There
+are many alternatives, and even free with some limitations. But (people
+say) they are not as complete as Tasker.&lt;/p&gt;
+&lt;h2 id="gimme-the-result"&gt;Gimme the result!&lt;/h2&gt;
+&lt;p&gt;No, I won't post the file so you can download it, sorry. Just follow the
+simple steps. It's not a big script, you big ol'lazy human.&lt;/p&gt;
+&lt;p&gt;Go to the task tab and add a new one:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Task:&lt;/strong&gt; &lt;em&gt;Location to Txt&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Actions&lt;/strong&gt; for the task:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;File &amp;gt; Write file. File: choose which one to open/create. Text:
+&lt;em&gt;%DATE %TIME - %LOC - %TEXTHERE&lt;/em&gt; . Check "Append" and "Add newline"&lt;/li&gt;
+&lt;li&gt;(optional). Alert &amp;gt; Flash. Text: &lt;em&gt;Pinned!&lt;/em&gt; . This creates the info
+box that you always see (the black one).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go to the Scene tab and create a new one.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Scene:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="caption"&gt;&lt;div class="inner"&gt;
+&lt;img src="http://getnikola.com/static/images/2012/tasker_scene.jpg"&gt;&lt;br&gt;
+&lt;p&gt;Cute bear&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The necessary things are: the &lt;strong&gt;TextEdit&lt;/strong&gt; (to input a description, you
+can skip this if you only want to save the coordinates. If that's the
+case, you don't even need the scene) and the &lt;strong&gt;button&lt;/strong&gt;. You can add a
+text element that shows the coordinates and an image, because images
+bring life to the UI.&lt;/p&gt;
+&lt;p&gt;If you decided to include the text that shows the coordinates, enter the
+properties and in Text add &lt;em&gt;%LOC&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In the TextEdit properties, in the Text Changed tab, add a variable
+(variable &amp;gt; variable set). Name: &lt;em&gt;%HERETEXT&lt;/em&gt; To: &lt;em&gt;%new_val&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The button, in the Tap tab.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Task &amp;gt; Perform Task. Name: &lt;em&gt;Location to Txt&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Scene &amp;gt; Destroy scene. (pick the scene you're creating. It should
+be defaulted).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Save the changes and go back to the Task tab.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Task:&lt;/strong&gt; &lt;em&gt;Pin Here&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Misc. &amp;gt; GPS &amp;gt; on&lt;/li&gt;
+&lt;li&gt;Scene &amp;gt; Show Scene. Name: (Pick the scene you've previously
+created). Display As: &lt;em&gt;Activity, Full Window&lt;/em&gt; (or play and find one
+that you like). Check "Show exit button" (optional) and "continue
+task immediately"&lt;/li&gt;
+&lt;li&gt;Task &amp;gt; wait. MS: &lt;em&gt;100&lt;/em&gt;. Everything else to 0. This is to show the
+keyboard. You can skip this (and the next) if you don't mind
+clicking the text box to type.&lt;/li&gt;
+&lt;li&gt;Input &amp;gt; Soft keyboard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The only thing that is left is the shortcut/widget!&lt;/p&gt;
+&lt;p&gt;Create a widget &amp;gt; task. Pick &lt;em&gt;Pin Here&lt;/em&gt;&lt;/p&gt;
+&lt;div class="caption"&gt;&lt;div class="inner"&gt;
+&lt;img src="http://getnikola.com/static/images/2012/tasker_widget.jpg"&gt;&lt;br&gt;
+&lt;p&gt;Here, here! touch me!&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Tap and you get this!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2012/tasker_working.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;When you tap "save" it saves (really?!?!) and shows the black info popup
+boxy-box. Here is an example of what the text file could look like:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2012/tasker_txt.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;When you open the link, it shows the waypoint/spot in the map (seems to
+only work with Google Maps, unless you change the format, that way it
+also works with OsmAnd - from all the maps I've tested-).&lt;/p&gt;
+&lt;p&gt;Bugs: nobody likes bugs but it's Android. If you choose to show the
+keyboard when the scene it's shown, it won't close automatically; you
+must close it yourself (back button). It's not the script fault nor
+Tasker's, but Android's and how it handles things (according to the
+developer). Remember that we created a "wait" action? that was to bypass
+the "bug" opening the keyboard. This might be necessary for you or not.
+This depends on the phone/tablet.&lt;/p&gt;</description><guid>http://getnikola.com/./es/save-gps-location-to-text-with-tasker/</guid><pubDate>Mon, 26 Nov 2012 20:12:00 GMT</pubDate></item><item><title>Android: resolviendo el problema de batería</title><link>http://getnikola.com/./es/android-battery-drain/</link><description>&lt;h2 id="contexto"&gt;Contexto&lt;/h2&gt;
+&lt;p&gt;Hace un par de semanas tuve estos problemas/&lt;strong&gt;drenaje de bateria&lt;/strong&gt; (otra
+vez). Normalmente es porque abrí el Google Maps, arreglandose
+reiniciando el teléfono; pero recordé de que no lo había abierto.&lt;/p&gt;
+&lt;p&gt;Reinicié, paré algunas apps que pensaba que eran las culpables pero
+nada. Todo pasó después de actualizar algunas apps, asi que &lt;em&gt;congelé&lt;/em&gt;,
+desinstalé, eliminé widgets, etc. No hubo suerte.&lt;/p&gt;
+&lt;p&gt;Dejé el teléfono para que se estabilizara. Dias pasaron y seguía
+cargando todos los dias (cargo día de por medio por el uso liviano). Me
+enojé y tiré el celular por la ventana (mentira).&lt;/p&gt;
+&lt;p&gt;De todas los programas que habia actualizado, había una que tenía el
+comentario de "drena bateria". Procedí a desinstalar y buscar otra
+opción (que es mas de lo que necesito, más feo comparandolo con el
+anterior pero mas gracioso y liviano. Se queda pero voy a extrañar a la
+almohadita con ojos).&lt;/p&gt;
+&lt;p&gt;Esa app no era el problema.&lt;/p&gt;
+&lt;p&gt;El mismo comentario decía cómo el usuario había encontrado que esta
+aplicación drenaba la batería. Anoté y busqué. Mostraba que el teléfono
+tenia muy mal &lt;strong&gt;deep sleep&lt;/strong&gt;. Este estado es muy importante ya que es
+cuando el robotito de android está realmente durmiendo y no haciendo
+otra cosa (ej. actualizando estados, e-mail...y no lo otro que pensabas,
+pervertido).&lt;/p&gt;
+&lt;p&gt;Gracias, pero el app hace solo eso. Muestra el tiempo en las frecuencias
+de CPU, nada mas... hasta que encontré la solución.&lt;/p&gt;
+&lt;h2 id="decime-como-resolver-el-problema-maldita-sea"&gt;Decime cómo resolver el problema, maldita sea!&lt;/h2&gt;
+&lt;p&gt;Lo que se necesita:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;teléfono o tablet con problemas (de drenaje) de batería.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CPU Spy&lt;/strong&gt; (posiblemente opcional, leer abajo)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BetterBatteryStats&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;más de 4hrs sin usar el teléfono pero seguro que menos de 10hrs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Procedimiento:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instalar CPU Spy y BetterBatteryStats. Recordar de cargar el celular
+al tope por que vamos a necesitar cada gotita de jugo.&lt;/li&gt;
+&lt;li&gt;Escribi/sacar una captura de pantalla del &lt;em&gt;homescreen&lt;/em&gt; o lugar donde
+se tenga el porcentaje de batería y la hora.&lt;/li&gt;
+&lt;li&gt;Iniciar CPU Spy y resetear los &lt;em&gt;timers&lt;/em&gt;/relojes&lt;/li&gt;
+&lt;li&gt;Iniciar BetterBatteryStats &amp;gt; menu &amp;gt; more &amp;gt; &lt;em&gt;set custom ref&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Dejar el teléfono (no se va a sentir solo, creeme) por (por lo
+menos) 4hrs (mejor todo una noche) con la pantalla apagada.&lt;/li&gt;
+&lt;li&gt;Olvidarte del teléfono y sali a tomar aire; acariciar a tu mascota,
+alimentarla, jugar; hacer ejercicio...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Después de X horas:&lt;/p&gt;
+&lt;p&gt;Escribir/sacar una captura de pantalla del &lt;em&gt;homescreen&lt;/em&gt; o lugar donde se
+tenga el porcentaje de batería y hora. Calcular cuanto se gastó la
+batería por hora: &lt;em&gt;[batería inicial - batería ahora] / [horas teléfono
+dormido]&lt;/em&gt; = xxxx% -&amp;gt; gasto de batería por hora. Si es cerca de 1%, salí
+de acá y disfrutá la vida, sino proseguir.&lt;/p&gt;
+&lt;p&gt;Ir a CPU Spy y ver el tiempo de deep sleep. Si es (aproximadamente) el
+mismo tiempo que el del teéfono durmiendo, todo esta bien, sino
+proseguir.&lt;/p&gt;
+&lt;p&gt;Ahora ir a BetterBatteryStats. En la segunda opción/menú desplegable
+elegir "&lt;em&gt;since custom ref.&lt;/em&gt;". En la primer opción/menú desplegablé
+elegir "&lt;em&gt;kernel wakelock&lt;/em&gt;". Si se tiene un uso alto de
+"&lt;em&gt;PowerManagerService&lt;/em&gt;" (como yo! hola! somos amigos!), que es un
+parámetro de sustitución para todos los &lt;em&gt;partial wakelocks&lt;/em&gt;, debés
+elegir (en la primera opción/menú desplegable) "&lt;em&gt;Partial wakelocks&lt;/em&gt;".&lt;/p&gt;
+&lt;p&gt;Ahí se puede ver qué app se come tu batería. Puede ser por varias
+razones asi que no te puedo ayudar. El app que me daba problemas era mi
+queridísimo &lt;strong&gt;SugarSync&lt;/strong&gt;. Lo maté (oh no! pobre pajarito D: !) e inicié
+nuevamente, ningún problema. No sé qué causaba el prblema de batería
+pero ahora parece andar como antes.&lt;/p&gt;
+&lt;p&gt;Si tenes muchas apps que drenan la batería, &lt;em&gt;congelá&lt;/em&gt;/desinstalá/blabla
+de a una. No seas un maniático.&lt;/p&gt;
+&lt;p&gt;¿Por qué dije que CPU Spy no era necesario? porqueBetterBatteryStats
+tiene esa opción... que la encontré después de que mi búsqueda
+terminara, asi que no se si es lo mismo (supongo que si).&lt;/p&gt;
+&lt;p&gt;Espero que esto resuelva tu problema. Ten buena carga.&lt;/p&gt;
+&lt;p&gt;Fuentes/acá podes leer más (inglés):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://forum.xda-developers.com/showthread.php?t=1308030"&gt;http://forum.xda-developers.com/showthread.php?t=1308030&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://forum.xda-developers.com/showthread.php?t=1878828"&gt;http://forum.xda-developers.com/showthread.php?t=1878828&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://forum.xda-developers.com/showthread.php?t=1179809"&gt;http://forum.xda-developers.com/showthread.php?t=1179809&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;I love you xda-developers.&lt;/em&gt;&lt;/p&gt;</description><category>android</category><guid>http://getnikola.com/./es/android-battery-drain/</guid><pubDate>Thu, 01 Nov 2012 19:27:00 GMT</pubDate></item><item><title>Pro Tip: cartuchos</title><link>http://getnikola.com/./es/pro-tip-cartuchos/</link><description>&lt;p&gt;Alguna vez les pasó que imprimen algo y les sale con espacios "no
+impresos"? esas tipicas lineas les digo. A veces se arregla con la
+limpieza de cabezales. Muchas veces se opta por cambiar el cartucho.
+Usualmente hago lo segundo pero esta vez no pude, no queria tirar
+cartucho a medio-1/4 llenito.&lt;/p&gt;
+&lt;p&gt;Al principio habia optado por imprimir las hojas, tomar las lineas que
+estaban con la lineas feas esas, re imprimirlas... rinse and repeat.
+Cortar y pegar. Quedando algo asi (que sirve si es para listados y cosas
+no formales):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2012/cartuchos_01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Pero por esas casualidades de la vida, en uno de los
+podcasts que escucho/veo, salió alguien diciendo que habia que ponerle
+calor al cartucho (donde sale la tinta/abajo) con una secadora de pelo
+(o algo que haga el mismo trabajo). Como tenia que volver a imprimir mi
+&lt;a href="http://getnikola.com/es/pro-tip-cartuchos/%7Cfilename%7C../japones/kanji-poster.md"&gt;poster copado de kanji&lt;/a&gt;, me decidi a probar este método.&lt;/p&gt;
+&lt;p&gt;Primero lo puse sobre una estufa (ya que hace frío por estos lares y
+estaba en minimo-medio/no piloto). No se si tuvo efecto porque no tenia
+para comparar. Después hice eso de la secadora de pelo y dejenme
+decirles que... parece que funciona! (and it makes sense!). Sino miren
+las pruebas:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2012/cartuchos_02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Desde la izquierda: la primera es la normal/después de la estufa. La del
+medio es con la secadora de pelo. La ultima es otra vez con la secadora
+de pelo. Ven? funca. Seguro que si lo hacia una tercera vez imprime
+de-lu-jo pero el cartucho se estaba por terminar (no lo valía) y
+explotó*:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://getnikola.com/images/2012/cartuchos_03.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;(tambien en la mesa, pero a esa no le saqué foto, no vaya a pasar que se
+seque y sea un lio limpiarla. Menos mal que no lo hice sobre la
+alfombra)&lt;/p&gt;
+&lt;p&gt;Para hacer este truquito/cosas a tener en cuenta:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;secadora de pelo. La estufa como que mucho no me sirvió y me quemaba
+las manitos.&lt;/li&gt;
+&lt;li&gt;mantener el flujo de aire caliente por 30 seg - 1 minuto. No mas de
+eso o puede explotar* (como me pasó a mi). Si se requiere varias
+aplicaciones, "dejar" descansar el cartucho por unos minutos y
+volver a intentar.&lt;/li&gt;
+&lt;li&gt;Hacerlo en una superficie limpiable/descartable por si chorrea tinta
+o estar atenti.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;* explotar = se chorreó tinta ... bastante...&lt;/p&gt;
+&lt;h3 id="comments"&gt;Comments&lt;/h3&gt;
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-318"&gt;
+&lt;div id="comment-318"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/4dff540a55fe51a182ab96df59c7fbe8?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://gravatar.com/asur2004" rel="external nofollow" class="url"&gt;asur&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+October 8, 2012 at 12:39 pm&lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Tu dedo chiquito comienza flaquito en la punta y se hace gordito en la base.  ^.^&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-319"&gt;
+&lt;div id="comment-319"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://eikiu.wordpress.com" rel="external nofollow" class="url"&gt;Ei-Kiu&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;
+October 8, 2012 at 12:57 pm   &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Tengo dedos rechonchos =P&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://getnikola.com/./es/pro-tip-cartuchos/</guid><pubDate>Mon, 08 Oct 2012 11:50:00 GMT</pubDate></item><item><title>Conseguir RSS de los canales/channels de YouTube</title><link>http://getnikola.com/./es/rss-youtube/</link><description>&lt;p&gt;Me quejé por Twitter de que &lt;span class="del"&gt;YouTube&lt;/span&gt; Google habia toqueteado algo en
+YouTube que rompió el código de los podcasts managers (en mi caso
+gPodder. Desconozco si pasa eso en Miro porque ya lo deje de usar...
+aunque me faltan migrar un par de cosas). En todo los pios de twits,
+alguien salto con cómo había hecho para tener las suscripciones de
+YouTube en RSS. Yo pensaba que era algo sabido, pero se ve que no
+(aunque aparece en la ayuda de YouTube.. o asi hace un par de años).&lt;/p&gt;
+&lt;p&gt;Si queres suscribirte al canal de un usuario y no queres hacerte/usar
+una cuenta de YouTube para eso, simplemente pones esta url (cambiando el
+nombre de usuario):&lt;/p&gt;
+&lt;p&gt;http://www.youtube.com/rss/user/USERNAME/videos.rss&lt;/p&gt;
+&lt;p&gt;Eso te redirecciona a:&lt;/p&gt;
+&lt;p&gt;http://gdata.youtube.com/feeds/base/users/USERNAME/uploads?orderby=updated&amp;amp;alt=rss&amp;amp;client=ytapi-youtube-rss-redirect&amp;amp;v=2&lt;/p&gt;
+&lt;p&gt;Ya que estamos, si te queres suscribir a un tag especifico (este no lo
+probé pero lo tengo a mano)&lt;/p&gt;
+&lt;p&gt;http://www.youtube.com/rss/tag/YOURTAGHERE.rss&lt;/p&gt;
+&lt;p&gt;Happy Podcasting!&lt;/p&gt;
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-317"&gt;
+&lt;div id="comment-317"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/206877debf6f9420a94ae14a257db803?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;Sebs&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;        &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+October 9, 2012 at 7:01 pm      &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;cofcofAlguienreportándosecofcof :P&lt;/p&gt;
+&lt;p&gt;Thanks! ^^&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>podcasts</category><category>youtube</category><guid>http://getnikola.com/./es/rss-youtube/</guid><pubDate>Fri, 28 Sep 2012 16:32:00 GMT</pubDate></item><item><title>Leer ePUB en Kindle 3</title><link>http://getnikola.com/./es/epub-kindle-3/</link><description>&lt;p&gt;El otro día andaba buscando si era posible leer ePUBs en el Kindle y, si
+era asi, cómo leerlos. &lt;span class="del"&gt;Para que me se me sea mas facil pasar de la
+wiki al kindle&lt;/span&gt;Sólo por curiosidad.&lt;/p&gt;
+&lt;h2 id="jailbreak"&gt;Jailbreak&lt;/h2&gt;
+&lt;p&gt;Primero hacerle Jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;bajando el archivo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Descomprimirlo. Buscar el &lt;code&gt;update_*_install*.bin&lt;/code&gt;, donde * es
+dependiendo del Kindle y firmware que tenga (en el post y dentro del
+comprimido dice cómo) y pasarlo al root del kindle.&lt;/p&gt;
+&lt;p&gt;Liberar/eject el Kindle y apretar
+&lt;code&gt;[HOME] → [MENU] &amp;gt; Settings → [MENU] &amp;gt; Update Your Kindle.&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="launchpad"&gt;Launchpad&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Descargar este archivo&lt;/a&gt;. Descomprimirlo.&lt;/p&gt;
+&lt;p&gt;Pasar el &lt;code&gt;update_launchpad_0.0.1c_*_install.bin&lt;/code&gt; (donde * es la version
+del Kindle que tengas) al root del kindle.&lt;/p&gt;
+&lt;p&gt;Liberar/eject el Kindle y apretar
+&lt;code&gt;[HOME] → [MENU] &amp;gt; Settings → [MENU] &amp;gt; Update Your Kindle.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Después de esto, hay dos lectores que se les puede instalar: el fbKindle
+y Cool Reader. Cada uno tiene sus pro y contras. De las de "usabilidad"
+uno (fbKindle) acepta links y muestra el furigana como se tendria que
+mostrar cuando un navegador no los puede interpretar (inline) pero no
+muestra bien las tablas, ademas de que parece que no se desarrolla mas.
+El otro (Cool Reader) no acepta links, el furigana los muestra con line
+breaks, muestra bien las tablas y parece que todavia se desarolla. Aca
+sólo "muestro" como se instala el Cool Reader. (el otro es casi lo
+mismo)&lt;/p&gt;
+&lt;h2 id="cool-reader-3"&gt;Cool Reader 3&lt;/h2&gt;
+&lt;p&gt;Los formatos que Cool Reader 3 lee son: fb2, txt, html, rtf, chm, epub,
+mobi. Se creó (y su "principal objetivo") para leer los &lt;a href="http://en.wikipedia.org/wiki/Fb2"&gt;fb2&lt;/a&gt;, por eso
+los epub (y seguro HTML y chm) no los lee "tan bien".&lt;/p&gt;
+&lt;p&gt;Descargar el archivo &lt;a href="http://www.mobileread.com/forums/showthread.php?t=148850"&gt;de acá&lt;/a&gt;. Descomprimirlo.&lt;/p&gt;
+&lt;p&gt;Copiar las carpetas &lt;code&gt;cr3&lt;/code&gt; y &lt;code&gt;qtKindle&lt;/code&gt; en el root del kindle. Copiar el
+archivo de &lt;code&gt;launchpad\cr3.ini&lt;/code&gt; a la carpeta del root &lt;code&gt;launchpad&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Liberar/eject el Kindle. Rapidamente apretar (en el home)
+&lt;code&gt;Shift Shift Espacio&lt;/code&gt;, aparece un “success!” abajo a la izquierda, y
+apretar &lt;code&gt;Shift C R&lt;/code&gt;, aparece el “success!” y carga el programa.&lt;/p&gt;
+&lt;p&gt;Para abrir los archivos, se aprieta la tecla &lt;code&gt;Menu&lt;/code&gt; o apretar &lt;code&gt;s&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Hotkeys básicas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Alt Back&lt;/strong&gt; - Sale del programa&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alt Shift&lt;/strong&gt; - Collapse \ deploy Cool Reader&lt;/li&gt;
+&lt;li&gt;En el dialogo de preferencias: &lt;strong&gt;Home&lt;/strong&gt; - guarda las opciones,
+&lt;strong&gt;Back&lt;/strong&gt; - sale sin guardar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="comments"&gt;Comments&lt;/h3&gt;
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-227"&gt;
+&lt;div id="comment-227"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/ebf1bd99e7fead4d2f84608a397de7f5?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://hookdump.com.ar" rel="external nofollow" class="url"&gt;hookdump&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;       &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+February 9, 2012 at 1:02 pm &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;o.O Esto funca?&lt;br&gt;
+Usualmente soy un freak que jailbreakea/upgradea firmware en todos los dispositivos, desde el iPhone hasta la licuadora(?). &lt;/p&gt;
+&lt;p&gt;PERO… El kindle… el kindle para mi es sagrado. &lt;/p&gt;
+&lt;p&gt;Así que pregunto: ¿Esto es inocente e inocuo?, ¿no podría destruir mi kindle por toda la eternidad?, ¿probaste hacer esto?&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-228"&gt;
+&lt;div id="comment-228"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://eikiu.wordpress.com" rel="external nofollow" class="url"&gt;Ei-Kiu&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;     &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;
+February 10, 2012 at 11:25 am       &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Si,si, funca. Por eso lo subi ^_^ b&lt;/p&gt;
+&lt;p&gt;Es inocente. Es un programa que se activa como dice ahi arriba. Podes salir y volver al library reader thing del kindle tranquilamente, apretando las teclitas de ahi/por el menu.&lt;/p&gt;
+&lt;p&gt;Todo lo que escribo esta probado, a no ser que se diga lo contrario ^_^&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="post pingback"&gt;
+&lt;p&gt;Pingback: &lt;a href="http://www.taghall.com/epub/" rel="external nofollow" class="url"&gt;Epub | TagHall&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>kindle</category><category>programas</category><guid>http://getnikola.com/./es/epub-kindle-3/</guid><pubDate>Fri, 30 Dec 2011 12:20:00 GMT</pubDate></item><item><title>Sincronizar la base de datos de Tagaini Jisho con Dropbox</title><link>http://getnikola.com/./es/sincronizar-la-base-de-datos-de-tagaini-jisho-con-dropbox/</link><description>&lt;p&gt;Buscando programas que me ayuden con mi &lt;a href="http://getnikola.com/es/sincronizar-la-base-de-datos-de-tagaini-jisho-con-dropbox/%7Cfilename%7C../japones/jouyoukanji.md"&gt;aprendizaje de japonés&lt;/a&gt; &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://getnikola.com/./es/sincronizar-la-base-de-datos-de-tagaini-jisho-con-dropbox/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;,
+andaba en busca de uno que manejara mi listado de vocabularios. Uno que
+no me deje poner duplicados, que me deje categorizar las palabras, con
+un par de datos extras.&lt;/p&gt;
+&lt;p&gt;En mi búsqueda, pense usar un Excel, pero no se puede... bah, hay que
+hacer "mucho lio" para que no deje duplicados y tal. Asique descartado.
+Busqué un par mas: como &lt;a href="http://getnikola.com/es/sincronizar-la-base-de-datos-de-tagaini-jisho-con-dropbox/wakan.manga.cz/"&gt;wakan&lt;/a&gt; y &lt;a href="http://zkanji.sourceforge.net/"&gt;zkanji&lt;/a&gt;. El primero ademas de
+diccionario y tal (como el segundo) tiene un editor de texto que te pone
+furigana (guia fonética) arriba de los kanji ^_^ (también leí que se
+pueden poner de costado). Al fin, para lo que yo queria eran
+complicados/&lt;a href="http://expandingtwittah.posterous.com/getting-used"&gt;mucha learning curve&lt;/a&gt;. Descartado y descartado.&lt;/p&gt;
+&lt;p&gt;Habia decido hacer mi programita, al principio lo iba a hacer en php +
+mysql... me tire para atras. Despues c++ .NET + SQLite... pero no sabia
+mucho de c++ asique me incliné a VB.NET... pero quise hacer una busqueda
+y no me salio. Desisti. Termine "haciendolo" en PHP+SQLite+CakePHP...
+&lt;a href="http://expandingtwittah.posterous.com/62507943"&gt;iba bien&lt;/a&gt;, hasta que me dio vagancia seguirlo.&lt;/p&gt;
+&lt;p&gt;Al rato me dije: "hey! los 2 primeros programas que probé eran
+diccionarios con capacidad de ponerlos en lista, voy a usar algo asi",
+ahí se me prendió la lamparita y me acordé que tengo instalado &lt;a href="http://www.tagaini.net/"&gt;Tagaini
+Jisho&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Tagaini Jisho diccionario Japonés-inglés multiplataforma (Windows, MacOS
+X y Linux ) re copado y lindo (?). En realidad, &lt;a href="http://www.tagaini.net/about"&gt;segun la página&lt;/a&gt;, es
+un asistente de estudio, eso es diccionario + flashcards + notas + tags
++ listas + la inclusión de las animación de cómo escribir los kanji con
+colores bonitos u_u.&lt;/p&gt;
+&lt;p&gt;Al grano: ¿Cómo excrementos hago para sincronizar los tags + puntaje de
+flashcards + busquedas + listas + etc en Windows con Dropbox? . Los
+pasos son los siguientes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Localizar donde está la user.bd. Usualmente esta en
+&lt;em&gt;C:\Users\[nombre de usuario] \AppData\Local\Tagaini Jisho\&lt;/em&gt; .
+Si no esta ahi por alguna razon aparente, basta con iniciar el
+programa, ir a Program&amp;gt;Preferences&amp;gt;User Data y fijarse la ruta.&lt;/li&gt;
+&lt;li&gt;Sacarla / copiarla (como quieras) y ponerla dentro de una carpeta en
+tu DropBox.&lt;/li&gt;
+&lt;li&gt;(Opcional) Cambiarle el nombre por uno mas descriptivo&lt;/li&gt;
+&lt;li&gt;Ahora hay que arreglar el acceso directo para que apunte a esa nueva
+locacion: click derecho&amp;gt;propiedades sobre el acceso directo del
+programa. Al final de la caja de texto de destino, agregarle
+(despues de la "):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="code"&gt;&lt;pre&gt;--user-db="[path a la nueva locacion + nombre de archivo].db"
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Con eso bastaría, pueden hacer la prueba si quieren, teniendo el link
+original + la locacion del archivo orginal y otro acceso directo
+modificado. Pero funca =P&lt;/p&gt;
+&lt;h3 id="nota"&gt;Nota:&lt;/h3&gt;
+&lt;p&gt;Con este método, la ruta que se ve en Program&amp;gt;Preferences&amp;gt;User Data NO
+se actualiza. Habia leido que eso se iba a mejorar, dando una opción
+mas... visual para cambiar la locacion de la base de datos, pero todavia
+no hay novedades.&lt;/p&gt;
+&lt;p&gt;Happy learning + syncing :D&lt;/p&gt;
+&lt;h3 id="comments"&gt;Comments&lt;/h3&gt;
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-193"&gt;
+&lt;div id="comment-193"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/4dff540a55fe51a182ab96df59c7fbe8?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.cosas-simples.com.ar" rel="external nofollow" class="url"&gt;asur&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+July 27, 2011 at 9:06 pm    &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;A veces pienso que estas cosas que posteás  están como 5 o 6 niveles más arriba de lo máximo a lo que yo podría siquiera aspirar a tratar de comprender.  :)&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;A todo esto, nunca hice un post donde diga algo asi como "Empecé a
+estudiar japonés" :P &lt;a class="footnote-backref" href="http://getnikola.com/./es/sincronizar-la-base-de-datos-de-tagaini-jisho-con-dropbox/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>programas</category><guid>http://getnikola.com/./es/sincronizar-la-base-de-datos-de-tagaini-jisho-con-dropbox/</guid><pubDate>Tue, 26 Jul 2011 18:45:00 GMT</pubDate></item></channel></rss>

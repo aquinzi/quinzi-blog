@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (code)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/code.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:55 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>pandy</title><link>http://blog.quinzi.com.ar/pandy/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; is a command line wrapper for &lt;a href="http://johnmacfarlane.net/pandoc/"&gt;pandoc&lt;/a&gt; + cool stuff (if you use markdown -&amp;gt; html)&lt;/p&gt;
+&lt;p&gt;Basically takes a file/folder, input the markup to convert from, the output markup and runs it through pandoc.&lt;/p&gt;
+&lt;h2 id="usage"&gt;Usage&lt;/h2&gt;
+&lt;p&gt;To use the script, just call it with something like:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;pandy source format_from format/s_to [other options]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="features"&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A bit easier syntax around pandoc commands (I can't never remember them)&lt;/li&gt;
+&lt;li&gt;Output folder keeping or not the folder structure&lt;/li&gt;
+&lt;li&gt;Source can be a file, a folder or a .list containing file paths&lt;/li&gt;
+&lt;li&gt;Formats: some of them have abbreviations (see below)&lt;/li&gt;
+&lt;li&gt;Output format: you can have more than one! just separate them with spaces&lt;/li&gt;
+&lt;li&gt;You can create a nice book (html, just adds navigation links between files). If you don't like/want "Next-Prev" navigation links, you can use the file's title. It creates a nice simple index file or you can include your own.&lt;/li&gt;
+&lt;li&gt;Use a config file: so you don't have to remember all the arguments or write a "wrapper" script for a "wrapper" script :)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[TOCME]&lt;/code&gt; support. That means that a file that has it, will have a TOC. No more separating files: these ones with TOC, these ones without, and finally place them in the same folder.&lt;/li&gt;
+&lt;li&gt;If you use markdown and convert to HTML there are some goodies for you! abbreviations (real abbreviations, like that they are parsed and not ignored as pandoc does) and admonitions.&lt;/li&gt;
+&lt;li&gt;"WikiLinks" for your custom index file!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information and explanation, go to &lt;a href="https://quinzi.com.ar/projects/pandy"&gt;pandy project page&lt;/a&gt;.&lt;/p&gt;</description><category>python</category><category>code</category><category>pandoc</category><category>markdown</category><guid>http://blog.quinzi.com.ar/pandy/</guid><pubDate>Wed, 11 Dec 2013 00:00:00 GMT</pubDate></item><item><title>svnlog: make changelog from SVN</title><link>http://blog.quinzi.com.ar/svnlog/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; is a python script to create a changelog from a repository log.&lt;/p&gt;
+&lt;p&gt;Examples of output (default):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;2013-11-25:
+    changed arguments (better handling)
+    fix: output path with one file
+    fix: finding &amp;lt;h1&amp;gt;
+
+2013-11-19:
+    fixed: now files are saved according to source dir tree
+    + option to save files in one depth dir
+
+2013-11-19:
+    + relative links for book
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can group that too:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;2013-11-25:
+    changed arguments (better handling)
+    fix: output path with one file
+    fix: finding &amp;lt;h1&amp;gt;
+
+2013-11-19:
+    fixed: now files are saved according to source dir tree
+    + option to save files in one depth dir
+    + relative links for book
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It has some basic options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Show author with &lt;code&gt;--show-author&lt;/code&gt; or &lt;code&gt;-a&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Show revision number with &lt;code&gt;--show-rev&lt;/code&gt; or &lt;code&gt;-r&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Show time with &lt;code&gt;--show-time&lt;/code&gt; or &lt;code&gt;-t&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Prefix with a char using &lt;code&gt;--prefix&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reverse the order (default: new to old) with &lt;code&gt;--reverse&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Specify date or a range (&lt;a href="https://en.wikipedia.org/wiki/ISO_8601"&gt;ISO 8601&lt;/a&gt;) with &lt;code&gt;--date&lt;/code&gt;. You can leave the second date empy (&lt;code&gt;date1:&lt;/code&gt;) to include today&lt;/li&gt;
+&lt;li&gt;If you are better with revision numbers, you can specify one or a range with &lt;code&gt;--revision&lt;/code&gt;. You can leave the second revision empty (&lt;code&gt;rev1:&lt;/code&gt;) to include HEAD revision&lt;/li&gt;
+&lt;li&gt;Group the dates with &lt;code&gt;--group&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Also group revisions with &lt;code&gt;--subgroup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Or group dates but show it inline: &lt;code&gt;--inline&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Just make sure you have a SVN CLI in your path and then run &lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; with the options you desire&lt;/p&gt;</description><category>python</category><category>code</category><category>svn</category><guid>http://blog.quinzi.com.ar/svnlog/</guid><pubDate>Mon, 02 Dec 2013 00:00:00 GMT</pubDate></item><item><title>pymd: wrapper for Python Markdown</title><link>http://blog.quinzi.com.ar/pymd/</link><description>&lt;div class="admonition info"&gt;
+&lt;p class="admonition-title"&gt;Hey!&lt;/p&gt;
+&lt;p&gt;pymd is now available in &lt;a href="https://pypi.python.org/pypi/pymd"&gt;PyPI&lt;/a&gt;. That means that you can install it like &lt;code&gt;pip install pymd&lt;/code&gt; :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/pymd"&gt;pymd&lt;/a&gt; is a command line wrapper for &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python Markdown&lt;/a&gt; library but having a full HTML file instead of only what it's originally parsed.&lt;/p&gt;
+&lt;h2 id="features"&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Batch process files (in folder or in a .list) with .md, .txt or .markdown extensions&lt;/li&gt;
+&lt;li&gt;Specify an output folder (with automatic creation)&lt;/li&gt;
+&lt;li&gt;Includes all the extensions installed by Python Markdown and you can even specify your own!&lt;/li&gt;
+&lt;li&gt;Merge files into one big HTML or create a little book with navigation links. You can even create your own index!&lt;/li&gt;
+&lt;li&gt;CSSed: leave the no-so-ugly embeded CSS (you can even switch between sans and serif fonts) or link to one of your own if you prefer.&lt;/li&gt;
+&lt;li&gt;Headers for files! So you can share the same metadata (like your beautiful name and the creative title of your work) in all the files or when you merge the files and forgot to include the main title of your project.&lt;/li&gt;
+&lt;li&gt;Wiki links: &lt;code&gt;[](file|path) -&amp;gt; [title linked file](output_path)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Made with love &amp;lt;3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Find more information and examples in &lt;a href="https://quinzi.com.ar/projects/pymd"&gt;pymd's project page&lt;/a&gt; &lt;/p&gt;</description><category>python</category><category>code</category><category>markdown</category><guid>http://blog.quinzi.com.ar/pymd/</guid><pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate></item><item><title>proDO: super simple bug/issue tracker</title><link>http://blog.quinzi.com.ar/prodo/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/prodo/#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/prodo/#script"&gt;Say hi to proDO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="admonition attention"&gt;
+&lt;p class="admonition-title"&gt;Atención&lt;/p&gt;
+&lt;p&gt;Si no te interesa la historia del por qué se escribió el script y/o no queres saber sobre programitas, adelantate hasta &lt;a href="http://blog.quinzi.com.ar/prodo/#script"&gt;acá&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;Cuando desarrollas o escribis código (o palabras, por qué no) necesitas algún tipo de bug/issue tracker. Eso es normal para proyectos grandes o con varias personas, pero al ser un solo individuo o el proyecto es chico, todas las opciones son como mucho.&lt;/p&gt;
+&lt;p&gt;A algunos no les importa e instalan grandes bug trackers, otros usan algo mas simple. Otros vamos por la old school y escribimos en papel. Otras escribimos en un .txt, que puede ser un simple archivo o con esos ToDo.txt/&lt;a href="http://taskwarrior.org/"&gt;taskwarrior&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/prodo/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Si el proyecto es medianamente grande (más grande que un mero script), escribo en papel. Si es algo simple/un script, anoto las cosas dentro del archivo, como varias personas.&lt;/p&gt;
+&lt;p&gt;El problema que tengo es que me gusta listar todas las cositas esas con el numero de linea y/o click que me lleve a tal. No todos los editores lo hacen por default (creo que las grandes IDEs), seguro hay un plugin que ni ganas de configurar. Se puede hacer una búsqueda, que es lo mas cercano a lo que quiero.&lt;/p&gt;
+&lt;p&gt;Uso dos editores de texto dependiendo del trabajo que tengo que hacer: &lt;a href="http://www.sublimetext.com/"&gt;Sublime Text&lt;/a&gt; para trabajos "grandes" (por alguna razón) y &lt;a href="http://www.notepad-plus-plus.org/"&gt;Notepad++&lt;/a&gt;. En ambos se puede hacer búsquedas por proyecto/archivos abiertos, la diferencia es que en Sublime Text te abre una pestañita de miercoles con los resultados (not fun), y Notepad++ te los muestra en una ventanita dockeable (good):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de búsqueda en Notepad++" src="http://blog.quinzi.com.ar/images/2013/search_notepadpp.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Qué no me gusta de esto? La forma en que te lo muestra&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/prodo/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; y el hecho que Notepad++ tiene otro tipo de regex que, según expertos, es mas pobre.&lt;/p&gt;
+&lt;p&gt;Lo más lógico es usar grep. Si usas Linux, ya viene por defecto, sino con algo como &lt;a href="http://cygwin.com/"&gt;Cygwin&lt;/a&gt; en Windows (u otras variantes). Hasta le podes poner colorcitos pero solo a una cosa (el string encontrado). No está mal tampoco pero no es muy limpio&lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/prodo/#fn:6" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de búsqueda con grep" src="http://blog.quinzi.com.ar/images/2013/search_grep.png"&gt;&lt;/p&gt;
+&lt;p&gt;Si no te gustan las terminales/lineas de comandos pero queres usar grep, hay varios programitas que te dejan (hacer una especie de) grep&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/prodo/#fn:3" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Tenes &lt;a href="http://www.mythicsoft.com/agentransack/"&gt;Agent Ransack&lt;/a&gt;, donde quedaría asi:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de busqueda con Agent Ransack" src="http://blog.quinzi.com.ar/images/2013/search_agent.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Para este tipo de trabajos no me gusta por que tengo que clickear archivo por archivo (not fun).&lt;/p&gt;
+&lt;p&gt;Y &lt;a href="http://stefanstools.sourceforge.net/grepWin.html"&gt;grepWin&lt;/a&gt;, donde hay que tener cuidado de clickear solo en "Search" y seleccionar la opción de "Content"&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de búsqueda de grepWin" src="http://blog.quinzi.com.ar/images/2013/search_grepWin.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Este no estaba tan mal, pero eso de abrir programa &amp;gt; rellenar datos no me convencia mucho. Por lineas de comando solo podes poner el path y qué buscar (que no esta mal) pero quiero que, por lo menos, esté seleccionado el "Content".&lt;/p&gt;
+&lt;h2 id="script"&gt;Say hi to proDO&lt;/h2&gt;
+&lt;p&gt;Como estoy aprendiendo Python y mas que nada lo estoy usando para hacer varios scripts&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/prodo/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; y reemplazar/dejar de dar vueltas con los batch, me decidí a hacer el mío.&lt;/p&gt;
+&lt;p&gt;Con los ejemplos anteriores, queda asi:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de búsqueda con proDO" src="http://blog.quinzi.com.ar/images/2013/search_nocolor.png"&gt;&lt;/p&gt;
+&lt;p&gt;Pero si tenes &lt;a href="https://pypi.python.org/pypi/colorama"&gt;colorama&lt;/a&gt; instalado queda asi (con mas onda):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de búsqueda con proDO con color" src="http://blog.quinzi.com.ar/images/2013/search_color.png"&gt;&lt;/p&gt;
+&lt;p&gt;Datos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Solo busca las palabras TODO y FIXME (es case insensitive: también podes poner ToDo, todo, tODO, etc)&lt;/li&gt;
+&lt;li&gt;Por default, al correr el programa te lista los archivos desde donde corre el script &lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/prodo/#fn:5" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt;, ignorando los &lt;code&gt;.bak&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Se puede especificar la ruta a buscar, corriendo &lt;code&gt;proDO.py -s/-source [rutita linda]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Se puede eliminar las lineas con: &lt;code&gt;proDO.py del/d [archivo] [linea]&lt;/code&gt; (automaticamente hace un backup (&lt;code&gt;.bak&lt;/code&gt;) del archivo por si se pone loca)&lt;/li&gt;
+&lt;li&gt;Si necesitas ejemplos de lo de arriba o queres mirar qué linda hice la ayuda: &lt;code&gt;proDO.py -h&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Si no queres escribir &lt;code&gt;proDO.py&lt;/code&gt; (la extensión es importante en Windows), podes crear un "wrapper batch": en (ejemplo) proDO.bat poner: &lt;code&gt;proDO.py %*&lt;/code&gt;. Guardás y listo, ya lo podes llamar como &lt;code&gt;proDO&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Decarga y más información en la &lt;a href="https://quinzi.com.ar/projects/prodo"&gt;página de proDO&lt;/a&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;Que esta lindo, es para linux o con Windows + &lt;a href="http://cygwin.com/"&gt;Cygwin&lt;/a&gt;, pero es mucho trabajo para configurarlo para esto. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/prodo/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;Mentira, me acordé después de hacer el script. Lo testeé y no anda mal. Sólo que no se puede buscar por proyectos, asi que hay que escribir el path en la búsqueda o abrir todos los archivos. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/prodo/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:6"&gt;
+&lt;p&gt;Se puede limpiar/formatear con awk, pero tuve problemas con Cygwin que no traía el ejecutable para la herramienta (!) &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/prodo/#fnref:6" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;No sé exactamente la diferencia entre grep y buscar dentro de los archivos (con regex), yo lo uso intercambiablemente. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/prodo/#fnref:3" rev="footnote" title="Jump back to footnote 4 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:4"&gt;
+&lt;p&gt;por que se me complicó con eso de buscar una IDE para la parte gráfica. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/prodo/#fnref:4" rev="footnote" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:5"&gt;
+&lt;p&gt;en Linux es más fácil (por lo menos en xfce): &lt;kbd&gt;botón derecho &amp;gt; terminal&lt;/kbd&gt;. En Windows tenes que apretar &lt;kbd&gt;shift + botón derecho&lt;/kbd&gt;. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/prodo/#fnref:5" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><guid>http://blog.quinzi.com.ar/prodo/</guid><pubDate>Fri, 26 Jul 2013 00:00:00 GMT</pubDate></item><item><title>Pasar de sintaxis DokuWiki a html</title><link>http://blog.quinzi.com.ar/dokuwiki-a-html/</link><description>&lt;p&gt;Para pasar de sintaxis DokuWiki a HTML necesitas poner el siguiente php:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'cli'&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="nb"&gt;php_sapi_name&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; &lt;span class="k"&gt;die&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="nb"&gt;ini_set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'memory_limit'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'128M'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nb"&gt;defined&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'DOKU_INC'&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="nb"&gt;define&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'DOKU_INC'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;realpath&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dirname&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;__FILE__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="s1"&gt;'/../'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nb"&gt;define&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'NOSESSION'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;require_once&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;DOKU_INC&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="s1"&gt;'inc/init.php'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;require_once&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;DOKU_INC&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="s1"&gt;'inc/common.php'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;require_once&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;DOKU_INC&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="s1"&gt;'inc/parserutils.php'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nv"&gt;$source&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;stream_get_contents&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;STDIN&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nv"&gt;$info&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;array&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="k"&gt;echo&lt;/span&gt; &lt;span class="nx"&gt;p_render&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'xhtml'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;p_get_instructions&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$source&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="nv"&gt;$info&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="cp"&gt;?&amp;gt;&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;en &lt;code&gt;dokuwiki\bin&lt;/code&gt; y tener &lt;code&gt;php&lt;/code&gt; en el &lt;code&gt;PATH&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para ejecutarlo, solo tenes que llamarlo, con el &lt;code&gt;input.txt&lt;/code&gt; y &lt;code&gt;output.html&lt;/code&gt; que quieras. Ejemplo:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;php path/a/dokuwiki/bin/dokucli.php &amp;lt; input.txt &amp;gt; output.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Fuente: &lt;a href="http://www.dokuwiki.org/tips:dokuwiki_parser_cli"&gt;Dokuwiki Tips&lt;/a&gt;&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/dokuwiki-a-html/</guid><pubDate>Sat, 11 Jun 2011 00:00:00 GMT</pubDate></item></channel></rss>

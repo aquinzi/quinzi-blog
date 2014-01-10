@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (xampp)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/xampp.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:54 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>XAMPP: Status Check Failure [3]</title><link>http://blog.quinzi.com.ar/xampp-status-check-failure-3/</link><description>&lt;p&gt;Un día, al actualizar &lt;a href="http://www.apachefriends.org/"&gt;XAMPP&lt;/a&gt; (el cliente de desarrollo que uso), empezó a tirar un "Status Check Failure [3]" al iniciar. Era medio molesto el mensaje por más que los servicios siguieran andando.&lt;/p&gt;
+&lt;p&gt;Busqué vaias soluciones, algunas decian que era el puerto ocupado y que
+lo usaba Skype. Skype no tengo. Otros decian que era el instalador, que
+no funcionaba con Windows 7 64 bits, pero aún descargando el archivo comprimido daba el mismo problema.&lt;/p&gt;
+&lt;p&gt;La solución fue algo asi:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ir a las &lt;code&gt;Variables del entorno&lt;/code&gt; (&lt;kbd&gt;Equipo &amp;gt; propiedades &amp;gt; configuración avanzada&lt;/kbd&gt;)&lt;/li&gt;
+&lt;li&gt;Agregar al &lt;code&gt;path&lt;/code&gt; a XAMPP (ejemplo: &lt;kbd&gt;%SystemDrive%\xampp&lt;/kbd&gt;)&lt;/li&gt;
+&lt;li&gt;Buscan el acceso directo del &lt;code&gt;xampp-control-panel.exe&lt;/code&gt; y van a sus propiedades.&lt;/li&gt;
+&lt;li&gt;Borren lo que dice en &lt;code&gt;Iniciar en...&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Fuente: &lt;a href="http://www.apachefriends.org/f/viewtopic.php?p=174321#p174507"&gt;Resolver el error explicado con imágenes en portugués&lt;/a&gt;&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/xampp-status-check-failure-3/</guid><pubDate>Tue, 31 May 2011 00:00:00 GMT</pubDate></item></channel></rss>

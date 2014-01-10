@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (guide)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/cat_guide.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Thu, 09 Jan 2014 22:13:55 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GitHub Pages para proyectos</title><link>http://blog.quinzi.com.ar/./es/gh-pages-project/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#programas-para-windows"&gt;Programas para Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#crear-repositorio"&gt;Crear repositorio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#activar-github-pages"&gt;"Activar" GitHub Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#pasarlo-al-desktop-para-trabajar"&gt;Pasarlo al desktop (para trabajar)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#preparar-branch-gh-pages"&gt;Preparar branch gh-pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#gh-pages-como-default-y-eliminar-master"&gt;gh-pages como default y eliminar master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#its-alive-archivo-de-prueba-y-subida"&gt;It's alive! (Archivo de prueba y subida)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#dominio-propio"&gt;Dominio propio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#404-pages-todos-amamos-los-error-pages"&gt;404 pages! (Todos amamos los error pages)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Pasos simples para crear un &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; para proyectos/por repo (y no para usuario u organización) además de cositas varias.&lt;/p&gt;
+&lt;p&gt;Los pasos estan tanto para CLI como para GitHub for Windows (TortoiseGit es "similar" a Git CLI) y orientado para principiantes en esto de Git, que buscan facilidad y no tanto "lío" o "vueltas". Aunque si estas cómodo con SVN podes usarlo (&lt;a href="https://help.github.com/articles/support-for-subversion-clients"&gt;ver clientes en GitHub&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Abreviaciones y otros vocabularios:&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;dfn&gt;git CLI&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;El Git que usas en una terminal/linea de comandos.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;GW&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="http://windows.github.com/"&gt;GitHub for Windows&lt;/a&gt;.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;Tortoise&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;TortoiseGit.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;Server&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;Donde se "hostean" las cosas (como GitHub). En Git esto no existe, pero asi se entiende mejor para los principiantes (repositorio remoto).&lt;/dd&gt;
+&lt;dd&gt;"Central server" si venis desde SVN. &lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;repo&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;Para hacerla más fácil, mirar "repo" como "repositorio principal/remoto" o "server" (ver definición).&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;origin&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;Así se denomina al "repositorio remoto" original y por convención el repositorio centralizado 'primario'.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;c-p&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;code&gt;commit&lt;/code&gt; seguido de &lt;code&gt;push&lt;/code&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h2 id="programas-para-windows"&gt;Programas para Windows&lt;/h2&gt;
+&lt;p&gt;En un principio, tener Git en Windows era mucho lio (porque fue creado por y para Linux) pero ahora hay varias opciones. Usualmente, si vas a usar solo GitHub, se recomienda GW. Pero si queres usar Git para otras cosas (como crear "servers" localmente y jugar ahi) recomiendo &lt;a href="http://tortoisegit.org/"&gt;TortoiseGit&lt;/a&gt; + &lt;a href="http://msysgit.github.io/"&gt;msysgit&lt;/a&gt; (git CLI) en lugar de GW:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;te sirve para varias cosas y no solo para GitHub ("lee" el protocolo &lt;code&gt;github://&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;no tenes que pelear con el PATH por si queres usar git CLI (se instala en &lt;code&gt;%appdata%&lt;/code&gt; y no podes añadir solo &lt;code&gt;bin\&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;msysgit viene con "git Bash"; una CLI re linda con colores que además te muestra en qué &lt;code&gt;branch&lt;/code&gt; estas; ademas de personalizarla con &lt;code&gt;.bashrc&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="muestra de git Bash personalizado" src="http://blog.quinzi.com.ar/images//2014/git_bash.png"&gt;&lt;/p&gt;
+&lt;h2 id="crear-repositorio"&gt;Crear repositorio&lt;/h2&gt;
+&lt;p&gt;En GitHub, crear un repositorio con el nombre que se quiera. Podes iniciar sesión e ir a &lt;a href="https://github.com/repositories/new"&gt;https://github.com/repositories/new&lt;/a&gt; o apretando en el "&lt;kbd&gt;librito&lt;/kbd&gt;".&lt;/p&gt;
+&lt;h2 id="activar-github-pages"&gt;"Activar" GitHub Pages&lt;/h2&gt;
+&lt;p&gt;Se activa magicamente creando un &lt;code&gt;branch&lt;/code&gt; llamado &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Desde web es apretando en &lt;kbd&gt;branch master&lt;/kbd&gt;; en GW es apretando arriba donde dice &lt;kbd&gt;master&lt;/kbd&gt;. Buscar &lt;kbd&gt;gh-pages&lt;/kbd&gt; y apretar opción de crear (&lt;kbd&gt;create branch&lt;/kbd&gt;). Con CLI sería (previamente clonado, mirar abajo):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git checkout --orphan gh-pages    # branch local
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="admonition info"&gt;
+&lt;p class="admonition-title"&gt;Info&lt;/p&gt;
+&lt;p&gt;El &lt;code&gt;--orphan&lt;/code&gt; crea un &lt;code&gt;branch&lt;/code&gt; separado del resto del repo (sin &lt;em&gt;parents&lt;/em&gt;). Se crea primero localmente, después se manda al &lt;code&gt;origin&lt;/code&gt; (pasos mas abajo).&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="pasarlo-al-desktop-para-trabajar"&gt;Pasarlo al desktop (para trabajar)&lt;/h2&gt;
+&lt;p&gt;Desde GitHub apretar &lt;kbd&gt;Clone in desktop&lt;/kbd&gt; (que lo tomará GW o Tortoise) o desde CLI:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git clone https://github.com/user/repo_lindo.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="preparar-branch-gh-pages"&gt;Preparar branch gh-pages&lt;/h2&gt;
+&lt;p&gt;Cambiar a &lt;code&gt;gh-pages&lt;/code&gt;. En CLI, si se usó el comando anterior (&lt;code&gt;git checkout --orphan gh-pages&lt;/code&gt;) se cambia automáticamente, sino &lt;code&gt;git checkout -b gh-pages&lt;/code&gt; para cambiar y crear un &lt;code&gt;branch&lt;/code&gt; local llamado "gh-pages".&lt;/p&gt;
+&lt;div class="admonition info"&gt;
+&lt;p class="admonition-title"&gt;Info&lt;/p&gt;
+&lt;p&gt;Al cambiar &lt;em&gt;branches&lt;/em&gt;, Windows Explorer "refresca" la carpeta donde está con el contenido del &lt;code&gt;branch&lt;/code&gt; seleccionado.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Eliminar todos los archivos que aparezcan (porque son del &lt;code&gt;master&lt;/code&gt; y no los queremos) y hacemos c-p.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git rm -rf .                      # eliminamos todo
+$ git commit -m "Iniciar gh-pages"
+$ git push -u origin gh-pages       # mandamos branch al origin
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="gh-pages-como-default-y-eliminar-master"&gt;gh-pages como default y eliminar master&lt;/h2&gt;
+&lt;p&gt;Esto es opcional, depende de tu &lt;em&gt;workflow&lt;/em&gt; o idea de uso. Si solo se va a usar &lt;code&gt;gh-pages&lt;/code&gt;, se puede usar como default y eliminar el &lt;code&gt;branch&lt;/code&gt; &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para ponerlo como default (y no usar el &lt;code&gt;master&lt;/code&gt;), en GitHub, ir a &lt;kbd&gt;settings &amp;gt; (settings &amp;gt;) Default branch&lt;/kbd&gt; y seleccionar &lt;kbd&gt;gh-pages&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;Para eliminar el &lt;code&gt;master&lt;/code&gt; hay que tener el &lt;code&gt;gh-pages&lt;/code&gt; como default. Después ir al listado de &lt;em&gt;branches&lt;/em&gt; y apretar en &lt;kbd&gt;Delete branch&lt;/kbd&gt;. Con CLI:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git branch -d master     # eliminar local
+$ git push origin :master  # eliminar de repo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="its-alive-archivo-de-prueba-y-subida"&gt;It's alive! (Archivo de prueba y subida)&lt;/h2&gt;
+&lt;p&gt;Crear un &lt;code&gt;index.html&lt;/code&gt;, lo añadimos y hacemos c-p.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git add .                   # añade todo
+$ git commit -am "Primer commit a pages"
+$ git push origin gh-pages
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;(el &lt;code&gt;-a&lt;/code&gt; es abreviatura de &lt;code&gt;add&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;Esperar unos minutos y ver si se subió el &lt;code&gt;index&lt;/code&gt; en: &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2 id="dominio-propio"&gt;Dominio propio&lt;/h2&gt;
+&lt;p&gt;Como seguramente no vas a querer entrar a &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt; porque es muy largo o queda poco profecional, GitHub permite ponerle un dominio/subdominio.&lt;/p&gt;
+&lt;p&gt;Solo basta con poner un archivo &lt;code&gt;CNAME&lt;/code&gt; que contiene el dominio/subdominio que se quiera usar, en el root de &lt;code&gt;gh-pages&lt;/code&gt; y cambiar los DNS del dominio en el host/registrar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Con un root domain (www.example.com): crear un nuevo &lt;code&gt;A record&lt;/code&gt; con la IP a &lt;kbd&gt;204.232.175.78&lt;/kbd&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Con un subdominio (sub.example.com): crear un &lt;code&gt;CNAME record&lt;/code&gt; que apunte al subdmonio del usuario en GitHub (&lt;kbd&gt;user.github.io&lt;/kbd&gt;). Esto deja que los DNS se adjusten automáticamente al IP de GitHub; se puede usar un &lt;code&gt;A record&lt;/code&gt; pero no se adjusta automáticamente.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="404-pages-todos-amamos-los-error-pages"&gt;404 pages! (Todos amamos los error pages)&lt;/h2&gt;
+&lt;p&gt;También es fácil: poner un &lt;code&gt;404.html&lt;/code&gt; en el root de &lt;code&gt;gh-pages&lt;/code&gt; y listo (no te olvides de agregarlo y c-p).&lt;/p&gt;
+&lt;section id="changes"&gt;
+
+&lt;h2&gt;Cambios&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;time&gt;2014-01-02&lt;/time&gt; Reescrito para ser mas explicativo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/section&gt;</description><category>git</category><category>github</category><guid>http://blog.quinzi.com.ar/./es/gh-pages-project/</guid><pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate></item><item><title>Box: acceder por WebDAV</title><link>http://blog.quinzi.com.ar/./es/box-webdav/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/box-webdav/#windows-explorer"&gt;Windows Explorer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/box-webdav/#bitkinex"&gt;BitKinex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Acceder por &lt;a href="http://en.wikipedia.org/wiki/WebDAV"&gt;WebDAV&lt;/a&gt; a servicios de sincronización para verlos en tu explorador de archivos sin tener que instalar el cliente -&amp;gt; esperar a que inicie -&amp;gt; indexe -&amp;gt; haga la sincronización solo para sacar un archivo&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/box-webdav/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, es priceless&lt;sup id="fnref:priceless"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/box-webdav/#fn:priceless" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Me aventuré con esto por que quería hacer un proyecto donde necesitaba un &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;. Ultimamente (o siempre fue así), no te dan la opción de hacerte cuenta de &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;, solo creando un sitio. Not interested. No tengo un server/computadora (es un pendiente) para hacerla server e instalarle &lt;a href="https://filezilla-project.org"&gt;FileZilla&lt;/a&gt;. Damnit. Me acordé de los servicios de sincronización/host de donde tengo cuenta y me aventuré.&lt;/p&gt;
+&lt;p&gt;Elegí &lt;a href="http://www.box.com"&gt;Box&lt;/a&gt;. Pensaba subir los archivos por web, ya que la sincronización es media-media en ese servicio, pero recordé que &lt;a href="https://www.sugarsync.com/"&gt;SugarSync&lt;/a&gt; tiene el "SugarSync Drive", donde podes acceder a tu cuenta con el explorador de archivos. Me puse a buscar si Box tenía la mismo o similar.&lt;/p&gt;
+&lt;p&gt;Tiene para acceder por &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;, pero solo en cuentas pagas. Después leí sobre WebDAV. Intenté configurarlo y, luego de pelear por bastante tiempo, acá está cómo hacerlo en Windows (7).&lt;/p&gt;
+&lt;h2 id="windows-explorer"&gt;Windows Explorer&lt;/h2&gt;
+&lt;p&gt;En "Equipo" (el viejo "Mi PC"), ir a &lt;kbd&gt;Conectar a unidad de red&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Seleccionar el disco (que no importa mucho parece), tildar &lt;kbd&gt;Conectar de nuevo al iniciar sesión&lt;/kbd&gt;. Clickear en &lt;kbd&gt;Conectarse a sitio web para usarlo como almacén...&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_config_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;En la ventana que aparece, seleccionar &lt;kbd&gt;Elegir una ubicación de red personalizada&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_location_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Ahora lo divertido y lo que me dió dolores de cabeza: la dirección.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_address_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Se puede poner:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Para toda la carpeta/cuenta: &lt;code&gt;https://dav.box.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Para carpeta especifica: &lt;code&gt;https://dav.box.com/dav/CARPETITA&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sale la ventana de log in. Poner nombre de usuario/e-mail de Box y la contraseña.&lt;/p&gt;
+&lt;p&gt;Opcional, en la siguiente pantalla renombrar ahora la etiqueta:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_name_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Y listo, asi queda:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mostrando disco agregado" src="http://blog.quinzi.com.ar/images/2013/webdav_networks_computer.png"&gt;&lt;/p&gt;
+&lt;p&gt;Si no te funciona, podes usar &lt;a href="http://rei.to/carotdav_en.html"&gt;CarotDAV&lt;/a&gt; (que es para "unir" varios servicios en un mismo programa portable), el famoso &lt;a href="http://www.ghisler.com/download.htm"&gt;Total Commander&lt;/a&gt; o BitKinex.&lt;/p&gt;
+&lt;h2 id="bitkinex"&gt;BitKinex&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.bitkinex.com/download"&gt;Descargar BitKinex&lt;/a&gt;. Instalar normalmente, pero recomiendo (por que leí) destildar el "I want to configure data source now" por que parece que no hace nada).&lt;/p&gt;
+&lt;p&gt;Una vez iniciado (si, aparece asi chiquito por alguna razón), buscar en la lista el Http/WebDAV, &lt;kbd&gt;right click &amp;gt; New &amp;gt; Http/WebDAV&lt;/kbd&gt; e ingresar nombre.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Creando servicio" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_new.png"&gt;&lt;/p&gt;
+&lt;p&gt;Poner datos similares de los de arriba: &lt;code&gt;dav.box.com&lt;/code&gt;, seleccionar &lt;kbd&gt;&lt;abbr title="Seguridad ante todo"&gt;SSL&lt;/abbr&gt;&lt;/kbd&gt;. Poner usuario y contraseña en el apartado de abajo:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_server.png"&gt;&lt;/p&gt;
+&lt;p&gt;También lei (opcional) que se puede poner un path al Site map (no se para qué, no noté diferencia). Se configura yendo a &lt;kbd&gt;Site Map&lt;/kbd&gt; (debajo de donde estas ahora/Server) y agregando/modificando el path con &lt;code&gt;/dav&lt;/code&gt;, eligiendo &lt;kbd&gt;Directory WebDAV-compliant&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_sitemap.png"&gt;&lt;/p&gt;
+&lt;p&gt;Y listo, solo falta hacerle doble click a la conexión y tenes los datos:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Servicio añadido" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_connection.png"&gt;&lt;/p&gt;
+&lt;p&gt;Fuente: &lt;a href="https://box.zendesk.com/entries/21534903"&gt;Box zendesk&lt;/a&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;por que la gente, a veces, lo usa como servicio de hosting (además del de sincronizar) &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/box-webdav/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:priceless"&gt;
+&lt;p&gt;literalmente. Actualmente, los sistemas opertivos lo traen de fábrica (mas, menos o nulo buggeados) &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/box-webdav/#fnref:priceless" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>box</category><category>sync</category><category>windows7</category><category>webdav</category><guid>http://blog.quinzi.com.ar/./es/box-webdav/</guid><pubDate>Sun, 04 Aug 2013 00:00:00 GMT</pubDate></item><item><title>Tutorial: save GPS location to text with Tasker</title><link>http://blog.quinzi.com.ar/./es/tasker-gps-location-to-text/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/tasker-gps-location-to-text/#background-information"&gt;Background information&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/tasker-gps-location-to-text/#tasker-task"&gt;Tasker task&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/tasker-gps-location-to-text/#homescreen"&gt;Homescreen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/tasker-gps-location-to-text/#bugs"&gt;Bugs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id="background-information"&gt;Background information&lt;/h2&gt;
+&lt;p&gt;I always wanted a way to say "Hey GPS, see this spot here? the one
+you're indicating, can you pin it with text so I can retrieve it
+later?". All the ways I've found required to install apps. I'm fine with
+that but a) install 5MB or more just to get that functionality? I didn't
+want to change my notes app nor have another one; b) install 5MB or more in my low memory
+android phone just to get that? no thank you.&lt;/p&gt;
+&lt;p&gt;Time went by, forgot about it as I'm not needing it right now (but it's
+nice to have). Installed ICS on my LG Optimus One, expanded the
+memory/A2SD, and somehow I found/tried Tasker. Yes, that program that
+it's very cool, everyone recommends it, posts the same common examples
+that you don't need but you want to use it anyway. Yes, that one. There
+are many alternatives, and even free with some limitations. But (people
+say) they are not as complete as Tasker.&lt;/p&gt;
+&lt;h2 id="tasker-task"&gt;Tasker task&lt;/h2&gt;
+&lt;p&gt;Go to the task tab and add a new one:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Task:&lt;/strong&gt; &lt;em&gt;Location to Txt&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Actions&lt;/strong&gt; for the task:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;File &amp;gt; Write file&lt;/kbd&gt;. File: choose which one to open/create. Text:
+&lt;code&gt;%DATE %TIME - %LOC - %TEXTHERE&lt;/code&gt; . Check "Append" and "Add newline"&lt;/li&gt;
+&lt;li&gt;(optional). &lt;kbd&gt;Alert &amp;gt; Flash&lt;/kbd&gt;. Text: &lt;em&gt;Pinned!&lt;/em&gt; . This creates the info
+box that you always see (the black one).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go to the Scene tab and create a new one.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Scene:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Scene creation" src="http://blog.quinzi.com.ar/images/2012/tasker_scene.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;The necessary things are: the &lt;strong&gt;TextEdit&lt;/strong&gt; (to input a description, you
+can skip this if you only want to save the coordinates. If that's the
+case, you don't even need the scene) and the &lt;strong&gt;button&lt;/strong&gt;. You can add a
+text element that shows the coordinates and an image, because images
+bring life to the UI.&lt;/p&gt;
+&lt;p&gt;If you decided to include the text that shows the coordinates, enter the
+properties and in Text add &lt;em&gt;%LOC&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In the TextEdit properties, in the Text Changed tab, add a variable
+(&lt;kbd&gt;variable &amp;gt; variable set&lt;/kbd&gt;). Name: &lt;code&gt;%HERETEXT&lt;/code&gt; To: &lt;code&gt;%new\_val&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The button, in the Tap tab.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;Task &amp;gt; Perform Task&lt;/kbd&gt;. Name: &lt;em&gt;Location to Txt&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Scene &amp;gt; Destroy scene&lt;/kbd&gt;. (pick the scene you're creating. It should
+be defaulted).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Save the changes and go back to the Task tab.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Task:&lt;/strong&gt; &lt;em&gt;Pin Here&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;Misc. &amp;gt; GPS &amp;gt; on&lt;/kbd&gt;&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Scene &amp;gt; Show Scene&lt;/kbd&gt;. Name: (Pick the scene you've previously
+created). Display As: &lt;em&gt;Activity, Full Window&lt;/em&gt; (or play and find one
+that you like). Check "Show exit button" (optional) and "continue
+task immediately"&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Task &amp;gt; wait&lt;/kbd&gt;. MS: &lt;em&gt;100&lt;/em&gt;. Everything else to 0. This is to show the
+keyboard. You can skip this (and the next) if you don't mind
+clicking the text box to type.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Input &amp;gt; Soft keyboard&lt;/kbd&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="homescreen"&gt;Homescreen&lt;/h2&gt;
+&lt;p&gt;The only thing that is left is the shortcut/widget!&lt;/p&gt;
+&lt;p&gt;Create a &lt;kbd&gt;widget &amp;gt; task&lt;/kbd&gt;. Pick &lt;em&gt;Pin Here&lt;/em&gt;&lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2012/tasker_widget.jpg" alt="New Tasker widget"&gt;
+&lt;p&gt;Here, here! touch me!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Tap and you get this!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Using task" src="http://blog.quinzi.com.ar/images/2012/tasker_working.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;When you tap "save" it saves and shows the black info popup
+boxy-box. Here is an example of what the text file could look like:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Text results" src="http://blog.quinzi.com.ar/images/2012/tasker_txt.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;When you open the link, it shows the waypoint/spot in the map (seems to
+only work with Google Maps, unless you change the format, that way it
+also works with OsmAnd - from all the maps I've tested-).&lt;/p&gt;
+&lt;h2 id="bugs"&gt;Bugs&lt;/h2&gt;
+&lt;p&gt;Nobody likes bugs but it's Android. If you choose to show the
+keyboard when the scene it's shown, it won't close automatically; you
+must close it yourself (back button). It's not the script fault nor
+Tasker's, but Android's and how it handles things (according to the
+developer). Remember that we created a "wait" action? that was to bypass
+the "bug" opening the keyboard. This might be necessary for you or not.
+This depends on the phone/tablet.&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/./es/tasker-gps-location-to-text/</guid><pubDate>Mon, 26 Nov 2012 00:00:00 GMT</pubDate></item><item><title>Conseguir RSS de los canales/channels de YouTube</title><link>http://blog.quinzi.com.ar/./es/rss-youtube/</link><description>&lt;p&gt;Me quejé por Twitter de que &lt;del&gt;YouTube&lt;/del&gt; Google habia toqueteado algo en
+YouTube que rompió el código de los podcasts managers (en mi caso
+gPodder). En todo los pios de twits,
+alguien salto con cómo había hecho para tener las suscripciones de
+YouTube en RSS. Yo pensaba que era algo sabido, pero se ve que no
+(aunque aparece en la ayuda de YouTube.. o asi hace un par de años).&lt;/p&gt;
+&lt;p&gt;Si queres suscribirte al canal de un usuario y no queres hacerte/usar
+una cuenta de YouTube para eso, simplemente pones esta url (cambiando el
+nombre de usuario):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;http://www.youtube.com/rss/user/USERNAME/videos.rss
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Eso te redirecciona a:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;http://gdata.youtube.com/feeds/base/users/USERNAME/uploads?orderby=updated&amp;amp;alt=rss&amp;amp;client=ytapi-youtube-rss-redirect&amp;amp;v=2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ya que estamos, si te queres suscribir a un tag especifico (este no lo
+probé pero lo tengo a mano)&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;http://www.youtube.com/rss/tag/YOURTAGHERE.rss
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-317"&gt;
+&lt;div id="comment-317"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/206877debf6f9420a94ae14a257db803?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;Sebs&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;        &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+October 9, 2012 at 7:01 pm      &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;cofcofAlguienreportándosecofcof :P&lt;/p&gt;
+&lt;p&gt;Thanks! ^^&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>podcasts</category><category>youtube</category><guid>http://blog.quinzi.com.ar/./es/rss-youtube/</guid><pubDate>Fri, 28 Sep 2012 00:00:00 GMT</pubDate></item><item><title>Leer ePUB en Kindle 3</title><link>http://blog.quinzi.com.ar/./es/kindle3-epub/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/kindle3-epub/#jailbreak"&gt;Jailbreak&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/kindle3-epub/#launchpad"&gt;Launchpad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/kindle3-epub/#cool-reader-3"&gt;Cool Reader 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;El otro día andaba buscando si era posible leer ePUBs en el Kindle y, si
+era asi, cómo leerlos. Sólo por curiosidad.&lt;/p&gt;
+&lt;h2 id="jailbreak"&gt;Jailbreak&lt;/h2&gt;
+&lt;p&gt;Primero hacerle Jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;bajando el archivo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Descomprimirlo. Buscar el &lt;code&gt;update_*_install*.bin&lt;/code&gt;, donde * es
+dependiendo del Kindle y firmware que tenga (en el post y dentro del
+comprimido dice cómo) y pasarlo al root del kindle.&lt;/p&gt;
+&lt;p&gt;Liberar/eject el Kindle y apretar &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2 id="launchpad"&gt;Launchpad&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Descargar este archivo&lt;/a&gt; y descomprimirlo.&lt;/p&gt;
+&lt;p&gt;Pasar el &lt;code&gt;update_launchpad_0.0.1c_*_install.bin&lt;/code&gt; (donde * es la version
+del Kindle que tengas) al root del kindle.&lt;/p&gt;
+&lt;p&gt;Liberar/eject el Kindle y apretar &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;Después de esto, hay dos lectores que se les puede instalar: el fbKindle
+y Cool Reader. Cada uno tiene sus pro y contras. De las de "usabilidad"
+uno (fbKindle) acepta links y muestra el furigana como se tendria que
+mostrar cuando un navegador no los puede interpretar (inline) pero no
+muestra bien las tablas, ademas de que parece que no se desarrolla mas.
+El otro (Cool Reader) no acepta links, el furigana los muestra con line
+breaks, muestra bien las tablas y parece que todavia se desarolla. Aca
+sólo "muestro" como se instala el Cool Reader. (el otro es casi lo
+mismo)&lt;/p&gt;
+&lt;h2 id="cool-reader-3"&gt;Cool Reader 3&lt;/h2&gt;
+&lt;p&gt;Los formatos que Cool Reader 3 lee son: fb2, txt, html, rtf, chm, epub,
+mobi. Se creó (y su "principal objetivo") para leer los &lt;a href="http://en.wikipedia.org/wiki/Fb2"&gt;fb2&lt;/a&gt;, por eso
+los epub (y seguro HTML y chm) no los lee "tan bien".&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=148850"&gt;Descargar el archivo&lt;/a&gt; y descomprimirlo.&lt;/p&gt;
+&lt;p&gt;Copiar las carpetas &lt;code&gt;cr3&lt;/code&gt; y &lt;code&gt;qtKindle&lt;/code&gt; en el root del kindle. Copiar el
+archivo de &lt;code&gt;launchpad\cr3.ini&lt;/code&gt; a la carpeta del root &lt;code&gt;launchpad&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Liberar/eject el Kindle. Rapidamente apretar (en el home)
+&lt;kbd&gt;Shift Shift Espacio&lt;/kbd&gt;, aparece un “success!” abajo a la izquierda, y
+apretar &lt;kbd&gt;Shift C R&lt;/kbd&gt;, aparece el “success!” y carga el programa.&lt;/p&gt;
+&lt;p&gt;Para abrir los archivos, se aprieta la tecla &lt;kbd&gt;Menu&lt;/kbd&gt; o apretar &lt;kbd&gt;s&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;Hotkeys básicas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;Alt Back&lt;/kbd&gt; - Sale del programa&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt Shift&lt;/kbd&gt; - Collapse \ deploy Cool Reader&lt;/li&gt;
+&lt;li&gt;En el dialogo de preferencias: &lt;kbd&gt;Home&lt;/kbd&gt; - guarda las opciones,
+&lt;kbd&gt;Back&lt;/kbd&gt; - sale sin guardar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-227"&gt;
+&lt;div id="comment-227"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/ebf1bd99e7fead4d2f84608a397de7f5?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://hookdump.com.ar" rel="external nofollow" class="url"&gt;hookdump&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;       &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+February 9, 2012 at 1:02 pm &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;o.O Esto funca?&lt;br&gt;
+Usualmente soy un freak que jailbreakea/upgradea firmware en todos los dispositivos, desde el iPhone hasta la licuadora(?). &lt;/p&gt;
+&lt;p&gt;PERO… El kindle… el kindle para mi es sagrado. &lt;/p&gt;
+&lt;p&gt;Así que pregunto: ¿Esto es inocente e inocuo?, ¿no podría destruir mi kindle por toda la eternidad?, ¿probaste hacer esto?&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-228"&gt;
+&lt;div id="comment-228"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;       &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;
+February 10, 2012 at 11:25 am       &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Si,si, funca. Por eso lo subi&lt;/p&gt;
+&lt;p&gt;Es inocente. Es un programa que se activa como dice ahi arriba. Podes salir y volver al library reader thing del kindle tranquilamente, apretando las teclitas de ahi/por el menu.&lt;/p&gt;
+&lt;p&gt;Todo lo que escribo esta probado, a no ser que se diga lo contrario&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="post pingback"&gt;
+&lt;p&gt;Pingback: &lt;a href="http://www.taghall.com/epub/" rel="external nofollow" class="url"&gt;Epub | TagHall&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>kindle</category><category>epub</category><guid>http://blog.quinzi.com.ar/./es/kindle3-epub/</guid><pubDate>Fri, 30 Dec 2011 00:00:00 GMT</pubDate></item><item><title>Windows 7: Themes personalizados y Aero Glass</title><link>http://blog.quinzi.com.ar/./es/windows7-themes-aero/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/windows7-themes-aero/#themes-personalizados"&gt;Themes personalizados&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/windows7-themes-aero/#mejor-theme-manager"&gt;Mejor theme manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/windows7-themes-aero/#aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Tenés Windows 7 Home Basic (o similar), seguro que te aburriste del theme/tema &lt;em&gt;baby blue&lt;/em&gt; que trae por defecto que no se puede cambiar. No esperes más y cambialo ya.&lt;/p&gt;
+&lt;h2 id="themes-personalizados"&gt;Themes personalizados&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Desactivar el UAC: (&lt;kbd&gt;Panel de Control &amp;gt; Cambiar Configuración de Control del Usuario&lt;/kbd&gt;. O buscar &lt;kbd&gt;UAC&lt;/kbd&gt; en la cajita de búsqueda del menú inicio o panel de control). Lo que hay que hacer es desactivarlo o ponerlo en la segunda barrita (contando desde abajo).&lt;/li&gt;
+&lt;li&gt;Instalar el &lt;a href="http://uxstyle.com/"&gt;UxStyle Core&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/windows7-themes-aero/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;: Leer los Términos de Servicio y si se
+está de acuerdo, siguiente. Si no se está de acuerdo, igual.&lt;/li&gt;
+&lt;li&gt;Opcional: Poner la configuración de UAC como se tenia anteriormente&lt;/li&gt;
+&lt;li&gt;Descargar e instalar los temas. Éstos van en &lt;code&gt;C:\Windows\Resources\Themes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Cambiarlos en &lt;kbd&gt;Panel de Control &amp;gt; Cambiar Combinación de colores&lt;/kbd&gt; y elegir
+el que más te guste. Acá hay un problemita, capaz que es mío,
+los themes tienen el mismo nombre (Windows 7 Standard/Basic) asi que
+no queda otra que ir clickeando y ver como queda en la muestra :)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Fuente: &lt;a href="http://www.sevenforums.com/tutorials/34579-enabling-custom-themes-windows-7-a.html"&gt;Seven forums: enabling custom themes&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="mejor-theme-manager"&gt;Mejor theme manager&lt;/h2&gt;
+&lt;p&gt;Como viene con Windows 7 Home Basic (yendo por &lt;kbd&gt;Panel de Control &amp;gt; Cambiar Combinación de colores&lt;/kbd&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Theme manager de Windows 7 Home Basic" src="http://blog.quinzi.com.ar/images/2013/win7_themes_settings.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Al instalar themes, te repite el nombre "Windows 7 Standard/Basic" varias veces. Instalando &lt;a href="http://winaero.com/download.php?view.3"&gt;Personalization Panel&lt;/a&gt; (como administrador) tenes un mejor theme manager:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Personalization Panel" src="http://blog.quinzi.com.ar/images/2013/win7_themes_personalization_panel.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Ademas de que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Podes cambiar el wallpaper en Windows 7 Starter&lt;/li&gt;
+&lt;li&gt;Te deja cambiar el color de las ventanas en Windows 7 Home Basic&lt;/li&gt;
+&lt;li&gt;Tiene asociaciones de archivos &lt;code&gt;*.theme&lt;/code&gt;, &lt;code&gt;*.msstyles&lt;/code&gt; y &lt;code&gt;*.themepack&lt;/code&gt;. Basicamente permite hacer doble click sobre el theme y te salta el programa para que eligas.&lt;/li&gt;
+&lt;li&gt;Dependiendo del theme, podes tener cierta transparencia:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Mostrando poca transparencia en los bordes" src="http://blog.quinzi.com.ar/images/2013/win7_themes_blacktrans.jpg"&gt;&lt;/p&gt;
+&lt;h2 id="aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)&lt;/h2&gt;
+&lt;p&gt;Siempre y cuando tu compu lo permita, podes activar el Aero instalando el &lt;a href="http://winaero.com/download.php?view.13"&gt;Aero Patch&lt;/a&gt;. Esto te da:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Aero Glass y coloración&lt;/li&gt;
+&lt;li&gt;soporte full de themes incluyendo RSS y Slideshow&lt;/li&gt;
+&lt;li&gt;Aero peak, shake y WinFlip 3D (y los efectitos cuando minimizas la ventana)&lt;/li&gt;
+&lt;li&gt;Soporte de themes de terceros (con lo que parece no necesitar el &lt;a href="http://uxstyle.com/"&gt;UxStyle Core&lt;/a&gt;, but you tell me)&lt;/li&gt;
+&lt;li&gt;El theme manager de los "Windows 7 polenta":&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Theme manager Windows 7" src="http://blog.quinzi.com.ar/images/2013/win7_themes_manager.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;e incluso te da la opción en el menú contextual, que antes no estaba:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.quinzi.com.ar/images/2013/win7_themes_contextmenu.png"&gt;&lt;/p&gt;
+&lt;p&gt;Instalas normalmente (como administrador) y se aplica el patch. No tiene forma grafica de avisarte que terminó (teoricamente se reinicia el sistema solo), asique esperá unos segundos (como 10, o cuando parece que no esta procesando nada) y reiniciá (&lt;strong&gt;REINICIÁ&lt;/strong&gt;, no cierres y entres de nuevo a la sesión, que no funciona). Para desinstalar, volves a correr el patch.&lt;/p&gt;
+&lt;p&gt;Transparencia "full" (&lt;a href="http://ap-graphik.deviantart.com/art/Soft7-2-0-161602097"&gt;Soft7&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Estilo Visual, mucha transparencia" src="http://blog.quinzi.com.ar/images/2013/win7_themes_soft.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;También podes usar totalmente opaco (&lt;a href="http://www.deviantart.com/art/1-268398605"&gt;+1 Dark&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Estilo Visual, opaco" src="http://blog.quinzi.com.ar/images/2013/win7_themes_flat.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;O miti y miti (&lt;a href="http://snipes2.deviantart.com/art/mini-em-all-Update-276670844"&gt;mini'em all, alien 1&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Estilo Visual, opaco y transparencia" src="http://blog.quinzi.com.ar/images/2013/win7_themes_miniem.jpg"&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;Existen parches, pero todos saben que es un 50% de que anden/no pase
+nada y 50% de que se arruine algo y tener que, a veces, reinstalar el sistema operativo. Este programita es
+un servicio (lo pueden encontrar en el &lt;kbd&gt;Administrador de
+tareas &amp;gt; servicios&lt;/kbd&gt;, se llama &lt;code&gt;UnsignedThemes.exe&lt;/code&gt;) que ocupa un poquito de
+memoria y "es un poco más seguro" (para el sistema) que los parches. El
+proceso "engaña" a Windows en pensar que todos los temas estan firmados
+y asi poder usar los personalizados. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/windows7-themes-aero/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>Windows 7</category><category>aero</category><category>themes</category><guid>http://blog.quinzi.com.ar/./es/windows7-themes-aero/</guid><pubDate>Sat, 13 Feb 2010 00:00:00 GMT</pubDate></item><item><title>Crear Javadoc</title><link>http://blog.quinzi.com.ar/./es/javadoc/</link><description>&lt;p&gt;Un Javadoc es un generador de documentación para API en HTML. Para los demás mortales: esa
+información que sale al escribir algun nombre de una
+variable/objeto/método seguido de un punto, seleccionando después el
+método que se quiere.&lt;/p&gt;
+&lt;p&gt;Estaba buscando por ahí cómo hacer eso pero con mis propios
+métodos/atributos/variables/objetos porque vamos, poner nombres super descriptivos y
+recontra super largos no da, pones cortos que más o menos te guien pero
+después de unos días ni sabes que hacen por ser algunos parecidos.&lt;/p&gt;
+&lt;p&gt;Un poquitito de búsqueda &lt;a href="http://www.ehow.com/how_2094987_create-javadoc-commenting.html"&gt;dió este resultado&lt;/a&gt;, cual lo transcribo y le
+pongo un par de imágenes para guiarlos ademas de un par de ejemplos.&lt;/p&gt;
+&lt;p&gt;Localizar lo que se quiere que tenga una explicación, yo voy a usar un
+método pero puede ser una variable/objeto. Situarse sobre el nombre de
+tal. Comenzar un comentario (&lt;code&gt;/**&lt;/code&gt;) y den &lt;kbd&gt;enter&lt;/kbd&gt;. Puede ser que les ponga algo por default, como los parámetros de un método. Acá se se escribe lo que se quiere, pongo algo de ejemplo:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;&lt;span class="cm"&gt;/**&lt;/span&gt;
+&lt;span class="cm"&gt;* Hola que tal, soy una explicacion&lt;/span&gt;
+&lt;span class="cm"&gt;* @since 1.0&lt;/span&gt;
+&lt;span class="cm"&gt;* @param pl vector que se separa&lt;/span&gt;
+&lt;span class="cm"&gt;* @param direccion no me acuerdo para que era&lt;/span&gt;
+&lt;span class="cm"&gt;*/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Nótese que al poner &lt;code&gt;@&lt;/code&gt; se despliegan un par opciones, pero no creo que se necesiten mucho.&lt;/p&gt;
+&lt;p&gt;Ahora van a x lugar, empiezan a tipear y:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Javadoc tooltip" src="http://blog.quinzi.com.ar/images/2009/javadoc01.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Qué lindo no? Ahora no tienen que estar adivinando qué hace,
+qué retorna (si es &lt;code&gt;true-false&lt;/code&gt; para hacer algo que no tiene que ver con
+verdadero-falso).&lt;/p&gt;
+&lt;p&gt;Para los atributos/variables es lo mismo. No sé para qué puede servir
+pero si le pones nombres genéricos del estilo "a", "b", "foo1", "foo2",
+"foodos" y por el estilo, sirve.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Javadoc Tooltip para variables" src="http://blog.quinzi.com.ar/images/2009/javadoc02.gif"&gt;&lt;/p&gt;</description><category>java</category><guid>http://blog.quinzi.com.ar/./es/javadoc/</guid><pubDate>Tue, 24 Nov 2009 00:00:00 GMT</pubDate></item><item><title>Editar menú contextual de Opera</title><link>http://blog.quinzi.com.ar/./es/opera-editar-menu-contextual/</link><description>&lt;p&gt;Teniendo problemas con la conexión, me decidí a volver a usar gestores de descargas, pero tales (o mejor, &lt;a href="http://www.orbitdownloader.com/"&gt;Orbit Downloader&lt;/a&gt;) no se integraban con Opera. &lt;/p&gt;
+&lt;p&gt;En Opera vayan a &lt;kbd&gt;Herramientas &amp;gt; Preferencias&lt;/kbd&gt; (o
+&lt;kbd&gt;alt+p&lt;/kbd&gt;), pestaña &lt;kbd&gt;Avanzado&lt;/kbd&gt; y a la barra de la izquierda
+vayan a &lt;kbd&gt;Barras&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;Opcional: duplicar el &lt;code&gt;Opera Standard&lt;/code&gt; en &lt;kbd&gt;Configurar menú&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menu Setup de Opera" src="http://blog.quinzi.com.ar/images/2009/opera01.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Una vez duplicado, cierren Opera. Vayan a su profile + menu, usualmente es en: &lt;code&gt;C:\Documents and Settings\[usuario]\Datos de programa\Opera\[versión de Opera]\menu&lt;/code&gt;. Si no saben, vayan a &lt;kbd&gt;opera:about&lt;/kbd&gt; (yendo por el menu &lt;kbd&gt;Ayuda &amp;gt; Acerca de Opera&lt;/kbd&gt;) y fijense en la sección de
+&lt;code&gt;Rutas&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En esa carpeta se encuentra un archivo &lt;code&gt;.ini&lt;/code&gt;. En mi caso, como no le
+cambié el nombre es: &lt;code&gt;standard\_menu (1).ini&lt;/code&gt;. Ábranlo en un
+editor de texto y busquen &lt;code&gt;[Link Popup Menu]&lt;/code&gt; . Ahi estan todas las
+opciones de cuando se hace click sobre un link. &lt;/p&gt;
+&lt;p&gt;Al final de esa sección agreguen un separador (solo para quede lindo), copien y pegen esa linea que es algo asi &lt;code&gt;--------------------[número]&lt;/code&gt;, y cambien el número ese por uno más.
+Despúes de esa linea, peguen esta y modifiquen:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;&lt;span class="na"&gt;Item, "Download with Orbit"&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;Execute program, "C:\Archivos de programa\Orbitdownloader\orbitdm.exe","%l"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Donde "Download with Orbit" es lo que se va a mostrar al hacer
+click derecho/menú contextual. &lt;/p&gt;
+&lt;p&gt;La ruta es hacia donde está el programa propiamente dicho. El parámetro
+&lt;code&gt;%l&lt;/code&gt; es el &lt;code&gt;lnk&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Guarden el archivo, (re)inicien Opera. Vayan a un link de descarga
+(cualquier tipo de archivo) y et voilà! aparece en el menú!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.quinzi.com.ar/images/2009/opera02.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Hay otra opción que es para descargar contenido multimedia al estilo
+Youtube. Obviamente, se puede hacer abriendo &lt;code&gt;grab++&lt;/code&gt; (viene incluído
+en el paquete), pero como a veces no hay ganas de abrirlo, también se
+puede hacer por menu.&lt;/p&gt;
+&lt;p&gt;En el .ini busquen &lt;code&gt;[Document Popup Menu]&lt;/code&gt; . Esto es cuando haces
+click en un lugar "limpio" (sin imágenes, links, etc). Agreguen y modifiquen al final:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;&lt;span class="na"&gt;Item, "Grab++ Video By Orbit"&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"Execute program,"C:\Archivos de Programa\Orbitdownloader\Grab.exe","%u""&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Guarden y reinicien Opera. En un lugar X de la página (en este ejemplo, un video
+de Youtube, al lado del video), y sale el menú:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.quinzi.com.ar/images/2009/opera03.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Esto abre el &lt;code&gt;Grab++&lt;/code&gt; (un addon sería) y trae el video (previa
+recarga de la página). &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Muestra del addon" src="http://blog.quinzi.com.ar/images/2009/opera04.gif"&gt;&lt;/p&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-101"&gt;
+&lt;div id="comment-101"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;Luxiano&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+August 16, 2009 at 4:52 pm    &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Ves eso??? se me cae una idola :P&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>opera</category><guid>http://blog.quinzi.com.ar/./es/opera-editar-menu-contextual/</guid><pubDate>Sun, 16 Aug 2009 16:10:00 GMT</pubDate></item><item><title>Lanzar aplicaciones desde Ejecutar</title><link>http://blog.quinzi.com.ar/./es/programas-ejecutar/</link><description>&lt;p&gt;Hace un par de semanas/meses instalé nuevamente &lt;a href="http://www.launchy.net/"&gt;Launchy&lt;/a&gt;. Al poco
+tiempo (minutos) lo saqué. Me pareció no-muy-de-mi-gusto teniendo las
+aplicaciones que tenía corriendo en ese momento.&lt;/p&gt;
+&lt;p&gt;Pocos minutos después, me acordé de que había visto por algún lado hacer
+lo que hace Launchy (lanzador de aplicaciones) con la &lt;strong&gt;ventana de
+Ejecutar&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;Hay que ir a &lt;kbd&gt;Mi PC &amp;gt; propiedades &amp;gt; Sistema &amp;gt; Opciones avanzadas&lt;/kbd&gt;.
+Abajo hay un botón que dice &lt;kbd&gt;Variables de entorno&lt;/kbd&gt;, entramos ahí.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Propiedades del sistema" src="http://blog.quinzi.com.ar/images/2009/run01.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Se abre una ventanita. Abajo, en &lt;code&gt;Variables del Sistema&lt;/code&gt;, buscamos
+&lt;code&gt;Path&lt;/code&gt; y damos click en &lt;kbd&gt;Modificar&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Variables del sistema" src="http://blog.quinzi.com.ar/images/2009/run02.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Sale otro Pop Up, y modificamos el valor de la variable. Lo único
+que hay que hacer es ir hasta el final, agregar &lt;code&gt;;&lt;/code&gt; (punto y coma)
+seguido de la ruta en donde se encuentran los shorcuts/atajos/accesos directos.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Editar variable del sistema" src="http://blog.quinzi.com.ar/images/2009/run03.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Aceptar, aceptar, aceptar. Listo! ahora &lt;kbd&gt;Win + r&lt;/kbd&gt;, el nombre del shortcut
+.. et voilà!&lt;/p&gt;
+&lt;h3 id="update"&gt;UPDATE&lt;/h3&gt;
+&lt;p&gt;Le dí otra oportunidad al &lt;a href="http://www.launchy.net/"&gt;Launchy&lt;/a&gt;. Me gustó, no consume tanto (o sí,
+dependiendo el gusto de cada uno).&lt;/p&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-34"&gt;
+&lt;div id="comment-34"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.luxiano.com.ar" rel="external nofollow" class="url"&gt;Luxiano&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;July 19, 2009 at 1:53 pm    &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Yo también usaba Launchy hasta que lo saqué (también tengo poca RAM ¬¬)… y empecé a usar Ejecutar :D &lt;/p&gt;
+&lt;p&gt;PD: si, que tierna, no? jaja :P &lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-35"&gt;
+&lt;div id="comment-35"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 19, 2009 at 7:28 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;También tenes menos de 1 GB de RAM? Hagamos un club para que no se nos rían en la cara… :P &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-36"&gt;
+&lt;div id="comment-36"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.luxiano.com.ar" rel="external nofollow" class="url"&gt;Luxiano&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 19, 2009 at 9:19 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Tengo 512 :(  buaaa&lt;/p&gt;
+&lt;p&gt;El club para cuando quieras :P &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-37"&gt;
+&lt;div id="comment-37"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 20, 2009 at 2:27 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Yo tengo un poco mas 700 (grafica integrada)&lt;/p&gt;
+&lt;p&gt;Y… Ahora! pero ponele vos el nombre :P &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-38"&gt;
+&lt;div id="comment-38"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.luxiano.com.ar" rel="external nofollow" class="url"&gt;Luxiano&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 20, 2009 at 2:43 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Yo tengo una placa de video con 64MB… :( &lt;/p&gt;
+&lt;p&gt;Nombre del club… subRAM? :P &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-39"&gt;
+&lt;div id="comment-39"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 20, 2009 at 3:16 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Luxiano y yo, A.Q., somos los dos primeros miembros del club subRAM. El único requisito es tener menos de 1GB de tal en estos tiempos (2009).&lt;/p&gt;
+&lt;p&gt;Si quieres unirte, no dudes en dejar un mensaje en este post.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-40"&gt;
+&lt;div id="comment-40"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.luxiano.com.ar" rel="external nofollow" class="url"&gt;Luxiano&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 20, 2009 at 9:49 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Un día de estos se hace la página :D &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-41"&gt;
+&lt;div id="comment-41"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 21, 2009 at 2:17 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt; :D &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="post pingback"&gt;
+&lt;p&gt;Pingback: &lt;a href="http://www.eikiu.com.ar/intentode/mi-palm-en-observacin" rel="external nofollow" class="url"&gt;Intento de Blog » Mi Palm en observación&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="post pingback"&gt;
+&lt;p&gt;Pingback: &lt;a href="http://www.eikiu.com.ar/intentode/subram-sociedad-de-subrameados" rel="external nofollow" class="url"&gt;Intento de Blog » subRAM, sociedad de subRAMeados&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>run forest run</category><category>windows</category><guid>http://blog.quinzi.com.ar/./es/programas-ejecutar/</guid><pubDate>Sat, 18 Jul 2009 00:00:00 GMT</pubDate></item><item><title>AutoHotkey + Reemplazo</title><link>http://blog.quinzi.com.ar/./es/autohotkey-reemplazo/</link><description>&lt;p&gt;Como había escrito &lt;a href="link://slug/autohotkey-nueva-carpeta"&gt;anteriormente&lt;/a&gt;, se puede usar tranquilamente el
+AutoHotkey para suplantar texto. También existe una app un poco más
+simple (y más gráfica) basada en este, que es &lt;a href="http://www.lifehacker.com/software/texter/lifehacker-code-texter-windows-238306.php"&gt;Texter&lt;/a&gt;, asique depende de tus necesidades, elegí.&lt;/p&gt;
+&lt;p&gt;El texto se puede sustituir de dos formas: auto-sustisución o mediante
+un trigger. Consideraría la primer opción si estuviese tomando notas, o
+escribiendo un texto muy largo, por ejemplo.  Por ahora solo me voy a enfocar en la 2º que me
+parece más bonita.&lt;/p&gt;
+&lt;p&gt;Se crea el script y dentro del mismo se coloca (es un ejemplo):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;#Hotstring EndChars `t
+:O:c++base::
+(
+/*
+Nombre Programa:
+Autor:
+Descripción:
+*/
+
+#include &amp;lt;cstdlib&amp;gt;
+#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main( ) {
+//Definición de variables
+//Comienza Programa
+//salida: Pausa de Ventana. Tambien puede ser getche(); llamando a
+conio.h -
+
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+
+)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;La explicación es la siguiente:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;#Hotstring EndChars `t&lt;/code&gt;: nuestro trigger (&lt;code&gt;tab&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:O:c++base::&lt;/code&gt;: la &lt;code&gt;O&lt;/code&gt; sirve para omitir el caracter (tecla) de trigger. En este caso, si no lo pondría, me dejaría un tab después de la sustitución. &lt;code&gt;c++base&lt;/code&gt; es la palabra clave.&lt;/li&gt;
+&lt;li&gt;El primer y último paréntesis indican el inicio y fin del texto con el que se susplantará.&lt;/li&gt;
+&lt;li&gt;Lo que esta dentro de los paréntesis: el texto con el que se susplantará.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lo ejecutamos y probamos en un editor de texto: escribimos &lt;code&gt;c++base&lt;/code&gt; y seguido presionamos &lt;kbd&gt;tab&lt;/kbd&gt;. Se nos tendría que haber sustituido por el texto marcado.&lt;/p&gt;
+&lt;p&gt;Si queremos hacerlo solamente con una linea (ejemplo: una dirección de
+mail), hay que escribir (ademas del primer renglón):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;:O:@mimail::esteesmimailsuperlargoquenoquieroescribir@todoeltiempo.com
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Con esto, y si escribis todo el tiempo lo mismo, te puede ayudar a
+reducir el tiempo.&lt;/p&gt;</description><category>autohotkey</category><guid>http://blog.quinzi.com.ar/./es/autohotkey-reemplazo/</guid><pubDate>Mon, 01 Jun 2009 15:33:00 GMT</pubDate></item></channel></rss>

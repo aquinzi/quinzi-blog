@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (kindle)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/kindle.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:55 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Read ePUB in Kindle 3</title><link>http://blog.quinzi.com.ar/kindle3-epub/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#jailbreak"&gt;Jailbreak&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#launchpad"&gt;Launchpad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#cool-reader-3"&gt;Cool Reader 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;The other day I was looking if there was a possibility to read ePUBs in
+Kindle, and if yes, how to. Just for fun.&lt;/p&gt;
+&lt;h2 id="jailbreak"&gt;Jailbreak&lt;/h2&gt;
+&lt;p&gt;First you have to jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;downloading the file&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Unzip it. Find &lt;code&gt;update_*_install*.bin&lt;/code&gt; where * is your kindle and
+firmware version. And copy it to (your kindle's) root.&lt;/p&gt;
+&lt;p&gt;Eject Kindle and press &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2 id="launchpad"&gt;Launchpad&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Download this file&lt;/a&gt; and unzip it.&lt;/p&gt;
+&lt;p&gt;Copy &lt;code&gt;update_launchpad_0.0.1c_*_install.bin&lt;/code&gt; where * is your kindle and
+firmware version. And copy it to (your kindle's) root.&lt;/p&gt;
+&lt;p&gt;Eject Kindle and press &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;After this, there 2 readers that you can install: fbKindle and Cool
+Reader. Each one has its pros and cons. In terms of "usabillity", one
+(fbKindle) allows links and shows furigana as when a browser can't
+interpret them (inline) but doesn't show tables propertly. However, I
+think it's not developed anymore. The other one (Cool Reader) doesn't
+allow links, furigana it's shown with line breaks, does show tables
+propertly and it seems that it's still developed. Here I show how to
+install Cool Reader (the other one is almost the same)&lt;/p&gt;
+&lt;h2 id="cool-reader-3"&gt;Cool Reader 3&lt;/h2&gt;
+&lt;p&gt;The formats read by the Cool Reader are fb2, txt, html, rtf, chm, epub, mobi. It was
+created (and it's "main objective") for reading &lt;a href="http://en.wikipedia.org/wiki/Fb2"&gt;fb2&lt;/a&gt;, that's why ePUB
+(and surely HTML and chm) are not read "propertly".&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=148850"&gt;Download the file&lt;/a&gt; and unzip it.&lt;/p&gt;
+&lt;p&gt;Copy folders &lt;code&gt;cr3&lt;/code&gt; and &lt;code&gt;qtKindle&lt;/code&gt; to Kindle's root. Copy file from
+&lt;code&gt;launchpad\cr3.ini&lt;/code&gt; to the &lt;code&gt;launchpad&lt;/code&gt; folder (root).&lt;/p&gt;
+&lt;p&gt;Eject Kindle. Quickly press (in home) &lt;kbd&gt;Shift Shift Space&lt;/kbd&gt;, a "success!"
+message it's shown on the bottom left corner. Press &lt;kbd&gt;Shift C R&lt;/kbd&gt;, a
+"success!" message appears and the program loads.&lt;/p&gt;
+&lt;p&gt;To open files, you must press &lt;kbd&gt;Menu&lt;/kbd&gt; key or press &lt;kbd&gt;S&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;Basic Hotkeys:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;Alt Back&lt;/kbd&gt; - Exit program&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Alt Shift&lt;/kbd&gt; - Collapse \ deploy Cool Reader&lt;/li&gt;
+&lt;li&gt;In preferences dialogue: &lt;kbd&gt;Home&lt;/kbd&gt; - saves options, &lt;kbd&gt;Back&lt;/kbd&gt; - quit
+without saving&lt;/li&gt;
+&lt;/ul&gt;</description><category>kindle</category><category>epub</category><guid>http://blog.quinzi.com.ar/kindle3-epub/</guid><pubDate>Fri, 30 Dec 2011 00:00:00 GMT</pubDate></item><item><title>Kindle 3 review... ish</title><link>http://blog.quinzi.com.ar/review-kindle3/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/review-kindle3/#caracteristicas"&gt;Caracteristicas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/review-kindle3/#recepcion"&gt;Recepción&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/review-kindle3/#botones"&gt;Botones&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/review-kindle3/#reading-timetesting"&gt;Reading time/testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/review-kindle3/#conexion-wi-fi"&gt;Conexión Wi-Fi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/review-kindle3/#browser-y-javascript"&gt;Browser y Javascript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Hace una semana (más o menos) recibí mi Kindle v3 Wi-Fi. El aparato es lindo,
+con estética bien cuidada, liviano, con un par de falencias en el diseño
+y funcionamiento/configuración.&lt;/p&gt;
+&lt;h2 id="caracteristicas"&gt;Caracteristicas&lt;/h2&gt;
+&lt;p&gt;Asi rapidito:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;19cm de alto, 12.3cm de ancho y 0.85cm de grosor&lt;/li&gt;
+&lt;li&gt;Pesa 241 gramos&lt;/li&gt;
+&lt;li&gt;Pantalla de 6", 600x800 pixeles.&lt;/li&gt;
+&lt;li&gt;Tiene 3GB para el contenido (1GB mágico)&lt;/li&gt;
+&lt;li&gt;Formatos: AZM, TXT, PDF Audible (AA, AAX), MP3, Mobi (DRM-free),
+PRC, PNG...&lt;/li&gt;
+&lt;li&gt;Otras que no importan.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="recepcion"&gt;Recepción&lt;/h2&gt;
+&lt;p&gt;Vamos con lo primero, el momento de la recepción:&lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2011/kindle01.jpg" alt="Caja del Kindle"&gt;
+&lt;p&gt;Caja&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2011/kindle02.jpg" alt="Sello Frustation-Free"&gt;
+&lt;p&gt;Frustration-free certified!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2011/kindle03.jpg" alt="Kindle en caja"&gt;
+&lt;p&gt;Momento de despertar, sr. Kindle&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2011/kindle04.jpg" alt="Tapa del manual"&gt;
+&lt;p&gt;Quick start guide, me gusta el diseño de las
+letritas&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2011/kindle05.jpg" alt="Manual abierto en acordión"&gt;
+&lt;p&gt;Start guide en acordión (notese el diseño de las letritas)&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2011/kindle06.jpg" alt="Caja del cargador"&gt;
+&lt;p&gt;Cargador en cucha&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2011/kindle07.jpg" alt="Cable y cargador"&gt;
+&lt;p&gt;Cargador y cable usb haciendo cosas 16+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;El &lt;em&gt;packaging&lt;/em&gt; se siente como reciclado/&lt;em&gt;enviroment-friendly&lt;/em&gt;. Como
+vienen algunos celulares ahora, que me parece muy bien.&lt;/p&gt;
+&lt;p&gt;En la mano se siente bien y livianito. El color es grafito, menos mal porque si hubiese sido blanco hubiera comprado &lt;em&gt;Sharpies&lt;/em&gt; grises y pintado. Odio un poco las cosas blancas a no ser que tengan la terminación glossy que ahi lo adoro.&lt;/p&gt;
+&lt;p&gt;En la parte de abajo tiene el botón de volumen, 3.5mm &lt;em&gt;head-phone jack&lt;/em&gt;,
+micrófono (!), usb (carga y paso de datos) y &lt;em&gt;slider&lt;/em&gt; para
+prender/apagar/reiniciar/desbloquear que también indica si esta prendido
+(luz verde) o cargándose (luz naranja-similar).&lt;/p&gt;
+&lt;p&gt;Atrás tiene los parlantes + logo + información varia + mucho espacio en
+gris (tarararan pushhh).&lt;/p&gt;
+&lt;h2 id="botones"&gt;Botones&lt;/h2&gt;
+&lt;p&gt;Los botones del teclado tienen tamaño aceptable como para escribir notas (que
+para eso estan). Un problema del teclado es el &lt;em&gt;layout&lt;/em&gt;; por alguna razón
+en vez de poner &lt;kbd&gt;.&lt;/kbd&gt; pongo &lt;kbd&gt;m&lt;/kbd&gt;, y en vez de &lt;kbd&gt;n&lt;/kbd&gt; pongo &lt;kbd&gt;m&lt;/kbd&gt;, pero solo son con esas tres teclas.&lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2011/kindle08.jpg" alt="Close up del teclado"&gt;
+&lt;p&gt;Close up del teclado&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Otra cosa que encontré "mal" es que no tiene un botón para la coma cual
+tranquilamente podría ser activado apretando &lt;kbd&gt;alt+punto&lt;/kbd&gt;, asi se le da un
+uso a &lt;kbd&gt;alt&lt;/kbd&gt; que no funciona a no ser que se "&lt;em&gt;jailbreakee&lt;/em&gt;" o no me di
+cuenta en donde usarlo.&lt;/p&gt;
+&lt;p&gt;El D-Pad: el botón de &lt;kbd&gt;OK&lt;/kbd&gt; es bastante grande pero los botones
+direccionales no me gustan mucho, podrian haberlo hecho un poco más
+regordetes como para sentir que los estas realmente aprentando sin miedo
+de pifiarle.&lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2011/kindle09.jpg" alt="Close up del D-pad"&gt;
+&lt;p&gt;Close up del D-pad&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Para poner números, coma, y otros simbolos se aprieta la tecla &lt;kbd&gt;Sym&lt;/kbd&gt;. Me
+parece bien que hayan puesto los numeros ahi ya que casi nunca se usan pero la coma ahi no. Eso si, para poder ingresar caracteres
+estilo "ñ", "á", "ü" y demas, hay que ponerle un hack. Malditos yankees.&lt;/p&gt;
+&lt;p&gt;Otros botones que estan mal ubicados son los de cambiar la página
+(adelante y atrás). Estan justo en el medio de los laterales donde se
+suele agarrar el aparato. Tendrian que haberlos hechos más chicos y del mismo tamaño (el de
+siguiente es más grande/largo).&lt;/p&gt;
+&lt;h2 id="reading-timetesting"&gt;Reading time/testing&lt;/h2&gt;
+&lt;p&gt;Pantalla: teniendo en cuenta que es la primera vez que veo "en vivo y en
+directo" algo con e-Ink se ve bien; tanto texto como imágenes.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pantalla" src="http://blog.quinzi.com.ar/images/2011/kindle10.jpg"&gt;&lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2011/kindle11.jpg" alt="Close up de pantalla a las letras"&gt;
+&lt;p&gt;Close up de pantalla a las letras&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Dentro de las opciones del documento (apretando el botón &lt;kbd&gt;Aa&lt;/kbd&gt;) se puede
+cambiar el tamaño de letra, &lt;em&gt;font-weight&lt;/em&gt;/estilo de letra, contraste,
+espacio de linea, palabras por linea, si queres que te lea el documento
+(no lo probé) y modo de rotación. Estas opciones sirven para archivos
+&lt;code&gt;.mobi&lt;/code&gt; y &lt;code&gt;.txt&lt;/code&gt; (y seguro AWZ). Cuando ves PDFs solo tenes la opción de
+zoom, contraste y rotación.&lt;/p&gt;
+&lt;p&gt;Se puede poner un musica en &lt;em&gt;background&lt;/em&gt; mientras lees. Sirve para
+cuando estas estudiando idiomas por ejemplo: pones el audiolibro, pones
+el texto y seguis con la mirada (no lo probé).&lt;/p&gt;
+&lt;p&gt;Una de las razones por la que me compré el Kindle es para poder estudiar
+japonés (con todos los libros y eso), eso quiere decir poder leer mis
+notas en la wiki que tengo. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mostrando documento en japonés" src="http://blog.quinzi.com.ar/images/2011/kindle13.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Uno de mis mayores miedos era el poder leer furigana (Guia fonética).&lt;/p&gt;
+&lt;p&gt;Bien, para poder usar el Sr.Furigana si o si tengo que usarlo en PDF.
+Asi que mis notas de japonés se tienen que pasar a un HTML &lt;em&gt;in one page&lt;/em&gt; y
+a PDF O "PDFs por sección" para poder leerlas con furigana. Si no puedo pasarlo a &lt;code&gt;mobi&lt;/code&gt; o a
+&lt;code&gt;txt&lt;/code&gt;. Estuve haciendo pruebas y: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mobi + furigana -&amp;gt; kanji y al lado la lectura = no gracias &lt;/li&gt;
+&lt;li&gt;html con extensión txt: kanji + furigana = desaparecido o no existente &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Close up de furigana" src="http://blog.quinzi.com.ar/images/2011/kindle14.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Luego de jugar con los formatos me decidi conectarme a internet. Acá
+lluvia de "problemas".&lt;/p&gt;
+&lt;h2 id="conexion-wi-fi"&gt;Conexión Wi-Fi&lt;/h2&gt;
+&lt;p&gt;Primero, me tuve que hacer cuenta en Amazon porque sino no podia crear
+colecciones ("categorias", cosa de organizar mejor el menú de selección)
+ni cambiarle la hora ni nada. O sea, si no te registras con Amazon y
+linkeas solo tenes 1 pantalla de opciones que no te sirve mucho. Si te
+linkeas con la cuenta tenes mas, incluyendo conectarte a Facebook y
+Twitter para compartir notas y lo que seleccionaste.&lt;/p&gt;
+&lt;p&gt;Estuve 30 minutos tratando de conectarme con mi router: ingresaba
+contraseña -&amp;gt; fail, ingresaba contraseña -&amp;gt; fail, ingresaba
+contraseña -&amp;gt; fail, ingresaba contraseña -&amp;gt; fail, ingresaba
+contraseña -&amp;gt; FAILure.&lt;/p&gt;
+&lt;p&gt;Pensaba que era por el tema de la seguridad, que no aceptaba
+WPA-PSKloquesea, iba a cambiarlo pero me dije &lt;q&gt;nahh no puede ser. Tiene que aceptar eso&lt;/q&gt; asi que decidi buscar la solución y, oh! es un
+"bug". &lt;/p&gt;
+&lt;p&gt;Para resolverlo: &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ir a scannear las redes de Wi-Fi e ingresar a mano el &lt;code&gt;SSID&lt;/code&gt; de tu red. &lt;/li&gt;
+&lt;li&gt;Conectarte (sin poner contraseña). Dice que no se puede conectar. &lt;/li&gt;
+&lt;li&gt;Vas a la opción de &lt;em&gt;setear&lt;/em&gt; manualmente la red. &lt;/li&gt;
+&lt;li&gt;Pones el &lt;code&gt;SSID&lt;/code&gt; (creo que aparece automaticamente), configurás el resto y recién ahi pones la contraseña. &lt;/li&gt;
+&lt;li&gt;Conectarse.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="Navegando por internet" src="http://blog.quinzi.com.ar/images/2011/kindle15.jpg"&gt;&lt;/p&gt;
+&lt;h2 id="browser-y-javascript"&gt;Browser y Javascript&lt;/h2&gt;
+&lt;p&gt;Ultimamente cualquier navegador de "cosas mobiles" acepta Javascript pero queria ver
+si te aceptaba el "heavy Javascript"/jQuery y que ande el script
+este que te toma las letras del teclado. Para mi sorpresa, funciona.&lt;/p&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-188"&gt;
+&lt;div id="comment-188"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/577898a9881ba0335ad00d2046ce5d91?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://nicolasjengler.com.ar" rel="external nofollow" class="url"&gt;NicolasJEngler&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+June 15, 2011 at 11:11 pm&lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Me encantó. Parece espectacular. Te felicito por la adquisición.&lt;br&gt;
+Tengo ganas de comprarme uno ahora u_u’&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-189"&gt;
+&lt;div id="comment-189"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/4dff540a55fe51a182ab96df59c7fbe8?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.cosas-simples.com.ar" rel="external nofollow" class="url"&gt;asur2004&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;
+June 15, 2011 at 11:42 pm   &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Me encantó el review! Super completo y descontracturado.&lt;br&gt;
+Con muchas fotos, como me gusta e info util.&lt;br&gt;
+Bien “conversado” y ameno para leer. Me terminaste de convencer,  debería tener uno. Que bueno que te va a servir para estudiar furigana y kanji. :)&lt;br&gt;
+Valió la pena la espera!!!&lt;br&gt;
+Muchas gracias!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-190"&gt;
+&lt;div id="comment-190"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/62f7c7f5b729003e78e9271c4067bb4e?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://twitter.com/FlyingMind_" rel="external nofollow" class="url"&gt;Raul&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;
+June 15, 2011 at 11:44 pm   &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Excelente! me sorprendio el motivo por el que te lo compraste :D&lt;br&gt;
+No conocia mucho del kindle… que mal lo de la conexion wi fi.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-191"&gt;
+&lt;div id="comment-191"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/de9443403094542678419411d71285e3?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://twitter.com/hallecsyz" rel="external nofollow" class="url"&gt;Hallecsyz&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;
+June 16, 2011 at 9:57 am    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Muy copado el aparatejo. Me parece un invento genial para ahorrar papel en libros. Si yo leyera me compraría uno sin dudarlo.&lt;/p&gt;
+&lt;p&gt;Ahora que ya la gente no compra libros tengo que seguir con mi campaña en contra de las impresoras, invento del diablo, y que se mande TODO por mail.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-192"&gt;
+&lt;div id="comment-192"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;
+June 16, 2011 at 2:52 pm   &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Gracias por sus comentarios! :D&lt;/p&gt;
+&lt;p&gt;@ asur2004 : no es taaaaan completo. Dejé un par de cosas afuera porque me acordé tarde y no sabia donde meterlos XD&lt;/p&gt;
+&lt;p&gt;@ Raul: Digamos que es una mezcla de todo: muchos libros para leer + japonés + manga/comics…. pero lo de japonés influyó mucho n.n&lt;/p&gt;
+&lt;p&gt;@ Hallecsyz: temo desilucionarte, pero lamentablemente hay cosas que se tienen que imprimir si o si =/ pero si hablas de TPs sip, es al pedo. Yo tenia una profe que pedia el codigo del programa impreso para “Hacer correciones”… mandale los putos comentarios y listo! no me hagas imprimir 3 paginas al pepe!&lt;/p&gt;
+&lt;p&gt;@ NicolasJEngler no te iba a responder pero como quedaste ahi solito y me dio cosita te escribo una respuesta n.n&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/review-kindle3/</guid><pubDate>Wed, 15 Jun 2011 00:00:00 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (sd)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/sd.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:55 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SD Write Protected Syndrome</title><link>http://blog.quinzi.com.ar/sd-write-protected-syndrome/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#de-que-se-trata"&gt;De qué se trata?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#experienciasarreglos-anteriores"&gt;Experiencias/Arreglos anteriores&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#problemas-actuales"&gt;Problemas actuales&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#arreglo"&gt;Arreglo&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#solucion-original"&gt;Solución original&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#mi-solucion"&gt;Mi solución&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Hace ya un tiempo, sufro del "SD Write Protected Syndrome".&lt;/p&gt;
+&lt;h2 id="de-que-se-trata"&gt;De qué se trata?&lt;/h2&gt;
+&lt;p&gt;Insertar/ponés una tarjeta (sólo probé con SD) en la lectora (yo tengo
+una de "bay"/interna, no se si pasa lo mismo con las USB/externas, pero
+leí que sí), querés modificar algo y no podés, salta el "este medio esta
+protegido contra escritura blablabla" &lt;strong&gt;por mas que el switch esté en
+desbloqueado/off&lt;/strong&gt;. Si, muy raro.&lt;/p&gt;
+&lt;h2 id="experienciasarreglos-anteriores"&gt;Experiencias/Arreglos anteriores&lt;/h2&gt;
+&lt;p&gt;Las pocas veces que lo sufrí, solo "jugaba" con el switch. &lt;strong&gt;De lock off
+a lock on y funcionaba&lt;/strong&gt;. Al prinicpio era una sola vez, despues &lt;del&gt;se
+fue incrementando&lt;/del&gt; 2 o hasta 3 veces. Todo bien hasta que...&lt;/p&gt;
+&lt;h2 id="problemas-actuales"&gt;Problemas actuales&lt;/h2&gt;
+&lt;p&gt;La SD que "tenía este problema" tenía un poco de
+espacio disponible, lo quería usar y... no, protegido. Hice lo del juego
+de Lock on-off varias veces y nada. Pensé que se "había roto", hice un par de pruebas en la Palm (porque la uso ahí). Cree, movi, eliminé archivos, &lt;strong&gt;ningún problema&lt;/strong&gt;.
+La puse de nuevo en la lectora de tarjetas y no funcionó (eso quiere
+decir que la tarjeta está 100% funcional). Me harté y no lo usé con
+esos fines.&lt;/p&gt;
+&lt;h2 id="arreglo"&gt;Arreglo&lt;/h2&gt;
+&lt;p&gt;Busqué soluciones. En todos lados decian que era &lt;strong&gt;el lector y no la
+tarjeta&lt;/strong&gt;, (si, ya lo sabía, gracias por informarme nuevamente). Te
+contaban una linda historia de conejitos comiendo alfajores, y
+redactaban como resolverlo: ponele cinta.&lt;/p&gt;
+&lt;h3 id="solucion-original"&gt;Solución original&lt;/h3&gt;
+&lt;p&gt;Variante a: ponerle cinta al switch&lt;/p&gt;
+&lt;p&gt;Variante b: ponerle cinta al espacio/protuberancia/o como se llame
+(agarrá una SD, switch a la izquierda, conectores arriba. Del lado
+derecho hay una protuberancia/cuadradito/espacio) con cuidado de no tapar los conectores del otro
+lado.&lt;/p&gt;
+&lt;p&gt;Ninguna me funcionó.&lt;/p&gt;
+&lt;h3 id="mi-solucion"&gt;Mi solución&lt;/h3&gt;
+&lt;p&gt;Mi twist de la solución original me vino &lt;strong&gt;después de probar ambas
+variantes y ver que ninguna me andaba&lt;/strong&gt;. Me dije: "y si uno las
+dos?", felizmente puse cinta en casi todos lados y... no funcionó!
+PERO, me surgió una idea, pense:
+"mmmm, y si le pongo la &lt;strong&gt;trabita en el medio&lt;/strong&gt;?". Ahora SI funcionó.
+Yupi, wheee, y todas las alegrias.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Diagrama de cómo colocar cinta y trabita" src="http://blog.quinzi.com.ar/images/2009/sdfix_01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Ok, todo muy bonito pero, cada vez que quiera hacer un cambio tengo que
+poner cinta? mmmm.... a ver, probemos &lt;strong&gt;SIN cinta&lt;/strong&gt;, dejando el switch en
+el medio. Funcionó! :D&lt;/p&gt;
+&lt;p&gt;Eso si, &lt;strong&gt;JUSTO en el medio&lt;/strong&gt; sino no funca :P&lt;/p&gt;
+&lt;p&gt;No digo que sea: Uh! Wow! esta es la solución de tus problemas! pero se
+solucionan momentaneamente. Si querés una permanente, tenes que abrir el lector
+y pegar dos metalcitos, pero no soy srta. manitas :P&lt;/p&gt;
+&lt;p&gt;P.D: mi método solo funcionó con la SD "problemática", con los MicroSD
+to SD Adapters no.&lt;/p&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-110"&gt;
+&lt;div id="comment-110"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://www.luxiano.com.ar" rel="external nofollow" class="url"&gt;Luxiano&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;     &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;September 27, 2009 at 5:05 pm     &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Ay mamita… cada lío te pasa :P &lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-111"&gt;
+&lt;div id="comment-111"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;       &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;September 27, 2009 at 6:49 pm     &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Bueno, che! yo no tengo la culpa :P por lo menos lo soluciono de alguna forma :mrgreen: &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-112"&gt;
+&lt;div id="comment-112"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a90e683e3100b9be7d8016cd709e2957?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://gomobile.com.ar/" rel="external nofollow" class="url"&gt;Zim&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;       &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;September 27, 2009 at 8:12 pm     &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Qué cosa loca! jajajaja&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-113"&gt;
+&lt;div id="comment-113"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/053af0429756b2db50369be59817025f?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;karmina&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;     &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;January 13, 2010 at 8:39 pm       &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;wow! grax mira k habia estado batallando kn eso i tu solucion me vino de maravillas q ya me estaba artando… graxias!! :) &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-114"&gt;
+&lt;div id="comment-114"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/1fdc3d07f53d6a63a25acc84286b5f05?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;erikito38&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;       &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;June 11, 2010 at 1:19 pm      &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;wuuua de gran ayuda y yo q pense que era mi pc , se agradece la ayuda funka un 100%&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-115"&gt;
+&lt;div id="comment-115"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/0172f7752a019ed67e21ccb41b6b09a4?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;JJ&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;      &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;March 24, 2011 at 8:24 pm     &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;buen aporte, pero no funciono conmigo!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-116"&gt;
+&lt;div id="comment-116"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;       &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;March 25, 2011 at 10:24 am        &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Si no te funcionó con los métodos de arriba tenes que cambiar el lector de tarjetas. Ya sea a un nuevo bay/bandejita, usb o el “pendrive-sd reader”&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/sd-write-protected-syndrome/</guid><pubDate>Sun, 27 Sep 2009 00:00:00 GMT</pubDate></item></channel></rss>

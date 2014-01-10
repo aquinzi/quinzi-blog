@@ -1,0 +1,224 @@
+<!DOCTYPE html><html><head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Your Name">
+    <title>AutoHotkey + Reemplazo | Demo Site</title>
+    
+    <!-- firefox is special -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+    
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+    
+        
+    <link rel="icon" href="../../favicon.ico" sizes="16x16">
+    <link rel="icon" href="../../favicon.png" sizes="16x16">
+    
+
+    
+
+    
+
+
+
+    
+</head>
+<body>
+	<div id="side-left" class="side">
+		<h1 id="blog-title"><a href="../../" title="Demo Site" rel="home">Demo Site</a></h1>
+		
+		<nav>
+			<ul>
+    
+        <li data-item="archives"><a href="../../index.html">Index</a></li>
+        <li data-item="feed"><a href="../../rss.xml">RSS</a></li>
+</ul>
+		</nav>
+		
+    <h4>Languages</h4>
+    <ul class="languages">
+        <li><a href=".">English</a></li>
+        
+        
+        
+    
+
+    </ul>
+
+	</div>
+	
+	<div id="side-right">
+		<div id="content">
+    <article class="postbox">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+    <header>
+        
+    <h1 class="p-name" itemprop="headline name">AutoHotkey + Reemplazo</h1>
+    
+
+
+        <div class="post-meta">
+            <dl>
+                    <dt class="date">Posted
+                    </dt><dd>  
+    <time class="published dt-published" datetime="2009-06-01T15:33:00+00:00">2009-06-01</time>
+</dd>
+                    
+                <dt class="source">Source</dt> 
+                <dd>
+    
+    <a href="index.md" id="sourcelink">
+        
+        Get source
+        
+    </a>
+    
+ </dd> 
+            </dl>
+        </div>
+    </header>
+    
+    <div class="e-content" itemprop="articleBody text">
+        <p>Bueno, me enganché con el tema este y prefiero escribirlo ahora antes de
+que pasen otras cosas y me olvide ( mentira, es ahora o nunca, porque el
+tiempo libre lo tengo ya y no dentro de días :P ).</p>
+<p><em>Nota: lo escribí hace bastante y recién ahora tengo tiempo de pulirlo
+un poco (bah... lo dejé para cuando no haya creatividad para escribir
+algo... se me pasó el tiempo entre parciales, TPs que se yo y recién
+ahora lo subo :D ).</em></p>
+<p>Como había escrito <a href="%7Cfilename%7Cautohotkey-nuevacarpeta.md">anteriormente</a>, se puede usar tranquilamente el
+AutoHotkey para suplantar texto. También existe una app un poco más
+simple (y más gráfica) basada en este, que es <a href="http://www.lifehacker.com/software/texter/lifehacker-code-texter-windows-238306.php">Texter</a> (de
+LifeHacker), asique depende de tus necesidades, elegí. Yo me enfoco por
+el 1º porque tuve un par de problemillas con el Texter.</p>
+<p>El texto se puede sustituir de dos formas: auto-sustisución o mediante
+un trigger. Consideraría la primer opción si estuviese tomando notas, o
+escribiendo un texto muy pero muy, demasiado, largo, en un chat y se
+quiere escribir formalmente (?), y cosas parecidas. Algún día le voy a
+encontrar una utilidad. Por ahora solo me voy a enfocar en la 2º que me
+parece más bonita.</p>
+<p>Se crea el script (ya sea por Nuevo&gt;AutoHotkey Script o por archivo de
+texto con extensión .ahk) y dentro del mismo se coloca (es un ejemplo):</p>
+<div class="code"><pre>#Hotstring EndChars `t
+:O:c++base::
+(
+/*
+Nombre Programa:
+Autor:
+Descripción:
+*/
+
+#include &lt;cstdlib&gt;
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main( ) {
+//Definición de variables
+//Comienza Programa
+//salida: Pausa de Ventana. Tambien puede ser getche(); llamando a
+conio.h -
+
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+
+)
+</pre></div>
+
+
+<p>A todos nos gusta la explicación con imágenes, asi que no voy a hacer la
+excepción:</p>
+<p><img alt="" src="images/2009/cbaseexpl2.png"></p>
+<p>Lo ejecutamos (botón derecho sobre el script, abrir con AutoHotkey).
+Abrimos, el Notepad(++) / Bloc de Notas, Word o cualquier otro similar.
+Escribimos “c++base” y seguido (nada de mover el cursor ni nada porque
+sino no funciona, bah... nunca lo porbe :p ) presionamos tab.
+Teoricamente se nos tendría que haber sustituido por el texto marcado.</p>
+<p>Si queremos hacerlo solamente con una linea (ejemplo: una dirección de
+mail), hay que escribir (ademas del primer renglón, que puede ser
+cualquiera como el enter, pero no voy a ahondar en eso a no ser de que
+haya pedido en el público):</p>
+<p>:O:@mimail::esteesmimailsuperlargoquenoquieroescribir@todoeltiempo.com</p>
+<p>Abris el Notepad (ejemplo), escribis “@mimail” seguido del tab, y se
+susplantara con tu dirección super hiper larga (o una frase bonita, que
+se yo)</p>
+<p>Con esto, y si escribis todo el tiempo lo mismo (ejemplo: códigos de
+cualquier cosa, mails repetitivos (aca se puede ahondar y queda más
+“cool” ), y [espacio para dejar volar la imaginación] te puede ayudar a
+reducir el tiempo.</p>
+<p>Esto lo tenia planteado parala facultad, pero como despues te toman por
+escrito decidi no hacerlo (aunque tengo un par de lineas que me molestan
+bastante... como el for....)</p>
+    </div>
+
+    <footer>
+        <div class="post-meta">
+                <dl>
+                    <dt class="categories"> Category: </dt>
+                    <dd> 
+    <span itemprop="keywords"><a class="tag p-category" href="../../tags/cat_resolucion-de-problemas.html"><span class="badge badge-info"> resolución de problemas</span></a></span>
+ </dd>
+                </dl> 
+                <dl>
+                    <dt class="tags"> Tags: </dt>
+                    <dd>  
+    
+    <span itemprop="keywords"> <a class="tag p-category" href="../../tags/programas.html"> 
+    <span class="badge badge-info"> programas</span> </a> </span>
+ </dd>
+                </dl>
+
+        </div>
+    </footer>
+
+    
+    
+    
+
+    
+
+    
+    
+
+    </div>
+</article>
+ </div>
+		<footer>
+			<h4>Search</h4> 
+			
+<!-- Custom search -->
+<form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://getnikola.com/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="Search">
+</form>
+<!-- End of custom search -->
+
+			Contents © 2014         <a href="mailto:joe@demo.site">Your Name</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         I'm a license!
+		</footer>
+	</div>
+	
+    
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    
+<script src="../../assets/js/analytics.js" type="text/javascript"></script>
+<script src="../../assets/js/github-mod.js" type="text/javascript"></script>
+
+</body></html>

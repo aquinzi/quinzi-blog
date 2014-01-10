@@ -1,0 +1,237 @@
+<!DOCTYPE html><html><head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Your Name">
+    <title>Tutorial: save GPS location to text with Tasker | Demo Site</title>
+    
+    <!-- firefox is special -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+    
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+    
+        
+    <link rel="icon" href="../favicon.ico" sizes="16x16">
+    <link rel="icon" href="../favicon.png" sizes="16x16">
+    
+
+    
+
+    
+
+
+
+    
+</head>
+<body>
+	<div id="side-left" class="side">
+		<h1 id="blog-title"><a href="../" title="Demo Site" rel="home">Demo Site</a></h1>
+		
+		<nav>
+			<ul>
+    
+        <li data-item="archives"><a href="../index.html">Index</a></li>
+        <li data-item="feed"><a href="../rss.xml">RSS</a></li>
+</ul>
+		</nav>
+		
+    <h4>Languages</h4>
+    <ul class="languages">
+        <li><a href=".">English</a></li>
+        
+        
+        
+    
+
+    </ul>
+
+	</div>
+	
+	<div id="side-right">
+		<div id="content">
+    <article class="postbox">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+    <header>
+        
+    <h1 class="p-name" itemprop="headline name">Tutorial: save GPS location to text with Tasker</h1>
+    
+
+        <div class="post-meta">
+            <dl>
+                    <dt class="date">Posted
+                    </dt><dd>  
+    <time class="published dt-published" datetime="2012-11-26T20:12:00+00:00">2012-11-26</time>
+</dd>
+                    
+                <dt class="source">Source</dt> 
+                <dd>
+    
+    <a href=".././save-gps-location-to-text-with-tasker/index.md" id="sourcelink">
+        
+        Get source
+        
+    </a>
+    
+ </dd> 
+            </dl>
+        </div>
+    </header>
+    
+    <div class="e-content" itemprop="articleBody text">
+        <h2 id="bgi">BGI</h2>
+<p>I always wanted a way to say "Hey GPS, see this spot here? the one
+you're indicating, can you pin it with text so I can retrieve it
+later?". All the ways I've found required to install apps. I'm fine with
+that but a) install 5MB or more just to get that functionality? I didn't
+want to change my notes app (not that I use it often but hey, it's nice
+and light) nor have another one; b) install 5MB or more in my low memory
+android phone just to get that? no thank you.</p>
+<p>Time went by, forgot about it as I'm not needing it right now (but it's
+nice to have). Installed ICS on my LG Optimus One, expanded the
+memory/A2SD, and somehow I found/tried Tasker. Yes, that program that
+it's very cool, everyone recommends it, posts the same common examples
+that you don't need but you want to use it anyway. Yes, that one. There
+are many alternatives, and even free with some limitations. But (people
+say) they are not as complete as Tasker.</p>
+<h2 id="gimme-the-result">Gimme the result!</h2>
+<p>No, I won't post the file so you can download it, sorry. Just follow the
+simple steps. It's not a big script, you big ol'lazy human.</p>
+<p>Go to the task tab and add a new one:</p>
+<p><strong>Task:</strong> <em>Location to Txt</em></p>
+<p><strong>Actions</strong> for the task:</p>
+<ul>
+<li>File &gt; Write file. File: choose which one to open/create. Text:
+<em>%DATE %TIME - %LOC - %TEXTHERE</em> . Check "Append" and "Add newline"</li>
+<li>(optional). Alert &gt; Flash. Text: <em>Pinned!</em> . This creates the info
+box that you always see (the black one).</li>
+</ul>
+<p>Go to the Scene tab and create a new one.</p>
+<p><strong>Scene:</strong></p>
+<div class="caption"><div class="inner">
+<img src="../../static/images/2012/tasker_scene.jpg"><br>
+<p>Cute bear</p>
+</div></div>
+
+<p>The necessary things are: the <strong>TextEdit</strong> (to input a description, you
+can skip this if you only want to save the coordinates. If that's the
+case, you don't even need the scene) and the <strong>button</strong>. You can add a
+text element that shows the coordinates and an image, because images
+bring life to the UI.</p>
+<p>If you decided to include the text that shows the coordinates, enter the
+properties and in Text add <em>%LOC</em></p>
+<p>In the TextEdit properties, in the Text Changed tab, add a variable
+(variable &gt; variable set). Name: <em>%HERETEXT</em> To: <em>%new_val</em></p>
+<p>The button, in the Tap tab.</p>
+<ul>
+<li>Task &gt; Perform Task. Name: <em>Location to Txt</em>.</li>
+<li>Scene &gt; Destroy scene. (pick the scene you're creating. It should
+be defaulted).</li>
+</ul>
+<p>Save the changes and go back to the Task tab.</p>
+<p><strong>Task:</strong> <em>Pin Here</em></p>
+<ul>
+<li>Misc. &gt; GPS &gt; on</li>
+<li>Scene &gt; Show Scene. Name: (Pick the scene you've previously
+created). Display As: <em>Activity, Full Window</em> (or play and find one
+that you like). Check "Show exit button" (optional) and "continue
+task immediately"</li>
+<li>Task &gt; wait. MS: <em>100</em>. Everything else to 0. This is to show the
+keyboard. You can skip this (and the next) if you don't mind
+clicking the text box to type.</li>
+<li>Input &gt; Soft keyboard.</li>
+</ul>
+<p>The only thing that is left is the shortcut/widget!</p>
+<p>Create a widget &gt; task. Pick <em>Pin Here</em></p>
+<div class="caption"><div class="inner">
+<img src="../../static/images/2012/tasker_widget.jpg"><br>
+<p>Here, here! touch me!</p>
+</div></div>
+
+<p>Tap and you get this!</p>
+<p><img alt="" src="../images/2012/tasker_working.jpg"></p>
+<p>When you tap "save" it saves (really?!?!) and shows the black info popup
+boxy-box. Here is an example of what the text file could look like:</p>
+<p><img alt="" src="../images/2012/tasker_txt.jpg"></p>
+<p>When you open the link, it shows the waypoint/spot in the map (seems to
+only work with Google Maps, unless you change the format, that way it
+also works with OsmAnd - from all the maps I've tested-).</p>
+<p>Bugs: nobody likes bugs but it's Android. If you choose to show the
+keyboard when the scene it's shown, it won't close automatically; you
+must close it yourself (back button). It's not the script fault nor
+Tasker's, but Android's and how it handles things (according to the
+developer). Remember that we created a "wait" action? that was to bypass
+the "bug" opening the keyboard. This might be necessary for you or not.
+This depends on the phone/tablet.</p>
+    </div>
+
+    <footer>
+        <div class="post-meta">
+                <dl>
+                    <dt class="categories"> Category: </dt>
+                    <dd> 
+    <span itemprop="keywords"><a class="tag p-category" href="../tags/cat_resolucion-de-problemas.html"><span class="badge badge-info"> resolución de problemas</span></a></span>
+ </dd>
+                </dl> 
+                <dl>
+                    <dt class="tags"> Tags: </dt>
+                    <dd>  
+    
+    <span itemprop="keywords"> <a class="tag p-category" href="../tags/android.html"> 
+    <span class="badge badge-info"> android</span> </a>  <a class="tag p-category" href="../tags/programas.html"> 
+    <span class="badge badge-info"> programas</span> </a> </span>
+ </dd>
+                </dl>
+
+        </div>
+    </footer>
+
+    
+    
+    
+
+    
+
+    
+    
+
+    </div>
+</article>
+ </div>
+		<footer>
+			<h4>Search</h4> 
+			
+<!-- Custom search -->
+<form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://getnikola.com/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="Search">
+</form>
+<!-- End of custom search -->
+
+			Contents © 2014         <a href="mailto:joe@demo.site">Your Name</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         I'm a license!
+		</footer>
+	</div>
+	
+    
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    
+<script src="../assets/js/analytics.js" type="text/javascript"></script>
+<script src="../assets/js/github-mod.js" type="text/javascript"></script>
+
+</body></html>

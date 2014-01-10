@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (download)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/cat_download.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:55 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>foobar2000 theme: Tomorrow Night Bright</title><link>http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/#requirements"&gt;Requirements&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Playing with foobar2000's Default UI, I made this minimalistic/simple theme with &lt;a href="https://github.com/ChrisKempson/Tomorrow-Theme"&gt;Tomorrow theme&lt;/a&gt; colors (Night Bright version).&lt;/p&gt;
+&lt;h2 id="screenshots"&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;You've got the menu + playback controls in the same line. Underneath, seekbar + playlist dropdown. In the status bar is the time, rating (view) and volume.&lt;/p&gt;
+&lt;p&gt;There four views/tabs in total:&lt;/p&gt;
+&lt;p&gt;"Now" has the active playlist, grouped by artist (in blue) + album (green). Tracks only show their title (red) and comment (orange).&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Active playlist" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_now.png"&gt;&lt;/p&gt;
+&lt;p&gt;"Lyrics" has the cover art and the lyrics.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Lyrics panel" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_lyrics.png"&gt;&lt;/p&gt;
+&lt;p&gt;"Meta" is the playing track details.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Track properties" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_meta.png"&gt;&lt;/p&gt;
+&lt;p&gt;"Library" is self explanatory.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Tree library" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_library.png"&gt;&lt;/p&gt;
+&lt;p&gt;There's no playlist list (only the dropdown) because I couldn't find one that prevents me from accidental deletion :P. If you want to manage them, go to &lt;kbd&gt;View &amp;gt; Playlist Manager&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2 id="requirements"&gt;Requirements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.foobar2000.org/"&gt;foobar2000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://foo2k.chottu.net/"&gt;EsPlaylist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.foobar2000.org/components/view/foo_uie_lyrics3"&gt;Lyric Show Panel 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.mediafire.com/?qb2v62gt01uzr8h"&gt;theme + configuration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Place the EsPlaylist configuration (&lt;code&gt;foo_uie_esplaylist.dll.cfg&lt;/code&gt;) in &lt;code&gt;[foobar_home]/configuration&lt;/code&gt; and the theme (&lt;code&gt;tomorrowbright.fth&lt;/code&gt;) where you please.&lt;/p&gt;
+&lt;p&gt;Import the theme (&lt;kbd&gt;Preferences &amp;gt; Display &amp;gt; Default User Interface &amp;gt; Import theme&lt;/kbd&gt;). In the playlist, &lt;kbd&gt;right click &amp;gt; grouping &amp;gt; inline - Tomorrow night bright&lt;/kbd&gt;. In the lyrics panel, edit the preferences (&lt;kbd&gt;panel preferences&lt;/kbd&gt;) and change the &lt;code&gt;highlight color&lt;/code&gt; to RGB &lt;code&gt;236,206,88&lt;/code&gt; (yellow).&lt;/p&gt;
+&lt;p&gt;The "headers" colors (in playlist, the &lt;code&gt;%artist%&lt;/code&gt;, &lt;code&gt;%album%&lt;/code&gt;; and in "meta", the "metadata", "location", "other"...) is configurated in &lt;kbd&gt;Default User Interface &amp;gt; Colors and fonts&lt;/kbd&gt; (if you don't like violet).&lt;/p&gt;
+&lt;p&gt;If you want to change the control buttons, you must use 16x16 &lt;code&gt;.ico&lt;/code&gt; files.&lt;/p&gt;
+&lt;p&gt;The Windows theme is &lt;a href="http://www.deviantart.com/art/SlanXP-2-0-For-7-134955170"&gt;SlanXP2 for 7&lt;/a&gt;, that's way the DUI looks better than defaults.&lt;/p&gt;</description><category>foobar2000</category><category>theme</category><guid>http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/</guid><pubDate>Thu, 07 Nov 2013 00:00:00 GMT</pubDate></item><item><title>foobar2000 theme: Simple Colorful</title><link>http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/#requerimientos"&gt;Requerimientos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/#instalacion"&gt;Instalación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/#a-tener-en-cuenta"&gt;A tener en cuenta&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;¿De que se trata esto? Esto es un theme x2 para &lt;a href="http://www.foobar2000.org/"&gt;foobar2000&lt;/a&gt;, que es
+simple, minimalista y medianamente colorido (para que no sientas que
+vivis en un arco iris), que tiene los plugins minimamente requeridos
+(por mi persona).&lt;/p&gt;
+&lt;h2 id="requerimientos"&gt;Requerimientos&lt;/h2&gt;
+&lt;p&gt;Aparte de foobar necesitas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plugins (los podes sacar y/o poner los que te gusten, pero si o si
+los necesitas para instalar)&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://foo2k.chottu.net/"&gt;EsPlaylist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.foobar2000.org/components/view/foo_plorg"&gt;Playlist Organizer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.foobar2000.org/components/view/foo_uie_lyrics3"&gt;Lyric Show Panel 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.foobar2000.org/components/view/foo_facets"&gt;Facets&lt;/a&gt; (inútil en vista para ColumnsUI pero se puede acceder via
+menu)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.foobar2000.org/components/view/foo_ui_columns"&gt;Columns UI&lt;/a&gt; si se elige esa vista (recomendada, tiene mas onda)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Minimo conocimiento de manejo de foobar, mas allá de cómo saber
+reproducir música&lt;/li&gt;
+&lt;li&gt;Un par de toquecitos mágicos&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.mediafire.com/file/tllc7fkjbq8h1pw/foobarthemeSimpleColorful.zip"&gt;Descargar el super pack&lt;/a&gt; de themex2 y configuraciones&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lo bueno de este(os) theme(s) es que en ambos UI (default y columns) se
+usan los mismos plugins (o algo asi).&lt;/p&gt;
+&lt;h2 id="instalacion"&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;Primero las configuraciones, cosa de que no tengas que poner a mano la
+gran mayoria de colores. Los archivos de esa carpeta ponerlos en la
+carpeta &lt;code&gt;configuration&lt;/code&gt;: si tenes foobar portable, esta dentro de esa
+carpeta. Si tenes el instalado, vas a &lt;code&gt;%appdata%\\foobar2000&lt;/code&gt; (Pro Tip:
+&lt;kbd&gt;tecla de windows + r&lt;/kbd&gt;, pegas esa dire).&lt;/p&gt;
+&lt;p&gt;Los themes ponelos donde quieras, usualmente van dentro de una carpeta
+theme (para los de la vista default) o skins (para los de la vista de
+columnsUI) en el root de instalación de foobar.&lt;/p&gt;
+&lt;p&gt;Elegir una vista que vos quieras en base a los screenshots de abajo, e
+importar el archivo correspondiente.&lt;/p&gt;
+&lt;p&gt;En el playlist, hace click &lt;kbd&gt;derecho &amp;gt; grouping &amp;gt; artist/album clrs&lt;/kbd&gt;.
+Esto es para poner un par de colorcitos en el header de cada album y
+artista, además de sacar el album art. No es necesario y podes poner el
+que mas te guste.&lt;/p&gt;
+&lt;p&gt;Al lado del titulo te muestra el tag &lt;code&gt;%comment%&lt;/code&gt;. Si se lo queres sacar o
+cambiar, editas la columna.&lt;/p&gt;
+&lt;p&gt;También podes editar la columna de duración para que te muestre como
+quieras. Yo tengo tiempo transcurrido - tiempo total.&lt;/p&gt;
+&lt;h2 id="screenshots"&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;Veamos primero el theme en la UI default:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playlist de foobar2000 con Default UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_dui01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Librería de foobar2000 (facets) con Default UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_dui02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Nada mal para ser la vista default con sus limitaciones (como la falta
+de colores en la interfaz... how dare you). Crease a no, los botones de
+playback se pueden cambiar, pero requieren &lt;code&gt;.ico&lt;/code&gt; que no tenia a mano.&lt;/p&gt;
+&lt;p&gt;Ahora el que uso, el theme con Columns UI.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playlist de foobar2000 con Columns UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_cui01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Librería de foobar2000 (EsPlaylist) con Columns UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_cui02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Esta mas lindo, no? :D Como veras, esta configuracion no tiene seekbar
+que ande/se pueda adelantar atrasar un tema. Eso esta... escondido.
+Posate unos segundos debajo del cover art y aparece.&lt;/p&gt;
+&lt;p&gt;La vista de libreria funciona asi: ves los artistas -&amp;gt; &lt;kbd&gt;doble click&lt;/kbd&gt; -&amp;gt; te
+lleva a los albums -&amp;gt; &lt;kbd&gt;doble click&lt;/kbd&gt; -&amp;gt; lleva a los temas. Queres volver?
+&lt;kbd&gt;doble click&lt;/kbd&gt; sobre los headers. Todo esto se puede configurar. La idea es
+que cuando te lista los artistas, te muestre las fotos de los artistas
+pero todavia no tengo y quedo asi =P.&lt;/p&gt;
+&lt;h2 id="a-tener-en-cuenta"&gt;A tener en cuenta&lt;/h2&gt;
+&lt;p&gt;Los screenshots son en base a MI configuracion. Las estrellitas que
+estan en el status bar (abajo) no se te van a mostrar porque uso un
+plugin para estadisticas (y se toman de ahi, no hice el &lt;code&gt;if&lt;/code&gt; para ver si
+existe pero las podes sustituir o dejar el signo de pregunta).&lt;/p&gt;
+&lt;p&gt;Las estrellitas amarillas en el playlist NO las vas a tener. Toqué el
+&lt;code&gt;dll&lt;/code&gt; para cambiarlas. Vos quedas con las grises.&lt;/p&gt;
+&lt;p&gt;La vista de libreria son distintas en ambas configuraciones. A Facets
+(como esta en la de default) lo accedo desde menu y uso el EsPlaylist
+como visor de libreria. Vos pones el que quiera (hay mas e incluso uno
+que viene para el defaultUI).&lt;/p&gt;
+&lt;p&gt;Los botones de playback en el ColumnsUI se pueden cambiar (son &lt;code&gt;.png&lt;/code&gt;) o
+resetear a los que vienen de fábrica, y reorganizar. Boton &lt;kbd&gt;derecho &amp;gt;
+button options&lt;/kbd&gt; (no sabia que se guardaba eso también =P)&lt;/p&gt;
+&lt;p&gt;La columna con puntito y numero NO la vas a tener, es de otro
+plugin+script.&lt;/p&gt;
+&lt;p&gt;Parece que el title bar no te lo guarda; tampoco es difícil cambiarlo.&lt;/p&gt;
+&lt;p&gt;Vuelvo a repetir, esto es lo que uso, vos lo tomas como base y editalo
+como quieras. Leyendo el &lt;a href="http://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Reference"&gt;Titleformat Reference&lt;/a&gt; vas a poder modificar
+cosas sin entrar a nada de programación (a no ser que lo quieras). &lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/</guid><pubDate>Thu, 13 Dec 2012 00:00:00 GMT</pubDate></item><item><title>Juegos Win3.1</title><link>http://blog.quinzi.com.ar/win31-juegos/</link><description>&lt;p&gt;Son recuerdos de nuestra infancia (por lo menos de la mia). Esos juegos
+que nos podian divertir sin tanta gráfica y que nos (o me) pasaba horas jugando.&lt;/p&gt;
+&lt;p&gt;A qué viene esa nostalgia? Además de recordar una época en que cualquier
+personita no tenía obligaciones
+aparte de "vivir la vida" y de mi fanatismo de videos juegos viejos (no
+se por qué), encontré, en mi super búsqueda de mi super juego que
+no se como se llama pero sé que es uno de los miles clones del Boulder
+Dash, una página de los juegos para este viejo sistema operativo. Sip,
+esos jueguitos (sin tener que instalar el DOSBox y correr todo el SO,
+aunque estaria divertido probarlo) se pueden correr en tu cacharro.&lt;/p&gt;
+&lt;p&gt;Hay &lt;del&gt;varios&lt;/del&gt; bastantes juegos (mas de &lt;del&gt;500+&lt;/del&gt;
+1000+) que no solo son de Win 3.1, sino tambien de Win 95. Nostalgia
+pura. Entre ellos estan mis preferidos:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bang! Bang!&lt;/strong&gt;: se trata de 2 cañoncitos (verde y rojo) que se tienen que destruir o
+explotar, como quieran. Es por turnos y se tiene que tener en cuenta
+algunas variables como el viento, ángulo y velocidad añadiendo la
+dificultad de diferentes tipos de terreno.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Juego Bang! Bang!" src="http://blog.quinzi.com.ar/images/2009/win31_bangbang.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Same&lt;/strong&gt;: típico juego de "destruye 3 o mas X (cubos, bichitos, animales, gelatina...) del
+mismo color". Se llena la pantalla de cubos de varios colores con letras (unos
+4) que se deben eliminar de la forma anteriormente mencionada.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Juego Same" src="http://blog.quinzi.com.ar/images/2009/win31_same.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Empipe:&lt;/strong&gt; otro juego que no puede faltar. Es una versión (y/o tantas versiones) del Dream
+Pipe, ese que tenes que armar la cañería. Version lite.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Juego Empipe" src="http://blog.quinzi.com.ar/images/2009/win31_empipe.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Las aventuras del MicroMan&lt;/strong&gt;: las aventuras de un astronauta/robot(?)-hombre, que
+tiene un arma y tiene que llegar a una base. De este juego no me acuerdo mucho porque siempre
+perdía en el mismo nivel :P.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Juego MicroMan" src="http://blog.quinzi.com.ar/images/2009/win31_microman.png"&gt;&lt;/p&gt;
+&lt;p&gt;Después estan las diferentes "variantes"/clones de varios juegos (como
+del Dream Pipe hay 237... mil). Y obviamente no podia faltar el Tetris (y
+sus clones).&lt;/p&gt;
+&lt;p&gt;Los invito a pasar &lt;a href="http://members.chello.at/theodor.lauppert/games/"&gt;a la página&lt;/a&gt; y a descargarse algunos juegos para divertirse. Lo mas lindo es que lo pueden llevar en un floppy (bueno,
+Pendrive, tarjeta de memoria o lo que usen ahora)&lt;/p&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-2"&gt;
+&lt;div id="comment-2"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a90e683e3100b9be7d8016cd709e2957?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://gomobile.com.ar" rel="external nofollow" class="url"&gt;Zim&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;        &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+April 7, 2009 at 11:39 am       &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;El bang bang! Qué recuerdos! También tuve mis momentos de MicroMan. jajaja&lt;br&gt;
+Buen post!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/win31-juegos/</guid><pubDate>Sun, 01 Mar 2009 00:00:00 GMT</pubDate></item><item><title>Thinx</title><link>http://blog.quinzi.com.ar/thinx/</link><description>&lt;p&gt;Despues de un flashaso nostálgico, recordé que quería encontrar si o si
+el "Thinx" y que funcione para Windows XP. Después de un intento fallido en una
+página el año pasado, me decidí a buscarlo nuevamente... Y LO ENCONTRE!!! y funciona bajo XP sin problema y sin la opción de compatibilidad.&lt;/p&gt;
+&lt;p&gt;El Thinx es un juego de lógica creado por "crystal-interactive" (creo que
+hizo capuz). Es simple y tiene como objetivo acomodar los bloques de distintos
+grabados y colores según indica la imágen a un costado. Más adelante
+se complica más la cosa, ya que las paredes/bordes son sectores que
+cambian de color al bloque, o flechas que cambian la dirección. Tiene 33 nivles en total más un final. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Muestra de nivel de Thinx" src="http://blog.quinzi.com.ar/images/2009/thinx01.jpg"&gt; &lt;img alt="Muestra de nivel de Thinx" src="http://blog.quinzi.com.ar/images/2009/thinx02.jpg"&gt; &lt;img alt="Muestra de nivel de Thinx" src="http://blog.quinzi.com.ar/images/2009/thinx03.jpg"&gt; &lt;img alt="Muestra de nivel de Thinx" src="http://blog.quinzi.com.ar/images/2009/thinx05.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Me tomé la libertad de subirlo para compartirlo; &lt;a href="http://www.mediafire.com/download.php?q4zqeirqwmz"&gt;descargar Thinx&lt;/a&gt;.&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/thinx/</guid><pubDate>Mon, 23 Feb 2009 00:00:00 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (autohotkey)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/autohotkey.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Thu, 09 Jan 2014 22:13:57 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AutoHotkey + Reemplazo</title><link>http://blog.quinzi.com.ar/./es/autohotkey-reemplazo/</link><description>&lt;p&gt;Como había escrito &lt;a href="link://slug/autohotkey-nueva-carpeta"&gt;anteriormente&lt;/a&gt;, se puede usar tranquilamente el
+AutoHotkey para suplantar texto. También existe una app un poco más
+simple (y más gráfica) basada en este, que es &lt;a href="http://www.lifehacker.com/software/texter/lifehacker-code-texter-windows-238306.php"&gt;Texter&lt;/a&gt;, asique depende de tus necesidades, elegí.&lt;/p&gt;
+&lt;p&gt;El texto se puede sustituir de dos formas: auto-sustisución o mediante
+un trigger. Consideraría la primer opción si estuviese tomando notas, o
+escribiendo un texto muy largo, por ejemplo.  Por ahora solo me voy a enfocar en la 2º que me
+parece más bonita.&lt;/p&gt;
+&lt;p&gt;Se crea el script y dentro del mismo se coloca (es un ejemplo):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;#Hotstring EndChars `t
+:O:c++base::
+(
+/*
+Nombre Programa:
+Autor:
+Descripción:
+*/
+
+#include &amp;lt;cstdlib&amp;gt;
+#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main( ) {
+//Definición de variables
+//Comienza Programa
+//salida: Pausa de Ventana. Tambien puede ser getche(); llamando a
+conio.h -
+
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+
+)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;La explicación es la siguiente:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;#Hotstring EndChars `t&lt;/code&gt;: nuestro trigger (&lt;code&gt;tab&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:O:c++base::&lt;/code&gt;: la &lt;code&gt;O&lt;/code&gt; sirve para omitir el caracter (tecla) de trigger. En este caso, si no lo pondría, me dejaría un tab después de la sustitución. &lt;code&gt;c++base&lt;/code&gt; es la palabra clave.&lt;/li&gt;
+&lt;li&gt;El primer y último paréntesis indican el inicio y fin del texto con el que se susplantará.&lt;/li&gt;
+&lt;li&gt;Lo que esta dentro de los paréntesis: el texto con el que se susplantará.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lo ejecutamos y probamos en un editor de texto: escribimos &lt;code&gt;c++base&lt;/code&gt; y seguido presionamos &lt;kbd&gt;tab&lt;/kbd&gt;. Se nos tendría que haber sustituido por el texto marcado.&lt;/p&gt;
+&lt;p&gt;Si queremos hacerlo solamente con una linea (ejemplo: una dirección de
+mail), hay que escribir (ademas del primer renglón):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;:O:@mimail::esteesmimailsuperlargoquenoquieroescribir@todoeltiempo.com
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Con esto, y si escribis todo el tiempo lo mismo, te puede ayudar a
+reducir el tiempo.&lt;/p&gt;</description><category>autohotkey</category><guid>http://blog.quinzi.com.ar/./es/autohotkey-reemplazo/</guid><pubDate>Mon, 01 Jun 2009 15:33:00 GMT</pubDate></item><item><title>AutoHotkey: Nueva Carpeta</title><link>http://blog.quinzi.com.ar/./es/autohotkey-nueva-carpeta/</link><description>&lt;p&gt;Uso Windows. Qué se extraña de otros
+Sistemas Operativos? Keyboard Shortcuts (Atajos de teclado /
+Comandos, Ctrl + C…) para una nueva carpeta. Sé que se puede apretando:
+&lt;kbd&gt;AppMenu&lt;/kbd&gt; (ese que funciona como el botón derecho) &lt;kbd&gt;arriba x2 &amp;gt; enter/derecha &amp;gt; enter&lt;/kbd&gt;. O desde el menu de arriba en una
+carpeta: &lt;kbd&gt;alt &amp;gt; enter/abajo &amp;gt; enter/derecha &amp;gt; abajo&lt;/kbd&gt;. Pero es mucho lio, asique
+pienso yo que con dos teclitas se soluciona parte del problema.&lt;/p&gt;
+&lt;p&gt;El programa a descargar es &lt;a href="http://www.autohotkey.com"&gt;Autohotkey&lt;/a&gt; (Es gratuito,
+OpenSource y para Windows). Dos versiones: exe y zip. Si queres crear
+scripts rápidos, optá por el exe. Si no te interesa/no te molesta la
+rapidez (solo son un par de pasitos mas, tampoco es mucho) anda con el
+comprimido.&lt;/p&gt;
+&lt;p&gt;Una vez que lo instalaste, en una carpetita donde vas a
+guardar los scripts hacé: &lt;kbd&gt;boton derecho&amp;gt;crear nuevo AutoHotkey Script&lt;/kbd&gt;.
+Si bajaste el Zip, creas un archivo de texto con la extensión .ahk.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.quinzi.com.ar/images/2009/ahk_01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Te aparece el archivo, le cambias el nombre (como &lt;code&gt;nuevacarpeta&lt;/code&gt;). Sobre éste, botón &lt;kbd&gt;derecho&amp;gt;Edit Script&lt;/kbd&gt;. Te aparece el bloc
+de notas. El archivo contiene lo siguiente:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Código default" src="http://blog.quinzi.com.ar/images/2009/ahk_02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Eliminá todo y poné:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;#n::send {AppsKey}{up}{up}{right}{enter}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Explicación:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\#n&lt;/code&gt; es el Shortcut. En este caso es: &lt;kbd&gt;Win+n&lt;/kbd&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;send&lt;/code&gt; es para enviar "la info", solamente ponelo, sino no funciona.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{AppsKey}{up}{up}{right}{enter}&lt;/code&gt; es igual a &lt;kbd&gt;botón derecho &amp;gt; arriba &amp;gt; arriba &amp;gt; derecha &amp;gt; enter&lt;/kbd&gt;. Es la traduccion de
+lo que hariamos por mouse, o por la descripción por teclado que habia
+escrito al principio.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Una vez esto, hacemos &lt;kbd&gt;botón derecho&lt;/kbd&gt; sobre el archivo &lt;kbd&gt;abrir con &amp;gt; AutoHotkey&lt;/kbd&gt; o se puede configurar para que haciendo doble click lo lance.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.quinzi.com.ar/images/2009/ahk_03.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Se nos carga el programita y ya está. Apretas &lt;kbd&gt;Win+N&lt;/kbd&gt; y tenes tu carpetita nueva, aguardando renombrarla.&lt;/p&gt;
+&lt;p&gt;Podes poner que el AutoHotkey se cargue con Windows y asi
+automaticamente el script; compilarlo y que te quede un exe que lo pones
+en la carpeta de &lt;code&gt;Inicio&lt;/code&gt; (y asi no necesitar el programa para correrlo); o
+&lt;a href="http://www.mediafire.com/file/ymzjwztdnzr/AutoHotkey%20-%20Nueva%20Carpeta.rar"&gt;bajar el archivo&lt;/a&gt; que contiene: el ahk
+y el exe con un txt por si no sabes donde hay que ponerlo.&lt;/p&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-10"&gt;
+&lt;div id="comment-10"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;&lt;a href="http://www.luxiano.com.ar" rel="external nofollow" class="url"&gt;Luxiano&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;     &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+May 23, 2009 at 5:48 pm     &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Me leí un poco el blog, muy bueno, interesante, te felicito!&lt;/p&gt;
+&lt;p&gt;Tu paisano, Luxiano :D&lt;/p&gt;
+&lt;p&gt;Saludos!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-11"&gt;
+&lt;div id="comment-11"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;            &lt;cite class="fn"&gt;A.Q.&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;        &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;
+May 24, 2009 at 11:29 am        &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Muchas gracias :D&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="post pingback"&gt;
+&lt;p&gt;Pingback: &lt;a href="http://eikiu.wordpress.com/2009/06/01/autohotkey-reemplazo/" rel="external nofollow" class="url"&gt;AutoHotkey + Reemplazo | Intento de blog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="post pingback"&gt;
+&lt;p&gt;Pingback: &lt;a href="http://eikiu.wordpress.com/2012/12/17/goodbye-dropbox/" rel="external nofollow" class="url"&gt;Goodbye, Dropbox? | Intento de blog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>autohotkey</category><guid>http://blog.quinzi.com.ar/./es/autohotkey-nueva-carpeta/</guid><pubDate>Sat, 09 May 2009 00:00:00 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (opera)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/opera.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:54 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Editar menú contextual de Opera</title><link>http://blog.quinzi.com.ar/opera-editar-menu-contextual/</link><description>&lt;p&gt;Teniendo problemas con la conexión, me decidí a volver a usar gestores de descargas, pero tales (o mejor, &lt;a href="http://www.orbitdownloader.com/"&gt;Orbit Downloader&lt;/a&gt;) no se integraban con Opera. &lt;/p&gt;
+&lt;p&gt;En Opera vayan a &lt;kbd&gt;Herramientas &amp;gt; Preferencias&lt;/kbd&gt; (o
+&lt;kbd&gt;alt+p&lt;/kbd&gt;), pestaña &lt;kbd&gt;Avanzado&lt;/kbd&gt; y a la barra de la izquierda
+vayan a &lt;kbd&gt;Barras&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;Opcional: duplicar el &lt;code&gt;Opera Standard&lt;/code&gt; en &lt;kbd&gt;Configurar menú&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menu Setup de Opera" src="http://blog.quinzi.com.ar/images/2009/opera01.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Una vez duplicado, cierren Opera. Vayan a su profile + menu, usualmente es en: &lt;code&gt;C:\Documents and Settings\[usuario]\Datos de programa\Opera\[versión de Opera]\menu&lt;/code&gt;. Si no saben, vayan a &lt;kbd&gt;opera:about&lt;/kbd&gt; (yendo por el menu &lt;kbd&gt;Ayuda &amp;gt; Acerca de Opera&lt;/kbd&gt;) y fijense en la sección de
+&lt;code&gt;Rutas&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En esa carpeta se encuentra un archivo &lt;code&gt;.ini&lt;/code&gt;. En mi caso, como no le
+cambié el nombre es: &lt;code&gt;standard\_menu (1).ini&lt;/code&gt;. Ábranlo en un
+editor de texto y busquen &lt;code&gt;[Link Popup Menu]&lt;/code&gt; . Ahi estan todas las
+opciones de cuando se hace click sobre un link. &lt;/p&gt;
+&lt;p&gt;Al final de esa sección agreguen un separador (solo para quede lindo), copien y pegen esa linea que es algo asi &lt;code&gt;--------------------[número]&lt;/code&gt;, y cambien el número ese por uno más.
+Despúes de esa linea, peguen esta y modifiquen:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;&lt;span class="na"&gt;Item, "Download with Orbit"&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;Execute program, "C:\Archivos de programa\Orbitdownloader\orbitdm.exe","%l"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Donde "Download with Orbit" es lo que se va a mostrar al hacer
+click derecho/menú contextual. &lt;/p&gt;
+&lt;p&gt;La ruta es hacia donde está el programa propiamente dicho. El parámetro
+&lt;code&gt;%l&lt;/code&gt; es el &lt;code&gt;lnk&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Guarden el archivo, (re)inicien Opera. Vayan a un link de descarga
+(cualquier tipo de archivo) y et voilà! aparece en el menú!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.quinzi.com.ar/images/2009/opera02.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Hay otra opción que es para descargar contenido multimedia al estilo
+Youtube. Obviamente, se puede hacer abriendo &lt;code&gt;grab++&lt;/code&gt; (viene incluído
+en el paquete), pero como a veces no hay ganas de abrirlo, también se
+puede hacer por menu.&lt;/p&gt;
+&lt;p&gt;En el .ini busquen &lt;code&gt;[Document Popup Menu]&lt;/code&gt; . Esto es cuando haces
+click en un lugar "limpio" (sin imágenes, links, etc). Agreguen y modifiquen al final:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;&lt;span class="na"&gt;Item, "Grab++ Video By Orbit"&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"Execute program,"C:\Archivos de Programa\Orbitdownloader\Grab.exe","%u""&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Guarden y reinicien Opera. En un lugar X de la página (en este ejemplo, un video
+de Youtube, al lado del video), y sale el menú:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.quinzi.com.ar/images/2009/opera03.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Esto abre el &lt;code&gt;Grab++&lt;/code&gt; (un addon sería) y trae el video (previa
+recarga de la página). &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Muestra del addon" src="http://blog.quinzi.com.ar/images/2009/opera04.gif"&gt;&lt;/p&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-101"&gt;
+&lt;div id="comment-101"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;Luxiano&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;
+August 16, 2009 at 4:52 pm    &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Ves eso??? se me cae una idola :P&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/opera-editar-menu-contextual/</guid><pubDate>Sun, 16 Aug 2009 16:10:00 GMT</pubDate></item></channel></rss>

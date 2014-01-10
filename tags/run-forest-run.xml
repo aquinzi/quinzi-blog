@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (run forest run)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/run-forest-run.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:13:54 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Lanzar aplicaciones desde Ejecutar</title><link>http://blog.quinzi.com.ar/programas-ejecutar/</link><description>&lt;p&gt;Hace un par de semanas/meses instalé nuevamente &lt;a href="http://www.launchy.net/"&gt;Launchy&lt;/a&gt;. Al poco
+tiempo (minutos) lo saqué. Me pareció no-muy-de-mi-gusto teniendo las
+aplicaciones que tenía corriendo en ese momento.&lt;/p&gt;
+&lt;p&gt;Pocos minutos después, me acordé de que había visto por algún lado hacer
+lo que hace Launchy (lanzador de aplicaciones) con la &lt;strong&gt;ventana de
+Ejecutar&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;Hay que ir a &lt;kbd&gt;Mi PC &amp;gt; propiedades &amp;gt; Sistema &amp;gt; Opciones avanzadas&lt;/kbd&gt;.
+Abajo hay un botón que dice &lt;kbd&gt;Variables de entorno&lt;/kbd&gt;, entramos ahí.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Propiedades del sistema" src="http://blog.quinzi.com.ar/images/2009/run01.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Se abre una ventanita. Abajo, en &lt;code&gt;Variables del Sistema&lt;/code&gt;, buscamos
+&lt;code&gt;Path&lt;/code&gt; y damos click en &lt;kbd&gt;Modificar&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Variables del sistema" src="http://blog.quinzi.com.ar/images/2009/run02.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Sale otro Pop Up, y modificamos el valor de la variable. Lo único
+que hay que hacer es ir hasta el final, agregar &lt;code&gt;;&lt;/code&gt; (punto y coma)
+seguido de la ruta en donde se encuentran los shorcuts/atajos/accesos directos.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Editar variable del sistema" src="http://blog.quinzi.com.ar/images/2009/run03.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Aceptar, aceptar, aceptar. Listo! ahora &lt;kbd&gt;Win + r&lt;/kbd&gt;, el nombre del shortcut
+.. et voilà!&lt;/p&gt;
+&lt;h3 id="update"&gt;UPDATE&lt;/h3&gt;
+&lt;p&gt;Le dí otra oportunidad al &lt;a href="http://www.launchy.net/"&gt;Launchy&lt;/a&gt;. Me gustó, no consume tanto (o sí,
+dependiendo el gusto de cada uno).&lt;/p&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
+
+&lt;div id="comments"&gt;
+
+&lt;ol class="commentlist"&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-34"&gt;
+&lt;div id="comment-34"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.luxiano.com.ar" rel="external nofollow" class="url"&gt;Luxiano&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+
+&lt;div class="comment-meta commentmetadata"&gt;July 19, 2009 at 1:53 pm    &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Yo también usaba Launchy hasta que lo saqué (también tengo poca RAM ¬¬)… y empecé a usar Ejecutar :D &lt;/p&gt;
+&lt;p&gt;PD: si, que tierna, no? jaja :P &lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- #comment-##  --&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-35"&gt;
+&lt;div id="comment-35"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 19, 2009 at 7:28 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;También tenes menos de 1 GB de RAM? Hagamos un club para que no se nos rían en la cara… :P &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-36"&gt;
+&lt;div id="comment-36"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.luxiano.com.ar" rel="external nofollow" class="url"&gt;Luxiano&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 19, 2009 at 9:19 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Tengo 512 :(  buaaa&lt;/p&gt;
+&lt;p&gt;El club para cuando quieras :P &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-37"&gt;
+&lt;div id="comment-37"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 20, 2009 at 2:27 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Yo tengo un poco mas 700 (grafica integrada)&lt;/p&gt;
+&lt;p&gt;Y… Ahora! pero ponele vos el nombre :P &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-38"&gt;
+&lt;div id="comment-38"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.luxiano.com.ar" rel="external nofollow" class="url"&gt;Luxiano&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 20, 2009 at 2:43 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Yo tengo una placa de video con 64MB… :( &lt;/p&gt;
+&lt;p&gt;Nombre del club… subRAM? :P &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-39"&gt;
+&lt;div id="comment-39"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 20, 2009 at 3:16 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Luxiano y yo, A.Q., somos los dos primeros miembros del club subRAM. El único requisito es tener menos de 1GB de tal en estos tiempos (2009).&lt;/p&gt;
+&lt;p&gt;Si quieres unirte, no dudes en dejar un mensaje en este post.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment even thread-even depth-1" id="li-comment-40"&gt;
+&lt;div id="comment-40"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://0.gravatar.com/avatar/a7365cb580a32f88c276cab521f7a84d?s=40&amp;amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://www.luxiano.com.ar" rel="external nofollow" class="url"&gt;Luxiano&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 20, 2009 at 9:49 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt;Un día de estos se hace la página :D &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-41"&gt;
+&lt;div id="comment-41"&gt;
+&lt;div class="comment-author vcard"&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;    &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;div class="comment-meta commentmetadata"&gt;July 21, 2009 at 2:17 pm    &lt;/div&gt;
+
+&lt;!-- .comment-meta .commentmetadata --&gt;
+
+&lt;div class="comment-body"&gt;&lt;p&gt; :D &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li class="post pingback"&gt;
+&lt;p&gt;Pingback: &lt;a href="http://www.eikiu.com.ar/intentode/mi-palm-en-observacin" rel="external nofollow" class="url"&gt;Intento de Blog » Mi Palm en observación&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="post pingback"&gt;
+&lt;p&gt;Pingback: &lt;a href="http://www.eikiu.com.ar/intentode/subram-sociedad-de-subrameados" rel="external nofollow" class="url"&gt;Intento de Blog » subRAM, sociedad de subRAMeados&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/programas-ejecutar/</guid><pubDate>Sat, 18 Jul 2009 00:00:00 GMT</pubDate></item></channel></rss>

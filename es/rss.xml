@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog</title><link>http://blog.quinzi.com.ar/</link><description>Blog for A.Q.</description><atom:link href="http://blog.quinzi.com.ar/es/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Thu, 09 Jan 2014 22:13:55 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GitHub Pages para proyectos</title><link>http://blog.quinzi.com.ar/./es/gh-pages-project/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#programas-para-windows"&gt;Programas para Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#crear-repositorio"&gt;Crear repositorio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#activar-github-pages"&gt;"Activar" GitHub Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#pasarlo-al-desktop-para-trabajar"&gt;Pasarlo al desktop (para trabajar)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#preparar-branch-gh-pages"&gt;Preparar branch gh-pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#gh-pages-como-default-y-eliminar-master"&gt;gh-pages como default y eliminar master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#its-alive-archivo-de-prueba-y-subida"&gt;It's alive! (Archivo de prueba y subida)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#dominio-propio"&gt;Dominio propio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#404-pages-todos-amamos-los-error-pages"&gt;404 pages! (Todos amamos los error pages)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Pasos simples para crear un &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; para proyectos/por repo (y no para usuario u organización) además de cositas varias.&lt;/p&gt;
+&lt;p&gt;Los pasos estan tanto para CLI como para GitHub for Windows (TortoiseGit es "similar" a Git CLI) y orientado para principiantes en esto de Git, que buscan facilidad y no tanto "lío" o "vueltas". Aunque si estas cómodo con SVN podes usarlo (&lt;a href="https://help.github.com/articles/support-for-subversion-clients"&gt;ver clientes en GitHub&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Abreviaciones y otros vocabularios:&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;dfn&gt;git CLI&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;El Git que usas en una terminal/linea de comandos.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;GW&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;a href="http://windows.github.com/"&gt;GitHub for Windows&lt;/a&gt;.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;Tortoise&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;TortoiseGit.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;Server&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;Donde se "hostean" las cosas (como GitHub). En Git esto no existe, pero asi se entiende mejor para los principiantes (repositorio remoto).&lt;/dd&gt;
+&lt;dd&gt;"Central server" si venis desde SVN. &lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;repo&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;Para hacerla más fácil, mirar "repo" como "repositorio principal/remoto" o "server" (ver definición).&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;origin&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;Así se denomina al "repositorio remoto" original y por convención el repositorio centralizado 'primario'.&lt;/dd&gt;
+
+&lt;dt&gt;&lt;dfn&gt;c-p&lt;/dfn&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;code&gt;commit&lt;/code&gt; seguido de &lt;code&gt;push&lt;/code&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h2 id="programas-para-windows"&gt;Programas para Windows&lt;/h2&gt;
+&lt;p&gt;En un principio, tener Git en Windows era mucho lio (porque fue creado por y para Linux) pero ahora hay varias opciones. Usualmente, si vas a usar solo GitHub, se recomienda GW. Pero si queres usar Git para otras cosas (como crear "servers" localmente y jugar ahi) recomiendo &lt;a href="http://tortoisegit.org/"&gt;TortoiseGit&lt;/a&gt; + &lt;a href="http://msysgit.github.io/"&gt;msysgit&lt;/a&gt; (git CLI) en lugar de GW:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;te sirve para varias cosas y no solo para GitHub ("lee" el protocolo &lt;code&gt;github://&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;no tenes que pelear con el PATH por si queres usar git CLI (se instala en &lt;code&gt;%appdata%&lt;/code&gt; y no podes añadir solo &lt;code&gt;bin\&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;msysgit viene con "git Bash"; una CLI re linda con colores que además te muestra en qué &lt;code&gt;branch&lt;/code&gt; estas; ademas de personalizarla con &lt;code&gt;.bashrc&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="muestra de git Bash personalizado" src="http://blog.quinzi.com.ar/images//2014/git_bash.png"&gt;&lt;/p&gt;
+&lt;h2 id="crear-repositorio"&gt;Crear repositorio&lt;/h2&gt;
+&lt;p&gt;En GitHub, crear un repositorio con el nombre que se quiera. Podes iniciar sesión e ir a &lt;a href="https://github.com/repositories/new"&gt;https://github.com/repositories/new&lt;/a&gt; o apretando en el "&lt;kbd&gt;librito&lt;/kbd&gt;".&lt;/p&gt;
+&lt;h2 id="activar-github-pages"&gt;"Activar" GitHub Pages&lt;/h2&gt;
+&lt;p&gt;Se activa magicamente creando un &lt;code&gt;branch&lt;/code&gt; llamado &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Desde web es apretando en &lt;kbd&gt;branch master&lt;/kbd&gt;; en GW es apretando arriba donde dice &lt;kbd&gt;master&lt;/kbd&gt;. Buscar &lt;kbd&gt;gh-pages&lt;/kbd&gt; y apretar opción de crear (&lt;kbd&gt;create branch&lt;/kbd&gt;). Con CLI sería (previamente clonado, mirar abajo):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git checkout --orphan gh-pages    # branch local
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="admonition info"&gt;
+&lt;p class="admonition-title"&gt;Info&lt;/p&gt;
+&lt;p&gt;El &lt;code&gt;--orphan&lt;/code&gt; crea un &lt;code&gt;branch&lt;/code&gt; separado del resto del repo (sin &lt;em&gt;parents&lt;/em&gt;). Se crea primero localmente, después se manda al &lt;code&gt;origin&lt;/code&gt; (pasos mas abajo).&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="pasarlo-al-desktop-para-trabajar"&gt;Pasarlo al desktop (para trabajar)&lt;/h2&gt;
+&lt;p&gt;Desde GitHub apretar &lt;kbd&gt;Clone in desktop&lt;/kbd&gt; (que lo tomará GW o Tortoise) o desde CLI:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git clone https://github.com/user/repo_lindo.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="preparar-branch-gh-pages"&gt;Preparar branch gh-pages&lt;/h2&gt;
+&lt;p&gt;Cambiar a &lt;code&gt;gh-pages&lt;/code&gt;. En CLI, si se usó el comando anterior (&lt;code&gt;git checkout --orphan gh-pages&lt;/code&gt;) se cambia automáticamente, sino &lt;code&gt;git checkout -b gh-pages&lt;/code&gt; para cambiar y crear un &lt;code&gt;branch&lt;/code&gt; local llamado "gh-pages".&lt;/p&gt;
+&lt;div class="admonition info"&gt;
+&lt;p class="admonition-title"&gt;Info&lt;/p&gt;
+&lt;p&gt;Al cambiar &lt;em&gt;branches&lt;/em&gt;, Windows Explorer "refresca" la carpeta donde está con el contenido del &lt;code&gt;branch&lt;/code&gt; seleccionado.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Eliminar todos los archivos que aparezcan (porque son del &lt;code&gt;master&lt;/code&gt; y no los queremos) y hacemos c-p.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git rm -rf .                      # eliminamos todo
+$ git commit -m "Iniciar gh-pages"
+$ git push -u origin gh-pages       # mandamos branch al origin
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="gh-pages-como-default-y-eliminar-master"&gt;gh-pages como default y eliminar master&lt;/h2&gt;
+&lt;p&gt;Esto es opcional, depende de tu &lt;em&gt;workflow&lt;/em&gt; o idea de uso. Si solo se va a usar &lt;code&gt;gh-pages&lt;/code&gt;, se puede usar como default y eliminar el &lt;code&gt;branch&lt;/code&gt; &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para ponerlo como default (y no usar el &lt;code&gt;master&lt;/code&gt;), en GitHub, ir a &lt;kbd&gt;settings &amp;gt; (settings &amp;gt;) Default branch&lt;/kbd&gt; y seleccionar &lt;kbd&gt;gh-pages&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;Para eliminar el &lt;code&gt;master&lt;/code&gt; hay que tener el &lt;code&gt;gh-pages&lt;/code&gt; como default. Después ir al listado de &lt;em&gt;branches&lt;/em&gt; y apretar en &lt;kbd&gt;Delete branch&lt;/kbd&gt;. Con CLI:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git branch -d master     # eliminar local
+$ git push origin :master  # eliminar de repo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="its-alive-archivo-de-prueba-y-subida"&gt;It's alive! (Archivo de prueba y subida)&lt;/h2&gt;
+&lt;p&gt;Crear un &lt;code&gt;index.html&lt;/code&gt;, lo añadimos y hacemos c-p.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;$ git add .                   # añade todo
+$ git commit -am "Primer commit a pages"
+$ git push origin gh-pages
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;(el &lt;code&gt;-a&lt;/code&gt; es abreviatura de &lt;code&gt;add&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;Esperar unos minutos y ver si se subió el &lt;code&gt;index&lt;/code&gt; en: &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2 id="dominio-propio"&gt;Dominio propio&lt;/h2&gt;
+&lt;p&gt;Como seguramente no vas a querer entrar a &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt; porque es muy largo o queda poco profecional, GitHub permite ponerle un dominio/subdominio.&lt;/p&gt;
+&lt;p&gt;Solo basta con poner un archivo &lt;code&gt;CNAME&lt;/code&gt; que contiene el dominio/subdominio que se quiera usar, en el root de &lt;code&gt;gh-pages&lt;/code&gt; y cambiar los DNS del dominio en el host/registrar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Con un root domain (www.example.com): crear un nuevo &lt;code&gt;A record&lt;/code&gt; con la IP a &lt;kbd&gt;204.232.175.78&lt;/kbd&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Con un subdominio (sub.example.com): crear un &lt;code&gt;CNAME record&lt;/code&gt; que apunte al subdmonio del usuario en GitHub (&lt;kbd&gt;user.github.io&lt;/kbd&gt;). Esto deja que los DNS se adjusten automáticamente al IP de GitHub; se puede usar un &lt;code&gt;A record&lt;/code&gt; pero no se adjusta automáticamente.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="404-pages-todos-amamos-los-error-pages"&gt;404 pages! (Todos amamos los error pages)&lt;/h2&gt;
+&lt;p&gt;También es fácil: poner un &lt;code&gt;404.html&lt;/code&gt; en el root de &lt;code&gt;gh-pages&lt;/code&gt; y listo (no te olvides de agregarlo y c-p).&lt;/p&gt;
+&lt;section id="changes"&gt;
+
+&lt;h2&gt;Cambios&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;time&gt;2014-01-02&lt;/time&gt; Reescrito para ser mas explicativo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/section&gt;</description><category>git</category><category>github</category><guid>http://blog.quinzi.com.ar/./es/gh-pages-project/</guid><pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate></item><item><title>Windows 7: Arreglar los iconos en Explorer</title><link>http://blog.quinzi.com.ar/./es/windows7-shell-icons/</link><description>&lt;p&gt;Con esta era de usar programitas varios para sincronizar, otros para control de código, y otros que no puedo recordar ahora; es necesario tener los overlay icons en Windows Explorer:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ejemplo de iconos de estado" src="http://blog.quinzi.com.ar/images/2013/win7_shell_icons.png"&gt;&lt;/p&gt;
+&lt;p&gt;Personalmente se me desaparecían y, aunque limpiara la cache de los programas, nunca aparecían. Hay algunos que podes vivir sin ellos, pero otros no. Capaz instalaste un &lt;a href="https://copy.com?r=hQHBH9"&gt;programa&lt;/a&gt; y te desplazó los de &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;otro&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;¿Pero cuál es el problema? Que los genios de Microsoft limitan la cantidad de iconos que se pueden usar a unos meros &lt;strong&gt;11 iconos totales para el usuario&lt;/strong&gt;. WHAT THE HELL.&lt;/p&gt;
+&lt;p&gt;Para arreglar el tema hay que pasar por el registro. Entrá al bonito &lt;code&gt;regedit&lt;/code&gt; y navegá hasta &lt;code&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\&lt;/code&gt;. Antes de tocar mano, hacete un backup del &lt;code&gt;.reg&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La idea es que de los 30 que debes tener, solo elegis los 11 mas importantes. ¿Cómo decidis la importancia? renombrandolos, porque Windows los elige por orden alfabético. Poneles números adelante o "z", "x", "y", esas letras que no se usan. Yo prioricé algunos de TortoiseSVN, un par de &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;Dropbox&lt;/a&gt;, y el resto como sea el orden.&lt;/p&gt;
+&lt;p&gt;Una vez que estás feliz, reiniciá el explorer.exe: &lt;kbd&gt;Administrador de tareas &amp;gt; matar explorer&lt;/kbd&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/windows7-shell-icons/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;. Después lo inicias en &lt;kbd&gt;Nueva tarea&lt;/kbd&gt; (o si queres desloguearte y loguearte, si queres reiniciar también, pero no hace falta).&lt;/p&gt;
+&lt;p&gt;Fuente: &lt;a href="http://www.oliverpearmain.com/blog/dropbox-and-tortoise-svnsubversion-icon-overlays-in-harmony/"&gt;oliverpearmain: Dropbox and TortoiseSVN icons overlays in harmony&lt;/a&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;Kill, kill, kill! &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/windows7-shell-icons/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>windows</category><guid>http://blog.quinzi.com.ar/./es/windows7-shell-icons/</guid><pubDate>Thu, 12 Dec 2013 00:00:00 GMT</pubDate></item><item><title>pandy</title><link>http://blog.quinzi.com.ar/./es/pandy/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; es un wrapper para &lt;a href="http://johnmacfarlane.net/pandoc/"&gt;pandoc&lt;/a&gt; + cositas copadas (si usas markdown -&amp;gt; html)&lt;/p&gt;
+&lt;p&gt;Basicamente toma un archivo/carpeta, de qué convertir y a qué convertir, y lo corre por pandoc.&lt;/p&gt;
+&lt;h2 id="uso"&gt;Uso&lt;/h2&gt;
+&lt;p&gt;Para usar el script, solo llamalo con algo asi:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;pandy source format_from format/s_to [other options]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="caracteristicas"&gt;Caracteristicas&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sintaxis un porquito mas facil para los comandos de pandoc&lt;/li&gt;
+&lt;li&gt;Carpeta de output manteniendo o no la estructura&lt;/li&gt;
+&lt;li&gt;La fuente puede ser un archivo, una carpeta o un .list que contenga las rutas a los archivos&lt;/li&gt;
+&lt;li&gt;Formatos: algunos se puede abreviar (mirar abajo)&lt;/li&gt;
+&lt;li&gt;Formato de salida: se pueden poner más de uno! solo separalo con espacios.&lt;/li&gt;
+&lt;li&gt;Podes crear un librito re lindo (html, solo añade navegación entre archivos). Si no te gusta/queres el "Next-Prev", podes usar los titulos de archivo. Crea un lindo y simple index o incluí el tuyo.&lt;/li&gt;
+&lt;li&gt;Usa un archivo de configuración: así no tenes que acordarte de todos los argumentos o escribir un "wrapper" para un script "wrapper" :)&lt;/li&gt;
+&lt;li&gt;Soporte para &lt;code&gt;[TOCME]&lt;/code&gt;. Significa que el archivo que lo tenga, va a tener TOC. No mas eso de separar archivos con TOC, los que no tienen y finalmente ponerlos en una carpeta.&lt;/li&gt;
+&lt;li&gt;Si usas markdown y convertis a HTML hay cositas lindas para vos: abbreviations (de las verdaderas, no como esas que son ignoradas por pandoc) y admonitions.&lt;/li&gt;
+&lt;li&gt;"WikiLinks" para tu index!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para más información y explicación, ir a la &lt;a href="https://quinzi.com.ar/projects/pandy"&gt;página de proyecto de pandy&lt;/a&gt;.&lt;/p&gt;</description><category>python</category><category>code</category><category>pandoc</category><category>markdown</category><guid>http://blog.quinzi.com.ar/./es/pandy/</guid><pubDate>Wed, 11 Dec 2013 00:00:00 GMT</pubDate></item><item><title>svnlog: make changelog from SVN</title><link>http://blog.quinzi.com.ar/./es/svnlog/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; is a python script to create a changelog from a repository log.&lt;/p&gt;
+&lt;p&gt;Examples of output (default):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;2013-11-25:
+    changed arguments (better handling)
+    fix: output path with one file
+    fix: finding &amp;lt;h1&amp;gt;
+
+2013-11-19:
+    fixed: now files are saved according to source dir tree
+    + option to save files in one depth dir
+
+2013-11-19:
+    + relative links for book
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can group that too:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;2013-11-25:
+    changed arguments (better handling)
+    fix: output path with one file
+    fix: finding &amp;lt;h1&amp;gt;
+
+2013-11-19:
+    fixed: now files are saved according to source dir tree
+    + option to save files in one depth dir
+    + relative links for book
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It has some basic options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Show author with &lt;code&gt;--show-author&lt;/code&gt; or &lt;code&gt;-a&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Show revision number with &lt;code&gt;--show-rev&lt;/code&gt; or &lt;code&gt;-r&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Show time with &lt;code&gt;--show-time&lt;/code&gt; or &lt;code&gt;-t&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Prefix with a char using &lt;code&gt;--prefix&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reverse the order (default: new to old) with &lt;code&gt;--reverse&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Specify date or a range (&lt;a href="https://en.wikipedia.org/wiki/ISO_8601"&gt;ISO 8601&lt;/a&gt;) with &lt;code&gt;--date&lt;/code&gt;. You can leave the second date empy (&lt;code&gt;date1:&lt;/code&gt;) to include today&lt;/li&gt;
+&lt;li&gt;If you are better with revision numbers, you can specify one or a range with &lt;code&gt;--revision&lt;/code&gt;. You can leave the second revision empty (&lt;code&gt;rev1:&lt;/code&gt;) to include HEAD revision&lt;/li&gt;
+&lt;li&gt;Group the dates with &lt;code&gt;--group&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Also group revisions with &lt;code&gt;--subgroup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Or group dates but show it inline: &lt;code&gt;--inline&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Just make sure you have a SVN CLI in your path and then run &lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; with the options you desire&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/./es/svnlog/</guid><pubDate>Mon, 02 Dec 2013 00:00:00 GMT</pubDate></item><item><title>pymd: wrapper para Python Markdown</title><link>http://blog.quinzi.com.ar/./es/pymd/</link><description>&lt;div class="admonition info"&gt;
+&lt;p class="admonition-title"&gt;Hey!&lt;/p&gt;
+&lt;p&gt;pymd ahora esta en &lt;a href="https://pypi.python.org/pypi/pymd"&gt;PyPI&lt;/a&gt;. Eso significa que lo podes instalar como &lt;code&gt;pip install pymd&lt;/code&gt; :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/pymd"&gt;pymd&lt;/a&gt; es un wrapper para la librería &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python Markdown&lt;/a&gt;, basicamente te permite tener un HTML completo a comparación de lo que te tira la librería.&lt;/p&gt;
+&lt;h2 id="caracteristicas"&gt;Características&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Proceso en batch (en una carpeta o usando .list) con extensiones .md, .txt o .markdown&lt;/li&gt;
+&lt;li&gt;Especificar una carpeta de resultados/output (con creación automática)&lt;/li&gt;
+&lt;li&gt;Incluye todas las extensiones de Python Markdown y hasta podes especificar las tuyas!&lt;/li&gt;
+&lt;li&gt;Combinar los archivos en un HTML grande o crear un librito con links de navegación; hasta podes crear tu propio index!&lt;/li&gt;
+&lt;li&gt;CSSed: trae un no-tan-feo CSS embebido (hasta podes cambiar entre tipografía sans y serif) o linkear a una que prefieras.&lt;/li&gt;
+&lt;li&gt;Encabezados para los archivos! Así podes compartir el mismo metadata (como tu hermoso nombre y tu creativo título) en todos los archivos o cuando combinas y te olvidaste poner un título principal.&lt;/li&gt;
+&lt;li&gt;Wiki links: &lt;code&gt;[](file|path) -&amp;gt; [title linked file](output_path)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Hecho con amor &amp;lt;3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Más información y ejemplos en la &lt;a href="https://quinzi.com.ar/projects/pymd"&gt;página de proyecto de pymd&lt;/a&gt;&lt;/p&gt;</description><category>python</category><category>code</category><category>markdown</category><guid>http://blog.quinzi.com.ar/./es/pymd/</guid><pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate></item><item><title>foobar2000 theme: Tomorrow Night Bright</title><link>http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/#requerimientos"&gt;Requerimientos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Experimentando con el Default UI de foobar2000, salió este theme muy minimalista/simple con los colores de &lt;a href="https://github.com/ChrisKempson/Tomorrow-Theme"&gt;Tomorrow theme&lt;/a&gt; versión Night Bright.&lt;/p&gt;
+&lt;h2 id="screenshots"&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;Se tiene el menu + controles en una misma linea. Debajo, el seekbar + los playlists en un dropdown menu. En el status bar esta el tiempo, rating (vista) y volúmen.&lt;/p&gt;
+&lt;p&gt;Son cuatro vistas/tabs en total:&lt;/p&gt;
+&lt;p&gt;"Now" contiene el playlist actual, agrupado por artista (en azul) + album (verde). Los tracks solo muestran su titulo (rojo) y su comentario (naranja).&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Lista de reproducción activa" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_now.png"&gt;&lt;/p&gt;
+&lt;p&gt;"Lyrics" tiene el cover art y la letra.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Panel con letra de canción" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_lyrics.png"&gt;&lt;/p&gt;
+&lt;p&gt;"Meta" son los datos del track que se esta reproduciendo.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Propiedades del tema" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_meta.png"&gt;&lt;/p&gt;
+&lt;p&gt;"Library" es la biblioteca.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Biblioteca" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_library.png"&gt;&lt;/p&gt;
+&lt;p&gt;No tiene lista de playlist (solo el dropdown) porque no hay uno que me liste y prevenga el accidental borrado :P. Si necesitas manejarlos, vas a &lt;kbd&gt;View &amp;gt; Playlist Manager&lt;/kbd&gt;.&lt;/p&gt;
+&lt;h2 id="requerimientos"&gt;Requerimientos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.foobar2000.org/"&gt;foobar2000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://foo2k.chottu.net/"&gt;EsPlaylist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.foobar2000.org/components/view/foo_uie_lyrics3"&gt;Lyric Show Panel 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.mediafire.com/?qb2v62gt01uzr8h"&gt;theme + configuración&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Poner la configuración del EsPlaylist (&lt;code&gt;foo_uie_esplaylist.dll.cfg&lt;/code&gt;) en &lt;code&gt;[lugar_donde_esta_foobar]/configuration&lt;/code&gt; (cosa que no tengas que configurar a mano) y el theme (&lt;code&gt;tomorrowbright.fth&lt;/code&gt;) donde quieras.&lt;/p&gt;
+&lt;p&gt;Importá el theme (&lt;kbd&gt;Preferences &amp;gt; Display &amp;gt; Default User Interface &amp;gt; Import theme&lt;/kbd&gt;). En el playlist, hace &lt;kbd&gt;click derecho &amp;gt; grouping &amp;gt; inline - Tomorrow night bright&lt;/kbd&gt;. En el lyrics, edita el panel (&lt;kbd&gt;panel preferences&lt;/kbd&gt;) y pone el &lt;code&gt;highlight color&lt;/code&gt; a RGB &lt;code&gt;236,206,88&lt;/code&gt; (amarillito).&lt;/p&gt;
+&lt;p&gt;El color de los "separadores" de los titulos (en el playlist, el &lt;code&gt;%artist%&lt;/code&gt;, &lt;code&gt;%album%&lt;/code&gt;; y en el meta el "metadata", "location", "other"...) esta configurado en &lt;kbd&gt;Default User Interface &amp;gt; Colors and fonts&lt;/kbd&gt; (por si no te gusta el violeta).&lt;/p&gt;
+&lt;p&gt;Si queres poner otros botones de control, necesitas que esten en &lt;code&gt;.ico&lt;/code&gt; de 16x16.&lt;/p&gt;
+&lt;p&gt;El theme para Windows es &lt;a href="http://www.deviantart.com/art/SlanXP-2-0-For-7-134955170"&gt;SlanXP2 for 7&lt;/a&gt;, por eso el DUI se ve lindo.&lt;/p&gt;</description><category>foobar2000</category><category>theme</category><guid>http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/</guid><pubDate>Thu, 07 Nov 2013 00:00:00 GMT</pubDate></item><item><title>Box: acceder por WebDAV</title><link>http://blog.quinzi.com.ar/./es/box-webdav/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/box-webdav/#windows-explorer"&gt;Windows Explorer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/box-webdav/#bitkinex"&gt;BitKinex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Acceder por &lt;a href="http://en.wikipedia.org/wiki/WebDAV"&gt;WebDAV&lt;/a&gt; a servicios de sincronización para verlos en tu explorador de archivos sin tener que instalar el cliente -&amp;gt; esperar a que inicie -&amp;gt; indexe -&amp;gt; haga la sincronización solo para sacar un archivo&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/box-webdav/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, es priceless&lt;sup id="fnref:priceless"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/box-webdav/#fn:priceless" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Me aventuré con esto por que quería hacer un proyecto donde necesitaba un &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;. Ultimamente (o siempre fue así), no te dan la opción de hacerte cuenta de &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;, solo creando un sitio. Not interested. No tengo un server/computadora (es un pendiente) para hacerla server e instalarle &lt;a href="https://filezilla-project.org"&gt;FileZilla&lt;/a&gt;. Damnit. Me acordé de los servicios de sincronización/host de donde tengo cuenta y me aventuré.&lt;/p&gt;
+&lt;p&gt;Elegí &lt;a href="http://www.box.com"&gt;Box&lt;/a&gt;. Pensaba subir los archivos por web, ya que la sincronización es media-media en ese servicio, pero recordé que &lt;a href="https://www.sugarsync.com/"&gt;SugarSync&lt;/a&gt; tiene el "SugarSync Drive", donde podes acceder a tu cuenta con el explorador de archivos. Me puse a buscar si Box tenía la mismo o similar.&lt;/p&gt;
+&lt;p&gt;Tiene para acceder por &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;, pero solo en cuentas pagas. Después leí sobre WebDAV. Intenté configurarlo y, luego de pelear por bastante tiempo, acá está cómo hacerlo en Windows (7).&lt;/p&gt;
+&lt;h2 id="windows-explorer"&gt;Windows Explorer&lt;/h2&gt;
+&lt;p&gt;En "Equipo" (el viejo "Mi PC"), ir a &lt;kbd&gt;Conectar a unidad de red&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Seleccionar el disco (que no importa mucho parece), tildar &lt;kbd&gt;Conectar de nuevo al iniciar sesión&lt;/kbd&gt;. Clickear en &lt;kbd&gt;Conectarse a sitio web para usarlo como almacén...&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_config_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;En la ventana que aparece, seleccionar &lt;kbd&gt;Elegir una ubicación de red personalizada&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_location_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Ahora lo divertido y lo que me dió dolores de cabeza: la dirección.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_address_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Se puede poner:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Para toda la carpeta/cuenta: &lt;code&gt;https://dav.box.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Para carpeta especifica: &lt;code&gt;https://dav.box.com/dav/CARPETITA&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sale la ventana de log in. Poner nombre de usuario/e-mail de Box y la contraseña.&lt;/p&gt;
+&lt;p&gt;Opcional, en la siguiente pantalla renombrar ahora la etiqueta:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_name_es.png"&gt;&lt;/p&gt;
+&lt;p&gt;Y listo, asi queda:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mostrando disco agregado" src="http://blog.quinzi.com.ar/images/2013/webdav_networks_computer.png"&gt;&lt;/p&gt;
+&lt;p&gt;Si no te funciona, podes usar &lt;a href="http://rei.to/carotdav_en.html"&gt;CarotDAV&lt;/a&gt; (que es para "unir" varios servicios en un mismo programa portable), el famoso &lt;a href="http://www.ghisler.com/download.htm"&gt;Total Commander&lt;/a&gt; o BitKinex.&lt;/p&gt;
+&lt;h2 id="bitkinex"&gt;BitKinex&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.bitkinex.com/download"&gt;Descargar BitKinex&lt;/a&gt;. Instalar normalmente, pero recomiendo (por que leí) destildar el "I want to configure data source now" por que parece que no hace nada).&lt;/p&gt;
+&lt;p&gt;Una vez iniciado (si, aparece asi chiquito por alguna razón), buscar en la lista el Http/WebDAV, &lt;kbd&gt;right click &amp;gt; New &amp;gt; Http/WebDAV&lt;/kbd&gt; e ingresar nombre.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Creando servicio" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_new.png"&gt;&lt;/p&gt;
+&lt;p&gt;Poner datos similares de los de arriba: &lt;code&gt;dav.box.com&lt;/code&gt;, seleccionar &lt;kbd&gt;&lt;abbr title="Seguridad ante todo"&gt;SSL&lt;/abbr&gt;&lt;/kbd&gt;. Poner usuario y contraseña en el apartado de abajo:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_server.png"&gt;&lt;/p&gt;
+&lt;p&gt;También lei (opcional) que se puede poner un path al Site map (no se para qué, no noté diferencia). Se configura yendo a &lt;kbd&gt;Site Map&lt;/kbd&gt; (debajo de donde estas ahora/Server) y agregando/modificando el path con &lt;code&gt;/dav&lt;/code&gt;, eligiendo &lt;kbd&gt;Directory WebDAV-compliant&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_sitemap.png"&gt;&lt;/p&gt;
+&lt;p&gt;Y listo, solo falta hacerle doble click a la conexión y tenes los datos:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Servicio añadido" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_connection.png"&gt;&lt;/p&gt;
+&lt;p&gt;Fuente: &lt;a href="https://box.zendesk.com/entries/21534903"&gt;Box zendesk&lt;/a&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;por que la gente, a veces, lo usa como servicio de hosting (además del de sincronizar) &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/box-webdav/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:priceless"&gt;
+&lt;p&gt;literalmente. Actualmente, los sistemas opertivos lo traen de fábrica (mas, menos o nulo buggeados) &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/box-webdav/#fnref:priceless" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>box</category><category>sync</category><category>windows7</category><category>webdav</category><guid>http://blog.quinzi.com.ar/./es/box-webdav/</guid><pubDate>Sun, 04 Aug 2013 00:00:00 GMT</pubDate></item><item><title>proDO: super simple bug/issue tracker</title><link>http://blog.quinzi.com.ar/./es/prodo/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/prodo/#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/prodo/#script"&gt;Say hi to proDO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="admonition attention"&gt;
+&lt;p class="admonition-title"&gt;Atención&lt;/p&gt;
+&lt;p&gt;Si no te interesa la historia del por qué se escribió el script y/o no queres saber sobre programitas, adelantate hasta &lt;a href="http://blog.quinzi.com.ar/./es/prodo/#script"&gt;acá&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;Cuando desarrollas o escribis código (o palabras, por qué no) necesitas algún tipo de bug/issue tracker. Eso es normal para proyectos grandes o con varias personas, pero al ser un solo individuo o el proyecto es chico, todas las opciones son como mucho.&lt;/p&gt;
+&lt;p&gt;A algunos no les importa e instalan grandes bug trackers, otros usan algo mas simple. Otros vamos por la old school y escribimos en papel. Otras escribimos en un .txt, que puede ser un simple archivo o con esos ToDo.txt/&lt;a href="http://taskwarrior.org/"&gt;taskwarrior&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Si el proyecto es medianamente grande (más grande que un mero script), escribo en papel. Si es algo simple/un script, anoto las cosas dentro del archivo, como varias personas.&lt;/p&gt;
+&lt;p&gt;El problema que tengo es que me gusta listar todas las cositas esas con el numero de linea y/o click que me lleve a tal. No todos los editores lo hacen por default (creo que las grandes IDEs), seguro hay un plugin que ni ganas de configurar. Se puede hacer una búsqueda, que es lo mas cercano a lo que quiero.&lt;/p&gt;
+&lt;p&gt;Uso dos editores de texto dependiendo del trabajo que tengo que hacer: &lt;a href="http://www.sublimetext.com/"&gt;Sublime Text&lt;/a&gt; para trabajos "grandes" (por alguna razón) y &lt;a href="http://www.notepad-plus-plus.org/"&gt;Notepad++&lt;/a&gt;. En ambos se puede hacer búsquedas por proyecto/archivos abiertos, la diferencia es que en Sublime Text te abre una pestañita de miercoles con los resultados (not fun), y Notepad++ te los muestra en una ventanita dockeable (good):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de búsqueda en Notepad++" src="http://blog.quinzi.com.ar/images/2013/search_notepadpp.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Qué no me gusta de esto? La forma en que te lo muestra&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; y el hecho que Notepad++ tiene otro tipo de regex que, según expertos, es mas pobre.&lt;/p&gt;
+&lt;p&gt;Lo más lógico es usar grep. Si usas Linux, ya viene por defecto, sino con algo como &lt;a href="http://cygwin.com/"&gt;Cygwin&lt;/a&gt; en Windows (u otras variantes). Hasta le podes poner colorcitos pero solo a una cosa (el string encontrado). No está mal tampoco pero no es muy limpio&lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:6" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de búsqueda con grep" src="http://blog.quinzi.com.ar/images/2013/search_grep.png"&gt;&lt;/p&gt;
+&lt;p&gt;Si no te gustan las terminales/lineas de comandos pero queres usar grep, hay varios programitas que te dejan (hacer una especie de) grep&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:3" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Tenes &lt;a href="http://www.mythicsoft.com/agentransack/"&gt;Agent Ransack&lt;/a&gt;, donde quedaría asi:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de busqueda con Agent Ransack" src="http://blog.quinzi.com.ar/images/2013/search_agent.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Para este tipo de trabajos no me gusta por que tengo que clickear archivo por archivo (not fun).&lt;/p&gt;
+&lt;p&gt;Y &lt;a href="http://stefanstools.sourceforge.net/grepWin.html"&gt;grepWin&lt;/a&gt;, donde hay que tener cuidado de clickear solo en "Search" y seleccionar la opción de "Content"&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de búsqueda de grepWin" src="http://blog.quinzi.com.ar/images/2013/search_grepWin.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Este no estaba tan mal, pero eso de abrir programa &amp;gt; rellenar datos no me convencia mucho. Por lineas de comando solo podes poner el path y qué buscar (que no esta mal) pero quiero que, por lo menos, esté seleccionado el "Content".&lt;/p&gt;
+&lt;h2 id="script"&gt;Say hi to proDO&lt;/h2&gt;
+&lt;p&gt;Como estoy aprendiendo Python y mas que nada lo estoy usando para hacer varios scripts&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; y reemplazar/dejar de dar vueltas con los batch, me decidí a hacer el mío.&lt;/p&gt;
+&lt;p&gt;Con los ejemplos anteriores, queda asi:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de búsqueda con proDO" src="http://blog.quinzi.com.ar/images/2013/search_nocolor.png"&gt;&lt;/p&gt;
+&lt;p&gt;Pero si tenes &lt;a href="https://pypi.python.org/pypi/colorama"&gt;colorama&lt;/a&gt; instalado queda asi (con mas onda):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Resultados de búsqueda con proDO con color" src="http://blog.quinzi.com.ar/images/2013/search_color.png"&gt;&lt;/p&gt;
+&lt;p&gt;Datos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Solo busca las palabras TODO y FIXME (es case insensitive: también podes poner ToDo, todo, tODO, etc)&lt;/li&gt;
+&lt;li&gt;Por default, al correr el programa te lista los archivos desde donde corre el script &lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:5" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt;, ignorando los &lt;code&gt;.bak&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Se puede especificar la ruta a buscar, corriendo &lt;code&gt;proDO.py -s/-source [rutita linda]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Se puede eliminar las lineas con: &lt;code&gt;proDO.py del/d [archivo] [linea]&lt;/code&gt; (automaticamente hace un backup (&lt;code&gt;.bak&lt;/code&gt;) del archivo por si se pone loca)&lt;/li&gt;
+&lt;li&gt;Si necesitas ejemplos de lo de arriba o queres mirar qué linda hice la ayuda: &lt;code&gt;proDO.py -h&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Si no queres escribir &lt;code&gt;proDO.py&lt;/code&gt; (la extensión es importante en Windows), podes crear un "wrapper batch": en (ejemplo) proDO.bat poner: &lt;code&gt;proDO.py %*&lt;/code&gt;. Guardás y listo, ya lo podes llamar como &lt;code&gt;proDO&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Decarga y más información en la &lt;a href="https://quinzi.com.ar/projects/prodo"&gt;página de proDO&lt;/a&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;Que esta lindo, es para linux o con Windows + &lt;a href="http://cygwin.com/"&gt;Cygwin&lt;/a&gt;, pero es mucho trabajo para configurarlo para esto. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/prodo/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;Mentira, me acordé después de hacer el script. Lo testeé y no anda mal. Sólo que no se puede buscar por proyectos, asi que hay que escribir el path en la búsqueda o abrir todos los archivos. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/prodo/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:6"&gt;
+&lt;p&gt;Se puede limpiar/formatear con awk, pero tuve problemas con Cygwin que no traía el ejecutable para la herramienta (!) &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/prodo/#fnref:6" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;No sé exactamente la diferencia entre grep y buscar dentro de los archivos (con regex), yo lo uso intercambiablemente. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/prodo/#fnref:3" rev="footnote" title="Jump back to footnote 4 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:4"&gt;
+&lt;p&gt;por que se me complicó con eso de buscar una IDE para la parte gráfica. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/prodo/#fnref:4" rev="footnote" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:5"&gt;
+&lt;p&gt;en Linux es más fácil (por lo menos en xfce): &lt;kbd&gt;botón derecho &amp;gt; terminal&lt;/kbd&gt;. En Windows tenes que apretar &lt;kbd&gt;shift + botón derecho&lt;/kbd&gt;. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/prodo/#fnref:5" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>code</category><category>python</category><category>grep</category><guid>http://blog.quinzi.com.ar/./es/prodo/</guid><pubDate>Fri, 26 Jul 2013 00:00:00 GMT</pubDate></item><item><title>Android: dpi por app</title><link>http://blog.quinzi.com.ar/./es/android-dpi-app/</link><description>&lt;p&gt;Todos sabemos que Android tiene sus problemas, que Google los esta tratando de mejorar poco a poco. Todos sabemos que Google tiene servicios copados gratuitos. Y todos sabemos que Google dejó de lado las interfaces hechas por ingenieros&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; y contrató diseñadores. También sabemos que están tirando a la interfaz flat/minimalista, que no es fácil de dominar para que quede apetecible a los ojos.&lt;/p&gt;
+&lt;p&gt;¿A que voy con esto? Al "moco" que se metió al actualizar la Play Store. Acá te refresco un poco:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playstore opciones grandes" src="http://blog.quinzi.com.ar/images/2013/android_playstoreflat-orig.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;En las tablets no es tan mala. En los celulares con mucha resolución creo que tampoco. El problema va con los celus con poca resolución&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;, como el mío (&lt;a href="http://www.gsmarena.com/lg_optimus_one_p500-3516.php"&gt;LG Optimus One (p500)&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;¿Cómo arreglar esto y dejar la Play Store mas usable? Cambiando el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt;. ¿Cómo arreglar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt;? La opción mas popular es instalando &lt;a href="http://paranoid-rom.com/"&gt;Paranoid Android&lt;/a&gt; (me encanta el loguito). Cambiando a esta ROM, podes cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa (cambiar el color de la status bar y nav bar, otras cucherías pero no viene al cuento). La había probado (por otras razones) pero en mi celu era muy lenta y no daba dejarla solo para cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por uno o dos programas.&lt;/p&gt;
+&lt;p&gt;Dejé de lado esto hasta que encontré otra forma navegando por ahí: instalando el &lt;a href="http://forum.xda-developers.com/showthread.php?t=2072081"&gt;Xposed Framework y el Per App Settings Module&lt;/a&gt; &lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;. Esto es algo asi como "instalo esta app y este módulo, y puedo cambiar el dpi :D".&lt;/p&gt;
+&lt;p&gt;Es fácil de usar. Solo tenes que buscar la app que queres toquetear, le pones el "on", toqueteas, ponés guardar y reinicias el programa. Listo. Cambios hechos.&lt;/p&gt;
+&lt;p&gt;Jugando, llegué a poner así la Play Store:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playstore opciones en cuadrados" src="http://blog.quinzi.com.ar/images/2013/android_playstoreflat-squares.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;De cuatro pobres opciones a nueve. Mucho mejor, pero eso de los cuadraditos no me gustaba mucho&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;, asi que lo cambié a lista:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playstore más opciones en lista" src="http://blog.quinzi.com.ar/images/2013/android_playstoreflat-list.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;De los 4 originales a 8.5. Nada mal y sigue usable. Eso si, no todo es color de rosas, porque donde te muestra la info + capturas de pantalla + descarga + comentarios + +1&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fn:5" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; + etc. (las capturas) se ven medio deformes:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Información de programa en Playstore" src="http://blog.quinzi.com.ar/images/2013/android_playstoreflat-info.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Y, obviamente, al cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa, por lo menos en un celu como el mío, tarda unos segundos (contados) en abrir o cambiar de pantalla, pero puedo vivir con eso.&lt;/p&gt;
+&lt;p&gt;Si quieren saber los datos que usé para la Play Store, para que se den una idea:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Configuración de DPI del Playstore" src="http://blog.quinzi.com.ar/images/2013/android_playstoreflat-settings.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;También "mejoré" la app de DropBox (ahora me entran mas carpetitas en la vista), Contactos, gMail (que no lo uso en el celu, pero queda linda la tablet UI) y la cámara. Si quieren mejorar ésta última, y si usan Android 4.1&lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fn:6" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt; o superior, por alguna razón, el señorito Google unió la cámara con la galería, y tienen que modificar esa.&lt;/p&gt;
+&lt;p&gt;Asi que si, no necesitan cambiar de ROM para cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa. Instalen lo de arriba y PUM. Listo.&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;y con eso me refiero a los que no les importa el diseño y se centran en la funcionalidad. Como eran antes los productos de Google. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;usualmente los de gama media-baja/antiguos/los de menos de $1500 &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;&amp;lt;3 xda developers &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:4"&gt;
+&lt;p&gt;En realidad, me gustaba pero los iconos eran muy grandes, lo cambié y después me olvidé de cómo habia puesto los cuadraditos. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:5"&gt;
+&lt;p&gt;Maldito Google+ &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:6"&gt;
+&lt;p&gt;JellyBean para los amigos &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/android-dpi-app/#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>android</category><guid>http://blog.quinzi.com.ar/./es/android-dpi-app/</guid><pubDate>Wed, 29 May 2013 00:00:00 GMT</pubDate></item><item><title>Dynamic to Static (Wordpress a Pelican)</title><link>http://blog.quinzi.com.ar/./es/wordpress-to-pelican/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#por-que"&gt;Por qué&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#presentacion"&gt;Presentación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#instalacion-en-windows"&gt;Instalación en Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#configuracion"&gt;Configuración&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#andando"&gt;Andando&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#themes"&gt;Themes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#migracion-wordpress-pelican"&gt;Migración Wordpress -&amp;gt; Pelican&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#posts-y-paginas"&gt;Posts y páginas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#imagenes"&gt;Imágenes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#categorias-y-tags"&gt;Categorías y tags&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#comentarios"&gt;Comentarios&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#pros-y-cons"&gt;Pros y Cons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#conclusion"&gt;Conclusión&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id="por-que"&gt;Por qué&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Because I can&lt;/li&gt;
+&lt;li&gt;Cada vez &lt;strong&gt;me llevo peor con Wordpress&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Soy blogger casual&lt;/strong&gt;, no necesito florecitas que cambian de color según el estado de ánimo de un animal en Samoa.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Todos los posts los escribo en markdown&lt;/strong&gt;, que los conviertos en html para pegarlos en Wordpress. No me tengo que olvidar si tiene imagénes y subirlas (y cambiar las rutas).&lt;/li&gt;
+&lt;li&gt;Puedo juguetear mas con el css y html (porque uso/aba wordpress.com)&lt;/li&gt;
+&lt;li&gt;Soy de ir en contra de la corriente (?)&lt;/li&gt;
+&lt;li&gt;Quiero llegar a los 10 items&lt;/li&gt;
+&lt;li&gt;Odio que haya que descargar 10 mb de javascript para el dashboard de Wordpress + otros 50mb para la cosas internas (relacionado con el punto 2)&lt;/li&gt;
+&lt;li&gt;estoy aprendiendo python&lt;/li&gt;
+&lt;li&gt;ya llegué&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="presentacion"&gt;Presentación&lt;/h2&gt;
+&lt;p&gt;Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.&lt;/p&gt;
+&lt;p&gt;Todo iba bien, hasta que los de Wordpress decidieron &lt;strong&gt;abrirse mas como CMS&lt;/strong&gt; que como sistema de blogging. Lo entiendo, es natural. Bien. No me gusta. No se si porque yo asocio Wordpress con blog y no un CMS completo a lo Joomla! o Drupal, o porque si las cosas en el backend estan mal organizadas para ser CMS/orientadas a blog, o si es mi conexión que no me deja disfrutar al máximo o qué. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Por temas de conexión y que el editor de Wordpress apesta&lt;/strong&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, añadido a tener una wiki en localhost y encariñarme con los &lt;a href="http://en.wikipedia.org/wiki/Lightweight_markup_languages"&gt;LML&lt;/a&gt;, &lt;strong&gt;escribía los posts en markdown&lt;/strong&gt; (que antes no me caía bien, hasta que empecé a usar &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt;), los pasaba a HTML, hacia search &amp;amp; replace para las imágenes (aunque se puede obviar si se suben primero las imágenes), y &lt;strong&gt;recien ahí lo pasaba a Wordpress&lt;/strong&gt;. No es lo mas cómodo del mundo, pero servía.&lt;/p&gt;
+&lt;p&gt;Por alguna razón que ahora no recuerdo, empecé a buscar (o encontré de casualidad) scripts que pasan &lt;code&gt;.txts&lt;/code&gt; con LML a html. Eso me hizo pensar: "hey, capaz me puede servir". Después de descartar un par que no me servían (estan apuntados a los usuarios de Linux y para usarlos en Windows era mucho lio), me decanté por &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pelican es un script de Python que toma archivos de texto con markdown, reStructuredText o AsciiDoc, los pasa por un theme, y te genera un blog estático/html. Puro y duro, a la vieja escuela. Con categorias, tags, rss, páginas. Vamos, lo básico para un blog.&lt;/p&gt;
+&lt;p&gt;Yo lo estoy hosteando en &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;Dropbox&lt;/a&gt;, después de decidir que subir las cosas por FTP era bastante molesto &lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;/las únicas razones por la que quiería un host apache era por el &lt;code&gt;.htaccess&lt;/code&gt; (el rewrite) para hacer magia pero no valía mucho hacer eso para mi humilde blog. &lt;strong&gt;También lo podes hostear en GitHub&lt;/strong&gt; si ya tenes cuenta ahi y no te molesta hacer commits. CAPAZ que algun día lo pase ahi (tengo como pendiente GitHub).&lt;/p&gt;
+&lt;p&gt;Si solo te interesa hacer la parte de archivos de texto en Dropbox SIN generar html y demas, tenes opciones como &lt;a href="http://calepin.co/"&gt;Calepin&lt;/a&gt; y &lt;a href="http://scriptogr.am/"&gt;scriptogr.am&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="instalacion-en-windows"&gt;Instalación en Windows&lt;/h2&gt;
+&lt;p&gt;Porque en Linux este tipo de cosas es mas fácil.&lt;/p&gt;
+&lt;p&gt;Por ahora, &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt; corre bajo &lt;strong&gt;Python 2.7&lt;/strong&gt;, hay un fork para que ande en Python 3 pero no lo pude hacer andar (tampoco probé mucho).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: yo explico como hacer esto manualmente, pero se puede instalar con &lt;code&gt;pip&lt;/code&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;instalación normal de &lt;a href="http://www.python.org/download/"&gt;Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;bajar los source files de &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt; y extraerlos&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;abrir el command line/consola en la carpeta anterior y:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;python setup.py intstall
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Si te pide el setuptools: &lt;a href="http://pypi.python.org/pypi/setuptools/"&gt;http://pypi.python.org/pypi/setuptools/&lt;/a&gt; o &lt;code&gt;pip install setuptools&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Esperar que se haga el chirimbolo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;como quiero usar Markdown, lo &lt;a href="http://packages.python.org/Markdown/install.html"&gt;instalo para python&lt;/a&gt; (de la misma manera que lo anterior)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Y el &lt;a href="http://pygments.org/"&gt;pygments&lt;/a&gt; para el syntax highlighting&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="configuracion"&gt;Configuración&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Se crea un &lt;code&gt;config.py&lt;/code&gt; para las configuración siguiendo &lt;a href="http://pelican.readthedocs.org/en/latest/settings.html"&gt;las variables en los docs&lt;/a&gt; (o usas como base las que ya te vienen en el archivo)&lt;/li&gt;
+&lt;li&gt;Si usas Markdown, vas a querer usar los &lt;a href="http://packages.python.org/Markdown/extensions"&gt;markdown extra&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="andando"&gt;Andando&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Crear un post con el &lt;a href="http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican"&gt;metadata correspondiente&lt;/a&gt;. El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.&lt;/li&gt;
+&lt;li&gt;Ir a la carpeta root de tu Pelican, abrir una linea de comandos y poner: &lt;code&gt;[Python_path]\Scripts\pelican.exe input/ -s config.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: para probar, podes obviar la parte de configuración.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nota 2&lt;/strong&gt;: si se corre en la carpeta del contenido, para el path se puede usar &lt;code&gt;.&lt;/code&gt; (punto)&lt;/p&gt;
+&lt;p&gt;Yo lo puse en un script/bat cosa de no escribir eso todo el tiempo.&lt;/p&gt;
+&lt;h2 id="themes"&gt;Themes&lt;/h2&gt;
+&lt;p&gt;Para los themes/templates, Pelican usa &lt;a href="http://jinja.pocoo.org/"&gt;Jinja2&lt;/a&gt;. Nunca usé un &lt;em&gt;template engine&lt;/em&gt;, siempre lo tildan de complicados y demas, pero este anduvo bien. Es fácil, tan fácil como crear vos un mini-template "engine" en php.&lt;/p&gt;
+&lt;p&gt;Podes &lt;a href="http://pelican.readthedocs.org/en/latest/themes.html"&gt;crear&lt;/a&gt; los tuyos, podes bajar otros &lt;a href="https://github.com/getpelican/pelican-themes"&gt;manualmente&lt;/a&gt; o usar la &lt;a href="http://pelican.readthedocs.org/en/latest/pelican-themes.html"&gt;linea de comandos&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="migracion-wordpress-pelican"&gt;Migración Wordpress -&amp;gt; Pelican&lt;/h2&gt;
+&lt;h3 id="posts-y-paginas"&gt;Posts y páginas&lt;/h3&gt;
+&lt;p&gt;Pelican tiene un &lt;a href="http://docs.getpelican.com/en/latest/importer.html"&gt;conversor&lt;/a&gt;. Como yo lo necesité para Wordpress, me voy a centrar en ese. Necesitas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.crummy.com/software/BeautifulSoup/#Download"&gt;BeautifulSoup-3.2.1&lt;/a&gt; (las 4.x no funcionan)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; (amo pandoc)&lt;/li&gt;
+&lt;li&gt;el export de Wordpress (&lt;code&gt;.xml&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Una vez que tenes eso, corres (cambiar "markdown" por el formato que quieras):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;[Python_path]\Scripts\pelican-import --wpfile -o [path_output] [path_wordpress.xml] -m markdown
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="imagenes"&gt;Imágenes&lt;/h3&gt;
+&lt;p&gt;Como paso de wordpress.com a Pelican, tengo que descargar las imágenes de alguna forma. Se puede mediante cositas guay como PageNest y similares, pero es mucho lio pensar un regex solo para descargarlas.&lt;/p&gt;
+&lt;p&gt;Ya que tenemos el &lt;code&gt;.xml&lt;/code&gt; del export, podemos instalar un Wordpress en localhost (o hosteado en otra parte para hacer pruebas). Como tengo un Wordpress en localhost que hace años que no lo uso, tuve que eliminar todas las cosas que tenia antes (en &lt;kbd&gt;phpmyadmin &amp;gt; eliminar el contenido de las tablas/truncate&lt;/kbd&gt;), actualizarlo + actualizar base de datos + actualizar/instalar el plugin de import (que no viene como funcionalidad/core por alguna razón).&lt;/p&gt;
+&lt;p&gt;Una vez hecho eso, se va a &lt;kbd&gt;tools &amp;gt; import &amp;gt; wordpress &amp;gt; seleccionar archivo &amp;gt; linkear los autores &amp;gt; importar&lt;/kbd&gt; &amp;gt; esperar.&lt;/p&gt;
+&lt;p&gt;Y se espera.&lt;/p&gt;
+&lt;p&gt;Varios minutos.&lt;/p&gt;
+&lt;p&gt;Hasta que esté.&lt;/p&gt;
+&lt;p&gt;Ya con las imágenes en nuestro poder y procesadas/eliminar las duplicadas, hay que ponerlas en la carpeta input de pelican (en &lt;code&gt;images&lt;/code&gt; o como la llamaste). Aca se ve si se quieren poner de alguna estructura en especial o no.&lt;/p&gt;
+&lt;p&gt;Pro tip para las imagenes duplicadas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;primero eliminar las &lt;code&gt;-thumb&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;las demás tienen este nombre: &lt;code&gt;[nombre orig]-300x225.jpg&lt;/code&gt; (donde el numero de tamaño + extension cambian). Esto se puede eliminar facilmente con un script que tengas a mano, o sino con buscadores estilo &lt;a href="http://voidtools.com/"&gt;Everything&lt;/a&gt; poniendo: &lt;code&gt;[path a las imagenes]\ *-*x*&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ahora solo queda hacer un search &amp;amp; replace para cambiar la url del estilo &lt;code&gt;http://[username].files.wordpress.com/[año]/[mes]&lt;/code&gt; a tu estructura actual.&lt;/p&gt;
+&lt;h3 id="categorias-y-tags"&gt;Categorías y tags&lt;/h3&gt;
+&lt;p&gt;Ojito con las categorias. Primero: al hacer un sistema simple, &lt;strong&gt;no tiene jerarquia de categorias&lt;/strong&gt; como Wordpress. Fijate como manejas eso. Segundo: &lt;strong&gt;solo acepta una categoria por post&lt;/strong&gt;. Si estas cosas te molestan, podes optar por usar directamente tags.&lt;/p&gt;
+&lt;h3 id="comentarios"&gt;Comentarios&lt;/h3&gt;
+&lt;p&gt;Al pasar a Pelican, no sabia si incluir comentarios. Mi blog es personal, no tiene muchos o directamente no tiene, pero siempre quise eso de "che, yo resolví eso de otra forma: tal tal tal. Dejo el comentario por si a alguien le sirve", asique opté por usar Disqus (por que es el único que conozco y no tengo muchos comentarios, por eso ni me molesté en buscar alternativas).&lt;/p&gt;
+&lt;p&gt;Si queres transferir los comentarios: Disqus tiene una opción de traer los de Wordpress, pero requiere un plugin (o sea, me jodo). Yo hice copy &amp;amp; paste del html (para hacer algo manual viste, sino era todo automatizado) y los pegué en la entrada correspondiente.&lt;/p&gt;
+&lt;p&gt;Tips:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Conviene desactivar la opcion de conversión de caritas/emoticones ( &lt;code&gt;:D&lt;/code&gt;, &lt;code&gt;:)&lt;/code&gt; ) a imágenes. A no ser que quieras que se referencien al viejo blog o hacer trabajo extra para eliminarlas/pasarlas a texto.&lt;/li&gt;
+&lt;li&gt;Hacete un regex para sacar el link al comentario cuando se clickea en la fecha (yo lo hice, mas que nada, porque tomaba la dirección localhost). Usé este: &lt;code&gt;&amp;lt;a href="http://localhost/wordpress/\?p=\d.+comment-\d.+"&amp;gt;\n(.+)&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="pros-y-cons"&gt;Pros y Cons&lt;/h2&gt;
+&lt;p&gt;Como todo, hay pros y contras por cada sistema.&lt;/p&gt;
+&lt;p&gt;Wordpress, pros:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;es Wordpress&lt;/li&gt;
+&lt;li&gt;si lo hosteas, tenes libertad absoluta&lt;/li&gt;
+&lt;li&gt;es un buen sistema de blogging&lt;/li&gt;
+&lt;li&gt;es popular&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Contras:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;es Wordpress&lt;/li&gt;
+&lt;li&gt;editor de posts feo/lento&lt;/li&gt;
+&lt;li&gt;seguridad (normal)&lt;/li&gt;
+&lt;li&gt;Le falta un par de cosas, como poner footnotes facilmente&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pelican, pros:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;puedo escribir en markdown&lt;/strong&gt;, y usar los &lt;strong&gt;markdown extentions&lt;/strong&gt; (que lo hacen mas copado/completo). Al escribir en puro texto, puedo elegir el editor que yo quiera: &lt;a href="http://www.notepad-plus-plus.org/"&gt;Notepad++&lt;/a&gt;, &lt;a href="http://www.sublimetext.com/"&gt;Sublime Text&lt;/a&gt; &lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:6" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;, o hacerme la cool y abrir un precesador de texto completo de una suite ofimatica, el Wordpad, o algun editor designado para Markdown.&lt;/li&gt;
+&lt;li&gt;para actualizarlo es rapido: escribis, pones el archivo en la carpeta de input, corres el script y listo. Nada de andar loggeandote &amp;gt; click en nuevo post &amp;gt; esperar a que cargue &amp;gt; titulo &amp;gt; esperar que genere el slug &amp;gt; escribir &amp;gt; seleccionar categoria y tags &amp;gt; publicar&lt;/li&gt;
+&lt;li&gt;tenes un "backup"/raw de tus posts, faciles de transportar o convertir a otro formato.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;no tenes que lidear con un WYSIWYG&lt;/strong&gt;. Para ciertas cosas esta bueno, pero muchas veces te obstaculizan al escribir el contenido.&lt;/li&gt;
+&lt;li&gt;es estático = &lt;strong&gt;0 preocupaciones por la seguridad&lt;/strong&gt;. Solo te preocupas por el del host.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;es muy facil escribir posts multilenguajes&lt;/strong&gt;. Esto es para un usuario específico y básicamente es lo mismo que Wordpress (crear un post nuevo), pero por alguna razón se me hace mas simple: los posts solo deben tener el mismo slug y la diferenciación del idioma. Acá hay un ejemplo reciente cuando tuve &lt;a href="link://slug/android-battery-drain"&gt;problemas con android y la bateria&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Puedo/se me hace mas fácil, linkear a otros posts que escribi anteriormente&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Contras:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No tenes los stats, pero eso se puede cambiar por google analytics.&lt;/li&gt;
+&lt;li&gt;No tenes la facilidad de que los lectores califiquen un post, si lo quieren compartir, etc. No me molesta porque no lo uso pero capaz que alguno diga que es indispensable.&lt;/li&gt;
+&lt;li&gt;No tenes la gran disponibilidad de themes hechos (aunque puede ser bueno, hay varios que parecen hechos en front page)&lt;/li&gt;
+&lt;li&gt;No tenes la gran disponibilidad de plugins hechos (hay repetidos, hay muertos, hay de todo. Pero tampoco le quiero meter uno que agregue una carita al titulo del blog dependiendo si se encontraron nuevos fósiles).&lt;/li&gt;
+&lt;li&gt;Es python, todos sabemos como son los errores/debug de python (si sos principiante).&lt;/li&gt;
+&lt;li&gt;Genera contenido estático, nada de comentarios ni base de datos para no se que cosa. Los tenes que agregar vos y con Javascript o algún workaround.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Procon (no se como ponerla): &lt;strong&gt;Te tiene que gustar escribir&lt;/strong&gt;, y por escribir me refiero a escribir variables y demas, tanto del sistema específico (Pelican) y del LML que elegiste. Capaz que a los programadores esto seria un pro, pero para el resto de los mortales seria una contra (a no ser que crees un template).&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusión&lt;/h2&gt;
+&lt;p&gt;Esta mudanza la hice para probar cosas nuevas, solo actualizo el blog una vez al mes/cada 3-6 meses y ni tengo host propio. No es que este todos los dias escribiendo un post, o cada semana; tengo mis periodos de "ay si, hoy escribo y oh! ay mira escribi uno la semana pasada. Me siento re blogger" y de "ah mira, hace 6 meses que no escribo... qué se le va a hacer, no?".&lt;/p&gt;
+&lt;p&gt;Pero cada vez que SI actualizaba, odiaba profundamente el paso a Wordpress. Esta bien, si, podes ponerle un plugin para que tome la sintaxis markdown y todo eso, recordá que yo estoy/aba en wordpress.com y no pienso/aba instalar Wordpress en el host. Ya lo hice una vez y no me gustó, por eso me pasé a .com.&lt;/p&gt;
+&lt;p&gt;La actualización por medio de este sistema&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; es muy cómodo, solo pongo el post terminado en la carpeta (o lo creo ahi directamente), corro el script y listo. Solo tengo que tener Dropbox corriendo para que actualice. Si quiero hacerlo aun mas simple, puedo usar los servicios nombrados más arriba y solo poner el txt en Dropbox y listo. Sitio actualizado. También es muy rápido generar los &lt;code&gt;.html&lt;/code&gt;, con mi blogcito ni tarda 5 segundos (y eso que linkeo a otros posts).&lt;/p&gt;
+&lt;p&gt;Por que no un host cualquiera/FTP? Por que tenia que hacer un paso "extra" y sincronizar a FTP o anotarme a otro servicio para que haga un sync/backup de carpeta X de dropbox a carpeta X del host&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:5" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
+&lt;p&gt;No digo que me vaya a quedar con este sistema, capaz que algun dia diga "para que quiero gastar X espacio en mi disco/dropbox si con wordpress.com no me preocupo" o "hago mucho lio para lo que actualizo", etc., elimino las cosas, hago un par de cambios por alli y por allá y listo, vuelvo a wordpress.com, quien sabe. Solo quiero probar. &lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;y por alguna razón, ya no hay tantos &lt;em&gt;offline blogging systems&lt;/em&gt; como Raven o Windows Live Writer. Creo que Wordpress habia puesto la opción de actualizar por e-mail, pero nunca la probé. Debe ser un dolor si queres poner imágenes &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;en realidad no, podes crearte una cuenta en &lt;a href="http://mybackupbox.com"&gt;mybackupbox&lt;/a&gt; y que se sincronice/backup-ee automáticamente a un FTP. Esto abre la posibilidad de usar cosas como base de datos y php. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:3"&gt;
+&lt;p&gt;una vez que los usas, no podes parar. Son adictivos. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:6"&gt;
+&lt;p&gt;Que ahora me cae mejor. Te instalas el package control y tenes infinidad de plugins. Mas o menos le tomas la mano en la parte de configuración (puro texto) y lo dejas (casi) como quieras. Solo me falta buscar algo simple para que el editor se haga de dos columnas y pase el archivo activo a la otra "vista", sin presionar 10 teclas por acción. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:6" rev="footnote" title="Jump back to footnote 4 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:4"&gt;
+&lt;p&gt;txt -&amp;gt; pelican -&amp;gt; dropbox &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:4" rev="footnote" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:5"&gt;
+&lt;p&gt;ahora que lo pienso, capaz que se pueda poner el sitio en FTP como disco en red (o como se llame) en Windows. Lo hice una vez para pasar cosas al celular. Ahi puedo hacer las cosas directamente y me ahorraría unos pasos. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fnref:5" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>wordpress</category><category>pelican</category><category>static</category><category>python</category><category>dropbox</category><guid>http://blog.quinzi.com.ar/./es/wordpress-to-pelican/</guid><pubDate>Tue, 22 Jan 2013 00:00:00 GMT</pubDate></item></channel></rss>
