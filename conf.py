@@ -162,8 +162,8 @@ USE_CDN = True
 # Added to the bottom of <body>
 # in the default template (base.tmpl).
 BODY_END = """
-<script src="/assets/js/analytics.js" type="text/javascript"></script>
-<script src="/assets/js/github-mod.js" type="text/javascript"></script>
+<script src="/assets/analytics.js" type="text/javascript"></script>
+<script src="/assets/github-mod.js" type="text/javascript"></script>
 """
 
 # A mapping of languages to file-extensions that represent that language.
