@@ -1,4 +1,4 @@
-.. title: AutoHotkey + Reemplazo
+.. title: AutoHotkey: Reemplazo
 .. date: 2009-06-01 15:33
 .. category: guide
 .. tags: autohotkey
