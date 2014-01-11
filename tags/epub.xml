@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (epub)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/epub.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 10 Jan 2014 21:40:19 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Read ePUB in Kindle 3</title><link>http://blog.quinzi.com.ar/kindle3-epub/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (epub)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/epub.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 14:50:33 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Read ePUB in Kindle 3</title><link>http://blog.quinzi.com.ar/kindle3-epub/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#jailbreak"&gt;Jailbreak&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#launchpad"&gt;Launchpad&lt;/a&gt;&lt;/li&gt;
@@ -8,13 +8,13 @@
 &lt;/div&gt;
 &lt;p&gt;The other day I was looking if there was a possibility to read ePUBs in
 Kindle, and if yes, how to. Just for fun.&lt;/p&gt;
-&lt;h2 id="jailbreak"&gt;Jailbreak&lt;/h2&gt;
-&lt;p&gt;First you have to jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;downloading the file&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="jailbreak"&gt;Jailbreak
+&lt;/h2&gt;&lt;p&gt;First you have to jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;downloading the file&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Unzip it. Find &lt;code&gt;update_*_install*.bin&lt;/code&gt; where * is your kindle and
 firmware version. And copy it to (your kindle's) root.&lt;/p&gt;
 &lt;p&gt;Eject Kindle and press &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
-&lt;h2 id="launchpad"&gt;Launchpad&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Download this file&lt;/a&gt; and unzip it.&lt;/p&gt;
+&lt;h2 id="launchpad"&gt;Launchpad
+&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Download this file&lt;/a&gt; and unzip it.&lt;/p&gt;
 &lt;p&gt;Copy &lt;code&gt;update_launchpad_0.0.1c_*_install.bin&lt;/code&gt; where * is your kindle and
 firmware version. And copy it to (your kindle's) root.&lt;/p&gt;
 &lt;p&gt;Eject Kindle and press &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
@@ -26,8 +26,8 @@ think it's not developed anymore. The other one (Cool Reader) doesn't
 allow links, furigana it's shown with line breaks, does show tables
 propertly and it seems that it's still developed. Here I show how to
 install Cool Reader (the other one is almost the same)&lt;/p&gt;
-&lt;h2 id="cool-reader-3"&gt;Cool Reader 3&lt;/h2&gt;
-&lt;p&gt;The formats read by the Cool Reader are fb2, txt, html, rtf, chm, epub, mobi. It was
+&lt;h2 id="cool-reader-3"&gt;Cool Reader 3
+&lt;/h2&gt;&lt;p&gt;The formats read by the Cool Reader are fb2, txt, html, rtf, chm, epub, mobi. It was
 created (and it's "main objective") for reading &lt;a href="http://en.wikipedia.org/wiki/Fb2"&gt;fb2&lt;/a&gt;, that's why ePUB
 (and surely HTML and chm) are not read "propertly".&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=148850"&gt;Download the file&lt;/a&gt; and unzip it.&lt;/p&gt;

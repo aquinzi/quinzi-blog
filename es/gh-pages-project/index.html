@@ -76,7 +76,7 @@
             <dl>
                     <dt class="date">Publicado
                     </dt><dd> <del>  
-    <time class="published dt-published" itemprop="datePublished" datetime="2014-01-01T00:00:00+00:00">2014-01-01</time>
+    <time class="published dt-published" itemprop="datePublished" datetime="2014-01-01T00:00:00">2014-01-01</time>
 </del>
                          <ins>
     
@@ -128,18 +128,18 @@
 <dd><code>commit</code> seguido de <code>push</code></dd>
 </dl>
 
-<h2 id="programas-para-windows">Programas para Windows</h2>
-<p>En un principio, tener Git en Windows era mucho lio (porque fue creado por y para Linux) pero ahora hay varias opciones. Usualmente, si vas a usar solo GitHub, se recomienda GW. Pero si queres usar Git para otras cosas (como crear "servers" localmente y jugar ahi) recomiendo <a href="http://tortoisegit.org/">TortoiseGit</a> + <a href="http://msysgit.github.io/">msysgit</a> (git CLI) en lugar de GW:</p>
+<h2 id="programas-para-windows">Programas para Windows
+</h2><p>En un principio, tener Git en Windows era mucho lio (porque fue creado por y para Linux) pero ahora hay varias opciones. Usualmente, si vas a usar solo GitHub, se recomienda GW. Pero si queres usar Git para otras cosas (como crear "servers" localmente y jugar ahi) recomiendo <a href="http://tortoisegit.org/">TortoiseGit</a> + <a href="http://msysgit.github.io/">msysgit</a> (git CLI) en lugar de GW:</p>
 <ol>
 <li>te sirve para varias cosas y no solo para GitHub ("lee" el protocolo <code>github://</code>)</li>
 <li>no tenes que pelear con el PATH por si queres usar git CLI (se instala en <code>%appdata%</code> y no podes añadir solo <code>bin\</code>)</li>
 <li>msysgit viene con "git Bash"; una CLI re linda con colores que además te muestra en qué <code>branch</code> estas; ademas de personalizarla con <code>.bashrc</code>.</li>
 </ol>
 <p><img alt="muestra de git Bash personalizado" src="../../images//2014/git_bash.png"></p>
-<h2 id="crear-repositorio">Crear repositorio</h2>
-<p>En GitHub, crear un repositorio con el nombre que se quiera. Podes iniciar sesión e ir a <a href="https://github.com/repositories/new">https://github.com/repositories/new</a> o apretando en el "<kbd>librito</kbd>".</p>
-<h2 id="activar-github-pages">"Activar" GitHub Pages</h2>
-<p>Se activa magicamente creando un <code>branch</code> llamado <code>gh-pages</code>.</p>
+<h2 id="crear-repositorio">Crear repositorio
+</h2><p>En GitHub, crear un repositorio con el nombre que se quiera. Podes iniciar sesión e ir a <a href="https://github.com/repositories/new">https://github.com/repositories/new</a> o apretando en el "<kbd>librito</kbd>".</p>
+<h2 id="activar-github-pages">"Activar" GitHub Pages
+</h2><p>Se activa magicamente creando un <code>branch</code> llamado <code>gh-pages</code>.</p>
 <p>Desde web es apretando en <kbd>branch master</kbd>; en GW es apretando arriba donde dice <kbd>master</kbd>. Buscar <kbd>gh-pages</kbd> y apretar opción de crear (<kbd>create branch</kbd>). Con CLI sería (previamente clonado, mirar abajo):</p>
 <div class="code"><pre>$ git checkout --orphan gh-pages    # branch local
 </pre></div>
@@ -149,14 +149,14 @@
 <p class="admonition-title">Info</p>
 <p>El <code>--orphan</code> crea un <code>branch</code> separado del resto del repo (sin <em>parents</em>). Se crea primero localmente, después se manda al <code>origin</code> (pasos mas abajo).</p>
 </div>
-<h2 id="pasarlo-al-desktop-para-trabajar">Pasarlo al desktop (para trabajar)</h2>
-<p>Desde GitHub apretar <kbd>Clone in desktop</kbd> (que lo tomará GW o Tortoise) o desde CLI:</p>
+<h2 id="pasarlo-al-desktop-para-trabajar">Pasarlo al desktop (para trabajar)
+</h2><p>Desde GitHub apretar <kbd>Clone in desktop</kbd> (que lo tomará GW o Tortoise) o desde CLI:</p>
 <div class="code"><pre>$ git clone https://github.com/user/repo_lindo.git
 </pre></div>
 
 
-<h2 id="preparar-branch-gh-pages">Preparar branch gh-pages</h2>
-<p>Cambiar a <code>gh-pages</code>. En CLI, si se usó el comando anterior (<code>git checkout --orphan gh-pages</code>) se cambia automáticamente, sino <code>git checkout -b gh-pages</code> para cambiar y crear un <code>branch</code> local llamado "gh-pages".</p>
+<h2 id="preparar-branch-gh-pages">Preparar branch gh-pages
+</h2><p>Cambiar a <code>gh-pages</code>. En CLI, si se usó el comando anterior (<code>git checkout --orphan gh-pages</code>) se cambia automáticamente, sino <code>git checkout -b gh-pages</code> para cambiar y crear un <code>branch</code> local llamado "gh-pages".</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Al cambiar <em>branches</em>, Windows Explorer "refresca" la carpeta donde está con el contenido del <code>branch</code> seleccionado.</p>
@@ -168,8 +168,8 @@ $ git push -u origin gh-pages       # mandamos branch al origin
 </pre></div>
 
 
-<h2 id="gh-pages-como-default-y-eliminar-master">gh-pages como default y eliminar master</h2>
-<p>Esto es opcional, depende de tu <em>workflow</em> o idea de uso. Si solo se va a usar <code>gh-pages</code>, se puede usar como default y eliminar el <code>branch</code> <code>master</code>.</p>
+<h2 id="gh-pages-como-default-y-eliminar-master">gh-pages como default y eliminar master
+</h2><p>Esto es opcional, depende de tu <em>workflow</em> o idea de uso. Si solo se va a usar <code>gh-pages</code>, se puede usar como default y eliminar el <code>branch</code> <code>master</code>.</p>
 <p>Para ponerlo como default (y no usar el <code>master</code>), en GitHub, ir a <kbd>settings &gt; (settings &gt;) Default branch</kbd> y seleccionar <kbd>gh-pages</kbd>.</p>
 <p>Para eliminar el <code>master</code> hay que tener el <code>gh-pages</code> como default. Después ir al listado de <em>branches</em> y apretar en <kbd>Delete branch</kbd>. Con CLI:</p>
 <div class="code"><pre>$ git branch -d master     # eliminar local
@@ -177,8 +177,8 @@ $ git push origin :master  # eliminar de repo
 </pre></div>
 
 
-<h2 id="its-alive-archivo-de-prueba-y-subida">It's alive! (Archivo de prueba y subida)</h2>
-<p>Crear un <code>index.html</code>, lo añadimos y hacemos c-p.</p>
+<h2 id="its-alive-archivo-de-prueba-y-subida">It's alive! (Archivo de prueba y subida)
+</h2><p>Crear un <code>index.html</code>, lo añadimos y hacemos c-p.</p>
 <div class="code"><pre>$ git add .                   # añade todo
 $ git commit -am "Primer commit a pages"
 $ git push origin gh-pages
@@ -187,8 +187,8 @@ $ git push origin gh-pages
 
 <p>(el <code>-a</code> es abreviatura de <code>add</code>)</p>
 <p>Esperar unos minutos y ver si se subió el <code>index</code> en: <kbd>http://user.github.io/projectName/</kbd></p>
-<h2 id="dominio-propio">Dominio propio</h2>
-<p>Como seguramente no vas a querer entrar a <kbd>http://user.github.io/projectName/</kbd> porque es muy largo o queda poco profecional, GitHub permite ponerle un dominio/subdominio.</p>
+<h2 id="dominio-propio">Dominio propio
+</h2><p>Como seguramente no vas a querer entrar a <kbd>http://user.github.io/projectName/</kbd> porque es muy largo o queda poco profecional, GitHub permite ponerle un dominio/subdominio.</p>
 <p>Solo basta con poner un archivo <code>CNAME</code> que contiene el dominio/subdominio que se quiera usar, en el root de <code>gh-pages</code> y cambiar los DNS del dominio en el host/registrar:</p>
 <ul>
 <li>
@@ -198,11 +198,11 @@ $ git push origin gh-pages
 <p>Con un subdominio (sub.example.com): crear un <code>CNAME record</code> que apunte al subdmonio del usuario en GitHub (<kbd>user.github.io</kbd>). Esto deja que los DNS se adjusten automáticamente al IP de GitHub; se puede usar un <code>A record</code> pero no se adjusta automáticamente.</p>
 </li>
 </ul>
-<h2 id="404-pages-todos-amamos-los-error-pages">404 pages! (Todos amamos los error pages)</h2>
-<p>También es fácil: poner un <code>404.html</code> en el root de <code>gh-pages</code> y listo (no te olvides de agregarlo y c-p).</p>
+<h2 id="404-pages-todos-amamos-los-error-pages">404 pages! (Todos amamos los error pages)
+</h2><p>También es fácil: poner un <code>404.html</code> en el root de <code>gh-pages</code> y listo (no te olvides de agregarlo y c-p).</p>
 <section id="changes">
 
-<h2>Cambios</h2>
+<h3>Cambios</h3>
 
 <ol>
 <li><time>2014-01-02</time> Reescrito para ser mas explicativo.</li>
@@ -289,7 +289,7 @@ $ git push origin gh-pages
 			
 			
     <div id="vcard" class="vcard author p-author h-card vcard">
-        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> A.Q. </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> A.Q. </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="index.html#top"><i class="fa fa-chevron-circle-up"></i></a></span>
         </p>
     </div>
 

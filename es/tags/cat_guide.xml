@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (guide)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/cat_guide.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Fri, 10 Jan 2014 21:40:16 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GitHub Pages para proyectos</title><link>http://blog.quinzi.com.ar/./es/gh-pages-project/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (guide)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/cat_guide.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Sat, 11 Jan 2014 14:50:34 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GitHub Pages para proyectos</title><link>http://blog.quinzi.com.ar/./es/gh-pages-project/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#programas-para-windows"&gt;Programas para Windows&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#crear-repositorio"&gt;Crear repositorio&lt;/a&gt;&lt;/li&gt;
@@ -39,18 +39,18 @@
 &lt;dd&gt;&lt;code&gt;commit&lt;/code&gt; seguido de &lt;code&gt;push&lt;/code&gt;&lt;/dd&gt;
 &lt;/dl&gt;
 
-&lt;h2 id="programas-para-windows"&gt;Programas para Windows&lt;/h2&gt;
-&lt;p&gt;En un principio, tener Git en Windows era mucho lio (porque fue creado por y para Linux) pero ahora hay varias opciones. Usualmente, si vas a usar solo GitHub, se recomienda GW. Pero si queres usar Git para otras cosas (como crear "servers" localmente y jugar ahi) recomiendo &lt;a href="http://tortoisegit.org/"&gt;TortoiseGit&lt;/a&gt; + &lt;a href="http://msysgit.github.io/"&gt;msysgit&lt;/a&gt; (git CLI) en lugar de GW:&lt;/p&gt;
+&lt;h2 id="programas-para-windows"&gt;Programas para Windows
+&lt;/h2&gt;&lt;p&gt;En un principio, tener Git en Windows era mucho lio (porque fue creado por y para Linux) pero ahora hay varias opciones. Usualmente, si vas a usar solo GitHub, se recomienda GW. Pero si queres usar Git para otras cosas (como crear "servers" localmente y jugar ahi) recomiendo &lt;a href="http://tortoisegit.org/"&gt;TortoiseGit&lt;/a&gt; + &lt;a href="http://msysgit.github.io/"&gt;msysgit&lt;/a&gt; (git CLI) en lugar de GW:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;te sirve para varias cosas y no solo para GitHub ("lee" el protocolo &lt;code&gt;github://&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;no tenes que pelear con el PATH por si queres usar git CLI (se instala en &lt;code&gt;%appdata%&lt;/code&gt; y no podes añadir solo &lt;code&gt;bin\&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;msysgit viene con "git Bash"; una CLI re linda con colores que además te muestra en qué &lt;code&gt;branch&lt;/code&gt; estas; ademas de personalizarla con &lt;code&gt;.bashrc&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img alt="muestra de git Bash personalizado" src="http://blog.quinzi.com.ar/images//2014/git_bash.png"&gt;&lt;/p&gt;
-&lt;h2 id="crear-repositorio"&gt;Crear repositorio&lt;/h2&gt;
-&lt;p&gt;En GitHub, crear un repositorio con el nombre que se quiera. Podes iniciar sesión e ir a &lt;a href="https://github.com/repositories/new"&gt;https://github.com/repositories/new&lt;/a&gt; o apretando en el "&lt;kbd&gt;librito&lt;/kbd&gt;".&lt;/p&gt;
-&lt;h2 id="activar-github-pages"&gt;"Activar" GitHub Pages&lt;/h2&gt;
-&lt;p&gt;Se activa magicamente creando un &lt;code&gt;branch&lt;/code&gt; llamado &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="crear-repositorio"&gt;Crear repositorio
+&lt;/h2&gt;&lt;p&gt;En GitHub, crear un repositorio con el nombre que se quiera. Podes iniciar sesión e ir a &lt;a href="https://github.com/repositories/new"&gt;https://github.com/repositories/new&lt;/a&gt; o apretando en el "&lt;kbd&gt;librito&lt;/kbd&gt;".&lt;/p&gt;
+&lt;h2 id="activar-github-pages"&gt;"Activar" GitHub Pages
+&lt;/h2&gt;&lt;p&gt;Se activa magicamente creando un &lt;code&gt;branch&lt;/code&gt; llamado &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Desde web es apretando en &lt;kbd&gt;branch master&lt;/kbd&gt;; en GW es apretando arriba donde dice &lt;kbd&gt;master&lt;/kbd&gt;. Buscar &lt;kbd&gt;gh-pages&lt;/kbd&gt; y apretar opción de crear (&lt;kbd&gt;create branch&lt;/kbd&gt;). Con CLI sería (previamente clonado, mirar abajo):&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git checkout --orphan gh-pages    # branch local
 &lt;/pre&gt;&lt;/div&gt;
@@ -60,14 +60,14 @@
 &lt;p class="admonition-title"&gt;Info&lt;/p&gt;
 &lt;p&gt;El &lt;code&gt;--orphan&lt;/code&gt; crea un &lt;code&gt;branch&lt;/code&gt; separado del resto del repo (sin &lt;em&gt;parents&lt;/em&gt;). Se crea primero localmente, después se manda al &lt;code&gt;origin&lt;/code&gt; (pasos mas abajo).&lt;/p&gt;
 &lt;/div&gt;
-&lt;h2 id="pasarlo-al-desktop-para-trabajar"&gt;Pasarlo al desktop (para trabajar)&lt;/h2&gt;
-&lt;p&gt;Desde GitHub apretar &lt;kbd&gt;Clone in desktop&lt;/kbd&gt; (que lo tomará GW o Tortoise) o desde CLI:&lt;/p&gt;
+&lt;h2 id="pasarlo-al-desktop-para-trabajar"&gt;Pasarlo al desktop (para trabajar)
+&lt;/h2&gt;&lt;p&gt;Desde GitHub apretar &lt;kbd&gt;Clone in desktop&lt;/kbd&gt; (que lo tomará GW o Tortoise) o desde CLI:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git clone https://github.com/user/repo_lindo.git
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="preparar-branch-gh-pages"&gt;Preparar branch gh-pages&lt;/h2&gt;
-&lt;p&gt;Cambiar a &lt;code&gt;gh-pages&lt;/code&gt;. En CLI, si se usó el comando anterior (&lt;code&gt;git checkout --orphan gh-pages&lt;/code&gt;) se cambia automáticamente, sino &lt;code&gt;git checkout -b gh-pages&lt;/code&gt; para cambiar y crear un &lt;code&gt;branch&lt;/code&gt; local llamado "gh-pages".&lt;/p&gt;
+&lt;h2 id="preparar-branch-gh-pages"&gt;Preparar branch gh-pages
+&lt;/h2&gt;&lt;p&gt;Cambiar a &lt;code&gt;gh-pages&lt;/code&gt;. En CLI, si se usó el comando anterior (&lt;code&gt;git checkout --orphan gh-pages&lt;/code&gt;) se cambia automáticamente, sino &lt;code&gt;git checkout -b gh-pages&lt;/code&gt; para cambiar y crear un &lt;code&gt;branch&lt;/code&gt; local llamado "gh-pages".&lt;/p&gt;
 &lt;div class="admonition info"&gt;
 &lt;p class="admonition-title"&gt;Info&lt;/p&gt;
 &lt;p&gt;Al cambiar &lt;em&gt;branches&lt;/em&gt;, Windows Explorer "refresca" la carpeta donde está con el contenido del &lt;code&gt;branch&lt;/code&gt; seleccionado.&lt;/p&gt;
@@ -79,8 +79,8 @@ $ git push -u origin gh-pages       # mandamos branch al origin
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="gh-pages-como-default-y-eliminar-master"&gt;gh-pages como default y eliminar master&lt;/h2&gt;
-&lt;p&gt;Esto es opcional, depende de tu &lt;em&gt;workflow&lt;/em&gt; o idea de uso. Si solo se va a usar &lt;code&gt;gh-pages&lt;/code&gt;, se puede usar como default y eliminar el &lt;code&gt;branch&lt;/code&gt; &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="gh-pages-como-default-y-eliminar-master"&gt;gh-pages como default y eliminar master
+&lt;/h2&gt;&lt;p&gt;Esto es opcional, depende de tu &lt;em&gt;workflow&lt;/em&gt; o idea de uso. Si solo se va a usar &lt;code&gt;gh-pages&lt;/code&gt;, se puede usar como default y eliminar el &lt;code&gt;branch&lt;/code&gt; &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Para ponerlo como default (y no usar el &lt;code&gt;master&lt;/code&gt;), en GitHub, ir a &lt;kbd&gt;settings &amp;gt; (settings &amp;gt;) Default branch&lt;/kbd&gt; y seleccionar &lt;kbd&gt;gh-pages&lt;/kbd&gt;.&lt;/p&gt;
 &lt;p&gt;Para eliminar el &lt;code&gt;master&lt;/code&gt; hay que tener el &lt;code&gt;gh-pages&lt;/code&gt; como default. Después ir al listado de &lt;em&gt;branches&lt;/em&gt; y apretar en &lt;kbd&gt;Delete branch&lt;/kbd&gt;. Con CLI:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git branch -d master     # eliminar local
@@ -88,8 +88,8 @@ $ git push origin :master  # eliminar de repo
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="its-alive-archivo-de-prueba-y-subida"&gt;It's alive! (Archivo de prueba y subida)&lt;/h2&gt;
-&lt;p&gt;Crear un &lt;code&gt;index.html&lt;/code&gt;, lo añadimos y hacemos c-p.&lt;/p&gt;
+&lt;h2 id="its-alive-archivo-de-prueba-y-subida"&gt;It's alive! (Archivo de prueba y subida)
+&lt;/h2&gt;&lt;p&gt;Crear un &lt;code&gt;index.html&lt;/code&gt;, lo añadimos y hacemos c-p.&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git add .                   # añade todo
 $ git commit -am "Primer commit a pages"
 $ git push origin gh-pages
@@ -98,8 +98,8 @@ $ git push origin gh-pages
 
 &lt;p&gt;(el &lt;code&gt;-a&lt;/code&gt; es abreviatura de &lt;code&gt;add&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;Esperar unos minutos y ver si se subió el &lt;code&gt;index&lt;/code&gt; en: &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt;&lt;/p&gt;
-&lt;h2 id="dominio-propio"&gt;Dominio propio&lt;/h2&gt;
-&lt;p&gt;Como seguramente no vas a querer entrar a &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt; porque es muy largo o queda poco profecional, GitHub permite ponerle un dominio/subdominio.&lt;/p&gt;
+&lt;h2 id="dominio-propio"&gt;Dominio propio
+&lt;/h2&gt;&lt;p&gt;Como seguramente no vas a querer entrar a &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt; porque es muy largo o queda poco profecional, GitHub permite ponerle un dominio/subdominio.&lt;/p&gt;
 &lt;p&gt;Solo basta con poner un archivo &lt;code&gt;CNAME&lt;/code&gt; que contiene el dominio/subdominio que se quiera usar, en el root de &lt;code&gt;gh-pages&lt;/code&gt; y cambiar los DNS del dominio en el host/registrar:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -109,11 +109,11 @@ $ git push origin gh-pages
 &lt;p&gt;Con un subdominio (sub.example.com): crear un &lt;code&gt;CNAME record&lt;/code&gt; que apunte al subdmonio del usuario en GitHub (&lt;kbd&gt;user.github.io&lt;/kbd&gt;). Esto deja que los DNS se adjusten automáticamente al IP de GitHub; se puede usar un &lt;code&gt;A record&lt;/code&gt; pero no se adjusta automáticamente.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="404-pages-todos-amamos-los-error-pages"&gt;404 pages! (Todos amamos los error pages)&lt;/h2&gt;
-&lt;p&gt;También es fácil: poner un &lt;code&gt;404.html&lt;/code&gt; en el root de &lt;code&gt;gh-pages&lt;/code&gt; y listo (no te olvides de agregarlo y c-p).&lt;/p&gt;
+&lt;h2 id="404-pages-todos-amamos-los-error-pages"&gt;404 pages! (Todos amamos los error pages)
+&lt;/h2&gt;&lt;p&gt;También es fácil: poner un &lt;code&gt;404.html&lt;/code&gt; en el root de &lt;code&gt;gh-pages&lt;/code&gt; y listo (no te olvides de agregarlo y c-p).&lt;/p&gt;
 &lt;section id="changes"&gt;
 
-&lt;h2&gt;Cambios&lt;/h2&gt;
+&lt;h3&gt;Cambios&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;time&gt;2014-01-02&lt;/time&gt; Reescrito para ser mas explicativo.&lt;/li&gt;
@@ -129,8 +129,8 @@ $ git push origin gh-pages
 &lt;p&gt;Me aventuré con esto por que quería hacer un proyecto donde necesitaba un &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;. Ultimamente (o siempre fue así), no te dan la opción de hacerte cuenta de &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;, solo creando un sitio. Not interested. No tengo un server/computadora (es un pendiente) para hacerla server e instalarle &lt;a href="https://filezilla-project.org"&gt;FileZilla&lt;/a&gt;. Damnit. Me acordé de los servicios de sincronización/host de donde tengo cuenta y me aventuré.&lt;/p&gt;
 &lt;p&gt;Elegí &lt;a href="http://www.box.com"&gt;Box&lt;/a&gt;. Pensaba subir los archivos por web, ya que la sincronización es media-media en ese servicio, pero recordé que &lt;a href="https://www.sugarsync.com/"&gt;SugarSync&lt;/a&gt; tiene el "SugarSync Drive", donde podes acceder a tu cuenta con el explorador de archivos. Me puse a buscar si Box tenía la mismo o similar.&lt;/p&gt;
 &lt;p&gt;Tiene para acceder por &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;, pero solo en cuentas pagas. Después leí sobre WebDAV. Intenté configurarlo y, luego de pelear por bastante tiempo, acá está cómo hacerlo en Windows (7).&lt;/p&gt;
-&lt;h2 id="windows-explorer"&gt;Windows Explorer&lt;/h2&gt;
-&lt;p&gt;En "Equipo" (el viejo "Mi PC"), ir a &lt;kbd&gt;Conectar a unidad de red&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2 id="windows-explorer"&gt;Windows Explorer
+&lt;/h2&gt;&lt;p&gt;En "Equipo" (el viejo "Mi PC"), ir a &lt;kbd&gt;Conectar a unidad de red&lt;/kbd&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_es.png"&gt;&lt;/p&gt;
 &lt;p&gt;Seleccionar el disco (que no importa mucho parece), tildar &lt;kbd&gt;Conectar de nuevo al iniciar sesión&lt;/kbd&gt;. Clickear en &lt;kbd&gt;Conectarse a sitio web para usarlo como almacén...&lt;/kbd&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_config_es.png"&gt;&lt;/p&gt;
@@ -149,8 +149,8 @@ $ git push origin gh-pages
 &lt;p&gt;Y listo, asi queda:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Mostrando disco agregado" src="http://blog.quinzi.com.ar/images/2013/webdav_networks_computer.png"&gt;&lt;/p&gt;
 &lt;p&gt;Si no te funciona, podes usar &lt;a href="http://rei.to/carotdav_en.html"&gt;CarotDAV&lt;/a&gt; (que es para "unir" varios servicios en un mismo programa portable), el famoso &lt;a href="http://www.ghisler.com/download.htm"&gt;Total Commander&lt;/a&gt; o BitKinex.&lt;/p&gt;
-&lt;h2 id="bitkinex"&gt;BitKinex&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://www.bitkinex.com/download"&gt;Descargar BitKinex&lt;/a&gt;. Instalar normalmente, pero recomiendo (por que leí) destildar el "I want to configure data source now" por que parece que no hace nada).&lt;/p&gt;
+&lt;h2 id="bitkinex"&gt;BitKinex
+&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.bitkinex.com/download"&gt;Descargar BitKinex&lt;/a&gt;. Instalar normalmente, pero recomiendo (por que leí) destildar el "I want to configure data source now" por que parece que no hace nada).&lt;/p&gt;
 &lt;p&gt;Una vez iniciado (si, aparece asi chiquito por alguna razón), buscar en la lista el Http/WebDAV, &lt;kbd&gt;right click &amp;gt; New &amp;gt; Http/WebDAV&lt;/kbd&gt; e ingresar nombre.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Creando servicio" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_new.png"&gt;&lt;/p&gt;
 &lt;p&gt;Poner datos similares de los de arriba: &lt;code&gt;dav.box.com&lt;/code&gt;, seleccionar &lt;kbd&gt;&lt;abbr title="Seguridad ante todo"&gt;SSL&lt;/abbr&gt;&lt;/kbd&gt;. Poner usuario y contraseña en el apartado de abajo:&lt;/p&gt;
@@ -178,8 +178,8 @@ $ git push origin gh-pages
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/tasker-gps-location-to-text/#bugs"&gt;Bugs&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h2 id="background-information"&gt;Background information&lt;/h2&gt;
-&lt;p&gt;I always wanted a way to say "Hey GPS, see this spot here? the one
+&lt;h2 id="background-information"&gt;Background information
+&lt;/h2&gt;&lt;p&gt;I always wanted a way to say "Hey GPS, see this spot here? the one
 you're indicating, can you pin it with text so I can retrieve it
 later?". All the ways I've found required to install apps. I'm fine with
 that but a) install 5MB or more just to get that functionality? I didn't
@@ -192,8 +192,8 @@ it's very cool, everyone recommends it, posts the same common examples
 that you don't need but you want to use it anyway. Yes, that one. There
 are many alternatives, and even free with some limitations. But (people
 say) they are not as complete as Tasker.&lt;/p&gt;
-&lt;h2 id="tasker-task"&gt;Tasker task&lt;/h2&gt;
-&lt;p&gt;Go to the task tab and add a new one:&lt;/p&gt;
+&lt;h2 id="tasker-task"&gt;Tasker task
+&lt;/h2&gt;&lt;p&gt;Go to the task tab and add a new one:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Task:&lt;/strong&gt; &lt;em&gt;Location to Txt&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Actions&lt;/strong&gt; for the task:&lt;/p&gt;
 &lt;ul&gt;
@@ -233,8 +233,8 @@ keyboard. You can skip this (and the next) if you don't mind
 clicking the text box to type.&lt;/li&gt;
 &lt;li&gt;&lt;kbd&gt;Input &amp;gt; Soft keyboard&lt;/kbd&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="homescreen"&gt;Homescreen&lt;/h2&gt;
-&lt;p&gt;The only thing that is left is the shortcut/widget!&lt;/p&gt;
+&lt;h2 id="homescreen"&gt;Homescreen
+&lt;/h2&gt;&lt;p&gt;The only thing that is left is the shortcut/widget!&lt;/p&gt;
 &lt;p&gt;Create a &lt;kbd&gt;widget &amp;gt; task&lt;/kbd&gt;. Pick &lt;em&gt;Pin Here&lt;/em&gt;&lt;/p&gt;
 &lt;div class="caption"&gt;
 &lt;img src="http://blog.quinzi.com.ar/images/2012/tasker_widget.jpg" alt="New Tasker widget"&gt;
@@ -249,8 +249,8 @@ boxy-box. Here is an example of what the text file could look like:&lt;/p&gt;
 &lt;p&gt;When you open the link, it shows the waypoint/spot in the map (seems to
 only work with Google Maps, unless you change the format, that way it
 also works with OsmAnd - from all the maps I've tested-).&lt;/p&gt;
-&lt;h2 id="bugs"&gt;Bugs&lt;/h2&gt;
-&lt;p&gt;Nobody likes bugs but it's Android. If you choose to show the
+&lt;h2 id="bugs"&gt;Bugs
+&lt;/h2&gt;&lt;p&gt;Nobody likes bugs but it's Android. If you choose to show the
 keyboard when the scene it's shown, it won't close automatically; you
 must close it yourself (back button). It's not the script fault nor
 Tasker's, but Android's and how it handles things (according to the
@@ -310,14 +310,14 @@ October 9, 2012 at 7:01 pm      &lt;/div&gt;&lt;!-- .comment-meta .commentmetada
 &lt;/div&gt;
 &lt;p&gt;El otro día andaba buscando si era posible leer ePUBs en el Kindle y, si
 era asi, cómo leerlos. Sólo por curiosidad.&lt;/p&gt;
-&lt;h2 id="jailbreak"&gt;Jailbreak&lt;/h2&gt;
-&lt;p&gt;Primero hacerle Jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;bajando el archivo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="jailbreak"&gt;Jailbreak
+&lt;/h2&gt;&lt;p&gt;Primero hacerle Jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;bajando el archivo&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Descomprimirlo. Buscar el &lt;code&gt;update_*_install*.bin&lt;/code&gt;, donde * es
 dependiendo del Kindle y firmware que tenga (en el post y dentro del
 comprimido dice cómo) y pasarlo al root del kindle.&lt;/p&gt;
 &lt;p&gt;Liberar/eject el Kindle y apretar &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
-&lt;h2 id="launchpad"&gt;Launchpad&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Descargar este archivo&lt;/a&gt; y descomprimirlo.&lt;/p&gt;
+&lt;h2 id="launchpad"&gt;Launchpad
+&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Descargar este archivo&lt;/a&gt; y descomprimirlo.&lt;/p&gt;
 &lt;p&gt;Pasar el &lt;code&gt;update_launchpad_0.0.1c_*_install.bin&lt;/code&gt; (donde * es la version
 del Kindle que tengas) al root del kindle.&lt;/p&gt;
 &lt;p&gt;Liberar/eject el Kindle y apretar &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
@@ -330,8 +330,8 @@ El otro (Cool Reader) no acepta links, el furigana los muestra con line
 breaks, muestra bien las tablas y parece que todavia se desarolla. Aca
 sólo "muestro" como se instala el Cool Reader. (el otro es casi lo
 mismo)&lt;/p&gt;
-&lt;h2 id="cool-reader-3"&gt;Cool Reader 3&lt;/h2&gt;
-&lt;p&gt;Los formatos que Cool Reader 3 lee son: fb2, txt, html, rtf, chm, epub,
+&lt;h2 id="cool-reader-3"&gt;Cool Reader 3
+&lt;/h2&gt;&lt;p&gt;Los formatos que Cool Reader 3 lee son: fb2, txt, html, rtf, chm, epub,
 mobi. Se creó (y su "principal objetivo") para leer los &lt;a href="http://en.wikipedia.org/wiki/Fb2"&gt;fb2&lt;/a&gt;, por eso
 los epub (y seguro HTML y chm) no los lee "tan bien".&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=148850"&gt;Descargar el archivo&lt;/a&gt; y descomprimirlo.&lt;/p&gt;
@@ -348,7 +348,7 @@ apretar &lt;kbd&gt;Shift C R&lt;/kbd&gt;, aparece el “success!” y carga el p
 &lt;li&gt;En el dialogo de preferencias: &lt;kbd&gt;Home&lt;/kbd&gt; - guarda las opciones,
 &lt;kbd&gt;Back&lt;/kbd&gt; - sale sin guardar&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt; Comments &lt;/h3&gt;
+&lt;h4&gt; Comments &lt;/h4&gt;
 
 &lt;div id="comments"&gt;
 
@@ -400,7 +400,7 @@ February 10, 2012 at 11:25 am       &lt;/div&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Tenés Windows 7 Home Basic (o similar), seguro que te aburriste del theme/tema &lt;em&gt;baby blue&lt;/em&gt; que trae por defecto que no se puede cambiar. No esperes más y cambialo ya.&lt;/p&gt;
-&lt;h2 id="themes-personalizados"&gt;Themes personalizados&lt;/h2&gt;
+&lt;h2 id="themes-personalizados"&gt;Themes personalizados
 &lt;ol&gt;
 &lt;li&gt;Desactivar el UAC: (&lt;kbd&gt;Panel de Control &amp;gt; Cambiar Configuración de Control del Usuario&lt;/kbd&gt;. O buscar &lt;kbd&gt;UAC&lt;/kbd&gt; en la cajita de búsqueda del menú inicio o panel de control). Lo que hay que hacer es desactivarlo o ponerlo en la segunda barrita (contando desde abajo).&lt;/li&gt;
 &lt;li&gt;Instalar el &lt;a href="http://uxstyle.com/"&gt;UxStyle Core&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/windows7-themes-aero/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;: Leer los Términos de Servicio y si se
@@ -412,9 +412,9 @@ el que más te guste. Acá hay un problemita, capaz que es mío,
 los themes tienen el mismo nombre (Windows 7 Standard/Basic) asi que
 no queda otra que ir clickeando y ver como queda en la muestra :)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Fuente: &lt;a href="http://www.sevenforums.com/tutorials/34579-enabling-custom-themes-windows-7-a.html"&gt;Seven forums: enabling custom themes&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="mejor-theme-manager"&gt;Mejor theme manager&lt;/h2&gt;
-&lt;p&gt;Como viene con Windows 7 Home Basic (yendo por &lt;kbd&gt;Panel de Control &amp;gt; Cambiar Combinación de colores&lt;/kbd&gt;):&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;Fuente: &lt;a href="http://www.sevenforums.com/tutorials/34579-enabling-custom-themes-windows-7-a.html"&gt;Seven forums: enabling custom themes&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="mejor-theme-manager"&gt;Mejor theme manager
+&lt;/h2&gt;&lt;p&gt;Como viene con Windows 7 Home Basic (yendo por &lt;kbd&gt;Panel de Control &amp;gt; Cambiar Combinación de colores&lt;/kbd&gt;):&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Theme manager de Windows 7 Home Basic" src="http://blog.quinzi.com.ar/images/2013/win7_themes_settings.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Al instalar themes, te repite el nombre "Windows 7 Standard/Basic" varias veces. Instalando &lt;a href="http://winaero.com/download.php?view.3"&gt;Personalization Panel&lt;/a&gt; (como administrador) tenes un mejor theme manager:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Personalization Panel" src="http://blog.quinzi.com.ar/images/2013/win7_themes_personalization_panel.jpg"&gt;&lt;/p&gt;
@@ -426,8 +426,8 @@ no queda otra que ir clickeando y ver como queda en la muestra :)&lt;/li&gt;
 &lt;li&gt;Dependiendo del theme, podes tener cierta transparencia:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img alt="Mostrando poca transparencia en los bordes" src="http://blog.quinzi.com.ar/images/2013/win7_themes_blacktrans.jpg"&gt;&lt;/p&gt;
-&lt;h2 id="aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)&lt;/h2&gt;
-&lt;p&gt;Siempre y cuando tu compu lo permita, podes activar el Aero instalando el &lt;a href="http://winaero.com/download.php?view.13"&gt;Aero Patch&lt;/a&gt;. Esto te da:&lt;/p&gt;
+&lt;h2 id="aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)
+&lt;/h2&gt;&lt;p&gt;Siempre y cuando tu compu lo permita, podes activar el Aero instalando el &lt;a href="http://winaero.com/download.php?view.13"&gt;Aero Patch&lt;/a&gt;. Esto te da:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Aero Glass y coloración&lt;/li&gt;
 &lt;li&gt;soporte full de themes incluyendo RSS y Slideshow&lt;/li&gt;
@@ -530,7 +530,7 @@ de Youtube, al lado del video), y sale el menú:&lt;/p&gt;
 &lt;p&gt;Esto abre el &lt;code&gt;Grab++&lt;/code&gt; (un addon sería) y trae el video (previa
 recarga de la página). &lt;/p&gt;
 &lt;p&gt;&lt;img alt="Muestra del addon" src="http://blog.quinzi.com.ar/images/2009/opera04.gif"&gt;&lt;/p&gt;
-&lt;h3&gt; Comments &lt;/h3&gt;
+&lt;h4&gt; Comments &lt;/h4&gt;
 
 &lt;div id="comments"&gt;
 
@@ -572,10 +572,10 @@ seguido de la ruta en donde se encuentran los shorcuts/atajos/accesos directos.&
 &lt;p&gt;&lt;img alt="Editar variable del sistema" src="http://blog.quinzi.com.ar/images/2009/run03.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Aceptar, aceptar, aceptar. Listo! ahora &lt;kbd&gt;Win + r&lt;/kbd&gt;, el nombre del shortcut
 .. et voilà!&lt;/p&gt;
-&lt;h3 id="update"&gt;UPDATE&lt;/h3&gt;
-&lt;p&gt;Le dí otra oportunidad al &lt;a href="http://www.launchy.net/"&gt;Launchy&lt;/a&gt;. Me gustó, no consume tanto (o sí,
+&lt;h3 id="update"&gt;UPDATE
+&lt;/h3&gt;&lt;p&gt;Le dí otra oportunidad al &lt;a href="http://www.launchy.net/"&gt;Launchy&lt;/a&gt;. Me gustó, no consume tanto (o sí,
 dependiendo el gusto de cada uno).&lt;/p&gt;
-&lt;h3&gt; Comments &lt;/h3&gt;
+&lt;h4&gt; Comments &lt;/h4&gt;
 
 &lt;div id="comments"&gt;
 
@@ -590,7 +590,6 @@ dependiendo el gusto de cada uno).&lt;/p&gt;
 &lt;div class="comment-body"&gt;&lt;p&gt;Yo también usaba Launchy hasta que lo saqué (también tengo poca RAM ¬¬)… y empecé a usar Ejecutar :D &lt;/p&gt;
 &lt;p&gt;PD: si, que tierna, no? jaja :P &lt;/p&gt;
 &lt;/div&gt;
-
 
 &lt;/div&gt;
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (cards)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/cards.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 10 Jan 2014 21:40:18 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SD Write Protected Syndrome</title><link>http://blog.quinzi.com.ar/sd-write-protected-syndrome/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (cards)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/cards.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 14:50:32 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SD Write Protected Syndrome</title><link>http://blog.quinzi.com.ar/sd-write-protected-syndrome/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#de-que-se-trata"&gt;De qué se trata?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#experienciasarreglos-anteriores"&gt;Experiencias/Arreglos anteriores&lt;/a&gt;&lt;/li&gt;
@@ -12,37 +12,37 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Hace ya un tiempo, sufro del "SD Write Protected Syndrome".&lt;/p&gt;
-&lt;h2 id="de-que-se-trata"&gt;De qué se trata?&lt;/h2&gt;
-&lt;p&gt;Insertar/ponés una tarjeta (sólo probé con SD) en la lectora (yo tengo
+&lt;h2 id="de-que-se-trata"&gt;De qué se trata?
+&lt;/h2&gt;&lt;p&gt;Insertar/ponés una tarjeta (sólo probé con SD) en la lectora (yo tengo
 una de "bay"/interna, no se si pasa lo mismo con las USB/externas, pero
 leí que sí), querés modificar algo y no podés, salta el "este medio esta
 protegido contra escritura blablabla" &lt;strong&gt;por mas que el switch esté en
 desbloqueado/off&lt;/strong&gt;. Si, muy raro.&lt;/p&gt;
-&lt;h2 id="experienciasarreglos-anteriores"&gt;Experiencias/Arreglos anteriores&lt;/h2&gt;
-&lt;p&gt;Las pocas veces que lo sufrí, solo "jugaba" con el switch. &lt;strong&gt;De lock off
+&lt;h2 id="experienciasarreglos-anteriores"&gt;Experiencias/Arreglos anteriores
+&lt;/h2&gt;&lt;p&gt;Las pocas veces que lo sufrí, solo "jugaba" con el switch. &lt;strong&gt;De lock off
 a lock on y funcionaba&lt;/strong&gt;. Al prinicpio era una sola vez, despues &lt;del&gt;se
 fue incrementando&lt;/del&gt; 2 o hasta 3 veces. Todo bien hasta que...&lt;/p&gt;
-&lt;h2 id="problemas-actuales"&gt;Problemas actuales&lt;/h2&gt;
-&lt;p&gt;La SD que "tenía este problema" tenía un poco de
+&lt;h2 id="problemas-actuales"&gt;Problemas actuales
+&lt;/h2&gt;&lt;p&gt;La SD que "tenía este problema" tenía un poco de
 espacio disponible, lo quería usar y... no, protegido. Hice lo del juego
 de Lock on-off varias veces y nada. Pensé que se "había roto", hice un par de pruebas en la Palm (porque la uso ahí). Cree, movi, eliminé archivos, &lt;strong&gt;ningún problema&lt;/strong&gt;.
 La puse de nuevo en la lectora de tarjetas y no funcionó (eso quiere
 decir que la tarjeta está 100% funcional). Me harté y no lo usé con
 esos fines.&lt;/p&gt;
-&lt;h2 id="arreglo"&gt;Arreglo&lt;/h2&gt;
-&lt;p&gt;Busqué soluciones. En todos lados decian que era &lt;strong&gt;el lector y no la
+&lt;h2 id="arreglo"&gt;Arreglo
+&lt;/h2&gt;&lt;p&gt;Busqué soluciones. En todos lados decian que era &lt;strong&gt;el lector y no la
 tarjeta&lt;/strong&gt;, (si, ya lo sabía, gracias por informarme nuevamente). Te
 contaban una linda historia de conejitos comiendo alfajores, y
 redactaban como resolverlo: ponele cinta.&lt;/p&gt;
-&lt;h3 id="solucion-original"&gt;Solución original&lt;/h3&gt;
-&lt;p&gt;Variante a: ponerle cinta al switch&lt;/p&gt;
+&lt;h3 id="solucion-original"&gt;Solución original
+&lt;/h3&gt;&lt;p&gt;Variante a: ponerle cinta al switch&lt;/p&gt;
 &lt;p&gt;Variante b: ponerle cinta al espacio/protuberancia/o como se llame
 (agarrá una SD, switch a la izquierda, conectores arriba. Del lado
 derecho hay una protuberancia/cuadradito/espacio) con cuidado de no tapar los conectores del otro
 lado.&lt;/p&gt;
 &lt;p&gt;Ninguna me funcionó.&lt;/p&gt;
-&lt;h3 id="mi-solucion"&gt;Mi solución&lt;/h3&gt;
-&lt;p&gt;Mi twist de la solución original me vino &lt;strong&gt;después de probar ambas
+&lt;h3 id="mi-solucion"&gt;Mi solución
+&lt;/h3&gt;&lt;p&gt;Mi twist de la solución original me vino &lt;strong&gt;después de probar ambas
 variantes y ver que ninguna me andaba&lt;/strong&gt;. Me dije: "y si uno las
 dos?", felizmente puse cinta en casi todos lados y... no funcionó!
 PERO, me surgió una idea, pense:
@@ -58,7 +58,7 @@ solucionan momentaneamente. Si querés una permanente, tenes que abrir el lector
 y pegar dos metalcitos, pero no soy srta. manitas :P&lt;/p&gt;
 &lt;p&gt;P.D: mi método solo funcionó con la SD "problemática", con los MicroSD
 to SD Adapters no.&lt;/p&gt;
-&lt;h3&gt; Comments &lt;/h3&gt;
+&lt;h4&gt; Comments &lt;/h4&gt;
 
 &lt;div id="comments"&gt;
 
@@ -72,7 +72,6 @@ to SD Adapters no.&lt;/p&gt;
 
 &lt;div class="comment-body"&gt;&lt;p&gt;Ay mamita… cada lío te pasa :P &lt;/p&gt;
 &lt;/div&gt;
-
 
 &lt;/div&gt;
 

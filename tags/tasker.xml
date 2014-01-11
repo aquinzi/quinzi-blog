@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (tasker)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/tasker.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 10 Jan 2014 21:40:18 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tutorial: save GPS location to text with Tasker</title><link>http://blog.quinzi.com.ar/tasker-gps-location-to-text/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (tasker)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/tasker.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 14:50:32 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tutorial: save GPS location to text with Tasker</title><link>http://blog.quinzi.com.ar/tasker-gps-location-to-text/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/tasker-gps-location-to-text/#background-information"&gt;Background information&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/tasker-gps-location-to-text/#tasker-task"&gt;Tasker task&lt;/a&gt;&lt;/li&gt;
@@ -7,8 +7,8 @@
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/tasker-gps-location-to-text/#bugs"&gt;Bugs&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h2 id="background-information"&gt;Background information&lt;/h2&gt;
-&lt;p&gt;I always wanted a way to say "Hey GPS, see this spot here? the one
+&lt;h2 id="background-information"&gt;Background information
+&lt;/h2&gt;&lt;p&gt;I always wanted a way to say "Hey GPS, see this spot here? the one
 you're indicating, can you pin it with text so I can retrieve it
 later?". All the ways I've found required to install apps. I'm fine with
 that but a) install 5MB or more just to get that functionality? I didn't
@@ -21,8 +21,8 @@ it's very cool, everyone recommends it, posts the same common examples
 that you don't need but you want to use it anyway. Yes, that one. There
 are many alternatives, and even free with some limitations. But (people
 say) they are not as complete as Tasker.&lt;/p&gt;
-&lt;h2 id="tasker-task"&gt;Tasker task&lt;/h2&gt;
-&lt;p&gt;Go to the task tab and add a new one:&lt;/p&gt;
+&lt;h2 id="tasker-task"&gt;Tasker task
+&lt;/h2&gt;&lt;p&gt;Go to the task tab and add a new one:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Task:&lt;/strong&gt; &lt;em&gt;Location to Txt&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Actions&lt;/strong&gt; for the task:&lt;/p&gt;
 &lt;ul&gt;
@@ -62,8 +62,8 @@ keyboard. You can skip this (and the next) if you don't mind
 clicking the text box to type.&lt;/li&gt;
 &lt;li&gt;&lt;kbd&gt;Input &amp;gt; Soft keyboard&lt;/kbd&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="homescreen"&gt;Homescreen&lt;/h2&gt;
-&lt;p&gt;The only thing that is left is the shortcut/widget!&lt;/p&gt;
+&lt;h2 id="homescreen"&gt;Homescreen
+&lt;/h2&gt;&lt;p&gt;The only thing that is left is the shortcut/widget!&lt;/p&gt;
 &lt;p&gt;Create a &lt;kbd&gt;widget &amp;gt; task&lt;/kbd&gt;. Pick &lt;em&gt;Pin Here&lt;/em&gt;&lt;/p&gt;
 &lt;div class="caption"&gt;
 &lt;img src="http://blog.quinzi.com.ar/../images/2012/tasker_widget.jpg" alt="New Tasker widget"&gt;
@@ -78,8 +78,8 @@ boxy-box. Here is an example of what the text file could look like:&lt;/p&gt;
 &lt;p&gt;When you open the link, it shows the waypoint/spot in the map (seems to
 only work with Google Maps, unless you change the format, that way it
 also works with OsmAnd - from all the maps I've tested-).&lt;/p&gt;
-&lt;h2 id="bugs"&gt;Bugs&lt;/h2&gt;
-&lt;p&gt;Nobody likes bugs but it's Android. If you choose to show the
+&lt;h2 id="bugs"&gt;Bugs
+&lt;/h2&gt;&lt;p&gt;Nobody likes bugs but it's Android. If you choose to show the
 keyboard when the scene it's shown, it won't close automatically; you
 must close it yourself (back button). It's not the script fault nor
 Tasker's, but Android's and how it handles things (according to the

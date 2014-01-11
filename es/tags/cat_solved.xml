@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (solved)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/cat_solved.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Fri, 10 Jan 2014 21:40:17 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Windows 7: Arreglar los iconos en Explorer</title><link>http://blog.quinzi.com.ar/./es/windows7-shell-icons/</link><description>&lt;p&gt;Con esta era de usar programitas varios para sincronizar, otros para control de código, y otros que no puedo recordar ahora; es necesario tener los overlay icons en Windows Explorer:&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (solved)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/cat_solved.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Sat, 11 Jan 2014 14:50:32 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Windows 7: Arreglar los iconos en Explorer</title><link>http://blog.quinzi.com.ar/./es/windows7-shell-icons/</link><description>&lt;p&gt;Con esta era de usar programitas varios para sincronizar, otros para control de código, y otros que no puedo recordar ahora; es necesario tener los overlay icons en Windows Explorer:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Ejemplo de iconos de estado" src="http://blog.quinzi.com.ar/images/2013/win7_shell_icons.png"&gt;&lt;/p&gt;
 &lt;p&gt;Personalmente se me desaparecían y, aunque limpiara la cache de los programas, nunca aparecían. Hay algunos que podes vivir sin ellos, pero otros no. Capaz instalaste un &lt;a href="https://copy.com?r=hQHBH9"&gt;programa&lt;/a&gt; y te desplazó los de &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;otro&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;¿Pero cuál es el problema? Que los genios de Microsoft limitan la cantidad de iconos que se pueden usar a unos meros &lt;strong&gt;11 iconos totales para el usuario&lt;/strong&gt;. WHAT THE HELL.&lt;/p&gt;
@@ -63,8 +63,8 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h2 id="contexto"&gt;Contexto&lt;/h2&gt;
-&lt;p&gt;Hace un par de semanas tuve estos problemas/&lt;strong&gt;drenajes de bateria&lt;/strong&gt; (otra
+&lt;h2 id="contexto"&gt;Contexto
+&lt;/h2&gt;&lt;p&gt;Hace un par de semanas tuve estos problemas/&lt;strong&gt;drenajes de bateria&lt;/strong&gt; (otra
 vez). Normalmente es porque abrí el Google Maps, arreglandose
 reiniciando el teléfono; pero recordé de que no lo había abierto.&lt;/p&gt;
 &lt;p&gt;Reinicié, paré algunas apps que pensaba que eran las culpables pero
@@ -86,15 +86,15 @@ otra cosa (ej. actualizando estados, e-mail... y no lo otro que pensabas,
 pervertido).&lt;/p&gt;
 &lt;p&gt;Gracias, pero el app hace solo eso. Muestra el tiempo en las frecuencias
 de CPU, nada mas... hasta que encontré la solución.&lt;/p&gt;
-&lt;h2 id="decime-como-resolver-el-problema-maldita-sea"&gt;Decime cómo resolver el problema, maldita sea!&lt;/h2&gt;
-&lt;p&gt;Lo que se necesita:&lt;/p&gt;
+&lt;h2 id="decime-como-resolver-el-problema-maldita-sea"&gt;Decime cómo resolver el problema, maldita sea!
+&lt;/h2&gt;&lt;p&gt;Lo que se necesita:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;teléfono o tablet con problemas (de drenaje) de batería.&lt;/li&gt;
 &lt;li&gt;CPU Spy (posiblemente opcional, BetterBatteryStats tiene esa opción)&lt;/li&gt;
 &lt;li&gt;BetterBatteryStats&lt;/li&gt;
 &lt;li&gt;más de 4hrs sin usar el teléfono pero seguro que menos de 10hrs&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="procedimiento"&gt;Procedimiento&lt;/h3&gt;
+&lt;h3 id="procedimiento"&gt;Procedimiento
 &lt;ul&gt;
 &lt;li&gt;Instalar CPU Spy y BetterBatteryStats. Recordar de cargar el celular
 al tope por que vamos a necesitar cada gotita de jugo.&lt;/li&gt;
@@ -107,7 +107,7 @@ menos) 4hrs (mejor todo una noche) con la pantalla apagada.&lt;/li&gt;
 &lt;li&gt;Olvidarte del teléfono y sali a tomar aire; acariciar a tu mascota,
 alimentarla, jugar; hacer ejercicio...&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Después de X horas:&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;Después de X horas:&lt;/p&gt;
 &lt;p&gt;Escribir/sacar una captura de pantalla del &lt;em&gt;homescreen&lt;/em&gt; o lugar donde se
 tenga el porcentaje de batería y hora. Calcular cuanto se gastó la
 batería por hora: &lt;em&gt;[batería inicial - batería ahora] / [horas teléfono
@@ -172,7 +172,7 @@ aplicaciones, "dejar" descansar el cartucho por unos minutos y
 volver a intentar.&lt;/li&gt;
 &lt;li&gt;Hacerlo en una superficie que se limpie fácil/descartable por si chorrea tinta o estar atenti.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt; Comments &lt;/h3&gt;
+&lt;h4&gt; Comments &lt;/h4&gt;
 
 &lt;div id="comments"&gt;
 
@@ -270,37 +270,37 @@ no funcionaba con Windows 7 64 bits, pero aún descargando el archivo comprimido
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Hace ya un tiempo, sufro del "SD Write Protected Syndrome".&lt;/p&gt;
-&lt;h2 id="de-que-se-trata"&gt;De qué se trata?&lt;/h2&gt;
-&lt;p&gt;Insertar/ponés una tarjeta (sólo probé con SD) en la lectora (yo tengo
+&lt;h2 id="de-que-se-trata"&gt;De qué se trata?
+&lt;/h2&gt;&lt;p&gt;Insertar/ponés una tarjeta (sólo probé con SD) en la lectora (yo tengo
 una de "bay"/interna, no se si pasa lo mismo con las USB/externas, pero
 leí que sí), querés modificar algo y no podés, salta el "este medio esta
 protegido contra escritura blablabla" &lt;strong&gt;por mas que el switch esté en
 desbloqueado/off&lt;/strong&gt;. Si, muy raro.&lt;/p&gt;
-&lt;h2 id="experienciasarreglos-anteriores"&gt;Experiencias/Arreglos anteriores&lt;/h2&gt;
-&lt;p&gt;Las pocas veces que lo sufrí, solo "jugaba" con el switch. &lt;strong&gt;De lock off
+&lt;h2 id="experienciasarreglos-anteriores"&gt;Experiencias/Arreglos anteriores
+&lt;/h2&gt;&lt;p&gt;Las pocas veces que lo sufrí, solo "jugaba" con el switch. &lt;strong&gt;De lock off
 a lock on y funcionaba&lt;/strong&gt;. Al prinicpio era una sola vez, despues &lt;del&gt;se
 fue incrementando&lt;/del&gt; 2 o hasta 3 veces. Todo bien hasta que...&lt;/p&gt;
-&lt;h2 id="problemas-actuales"&gt;Problemas actuales&lt;/h2&gt;
-&lt;p&gt;La SD que "tenía este problema" tenía un poco de
+&lt;h2 id="problemas-actuales"&gt;Problemas actuales
+&lt;/h2&gt;&lt;p&gt;La SD que "tenía este problema" tenía un poco de
 espacio disponible, lo quería usar y... no, protegido. Hice lo del juego
 de Lock on-off varias veces y nada. Pensé que se "había roto", hice un par de pruebas en la Palm (porque la uso ahí). Cree, movi, eliminé archivos, &lt;strong&gt;ningún problema&lt;/strong&gt;.
 La puse de nuevo en la lectora de tarjetas y no funcionó (eso quiere
 decir que la tarjeta está 100% funcional). Me harté y no lo usé con
 esos fines.&lt;/p&gt;
-&lt;h2 id="arreglo"&gt;Arreglo&lt;/h2&gt;
-&lt;p&gt;Busqué soluciones. En todos lados decian que era &lt;strong&gt;el lector y no la
+&lt;h2 id="arreglo"&gt;Arreglo
+&lt;/h2&gt;&lt;p&gt;Busqué soluciones. En todos lados decian que era &lt;strong&gt;el lector y no la
 tarjeta&lt;/strong&gt;, (si, ya lo sabía, gracias por informarme nuevamente). Te
 contaban una linda historia de conejitos comiendo alfajores, y
 redactaban como resolverlo: ponele cinta.&lt;/p&gt;
-&lt;h3 id="solucion-original"&gt;Solución original&lt;/h3&gt;
-&lt;p&gt;Variante a: ponerle cinta al switch&lt;/p&gt;
+&lt;h3 id="solucion-original"&gt;Solución original
+&lt;/h3&gt;&lt;p&gt;Variante a: ponerle cinta al switch&lt;/p&gt;
 &lt;p&gt;Variante b: ponerle cinta al espacio/protuberancia/o como se llame
 (agarrá una SD, switch a la izquierda, conectores arriba. Del lado
 derecho hay una protuberancia/cuadradito/espacio) con cuidado de no tapar los conectores del otro
 lado.&lt;/p&gt;
 &lt;p&gt;Ninguna me funcionó.&lt;/p&gt;
-&lt;h3 id="mi-solucion"&gt;Mi solución&lt;/h3&gt;
-&lt;p&gt;Mi twist de la solución original me vino &lt;strong&gt;después de probar ambas
+&lt;h3 id="mi-solucion"&gt;Mi solución
+&lt;/h3&gt;&lt;p&gt;Mi twist de la solución original me vino &lt;strong&gt;después de probar ambas
 variantes y ver que ninguna me andaba&lt;/strong&gt;. Me dije: "y si uno las
 dos?", felizmente puse cinta en casi todos lados y... no funcionó!
 PERO, me surgió una idea, pense:
@@ -316,7 +316,7 @@ solucionan momentaneamente. Si querés una permanente, tenes que abrir el lector
 y pegar dos metalcitos, pero no soy srta. manitas :P&lt;/p&gt;
 &lt;p&gt;P.D: mi método solo funcionó con la SD "problemática", con los MicroSD
 to SD Adapters no.&lt;/p&gt;
-&lt;h3&gt; Comments &lt;/h3&gt;
+&lt;h4&gt; Comments &lt;/h4&gt;
 
 &lt;div id="comments"&gt;
 
@@ -330,7 +330,6 @@ to SD Adapters no.&lt;/p&gt;
 
 &lt;div class="comment-body"&gt;&lt;p&gt;Ay mamita… cada lío te pasa :P &lt;/p&gt;
 &lt;/div&gt;
-
 
 &lt;/div&gt;
 
@@ -421,7 +420,7 @@ to SD Adapters no.&lt;/p&gt;
 &lt;p&gt;Se arregla sólo cambiando el &lt;em&gt;Look &amp;amp; Feel&lt;/em&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Problema del menu resuelto" src="http://blog.quinzi.com.ar/images/2009/netbeans02.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Y parece que solo da problemas el &lt;em&gt;Look and feel&lt;/em&gt; de GTK (&lt;code&gt;com.sun.java.swing.plaf.gtk.GTKLookAndFeel&lt;/code&gt;)&lt;/p&gt;
-&lt;h2 id="como-se-arregla"&gt;Cómo se arregla&lt;/h2&gt;
+&lt;h2 id="como-se-arregla"&gt;Cómo se arregla
 &lt;ol&gt;
 &lt;li&gt;Ir a la carpeta de instalación del NetBeans. (ejemplo: &lt;code&gt;C:\Archivos de programa\Netbeans&lt;/code&gt;).&lt;/li&gt;
 &lt;li&gt;Entrar a la carpeta &lt;code&gt;etc&lt;/code&gt;.&lt;/li&gt;
@@ -432,10 +431,10 @@ javax.swing.plaf.metal.MetalLookAndFeel&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Guardar y cerrar.&lt;/li&gt;
 &lt;li&gt;Reiniciá la IDE.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;code&gt;MetalLookAndFeel&lt;/code&gt; no es el único que funciona, también podes usar "Nimbus" con: &lt;code&gt;com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel&lt;/code&gt;:&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;MetalLookAndFeel&lt;/code&gt; no es el único que funciona, también podes usar "Nimbus" con: &lt;code&gt;com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel&lt;/code&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Muestra de skin" src="http://blog.quinzi.com.ar/images/2009/netbeans03.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Fuente: &lt;a href="http://blogs.sun.com/netbeansphp/entry/how_to_change_look_and"&gt;Sun blogs&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt; Comments &lt;/h3&gt;
+&lt;h4&gt; Comments &lt;/h4&gt;
 
 &lt;div id="comments"&gt;
 

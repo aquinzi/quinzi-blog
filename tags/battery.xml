@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (battery)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/battery.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 10 Jan 2014 21:40:20 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Android: solving battery drain</title><link>http://blog.quinzi.com.ar/android-battery-drain/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (battery)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/battery.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 14:50:32 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Android: solving battery drain</title><link>http://blog.quinzi.com.ar/android-battery-drain/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/android-battery-drain/#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/android-battery-drain/#tell-me-how-to-solve-the-problem-already-goddamn"&gt;Tell me how to solve the problem already, goddamn!&lt;/a&gt;&lt;ul&gt;
@@ -8,8 +8,8 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h2 id="background"&gt;Background&lt;/h2&gt;
-&lt;p&gt;Some weeks ago I had these &lt;strong&gt;battery drain&lt;/strong&gt; problem (again). Usually is
+&lt;h2 id="background"&gt;Background
+&lt;/h2&gt;&lt;p&gt;Some weeks ago I had these &lt;strong&gt;battery drain&lt;/strong&gt; problem (again). Usually is
 because I openend Google Maps and it's fixed by rebooting the phone; but
 I remembered that I haven't. That puzzled me.&lt;/p&gt;
 &lt;p&gt;I rebooted, stopped some apps that I thought they were the culprit to no
@@ -32,15 +32,15 @@ it's really sleeping and not doing something else (ex. updating
 statuses, e-mail... and not the other thing you thought, you pervert).&lt;/p&gt;
 &lt;p&gt;Thank you, but the app only does that. It shows the time in the CPU
 frequencies, nothing else... Until I found the solution.&lt;/p&gt;
-&lt;h2 id="tell-me-how-to-solve-the-problem-already-goddamn"&gt;Tell me how to solve the problem already, goddamn!&lt;/h2&gt;
-&lt;p&gt;What you need:&lt;/p&gt;
+&lt;h2 id="tell-me-how-to-solve-the-problem-already-goddamn"&gt;Tell me how to solve the problem already, goddamn!
+&lt;/h2&gt;&lt;p&gt;What you need:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;phone or tablet with battery drain problem&lt;/li&gt;
 &lt;li&gt;CPU Spy (possibly optional, BetterBatteryStats has that option)&lt;/li&gt;
 &lt;li&gt;BetterBatteryStats&lt;/li&gt;
 &lt;li&gt;more than 4hrs without using the phone but less than 10hrs for sure&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="procedure"&gt;Procedure&lt;/h3&gt;
+&lt;h3 id="procedure"&gt;Procedure
 &lt;ul&gt;
 &lt;li&gt;Install CPU Spy and BetterBatteryStats. Remember to charge your
 phone fully 'cause you need every single juice porcentage.&lt;/li&gt;
@@ -53,7 +53,7 @@ least 4hrs (better overnight) with screen off.&lt;/li&gt;
 &lt;li&gt;Forget the phone and take fresh air; pet your pet, feed it, play
 with it; excercise...&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;After X hours:&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;After X hours:&lt;/p&gt;
 &lt;p&gt;Write down/take a screenshot of your homescreen or a place where it has
 the battery porcentage and the time. Find out how much the battery
 dropped per hour: &lt;em&gt;[initial battery - now battery] / [hours phone

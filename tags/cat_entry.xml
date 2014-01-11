@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (entry)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/cat_entry.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 10 Jan 2014 21:40:16 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Dynamic to Static (Wordpress a Pelican)</title><link>http://blog.quinzi.com.ar/wordpress-to-pelican/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (entry)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/cat_entry.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 14:50:32 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Dynamic to Static (Wordpress a Pelican)</title><link>http://blog.quinzi.com.ar/wordpress-to-pelican/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#por-que"&gt;Por qué&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#presentacion"&gt;Presentación&lt;/a&gt;&lt;/li&gt;
@@ -18,7 +18,7 @@
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#conclusion"&gt;Conclusión&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h2 id="por-que"&gt;Por qué&lt;/h2&gt;
+&lt;h2 id="por-que"&gt;Por qué
 &lt;ol&gt;
 &lt;li&gt;Because I can&lt;/li&gt;
 &lt;li&gt;Cada vez &lt;strong&gt;me llevo peor con Wordpress&lt;/strong&gt;&lt;/li&gt;
@@ -31,16 +31,16 @@
 &lt;li&gt;estoy aprendiendo python&lt;/li&gt;
 &lt;li&gt;ya llegué&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id="presentacion"&gt;Presentación&lt;/h2&gt;
-&lt;p&gt;Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.&lt;/p&gt;
+&lt;h2 id="presentacion"&gt;Presentación
+&lt;/h2&gt;&lt;/h2&gt;&lt;p&gt;Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.&lt;/p&gt;
 &lt;p&gt;Todo iba bien, hasta que los de Wordpress decidieron &lt;strong&gt;abrirse mas como CMS&lt;/strong&gt; que como sistema de blogging. Lo entiendo, es natural. Bien. No me gusta. No se si porque yo asocio Wordpress con blog y no un CMS completo a lo Joomla! o Drupal, o porque si las cosas en el backend estan mal organizadas para ser CMS/orientadas a blog, o si es mi conexión que no me deja disfrutar al máximo o qué. &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Por temas de conexión y que el editor de Wordpress apesta&lt;/strong&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, añadido a tener una wiki en localhost y encariñarme con los &lt;a href="http://en.wikipedia.org/wiki/Lightweight_markup_languages"&gt;LML&lt;/a&gt;, &lt;strong&gt;escribía los posts en markdown&lt;/strong&gt; (que antes no me caía bien, hasta que empecé a usar &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt;), los pasaba a HTML, hacia search &amp;amp; replace para las imágenes (aunque se puede obviar si se suben primero las imágenes), y &lt;strong&gt;recien ahí lo pasaba a Wordpress&lt;/strong&gt;. No es lo mas cómodo del mundo, pero servía.&lt;/p&gt;
 &lt;p&gt;Por alguna razón que ahora no recuerdo, empecé a buscar (o encontré de casualidad) scripts que pasan &lt;code&gt;.txts&lt;/code&gt; con LML a html. Eso me hizo pensar: "hey, capaz me puede servir". Después de descartar un par que no me servían (estan apuntados a los usuarios de Linux y para usarlos en Windows era mucho lio), me decanté por &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Pelican es un script de Python que toma archivos de texto con markdown, reStructuredText o AsciiDoc, los pasa por un theme, y te genera un blog estático/html. Puro y duro, a la vieja escuela. Con categorias, tags, rss, páginas. Vamos, lo básico para un blog.&lt;/p&gt;
 &lt;p&gt;Yo lo estoy hosteando en &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;Dropbox&lt;/a&gt;, después de decidir que subir las cosas por FTP era bastante molesto &lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;/las únicas razones por la que quiería un host apache era por el &lt;code&gt;.htaccess&lt;/code&gt; (el rewrite) para hacer magia pero no valía mucho hacer eso para mi humilde blog. &lt;strong&gt;También lo podes hostear en GitHub&lt;/strong&gt; si ya tenes cuenta ahi y no te molesta hacer commits. CAPAZ que algun día lo pase ahi (tengo como pendiente GitHub).&lt;/p&gt;
 &lt;p&gt;Si solo te interesa hacer la parte de archivos de texto en Dropbox SIN generar html y demas, tenes opciones como &lt;a href="http://calepin.co/"&gt;Calepin&lt;/a&gt; y &lt;a href="http://scriptogr.am/"&gt;scriptogr.am&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="instalacion-en-windows"&gt;Instalación en Windows&lt;/h2&gt;
-&lt;p&gt;Porque en Linux este tipo de cosas es mas fácil.&lt;/p&gt;
+&lt;h2 id="instalacion-en-windows"&gt;Instalación en Windows
+&lt;/h2&gt;&lt;p&gt;Porque en Linux este tipo de cosas es mas fácil.&lt;/p&gt;
 &lt;p&gt;Por ahora, &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt; corre bajo &lt;strong&gt;Python 2.7&lt;/strong&gt;, hay un fork para que ande en Python 3 pero no lo pude hacer andar (tampoco probé mucho).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: yo explico como hacer esto manualmente, pero se puede instalar con &lt;code&gt;pip&lt;/code&gt;.&lt;/p&gt;
 &lt;ol&gt;
@@ -60,25 +60,25 @@
 &lt;/li&gt;
 &lt;li&gt;Y el &lt;a href="http://pygments.org/"&gt;pygments&lt;/a&gt; para el syntax highlighting&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id="configuracion"&gt;Configuración&lt;/h2&gt;
+&lt;h2 id="configuracion"&gt;Configuración
 &lt;ol&gt;
 &lt;li&gt;Se crea un &lt;code&gt;config.py&lt;/code&gt; para las configuración siguiendo &lt;a href="http://pelican.readthedocs.org/en/latest/settings.html"&gt;las variables en los docs&lt;/a&gt; (o usas como base las que ya te vienen en el archivo)&lt;/li&gt;
 &lt;li&gt;Si usas Markdown, vas a querer usar los &lt;a href="http://packages.python.org/Markdown/extensions"&gt;markdown extra&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id="andando"&gt;Andando&lt;/h2&gt;
+&lt;h2 id="andando"&gt;Andando
 &lt;ol&gt;
 &lt;li&gt;Crear un post con el &lt;a href="http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican"&gt;metadata correspondiente&lt;/a&gt;. El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.&lt;/li&gt;
 &lt;li&gt;Ir a la carpeta root de tu Pelican, abrir una linea de comandos y poner: &lt;code&gt;[Python_path]\Scripts\pelican.exe input/ -s config.py&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: para probar, podes obviar la parte de configuración.&lt;/p&gt;
+&lt;/h2&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: para probar, podes obviar la parte de configuración.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Nota 2&lt;/strong&gt;: si se corre en la carpeta del contenido, para el path se puede usar &lt;code&gt;.&lt;/code&gt; (punto)&lt;/p&gt;
 &lt;p&gt;Yo lo puse en un script/bat cosa de no escribir eso todo el tiempo.&lt;/p&gt;
-&lt;h2 id="themes"&gt;Themes&lt;/h2&gt;
-&lt;p&gt;Para los themes/templates, Pelican usa &lt;a href="http://jinja.pocoo.org/"&gt;Jinja2&lt;/a&gt;. Nunca usé un &lt;em&gt;template engine&lt;/em&gt;, siempre lo tildan de complicados y demas, pero este anduvo bien. Es fácil, tan fácil como crear vos un mini-template "engine" en php.&lt;/p&gt;
+&lt;h2 id="themes"&gt;Themes
+&lt;/h2&gt;&lt;p&gt;Para los themes/templates, Pelican usa &lt;a href="http://jinja.pocoo.org/"&gt;Jinja2&lt;/a&gt;. Nunca usé un &lt;em&gt;template engine&lt;/em&gt;, siempre lo tildan de complicados y demas, pero este anduvo bien. Es fácil, tan fácil como crear vos un mini-template "engine" en php.&lt;/p&gt;
 &lt;p&gt;Podes &lt;a href="http://pelican.readthedocs.org/en/latest/themes.html"&gt;crear&lt;/a&gt; los tuyos, podes bajar otros &lt;a href="https://github.com/getpelican/pelican-themes"&gt;manualmente&lt;/a&gt; o usar la &lt;a href="http://pelican.readthedocs.org/en/latest/pelican-themes.html"&gt;linea de comandos&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="migracion-wordpress-pelican"&gt;Migración Wordpress -&amp;gt; Pelican&lt;/h2&gt;
-&lt;h3 id="posts-y-paginas"&gt;Posts y páginas&lt;/h3&gt;
-&lt;p&gt;Pelican tiene un &lt;a href="http://docs.getpelican.com/en/latest/importer.html"&gt;conversor&lt;/a&gt;. Como yo lo necesité para Wordpress, me voy a centrar en ese. Necesitas:&lt;/p&gt;
+&lt;h2 id="migracion-wordpress-pelican"&gt;Migración Wordpress -&amp;gt; Pelican
+&lt;h3 id="posts-y-paginas"&gt;Posts y páginas
+&lt;/h3&gt;&lt;/h2&gt;&lt;p&gt;Pelican tiene un &lt;a href="http://docs.getpelican.com/en/latest/importer.html"&gt;conversor&lt;/a&gt;. Como yo lo necesité para Wordpress, me voy a centrar en ese. Necesitas:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.crummy.com/software/BeautifulSoup/#Download"&gt;BeautifulSoup-3.2.1&lt;/a&gt; (las 4.x no funcionan)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; (amo pandoc)&lt;/li&gt;
@@ -89,8 +89,8 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h3 id="imagenes"&gt;Imágenes&lt;/h3&gt;
-&lt;p&gt;Como paso de wordpress.com a Pelican, tengo que descargar las imágenes de alguna forma. Se puede mediante cositas guay como PageNest y similares, pero es mucho lio pensar un regex solo para descargarlas.&lt;/p&gt;
+&lt;h3 id="imagenes"&gt;Imágenes
+&lt;/h3&gt;&lt;p&gt;Como paso de wordpress.com a Pelican, tengo que descargar las imágenes de alguna forma. Se puede mediante cositas guay como PageNest y similares, pero es mucho lio pensar un regex solo para descargarlas.&lt;/p&gt;
 &lt;p&gt;Ya que tenemos el &lt;code&gt;.xml&lt;/code&gt; del export, podemos instalar un Wordpress en localhost (o hosteado en otra parte para hacer pruebas). Como tengo un Wordpress en localhost que hace años que no lo uso, tuve que eliminar todas las cosas que tenia antes (en &lt;kbd&gt;phpmyadmin &amp;gt; eliminar el contenido de las tablas/truncate&lt;/kbd&gt;), actualizarlo + actualizar base de datos + actualizar/instalar el plugin de import (que no viene como funcionalidad/core por alguna razón).&lt;/p&gt;
 &lt;p&gt;Una vez hecho eso, se va a &lt;kbd&gt;tools &amp;gt; import &amp;gt; wordpress &amp;gt; seleccionar archivo &amp;gt; linkear los autores &amp;gt; importar&lt;/kbd&gt; &amp;gt; esperar.&lt;/p&gt;
 &lt;p&gt;Y se espera.&lt;/p&gt;
@@ -103,18 +103,18 @@
 &lt;li&gt;las demás tienen este nombre: &lt;code&gt;[nombre orig]-300x225.jpg&lt;/code&gt; (donde el numero de tamaño + extension cambian). Esto se puede eliminar facilmente con un script que tengas a mano, o sino con buscadores estilo &lt;a href="http://voidtools.com/"&gt;Everything&lt;/a&gt; poniendo: &lt;code&gt;[path a las imagenes]\ *-*x*&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ahora solo queda hacer un search &amp;amp; replace para cambiar la url del estilo &lt;code&gt;http://[username].files.wordpress.com/[año]/[mes]&lt;/code&gt; a tu estructura actual.&lt;/p&gt;
-&lt;h3 id="categorias-y-tags"&gt;Categorías y tags&lt;/h3&gt;
-&lt;p&gt;Ojito con las categorias. Primero: al hacer un sistema simple, &lt;strong&gt;no tiene jerarquia de categorias&lt;/strong&gt; como Wordpress. Fijate como manejas eso. Segundo: &lt;strong&gt;solo acepta una categoria por post&lt;/strong&gt;. Si estas cosas te molestan, podes optar por usar directamente tags.&lt;/p&gt;
-&lt;h3 id="comentarios"&gt;Comentarios&lt;/h3&gt;
-&lt;p&gt;Al pasar a Pelican, no sabia si incluir comentarios. Mi blog es personal, no tiene muchos o directamente no tiene, pero siempre quise eso de "che, yo resolví eso de otra forma: tal tal tal. Dejo el comentario por si a alguien le sirve", asique opté por usar Disqus (por que es el único que conozco y no tengo muchos comentarios, por eso ni me molesté en buscar alternativas).&lt;/p&gt;
+&lt;h3 id="categorias-y-tags"&gt;Categorías y tags
+&lt;/h3&gt;&lt;p&gt;Ojito con las categorias. Primero: al hacer un sistema simple, &lt;strong&gt;no tiene jerarquia de categorias&lt;/strong&gt; como Wordpress. Fijate como manejas eso. Segundo: &lt;strong&gt;solo acepta una categoria por post&lt;/strong&gt;. Si estas cosas te molestan, podes optar por usar directamente tags.&lt;/p&gt;
+&lt;h3 id="comentarios"&gt;Comentarios
+&lt;/h3&gt;&lt;p&gt;Al pasar a Pelican, no sabia si incluir comentarios. Mi blog es personal, no tiene muchos o directamente no tiene, pero siempre quise eso de "che, yo resolví eso de otra forma: tal tal tal. Dejo el comentario por si a alguien le sirve", asique opté por usar Disqus (por que es el único que conozco y no tengo muchos comentarios, por eso ni me molesté en buscar alternativas).&lt;/p&gt;
 &lt;p&gt;Si queres transferir los comentarios: Disqus tiene una opción de traer los de Wordpress, pero requiere un plugin (o sea, me jodo). Yo hice copy &amp;amp; paste del html (para hacer algo manual viste, sino era todo automatizado) y los pegué en la entrada correspondiente.&lt;/p&gt;
 &lt;p&gt;Tips:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Conviene desactivar la opcion de conversión de caritas/emoticones ( &lt;code&gt;:D&lt;/code&gt;, &lt;code&gt;:)&lt;/code&gt; ) a imágenes. A no ser que quieras que se referencien al viejo blog o hacer trabajo extra para eliminarlas/pasarlas a texto.&lt;/li&gt;
 &lt;li&gt;Hacete un regex para sacar el link al comentario cuando se clickea en la fecha (yo lo hice, mas que nada, porque tomaba la dirección localhost). Usé este: &lt;code&gt;&amp;lt;a href="http://localhost/wordpress/\?p=\d.+comment-\d.+"&amp;gt;\n(.+)&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="pros-y-cons"&gt;Pros y Cons&lt;/h2&gt;
-&lt;p&gt;Como todo, hay pros y contras por cada sistema.&lt;/p&gt;
+&lt;h2 id="pros-y-cons"&gt;Pros y Cons
+&lt;/h2&gt;&lt;p&gt;Como todo, hay pros y contras por cada sistema.&lt;/p&gt;
 &lt;p&gt;Wordpress, pros:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;es Wordpress&lt;/li&gt;
@@ -149,8 +149,8 @@
 &lt;li&gt;Genera contenido estático, nada de comentarios ni base de datos para no se que cosa. Los tenes que agregar vos y con Javascript o algún workaround.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Procon (no se como ponerla): &lt;strong&gt;Te tiene que gustar escribir&lt;/strong&gt;, y por escribir me refiero a escribir variables y demas, tanto del sistema específico (Pelican) y del LML que elegiste. Capaz que a los programadores esto seria un pro, pero para el resto de los mortales seria una contra (a no ser que crees un template).&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusión&lt;/h2&gt;
-&lt;p&gt;Esta mudanza la hice para probar cosas nuevas, solo actualizo el blog una vez al mes/cada 3-6 meses y ni tengo host propio. No es que este todos los dias escribiendo un post, o cada semana; tengo mis periodos de "ay si, hoy escribo y oh! ay mira escribi uno la semana pasada. Me siento re blogger" y de "ah mira, hace 6 meses que no escribo... qué se le va a hacer, no?".&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusión
+&lt;/h2&gt;&lt;p&gt;Esta mudanza la hice para probar cosas nuevas, solo actualizo el blog una vez al mes/cada 3-6 meses y ni tengo host propio. No es que este todos los dias escribiendo un post, o cada semana; tengo mis periodos de "ay si, hoy escribo y oh! ay mira escribi uno la semana pasada. Me siento re blogger" y de "ah mira, hace 6 meses que no escribo... qué se le va a hacer, no?".&lt;/p&gt;
 &lt;p&gt;Pero cada vez que SI actualizaba, odiaba profundamente el paso a Wordpress. Esta bien, si, podes ponerle un plugin para que tome la sintaxis markdown y todo eso, recordá que yo estoy/aba en wordpress.com y no pienso/aba instalar Wordpress en el host. Ya lo hice una vez y no me gustó, por eso me pasé a .com.&lt;/p&gt;
 &lt;p&gt;La actualización por medio de este sistema&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; es muy cómodo, solo pongo el post terminado en la carpeta (o lo creo ahi directamente), corro el script y listo. Solo tengo que tener Dropbox corriendo para que actualice. Si quiero hacerlo aun mas simple, puedo usar los servicios nombrados más arriba y solo poner el txt en Dropbox y listo. Sitio actualizado. También es muy rápido generar los &lt;code&gt;.html&lt;/code&gt;, con mi blogcito ni tarda 5 segundos (y eso que linkeo a otros posts).&lt;/p&gt;
 &lt;p&gt;Por que no un host cualquiera/FTP? Por que tenia que hacer un paso "extra" y sincronizar a FTP o anotarme a otro servicio para que haga un sync/backup de carpeta X de dropbox a carpeta X del host&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fn:5" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
@@ -177,105 +177,110 @@
 &lt;p&gt;ahora que lo pienso, capaz que se pueda poner el sitio en FTP como disco en red (o como se llame) en Windows. Lo hice una vez para pasar cosas al celular. Ahi puedo hacer las cosas directamente y me ahorraría unos pasos. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fnref:5" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><guid>http://blog.quinzi.com.ar/wordpress-to-pelican/</guid><pubDate>Tue, 22 Jan 2013 00:00:00 GMT</pubDate></item><item><title>Checkerboard cake relleno de crema de dulce de leche con ganache de chocolate, cerezas, coco, cosas varias</title><link>http://blog.quinzi.com.ar/checkerboard-cake/</link><description>&lt;p&gt;... punto. Desde que veo los programas de competencias de cocina me di
-cuenta que el describir el plato/comida esta bien y no hace falta
+&lt;/div&gt;</description><guid>http://blog.quinzi.com.ar/wordpress-to-pelican/</guid><pubDate>Tue, 22 Jan 2013 00:00:00 GMT</pubDate></item><item><title>Torta ajedrez con ganache de chocolate y cosas varias</title><link>http://blog.quinzi.com.ar/checkerboard-cake/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/checkerboard-cake/#pasos"&gt;Pasos&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/checkerboard-cake/#bizcohuelo"&gt;Bizcohuelo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/checkerboard-cake/#cortado"&gt;Cortado&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/checkerboard-cake/#ganache"&gt;Ganache&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/checkerboard-cake/#relleno"&gt;"Relleno"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/checkerboard-cake/#armado"&gt;Armado&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/checkerboard-cake/#resultado"&gt;Resultado&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Desde que veo los programas de competencias de cocina me di
+cuenta que el describir el plato/comida está bien y no hace falta
 ponerle un nombre en especial. También, desde que veo esos programas, me
 dieron muuuchas ganas de empezar a sacar fotos a las comidas, lo malo es
 que no tengo ganas de preparar esas comidas super elaboradas para comer
 yo sola, ni conozco alguien que cocine de ese tipo cosa de pedirle un
 plato y sacarle fotos. Por esa razón, hice algo que sea rico por mas que
-sea visualmente feo, sin ganas, etc. Una linda torta.&lt;/p&gt;
-&lt;p&gt;Ya con el plato decidido, me decidi por cosas faciles/que tenia ganas de
+sea visualmente feo, sin ganas, etc.: una linda torta.&lt;/p&gt;
+&lt;p&gt;Ya con el plato decidido, me decidi por cosas fáciles/que tenia ganas de
 hacer. El &lt;em&gt;checkerboard cake&lt;/em&gt; tenia bastantes ganas de hacerlo desde que
 lo vi en &lt;a href="http://en.wikipedia.org/wiki/How_2"&gt;"Cómo y por qué"&lt;/a&gt;, un programa que lo pasaban en Discovery
 Kids, cuando era chica. La cubierta tenia pensada hacerla con crema,
 pero era mucho lio. Me decidí con el famosisimo &lt;em&gt;ganache&lt;/em&gt; de chocolate
 que siempre escucho en los programas estos de cocina (menos en Hell's
 Kitchen). Decoración: lo primero que venga.&lt;/p&gt;
-&lt;h2 id="pasos"&gt;PASOS&lt;/h2&gt;
-&lt;p&gt;Estos son, mas o menos, los pasos a seguir. Desde la preparación de la
+&lt;h2 id="pasos"&gt;Pasos
+&lt;/h2&gt;&lt;p&gt;Estos son, mas o menos, los pasos a seguir. Desde la preparación de la
 mezcla leyendo los pasos que vienen atrás de la caja, hasta la
-decoración. Si solo queres ver la torta final, scrollea hasta encontrar
-las fotos de una torta terminada.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 1.&lt;/strong&gt; Preparar los elementos que se necesitan por torta. Según
+decoración. Si solo queres ver la torta final, &lt;a href="http://blog.quinzi.com.ar/checkerboard-cake/#resultado"&gt;scrollea&lt;/a&gt; hasta encontrar
+las fotos de una torta terminada&lt;/p&gt;
+&lt;h3 id="bizcohuelo"&gt;Bizcohuelo
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Paso 1.&lt;/strong&gt; Preparar los elementos que se necesitan por torta. Según
 tips en paginas webs, todo a temperatura ambiente. Prender el horno al
 minimo por 15 minutos.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso01.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 2&lt;/strong&gt;. Enmantecar y enharinar un molde blbalbal.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ingredientes" src="http://blog.quinzi.com.ar/images/2012/torta_paso01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Paso 2&lt;/strong&gt;. Enmantecar y enharinar un molde.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Molde" src="http://blog.quinzi.com.ar/images/2012/torta_paso02.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 3&lt;/strong&gt;. En un recipiente, romper los huevos.&lt;/p&gt;
-&lt;div class="caption"&gt;&lt;div class="inner"&gt;
-&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_paso03.jpg"&gt;
-&lt;p&gt;Me acuerdo tarde de pintarme las uñas&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;y agregar la leche&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso04.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;mezclarlos.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Rompiendo huevos" src="http://blog.quinzi.com.ar/images/2012/torta_paso03.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Agregar la leche y mezclarlos.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Recipiente con huevos y leche" src="http://blog.quinzi.com.ar/images/2012/torta_paso04.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 4.&lt;/strong&gt; Agregar el contenido del envase.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso05.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;Sacar el batidor que quedo enterrado&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso06.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Premezcla" src="http://blog.quinzi.com.ar/images/2012/torta_paso05.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Sacar el batidor que quedó enterrado&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Close up de premezcla" src="http://blog.quinzi.com.ar/images/2012/torta_paso06.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;y mezclar los liquidos del paso anterior con el polvito.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso07.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 5.&lt;/strong&gt; Batir durante X minutos... yo durante 5 porque ~~no tengo
-batidora electrica~~ queria ejercitar la muñeca.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso08.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso09.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Integrando ingredientes" src="http://blog.quinzi.com.ar/images/2012/torta_paso07.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Paso 5.&lt;/strong&gt; Batir durante X minutos. Yo batí durante 10 porque &lt;del&gt;no tengo
+batidora electrica&lt;/del&gt; queria ejercitar la muñeca.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mezclando" src="http://blog.quinzi.com.ar/images/2012/torta_paso08.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mezclando" src="http://blog.quinzi.com.ar/images/2012/torta_paso09.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 6&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso10.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;Pasar la mezcla al molde y ponerlo en el horno. Esperar como 1 hora. Durante esa hora:
-limpiar los elementos. El recipiente y espatula se pueden primero lamer:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso11.jpg"&gt;&lt;/p&gt;
-&lt;div class="caption"&gt;&lt;div class="inner"&gt;
-&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_paso12.jpg"&gt;
+&lt;p&gt;&lt;img alt="Ingredientes integrados" src="http://blog.quinzi.com.ar/images/2012/torta_paso10.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Pasar la mezcla al molde y mandarlo el horno. Esperar como 1 hora. Durante esa hora: limpiar los elementos. El recipiente y espátula se pueden primero lamer:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Utensillos sucios" src="http://blog.quinzi.com.ar/images/2012/torta_paso11.jpg"&gt;&lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_paso12.jpg" alt="espátula sucia"&gt;
 &lt;p&gt;Wanna lick it?&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Paso 7&lt;/strong&gt;. Despues de la hora, hacer la prueba del palito seco para ver
-si la torta esta lista (segun webs, se hace la prueba del palito DENTRO
-del horno. Asique cuidado). Una vez que ya esta, sacarla del horno para
-que se enfrie. Unos 10 minutos.&lt;/p&gt;
-&lt;div class="caption"&gt;&lt;div class="inner"&gt;
-&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_paso13.jpg"&gt;
-&lt;p&gt;Yo le clavé un cuchillo al principio. Cual hay?&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Paso 7&lt;/strong&gt;. Después de la hora, hacer la prueba del palito seco para ver
+si la torta está lista (segun webs, se hace la prueba del palito DENTRO
+del horno. Asique cuidado). Una vez que ya está, sacarla del horno para
+que se enfríe. &lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_paso13.jpg" alt="Bizcochuelo salido del horno"&gt;
+&lt;p&gt;Yo le clavé un cuchillo al principio.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p&gt;&lt;span style="text-decoration:underline;"&gt;Tip&lt;/span&gt;. Si se vive en una
-ciudad con viento, abrir la ventana y poner la torta al frente de la
-corriente de aire.&lt;/p&gt;
+&lt;div class="admonition tip"&gt;
+&lt;p class="admonition-title"&gt;Tip&lt;/p&gt;
+&lt;p&gt;Si se vive en una ciudad con viento, abrir la ventana y poner la torta al frente de la corriente de aire.&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Paso 8&lt;/strong&gt;. Empezar a desmoldar la torta. Yo tengo ese molde que se le
-saca primero los lados y despues la base. Primero le saque los lados y
+saca primero los lados y después la base. Primero le saque los lados y
 la deje enfriar por otros 10-20 min.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso14.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Bizcochuelo" src="http://blog.quinzi.com.ar/images/2012/torta_paso14.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 9.&lt;/strong&gt; Dar vuelta la torta y sacar la base. Dejar enfriar otros 10
-min. Lavar el molde. Secar el molde poniendolo al lado de la ventana
+min. Lavar y secar el molde poniendolo al lado de la ventana
 (cosa que se seque rapido ;) )&lt;/p&gt;
 &lt;p&gt;[imaginarse la torta dada vuelta al lado de la ventana]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 10.&lt;/strong&gt; Dar vuelta la torta, rogando que la parte de arriba no
-estuviese caliente y se haya pegado al plato (aunque no importa, despues
-se cubre). Si no se tienen estas rejillas para poner las tortas se puede
-agarrar (como hice yo), una tostadora vieja&lt;/p&gt;
-&lt;div class="caption"&gt;&lt;div class="inner"&gt;
-&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_tostadora.jpg"&gt;
+estuviera caliente y se haya pegado al plato (aunque no importa, después
+se cubre). Si no tienen estas rejillas para poner las tortas se puede
+agarrar (como hice yo) una tostadora no-automática-del-futuro ("vieja").&lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_tostadora.jpg" alt="Tostadora"&gt;
 &lt;p&gt;Cortesía de quien haya sacado la foto&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;y sobre ella ponerle una parte de la torta, cosa que la parte de abajo
-este levantada y le entre corriente de aire. Cada 10-15 min ir rotando
-la torta. De esta manera, se enfria tanto la parte de arriba y la de
-abajo.&lt;/p&gt;
+&lt;p&gt;Cada 10-15 min ir rotando la torta. De esta manera, se enfria tanto la parte de arriba y la de abajo.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 11&lt;/strong&gt;. Preparar los elementos para la segunda torta.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 12.&lt;/strong&gt; Enmantecar y enharinar de nuevo el molde.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 13.&lt;/strong&gt; Romper huevos y poner leche dentro de un recipiente.
 Mezclarlos.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 14.&lt;/strong&gt; Poner el contenido del envase al recipiente, desenterrar el
+&lt;p&gt;&lt;strong&gt;Paso 14.&lt;/strong&gt; Poner el contenido del envase en el recipiente, desenterrar el
 batidor. Unir los elementos hasta que quede de cierta manera para que se
 pueda batir.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 15&lt;/strong&gt;. Batir durante X minutos. Yo bati durante 5 minutos con la
-otra muñeca para ejercitarla tambien.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso23.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 16.&lt;/strong&gt; Poner la mezcla en el molde y ponerlo en el horno. Para
+&lt;p&gt;&lt;strong&gt;Paso 15&lt;/strong&gt;. Batir durante X minutos. Esta vez batí con la otra muñeca cosa de que se ejerciten parejamente.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ingredientes integrados" src="http://blog.quinzi.com.ar/images/2012/torta_paso23.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Paso 16.&lt;/strong&gt; Poner la mezcla en el molde y mandarlo al horno. Para
 este punto, la torta 1 ya tendria que haber dado toda la vuelta y estar
 mediamente enfriada en la parte de arriba. Darla vuelta para que se
 enfrie el centro de la parte de abajo/base.&lt;/p&gt;
@@ -284,134 +289,116 @@ enfrie el centro de la parte de abajo/base.&lt;/p&gt;
 horno, ponerla cerca de la ventana para que se enfrie. Apagar el horno.
 Si la base de la torta 1 esta "bastante" enfriada, darla vuelta para que
 se termine de enfriar la parte de arriba.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 19&lt;/strong&gt;. Despues de unos 10 minutos, sacarle los costados de la
+&lt;p&gt;&lt;strong&gt;Paso 19&lt;/strong&gt;. Después de unos 10 minutos, sacarle los costados de la
 torta 2. Seguir esperando a que se enfrie.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 20.&lt;/strong&gt; Darla vuelta y sacarle el molde de la base. Dejar que se
 enfrie. Lavar el molde.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 21.&lt;/strong&gt; Darla vuelta de nuevo rogando que la parte de arriba no
-estuviese caliente para que no se pegue (cosa que me paso con esta
-¬_¬). Dejar que se enfrie.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso25.jpg"&gt;&lt;/p&gt;
+estuviera caliente para que no se pegue. Dejar que se enfrie.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Dos bizcochuelos" src="http://blog.quinzi.com.ar/images/2012/torta_paso25.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 22.&lt;/strong&gt; Dejar que torta 1 y torta 2 se conozcan y amiguen.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso26.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Close up de bizcochuelos" src="http://blog.quinzi.com.ar/images/2012/torta_paso26.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 23&lt;/strong&gt;. Dejar que se enfrien ambas tortas completamente.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 24.&lt;/strong&gt; Una vez que las tortas esten enfriadas completamente o en
-un 95%, se procede a cortar. Primero se cortan por la mitad. Tengan buen
-ojo y corten bien por la mitad, si no les queda una parte mas fina que
-la otra y queda feo u_u . Esta torta queda mejor con tortas mas altas,
-no como las que me salieron a mi que tienen como 3-4 cm de alto ¬_¬.&lt;/p&gt;
+&lt;h3 id="cortado"&gt;Cortado
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Paso 24.&lt;/strong&gt; Una vez que las tortas esten enfriadas completamente, se procede a cortar. Primero se cortan por la mitad. Tengan buen
+ojo y corten bien, si no les queda una parte mas fina que
+la otra y queda mal. Esta torta queda mejor con pedazos mas altos,
+no como las que me salieron a mi que tienen como 2-4cm.&lt;/p&gt;
 &lt;p&gt;[imaginarse una foto viendo la torta de frente. El cuchillo ya habria
 cortado unos 2 cm de torta.]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 25.&lt;/strong&gt; Ahora a cortar los circulos. Si no se tienen los moldes,
+&lt;p&gt;&lt;strong&gt;Paso 25.&lt;/strong&gt; Cortar los circulos. Si no se tienen los moldes,
 buscar platos, &lt;del&gt;tappers&lt;/del&gt; envases plásticos, vasos, etc. Con 2
-elementos alcanzan. Tienen que ser unos 3 cm (o a gusto del pastelero)
-mas chicos entre si (contando el de la torta). Se los centra y se los
-corta.&lt;/p&gt;
-&lt;div class="caption"&gt;&lt;div class="inner"&gt;
-&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_paso28.jpg"&gt;
+elementos alcanzan. Tienen que ser unos 3cm (o a gusto del pastelero)
+más chicos entre si (contando el de la torta). Se los centra y corta.&lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_paso28.jpg" alt="Bizcochuelos cortados"&gt;
 &lt;p&gt;La otra parte mitad de la torta de chocolate se fue a dar un paseo&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;&lt;span style="text-decoration:underline;"&gt;Pro tip&lt;/span&gt;: apilar todos
-los bizcochuelos. Buscar el mismo cuchillo que se usó para cortar las
-tortas por la mitad. Ir poniendo y cortando con los elementos. Asi, en
-un paso, cortaste todas las tortas quedando mas o menos iguales.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 26.&lt;/strong&gt; Armar el &lt;em&gt;ganache&lt;/em&gt; de chocolate. Para hacerlo, se necesitan
+&lt;div class="admonition tip"&gt;
+&lt;p class="admonition-title"&gt;Pro tip&lt;/p&gt;
+&lt;p&gt;Apilar todos los bizcochuelos. Buscar el mismo cuchillo que se usó para cortar las tortas por la mitad. Ir poniendo y cortando con los elementos. Asi, en un paso, cortaste todas las tortas quedando mas o menos iguales.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="ganache"&gt;Ganache
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Paso 26.&lt;/strong&gt; Armar el &lt;em&gt;ganache&lt;/em&gt; de chocolate. Para hacerlo, se necesitan
 la misma cantidad de crema de leche y chocolate (ese para reposteria,
-taza...). Para mi torta use 200gr de chocolate y .... emm ... 220 ml de
-crema aprox. (mande todo la crema y despues calculé a ojo :P ). Se corta
-bien chico (mas o menos) el chocolate (o se ralla) y se lo pone en un
-envase&lt;/p&gt;
+taza/submarino). Para mi torta use 200gr de chocolate y unos 200 ml de
+crema aprox. El chocolate se corta bien chico (mas o menos) o se ralla, y se lo pone en un envase&lt;/p&gt;
 &lt;p&gt;[imaginarse el chocolate cortado en un envase]&lt;/p&gt;
-&lt;p&gt;Despues se calienta la crema hasta antes de que hierva (o lo mandas al
-microondas por unos 30 segs a maximo). Poner la crema caliente en el
+&lt;p&gt;Después se calienta la crema hasta antes de que hierva (o lo mandas al
+microondas por unos 30 segs a máximo). Poner la crema caliente en el
 envase con el chocolate suavemente (o sea, no a lo bruto). Esperar a que
 se disuelva, mas o menos, el chocolate. Seguidamente, se lo mezcla hasta
-que el chocolate este completamente disuelto y mezclado con la crema.
-Tiene que tener un color a chocolate medio aterciopelado (asi dicen
-u_u) y brilloso.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso31.jpg"&gt;&lt;/p&gt;
+que el chocolate esté completamente disuelto y mezclado con la crema.
+Tiene que tener un color a chocolate medio aterciopelado y brilloso.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ganache" src="http://blog.quinzi.com.ar/images/2012/torta_paso31.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Antes de usar el &lt;em&gt;ganache&lt;/em&gt;, hay que dejar que se enfrie. Ponerlo en la
 heladera es buena opción.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 27&lt;/strong&gt;. Armar el relleno para unir/darle sabor entre las capas.
+&lt;h3 id="relleno"&gt;"Relleno"
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Paso 27&lt;/strong&gt;. Armar el relleno para unir/darle sabor entre las capas.
 Puede ser dulce de leche, crema con cosas, &lt;em&gt;ganache&lt;/em&gt;, etc. Yo hice una
 crema de dulce de leche que me dijeron por twitter. Es como &lt;em&gt;ganache&lt;/em&gt; de
 chocolate pero con dulce de leche. Solo que éste no se solidifica (o lo
 hice mal... o no proporcioné bien), pero se puede poner gelatina sin
 sabor (pero yo no tenia).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 28&lt;/strong&gt;. Empezar a armar. Se pone el anillo exterior de X color,
-despues se alterna con el de otro color, terminando con el centro del
+&lt;h3 id="armado"&gt;Armado
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Paso 28&lt;/strong&gt;. Empezar a armar. Se pone el anillo exterior de X color,
+después se alterna con el de otro color, terminando con el centro del
 primer color.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso29.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Anillos de bizcochuelo intercalados" src="http://blog.quinzi.com.ar/images/2012/torta_paso29.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 29.&lt;/strong&gt; Ponerle el relleno. No hay que ponerle mucho, ya que lo que
-importa de esta torta es el tablero de ajedrez y no el relleno. Hay que
-ponerle COMO MUCHO 0.3 cm de relleno. Capa fina. Si querias mucho
-relleno hubieras hecho otra torta u_u.&lt;/p&gt;
+importa de esta torta es el tablero de ajedrez y no el relleno.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 30.&lt;/strong&gt; Repetir el paso 28 pero alternando los colores. Si la
 primer capa fue chocolate-vainilla-chocolate, la segunda seria
 vainilla-chocolate-vainilla.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 31&lt;/strong&gt;. Repetir paso 29.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Pasos 32,33,34,35..&lt;/strong&gt;. Repetir pasos 28 y 29 hasta terminar.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_paso30.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paso 36.&lt;/strong&gt; Una vez que el &lt;em&gt;ganache&lt;/em&gt; este no tan liquido (cosa de que
+&lt;p&gt;&lt;img alt="Pila de bizcochuelos" src="http://blog.quinzi.com.ar/images/2012/torta_paso30.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Paso 36.&lt;/strong&gt; Una vez que el &lt;em&gt;ganache&lt;/em&gt; no esté tan líquido (cosa de que
 se pueda usar para cubrir) cubrir la torta con el &lt;em&gt;ganache&lt;/em&gt;. Empezar con
 la parte de arriba. Opción: poner mucho &lt;em&gt;ganache&lt;/em&gt; sobre los costados y
-empujarlo con la espatula para que se chorree en los costados :B.
-Cuidado que se hace mucho lio (mas si esta medio liquido, como me paso a
-mi) asique tengan algo para limpiar a mano (o laman la mesada).&lt;/p&gt;
+empujarlo con la espatula para que se chorree :B.
+Cuidado que se hace mucho lio asique tengan algo para limpiar a mano (o laman la mesada).&lt;/p&gt;
 &lt;p&gt;[imaginar la torta con la parte de arriba cubierta y los costados
 chorreados con &lt;em&gt;ganache&lt;/em&gt;]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 37.&lt;/strong&gt; Con la torta cubierta y con el ganache no solidificado, se
-procede con la decoración. Yo le espolvoree estas cositas de colores que
-nunca me acuerdo como se llaman. Le puse las cerezas y termine
+procede con la decoración. Yo le espolvoreé estas cositas de colores que
+nunca me acuerdo como se llaman. Le puse las cerezas y terminé 
 espolvoreando las cerezas con coco... aunque termine espolvoreando toda
-la parte de arriba con coco.&lt;/p&gt;
+la parte de arriba.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 38&lt;/strong&gt;. A la heladera, para que el &lt;em&gt;ganache&lt;/em&gt; se solidifique mas
-(seguro que con el ganache semi-solidificado esto no pasa u_u )&lt;/p&gt;
+(seguro que con el ganache semi-solidificado esto no pasa)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Paso 40.&lt;/strong&gt; COMER!&lt;/p&gt;
-&lt;h2 id="como-quedo-la-torta"&gt;Cómo quedo la torta&lt;/h2&gt;
-&lt;p&gt;Para recopensar todo este lio de pasos, muestro como quedo mi tortita ^_^&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_muestra01.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_muestra02.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_muestra03.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_muestra04.jpg"&gt;&lt;/p&gt;
-&lt;div class="caption"&gt;&lt;div class="inner"&gt;
-&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_muestra05.jpg"&gt;
-&lt;p&gt;Esas cositas que no se como se llaman&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id="resultado"&gt;Resultado
+&lt;/h2&gt;&lt;p&gt;Para recopensar todo este lio de pasos, muestro como quedo mi tortita.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Torta de frente" src="http://blog.quinzi.com.ar/images/2012/torta_torta01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Close up de cerezas" src="http://blog.quinzi.com.ar/images/2012/torta_torta02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Granas en el borde de la torta" src="http://blog.quinzi.com.ar/images/2012/torta_torta04.jpg"&gt;&lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_torta06.jpg" alt="granas"&gt;
+&lt;p&gt;Habia comprado rosa y verde, pero vinieron celestes&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;div class="caption"&gt;&lt;div class="inner"&gt;
-&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_muestra06.jpg"&gt;
-&lt;p&gt;Habia comprado rosa y verde, pero vinieron celestes o.O&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img alt="Close up granas" src="http://blog.quinzi.com.ar/images/2012/torta_torta07.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cerezas y coco" src="http://blog.quinzi.com.ar/images/2012/torta_torta09.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Linea de cerezas" src="http://blog.quinzi.com.ar/images/2012/torta_torta11.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cereza con coco" src="http://blog.quinzi.com.ar/images/2012/torta_torta12.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Corte de torta mostrando el tablero de ajedrez" src="http://blog.quinzi.com.ar/images/2012/torta_torta13.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Dentro de la torta" src="http://blog.quinzi.com.ar/images/2012/torta_torta15.jpg"&gt;&lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_torta16.jpg" alt="Espacio sin rellenar"&gt;
+&lt;p&gt;Esto pasa si no se corta bien... o aplasta bien&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_muestra07.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_muestra09.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_muestra11.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_muestra12.jpg"&gt;&lt;/p&gt;
-&lt;div class="caption"&gt;&lt;div class="inner"&gt;
-&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_muestra13.jpg"&gt;
-&lt;p&gt;No quedo tan mal por ser la primera vez&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img alt="" src="http://blog.quinzi.com.ar/images/2012/torta_muestra15.jpg"&gt;&lt;/p&gt;
-&lt;div class="caption"&gt;&lt;div class="inner"&gt;
-&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_muestra16.jpg"&gt;
-&lt;p&gt;Esto pasa si no se corta bien... o aplasta bien (?)&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class="caption"&gt;&lt;div class="inner"&gt;
-&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_muestra17.jpg"&gt;
-&lt;p&gt;La capa de ganache que le terminé poniendo&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class="caption"&gt;&lt;div class="inner"&gt;
-&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_muestra18.jpg"&gt;
+&lt;p&gt;&lt;img alt="Capa de ganache" src="http://blog.quinzi.com.ar/images/2012/torta_torta17.jpg"&gt;&lt;/p&gt;
+&lt;div class="caption"&gt;
+&lt;img src="http://blog.quinzi.com.ar/images/2012/torta_torta18.jpg" alt="Granas en la bandeja"&gt;
 &lt;p&gt;Hice lio :D&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Espero que les haya gustado :)&lt;/p&gt;
-&lt;h3 id="comments"&gt;Comments&lt;/h3&gt;
+&lt;h4&gt;Comments&lt;/h4&gt;
+
 &lt;div id="comments"&gt;
 
 &lt;ol class="commentlist"&gt;
@@ -427,7 +414,6 @@ Son adictivos esos programas en TLC :mrgreen:.&lt;/p&gt;
 &lt;p&gt;¡Quedó muy bien! La próxima me tenés que invitar u.u&lt;/p&gt;
 &lt;/div&gt;
 
-
 &lt;/div&gt;
 
 &lt;!-- #comment-##  --&gt;
@@ -436,7 +422,7 @@ Son adictivos esos programas en TLC :mrgreen:.&lt;/p&gt;
 &lt;li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-253"&gt;
 &lt;div id="comment-253"&gt;
 &lt;div class="comment-author vcard"&gt;
-&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://eikiu.wordpress.com" rel="external nofollow" class="url"&gt;Ei-Kiu&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
 &lt;div class="comment-meta commentmetadata"&gt;February 4, 2012 at 4:10 pm   &lt;/div&gt;
 
 &lt;!-- .comment-meta .commentmetadata --&gt;
@@ -477,7 +463,7 @@ Son adictivos esos programas en TLC :mrgreen:.&lt;/p&gt;
 &lt;li class="comment byuser comment-author-eikiu bypostauthor even thread-even depth-1" id="li-comment-256"&gt;
 &lt;div id="comment-256"&gt;
 &lt;div class="comment-author vcard"&gt;
-&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://eikiu.wordpress.com" rel="external nofollow" class="url"&gt;Ei-Kiu&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
 &lt;div class="comment-meta commentmetadata"&gt;February 5, 2012 at 11:42 am    &lt;/div&gt;
 
 &lt;!-- .comment-meta .commentmetadata --&gt;
@@ -491,7 +477,7 @@ Son adictivos esos programas en TLC :mrgreen:.&lt;/p&gt;
 &lt;li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-257"&gt;
 &lt;div id="comment-257"&gt;
 &lt;div class="comment-author vcard"&gt;
-&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://eikiu.wordpress.com" rel="external nofollow" class="url"&gt;Ei-Kiu&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
+&lt;img alt="" src="http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;amp;r=G" class="avatar avatar-40 photo" height="40" width="40"&gt;      &lt;cite class="fn"&gt;&lt;a href="http://blog.quinzi.com.ar/" rel="external nofollow" class="url"&gt;A.Q.&lt;/a&gt;&lt;/cite&gt; &lt;span class="says"&gt;says:&lt;/span&gt;   &lt;/div&gt;&lt;!-- .comment-author .vcard --&gt;
 &lt;div class="comment-meta commentmetadata"&gt;February 5, 2012 at 11:43 am    &lt;/div&gt;
 
 &lt;!-- .comment-meta .commentmetadata --&gt;
@@ -527,9 +513,8 @@ Felicitaciones!!! ^.^&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li class="post pingback"&gt;
-&lt;p&gt;Pingback: &lt;a href="http://eikiu.wordpress.com/2012/12/17/goodbye-dropbox/" rel="external nofollow" class="url"&gt;Goodbye, Dropbox? | Intento de blog&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/checkerboard-cake/</guid><pubDate>Sat, 04 Feb 2012 00:00:00 GMT</pubDate></item></channel></rss>

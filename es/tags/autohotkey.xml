@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (autohotkey)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/autohotkey.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Fri, 10 Jan 2014 21:40:17 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AutoHotkey: Reemplazo</title><link>http://blog.quinzi.com.ar/./es/autohotkey-reemplazo/</link><description>&lt;p&gt;Como había escrito &lt;a href="link://slug/autohotkey-nueva-carpeta"&gt;anteriormente&lt;/a&gt;, se puede usar tranquilamente el
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (autohotkey)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/autohotkey.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Sat, 11 Jan 2014 14:50:34 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AutoHotkey: Reemplazo</title><link>http://blog.quinzi.com.ar/./es/autohotkey-reemplazo/</link><description>&lt;p&gt;Como había escrito &lt;a href="link://slug/autohotkey-nueva-carpeta"&gt;anteriormente&lt;/a&gt;, se puede usar tranquilamente el
 AutoHotkey para suplantar texto. También existe una app un poco más
 simple (y más gráfica) basada en este, que es &lt;a href="http://www.lifehacker.com/software/texter/lifehacker-code-texter-windows-238306.php"&gt;Texter&lt;/a&gt;, asique depende de tus necesidades, elegí.&lt;/p&gt;
 &lt;p&gt;El texto se puede sustituir de dos formas: auto-sustisución o mediante
@@ -89,7 +89,7 @@ automaticamente el script; compilarlo y que te quede un exe que lo pones
 en la carpeta de &lt;code&gt;Inicio&lt;/code&gt; (y asi no necesitar el programa para correrlo); o
 &lt;a href="http://www.mediafire.com/file/ymzjwztdnzr/AutoHotkey%20-%20Nueva%20Carpeta.rar"&gt;bajar el archivo&lt;/a&gt; que contiene: el ahk
 y el exe con un txt por si no sabes donde hay que ponerlo.&lt;/p&gt;
-&lt;h3&gt; Comments &lt;/h3&gt;
+&lt;h4&gt; Comments &lt;/h4&gt;
 
 &lt;div id="comments"&gt;
 
