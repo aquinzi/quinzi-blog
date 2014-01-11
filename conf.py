@@ -136,7 +136,7 @@ ARCHIVE_FILENAME = "index.html"
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
 DEPLOY_COMMANDS = [
-"rsync -rav --delete --exclude=.git _output/ ../ghpages",
+"rsync -rav --delete --exclude=.git --exclude='Thumbs.db' _output/ ../ghpages",
 "cd ..\ghpages",
 "git add .",
 "git commit -am 'Publication on {date}'".format(date=time.strftime("%Y-%m-%d", time.localtime())),

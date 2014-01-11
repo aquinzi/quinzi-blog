@@ -458,7 +458,6 @@ div.toc ul, div#TOC ul {
     list-style-type: none;
     padding-left: 0.6em;
     margin: 0;
-    padding-top: 0.5em
 }
 
 
@@ -617,7 +616,9 @@ padding: 0.2em 0.2em 0.2em 0.4em;
 }
 
 .admonition.tip:before
-{content: "\f0eb\0020"; /*lightbulb */}
+{content: "\f0eb\0020"; /*lightbulb */
+padding: 0.2em 0.2em 0.2em 0.5em;
+}
 
 .admonition.info:before
 { content: "\f05a \0020"; /*info sign*/
@@ -843,6 +844,7 @@ div.toc:before, div#TOC:before {
     color:      #d6d6d6;
     font-weight: normal;
     border-bottom: 2px solid currentColor;
+	margin-bottom: 0.3em;
 }
 
 

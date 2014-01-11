@@ -5,16 +5,18 @@
 .. lang: es
 .. slug: checkerboard-cake
 
+[TOC]
+
 Desde que veo los programas de competencias de cocina me di
-cuenta que el describir el plato/comida esta bien y no hace falta
+cuenta que el describir el plato/comida está bien y no hace falta
 ponerle un nombre en especial. También, desde que veo esos programas, me
 dieron muuuchas ganas de empezar a sacar fotos a las comidas, lo malo es
 que no tengo ganas de preparar esas comidas super elaboradas para comer
 yo sola, ni conozco alguien que cocine de ese tipo cosa de pedirle un
 plato y sacarle fotos. Por esa razón, hice algo que sea rico por mas que
-sea visualmente feo, sin ganas, etc. Una linda torta.
+sea visualmente feo, sin ganas, etc.: una linda torta.
 
-Ya con el plato decidido, me decidi por cosas faciles/que tenia ganas de
+Ya con el plato decidido, me decidi por cosas fáciles/que tenia ganas de
 hacer. El *checkerboard cake* tenia bastantes ganas de hacerlo desde que
 lo vi en ["Cómo y por qué"][], un programa que lo pasaban en Discovery
 Kids, cuando era chica. La cubierta tenia pensada hacerla con crema,
@@ -22,109 +24,102 @@ pero era mucho lio. Me decidí con el famosisimo *ganache* de chocolate
 que siempre escucho en los programas estos de cocina (menos en Hell's
 Kitchen). Decoración: lo primero que venga.
 
-## PASOS
+Pasos
+-------
 
 Estos son, mas o menos, los pasos a seguir. Desde la preparación de la
 mezcla leyendo los pasos que vienen atrás de la caja, hasta la
-decoración. Si solo queres ver la torta final, scrollea hasta encontrar
-las fotos de una torta terminada.
+decoración. Si solo queres ver la torta final, [scrollea](#resultado) hasta encontrar
+las fotos de una torta terminada
+
+### Bizcohuelo
 
 **Paso 1.** Preparar los elementos que se necesitan por torta. Según
 tips en paginas webs, todo a temperatura ambiente. Prender el horno al
 minimo por 15 minutos.
 
-![](/images/2012/torta_paso01.jpg)
+![Ingredientes](/images/2012/torta_paso01.jpg)
 
-**Paso 2**. Enmantecar y enharinar un molde blbalbal.
+**Paso 2**. Enmantecar y enharinar un molde.
 
-![](/images/2012/torta_paso02.jpg)
+![Molde](/images/2012/torta_paso02.jpg)
 
 **Paso 3**. En un recipiente, romper los huevos.
 
-<div class="caption"><div class="inner">
-<img src="../images/2012/torta_paso03.jpg" />
-<p>Me acuerdo tarde de pintarme las uñas</p>
-</div></div>
+![Rompiendo huevos](/images/2012/torta_paso03.jpg)
 
-y agregar la leche
+Agregar la leche y mezclarlos.
 
-![](/images/2012/torta_paso04.jpg)
-
-mezclarlos.
+![Recipiente con huevos y leche](/images/2012/torta_paso04.jpg)
 
 **Paso 4.** Agregar el contenido del envase.
 
-![](/images/2012/torta_paso05.jpg)
+![Premezcla](/images/2012/torta_paso05.jpg)
 
-Sacar el batidor que quedo enterrado
+Sacar el batidor que quedó enterrado
 
-![](/images/2012/torta_paso06.jpg)
+![Close up de premezcla](/images/2012/torta_paso06.jpg)
 
 y mezclar los liquidos del paso anterior con el polvito.
 
-![](/images/2012/torta_paso07.jpg)
+![Integrando ingredientes](/images/2012/torta_paso07.jpg)
 
-**Paso 5.** Batir durante X minutos... yo durante 5 porque ~~no tengo
-batidora electrica~~ queria ejercitar la muñeca.
+**Paso 5.** Batir durante X minutos. Yo batí durante 10 porque <del>no tengo
+batidora electrica</del> queria ejercitar la muñeca.
 
-![](/images/2012/torta_paso08.jpg)
+![Mezclando](/images/2012/torta_paso08.jpg)
 
-![](/images/2012/torta_paso09.jpg)
+![Mezclando](/images/2012/torta_paso09.jpg)
 
 **Paso 6**.
 
-![](/images/2012/torta_paso10.jpg)
+![Ingredientes integrados](/images/2012/torta_paso10.jpg)
 
-Pasar la mezcla al molde y ponerlo en el horno. Esperar como 1 hora. Durante esa hora:
-limpiar los elementos. El recipiente y espatula se pueden primero lamer:
+Pasar la mezcla al molde y mandarlo el horno. Esperar como 1 hora. Durante esa hora: limpiar los elementos. El recipiente y espátula se pueden primero lamer:
 
-![](/images/2012/torta_paso11.jpg)
+![Utensillos sucios](/images/2012/torta_paso11.jpg)
 
-<div class="caption"><div class="inner">
-<img src="../images/2012/torta_paso12.jpg" />
+<div class="caption">
+<img src="../images/2012/torta_paso12.jpg" alt="espátula sucia"/>
 <p>Wanna lick it?</p>
-</div></div>
+</div>
 
-**Paso 7**. Despues de la hora, hacer la prueba del palito seco para ver
-si la torta esta lista (segun webs, se hace la prueba del palito DENTRO
-del horno. Asique cuidado). Una vez que ya esta, sacarla del horno para
-que se enfrie. Unos 10 minutos.
+**Paso 7**. Después de la hora, hacer la prueba del palito seco para ver
+si la torta está lista (segun webs, se hace la prueba del palito DENTRO
+del horno. Asique cuidado). Una vez que ya está, sacarla del horno para
+que se enfríe. 
 
-<div class="caption"><div class="inner">
-<img src="../images/2012/torta_paso13.jpg" />
-<p>Yo le clavé un cuchillo al principio. Cual hay?</p>
-</div></div>
+<div class="caption">
+<img src="../images/2012/torta_paso13.jpg" alt="Bizcochuelo salido del horno"/>
+<p>Yo le clavé un cuchillo al principio.</p>
+</div>
 
-<span style="text-decoration:underline;">Tip</span>. Si se vive en una
-ciudad con viento, abrir la ventana y poner la torta al frente de la
-corriente de aire.
+!!! tip
+	Si se vive en una ciudad con viento, abrir la ventana y poner la torta al frente de la corriente de aire.
 
 **Paso 8**. Empezar a desmoldar la torta. Yo tengo ese molde que se le
-saca primero los lados y despues la base. Primero le saque los lados y
+saca primero los lados y después la base. Primero le saque los lados y
 la deje enfriar por otros 10-20 min.
 
-![](/images/2012/torta_paso14.jpg)
+![Bizcochuelo](/images/2012/torta_paso14.jpg)
 
 **Paso 9.** Dar vuelta la torta y sacar la base. Dejar enfriar otros 10
-min. Lavar el molde. Secar el molde poniendolo al lado de la ventana
+min. Lavar y secar el molde poniendolo al lado de la ventana
 (cosa que se seque rapido ;) )
 
 [imaginarse la torta dada vuelta al lado de la ventana]
 
 **Paso 10.** Dar vuelta la torta, rogando que la parte de arriba no
-estuviese caliente y se haya pegado al plato (aunque no importa, despues
-se cubre). Si no se tienen estas rejillas para poner las tortas se puede
-agarrar (como hice yo), una tostadora vieja
+estuviera caliente y se haya pegado al plato (aunque no importa, después
+se cubre). Si no tienen estas rejillas para poner las tortas se puede
+agarrar (como hice yo) una tostadora no-automática-del-futuro ("vieja").
 
-<div class="caption"><div class="inner">
-<img src="../images/2012/torta_tostadora.jpg" />
+<div class="caption">
+<img src="../images/2012/torta_tostadora.jpg" alt="Tostadora"/>
 <p>Cortesía de quien haya sacado la foto</p>
-</div></div>
+</div>
 
-y sobre ella ponerle una parte de la torta, cosa que la parte de abajo
-este levantada y le entre corriente de aire. Cada 10-15 min ir rotando
-la torta. De esta manera, se enfria tanto la parte de arriba y la de
-abajo.
+Cada 10-15 min ir rotando la torta. De esta manera, se enfria tanto la parte de arriba y la de abajo.
 
 **Paso 11**. Preparar los elementos para la segunda torta.
 
@@ -133,16 +128,15 @@ abajo.
 **Paso 13.** Romper huevos y poner leche dentro de un recipiente.
 Mezclarlos.
 
-**Paso 14.** Poner el contenido del envase al recipiente, desenterrar el
+**Paso 14.** Poner el contenido del envase en el recipiente, desenterrar el
 batidor. Unir los elementos hasta que quede de cierta manera para que se
 pueda batir.
 
-**Paso 15**. Batir durante X minutos. Yo bati durante 5 minutos con la
-otra muñeca para ejercitarla tambien.
+**Paso 15**. Batir durante X minutos. Esta vez batí con la otra muñeca cosa de que se ejerciten parejamente.
 
-![](/images/2012/torta_paso23.jpg)
+![Ingredientes integrados](/images/2012/torta_paso23.jpg)
 
-**Paso 16.** Poner la mezcla en el molde y ponerlo en el horno. Para
+**Paso 16.** Poner la mezcla en el molde y mandarlo al horno. Para
 este punto, la torta 1 ya tendria que haber dado toda la vuelta y estar
 mediamente enfriada en la parte de arriba. Darla vuelta para que se
 enfrie el centro de la parte de abajo/base.
@@ -154,70 +148,69 @@ horno, ponerla cerca de la ventana para que se enfrie. Apagar el horno.
 Si la base de la torta 1 esta "bastante" enfriada, darla vuelta para que
 se termine de enfriar la parte de arriba.
 
-**Paso 19**. Despues de unos 10 minutos, sacarle los costados de la
+**Paso 19**. Después de unos 10 minutos, sacarle los costados de la
 torta 2. Seguir esperando a que se enfrie.
 
 **Paso 20.** Darla vuelta y sacarle el molde de la base. Dejar que se
 enfrie. Lavar el molde.
 
 **Paso 21.** Darla vuelta de nuevo rogando que la parte de arriba no
-estuviese caliente para que no se pegue (cosa que me paso con esta
-¬\_¬). Dejar que se enfrie.
+estuviera caliente para que no se pegue. Dejar que se enfrie.
 
-![](/images/2012/torta_paso25.jpg)
+![Dos bizcochuelos](/images/2012/torta_paso25.jpg)
 
 **Paso 22.** Dejar que torta 1 y torta 2 se conozcan y amiguen.
 
-![](/images/2012/torta_paso26.jpg)
+![Close up de bizcochuelos](/images/2012/torta_paso26.jpg)
 
 **Paso 23**. Dejar que se enfrien ambas tortas completamente.
 
-**Paso 24.** Una vez que las tortas esten enfriadas completamente o en
-un 95%, se procede a cortar. Primero se cortan por la mitad. Tengan buen
-ojo y corten bien por la mitad, si no les queda una parte mas fina que
-la otra y queda feo u\_u . Esta torta queda mejor con tortas mas altas,
-no como las que me salieron a mi que tienen como 3-4 cm de alto ¬\_¬.
+### Cortado
+
+**Paso 24.** Una vez que las tortas esten enfriadas completamente, se procede a cortar. Primero se cortan por la mitad. Tengan buen
+ojo y corten bien, si no les queda una parte mas fina que
+la otra y queda mal. Esta torta queda mejor con pedazos mas altos,
+no como las que me salieron a mi que tienen como 2-4cm.
 
 [imaginarse una foto viendo la torta de frente. El cuchillo ya habria
 cortado unos 2 cm de torta.]
 
-**Paso 25.** Ahora a cortar los circulos. Si no se tienen los moldes,
+**Paso 25.** Cortar los circulos. Si no se tienen los moldes,
 buscar platos, <del>tappers</del> envases plásticos, vasos, etc. Con 2
-elementos alcanzan. Tienen que ser unos 3 cm (o a gusto del pastelero)
-mas chicos entre si (contando el de la torta). Se los centra y se los
-corta.
+elementos alcanzan. Tienen que ser unos 3cm (o a gusto del pastelero)
+más chicos entre si (contando el de la torta). Se los centra y corta.
 
-<div class="caption"><div class="inner">
-<img src="../images/2012/torta_paso28.jpg" />
+<div class="caption">
+<img src="../images/2012/torta_paso28.jpg" alt="Bizcochuelos cortados"/>
 <p>La otra parte mitad de la torta de chocolate se fue a dar un paseo</p>
-</div></div>
+</div>
 
-<span style="text-decoration:underline;">Pro tip</span>: apilar todos
-los bizcochuelos. Buscar el mismo cuchillo que se usó para cortar las
-tortas por la mitad. Ir poniendo y cortando con los elementos. Asi, en
-un paso, cortaste todas las tortas quedando mas o menos iguales.
+!!! tip "Pro tip"
+	Apilar todos los bizcochuelos. Buscar el mismo cuchillo que se usó para cortar las tortas por la mitad. Ir poniendo y cortando con los elementos. Asi, en un paso, cortaste todas las tortas quedando mas o menos iguales.
 
+
+### Ganache
+	
 **Paso 26.** Armar el *ganache* de chocolate. Para hacerlo, se necesitan
 la misma cantidad de crema de leche y chocolate (ese para reposteria,
-taza...). Para mi torta use 200gr de chocolate y .... emm ... 220 ml de
-crema aprox. (mande todo la crema y despues calculé a ojo :P ). Se corta
-bien chico (mas o menos) el chocolate (o se ralla) y se lo pone en un
-envase
+taza/submarino). Para mi torta use 200gr de chocolate y unos 200 ml de
+crema aprox. El chocolate se corta bien chico (mas o menos) o se ralla, y se lo pone en un envase
 
 [imaginarse el chocolate cortado en un envase]
 
-Despues se calienta la crema hasta antes de que hierva (o lo mandas al
-microondas por unos 30 segs a maximo). Poner la crema caliente en el
+Después se calienta la crema hasta antes de que hierva (o lo mandas al
+microondas por unos 30 segs a máximo). Poner la crema caliente en el
 envase con el chocolate suavemente (o sea, no a lo bruto). Esperar a que
 se disuelva, mas o menos, el chocolate. Seguidamente, se lo mezcla hasta
-que el chocolate este completamente disuelto y mezclado con la crema.
-Tiene que tener un color a chocolate medio aterciopelado (asi dicen
-u\_u) y brilloso.
+que el chocolate esté completamente disuelto y mezclado con la crema.
+Tiene que tener un color a chocolate medio aterciopelado y brilloso.
 
-![](/images/2012/torta_paso31.jpg)
+![Ganache](/images/2012/torta_paso31.jpg)
 
 Antes de usar el *ganache*, hay que dejar que se enfrie. Ponerlo en la
 heladera es buena opción.
+
+### "Relleno"
 
 **Paso 27**. Armar el relleno para unir/darle sabor entre las capas.
 Puede ser dulce de leche, crema con cosas, *ganache*, etc. Yo hice una
@@ -226,16 +219,16 @@ chocolate pero con dulce de leche. Solo que éste no se solidifica (o lo
 hice mal... o no proporcioné bien), pero se puede poner gelatina sin
 sabor (pero yo no tenia).
 
+### Armado
+
 **Paso 28**. Empezar a armar. Se pone el anillo exterior de X color,
-despues se alterna con el de otro color, terminando con el centro del
+después se alterna con el de otro color, terminando con el centro del
 primer color.
 
-![](/images/2012/torta_paso29.jpg)
+![Anillos de bizcochuelo intercalados](/images/2012/torta_paso29.jpg)
 
 **Paso 29.** Ponerle el relleno. No hay que ponerle mucho, ya que lo que
-importa de esta torta es el tablero de ajedrez y no el relleno. Hay que
-ponerle COMO MUCHO 0.3 cm de relleno. Capa fina. Si querias mucho
-relleno hubieras hecho otra torta u\_u.
+importa de esta torta es el tablero de ajedrez y no el relleno.
 
 **Paso 30.** Repetir el paso 28 pero alternando los colores. Si la
 primer capa fue chocolate-vainilla-chocolate, la segunda seria
@@ -245,88 +238,73 @@ vainilla-chocolate-vainilla.
 
 **Pasos 32,33,34,35..**. Repetir pasos 28 y 29 hasta terminar.
 
-![](/images/2012/torta_paso30.jpg)
+![Pila de bizcochuelos](/images/2012/torta_paso30.jpg)
 
-**Paso 36.** Una vez que el *ganache* este no tan liquido (cosa de que
+**Paso 36.** Una vez que el *ganache* no esté tan líquido (cosa de que
 se pueda usar para cubrir) cubrir la torta con el *ganache*. Empezar con
 la parte de arriba. Opción: poner mucho *ganache* sobre los costados y
-empujarlo con la espatula para que se chorree en los costados :B.
-Cuidado que se hace mucho lio (mas si esta medio liquido, como me paso a
-mi) asique tengan algo para limpiar a mano (o laman la mesada).
+empujarlo con la espatula para que se chorree :B.
+Cuidado que se hace mucho lio asique tengan algo para limpiar a mano (o laman la mesada).
 
 [imaginar la torta con la parte de arriba cubierta y los costados
 chorreados con *ganache*]
 
 **Paso 37.** Con la torta cubierta y con el ganache no solidificado, se
-procede con la decoración. Yo le espolvoree estas cositas de colores que
-nunca me acuerdo como se llaman. Le puse las cerezas y termine
+procede con la decoración. Yo le espolvoreé estas cositas de colores que
+nunca me acuerdo como se llaman. Le puse las cerezas y terminé 
 espolvoreando las cerezas con coco... aunque termine espolvoreando toda
-la parte de arriba con coco.
+la parte de arriba.
 
 **Paso 38**. A la heladera, para que el *ganache* se solidifique mas
-(seguro que con el ganache semi-solidificado esto no pasa u\_u )
+(seguro que con el ganache semi-solidificado esto no pasa)
 
 **Paso 40.** COMER!
 
-## Cómo quedo la torta
+## Resultado
 
+Para recopensar todo este lio de pasos, muestro como quedo mi tortita.
 
-Para recopensar todo este lio de pasos, muestro como quedo mi tortita ^\_^
+![Torta de frente](/images/2012/torta_torta01.jpg)
 
-![](/images/2012/torta_muestra01.jpg)
+![Close up de cerezas](/images/2012/torta_torta02.jpg)
 
-![](/images/2012/torta_muestra02.jpg)
+![Granas en el borde de la torta](/images/2012/torta_torta04.jpg)
 
-![](/images/2012/torta_muestra03.jpg)
+<div class="caption">
+<img src="../images/2012/torta_torta06.jpg" alt="granas"/>
+<p>Habia comprado rosa y verde, pero vinieron celestes</p>
+</div>
 
-![](/images/2012/torta_muestra04.jpg)
+![Close up granas](/images/2012/torta_torta07.jpg)
 
-<div class="caption"><div class="inner">
-<img src="../images/2012/torta_muestra05.jpg" />
-<p>Esas cositas que no se como se llaman</p>
-</div></div>
+![Cerezas y coco](/images/2012/torta_torta09.jpg)
 
-<div class="caption"><div class="inner">
-<img src="../images/2012/torta_muestra06.jpg" />
-<p>Habia comprado rosa y verde, pero vinieron celestes o.O</p>
-</div></div>
+![Linea de cerezas](/images/2012/torta_torta11.jpg)
 
-![](/images/2012/torta_muestra07.jpg)
+![Cereza con coco](/images/2012/torta_torta12.jpg)
 
-![](/images/2012/torta_muestra09.jpg)
+![Corte de torta mostrando el tablero de ajedrez](/images/2012/torta_torta13.jpg)
 
-![](/images/2012/torta_muestra11.jpg)
+![Dentro de la torta](/images/2012/torta_torta15.jpg)
 
-![](/images/2012/torta_muestra12.jpg)
+<div class="caption">
+<img src="../images/2012/torta_torta16.jpg" alt="Espacio sin rellenar"/>
+<p>Esto pasa si no se corta bien... o aplasta bien</p>
+</div>
 
-<div class="caption"><div class="inner">
-<img src="../images/2012/torta_muestra13.jpg" />
-<p>No quedo tan mal por ser la primera vez</p>
-</div></div>
+![Capa de ganache](/images/2012/torta_torta17.jpg)
 
-![](/images/2012/torta_muestra15.jpg)
-
-<div class="caption"><div class="inner">
-<img src="../images/2012/torta_muestra16.jpg" />
-<p>Esto pasa si no se corta bien... o aplasta bien (?)</p>
-</div></div>
-
-<div class="caption"><div class="inner">
-<img src="../images/2012/torta_muestra17.jpg" />
-<p>La capa de ganache que le terminé poniendo</p>
-</div></div>
-
-<div class="caption"><div class="inner">
-<img src="../images/2012/torta_muestra18.jpg" />
+<div class="caption">
+<img src="../images/2012/torta_torta18.jpg" alt="Granas en la bandeja"/>
 <p>Hice lio :D</p>
-</div></div>
+</div>
 
 
 Espero que les haya gustado :)
 
 ["Cómo y por qué"]: http://en.wikipedia.org/wiki/How_2
 
-###Comments
+<h3>Comments</h3>
 
 <div id="comments">
 
@@ -350,7 +328,7 @@ Son adictivos esos programas en TLC :mrgreen:.</p>
 <li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-253">
 <div id="comment-253">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://eikiu.wordpress.com' rel='external nofollow' class='url'>Ei-Kiu</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">February 4, 2012 at 4:10 pm   </div><!-- .comment-meta .commentmetadata -->
 
@@ -394,7 +372,7 @@ Son adictivos esos programas en TLC :mrgreen:.</p>
 <li class="comment byuser comment-author-eikiu bypostauthor even thread-even depth-1" id="li-comment-256">
 <div id="comment-256">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://eikiu.wordpress.com' rel='external nofollow' class='url'>Ei-Kiu</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">February 5, 2012 at 11:42 am    </div><!-- .comment-meta .commentmetadata -->
 
@@ -409,7 +387,7 @@ Son adictivos esos programas en TLC :mrgreen:.</p>
 <li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-257">
 <div id="comment-257">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://eikiu.wordpress.com' rel='external nofollow' class='url'>Ei-Kiu</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">February 5, 2012 at 11:43 am    </div><!-- .comment-meta .commentmetadata -->
 
@@ -449,9 +427,7 @@ Felicitaciones!!! ^.^</p>
 </div><!-- #comment-##  -->
 
 </li>
-<li class="post pingback">
-<p>Pingback: <a href='http://eikiu.wordpress.com/2012/12/17/goodbye-dropbox/' rel='external nofollow' class='url'>Goodbye, Dropbox? | Intento de blog</a></p>
-</li>
+
 </ol>
 
 
