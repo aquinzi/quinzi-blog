@@ -1,6 +1,6 @@
 .. title: Dynamic to Static (Wordpress a Pelican)
 .. date: 2013-01-22
-.. category: entry
+.. category: guide
 .. tags: wordpress, pelican, static, python, dropbox
 .. lang: es
 .. slug: wordpress-to-pelican
