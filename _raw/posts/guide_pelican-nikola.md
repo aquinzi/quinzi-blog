@@ -53,7 +53,7 @@ Then I remembered I once stumbled upon [Nikola][], originally created by an Arge
 
 [Nikola]: http://getnikola.com/
 
-It does have [Pandoc][] support; but it's not as "feature rich" (or easy customizable) as [Pelican][], and the documentation it's not so "complete" if you will. There are a couple of things that are not documented and you must find it in the Google Groups, GitHub or looking in the code. And also, not so feature-cool like [Acrylamid][]. However, I think it's on a good track because it's the newest of the three.
+It does have [Pandoc][] support; but it's not as "feature rich" (or easy customizable) as [Pelican][], and the documentation it's not so "complete" if you will. There are a couple of things that are not documented and you must find it in the Google Groups, GitHub or looking in the code. And also, not so feature-cool like [Acrylamid][]. However, I think it's on a good track and it's the newest of the three.
 
 It has cool things too:
 
@@ -102,7 +102,7 @@ An example would be:
 	Title: nice title! :D      # Pelican
 	.. title: nice title! :D   # Nikola
 
-You can do that by hand or [download my python script](https://gist.github.com/eikiu/8377090) to take care of that. It also moves "draft" status to Nikola's tag, and Pelican's summary to Nikola's description (True by default). 
+You can do that by hand or [download my python script](https://gist.github.com/eikiu/8377090) to take care of that. It also moves "draft" status to Nikola's tag, and Pelican's summary to Nikola's description (activated by default). 
 
 !!! note
 	Nikola doesn't have/see the "modified" meta key internally, but you can have it like a custom key. You just access it differently in the themes.
@@ -112,9 +112,9 @@ You can do that by hand or [download my python script](https://gist.github.com/e
 
 If you have posts or pages translations you must pay attention: Nikola handles the translations differently from Pelican. While in Pelican you only set the same slug or title in the posts, and have different file names (I think); Nikola relies on the file names.
 
-The easiness of this depends on your setup, but you must end up with something like: ``nicefile.md`` for the post in default language, and ``nicefile.md.es`` (for spanish content) for the translated file.
+The easiness of this depends on your setup, but you must end up with something like: ``nicefile.md`` for the post in default language, and ``nicefile.md.es`` (spanish content) for the translated file.
 
-The cool thing of this is that you don't have to duplicate the meta tags. For example, you just create the "tags" meta key in the default language but don't specify it in the translated one. So when you update, you do only in the "master" file and the "child" just copies it. 
+The cool thing of this is that you don't have to duplicate the meta tags. For example, you just create the "tags" meta key in the default language but don't specify it in the translated one. So when you update, you do only in the "master" or "parent" file and the "child" just copies it. 
 
 If you don't feel like having duplicated metadata between files, and after you renamed and converted them, you can run [this python script](https://gist.github.com/eikiu/8377186) to delete them. Remember this is optional (or at least it didn't break my setup).
 
