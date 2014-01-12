@@ -5,7 +5,7 @@
 .. slug: pandy
 .. lang: en
 
-[pandy](https://quinzi.com.ar/projects/pandy) is a command line wrapper for [pandoc](http://johnmacfarlane.net/pandoc/) + cool stuff (if you use markdown -> html)
+[pandy](http://quinzi.com.ar/projects/pandy) is a command line wrapper for [pandoc](http://johnmacfarlane.net/pandoc/) + cool stuff (if you use markdown -> html)
 
 Basically takes a file/folder, input the markup to convert from, the output markup and runs it through pandoc.
 

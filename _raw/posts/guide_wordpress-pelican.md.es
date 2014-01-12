@@ -5,10 +5,10 @@
 .. lang: es
 .. slug: wordpress-to-pelican
 
+
 [TOC]
 
-Por qué
----------
+Por qué: 
 
 1. Because I can
 2. Cada vez **me llevo peor con Wordpress**
@@ -70,15 +70,17 @@ Por ahora, [Pelican][] corre bajo **Python 2.7**, hay un fork para que ande en P
 Configuración
 --------------
 
-1. Se crea un ``config.py`` para las configuración siguiendo [las variables en los docs](http://pelican.readthedocs.org/en/latest/settings.html) (o usas como base las que ya te vienen en el archivo)
-2. Si usas Markdown, vas a querer usar los [markdown extra](http://packages.python.org/Markdown/extensions)
+Se crea un ``config.py`` para las configuración siguiendo [las variables en los docs](http://pelican.readthedocs.org/en/latest/settings.html) (o usas como base las que ya te vienen en el archivo)
+
+Si usas Markdown, vas a querer usar los [markdown extra](http://packages.python.org/Markdown/extensions)
 
 
 Andando
----------
+----------
 
-1. Crear un post con el [metadata correspondiente](http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican). El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.
-2. Ir a la carpeta root de tu Pelican, abrir una linea de comandos y poner: ``[Python_path]\Scripts\pelican.exe input/ -s config.py``
+Crear un post con el [metadata correspondiente](http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican). El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.
+
+Ir a la carpeta root de tu Pelican, abrir una linea de comandos y poner: ``[Python_path]\Scripts\pelican.exe input/ -s config.py``
 
 **Nota**: para probar, podes obviar la parte de configuración.
 
