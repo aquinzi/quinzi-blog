@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (dropbox)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/dropbox.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 14:50:35 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Dynamic to Static (Wordpress a Pelican)</title><link>http://blog.quinzi.com.ar/wordpress-to-pelican/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (dropbox)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/dropbox.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 20:07:19 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Dynamic to Static (Wordpress a Pelican)</title><link>http://blog.quinzi.com.ar/wordpress-to-pelican/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#por-que"&gt;Por qué&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#presentacion"&gt;Presentación&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#instalacion-en-windows"&gt;Instalación en Windows&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#configuracion"&gt;Configuración&lt;/a&gt;&lt;/li&gt;
@@ -18,7 +17,7 @@
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#conclusion"&gt;Conclusión&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;h2 id="por-que"&gt;Por qué
+&lt;p&gt;Por qué: &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Because I can&lt;/li&gt;
 &lt;li&gt;Cada vez &lt;strong&gt;me llevo peor con Wordpress&lt;/strong&gt;&lt;/li&gt;
@@ -32,7 +31,7 @@
 &lt;li&gt;ya llegué&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="presentacion"&gt;Presentación
-&lt;/h2&gt;&lt;/h2&gt;&lt;p&gt;Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.&lt;/p&gt;
 &lt;p&gt;Todo iba bien, hasta que los de Wordpress decidieron &lt;strong&gt;abrirse mas como CMS&lt;/strong&gt; que como sistema de blogging. Lo entiendo, es natural. Bien. No me gusta. No se si porque yo asocio Wordpress con blog y no un CMS completo a lo Joomla! o Drupal, o porque si las cosas en el backend estan mal organizadas para ser CMS/orientadas a blog, o si es mi conexión que no me deja disfrutar al máximo o qué. &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Por temas de conexión y que el editor de Wordpress apesta&lt;/strong&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, añadido a tener una wiki en localhost y encariñarme con los &lt;a href="http://en.wikipedia.org/wiki/Lightweight_markup_languages"&gt;LML&lt;/a&gt;, &lt;strong&gt;escribía los posts en markdown&lt;/strong&gt; (que antes no me caía bien, hasta que empecé a usar &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt;), los pasaba a HTML, hacia search &amp;amp; replace para las imágenes (aunque se puede obviar si se suben primero las imágenes), y &lt;strong&gt;recien ahí lo pasaba a Wordpress&lt;/strong&gt;. No es lo mas cómodo del mundo, pero servía.&lt;/p&gt;
 &lt;p&gt;Por alguna razón que ahora no recuerdo, empecé a buscar (o encontré de casualidad) scripts que pasan &lt;code&gt;.txts&lt;/code&gt; con LML a html. Eso me hizo pensar: "hey, capaz me puede servir". Después de descartar un par que no me servían (estan apuntados a los usuarios de Linux y para usarlos en Windows era mucho lio), me decanté por &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
@@ -61,16 +60,12 @@
 &lt;li&gt;Y el &lt;a href="http://pygments.org/"&gt;pygments&lt;/a&gt; para el syntax highlighting&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="configuracion"&gt;Configuración
-&lt;ol&gt;
-&lt;li&gt;Se crea un &lt;code&gt;config.py&lt;/code&gt; para las configuración siguiendo &lt;a href="http://pelican.readthedocs.org/en/latest/settings.html"&gt;las variables en los docs&lt;/a&gt; (o usas como base las que ya te vienen en el archivo)&lt;/li&gt;
-&lt;li&gt;Si usas Markdown, vas a querer usar los &lt;a href="http://packages.python.org/Markdown/extensions"&gt;markdown extra&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/h2&gt;&lt;p&gt;Se crea un &lt;code&gt;config.py&lt;/code&gt; para las configuración siguiendo &lt;a href="http://pelican.readthedocs.org/en/latest/settings.html"&gt;las variables en los docs&lt;/a&gt; (o usas como base las que ya te vienen en el archivo)&lt;/p&gt;
+&lt;p&gt;Si usas Markdown, vas a querer usar los &lt;a href="http://packages.python.org/Markdown/extensions"&gt;markdown extra&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="andando"&gt;Andando
-&lt;ol&gt;
-&lt;li&gt;Crear un post con el &lt;a href="http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican"&gt;metadata correspondiente&lt;/a&gt;. El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.&lt;/li&gt;
-&lt;li&gt;Ir a la carpeta root de tu Pelican, abrir una linea de comandos y poner: &lt;code&gt;[Python_path]\Scripts\pelican.exe input/ -s config.py&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/h2&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: para probar, podes obviar la parte de configuración.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;Crear un post con el &lt;a href="http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican"&gt;metadata correspondiente&lt;/a&gt;. El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.&lt;/p&gt;
+&lt;p&gt;Ir a la carpeta root de tu Pelican, abrir una linea de comandos y poner: &lt;code&gt;[Python_path]\Scripts\pelican.exe input/ -s config.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: para probar, podes obviar la parte de configuración.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Nota 2&lt;/strong&gt;: si se corre en la carpeta del contenido, para el path se puede usar &lt;code&gt;.&lt;/code&gt; (punto)&lt;/p&gt;
 &lt;p&gt;Yo lo puse en un script/bat cosa de no escribir eso todo el tiempo.&lt;/p&gt;
 &lt;h2 id="themes"&gt;Themes

@@ -1,5 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (windows)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/windows.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 14:50:32 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Windows 7: Arreglar los iconos en Explorer</title><link>http://blog.quinzi.com.ar/windows7-shell-icons/</link><description>&lt;p&gt;Con esta era de usar programitas varios para sincronizar, otros para control de código, y otros que no puedo recordar ahora; es necesario tener los overlay icons en Windows Explorer:&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (windows)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/windows.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 12 Jan 2014 15:09:41 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pelican to Nikola (and tutorial)</title><link>http://blog.quinzi.com.ar/pelican-nikola/</link><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#acrylamid"&gt;Acrylamid&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#nikola"&gt;Nikola&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#the-moving"&gt;The moving&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#install-nikola"&gt;Install Nikola&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#initiate"&gt;Initiate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#convert-metadata"&gt;Convert metadata&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#translations"&gt;Translations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#images-paths"&gt;Images paths&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#links-between-posts"&gt;Links between posts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#plugins-syntax"&gt;Plugins syntax&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#other-nikola-stuff"&gt;Other Nikola stuff&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#locale-in-windows"&gt;Locale in Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#linking-internally"&gt;Linking internally&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#pandoc"&gt;Pandoc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#posts-folder-and-subfolders"&gt;Posts folder and subfolders&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#testing"&gt;Testing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;When I was thinking of moving my blog to this new domain, I thought of using &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; as the converter&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/pelican-nikola/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;. I even created &lt;a href="http://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; for that. But then I run into the "problems" (ok, I was kind of lazy) of generating RSS, listing posts with certain tags or categories (which I ended up not using), the index and archive, idealizing of using plugins, etc. and gave up. &lt;/p&gt;
+&lt;p&gt;In the beginning, I would &lt;a href="link://slug/wordpress-to-pelican"&gt;continue using Pelican&lt;/a&gt; as is &lt;a href="http://docs.getpelican.com/"&gt;it's easy and customizable&lt;/a&gt;, even though it doesn't have Pandoc&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/pelican-nikola/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; support. But later I would be lazy to move to another system (not that I blog much, but &lt;strong&gt;I like Pandoc's markdown&lt;/strong&gt;).&lt;/p&gt;
+&lt;h2 id="acrylamid"&gt;Acrylamid
+&lt;/h2&gt;&lt;p&gt;In my searching, I found &lt;a href="http://posativ.org/acrylamid/index.html"&gt;Acrylamid&lt;/a&gt; which looks pretty good. It's like the programmer/hacker blog generator, where you can do many things, including using template syntax &lt;em&gt;inside&lt;/em&gt; your post. How cool is that?. It also has incremental builds, which means that it won't regenerate the whole site/blog again after a little edit, but only what it was changed. &lt;/p&gt;
+&lt;p&gt;Other cool things include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;different meta tags: you can choose between MultiMarkdown (like Pelican), YAML or rst.&lt;/li&gt;
+&lt;li&gt;the draft status is a boolean. Yay!.&lt;/li&gt;
+&lt;li&gt;you can &lt;a href="http://posativ.org/acrylamid/advanced.html#jinja2-or-mako-in-entry"&gt;include template syntax inside your posts&lt;/a&gt; and you can even use the configuration variables!&lt;/li&gt;
+&lt;li&gt;automatic summary/intro&lt;/li&gt;
+&lt;li&gt;user custom acronyms and abbreviations in a text file.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://posativ.org/acrylamid/views.html"&gt;the views things&lt;/a&gt; that looks cool that I couldn't understand first but then I got the hang of it (they are very customizable)&lt;/li&gt;
+&lt;li&gt;colored command line output. THANK YOU!&lt;/li&gt;
+&lt;li&gt;out of the box pingbacking to other blogs and twitter posting.&lt;/li&gt;
+&lt;li&gt;info about the blog: how many published, drafts, tag usage count. Also when was last compiled, cache size...&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://posativ.org/acrylamid/advanced.html#using-the-system-s-shell"&gt;execute shell commands in the post&lt;/a&gt;: like listing a directory, include another file, etc.&lt;/li&gt;
+&lt;li&gt;serve the site with a command&lt;/li&gt;
+&lt;li&gt;post-processing filters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It doesn't have categories (but by using views &lt;a href="https://github.com/posativ/acrylamid/issues/121"&gt;seems like it's posible&lt;/a&gt;), automatic galleries creation (but you can use template syntax inside the post, &lt;a href="http://posativ.org/acrylamid/howtos.html#image-gallery"&gt;so is covered&lt;/a&gt;) and the &lt;a href="http://posativ.org/acrylamid/theming.html"&gt;theme creation&lt;/a&gt; it's not so automatic: you must list all the files that the theme uses inside an &lt;code&gt;__init.py&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;I really wanted to use Acrylamid, even without the missing bits, but it was kind of "complicated" to set up on Windows if you wanted to use &lt;a href="https://github.com/ahupp/python-magic"&gt;python-magic&lt;/a&gt; (at least I have problems with it). I skipped that part but for some kind of reason I was getting errors with the locale setting. I tested it with "Linux locale" and "Windows locale" and both threw me errors.&lt;/p&gt;
+&lt;h2 id="nikola"&gt;Nikola
+&lt;/h2&gt;&lt;p&gt;Then I remembered I once stumbled upon &lt;a href="http://getnikola.com/"&gt;Nikola&lt;/a&gt;, originally created by an Argentinian guy, so yeah, I had to try it out :P.&lt;/p&gt;
+&lt;p&gt;It does have &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; support; but it's not as "feature rich" (or easy customizable) as &lt;a href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt;, and the documentation it's not so "complete" if you will. There are a couple of things that are not documented and you must find it in the Google Groups, GitHub or looking in the code. And also, not so feature-cool like &lt;a href="http://posativ.org/acrylamid/index.html"&gt;Acrylamid&lt;/a&gt;. However, I think it's on a good track and it's the newest of the three.&lt;/p&gt;
+&lt;p&gt;It has cool things too:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;incremental builds (like Acryamid)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://getnikola.com/handbook.html#image-galleries"&gt;automatic gallery creation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;categories (like Pelican)&lt;/li&gt;
+&lt;li&gt;easy themable (like Pelican)&lt;/li&gt;
+&lt;li&gt;serve the site with a command and it has "Live" re-rendering &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://getnikola.com/handbook.html#retired-posts"&gt;retired posts&lt;/a&gt; (so no 404 errors)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://getnikola.com/handbook.html#redirections"&gt;redirections&lt;/a&gt; (in case you can't use &lt;code&gt;.htaccess&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://getnikola.com/handbook.html#deployment"&gt;deploy commands&lt;/a&gt; (a bunch of commands to run, so you don't have to script it)&lt;/li&gt;
+&lt;li&gt;post-processing filters&lt;/li&gt;
+&lt;li&gt;internationalization support (the site/blog interface can be in many languages)&lt;/li&gt;
+&lt;li&gt;password protected posts/pages&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://getnikola.com/handbook.html#queuing-posts"&gt;"Schedule"&lt;/a&gt; posts/pages &lt;/li&gt;
+&lt;li&gt;Wide range of (3rd party) comment systems and &lt;a href="http://annotateit.org"&gt;AnnotateIt&lt;/a&gt; support.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://getnikola.com/handbook.html#restructuredtext-extensions"&gt;reStructuredText Extensions&lt;/a&gt; (if you use that).&lt;/li&gt;
+&lt;li&gt;Support for Twitter cards&lt;/li&gt;
+&lt;li&gt;raw post/page support (to show the source in text)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The draft state is applied in the "tag" metadata instead of a separate one, and they are deployed by default; it has no color support for the command line (but I think it's in the talks) and the "show source of the post and copy it" it's enabled by default.&lt;/p&gt;
+&lt;h2 id="the-moving"&gt;The moving
+&lt;h3 id="install-nikola"&gt;Install Nikola
+&lt;/h3&gt;&lt;/h2&gt;&lt;p&gt;You start first by &lt;a href="http://getnikola.com/"&gt;getting Nikola&lt;/a&gt; and installing it. By default, it uses &lt;a href="http://makotemplates.org"&gt;Mako&lt;/a&gt; as the template engine, but it has support for &lt;a href="http://jinja.pocoo.org/"&gt;Jinja2&lt;/a&gt;. You can read about the &lt;a href="http://getnikola.com/handbook.html#installing-nikola"&gt;dependencies in the documentation page&lt;/a&gt; and if you want, you can use &lt;code&gt;pip install -r requirements.txt&lt;/code&gt; or &lt;code&gt;requirements-full.txt&lt;/code&gt; for the whole thing.&lt;/p&gt;
+&lt;p&gt;If you are running Windows, you must download and install the compiled versions of lxml and pillow. You can check in their &lt;a href="https://pypi.python.org/"&gt;PyPI pages&lt;/a&gt; or you can go to &lt;a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/"&gt;http://www.lfd.uci.edu/~gohlke/pythonlibs/&lt;/a&gt; and get them there. Remember to download and install according to your Python version and architecture (32 or 64 bits).&lt;/p&gt;
+&lt;h3 id="initiate"&gt;Initiate
+&lt;/h3&gt;&lt;p&gt;To initiate or create an empty site with the default settings and folder structures, run either &lt;code&gt;nikola init path/to/mysite&lt;/code&gt; or, if you want some demo content, &lt;code&gt;nikola init --demo path/to/mysite&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="convert-metadata"&gt;Convert metadata
+&lt;/h3&gt;&lt;p&gt;Pelican uses the &lt;a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide"&gt;Multimarkdown&lt;/a&gt; style of metadata while Nikola uses something similar: the same syntax but with &lt;code&gt;..&lt;/code&gt; in front.&lt;/p&gt;
+&lt;p&gt;An example would be:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;Title: nice title! :D      # Pelican
+.. title: nice title! :D   # Nikola
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can do that by hand or &lt;a href="https://gist.github.com/eikiu/8377090"&gt;download my python script&lt;/a&gt; to take care of that. It also moves "draft" status to Nikola's tag, and Pelican's summary to Nikola's description (activated by default). &lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;Nikola doesn't have/see the "modified" meta key internally, but you can have it like a custom key. You just access it differently in the themes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="translations"&gt;Translations
+&lt;/h3&gt;&lt;p&gt;If you have posts or pages translations you must pay attention: Nikola handles the translations differently from Pelican. While in Pelican you only set the same slug or title in the posts, and have different file names (I think); Nikola relies on the file names.&lt;/p&gt;
+&lt;p&gt;The easiness of this depends on your setup, but you must end up with something like: &lt;code&gt;nicefile.md&lt;/code&gt; for the post in default language, and &lt;code&gt;nicefile.md.es&lt;/code&gt; (spanish content) for the translated file.&lt;/p&gt;
+&lt;p&gt;The cool thing of this is that you don't have to duplicate the meta tags. For example, you just create the "tags" meta key in the default language but don't specify it in the translated one. So when you update, you do only in the "master" or "parent" file and the "child" just copies it. &lt;/p&gt;
+&lt;p&gt;If you don't feel like having duplicated metadata between files, and after you renamed and converted them, you can run &lt;a href="https://gist.github.com/eikiu/8377186"&gt;this python script&lt;/a&gt; to delete them. Remember this is optional (or at least it didn't break my setup).&lt;/p&gt;
+&lt;h3 id="images-paths"&gt;Images paths
+&lt;/h3&gt;&lt;p&gt;The syntax on this is also different but it can be easily done with search and replace. You can use whatever you want, like grep. If you are on Windows, I recommend &lt;a href="http://stefanstools.sourceforge.net/grepWin.html"&gt;grepWin&lt;/a&gt; if you want something with a GUI. This changes from setup to setup, but my settings were:&lt;/p&gt;
+&lt;p&gt;For markdown syntax:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Search &lt;code&gt;(|filename|../../images/&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;Replace &lt;code&gt;(/images/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And for HTML:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Search &lt;code&gt;&amp;lt;img src="../../static/images/&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;Replace &lt;code&gt;&amp;lt;img src="../images/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="links-between-posts"&gt;Links between posts
+&lt;/h3&gt;&lt;p&gt;Again, this is totally different between the systems and it's going to be very easy or really difficult depending on your setup: Pelican uses the filenames for linking content while Nikola uses the slug of the post.&lt;/p&gt;
+&lt;p&gt;If you have the filename like the slug (or very similar) you can search and replace again. Like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Search: &lt;code&gt;\(\|filename\|(.+)\.md\)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Replace: &lt;code&gt;(link://slug/$1)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I recommend doing it after the images, and you must check the links afterwards.&lt;/p&gt;
+&lt;h3 id="plugins-syntax"&gt;Plugins syntax
+&lt;/h3&gt;&lt;p&gt;I didn't use many plugins that used syntax in my posts, just only one: &lt;a href="http://quinzi.com.ar/projects/interlinks"&gt;interlinks&lt;/a&gt;. This was easilly done with search and replace.&lt;/p&gt;
+&lt;h2 id="other-nikola-stuff"&gt;Other Nikola stuff
+&lt;h3 id="locale-in-windows"&gt;Locale in Windows
+&lt;/h3&gt;&lt;/h2&gt;&lt;p&gt;If you are going to use the internationalization in Windows, you must configurate your &lt;code&gt;LOCALES&lt;/code&gt; as (example):&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;LOCALES = {'en' : 'English_United States', 'es' : 'Spanish_Argentina'}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It doesn't matter your Windows language setting, I think it only accepts english locales (I tested it with Windows in Spanish and it worked).&lt;/p&gt;
+&lt;h3 id="linking-internally"&gt;Linking internally
+&lt;/h3&gt;&lt;p&gt;If you want to link to another post, tag, archive, etc.:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gallery: &lt;code&gt;link://gallery/gallery_name&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;tags index: &lt;code&gt;link://tag_index&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;tag's page: &lt;code&gt;link://tag/tagname&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;tag's RSS feed: &lt;code&gt;link://tag_rss/tagname&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;blog's index page: &lt;code&gt;link://index&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;index [NUMBER] page: &lt;code&gt;link://index/NUMBER&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;per-year archive: &lt;code&gt;link://archive/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;posts of [YEAR] &lt;code&gt;link://archive/YEAR&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;blog's feed: &lt;code&gt;link://rss&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;other post: &lt;code&gt;link://slug/the-nice-slug&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="pandoc"&gt;Pandoc
+&lt;/h3&gt;&lt;p&gt;As Pandoc uses the extension to recognize the input, you must configurate that extension in the &lt;code&gt;COMPILERS&lt;/code&gt; option in the configuration file. If it's not found, it uses Markdown as default.&lt;/p&gt;
+&lt;p&gt;While it worked for me using markdown, it didn't exactly work with some others, like Mediawiki. I don't know why.&lt;/p&gt;
+&lt;h3 id="posts-folder-and-subfolders"&gt;Posts folder and subfolders
+&lt;/h3&gt;&lt;p&gt;&lt;a href="http://getnikola.com/"&gt;Nikola&lt;/a&gt; preserves the folder structure of the posts in the subfolders. If you have &lt;code&gt;file_g.txt&lt;/code&gt; inside &lt;code&gt;folder_abc&lt;/code&gt;, that structure is kept in the output. It can be good if you want to use it as categories in the output. There is no way to configurate it in the configuration.&lt;/p&gt;
+&lt;p&gt;In &lt;a href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt; you can have many subfolders and sort of categorize your posts as you wish, and the output is configurated (by default, by date) as you want.&lt;/p&gt;
+&lt;h2 id="testing"&gt;Testing
+&lt;/h2&gt;&lt;p&gt;Initially your posts go to a &lt;code&gt;posts&lt;/code&gt; folder in your root and the pages in &lt;code&gt;story&lt;/code&gt;. The images folder would go to &lt;code&gt;files&lt;/code&gt;. You can configurate all of this in the configuration file.&lt;/p&gt;
+&lt;p&gt;After configurating your &lt;code&gt;conf.py&lt;/code&gt;, which is very well commented, you can try it. &lt;/p&gt;
+&lt;p&gt;Build the site with &lt;code&gt;nikola build&lt;/code&gt;. Then you can drag and drop pages to a browser or use the serve command: &lt;code&gt;nikola serve&lt;/code&gt; and pointing your browser to &lt;code&gt;http://127.0.0.1:8000&lt;/code&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;Because I hate opening an HTML block tag and the markdown inside is not parsed. I know, it's said in the &lt;a href="http://daringfireball.net/projects/markdown/"&gt;markdown&lt;/a&gt; reference, but hey: &lt;strong&gt;it's 2014&lt;/strong&gt; and I need that. But I still love the admonition implementation in &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python-Markdown&lt;/a&gt; &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/pelican-nikola/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;Which &lt;a href="http://docs.getpelican.com/en/3.3.0/internals.html#how-to-implement-a-new-reader"&gt;now I see&lt;/a&gt; it looks pretty easy to implement. Oh well. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/pelican-nikola/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><category>pelican</category><category>nikola</category><category>static</category><category>python</category><category>windows</category><guid>http://blog.quinzi.com.ar/pelican-nikola/</guid><pubDate>Sat, 11 Jan 2014 00:00:00 GMT</pubDate></item><item><title>Windows 7: Arreglar los iconos en Explorer</title><link>http://blog.quinzi.com.ar/windows7-shell-icons/</link><description>&lt;p&gt;Con esta era de usar programitas varios para sincronizar, otros para control de código, y otros que no puedo recordar ahora; es necesario tener los overlay icons en Windows Explorer:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Ejemplo de iconos de estado" src="http://blog.quinzi.com.ar/images/2013/win7_shell_icons.png"&gt;&lt;/p&gt;
 &lt;p&gt;Personalmente se me desaparecían y, aunque limpiara la cache de los programas, nunca aparecían. Hay algunos que podes vivir sin ellos, pero otros no. Capaz instalaste un &lt;a href="https://copy.com?r=hQHBH9"&gt;programa&lt;/a&gt; y te desplazó los de &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;otro&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;¿Pero cuál es el problema? Que los genios de Microsoft limitan la cantidad de iconos que se pueden usar a unos meros &lt;strong&gt;11 iconos totales para el usuario&lt;/strong&gt;. WHAT THE HELL.&lt;/p&gt;
@@ -70,6 +226,7 @@ dependiendo el gusto de cada uno).&lt;/p&gt;
 &lt;div class="comment-body"&gt;&lt;p&gt;Yo también usaba Launchy hasta que lo saqué (también tengo poca RAM ¬¬)… y empecé a usar Ejecutar :D &lt;/p&gt;
 &lt;p&gt;PD: si, que tierna, no? jaja :P &lt;/p&gt;
 &lt;/div&gt;
+
 
 &lt;/div&gt;
 

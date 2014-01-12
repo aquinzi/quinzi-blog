@@ -1,0 +1,343 @@
+<!DOCTYPE html><html><head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="A.Q.">
+    <title>De Pelican a Nikola (tutorial) | A-Qute blog</title>
+    
+    <!-- firefox is special -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+    
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="../.././es/rss.xml">
+    
+        
+    <link rel="icon" href="../../favicon.ico" sizes="16x16">
+    <link rel="icon" href="../../favicon.png" sizes="16x16">
+    
+
+    
+
+    
+
+
+
+    
+</head>
+<body id="top">
+	<div id="side-left" class="side">
+		<h1 id="blog-title"><a href="../../" title="A-Qute blog" rel="home">A-Qute blog</a></h1>
+		
+		<nav>
+			<ul>
+    
+        <li data-item="archives"><a href="../index.html">Index</a></li>
+        <li data-item="feed"><a href="../rss.xml">RSS</a></li>
+</ul>
+		</nav>
+		
+    <h4>Idiomas</h4>
+    <ul class="languages">
+        
+        <li><a href="../.././es/pelican-nikola/">  Español
+        </a></li>
+    
+                    <li><a href="../../pelican-nikola/">  English
+                    </a> </li>
+                
+            
+        
+        
+    
+
+    </ul>
+
+	</div>
+	
+	<div id="side-right">
+		<div id="content">
+    <article class="postbox">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+    <header>
+        
+    <h1 class="p-name" itemprop="headline name">De Pelican a Nikola (tutorial)</h1>
+    
+
+        <div class="post-meta">
+            <dl>
+                    <dt class="date">Publicado
+                    </dt><dd>  
+    <time class="published dt-published" itemprop="datePublished" datetime="2014-01-11T00:00:00">2014-01-11</time>
+</dd>
+                     
+            </dl>
+        </div>
+    </header>
+    
+    <div class="e-content" itemprop="articleBody text">
+        <div class="toc">
+<ul>
+<li><a href="../.././es/pelican-nikola/#acrylamid">Acrylamid</a></li>
+<li><a href="../.././es/pelican-nikola/#nikola">Nikola</a></li>
+<li><a href="../.././es/pelican-nikola/#la-mudanza">La mudanza</a><ul>
+<li><a href="../.././es/pelican-nikola/#instalar-nikola">Instalar Nikola</a></li>
+<li><a href="../.././es/pelican-nikola/#iniciar">Iniciar</a></li>
+<li><a href="../.././es/pelican-nikola/#convertir-metadata">Convertir metadata</a></li>
+<li><a href="../.././es/pelican-nikola/#traducciones">Traducciones</a></li>
+<li><a href="../.././es/pelican-nikola/#rutas-de-imagenes">Rutas de imágenes</a></li>
+<li><a href="../.././es/pelican-nikola/#links-entre-posts">Links entre posts</a></li>
+<li><a href="../.././es/pelican-nikola/#sintaxis-de-plugins">Sintaxis de Plugins</a></li>
+</ul>
+</li>
+<li><a href="../.././es/pelican-nikola/#otras-cosas-de-nikola">Otras cosas de Nikola</a><ul>
+<li><a href="../.././es/pelican-nikola/#localizacion-en-windows">Localización en Windows</a></li>
+<li><a href="../.././es/pelican-nikola/#linkear-internamente">Linkear internamente</a></li>
+<li><a href="../.././es/pelican-nikola/#pandoc">Pandoc</a></li>
+<li><a href="../.././es/pelican-nikola/#carpetas-y-subcarpetas-de-posts">Carpetas y subcarpetas de posts</a></li>
+</ul>
+</li>
+<li><a href="../.././es/pelican-nikola/#testeando">Testeando</a></li>
+</ul>
+</div>
+<p>Cuando pensaba en mover mi blog a este nuevo dominio, pensé en usar <a href="http://www.johnmacfarlane.net/pandoc/">Pandoc</a> como conversor<sup id="fnref:1"><a class="footnote-ref" href="../.././es/pelican-nikola/#fn:1" rel="footnote">1</a></sup>; incluso creé <a href="http://quinzi.com.ar/projects/pandy">pandy</a> para eso. Pero después tuve los "problemas" (ok, estaba vaga) de RSS, categorias, tags, index, etc. y lo dejé.</p>
+<p>En un principio pensé en <a href="../.././es/wordpress-to-pelican">seguir usando Pelican</a> ya que es <a href="http://docs.getpelican.com/">fácil y personalizable</a> aunque no tuviera soporte para Pandoc<sup id="fnref:2"><a class="footnote-ref" href="../.././es/pelican-nikola/#fn:2" rel="footnote">2</a></sup>. Pero mas tarde me daría vagancia pasarme a otro sistema (no que postee mucho, pero <strong>me encanta el markdown de Pandoc</strong>).</p>
+<h2 id="acrylamid">Acrylamid
+</h2><p>En mis búsquedas encontré <a href="http://posativ.org/acrylamid/index.html">Acrylamid</a> que se ve bastante bien. Es como el <em>blog generator</em> de programadores/hackers, donde podés hacer varias cosas. También tiene <em>incremental builds</em> así no regenera todo desde cero.</p>
+<p>Otras cosas incluyen:</p>
+<ul>
+<li>diferentes meta tags: MultiMarkdown (como Pelican), YAML o rst.</li>
+<li>los borradores se activan con <em>booleans</em>. Yay!.</li>
+<li>podés <a href="http://posativ.org/acrylamid/advanced.html#jinja2-or-mako-in-entry">incluir sintaxis de templates en los posts</a> e incluso usar las variables de configuración.</li>
+<li>summary/intro automático</li>
+<li>acrónimos y abreviaciones de usuario en un archivo de texto.</li>
+<li><a href="http://posativ.org/acrylamid/views.html">los views</a> que se ven copados y personalizables.</li>
+<li>output de linea de comandos con color. GRACIAS!</li>
+<li>trae para hacer pingback a otros blogs y postear a twitter.</li>
+<li>información del blog: cuántos posts publicados, cuántos borradores, uso de tags. También cuando se compiló por última vez, tamaño de cache...</li>
+<li><a href="http://posativ.org/acrylamid/advanced.html#using-the-system-s-shell">ejecutar comandos de shell en un post</a>: como listar una carpeta, incluir otro archivo, etc.</li>
+<li>mostrar el sitio con un comando</li>
+<li>filtros de post-processing</li>
+</ul>
+<p>No tiene categorias (pero se pueden <a href="https://github.com/posativ/acrylamid/issues/121">usar vistas</a>), galerias automáticas (pero se puede usar sintaxis de templates en un post, <a href="http://posativ.org/acrylamid/howtos.html#image-gallery">asi que está cubierto</a>) y la <a href="http://posativ.org/acrylamid/theming.html">creación de themes</a> no es tan automática: tenés que listar todos los archivos que usa tu theme en un archivo <code>__init.py</code>.</p>
+<p>Quería usar Acrylamid, pero era medio "complicado" para setearlo en Windows si querías usar <a href="https://github.com/ahupp/python-magic">python-magic</a> (tuve problemas con eso). Salteé esa parte, pero me seguía dando error con los <em>locales</em>.</p>
+<h2 id="nikola">Nikola
+</h2><p>Después recordé que una vez me había cruzado con <a href="http://getnikola.com/">Nikola</a>, originalmente creado por un argentino, asi que tenía que probarlo :P.</p>
+<p>No es tan <em>feature-rich</em> (o de fácil personalización) que <a href="http://docs.getpelican.com/">Pelican</a>, y la documentación tampoco es tan "completa": hay un par de cosas que se encuentran en los Google Groups, GitHub o mirando en el código. Tampoco no es tan <em>feature-cool</em> como <a href="http://posativ.org/acrylamid/index.html">Acrylamid</a>. De todas formas, creo que va en buen camino y es el mas nuevo de los tres.</p>
+<p>Tiene cosas copadas:</p>
+<ul>
+<li><em>incremental builds</em> (como Acryamid)</li>
+<li><a href="http://getnikola.com/handbook.html#image-galleries">creación de galerías automáticas</a></li>
+<li>categorias (como Pelican)</li>
+<li>creación de themes fácil (como Pelican)</li>
+<li>mostrar el sitio con un comando y tiene "Live" re-rendering </li>
+<li><a href="http://getnikola.com/handbook.html#retired-posts">posts "retirados"</a> (asi no tener 404 errors)</li>
+<li><a href="http://getnikola.com/handbook.html#redirections">redirecciones</a> (por si no podes usar <code>.htaccess</code>)</li>
+<li><a href="http://getnikola.com/handbook.html#deployment"><em>deploy commands</em></a> (ejecutar varios comandos y no tener que hacer un simple script)</li>
+<li>filtros de post-processing</li>
+<li>soporte para internalización (la interfaz del sitio/blog puede estar en varios idiomas)</li>
+<li>posts/páginas protegidos con contraseña.</li>
+<li><a href="http://getnikola.com/handbook.html#queuing-posts">"programar"</a> posts/páginas </li>
+<li>Soporte a gran selección de (3rd party) sistemas de comentarios y <a href="http://annotateit.org">AnnotateIt</a>.</li>
+<li><a href="http://getnikola.com/handbook.html#restructuredtext-extensions">Extensiones para reStructuredText</a> (si usas eso).</li>
+<li>Suporte para Twitter cards</li>
+<li>soporte para raw post/página (mostrar el código del post en texto plano)</li>
+</ul>
+<p>Los drafts se aplican como un "tag" en el metadata de tags y se publican por default. No tiene soporte de color en el output de la línea de comandos (pero se está viendo) y lo de "mostrar el código del post y copialo" está habilitado por default.</p>
+<h2 id="la-mudanza">La mudanza
+<h3 id="instalar-nikola">Instalar Nikola
+</h3></h2><p>Se <a href="http://getnikola.com/">descarga Nikola</a> e instala. Por default, usa <a href="http://makotemplates.org">Mako</a> como <em>template engine</em>, pero tiene soporte para <a href="http://jinja.pocoo.org/">Jinja2</a>. Se puede leer las <a href="http://getnikola.com/handbook.html#installing-nikola">dependencias en la documentación</a> y si queres podes <code>pip install -r requirements.txt</code> o <code>requirements-full.txt</code> para toda la cosa.</p>
+<p>Si estás en Windows, debés descargar e instalar las versiones compiladas de lxml y pillow. Podés buscarlos en sus <a href="https://pypi.python.org/">PyPI</a> o ir a <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">http://www.lfd.uci.edu/~gohlke/pythonlibs/</a>. Acordate de descargar e instalar dependiendo a tu versión y arquitectura de Python (32 o 64 bits).</p>
+<h3 id="iniciar">Iniciar
+</h3><p>Para iniciar o crear un blog con las opciones default y estructura de carpetas, ejecutar <code>nikola init path/to/mysite</code> o, si queres algo de contenido, <code>nikola init --demo path/to/mysite</code>.</p>
+<h3 id="convertir-metadata">Convertir metadata
+</h3><p>Pelican usa el estilo de metadata de <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">Multimarkdown</a> mientras que Nikola usas algo similar: el mismo sintaxis pero con <code>..</code> al frente.</p>
+<p>Un ejemplo sería:</p>
+<div class="code"><pre>Title: nice title! :D      # Pelican
+.. title: nice title! :D   # Nikola
+</pre></div>
+
+
+<p>Lo podés hacer a mano o <a href="https://gist.github.com/eikiu/8377090">descargar mi script de python</a>. También mueve el estatus de "draft" al tag de Nikola, y el "summary" de Pelican al "description" de Nikola (activado por default). </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Nikola no tiene/ve el meta key "modified" internamente, pero se puede tener como uno personalizado. Solo se accede diferente en los themes.</p>
+</div>
+<h3 id="traducciones">Traducciones
+</h3><p>Si tenes posts o páginas traducidas tenés que prestar atención: los sistemas entre los generadores son distintos. En Pelican tenés el mismo slug o título en los posts, y diferentes nombres de archivos (creo); Nikola usa los nombres de archivos.</p>
+<p>La facilidad de esto depende de tu setup, pero tenes que terminar con algo como: <code>nicefile.md</code> para el post en el idioma default, y <code>nicefile.md.es</code> (contenido en español) para el traducido.</p>
+<p>Lo bueno de esto es que no duplicas el meta. Por ejemplo, creas el meta key "tags" en el idioma default pero no lo especficas en el traducido. Así al actualizar, lo haces solo en el "master" o "padre" y el "hijo" solo lo copia.</p>
+<p>Si no queres tener metadata duplicada en los archivos, y después de que renombraste y convertiste los archivos, podes correr <a href="https://gist.github.com/eikiu/8377186">este script de python</a> para eliminarlos. Recordá que solo es opcional (o por lo menos no rompió mi setup).</p>
+<h3 id="rutas-de-imagenes">Rutas de imágenes
+</h3><p>La sintaxis también es diferente pero se puede hacer facilmente con <em>search and replace</em>. Podés usar lo que quieras, como grep. Si estas en Windows, recomiendo <a href="http://stefanstools.sourceforge.net/grepWin.html">grepWin</a> si queres algo con GUI. Esto es depende de como tengas los archivos pero yo hice algo asi:</p>
+<p>Sintaxis markdown:</p>
+<ul>
+<li>Search <code>(|filename|../../images/</code> </li>
+<li>Replace <code>(/images/</code></li>
+</ul>
+<p>HTML:</p>
+<ul>
+<li>Search <code>&lt;img src="../../static/images/</code> </li>
+<li>Replace <code>&lt;img src="../images/</code></li>
+</ul>
+<h3 id="links-entre-posts">Links entre posts
+</h3><p>Otra vez, es diferente en los sistemas y puede ser o muy fácil o muy dificil dependiendo de tu organización: Pelican usa los nombres de archivos para linkear contenido, mientras que Nikola usa el slug del post.</p>
+<p>Si tenes el nombre de archivo como el slug (o muy similar) podes usar <em>search and replace</em>, como:</p>
+<ul>
+<li>Search: <code>\(\|filename\|(.+)\.md\)</code></li>
+<li>Replace: <code>(link://slug/$1)</code></li>
+</ul>
+<p>Recomiendo hacerlo seguido de las imágenes, y tenes que checkear (posiblemente a mano) después.</p>
+<h3 id="sintaxis-de-plugins">Sintaxis de Plugins
+</h3><p>No usé muchos plugins que usaran sintaxis en mis posts, solo uno: <a href="http://quinzi.com.ar/projects/interlinks">interlinks</a>. Esto fue fácil de hacer con <em>search and replace</em>.</p>
+<h2 id="otras-cosas-de-nikola">Otras cosas de Nikola
+<h3 id="localizacion-en-windows">Localización en Windows
+</h3></h2><p>Si vas a usar la internalización en Windows, tenes que configurar los <code>LOCALES</code> como (ejemplo):</p>
+<div class="code"><pre>LOCALES = {'en' : 'English_United States', 'es' : 'Spanish_Argentina'}
+</pre></div>
+
+
+<p>No importa tu idioma en Windows, funciona tanto en (Windows) inglés como español.</p>
+<h3 id="linkear-internamente">Linkear internamente
+</h3><p>Para linkear a otro post, tag, archivo, etc.</p>
+<ul>
+<li>galeria: <code>link://gallery/gallery_name</code></li>
+<li>index de tags: <code>link://tag_index</code></li>
+<li>página de tag: <code>link://tag/tagname</code></li>
+<li>RSS de tag: <code>link://tag_rss/tagname</code></li>
+<li>index del blog: <code>link://index</code></li>
+<li>página [NUMERO] de index: <code>link://index/NUMERO</code></li>
+<li>archivo por año: <code>link://archive/</code></li>
+<li>posts de [AÑO] <code>link://archive/AÑO</code></li>
+<li>feed del blog: <code>link://rss</code></li>
+<li>otro post: <code>link://slug/the-nice-slug</code></li>
+</ul>
+<h3 id="pandoc">Pandoc
+</h3><p>Como Pandoc usa la extensión para reconocer el input, tenes que configurar esa extensión en <code>COMPILERS</code> en la configuración. Si no se encuentra, usa Markdown como default.</p>
+<p>Mientras que funcionó para mi usando markdown, no lo hizo con otros, como Mediawiki. No sé por qué.</p>
+<h3 id="carpetas-y-subcarpetas-de-posts">Carpetas y subcarpetas de posts
+</h3><p><a href="http://getnikola.com/">Nikola</a> mantiene la estructura de carpetas y subcarpetas. Si tenés <code>file_g.txt</code> dentro de <code>carpeta_abc</code>, esta estructura se mantiene en el output. Puede ser bueno si lo queres usar como categorías en el output. No hay manera de configurarlo.</p>
+<p>En <a href="http://docs.getpelican.com/">Pelican</a> podés tener varias subcarpetas y organizalos como vos quieras, y el output se puede configurar (por default, por fecha) como quieras.</p>
+<h2 id="testeando">Testeando
+</h2><p>Inicialmente los posts van en una carpeta <code>posts</code> en el root y las páginas en <code>story</code>. La carpeta de imágenes podría en <code>files</code>. Todo esto se puede configurar.</p>
+<p>Después de configurar el <code>conf.py</code>, que esta muy bien comentado, se puede probar. </p>
+<p>Crear el site con <code>nikola build</code>. Después se puede abrir los archivos al navegador o usar un local server con: <code>nikola serve</code> y yendo a <code>http://127.0.0.1:8000</code>.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Porque odio abrir un HTML block y el markdown de adentro no se <em>parsea</em>. Sé que dice en la referencia de <a href="http://daringfireball.net/projects/markdown/">markdown</a> pero hey: <strong>es 2014</strong> y necesito eso. Pero igual me encanta los admonition en <a href="http://pythonhosted.org/Markdown/">Python-Markdown</a> <a class="footnote-backref" href="../.././es/pelican-nikola/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Que <a href="http://docs.getpelican.com/en/3.3.0/internals.html#how-to-implement-a-new-reader">ahora veo</a> que no es tan dificil implementarlo. <em>Oh, well</em>. <a class="footnote-backref" href="../.././es/pelican-nikola/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+    </div>
+
+    <footer>
+        <meta itemref="vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        
+        <div class="post-meta">
+                <dl>
+                    <dt class="categories"> Categoría: </dt>
+                    <dd> 
+    <span itemprop="keywords"><a class="tag p-category" href="../.././es/tags/cat_guide.html"> guide</a></span>
+ </dd>
+                </dl> 
+                <dl>
+                    <dt class="tags"> Tags: </dt>
+                    <dd>  
+    
+    <span itemprop="keywords"> <a class="tag p-category" href="../.././es/tags/python.html"> 
+    <span class="badge badge-info"> python</span> </a>  <a class="tag p-category" href="../.././es/tags/pelican.html"> 
+    <span class="badge badge-info"> pelican</span> </a>  <a class="tag p-category" href="../.././es/tags/nikola.html"> 
+    <span class="badge badge-info"> nikola</span> </a>  <a class="tag p-category" href="../.././es/tags/static.html"> 
+    <span class="badge badge-info"> static</span> </a>  <a class="tag p-category" href="../.././es/tags/windows.html"> 
+    <span class="badge badge-info"> windows</span> </a> </span>
+ </dd>
+                </dl>
+
+        </div>
+    </footer>
+
+    
+    
+    
+        
+    
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="quinziblog",
+        
+            disqus_url="http://blog.quinzi.com.ar/./es/pelican-nikola/",
+        
+        disqus_title="De Pelican a Nikola (tutorial)",
+        disqus_identifier="cache/_raw/posts/guide_pelican-nikola.html",
+        disqus_config = function () {
+            this.language = "./es";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+
+    
+
+    
+    
+
+    </div>
+</article>
+ </div>
+		<footer>
+			<div id="search">
+				<p>Search: </p>
+				
+<!-- Custom search -->
+<form method="get" action="http://duckduckgo.com/" class="navbar-form">
+<input type="hidden" name="sites" value="http://blog.quinzi.com.ar/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="Search">
+</form>
+<!-- End of custom search -->
+
+			</div>
+			
+			
+    <div id="vcard" class="vcard author p-author h-card vcard">
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> A.Q. </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="index.html#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        </p>
+    </div>
+
+		</footer>
+	</div>
+	
+    
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    
+<script src="../../assets/analytics.js" type="text/javascript"></script>
+<script src="../../assets/github-mod.js" type="text/javascript"></script>
+
+</body></html>

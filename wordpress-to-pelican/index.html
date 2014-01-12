@@ -82,7 +82,6 @@
     <div class="e-content" itemprop="articleBody text">
         <div class="toc">
 <ul>
-<li><a href=".#por-que">Por qué</a></li>
 <li><a href=".#presentacion">Presentación</a></li>
 <li><a href=".#instalacion-en-windows">Instalación en Windows</a></li>
 <li><a href=".#configuracion">Configuración</a></li>
@@ -99,7 +98,7 @@
 <li><a href=".#conclusion">Conclusión</a></li>
 </ul>
 </div>
-<h2 id="por-que">Por qué
+<p>Por qué: </p>
 <ol>
 <li>Because I can</li>
 <li>Cada vez <strong>me llevo peor con Wordpress</strong></li>
@@ -113,7 +112,7 @@
 <li>ya llegué</li>
 </ol>
 <h2 id="presentacion">Presentación
-</h2></h2><p>Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.</p>
+</h2><p>Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.</p>
 <p>Todo iba bien, hasta que los de Wordpress decidieron <strong>abrirse mas como CMS</strong> que como sistema de blogging. Lo entiendo, es natural. Bien. No me gusta. No se si porque yo asocio Wordpress con blog y no un CMS completo a lo Joomla! o Drupal, o porque si las cosas en el backend estan mal organizadas para ser CMS/orientadas a blog, o si es mi conexión que no me deja disfrutar al máximo o qué. </p>
 <p><strong>Por temas de conexión y que el editor de Wordpress apesta</strong><sup id="fnref:1"><a class="footnote-ref" href=".#fn:1" rel="footnote">1</a></sup>, añadido a tener una wiki en localhost y encariñarme con los <a href="http://en.wikipedia.org/wiki/Lightweight_markup_languages">LML</a>, <strong>escribía los posts en markdown</strong> (que antes no me caía bien, hasta que empecé a usar <a href="http://www.johnmacfarlane.net/pandoc/">Pandoc</a>), los pasaba a HTML, hacia search &amp; replace para las imágenes (aunque se puede obviar si se suben primero las imágenes), y <strong>recien ahí lo pasaba a Wordpress</strong>. No es lo mas cómodo del mundo, pero servía.</p>
 <p>Por alguna razón que ahora no recuerdo, empecé a buscar (o encontré de casualidad) scripts que pasan <code>.txts</code> con LML a html. Eso me hizo pensar: "hey, capaz me puede servir". Después de descartar un par que no me servían (estan apuntados a los usuarios de Linux y para usarlos en Windows era mucho lio), me decanté por <a href="https://github.com/getpelican/pelican">Pelican</a>.</p>
@@ -142,16 +141,12 @@
 <li>Y el <a href="http://pygments.org/">pygments</a> para el syntax highlighting</li>
 </ol>
 <h2 id="configuracion">Configuración
-<ol>
-<li>Se crea un <code>config.py</code> para las configuración siguiendo <a href="http://pelican.readthedocs.org/en/latest/settings.html">las variables en los docs</a> (o usas como base las que ya te vienen en el archivo)</li>
-<li>Si usas Markdown, vas a querer usar los <a href="http://packages.python.org/Markdown/extensions">markdown extra</a></li>
-</ol>
+</h2><p>Se crea un <code>config.py</code> para las configuración siguiendo <a href="http://pelican.readthedocs.org/en/latest/settings.html">las variables en los docs</a> (o usas como base las que ya te vienen en el archivo)</p>
+<p>Si usas Markdown, vas a querer usar los <a href="http://packages.python.org/Markdown/extensions">markdown extra</a></p>
 <h2 id="andando">Andando
-<ol>
-<li>Crear un post con el <a href="http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican">metadata correspondiente</a>. El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.</li>
-<li>Ir a la carpeta root de tu Pelican, abrir una linea de comandos y poner: <code>[Python_path]\Scripts\pelican.exe input/ -s config.py</code></li>
-</ol>
-</h2></h2><p><strong>Nota</strong>: para probar, podes obviar la parte de configuración.</p>
+</h2><p>Crear un post con el <a href="http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican">metadata correspondiente</a>. El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.</p>
+<p>Ir a la carpeta root de tu Pelican, abrir una linea de comandos y poner: <code>[Python_path]\Scripts\pelican.exe input/ -s config.py</code></p>
+<p><strong>Nota</strong>: para probar, podes obviar la parte de configuración.</p>
 <p><strong>Nota 2</strong>: si se corre en la carpeta del contenido, para el path se puede usar <code>.</code> (punto)</p>
 <p>Yo lo puse en un script/bat cosa de no escribir eso todo el tiempo.</p>
 <h2 id="themes">Themes
@@ -268,7 +263,7 @@
                 <dl>
                     <dt class="categories"> Category: </dt>
                     <dd> 
-    <span itemprop="keywords"><a class="tag p-category" href="../tags/cat_entry.html"> entry</a></span>
+    <span itemprop="keywords"><a class="tag p-category" href="../tags/cat_guide.html"> guide</a></span>
  </dd>
                 </dl> 
                 <dl>
@@ -299,7 +294,7 @@
             disqus_url="http://blog.quinzi.com.ar/wordpress-to-pelican/",
         
         disqus_title="Dynamic to Static (Wordpress a Pelican)",
-        disqus_identifier="cache/_raw/posts/entry_wordpress-pelican.html",
+        disqus_identifier="cache/_raw/posts/guide_wordpress-pelican.html",
         disqus_config = function () {
             this.language = "";
         };
