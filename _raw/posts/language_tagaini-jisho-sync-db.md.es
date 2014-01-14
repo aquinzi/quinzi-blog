@@ -58,7 +58,7 @@ mas visual para cambiar la locacion de la base de datos, pero todavia
 no hay novedades.
 
 
-[wakan]: wakan.manga.cz/
+[wakan]: http://wakan.manga.cz/
 [zkanji]: http://zkanji.sourceforge.net/
 [Tagaini Jisho]: http://www.tagaini.net/
 [segun la página]: http://www.tagaini.net/about

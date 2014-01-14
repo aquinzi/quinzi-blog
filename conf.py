@@ -4,6 +4,8 @@ from __future__ import unicode_literals
 import time
 from nikola import filters
 
+MENTIONS_PATH = "_raw/ms/"
+
 # ---------------
 # Configuration
 # ---------------
@@ -149,6 +151,7 @@ GLOBAL_CONTEXT = {
     'index_posts_list' : True,
     'default_lang' : DEFAULT_LANG,
     'fake_index' : True,    
+	'LOCALHOST': True,
 }
 
 # Use content distribution networks for jquery and twitter-bootstrap css and js
@@ -348,7 +351,7 @@ INDEX_TEASERS = False
 # READ_MORE_LINK = '<p class="more"><a href="{link}">{read_more}…</a></p>'
 
 # Create index.html for story folders?
-STORY_INDEX = True
+#STORY_INDEX = True
 # Enable comments on story pages?
 # COMMENTS_IN_STORIES = False
 # Enable comments on picture gallery pages?
