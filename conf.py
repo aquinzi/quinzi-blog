@@ -5,17 +5,38 @@ import time
 import os
 from nikola import filters
 
-MENTIONS_PATH = os.path.join(os.getcwd(),"_raw/mentions/")
-LOCALHOST = True 
 
-# ---------------
-# Configuration
-# ---------------
+# --------------------
+# Local Configuration
+# --------------------
+local_conf = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__),"..")), "local_conf.ini")
+
+if os.path.exists(local_conf):
+	import ConfigParser
+	
+	config = ConfigParser.ConfigParser()
+	config.read(local_conf)
+
+	MENTIONS_PATH = os.path.join(os.getcwd(), config.get('mentions', 'path'))
+	MENTIONS_PATH_AVATARS = config.get('mentions', 'path_avatars')
+	LOCALHOST = config.getboolean('local', 'localhost')
+	#local_TIMEZONE = config.getboolean('other', 'timezone')
+	local_TIMEZONE = None
+	DISQUS_ID = config.get('other', 'disqus_id')
+	
+else:
+	LOCALHOST = False
+	local_TIMEZONE = None
+	
+# ---------------------
+# Nikola Configuration
+# ---------------------
 
 BLOG_AUTHOR = "A.Q."
 BLOG_TITLE = "A-Qute blog"
 SITE_URL = "http://blog.quinzi.com.ar/"
 BLOG_DESCRIPTION = "Blog for A.Q."
+# Post's dates are considered in UTC by default
 DATE_FORMAT = '%Y-%m-%d'
 THEME = "simple-jinja"
 # relative to the location of conf.py
@@ -51,8 +72,9 @@ CONTENT_FOOTER = '''
 CONTENT_FOOTER = CONTENT_FOOTER.format(author=BLOG_AUTHOR)
 
 # Post's dates are considered in UTC by default
-#TIMEZONE = 'America/Argentina/Ushuaia'
-
+if local_TIMEZONE:
+	TIMEZONE = local_TIMEZONE
+	
 # the path is a prefix for generated pages location
 TRANSLATIONS = {DEFAULT_LANG: "", "es": "./es", }
 
@@ -82,13 +104,17 @@ MARKDOWN_EXTENSIONS = ['codehilite(guess_lang=False)','extra', 'admonition', 'he
 FILES_FOLDERS = {
     '_raw/files': '', # Which means copy 'files' contents into 'output'
     '_raw/images' : 'images',
-	'_raw/ms/images': 'images/avatars',
     }
 
+if MENTIONS_PATH_AVATARS:
+	FILES_FOLDERS[MENTIONS_PATH_AVATARS] = 'images/avatars'
+	
+	
 # Comments, choose: "disqus", "livefyre", "intensedebate", "moot",
 #                 "googleplus", "facebook", "isso"
 COMMENT_SYSTEM = "disqus"
-COMMENT_SYSTEM_ID = "quinziblog"
+if DISQUS_ID:
+	COMMENT_SYSTEM_ID = DISQUS_ID
 
 # Enable annotations using annotateit.org?
 # ANNOTATIONS = False

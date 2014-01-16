@@ -1,6 +1,5 @@
 from nikola.plugin_categories import Command
 
-#below import is pure testing 
 import sys
 sys.path.append(r'C:\Scripts')
 import webmentions
