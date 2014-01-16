@@ -2,9 +2,10 @@
 
 from __future__ import unicode_literals
 import time
+import os
 from nikola import filters
 
-MENTIONS_PATH = "_raw/ms/"
+MENTIONS_PATH = os.path.join(os.getcwd(),"_raw/mentions/")
 
 # ---------------
 # Configuration
@@ -40,7 +41,7 @@ LICENSE = ""
 # A small copyright notice for the page footer (in HTML).
 CONTENT_FOOTER = '''
     <div id="vcard" class="vcard author p-author h-card vcard">
-        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> {author} </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> <a href="http://quinzi.com.ar/">{author}</a> </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
         </p>
     </div>
 '''
@@ -79,7 +80,8 @@ MARKDOWN_EXTENSIONS = ['codehilite(guess_lang=False)','extra', 'admonition', 'he
 # of "source" "relative destination". 
 FILES_FOLDERS = {
     '_raw/files': '', # Which means copy 'files' contents into 'output'
-    '_raw/images' : 'images'
+    '_raw/images' : 'images',
+	'_raw/ms/images': 'images/avatars',
     }
 
 # Comments, choose: "disqus", "livefyre", "intensedebate", "moot",
@@ -245,7 +247,7 @@ FEED_LENGTH = 10
 # RSS_LINK is a HTML fragment to link the RSS/Atom feeds. If set to None,
 # the base.tmpl will use the feed Nikola generates. However, you may want to
 # change it for a feedburner or something else.
-RSS_LINK = None
+RSS_LINK = """<link href="http://feeds.feedburner.com/intentode" type="application/atom+xml" rel="alternate" title="RSS Feed" />"""
 
 # Show only teasers in the RSS feed? Default to True
 # RSS_TEASERS = True

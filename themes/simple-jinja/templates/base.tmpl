@@ -20,12 +20,13 @@
 	<div id="side-right">
 		<div id="content">{% block content %}{% endblock %} </div>
 		<footer>
+			{{ content_footer }}
+			
 			<div id="search">
 				<p>Search: </p>
 				{{ search_form }}
 			</div>
 			
-			{{ content_footer }}
 		</footer>
 	</div>
 	

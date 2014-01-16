@@ -44,6 +44,7 @@
     {% if comment_system == 'facebook' %}
         <meta property="fb:app_id" content="{{ comment_system_id }}">
     {% endif %}
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
 {% endmacro %}
 
 {%- macro late_load_js() %}

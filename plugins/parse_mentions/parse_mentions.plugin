@@ -1,0 +1,9 @@
+[Core]
+Name = parse_mentions
+Module = parse_mentions
+
+[Documentation]
+Author = Daniel Aleksandersen
+Version = 0.1
+Website = https://www.aeyoun.priv.no
+Description = Ping services with updates to the live site

@@ -1,0 +1,46 @@
+{#  -*- coding: utf-8 -*- #}
+
+{# get RT and fav count #}
+<div class="social-reaction">
+<ul>
+	<li data-icon="twitter">
+		Twitter
+		<ul>
+		{% for tweets, prop in post.mentions['tweets'].iteritems() if prop['user_screen_name'] == 'eikiu' %}
+		<li data-icon="star"><a href="https://twitter.com/intent/favorite?tweet_id={{ prop['id'] }}">{{ prop['favorite_count'] }} Favs</a></li>
+		<li data-icon="retweet"><a href="https://twitter.com/intent/retweet?tweet_id={{ prop['id'] }}">{{ prop['retweet_count'] }} Retweets</a></li>
+		<li> <a href="https://twitter.com/intent/tweet?in_reply_to={{ prop['id'] }}">Reply</a> </li>
+		{% endfor %}
+		</ul>		
+	</li>
+</ul>
+</div>
+
+<h3> Tweets linking here</h3>
+<ul id="tweets"> 
+{% for tweets, prop in post.mentions['tweets'].iteritems() %}
+	<li><div>
+		<img src="/images/avatars/{{ prop['profile_image_local'] }}">
+		<p><span class="user">@{{ prop['user_screen_name'] }}</span> </p>
+		<p>{{ prop['text'] }} <time><a href="https://twitter.com/{{ prop['user_screen_name'] }}/status/{{ prop['id'] }}">{{ prop['created_at']|replace("T", " ") }}</a></time></p>
+	</div>
+	</li>
+{% endfor %}
+</ul>
+
+<h3> Mentions </h3>
+{% if not LOCALHOST %}
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+{% endif %}
+
+
+

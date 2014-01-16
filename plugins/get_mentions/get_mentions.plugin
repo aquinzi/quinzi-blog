@@ -1,0 +1,9 @@
+[Core]
+Name = get_mentions
+Module = get_mentions
+
+[Documentation]
+Author = A.Q.
+Version = 0.1
+Website = https://www.aeyoun.priv.no
+Description = Get twitter mentions and save to YAML
