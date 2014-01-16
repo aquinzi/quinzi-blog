@@ -17,12 +17,14 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
     
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="../.././es/rss.xml">
+        <link href="http://feeds.feedburner.com/intentode" type="application/atom+xml" rel="alternate" title="RSS Feed">
+    
     
         
     <link rel="icon" href="../../favicon.ico" sizes="16x16">
     <link rel="icon" href="../../favicon.png" sizes="16x16">
     
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
 
     
 
@@ -76,7 +78,7 @@
             <dl>
                     <dt class="date">Publicado
                     </dt><dd>  
-    <time class="published dt-published" itemprop="datePublished" datetime="2014-01-11T00:00:00">2014-01-11</time>
+    <time class="published dt-published" itemprop="datePublished" datetime="2014-01-11T00:00:00+00:00">2014-01-11</time>
 </dd>
                      
             </dl>
@@ -110,8 +112,8 @@
 </div>
 <p>Cuando pensaba en mover mi blog a este nuevo dominio, pensé en usar <a href="http://www.johnmacfarlane.net/pandoc/">Pandoc</a> como conversor<sup id="fnref:1"><a class="footnote-ref" href="../.././es/pelican-nikola/#fn:1" rel="footnote">1</a></sup>; incluso creé <a href="http://quinzi.com.ar/projects/pandy">pandy</a> para eso. Pero después tuve los "problemas" (ok, estaba vaga) de RSS, categorias, tags, index, etc. y lo dejé.</p>
 <p>En un principio pensé en <a href="../.././es/wordpress-to-pelican">seguir usando Pelican</a> ya que es <a href="http://docs.getpelican.com/">fácil y personalizable</a> aunque no tuviera soporte para Pandoc<sup id="fnref:2"><a class="footnote-ref" href="../.././es/pelican-nikola/#fn:2" rel="footnote">2</a></sup>. Pero mas tarde me daría vagancia pasarme a otro sistema (no que postee mucho, pero <strong>me encanta el markdown de Pandoc</strong>).</p>
-<h2 id="acrylamid">Acrylamid
-</h2><p>En mis búsquedas encontré <a href="http://posativ.org/acrylamid/index.html">Acrylamid</a> que se ve bastante bien. Es como el <em>blog generator</em> de programadores/hackers, donde podés hacer varias cosas. También tiene <em>incremental builds</em> así no regenera todo desde cero.</p>
+<h2 id="acrylamid">Acrylamid</h2>
+<p>En mis búsquedas encontré <a href="http://posativ.org/acrylamid/index.html">Acrylamid</a> que se ve bastante bien. Es como el <em>blog generator</em> de programadores/hackers, donde podés hacer varias cosas. También tiene <em>incremental builds</em> así no regenera todo desde cero.</p>
 <p>Otras cosas incluyen:</p>
 <ul>
 <li>diferentes meta tags: MultiMarkdown (como Pelican), YAML o rst.</li>
@@ -129,8 +131,8 @@
 </ul>
 <p>No tiene categorias (pero se pueden <a href="https://github.com/posativ/acrylamid/issues/121">usar vistas</a>), galerias automáticas (pero se puede usar sintaxis de templates en un post, <a href="http://posativ.org/acrylamid/howtos.html#image-gallery">asi que está cubierto</a>) y la <a href="http://posativ.org/acrylamid/theming.html">creación de themes</a> no es tan automática: tenés que listar todos los archivos que usa tu theme en un archivo <code>__init.py</code>.</p>
 <p>Quería usar Acrylamid, pero era medio "complicado" para setearlo en Windows si querías usar <a href="https://github.com/ahupp/python-magic">python-magic</a> (tuve problemas con eso). Salteé esa parte, pero me seguía dando error con los <em>locales</em>.</p>
-<h2 id="nikola">Nikola
-</h2><p>Después recordé que una vez me había cruzado con <a href="http://getnikola.com/">Nikola</a>, originalmente creado por un argentino, asi que tenía que probarlo :P.</p>
+<h2 id="nikola">Nikola</h2>
+<p>Después recordé que una vez me había cruzado con <a href="http://getnikola.com/">Nikola</a>, originalmente creado por un argentino, asi que tenía que probarlo :P.</p>
 <p>No es tan <em>feature-rich</em> (o de fácil personalización) que <a href="http://docs.getpelican.com/">Pelican</a>, y la documentación tampoco es tan "completa": hay un par de cosas que se encuentran en los Google Groups, GitHub o mirando en el código. Tampoco no es tan <em>feature-cool</em> como <a href="http://posativ.org/acrylamid/index.html">Acrylamid</a>. De todas formas, creo que va en buen camino y es el mas nuevo de los tres.</p>
 <p>Tiene cosas copadas:</p>
 <ul>
@@ -152,14 +154,14 @@
 <li>soporte para raw post/página (mostrar el código del post en texto plano)</li>
 </ul>
 <p>Los drafts se aplican como un "tag" en el metadata de tags y se publican por default. No tiene soporte de color en el output de la línea de comandos (pero se está viendo) y lo de "mostrar el código del post y copialo" está habilitado por default.</p>
-<h2 id="la-mudanza">La mudanza
-<h3 id="instalar-nikola">Instalar Nikola
-</h3></h2><p>Se <a href="http://getnikola.com/">descarga Nikola</a> e instala. Por default, usa <a href="http://makotemplates.org">Mako</a> como <em>template engine</em>, pero tiene soporte para <a href="http://jinja.pocoo.org/">Jinja2</a>. Se puede leer las <a href="http://getnikola.com/handbook.html#installing-nikola">dependencias en la documentación</a> y si queres podes <code>pip install -r requirements.txt</code> o <code>requirements-full.txt</code> para toda la cosa.</p>
+<h2 id="la-mudanza">La mudanza</h2>
+<h3 id="instalar-nikola">Instalar Nikola</h3>
+<p>Se <a href="http://getnikola.com/">descarga Nikola</a> e instala. Por default, usa <a href="http://makotemplates.org">Mako</a> como <em>template engine</em>, pero tiene soporte para <a href="http://jinja.pocoo.org/">Jinja2</a>. Se puede leer las <a href="http://getnikola.com/handbook.html#installing-nikola">dependencias en la documentación</a> y si queres podes <code>pip install -r requirements.txt</code> o <code>requirements-full.txt</code> para toda la cosa.</p>
 <p>Si estás en Windows, debés descargar e instalar las versiones compiladas de lxml y pillow. Podés buscarlos en sus <a href="https://pypi.python.org/">PyPI</a> o ir a <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">http://www.lfd.uci.edu/~gohlke/pythonlibs/</a>. Acordate de descargar e instalar dependiendo a tu versión y arquitectura de Python (32 o 64 bits).</p>
-<h3 id="iniciar">Iniciar
-</h3><p>Para iniciar o crear un blog con las opciones default y estructura de carpetas, ejecutar <code>nikola init path/to/mysite</code> o, si queres algo de contenido, <code>nikola init --demo path/to/mysite</code>.</p>
-<h3 id="convertir-metadata">Convertir metadata
-</h3><p>Pelican usa el estilo de metadata de <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">Multimarkdown</a> mientras que Nikola usas algo similar: el mismo sintaxis pero con <code>..</code> al frente.</p>
+<h3 id="iniciar">Iniciar</h3>
+<p>Para iniciar o crear un blog con las opciones default y estructura de carpetas, ejecutar <code>nikola init path/to/mysite</code> o, si queres algo de contenido, <code>nikola init --demo path/to/mysite</code>.</p>
+<h3 id="convertir-metadata">Convertir metadata</h3>
+<p>Pelican usa el estilo de metadata de <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">Multimarkdown</a> mientras que Nikola usas algo similar: el mismo sintaxis pero con <code>..</code> al frente.</p>
 <p>Un ejemplo sería:</p>
 <div class="code"><pre>Title: nice title! :D      # Pelican
 .. title: nice title! :D   # Nikola
@@ -171,13 +173,13 @@
 <p class="admonition-title">Note</p>
 <p>Nikola no tiene/ve el meta key "modified" internamente, pero se puede tener como uno personalizado. Solo se accede diferente en los themes.</p>
 </div>
-<h3 id="traducciones">Traducciones
-</h3><p>Si tenes posts o páginas traducidas tenés que prestar atención: los sistemas entre los generadores son distintos. En Pelican tenés el mismo slug o título en los posts, y diferentes nombres de archivos (creo); Nikola usa los nombres de archivos.</p>
+<h3 id="traducciones">Traducciones</h3>
+<p>Si tenes posts o páginas traducidas tenés que prestar atención: los sistemas entre los generadores son distintos. En Pelican tenés el mismo slug o título en los posts, y diferentes nombres de archivos (creo); Nikola usa los nombres de archivos.</p>
 <p>La facilidad de esto depende de tu setup, pero tenes que terminar con algo como: <code>nicefile.md</code> para el post en el idioma default, y <code>nicefile.md.es</code> (contenido en español) para el traducido.</p>
 <p>Lo bueno de esto es que no duplicas el meta. Por ejemplo, creas el meta key "tags" en el idioma default pero no lo especficas en el traducido. Así al actualizar, lo haces solo en el "master" o "padre" y el "hijo" solo lo copia.</p>
 <p>Si no queres tener metadata duplicada en los archivos, y después de que renombraste y convertiste los archivos, podes correr <a href="https://gist.github.com/eikiu/8377186">este script de python</a> para eliminarlos. Recordá que solo es opcional (o por lo menos no rompió mi setup).</p>
-<h3 id="rutas-de-imagenes">Rutas de imágenes
-</h3><p>La sintaxis también es diferente pero se puede hacer facilmente con <em>search and replace</em>. Podés usar lo que quieras, como grep. Si estas en Windows, recomiendo <a href="http://stefanstools.sourceforge.net/grepWin.html">grepWin</a> si queres algo con GUI. Esto es depende de como tengas los archivos pero yo hice algo asi:</p>
+<h3 id="rutas-de-imagenes">Rutas de imágenes</h3>
+<p>La sintaxis también es diferente pero se puede hacer facilmente con <em>search and replace</em>. Podés usar lo que quieras, como grep. Si estas en Windows, recomiendo <a href="http://stefanstools.sourceforge.net/grepWin.html">grepWin</a> si queres algo con GUI. Esto es depende de como tengas los archivos pero yo hice algo asi:</p>
 <p>Sintaxis markdown:</p>
 <ul>
 <li>Search <code>(|filename|../../images/</code> </li>
@@ -188,26 +190,26 @@
 <li>Search <code>&lt;img src="../../static/images/</code> </li>
 <li>Replace <code>&lt;img src="../images/</code></li>
 </ul>
-<h3 id="links-entre-posts">Links entre posts
-</h3><p>Otra vez, es diferente en los sistemas y puede ser o muy fácil o muy dificil dependiendo de tu organización: Pelican usa los nombres de archivos para linkear contenido, mientras que Nikola usa el slug del post.</p>
+<h3 id="links-entre-posts">Links entre posts</h3>
+<p>Otra vez, es diferente en los sistemas y puede ser o muy fácil o muy dificil dependiendo de tu organización: Pelican usa los nombres de archivos para linkear contenido, mientras que Nikola usa el slug del post.</p>
 <p>Si tenes el nombre de archivo como el slug (o muy similar) podes usar <em>search and replace</em>, como:</p>
 <ul>
 <li>Search: <code>\(\|filename\|(.+)\.md\)</code></li>
 <li>Replace: <code>(link://slug/$1)</code></li>
 </ul>
 <p>Recomiendo hacerlo seguido de las imágenes, y tenes que checkear (posiblemente a mano) después.</p>
-<h3 id="sintaxis-de-plugins">Sintaxis de Plugins
-</h3><p>No usé muchos plugins que usaran sintaxis en mis posts, solo uno: <a href="http://quinzi.com.ar/projects/interlinks">interlinks</a>. Esto fue fácil de hacer con <em>search and replace</em>.</p>
-<h2 id="otras-cosas-de-nikola">Otras cosas de Nikola
-<h3 id="localizacion-en-windows">Localización en Windows
-</h3></h2><p>Si vas a usar la internalización en Windows, tenes que configurar los <code>LOCALES</code> como (ejemplo):</p>
+<h3 id="sintaxis-de-plugins">Sintaxis de Plugins</h3>
+<p>No usé muchos plugins que usaran sintaxis en mis posts, solo uno: <a href="http://quinzi.com.ar/projects/interlinks">interlinks</a>. Esto fue fácil de hacer con <em>search and replace</em>.</p>
+<h2 id="otras-cosas-de-nikola">Otras cosas de Nikola</h2>
+<h3 id="localizacion-en-windows">Localización en Windows</h3>
+<p>Si vas a usar la internalización en Windows, tenes que configurar los <code>LOCALES</code> como (ejemplo):</p>
 <div class="code"><pre>LOCALES = {'en' : 'English_United States', 'es' : 'Spanish_Argentina'}
 </pre></div>
 
 
 <p>No importa tu idioma en Windows, funciona tanto en (Windows) inglés como español.</p>
-<h3 id="linkear-internamente">Linkear internamente
-</h3><p>Para linkear a otro post, tag, archivo, etc.</p>
+<h3 id="linkear-internamente">Linkear internamente</h3>
+<p>Para linkear a otro post, tag, archivo, etc.</p>
 <ul>
 <li>galeria: <code>link://gallery/gallery_name</code></li>
 <li>index de tags: <code>link://tag_index</code></li>
@@ -220,14 +222,14 @@
 <li>feed del blog: <code>link://rss</code></li>
 <li>otro post: <code>link://slug/the-nice-slug</code></li>
 </ul>
-<h3 id="pandoc">Pandoc
-</h3><p>Como Pandoc usa la extensión para reconocer el input, tenes que configurar esa extensión en <code>COMPILERS</code> en la configuración. Si no se encuentra, usa Markdown como default.</p>
+<h3 id="pandoc">Pandoc</h3>
+<p>Como Pandoc usa la extensión para reconocer el input, tenes que configurar esa extensión en <code>COMPILERS</code> en la configuración. Si no se encuentra, usa Markdown como default.</p>
 <p>Mientras que funcionó para mi usando markdown, no lo hizo con otros, como Mediawiki. No sé por qué.</p>
-<h3 id="carpetas-y-subcarpetas-de-posts">Carpetas y subcarpetas de posts
-</h3><p><a href="http://getnikola.com/">Nikola</a> mantiene la estructura de carpetas y subcarpetas. Si tenés <code>file_g.txt</code> dentro de <code>carpeta_abc</code>, esta estructura se mantiene en el output. Puede ser bueno si lo queres usar como categorías en el output. No hay manera de configurarlo.</p>
+<h3 id="carpetas-y-subcarpetas-de-posts">Carpetas y subcarpetas de posts</h3>
+<p><a href="http://getnikola.com/">Nikola</a> mantiene la estructura de carpetas y subcarpetas. Si tenés <code>file_g.txt</code> dentro de <code>carpeta_abc</code>, esta estructura se mantiene en el output. Puede ser bueno si lo queres usar como categorías en el output. No hay manera de configurarlo.</p>
 <p>En <a href="http://docs.getpelican.com/">Pelican</a> podés tener varias subcarpetas y organizalos como vos quieras, y el output se puede configurar (por default, por fecha) como quieras.</p>
-<h2 id="testeando">Testeando
-</h2><p>Inicialmente los posts van en una carpeta <code>posts</code> en el root y las páginas en <code>story</code>. La carpeta de imágenes podría en <code>files</code>. Todo esto se puede configurar.</p>
+<h2 id="testeando">Testeando</h2>
+<p>Inicialmente los posts van en una carpeta <code>posts</code> en el root y las páginas en <code>story</code>. La carpeta de imágenes podría en <code>files</code>. Todo esto se puede configurar.</p>
 <p>Después de configurar el <code>conf.py</code>, que esta muy bien comentado, se puede probar. </p>
 <p>Crear el site con <code>nikola build</code>. Después se puede abrir los archivos al navegador o usar un local server con: <code>nikola serve</code> y yendo a <code>http://127.0.0.1:8000</code>.</p>
 <div class="footnote">
@@ -265,12 +267,74 @@
     <span class="badge badge-info"> windows</span> </a> </span>
  </dd>
                 </dl>
-
         </div>
-    </footer>
+		
+		<div id="post-comments">
+			
+				
 
-    
-    
+
+<div class="social-reaction">
+<ul>
+	<li data-icon="twitter">
+		Twitter
+		<ul>
+		
+		<li data-icon="star"><a href="https://twitter.com/intent/favorite?tweet_id=423823949231689728">1 Favs</a></li>
+		<li data-icon="retweet"><a href="https://twitter.com/intent/retweet?tweet_id=423823949231689728">2 Retweets</a></li>
+		<li> <a href="https://twitter.com/intent/tweet?in_reply_to=423823949231689728">Reply</a> </li>
+		
+		</ul>		
+	</li>
+</ul>
+</div>
+
+<h3> Tweets linking here</h3>
+<ul id="tweets"> 
+
+	<li><div>
+		<img src="../../images/avatars/6ea256fca93ba01e670422f6ec197d82_normal.jpeg">
+		<p><span class="user">@eikiu</span> </p>
+		<p>Pelican to Nikola (guide) http://blog.quinzi.com.ar/pelican-nikola/ <time><a href="https://twitter.com/eikiu/status/423823949231689728">2014-01-16 14:27:58</a></time></p>
+	</div>
+	</li>
+
+	<li><div>
+		<img src="../../images/avatars/WTF_normal.jpg">
+		<p><span class="user">@whattafack</span> </p>
+		<p>RT @eikiu: Pelican to Nikola (guide) http://blog.quinzi.com.ar/pelican-nikola/ <time><a href="https://twitter.com/whattafack/status/423831370998484992">2014-01-16 14:57:27</a></time></p>
+	</div>
+	</li>
+
+	<li><div>
+		<img src="../../images/avatars/f08cfb8f3bc19660e6aa07f4dfb57341_normal.png">
+		<p><span class="user">@rokxx</span> </p>
+		<p>RT @eikiu: Pelican to Nikola (guide) http://blog.quinzi.com.ar/pelican-nikola/ <time><a href="https://twitter.com/rokxx/status/423831596236804096">2014-01-16 14:58:21</a></time></p>
+	</div>
+	</li>
+
+</ul>
+
+<h3> Mentions </h3>
+
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+
+
+
+
+			
+
+			
+			
     
         
     
@@ -297,7 +361,9 @@
 
     
 
-    
+			
+		</div>		
+    </footer>
 
     
     
@@ -306,6 +372,13 @@
 </article>
  </div>
 		<footer>
+			
+    <div id="vcard" class="vcard author p-author h-card vcard">
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> <a href="http://quinzi.com.ar/">A.Q.</a> </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        </p>
+    </div>
+
+			
 			<div id="search">
 				<p>Search: </p>
 				
@@ -322,12 +395,6 @@
 
 			</div>
 			
-			
-    <div id="vcard" class="vcard author p-author h-card vcard">
-        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> A.Q. </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="index.html#top"><i class="fa fa-chevron-circle-up"></i></a></span>
-        </p>
-    </div>
-
 		</footer>
 	</div>
 	

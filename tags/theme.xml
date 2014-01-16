@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (theme)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/theme.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 20:07:24 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>foobar2000 theme: Tomorrow Night Bright</title><link>http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (theme)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/theme.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 14 Jan 2014 14:18:13 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>foobar2000 theme: Tomorrow Night Bright</title><link>http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/#requirements"&gt;Requirements&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Playing with foobar2000's Default UI, I made this minimalistic/simple theme with &lt;a href="https://github.com/ChrisKempson/Tomorrow-Theme"&gt;Tomorrow theme&lt;/a&gt; colors (Night Bright version).&lt;/p&gt;
-&lt;h2 id="screenshots"&gt;Screenshots
-&lt;/h2&gt;&lt;p&gt;You've got the menu + playback controls in the same line. Underneath, seekbar + playlist dropdown. In the status bar is the time, rating (view) and volume.&lt;/p&gt;
+&lt;h2 id="screenshots"&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;You've got the menu + playback controls in the same line. Underneath, seekbar + playlist dropdown. In the status bar is the time, rating (view) and volume.&lt;/p&gt;
 &lt;p&gt;There four views/tabs in total:&lt;/p&gt;
 &lt;p&gt;"Now" has the active playlist, grouped by artist (in blue) + album (green). Tracks only show their title (red) and comment (orange).&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Active playlist" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_now.png"&gt;&lt;/p&gt;
@@ -18,14 +18,14 @@
 &lt;p&gt;"Library" is self explanatory.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Tree library" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_library.png"&gt;&lt;/p&gt;
 &lt;p&gt;There's no playlist list (only the dropdown) because I couldn't find one that prevents me from accidental deletion :P. If you want to manage them, go to &lt;kbd&gt;View &amp;gt; Playlist Manager&lt;/kbd&gt;&lt;/p&gt;
-&lt;h2 id="requirements"&gt;Requirements
+&lt;h2 id="requirements"&gt;Requirements&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.foobar2000.org/"&gt;foobar2000&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://foo2k.chottu.net/"&gt;EsPlaylist&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.foobar2000.org/components/view/foo_uie_lyrics3"&gt;Lyric Show Panel 3&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.mediafire.com/?qb2v62gt01uzr8h"&gt;theme + configuration&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/h2&gt;&lt;p&gt;Place the EsPlaylist configuration (&lt;code&gt;foo_uie_esplaylist.dll.cfg&lt;/code&gt;) in &lt;code&gt;[foobar_home]/configuration&lt;/code&gt; and the theme (&lt;code&gt;tomorrowbright.fth&lt;/code&gt;) where you please.&lt;/p&gt;
+&lt;p&gt;Place the EsPlaylist configuration (&lt;code&gt;foo_uie_esplaylist.dll.cfg&lt;/code&gt;) in &lt;code&gt;[foobar_home]/configuration&lt;/code&gt; and the theme (&lt;code&gt;tomorrowbright.fth&lt;/code&gt;) where you please.&lt;/p&gt;
 &lt;p&gt;Import the theme (&lt;kbd&gt;Preferences &amp;gt; Display &amp;gt; Default User Interface &amp;gt; Import theme&lt;/kbd&gt;). In the playlist, &lt;kbd&gt;right click &amp;gt; grouping &amp;gt; inline - Tomorrow night bright&lt;/kbd&gt;. In the lyrics panel, edit the preferences (&lt;kbd&gt;panel preferences&lt;/kbd&gt;) and change the &lt;code&gt;highlight color&lt;/code&gt; to RGB &lt;code&gt;236,206,88&lt;/code&gt; (yellow).&lt;/p&gt;
 &lt;p&gt;The "headers" colors (in playlist, the &lt;code&gt;%artist%&lt;/code&gt;, &lt;code&gt;%album%&lt;/code&gt;; and in "meta", the "metadata", "location", "other"...) is configurated in &lt;kbd&gt;Default User Interface &amp;gt; Colors and fonts&lt;/kbd&gt; (if you don't like violet).&lt;/p&gt;
 &lt;p&gt;If you want to change the control buttons, you must use 16x16 &lt;code&gt;.ico&lt;/code&gt; files.&lt;/p&gt;
@@ -41,8 +41,8 @@
 simple, minimalista y medianamente colorido (para que no sientas que
 vivis en un arco iris), que tiene los plugins minimamente requeridos
 (por mi persona).&lt;/p&gt;
-&lt;h2 id="requerimientos"&gt;Requerimientos
-&lt;/h2&gt;&lt;p&gt;Aparte de foobar necesitas:&lt;/p&gt;
+&lt;h2 id="requerimientos"&gt;Requerimientos&lt;/h2&gt;
+&lt;p&gt;Aparte de foobar necesitas:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Plugins (los podes sacar y/o poner los que te gusten, pero si o si
 los necesitas para instalar)&lt;ul&gt;
@@ -61,8 +61,8 @@ reproducir música&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Lo bueno de este(os) theme(s) es que en ambos UI (default y columns) se
 usan los mismos plugins (o algo asi).&lt;/p&gt;
-&lt;h2 id="instalacion"&gt;Instalación
-&lt;/h2&gt;&lt;p&gt;Primero las configuraciones, cosa de que no tengas que poner a mano la
+&lt;h2 id="instalacion"&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;Primero las configuraciones, cosa de que no tengas que poner a mano la
 gran mayoria de colores. Los archivos de esa carpeta ponerlos en la
 carpeta &lt;code&gt;configuration&lt;/code&gt;: si tenes foobar portable, esta dentro de esa
 carpeta. Si tenes el instalado, vas a &lt;code&gt;%appdata%\\foobar2000&lt;/code&gt; (Pro Tip:
@@ -80,8 +80,8 @@ que mas te guste.&lt;/p&gt;
 cambiar, editas la columna.&lt;/p&gt;
 &lt;p&gt;También podes editar la columna de duración para que te muestre como
 quieras. Yo tengo tiempo transcurrido - tiempo total.&lt;/p&gt;
-&lt;h2 id="screenshots"&gt;Screenshots
-&lt;/h2&gt;&lt;p&gt;Veamos primero el theme en la UI default:&lt;/p&gt;
+&lt;h2 id="screenshots"&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;Veamos primero el theme en la UI default:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Playlist de foobar2000 con Default UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_dui01.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Librería de foobar2000 (facets) con Default UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_dui02.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Nada mal para ser la vista default con sus limitaciones (como la falta
@@ -98,8 +98,8 @@ lleva a los albums -&amp;gt; &lt;kbd&gt;doble click&lt;/kbd&gt; -&amp;gt; lleva 
 &lt;kbd&gt;doble click&lt;/kbd&gt; sobre los headers. Todo esto se puede configurar. La idea es
 que cuando te lista los artistas, te muestre las fotos de los artistas
 pero todavia no tengo y quedo asi =P.&lt;/p&gt;
-&lt;h2 id="a-tener-en-cuenta"&gt;A tener en cuenta
-&lt;/h2&gt;&lt;p&gt;Los screenshots son en base a MI configuracion. Las estrellitas que
+&lt;h2 id="a-tener-en-cuenta"&gt;A tener en cuenta&lt;/h2&gt;
+&lt;p&gt;Los screenshots son en base a MI configuracion. Las estrellitas que
 estan en el status bar (abajo) no se te van a mostrar porque uso un
 plugin para estadisticas (y se toman de ahi, no hice el &lt;code&gt;if&lt;/code&gt; para ver si
 existe pero las podes sustituir o dejar el signo de pregunta).&lt;/p&gt;

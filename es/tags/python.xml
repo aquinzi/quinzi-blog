@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (python)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/python.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Sun, 12 Jan 2014 15:09:43 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>De Pelican a Nikola (tutorial)</title><link>http://blog.quinzi.com.ar/./es/pelican-nikola/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (python)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/python.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 14 Jan 2014 14:18:12 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>De Pelican a Nikola (tutorial)</title><link>http://blog.quinzi.com.ar/./es/pelican-nikola/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/pelican-nikola/#acrylamid"&gt;Acrylamid&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/pelican-nikola/#nikola"&gt;Nikola&lt;/a&gt;&lt;/li&gt;
@@ -25,8 +25,8 @@
 &lt;/div&gt;
 &lt;p&gt;Cuando pensaba en mover mi blog a este nuevo dominio, pensé en usar &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; como conversor&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/pelican-nikola/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;; incluso creé &lt;a href="http://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; para eso. Pero después tuve los "problemas" (ok, estaba vaga) de RSS, categorias, tags, index, etc. y lo dejé.&lt;/p&gt;
 &lt;p&gt;En un principio pensé en &lt;a href="link://slug/wordpress-to-pelican"&gt;seguir usando Pelican&lt;/a&gt; ya que es &lt;a href="http://docs.getpelican.com/"&gt;fácil y personalizable&lt;/a&gt; aunque no tuviera soporte para Pandoc&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/pelican-nikola/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;. Pero mas tarde me daría vagancia pasarme a otro sistema (no que postee mucho, pero &lt;strong&gt;me encanta el markdown de Pandoc&lt;/strong&gt;).&lt;/p&gt;
-&lt;h2 id="acrylamid"&gt;Acrylamid
-&lt;/h2&gt;&lt;p&gt;En mis búsquedas encontré &lt;a href="http://posativ.org/acrylamid/index.html"&gt;Acrylamid&lt;/a&gt; que se ve bastante bien. Es como el &lt;em&gt;blog generator&lt;/em&gt; de programadores/hackers, donde podés hacer varias cosas. También tiene &lt;em&gt;incremental builds&lt;/em&gt; así no regenera todo desde cero.&lt;/p&gt;
+&lt;h2 id="acrylamid"&gt;Acrylamid&lt;/h2&gt;
+&lt;p&gt;En mis búsquedas encontré &lt;a href="http://posativ.org/acrylamid/index.html"&gt;Acrylamid&lt;/a&gt; que se ve bastante bien. Es como el &lt;em&gt;blog generator&lt;/em&gt; de programadores/hackers, donde podés hacer varias cosas. También tiene &lt;em&gt;incremental builds&lt;/em&gt; así no regenera todo desde cero.&lt;/p&gt;
 &lt;p&gt;Otras cosas incluyen:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;diferentes meta tags: MultiMarkdown (como Pelican), YAML o rst.&lt;/li&gt;
@@ -44,8 +44,8 @@
 &lt;/ul&gt;
 &lt;p&gt;No tiene categorias (pero se pueden &lt;a href="https://github.com/posativ/acrylamid/issues/121"&gt;usar vistas&lt;/a&gt;), galerias automáticas (pero se puede usar sintaxis de templates en un post, &lt;a href="http://posativ.org/acrylamid/howtos.html#image-gallery"&gt;asi que está cubierto&lt;/a&gt;) y la &lt;a href="http://posativ.org/acrylamid/theming.html"&gt;creación de themes&lt;/a&gt; no es tan automática: tenés que listar todos los archivos que usa tu theme en un archivo &lt;code&gt;__init.py&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Quería usar Acrylamid, pero era medio "complicado" para setearlo en Windows si querías usar &lt;a href="https://github.com/ahupp/python-magic"&gt;python-magic&lt;/a&gt; (tuve problemas con eso). Salteé esa parte, pero me seguía dando error con los &lt;em&gt;locales&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id="nikola"&gt;Nikola
-&lt;/h2&gt;&lt;p&gt;Después recordé que una vez me había cruzado con &lt;a href="http://getnikola.com/"&gt;Nikola&lt;/a&gt;, originalmente creado por un argentino, asi que tenía que probarlo :P.&lt;/p&gt;
+&lt;h2 id="nikola"&gt;Nikola&lt;/h2&gt;
+&lt;p&gt;Después recordé que una vez me había cruzado con &lt;a href="http://getnikola.com/"&gt;Nikola&lt;/a&gt;, originalmente creado por un argentino, asi que tenía que probarlo :P.&lt;/p&gt;
 &lt;p&gt;No es tan &lt;em&gt;feature-rich&lt;/em&gt; (o de fácil personalización) que &lt;a href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt;, y la documentación tampoco es tan "completa": hay un par de cosas que se encuentran en los Google Groups, GitHub o mirando en el código. Tampoco no es tan &lt;em&gt;feature-cool&lt;/em&gt; como &lt;a href="http://posativ.org/acrylamid/index.html"&gt;Acrylamid&lt;/a&gt;. De todas formas, creo que va en buen camino y es el mas nuevo de los tres.&lt;/p&gt;
 &lt;p&gt;Tiene cosas copadas:&lt;/p&gt;
 &lt;ul&gt;
@@ -67,14 +67,14 @@
 &lt;li&gt;soporte para raw post/página (mostrar el código del post en texto plano)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Los drafts se aplican como un "tag" en el metadata de tags y se publican por default. No tiene soporte de color en el output de la línea de comandos (pero se está viendo) y lo de "mostrar el código del post y copialo" está habilitado por default.&lt;/p&gt;
-&lt;h2 id="la-mudanza"&gt;La mudanza
-&lt;h3 id="instalar-nikola"&gt;Instalar Nikola
-&lt;/h3&gt;&lt;/h2&gt;&lt;p&gt;Se &lt;a href="http://getnikola.com/"&gt;descarga Nikola&lt;/a&gt; e instala. Por default, usa &lt;a href="http://makotemplates.org"&gt;Mako&lt;/a&gt; como &lt;em&gt;template engine&lt;/em&gt;, pero tiene soporte para &lt;a href="http://jinja.pocoo.org/"&gt;Jinja2&lt;/a&gt;. Se puede leer las &lt;a href="http://getnikola.com/handbook.html#installing-nikola"&gt;dependencias en la documentación&lt;/a&gt; y si queres podes &lt;code&gt;pip install -r requirements.txt&lt;/code&gt; o &lt;code&gt;requirements-full.txt&lt;/code&gt; para toda la cosa.&lt;/p&gt;
+&lt;h2 id="la-mudanza"&gt;La mudanza&lt;/h2&gt;
+&lt;h3 id="instalar-nikola"&gt;Instalar Nikola&lt;/h3&gt;
+&lt;p&gt;Se &lt;a href="http://getnikola.com/"&gt;descarga Nikola&lt;/a&gt; e instala. Por default, usa &lt;a href="http://makotemplates.org"&gt;Mako&lt;/a&gt; como &lt;em&gt;template engine&lt;/em&gt;, pero tiene soporte para &lt;a href="http://jinja.pocoo.org/"&gt;Jinja2&lt;/a&gt;. Se puede leer las &lt;a href="http://getnikola.com/handbook.html#installing-nikola"&gt;dependencias en la documentación&lt;/a&gt; y si queres podes &lt;code&gt;pip install -r requirements.txt&lt;/code&gt; o &lt;code&gt;requirements-full.txt&lt;/code&gt; para toda la cosa.&lt;/p&gt;
 &lt;p&gt;Si estás en Windows, debés descargar e instalar las versiones compiladas de lxml y pillow. Podés buscarlos en sus &lt;a href="https://pypi.python.org/"&gt;PyPI&lt;/a&gt; o ir a &lt;a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/"&gt;http://www.lfd.uci.edu/~gohlke/pythonlibs/&lt;/a&gt;. Acordate de descargar e instalar dependiendo a tu versión y arquitectura de Python (32 o 64 bits).&lt;/p&gt;
-&lt;h3 id="iniciar"&gt;Iniciar
-&lt;/h3&gt;&lt;p&gt;Para iniciar o crear un blog con las opciones default y estructura de carpetas, ejecutar &lt;code&gt;nikola init path/to/mysite&lt;/code&gt; o, si queres algo de contenido, &lt;code&gt;nikola init --demo path/to/mysite&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id="convertir-metadata"&gt;Convertir metadata
-&lt;/h3&gt;&lt;p&gt;Pelican usa el estilo de metadata de &lt;a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide"&gt;Multimarkdown&lt;/a&gt; mientras que Nikola usas algo similar: el mismo sintaxis pero con &lt;code&gt;..&lt;/code&gt; al frente.&lt;/p&gt;
+&lt;h3 id="iniciar"&gt;Iniciar&lt;/h3&gt;
+&lt;p&gt;Para iniciar o crear un blog con las opciones default y estructura de carpetas, ejecutar &lt;code&gt;nikola init path/to/mysite&lt;/code&gt; o, si queres algo de contenido, &lt;code&gt;nikola init --demo path/to/mysite&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="convertir-metadata"&gt;Convertir metadata&lt;/h3&gt;
+&lt;p&gt;Pelican usa el estilo de metadata de &lt;a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide"&gt;Multimarkdown&lt;/a&gt; mientras que Nikola usas algo similar: el mismo sintaxis pero con &lt;code&gt;..&lt;/code&gt; al frente.&lt;/p&gt;
 &lt;p&gt;Un ejemplo sería:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;Title: nice title! :D      # Pelican
 .. title: nice title! :D   # Nikola
@@ -86,13 +86,13 @@
 &lt;p class="admonition-title"&gt;Note&lt;/p&gt;
 &lt;p&gt;Nikola no tiene/ve el meta key "modified" internamente, pero se puede tener como uno personalizado. Solo se accede diferente en los themes.&lt;/p&gt;
 &lt;/div&gt;
-&lt;h3 id="traducciones"&gt;Traducciones
-&lt;/h3&gt;&lt;p&gt;Si tenes posts o páginas traducidas tenés que prestar atención: los sistemas entre los generadores son distintos. En Pelican tenés el mismo slug o título en los posts, y diferentes nombres de archivos (creo); Nikola usa los nombres de archivos.&lt;/p&gt;
+&lt;h3 id="traducciones"&gt;Traducciones&lt;/h3&gt;
+&lt;p&gt;Si tenes posts o páginas traducidas tenés que prestar atención: los sistemas entre los generadores son distintos. En Pelican tenés el mismo slug o título en los posts, y diferentes nombres de archivos (creo); Nikola usa los nombres de archivos.&lt;/p&gt;
 &lt;p&gt;La facilidad de esto depende de tu setup, pero tenes que terminar con algo como: &lt;code&gt;nicefile.md&lt;/code&gt; para el post en el idioma default, y &lt;code&gt;nicefile.md.es&lt;/code&gt; (contenido en español) para el traducido.&lt;/p&gt;
 &lt;p&gt;Lo bueno de esto es que no duplicas el meta. Por ejemplo, creas el meta key "tags" en el idioma default pero no lo especficas en el traducido. Así al actualizar, lo haces solo en el "master" o "padre" y el "hijo" solo lo copia.&lt;/p&gt;
 &lt;p&gt;Si no queres tener metadata duplicada en los archivos, y después de que renombraste y convertiste los archivos, podes correr &lt;a href="https://gist.github.com/eikiu/8377186"&gt;este script de python&lt;/a&gt; para eliminarlos. Recordá que solo es opcional (o por lo menos no rompió mi setup).&lt;/p&gt;
-&lt;h3 id="rutas-de-imagenes"&gt;Rutas de imágenes
-&lt;/h3&gt;&lt;p&gt;La sintaxis también es diferente pero se puede hacer facilmente con &lt;em&gt;search and replace&lt;/em&gt;. Podés usar lo que quieras, como grep. Si estas en Windows, recomiendo &lt;a href="http://stefanstools.sourceforge.net/grepWin.html"&gt;grepWin&lt;/a&gt; si queres algo con GUI. Esto es depende de como tengas los archivos pero yo hice algo asi:&lt;/p&gt;
+&lt;h3 id="rutas-de-imagenes"&gt;Rutas de imágenes&lt;/h3&gt;
+&lt;p&gt;La sintaxis también es diferente pero se puede hacer facilmente con &lt;em&gt;search and replace&lt;/em&gt;. Podés usar lo que quieras, como grep. Si estas en Windows, recomiendo &lt;a href="http://stefanstools.sourceforge.net/grepWin.html"&gt;grepWin&lt;/a&gt; si queres algo con GUI. Esto es depende de como tengas los archivos pero yo hice algo asi:&lt;/p&gt;
 &lt;p&gt;Sintaxis markdown:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Search &lt;code&gt;(|filename|../../images/&lt;/code&gt; &lt;/li&gt;
@@ -103,26 +103,26 @@
 &lt;li&gt;Search &lt;code&gt;&amp;lt;img src="../../static/images/&lt;/code&gt; &lt;/li&gt;
 &lt;li&gt;Replace &lt;code&gt;&amp;lt;img src="../images/&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="links-entre-posts"&gt;Links entre posts
-&lt;/h3&gt;&lt;p&gt;Otra vez, es diferente en los sistemas y puede ser o muy fácil o muy dificil dependiendo de tu organización: Pelican usa los nombres de archivos para linkear contenido, mientras que Nikola usa el slug del post.&lt;/p&gt;
+&lt;h3 id="links-entre-posts"&gt;Links entre posts&lt;/h3&gt;
+&lt;p&gt;Otra vez, es diferente en los sistemas y puede ser o muy fácil o muy dificil dependiendo de tu organización: Pelican usa los nombres de archivos para linkear contenido, mientras que Nikola usa el slug del post.&lt;/p&gt;
 &lt;p&gt;Si tenes el nombre de archivo como el slug (o muy similar) podes usar &lt;em&gt;search and replace&lt;/em&gt;, como:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Search: &lt;code&gt;\(\|filename\|(.+)\.md\)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Replace: &lt;code&gt;(link://slug/$1)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Recomiendo hacerlo seguido de las imágenes, y tenes que checkear (posiblemente a mano) después.&lt;/p&gt;
-&lt;h3 id="sintaxis-de-plugins"&gt;Sintaxis de Plugins
-&lt;/h3&gt;&lt;p&gt;No usé muchos plugins que usaran sintaxis en mis posts, solo uno: &lt;a href="http://quinzi.com.ar/projects/interlinks"&gt;interlinks&lt;/a&gt;. Esto fue fácil de hacer con &lt;em&gt;search and replace&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id="otras-cosas-de-nikola"&gt;Otras cosas de Nikola
-&lt;h3 id="localizacion-en-windows"&gt;Localización en Windows
-&lt;/h3&gt;&lt;/h2&gt;&lt;p&gt;Si vas a usar la internalización en Windows, tenes que configurar los &lt;code&gt;LOCALES&lt;/code&gt; como (ejemplo):&lt;/p&gt;
+&lt;h3 id="sintaxis-de-plugins"&gt;Sintaxis de Plugins&lt;/h3&gt;
+&lt;p&gt;No usé muchos plugins que usaran sintaxis en mis posts, solo uno: &lt;a href="http://quinzi.com.ar/projects/interlinks"&gt;interlinks&lt;/a&gt;. Esto fue fácil de hacer con &lt;em&gt;search and replace&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="otras-cosas-de-nikola"&gt;Otras cosas de Nikola&lt;/h2&gt;
+&lt;h3 id="localizacion-en-windows"&gt;Localización en Windows&lt;/h3&gt;
+&lt;p&gt;Si vas a usar la internalización en Windows, tenes que configurar los &lt;code&gt;LOCALES&lt;/code&gt; como (ejemplo):&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;LOCALES = {'en' : 'English_United States', 'es' : 'Spanish_Argentina'}
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;No importa tu idioma en Windows, funciona tanto en (Windows) inglés como español.&lt;/p&gt;
-&lt;h3 id="linkear-internamente"&gt;Linkear internamente
-&lt;/h3&gt;&lt;p&gt;Para linkear a otro post, tag, archivo, etc.&lt;/p&gt;
+&lt;h3 id="linkear-internamente"&gt;Linkear internamente&lt;/h3&gt;
+&lt;p&gt;Para linkear a otro post, tag, archivo, etc.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;galeria: &lt;code&gt;link://gallery/gallery_name&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;index de tags: &lt;code&gt;link://tag_index&lt;/code&gt;&lt;/li&gt;
@@ -135,14 +135,14 @@
 &lt;li&gt;feed del blog: &lt;code&gt;link://rss&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;otro post: &lt;code&gt;link://slug/the-nice-slug&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="pandoc"&gt;Pandoc
-&lt;/h3&gt;&lt;p&gt;Como Pandoc usa la extensión para reconocer el input, tenes que configurar esa extensión en &lt;code&gt;COMPILERS&lt;/code&gt; en la configuración. Si no se encuentra, usa Markdown como default.&lt;/p&gt;
+&lt;h3 id="pandoc"&gt;Pandoc&lt;/h3&gt;
+&lt;p&gt;Como Pandoc usa la extensión para reconocer el input, tenes que configurar esa extensión en &lt;code&gt;COMPILERS&lt;/code&gt; en la configuración. Si no se encuentra, usa Markdown como default.&lt;/p&gt;
 &lt;p&gt;Mientras que funcionó para mi usando markdown, no lo hizo con otros, como Mediawiki. No sé por qué.&lt;/p&gt;
-&lt;h3 id="carpetas-y-subcarpetas-de-posts"&gt;Carpetas y subcarpetas de posts
-&lt;/h3&gt;&lt;p&gt;&lt;a href="http://getnikola.com/"&gt;Nikola&lt;/a&gt; mantiene la estructura de carpetas y subcarpetas. Si tenés &lt;code&gt;file_g.txt&lt;/code&gt; dentro de &lt;code&gt;carpeta_abc&lt;/code&gt;, esta estructura se mantiene en el output. Puede ser bueno si lo queres usar como categorías en el output. No hay manera de configurarlo.&lt;/p&gt;
+&lt;h3 id="carpetas-y-subcarpetas-de-posts"&gt;Carpetas y subcarpetas de posts&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://getnikola.com/"&gt;Nikola&lt;/a&gt; mantiene la estructura de carpetas y subcarpetas. Si tenés &lt;code&gt;file_g.txt&lt;/code&gt; dentro de &lt;code&gt;carpeta_abc&lt;/code&gt;, esta estructura se mantiene en el output. Puede ser bueno si lo queres usar como categorías en el output. No hay manera de configurarlo.&lt;/p&gt;
 &lt;p&gt;En &lt;a href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt; podés tener varias subcarpetas y organizalos como vos quieras, y el output se puede configurar (por default, por fecha) como quieras.&lt;/p&gt;
-&lt;h2 id="testeando"&gt;Testeando
-&lt;/h2&gt;&lt;p&gt;Inicialmente los posts van en una carpeta &lt;code&gt;posts&lt;/code&gt; en el root y las páginas en &lt;code&gt;story&lt;/code&gt;. La carpeta de imágenes podría en &lt;code&gt;files&lt;/code&gt;. Todo esto se puede configurar.&lt;/p&gt;
+&lt;h2 id="testeando"&gt;Testeando&lt;/h2&gt;
+&lt;p&gt;Inicialmente los posts van en una carpeta &lt;code&gt;posts&lt;/code&gt; en el root y las páginas en &lt;code&gt;story&lt;/code&gt;. La carpeta de imágenes podría en &lt;code&gt;files&lt;/code&gt;. Todo esto se puede configurar.&lt;/p&gt;
 &lt;p&gt;Después de configurar el &lt;code&gt;conf.py&lt;/code&gt;, que esta muy bien comentado, se puede probar. &lt;/p&gt;
 &lt;p&gt;Crear el site con &lt;code&gt;nikola build&lt;/code&gt;. Después se puede abrir los archivos al navegador o usar un local server con: &lt;code&gt;nikola serve&lt;/code&gt; y yendo a &lt;code&gt;http://127.0.0.1:8000&lt;/code&gt;.&lt;/p&gt;
 &lt;div class="footnote"&gt;
@@ -157,13 +157,13 @@
 &lt;/ol&gt;
 &lt;/div&gt;</description><category>pelican</category><category>nikola</category><category>static</category><category>python</category><category>windows</category><guid>http://blog.quinzi.com.ar/./es/pelican-nikola/</guid><pubDate>Sat, 11 Jan 2014 00:00:00 GMT</pubDate></item><item><title>pandy</title><link>http://blog.quinzi.com.ar/./es/pandy/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; es un wrapper para &lt;a href="http://johnmacfarlane.net/pandoc/"&gt;pandoc&lt;/a&gt; + cositas copadas (si usas markdown -&amp;gt; html)&lt;/p&gt;
 &lt;p&gt;Basicamente toma un archivo/carpeta, de qué convertir y a qué convertir, y lo corre por pandoc.&lt;/p&gt;
-&lt;h2 id="uso"&gt;Uso
-&lt;/h2&gt;&lt;p&gt;Para usar el script, solo llamalo con algo asi:&lt;/p&gt;
+&lt;h2 id="uso"&gt;Uso&lt;/h2&gt;
+&lt;p&gt;Para usar el script, solo llamalo con algo asi:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;pandy source format_from format/s_to [other options]
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="caracteristicas"&gt;Caracteristicas
+&lt;h2 id="caracteristicas"&gt;Caracteristicas&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Sintaxis un porquito mas facil para los comandos de pandoc&lt;/li&gt;
 &lt;li&gt;Carpeta de output manteniendo o no la estructura&lt;/li&gt;
@@ -176,7 +176,7 @@
 &lt;li&gt;Si usas markdown y convertis a HTML hay cositas lindas para vos: abbreviations (de las verdaderas, no como esas que son ignoradas por pandoc) y admonitions.&lt;/li&gt;
 &lt;li&gt;"WikiLinks" para tu index!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/h2&gt;&lt;p&gt;Para más información y explicación, ir a la &lt;a href="https://quinzi.com.ar/projects/pandy"&gt;página de proyecto de pandy&lt;/a&gt;.&lt;/p&gt;</description><category>python</category><category>code</category><category>pandoc</category><category>markdown</category><guid>http://blog.quinzi.com.ar/./es/pandy/</guid><pubDate>Wed, 11 Dec 2013 00:00:00 GMT</pubDate></item><item><title>svnlog: make changelog from SVN</title><link>http://blog.quinzi.com.ar/./es/svnlog/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; is a python script to create a changelog from a repository log.&lt;/p&gt;
+&lt;p&gt;Para más información y explicación, ir a la &lt;a href="https://quinzi.com.ar/projects/pandy"&gt;página de proyecto de pandy&lt;/a&gt;.&lt;/p&gt;</description><category>python</category><category>code</category><category>pandoc</category><category>markdown</category><guid>http://blog.quinzi.com.ar/./es/pandy/</guid><pubDate>Wed, 11 Dec 2013 00:00:00 GMT</pubDate></item><item><title>svnlog: make changelog from SVN</title><link>http://blog.quinzi.com.ar/./es/svnlog/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; is a python script to create a changelog from a repository log.&lt;/p&gt;
 &lt;p&gt;Examples of output (default):&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;2013-11-25:
     changed arguments (better handling)
@@ -223,7 +223,7 @@
 &lt;p&gt;pymd ahora esta en &lt;a href="https://pypi.python.org/pypi/pymd"&gt;PyPI&lt;/a&gt;. Eso significa que lo podes instalar como &lt;code&gt;pip install pymd&lt;/code&gt; :)&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/pymd"&gt;pymd&lt;/a&gt; es un wrapper para la librería &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python Markdown&lt;/a&gt;, basicamente te permite tener un HTML completo a comparación de lo que te tira la librería.&lt;/p&gt;
-&lt;h2 id="caracteristicas"&gt;Características
+&lt;h2 id="caracteristicas"&gt;Características&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Proceso en batch (en una carpeta o usando .list) con extensiones .md, .txt o .markdown&lt;/li&gt;
 &lt;li&gt;Especificar una carpeta de resultados/output (con creación automática)&lt;/li&gt;
@@ -234,7 +234,7 @@
 &lt;li&gt;Wiki links: &lt;code&gt;[](file|path) -&amp;gt; [title linked file](output_path)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Hecho con amor &amp;lt;3&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/h2&gt;&lt;p&gt;Más información y ejemplos en la &lt;a href="https://quinzi.com.ar/projects/pymd"&gt;página de proyecto de pymd&lt;/a&gt;&lt;/p&gt;</description><category>python</category><category>code</category><category>markdown</category><guid>http://blog.quinzi.com.ar/./es/pymd/</guid><pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate></item><item><title>proDO: super simple bug/issue tracker</title><link>http://blog.quinzi.com.ar/./es/prodo/</link><description>&lt;div class="toc"&gt;
+&lt;p&gt;Más información y ejemplos en la &lt;a href="https://quinzi.com.ar/projects/pymd"&gt;página de proyecto de pymd&lt;/a&gt;&lt;/p&gt;</description><category>python</category><category>code</category><category>markdown</category><guid>http://blog.quinzi.com.ar/./es/pymd/</guid><pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate></item><item><title>proDO: super simple bug/issue tracker</title><link>http://blog.quinzi.com.ar/./es/prodo/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/prodo/#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/prodo/#script"&gt;Say hi to proDO&lt;/a&gt;&lt;/li&gt;
@@ -244,8 +244,8 @@
 &lt;p class="admonition-title"&gt;Atención&lt;/p&gt;
 &lt;p&gt;Si no te interesa la historia del por qué se escribió el script y/o no queres saber sobre programitas, adelantate hasta &lt;a href="http://blog.quinzi.com.ar/./es/prodo/#script"&gt;acá&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;h2 id="background"&gt;Background
-&lt;/h2&gt;&lt;p&gt;Cuando desarrollas o escribis código (o palabras, por qué no) necesitas algún tipo de bug/issue tracker. Eso es normal para proyectos grandes o con varias personas, pero al ser un solo individuo o el proyecto es chico, todas las opciones son como mucho.&lt;/p&gt;
+&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;Cuando desarrollas o escribis código (o palabras, por qué no) necesitas algún tipo de bug/issue tracker. Eso es normal para proyectos grandes o con varias personas, pero al ser un solo individuo o el proyecto es chico, todas las opciones son como mucho.&lt;/p&gt;
 &lt;p&gt;A algunos no les importa e instalan grandes bug trackers, otros usan algo mas simple. Otros vamos por la old school y escribimos en papel. Otras escribimos en un .txt, que puede ser un simple archivo o con esos ToDo.txt/&lt;a href="http://taskwarrior.org/"&gt;taskwarrior&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Si el proyecto es medianamente grande (más grande que un mero script), escribo en papel. Si es algo simple/un script, anoto las cosas dentro del archivo, como varias personas.&lt;/p&gt;
 &lt;p&gt;El problema que tengo es que me gusta listar todas las cositas esas con el numero de linea y/o click que me lleve a tal. No todos los editores lo hacen por default (creo que las grandes IDEs), seguro hay un plugin que ni ganas de configurar. Se puede hacer una búsqueda, que es lo mas cercano a lo que quiero.&lt;/p&gt;
@@ -261,8 +261,8 @@
 &lt;p&gt;Y &lt;a href="http://stefanstools.sourceforge.net/grepWin.html"&gt;grepWin&lt;/a&gt;, donde hay que tener cuidado de clickear solo en "Search" y seleccionar la opción de "Content"&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Resultados de búsqueda de grepWin" src="http://blog.quinzi.com.ar/images/2013/search_grepWin.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Este no estaba tan mal, pero eso de abrir programa &amp;gt; rellenar datos no me convencia mucho. Por lineas de comando solo podes poner el path y qué buscar (que no esta mal) pero quiero que, por lo menos, esté seleccionado el "Content".&lt;/p&gt;
-&lt;h2 id="script"&gt;Say hi to proDO
-&lt;/h2&gt;&lt;p&gt;Como estoy aprendiendo Python y mas que nada lo estoy usando para hacer varios scripts&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; y reemplazar/dejar de dar vueltas con los batch, me decidí a hacer el mío.&lt;/p&gt;
+&lt;h2 id="script"&gt;Say hi to proDO&lt;/h2&gt;
+&lt;p&gt;Como estoy aprendiendo Python y mas que nada lo estoy usando para hacer varios scripts&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; y reemplazar/dejar de dar vueltas con los batch, me decidí a hacer el mío.&lt;/p&gt;
 &lt;p&gt;Con los ejemplos anteriores, queda asi:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Resultados de búsqueda con proDO" src="http://blog.quinzi.com.ar/images/2013/search_nocolor.png"&gt;&lt;/p&gt;
 &lt;p&gt;Pero si tenes &lt;a href="https://pypi.python.org/pypi/colorama"&gt;colorama&lt;/a&gt; instalado queda asi (con mas onda):&lt;/p&gt;
@@ -330,16 +330,16 @@
 &lt;li&gt;estoy aprendiendo python&lt;/li&gt;
 &lt;li&gt;ya llegué&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id="presentacion"&gt;Presentación
-&lt;/h2&gt;&lt;p&gt;Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.&lt;/p&gt;
+&lt;h2 id="presentacion"&gt;Presentación&lt;/h2&gt;
+&lt;p&gt;Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.&lt;/p&gt;
 &lt;p&gt;Todo iba bien, hasta que los de Wordpress decidieron &lt;strong&gt;abrirse mas como CMS&lt;/strong&gt; que como sistema de blogging. Lo entiendo, es natural. Bien. No me gusta. No se si porque yo asocio Wordpress con blog y no un CMS completo a lo Joomla! o Drupal, o porque si las cosas en el backend estan mal organizadas para ser CMS/orientadas a blog, o si es mi conexión que no me deja disfrutar al máximo o qué. &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Por temas de conexión y que el editor de Wordpress apesta&lt;/strong&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, añadido a tener una wiki en localhost y encariñarme con los &lt;a href="http://en.wikipedia.org/wiki/Lightweight_markup_languages"&gt;LML&lt;/a&gt;, &lt;strong&gt;escribía los posts en markdown&lt;/strong&gt; (que antes no me caía bien, hasta que empecé a usar &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt;), los pasaba a HTML, hacia search &amp;amp; replace para las imágenes (aunque se puede obviar si se suben primero las imágenes), y &lt;strong&gt;recien ahí lo pasaba a Wordpress&lt;/strong&gt;. No es lo mas cómodo del mundo, pero servía.&lt;/p&gt;
 &lt;p&gt;Por alguna razón que ahora no recuerdo, empecé a buscar (o encontré de casualidad) scripts que pasan &lt;code&gt;.txts&lt;/code&gt; con LML a html. Eso me hizo pensar: "hey, capaz me puede servir". Después de descartar un par que no me servían (estan apuntados a los usuarios de Linux y para usarlos en Windows era mucho lio), me decanté por &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Pelican es un script de Python que toma archivos de texto con markdown, reStructuredText o AsciiDoc, los pasa por un theme, y te genera un blog estático/html. Puro y duro, a la vieja escuela. Con categorias, tags, rss, páginas. Vamos, lo básico para un blog.&lt;/p&gt;
 &lt;p&gt;Yo lo estoy hosteando en &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;Dropbox&lt;/a&gt;, después de decidir que subir las cosas por FTP era bastante molesto &lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;/las únicas razones por la que quiería un host apache era por el &lt;code&gt;.htaccess&lt;/code&gt; (el rewrite) para hacer magia pero no valía mucho hacer eso para mi humilde blog. &lt;strong&gt;También lo podes hostear en GitHub&lt;/strong&gt; si ya tenes cuenta ahi y no te molesta hacer commits. CAPAZ que algun día lo pase ahi (tengo como pendiente GitHub).&lt;/p&gt;
 &lt;p&gt;Si solo te interesa hacer la parte de archivos de texto en Dropbox SIN generar html y demas, tenes opciones como &lt;a href="http://calepin.co/"&gt;Calepin&lt;/a&gt; y &lt;a href="http://scriptogr.am/"&gt;scriptogr.am&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="instalacion-en-windows"&gt;Instalación en Windows
-&lt;/h2&gt;&lt;p&gt;Porque en Linux este tipo de cosas es mas fácil.&lt;/p&gt;
+&lt;h2 id="instalacion-en-windows"&gt;Instalación en Windows&lt;/h2&gt;
+&lt;p&gt;Porque en Linux este tipo de cosas es mas fácil.&lt;/p&gt;
 &lt;p&gt;Por ahora, &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt; corre bajo &lt;strong&gt;Python 2.7&lt;/strong&gt;, hay un fork para que ande en Python 3 pero no lo pude hacer andar (tampoco probé mucho).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: yo explico como hacer esto manualmente, pero se puede instalar con &lt;code&gt;pip&lt;/code&gt;.&lt;/p&gt;
 &lt;ol&gt;
@@ -359,21 +359,21 @@
 &lt;/li&gt;
 &lt;li&gt;Y el &lt;a href="http://pygments.org/"&gt;pygments&lt;/a&gt; para el syntax highlighting&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id="configuracion"&gt;Configuración
-&lt;/h2&gt;&lt;p&gt;Se crea un &lt;code&gt;config.py&lt;/code&gt; para las configuración siguiendo &lt;a href="http://pelican.readthedocs.org/en/latest/settings.html"&gt;las variables en los docs&lt;/a&gt; (o usas como base las que ya te vienen en el archivo)&lt;/p&gt;
+&lt;h2 id="configuracion"&gt;Configuración&lt;/h2&gt;
+&lt;p&gt;Se crea un &lt;code&gt;config.py&lt;/code&gt; para las configuración siguiendo &lt;a href="http://pelican.readthedocs.org/en/latest/settings.html"&gt;las variables en los docs&lt;/a&gt; (o usas como base las que ya te vienen en el archivo)&lt;/p&gt;
 &lt;p&gt;Si usas Markdown, vas a querer usar los &lt;a href="http://packages.python.org/Markdown/extensions"&gt;markdown extra&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="andando"&gt;Andando
-&lt;/h2&gt;&lt;p&gt;Crear un post con el &lt;a href="http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican"&gt;metadata correspondiente&lt;/a&gt;. El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.&lt;/p&gt;
+&lt;h2 id="andando"&gt;Andando&lt;/h2&gt;
+&lt;p&gt;Crear un post con el &lt;a href="http://pelican.readthedocs.org/en/latest/getting_started.html#writing-articles-using-pelican"&gt;metadata correspondiente&lt;/a&gt;. El básico es el titulo, y si estas en Windows necesitas poner si o si la fecha.&lt;/p&gt;
 &lt;p&gt;Ir a la carpeta root de tu Pelican, abrir una linea de comandos y poner: &lt;code&gt;[Python_path]\Scripts\pelican.exe input/ -s config.py&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: para probar, podes obviar la parte de configuración.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Nota 2&lt;/strong&gt;: si se corre en la carpeta del contenido, para el path se puede usar &lt;code&gt;.&lt;/code&gt; (punto)&lt;/p&gt;
 &lt;p&gt;Yo lo puse en un script/bat cosa de no escribir eso todo el tiempo.&lt;/p&gt;
-&lt;h2 id="themes"&gt;Themes
-&lt;/h2&gt;&lt;p&gt;Para los themes/templates, Pelican usa &lt;a href="http://jinja.pocoo.org/"&gt;Jinja2&lt;/a&gt;. Nunca usé un &lt;em&gt;template engine&lt;/em&gt;, siempre lo tildan de complicados y demas, pero este anduvo bien. Es fácil, tan fácil como crear vos un mini-template "engine" en php.&lt;/p&gt;
+&lt;h2 id="themes"&gt;Themes&lt;/h2&gt;
+&lt;p&gt;Para los themes/templates, Pelican usa &lt;a href="http://jinja.pocoo.org/"&gt;Jinja2&lt;/a&gt;. Nunca usé un &lt;em&gt;template engine&lt;/em&gt;, siempre lo tildan de complicados y demas, pero este anduvo bien. Es fácil, tan fácil como crear vos un mini-template "engine" en php.&lt;/p&gt;
 &lt;p&gt;Podes &lt;a href="http://pelican.readthedocs.org/en/latest/themes.html"&gt;crear&lt;/a&gt; los tuyos, podes bajar otros &lt;a href="https://github.com/getpelican/pelican-themes"&gt;manualmente&lt;/a&gt; o usar la &lt;a href="http://pelican.readthedocs.org/en/latest/pelican-themes.html"&gt;linea de comandos&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="migracion-wordpress-pelican"&gt;Migración Wordpress -&amp;gt; Pelican
-&lt;h3 id="posts-y-paginas"&gt;Posts y páginas
-&lt;/h3&gt;&lt;/h2&gt;&lt;p&gt;Pelican tiene un &lt;a href="http://docs.getpelican.com/en/latest/importer.html"&gt;conversor&lt;/a&gt;. Como yo lo necesité para Wordpress, me voy a centrar en ese. Necesitas:&lt;/p&gt;
+&lt;h2 id="migracion-wordpress-pelican"&gt;Migración Wordpress -&amp;gt; Pelican&lt;/h2&gt;
+&lt;h3 id="posts-y-paginas"&gt;Posts y páginas&lt;/h3&gt;
+&lt;p&gt;Pelican tiene un &lt;a href="http://docs.getpelican.com/en/latest/importer.html"&gt;conversor&lt;/a&gt;. Como yo lo necesité para Wordpress, me voy a centrar en ese. Necesitas:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.crummy.com/software/BeautifulSoup/#Download"&gt;BeautifulSoup-3.2.1&lt;/a&gt; (las 4.x no funcionan)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; (amo pandoc)&lt;/li&gt;
@@ -384,8 +384,8 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h3 id="imagenes"&gt;Imágenes
-&lt;/h3&gt;&lt;p&gt;Como paso de wordpress.com a Pelican, tengo que descargar las imágenes de alguna forma. Se puede mediante cositas guay como PageNest y similares, pero es mucho lio pensar un regex solo para descargarlas.&lt;/p&gt;
+&lt;h3 id="imagenes"&gt;Imágenes&lt;/h3&gt;
+&lt;p&gt;Como paso de wordpress.com a Pelican, tengo que descargar las imágenes de alguna forma. Se puede mediante cositas guay como PageNest y similares, pero es mucho lio pensar un regex solo para descargarlas.&lt;/p&gt;
 &lt;p&gt;Ya que tenemos el &lt;code&gt;.xml&lt;/code&gt; del export, podemos instalar un Wordpress en localhost (o hosteado en otra parte para hacer pruebas). Como tengo un Wordpress en localhost que hace años que no lo uso, tuve que eliminar todas las cosas que tenia antes (en &lt;kbd&gt;phpmyadmin &amp;gt; eliminar el contenido de las tablas/truncate&lt;/kbd&gt;), actualizarlo + actualizar base de datos + actualizar/instalar el plugin de import (que no viene como funcionalidad/core por alguna razón).&lt;/p&gt;
 &lt;p&gt;Una vez hecho eso, se va a &lt;kbd&gt;tools &amp;gt; import &amp;gt; wordpress &amp;gt; seleccionar archivo &amp;gt; linkear los autores &amp;gt; importar&lt;/kbd&gt; &amp;gt; esperar.&lt;/p&gt;
 &lt;p&gt;Y se espera.&lt;/p&gt;
@@ -398,18 +398,18 @@
 &lt;li&gt;las demás tienen este nombre: &lt;code&gt;[nombre orig]-300x225.jpg&lt;/code&gt; (donde el numero de tamaño + extension cambian). Esto se puede eliminar facilmente con un script que tengas a mano, o sino con buscadores estilo &lt;a href="http://voidtools.com/"&gt;Everything&lt;/a&gt; poniendo: &lt;code&gt;[path a las imagenes]\ *-*x*&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ahora solo queda hacer un search &amp;amp; replace para cambiar la url del estilo &lt;code&gt;http://[username].files.wordpress.com/[año]/[mes]&lt;/code&gt; a tu estructura actual.&lt;/p&gt;
-&lt;h3 id="categorias-y-tags"&gt;Categorías y tags
-&lt;/h3&gt;&lt;p&gt;Ojito con las categorias. Primero: al hacer un sistema simple, &lt;strong&gt;no tiene jerarquia de categorias&lt;/strong&gt; como Wordpress. Fijate como manejas eso. Segundo: &lt;strong&gt;solo acepta una categoria por post&lt;/strong&gt;. Si estas cosas te molestan, podes optar por usar directamente tags.&lt;/p&gt;
-&lt;h3 id="comentarios"&gt;Comentarios
-&lt;/h3&gt;&lt;p&gt;Al pasar a Pelican, no sabia si incluir comentarios. Mi blog es personal, no tiene muchos o directamente no tiene, pero siempre quise eso de "che, yo resolví eso de otra forma: tal tal tal. Dejo el comentario por si a alguien le sirve", asique opté por usar Disqus (por que es el único que conozco y no tengo muchos comentarios, por eso ni me molesté en buscar alternativas).&lt;/p&gt;
+&lt;h3 id="categorias-y-tags"&gt;Categorías y tags&lt;/h3&gt;
+&lt;p&gt;Ojito con las categorias. Primero: al hacer un sistema simple, &lt;strong&gt;no tiene jerarquia de categorias&lt;/strong&gt; como Wordpress. Fijate como manejas eso. Segundo: &lt;strong&gt;solo acepta una categoria por post&lt;/strong&gt;. Si estas cosas te molestan, podes optar por usar directamente tags.&lt;/p&gt;
+&lt;h3 id="comentarios"&gt;Comentarios&lt;/h3&gt;
+&lt;p&gt;Al pasar a Pelican, no sabia si incluir comentarios. Mi blog es personal, no tiene muchos o directamente no tiene, pero siempre quise eso de "che, yo resolví eso de otra forma: tal tal tal. Dejo el comentario por si a alguien le sirve", asique opté por usar Disqus (por que es el único que conozco y no tengo muchos comentarios, por eso ni me molesté en buscar alternativas).&lt;/p&gt;
 &lt;p&gt;Si queres transferir los comentarios: Disqus tiene una opción de traer los de Wordpress, pero requiere un plugin (o sea, me jodo). Yo hice copy &amp;amp; paste del html (para hacer algo manual viste, sino era todo automatizado) y los pegué en la entrada correspondiente.&lt;/p&gt;
 &lt;p&gt;Tips:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Conviene desactivar la opcion de conversión de caritas/emoticones ( &lt;code&gt;:D&lt;/code&gt;, &lt;code&gt;:)&lt;/code&gt; ) a imágenes. A no ser que quieras que se referencien al viejo blog o hacer trabajo extra para eliminarlas/pasarlas a texto.&lt;/li&gt;
 &lt;li&gt;Hacete un regex para sacar el link al comentario cuando se clickea en la fecha (yo lo hice, mas que nada, porque tomaba la dirección localhost). Usé este: &lt;code&gt;&amp;lt;a href="http://localhost/wordpress/\?p=\d.+comment-\d.+"&amp;gt;\n(.+)&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="pros-y-cons"&gt;Pros y Cons
-&lt;/h2&gt;&lt;p&gt;Como todo, hay pros y contras por cada sistema.&lt;/p&gt;
+&lt;h2 id="pros-y-cons"&gt;Pros y Cons&lt;/h2&gt;
+&lt;p&gt;Como todo, hay pros y contras por cada sistema.&lt;/p&gt;
 &lt;p&gt;Wordpress, pros:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;es Wordpress&lt;/li&gt;
@@ -444,8 +444,8 @@
 &lt;li&gt;Genera contenido estático, nada de comentarios ni base de datos para no se que cosa. Los tenes que agregar vos y con Javascript o algún workaround.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Procon (no se como ponerla): &lt;strong&gt;Te tiene que gustar escribir&lt;/strong&gt;, y por escribir me refiero a escribir variables y demas, tanto del sistema específico (Pelican) y del LML que elegiste. Capaz que a los programadores esto seria un pro, pero para el resto de los mortales seria una contra (a no ser que crees un template).&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusión
-&lt;/h2&gt;&lt;p&gt;Esta mudanza la hice para probar cosas nuevas, solo actualizo el blog una vez al mes/cada 3-6 meses y ni tengo host propio. No es que este todos los dias escribiendo un post, o cada semana; tengo mis periodos de "ay si, hoy escribo y oh! ay mira escribi uno la semana pasada. Me siento re blogger" y de "ah mira, hace 6 meses que no escribo... qué se le va a hacer, no?".&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusión&lt;/h2&gt;
+&lt;p&gt;Esta mudanza la hice para probar cosas nuevas, solo actualizo el blog una vez al mes/cada 3-6 meses y ni tengo host propio. No es que este todos los dias escribiendo un post, o cada semana; tengo mis periodos de "ay si, hoy escribo y oh! ay mira escribi uno la semana pasada. Me siento re blogger" y de "ah mira, hace 6 meses que no escribo... qué se le va a hacer, no?".&lt;/p&gt;
 &lt;p&gt;Pero cada vez que SI actualizaba, odiaba profundamente el paso a Wordpress. Esta bien, si, podes ponerle un plugin para que tome la sintaxis markdown y todo eso, recordá que yo estoy/aba en wordpress.com y no pienso/aba instalar Wordpress en el host. Ya lo hice una vez y no me gustó, por eso me pasé a .com.&lt;/p&gt;
 &lt;p&gt;La actualización por medio de este sistema&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; es muy cómodo, solo pongo el post terminado en la carpeta (o lo creo ahi directamente), corro el script y listo. Solo tengo que tener Dropbox corriendo para que actualice. Si quiero hacerlo aun mas simple, puedo usar los servicios nombrados más arriba y solo poner el txt en Dropbox y listo. Sitio actualizado. También es muy rápido generar los &lt;code&gt;.html&lt;/code&gt;, con mi blogcito ni tarda 5 segundos (y eso que linkeo a otros posts).&lt;/p&gt;
 &lt;p&gt;Por que no un host cualquiera/FTP? Por que tenia que hacer un paso "extra" y sincronizar a FTP o anotarme a otro servicio para que haga un sync/backup de carpeta X de dropbox a carpeta X del host&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/wordpress-to-pelican/#fn:5" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;

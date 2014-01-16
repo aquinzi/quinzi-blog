@@ -6,1278 +6,1274 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://blog.quinzi.com.ar/</loc>
-  <lastmod>2014-01-11</lastmod>
- </url>
- <url>
-  <loc>http://blog.quinzi.com.ar/_raw/pages/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/android-battery-drain/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/android-dpi-app/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/autohotkey-nueva-carpeta/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/autohotkey-reemplazo/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/box-webdav/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/checkerboard-cake/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/dokuwiki-a-html/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/_raw/pages/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/android-battery-drain/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/android-dpi-app/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/autohotkey-nueva-carpeta/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/autohotkey-reemplazo/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/box-webdav/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/checkerboard-cake/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/dokuwiki-a-html/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/foobar2000-theme-simple-colorful/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/foobar2000-theme-tomorrow-night/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/galleries/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/galleries/rss.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/gh-pages-project/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/indexes/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/indexes/index-1.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/indexes/index-2.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/indexes/index-3.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/javadoc/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/kanji-poster/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/kindle3-epub/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/netbeans-problemas-menu/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/opera-editar-menu-contextual/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/pandy/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/pelican-nikola/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/pro-tip-cartuchos/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/prodo/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/programas-ejecutar/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/pymd/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/review-acer-tab-a200/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/review-kindle3/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/rss-youtube/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/rss.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/sd-write-protected-syndrome/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/svnlog/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tagaini-jisho-sincronizar-bd/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/acer.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/acer.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/aero.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/aero.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/android.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/android.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/autohotkey.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/autohotkey.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/battery.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/battery.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/box.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/box.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cards.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cards.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cartuchos.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cartuchos.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_download.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_download.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_entry.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_entry.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_guide.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_guide.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_language.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_language.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_release.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_release.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_review.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_review.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_solved.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/cat_solved.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/code.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/code.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/dokuwiki.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/dokuwiki.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/dropbox.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/dropbox.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/epub.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/epub.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/foobar2000.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/foobar2000.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/git.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/git.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/github.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/github.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/grep.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/grep.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/java.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/java.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/kanji.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/kanji.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/kindle.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/kindle.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/markdown.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/markdown.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/nihongo.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/nihongo.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/nikola.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/nikola.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/opera.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/opera.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/pandoc.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/pandoc.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/pelican.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/pelican.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/php.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/php.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/podcasts.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/podcasts.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/printers-from-hell.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/printers-from-hell.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/python.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/python.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/retro.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/retro.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/run-forest-run.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/run-forest-run.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/sd.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/sd.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/static.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/static.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/svn.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/svn.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/sync.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/sync.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/tablet.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/tablet.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/tagaini-jisho.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/tagaini-jisho.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/tasker.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/tasker.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/theme.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/theme.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/themes.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/themes.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/video-games.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/video-games.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/webdav.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/webdav.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/windows-7.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/windows-7.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/windows.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/windows.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/windows7.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/windows7.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/wordpress.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/wordpress.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/xampp.html</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/xampp.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/youtube.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/youtube.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/yummy.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/yummy.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/zim.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tags/zim.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/tasker-gps-location-to-text/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/thinx/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/win31-juegos/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/windows7-shell-icons/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/windows7-themes-aero/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/wordpress-to-pelican/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/xampp-status-check-failure-3/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/es/zim-templates/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/galleries/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/galleries/rss.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/gh-pages-project/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/indexes/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/indexes/index-1.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/indexes/index-2.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/indexes/index-3.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/javadoc/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/kanji-poster/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/kindle3-epub/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/listings/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/netbeans-problemas-menu/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/opera-editar-menu-contextual/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/pandy/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/pelican-nikola/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/pro-tip-cartuchos/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/prodo/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/programas-ejecutar/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/pymd/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/review-acer-tab-a200/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/review-kindle3/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/rss-youtube/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/rss.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/sd-write-protected-syndrome/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/svnlog/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tagaini-jisho-sincronizar-bd/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/acer.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/acer.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/aero.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/aero.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/android.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/android.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/autohotkey.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/autohotkey.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/battery.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/battery.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/box.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/box.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cards.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cards.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cartuchos.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cartuchos.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_download.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_download.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_entry.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_entry.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_guide.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_guide.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_language.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_language.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_release.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_release.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_review.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_review.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_solved.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/cat_solved.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/code.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/code.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/dokuwiki.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/dokuwiki.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/dropbox.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/dropbox.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/epub.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/epub.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/foobar2000.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/foobar2000.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/git.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/git.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/github.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/github.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/grep.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/grep.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/java.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/java.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/kanji.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/kanji.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/kindle.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/kindle.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/markdown.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/markdown.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/nihongo.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/nihongo.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/nikola.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/nikola.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/opera.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/opera.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/pandoc.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/pandoc.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/pelican.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/pelican.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/php.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/php.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/podcasts.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/podcasts.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/printers-from-hell.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/printers-from-hell.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/python.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/python.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/retro.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/retro.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/run-forest-run.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/run-forest-run.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/sd.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/sd.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/static.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/static.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/svn.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/svn.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/sync.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/sync.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/tablet.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/tablet.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/tagaini-jisho.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/tagaini-jisho.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/tasker.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/tasker.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/theme.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/theme.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/themes.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/themes.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/video-games.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/video-games.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/webdav.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/webdav.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/windows-7.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/windows-7.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/windows.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/windows.xml</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/windows7.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/windows7.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/wordpress.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/wordpress.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/xampp.html</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/xampp.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/youtube.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/youtube.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/yummy.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/yummy.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/zim.html</loc>
-  <lastmod>2014-01-12</lastmod>
+  <lastmod>2014-01-16</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tags/zim.xml</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-14</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/tasker-gps-location-to-text/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/thinx/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/win31-juegos/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/windows7-shell-icons/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/windows7-themes-aero/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/wordpress-to-pelican/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/xampp-status-check-failure-3/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
  <url>
   <loc>http://blog.quinzi.com.ar/zim-templates/</loc>
-  <lastmod>2014-01-11</lastmod>
+  <lastmod>2014-01-13</lastmod>
  </url>
 </urlset>

@@ -17,12 +17,14 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
     
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        <link href="http://feeds.feedburner.com/intentode" type="application/atom+xml" rel="alternate" title="RSS Feed">
+    
     
         
     <link rel="icon" href="../favicon.ico" sizes="16x16">
     <link rel="icon" href="../favicon.png" sizes="16x16">
     
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
 
     
 
@@ -72,7 +74,7 @@
             <dl>
                     <dt class="date">Posted
                     </dt><dd>  
-    <time class="published dt-published" itemprop="datePublished" datetime="2012-12-13T00:00:00">2012-12-13</time>
+    <time class="published dt-published" itemprop="datePublished" datetime="2012-12-13T00:00:00+00:00">2012-12-13</time>
 </dd>
                      
             </dl>
@@ -92,8 +94,8 @@
 simple, minimalista y medianamente colorido (para que no sientas que
 vivis en un arco iris), que tiene los plugins minimamente requeridos
 (por mi persona).</p>
-<h2 id="requerimientos">Requerimientos
-</h2><p>Aparte de foobar necesitas:</p>
+<h2 id="requerimientos">Requerimientos</h2>
+<p>Aparte de foobar necesitas:</p>
 <ul>
 <li>Plugins (los podes sacar y/o poner los que te gusten, pero si o si
 los necesitas para instalar)<ul>
@@ -112,8 +114,8 @@ reproducir música</li>
 </ul>
 <p>Lo bueno de este(os) theme(s) es que en ambos UI (default y columns) se
 usan los mismos plugins (o algo asi).</p>
-<h2 id="instalacion">Instalación
-</h2><p>Primero las configuraciones, cosa de que no tengas que poner a mano la
+<h2 id="instalacion">Instalación</h2>
+<p>Primero las configuraciones, cosa de que no tengas que poner a mano la
 gran mayoria de colores. Los archivos de esa carpeta ponerlos en la
 carpeta <code>configuration</code>: si tenes foobar portable, esta dentro de esa
 carpeta. Si tenes el instalado, vas a <code>%appdata%\\foobar2000</code> (Pro Tip:
@@ -131,8 +133,8 @@ que mas te guste.</p>
 cambiar, editas la columna.</p>
 <p>También podes editar la columna de duración para que te muestre como
 quieras. Yo tengo tiempo transcurrido - tiempo total.</p>
-<h2 id="screenshots">Screenshots
-</h2><p>Veamos primero el theme en la UI default:</p>
+<h2 id="screenshots">Screenshots</h2>
+<p>Veamos primero el theme en la UI default:</p>
 <p><img alt="Playlist de foobar2000 con Default UI" src="../images/2012/foobar_simplecolorful_dui01.jpg"></p>
 <p><img alt="Librería de foobar2000 (facets) con Default UI" src="../images/2012/foobar_simplecolorful_dui02.jpg"></p>
 <p>Nada mal para ser la vista default con sus limitaciones (como la falta
@@ -149,8 +151,8 @@ lleva a los albums -&gt; <kbd>doble click</kbd> -&gt; lleva a los temas. Queres 
 <kbd>doble click</kbd> sobre los headers. Todo esto se puede configurar. La idea es
 que cuando te lista los artistas, te muestre las fotos de los artistas
 pero todavia no tengo y quedo asi =P.</p>
-<h2 id="a-tener-en-cuenta">A tener en cuenta
-</h2><p>Los screenshots son en base a MI configuracion. Las estrellitas que
+<h2 id="a-tener-en-cuenta">A tener en cuenta</h2>
+<p>Los screenshots son en base a MI configuracion. Las estrellitas que
 estan en el status bar (abajo) no se te van a mostrar porque uso un
 plugin para estadisticas (y se toman de ahi, no hice el <code>if</code> para ver si
 existe pero las podes sustituir o dejar el signo de pregunta).</p>
@@ -190,12 +192,13 @@ cosas sin entrar a nada de programación (a no ser que lo quieras). </p>
     <span class="badge badge-info"> foobar2000</span> </a> </span>
  </dd>
                 </dl>
-
         </div>
-    </footer>
+		
+		<div id="post-comments">
+			
 
-    
-    
+			
+			
     
         
     
@@ -222,7 +225,9 @@ cosas sin entrar a nada de programación (a no ser que lo quieras). </p>
 
     
 
-    
+			
+		</div>		
+    </footer>
 
     
     
@@ -231,6 +236,13 @@ cosas sin entrar a nada de programación (a no ser que lo quieras). </p>
 </article>
  </div>
 		<footer>
+			
+    <div id="vcard" class="vcard author p-author h-card vcard">
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> <a href="http://quinzi.com.ar/">A.Q.</a> </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        </p>
+    </div>
+
+			
 			<div id="search">
 				<p>Search: </p>
 				
@@ -247,12 +259,6 @@ cosas sin entrar a nada de programación (a no ser que lo quieras). </p>
 
 			</div>
 			
-			
-    <div id="vcard" class="vcard author p-author h-card vcard">
-        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> A.Q. </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="index.html#top"><i class="fa fa-chevron-circle-up"></i></a></span>
-        </p>
-    </div>
-
 		</footer>
 	</div>
 	

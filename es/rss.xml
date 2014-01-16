@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog</title><link>http://blog.quinzi.com.ar/</link><description>Blog for A.Q.</description><atom:link href="http://blog.quinzi.com.ar/es/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Sun, 12 Jan 2014 15:09:42 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>De Pelican a Nikola (tutorial)</title><link>http://blog.quinzi.com.ar/./es/pelican-nikola/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog</title><link>http://blog.quinzi.com.ar/</link><description>Blog for A.Q.</description><atom:link href="http://blog.quinzi.com.ar/es/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 14 Jan 2014 14:18:13 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>De Pelican a Nikola (tutorial)</title><link>http://blog.quinzi.com.ar/./es/pelican-nikola/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/pelican-nikola/#acrylamid"&gt;Acrylamid&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/pelican-nikola/#nikola"&gt;Nikola&lt;/a&gt;&lt;/li&gt;
@@ -25,8 +25,8 @@
 &lt;/div&gt;
 &lt;p&gt;Cuando pensaba en mover mi blog a este nuevo dominio, pensé en usar &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; como conversor&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/pelican-nikola/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;; incluso creé &lt;a href="http://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; para eso. Pero después tuve los "problemas" (ok, estaba vaga) de RSS, categorias, tags, index, etc. y lo dejé.&lt;/p&gt;
 &lt;p&gt;En un principio pensé en &lt;a href="link://slug/wordpress-to-pelican"&gt;seguir usando Pelican&lt;/a&gt; ya que es &lt;a href="http://docs.getpelican.com/"&gt;fácil y personalizable&lt;/a&gt; aunque no tuviera soporte para Pandoc&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/pelican-nikola/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;. Pero mas tarde me daría vagancia pasarme a otro sistema (no que postee mucho, pero &lt;strong&gt;me encanta el markdown de Pandoc&lt;/strong&gt;).&lt;/p&gt;
-&lt;h2 id="acrylamid"&gt;Acrylamid
-&lt;/h2&gt;&lt;p&gt;En mis búsquedas encontré &lt;a href="http://posativ.org/acrylamid/index.html"&gt;Acrylamid&lt;/a&gt; que se ve bastante bien. Es como el &lt;em&gt;blog generator&lt;/em&gt; de programadores/hackers, donde podés hacer varias cosas. También tiene &lt;em&gt;incremental builds&lt;/em&gt; así no regenera todo desde cero.&lt;/p&gt;
+&lt;h2 id="acrylamid"&gt;Acrylamid&lt;/h2&gt;
+&lt;p&gt;En mis búsquedas encontré &lt;a href="http://posativ.org/acrylamid/index.html"&gt;Acrylamid&lt;/a&gt; que se ve bastante bien. Es como el &lt;em&gt;blog generator&lt;/em&gt; de programadores/hackers, donde podés hacer varias cosas. También tiene &lt;em&gt;incremental builds&lt;/em&gt; así no regenera todo desde cero.&lt;/p&gt;
 &lt;p&gt;Otras cosas incluyen:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;diferentes meta tags: MultiMarkdown (como Pelican), YAML o rst.&lt;/li&gt;
@@ -44,8 +44,8 @@
 &lt;/ul&gt;
 &lt;p&gt;No tiene categorias (pero se pueden &lt;a href="https://github.com/posativ/acrylamid/issues/121"&gt;usar vistas&lt;/a&gt;), galerias automáticas (pero se puede usar sintaxis de templates en un post, &lt;a href="http://posativ.org/acrylamid/howtos.html#image-gallery"&gt;asi que está cubierto&lt;/a&gt;) y la &lt;a href="http://posativ.org/acrylamid/theming.html"&gt;creación de themes&lt;/a&gt; no es tan automática: tenés que listar todos los archivos que usa tu theme en un archivo &lt;code&gt;__init.py&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Quería usar Acrylamid, pero era medio "complicado" para setearlo en Windows si querías usar &lt;a href="https://github.com/ahupp/python-magic"&gt;python-magic&lt;/a&gt; (tuve problemas con eso). Salteé esa parte, pero me seguía dando error con los &lt;em&gt;locales&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id="nikola"&gt;Nikola
-&lt;/h2&gt;&lt;p&gt;Después recordé que una vez me había cruzado con &lt;a href="http://getnikola.com/"&gt;Nikola&lt;/a&gt;, originalmente creado por un argentino, asi que tenía que probarlo :P.&lt;/p&gt;
+&lt;h2 id="nikola"&gt;Nikola&lt;/h2&gt;
+&lt;p&gt;Después recordé que una vez me había cruzado con &lt;a href="http://getnikola.com/"&gt;Nikola&lt;/a&gt;, originalmente creado por un argentino, asi que tenía que probarlo :P.&lt;/p&gt;
 &lt;p&gt;No es tan &lt;em&gt;feature-rich&lt;/em&gt; (o de fácil personalización) que &lt;a href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt;, y la documentación tampoco es tan "completa": hay un par de cosas que se encuentran en los Google Groups, GitHub o mirando en el código. Tampoco no es tan &lt;em&gt;feature-cool&lt;/em&gt; como &lt;a href="http://posativ.org/acrylamid/index.html"&gt;Acrylamid&lt;/a&gt;. De todas formas, creo que va en buen camino y es el mas nuevo de los tres.&lt;/p&gt;
 &lt;p&gt;Tiene cosas copadas:&lt;/p&gt;
 &lt;ul&gt;
@@ -67,14 +67,14 @@
 &lt;li&gt;soporte para raw post/página (mostrar el código del post en texto plano)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Los drafts se aplican como un "tag" en el metadata de tags y se publican por default. No tiene soporte de color en el output de la línea de comandos (pero se está viendo) y lo de "mostrar el código del post y copialo" está habilitado por default.&lt;/p&gt;
-&lt;h2 id="la-mudanza"&gt;La mudanza
-&lt;h3 id="instalar-nikola"&gt;Instalar Nikola
-&lt;/h3&gt;&lt;/h2&gt;&lt;p&gt;Se &lt;a href="http://getnikola.com/"&gt;descarga Nikola&lt;/a&gt; e instala. Por default, usa &lt;a href="http://makotemplates.org"&gt;Mako&lt;/a&gt; como &lt;em&gt;template engine&lt;/em&gt;, pero tiene soporte para &lt;a href="http://jinja.pocoo.org/"&gt;Jinja2&lt;/a&gt;. Se puede leer las &lt;a href="http://getnikola.com/handbook.html#installing-nikola"&gt;dependencias en la documentación&lt;/a&gt; y si queres podes &lt;code&gt;pip install -r requirements.txt&lt;/code&gt; o &lt;code&gt;requirements-full.txt&lt;/code&gt; para toda la cosa.&lt;/p&gt;
+&lt;h2 id="la-mudanza"&gt;La mudanza&lt;/h2&gt;
+&lt;h3 id="instalar-nikola"&gt;Instalar Nikola&lt;/h3&gt;
+&lt;p&gt;Se &lt;a href="http://getnikola.com/"&gt;descarga Nikola&lt;/a&gt; e instala. Por default, usa &lt;a href="http://makotemplates.org"&gt;Mako&lt;/a&gt; como &lt;em&gt;template engine&lt;/em&gt;, pero tiene soporte para &lt;a href="http://jinja.pocoo.org/"&gt;Jinja2&lt;/a&gt;. Se puede leer las &lt;a href="http://getnikola.com/handbook.html#installing-nikola"&gt;dependencias en la documentación&lt;/a&gt; y si queres podes &lt;code&gt;pip install -r requirements.txt&lt;/code&gt; o &lt;code&gt;requirements-full.txt&lt;/code&gt; para toda la cosa.&lt;/p&gt;
 &lt;p&gt;Si estás en Windows, debés descargar e instalar las versiones compiladas de lxml y pillow. Podés buscarlos en sus &lt;a href="https://pypi.python.org/"&gt;PyPI&lt;/a&gt; o ir a &lt;a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/"&gt;http://www.lfd.uci.edu/~gohlke/pythonlibs/&lt;/a&gt;. Acordate de descargar e instalar dependiendo a tu versión y arquitectura de Python (32 o 64 bits).&lt;/p&gt;
-&lt;h3 id="iniciar"&gt;Iniciar
-&lt;/h3&gt;&lt;p&gt;Para iniciar o crear un blog con las opciones default y estructura de carpetas, ejecutar &lt;code&gt;nikola init path/to/mysite&lt;/code&gt; o, si queres algo de contenido, &lt;code&gt;nikola init --demo path/to/mysite&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id="convertir-metadata"&gt;Convertir metadata
-&lt;/h3&gt;&lt;p&gt;Pelican usa el estilo de metadata de &lt;a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide"&gt;Multimarkdown&lt;/a&gt; mientras que Nikola usas algo similar: el mismo sintaxis pero con &lt;code&gt;..&lt;/code&gt; al frente.&lt;/p&gt;
+&lt;h3 id="iniciar"&gt;Iniciar&lt;/h3&gt;
+&lt;p&gt;Para iniciar o crear un blog con las opciones default y estructura de carpetas, ejecutar &lt;code&gt;nikola init path/to/mysite&lt;/code&gt; o, si queres algo de contenido, &lt;code&gt;nikola init --demo path/to/mysite&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id="convertir-metadata"&gt;Convertir metadata&lt;/h3&gt;
+&lt;p&gt;Pelican usa el estilo de metadata de &lt;a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide"&gt;Multimarkdown&lt;/a&gt; mientras que Nikola usas algo similar: el mismo sintaxis pero con &lt;code&gt;..&lt;/code&gt; al frente.&lt;/p&gt;
 &lt;p&gt;Un ejemplo sería:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;Title: nice title! :D      # Pelican
 .. title: nice title! :D   # Nikola
@@ -86,13 +86,13 @@
 &lt;p class="admonition-title"&gt;Note&lt;/p&gt;
 &lt;p&gt;Nikola no tiene/ve el meta key "modified" internamente, pero se puede tener como uno personalizado. Solo se accede diferente en los themes.&lt;/p&gt;
 &lt;/div&gt;
-&lt;h3 id="traducciones"&gt;Traducciones
-&lt;/h3&gt;&lt;p&gt;Si tenes posts o páginas traducidas tenés que prestar atención: los sistemas entre los generadores son distintos. En Pelican tenés el mismo slug o título en los posts, y diferentes nombres de archivos (creo); Nikola usa los nombres de archivos.&lt;/p&gt;
+&lt;h3 id="traducciones"&gt;Traducciones&lt;/h3&gt;
+&lt;p&gt;Si tenes posts o páginas traducidas tenés que prestar atención: los sistemas entre los generadores son distintos. En Pelican tenés el mismo slug o título en los posts, y diferentes nombres de archivos (creo); Nikola usa los nombres de archivos.&lt;/p&gt;
 &lt;p&gt;La facilidad de esto depende de tu setup, pero tenes que terminar con algo como: &lt;code&gt;nicefile.md&lt;/code&gt; para el post en el idioma default, y &lt;code&gt;nicefile.md.es&lt;/code&gt; (contenido en español) para el traducido.&lt;/p&gt;
 &lt;p&gt;Lo bueno de esto es que no duplicas el meta. Por ejemplo, creas el meta key "tags" en el idioma default pero no lo especficas en el traducido. Así al actualizar, lo haces solo en el "master" o "padre" y el "hijo" solo lo copia.&lt;/p&gt;
 &lt;p&gt;Si no queres tener metadata duplicada en los archivos, y después de que renombraste y convertiste los archivos, podes correr &lt;a href="https://gist.github.com/eikiu/8377186"&gt;este script de python&lt;/a&gt; para eliminarlos. Recordá que solo es opcional (o por lo menos no rompió mi setup).&lt;/p&gt;
-&lt;h3 id="rutas-de-imagenes"&gt;Rutas de imágenes
-&lt;/h3&gt;&lt;p&gt;La sintaxis también es diferente pero se puede hacer facilmente con &lt;em&gt;search and replace&lt;/em&gt;. Podés usar lo que quieras, como grep. Si estas en Windows, recomiendo &lt;a href="http://stefanstools.sourceforge.net/grepWin.html"&gt;grepWin&lt;/a&gt; si queres algo con GUI. Esto es depende de como tengas los archivos pero yo hice algo asi:&lt;/p&gt;
+&lt;h3 id="rutas-de-imagenes"&gt;Rutas de imágenes&lt;/h3&gt;
+&lt;p&gt;La sintaxis también es diferente pero se puede hacer facilmente con &lt;em&gt;search and replace&lt;/em&gt;. Podés usar lo que quieras, como grep. Si estas en Windows, recomiendo &lt;a href="http://stefanstools.sourceforge.net/grepWin.html"&gt;grepWin&lt;/a&gt; si queres algo con GUI. Esto es depende de como tengas los archivos pero yo hice algo asi:&lt;/p&gt;
 &lt;p&gt;Sintaxis markdown:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Search &lt;code&gt;(|filename|../../images/&lt;/code&gt; &lt;/li&gt;
@@ -103,26 +103,26 @@
 &lt;li&gt;Search &lt;code&gt;&amp;lt;img src="../../static/images/&lt;/code&gt; &lt;/li&gt;
 &lt;li&gt;Replace &lt;code&gt;&amp;lt;img src="../images/&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="links-entre-posts"&gt;Links entre posts
-&lt;/h3&gt;&lt;p&gt;Otra vez, es diferente en los sistemas y puede ser o muy fácil o muy dificil dependiendo de tu organización: Pelican usa los nombres de archivos para linkear contenido, mientras que Nikola usa el slug del post.&lt;/p&gt;
+&lt;h3 id="links-entre-posts"&gt;Links entre posts&lt;/h3&gt;
+&lt;p&gt;Otra vez, es diferente en los sistemas y puede ser o muy fácil o muy dificil dependiendo de tu organización: Pelican usa los nombres de archivos para linkear contenido, mientras que Nikola usa el slug del post.&lt;/p&gt;
 &lt;p&gt;Si tenes el nombre de archivo como el slug (o muy similar) podes usar &lt;em&gt;search and replace&lt;/em&gt;, como:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Search: &lt;code&gt;\(\|filename\|(.+)\.md\)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Replace: &lt;code&gt;(link://slug/$1)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Recomiendo hacerlo seguido de las imágenes, y tenes que checkear (posiblemente a mano) después.&lt;/p&gt;
-&lt;h3 id="sintaxis-de-plugins"&gt;Sintaxis de Plugins
-&lt;/h3&gt;&lt;p&gt;No usé muchos plugins que usaran sintaxis en mis posts, solo uno: &lt;a href="http://quinzi.com.ar/projects/interlinks"&gt;interlinks&lt;/a&gt;. Esto fue fácil de hacer con &lt;em&gt;search and replace&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id="otras-cosas-de-nikola"&gt;Otras cosas de Nikola
-&lt;h3 id="localizacion-en-windows"&gt;Localización en Windows
-&lt;/h3&gt;&lt;/h2&gt;&lt;p&gt;Si vas a usar la internalización en Windows, tenes que configurar los &lt;code&gt;LOCALES&lt;/code&gt; como (ejemplo):&lt;/p&gt;
+&lt;h3 id="sintaxis-de-plugins"&gt;Sintaxis de Plugins&lt;/h3&gt;
+&lt;p&gt;No usé muchos plugins que usaran sintaxis en mis posts, solo uno: &lt;a href="http://quinzi.com.ar/projects/interlinks"&gt;interlinks&lt;/a&gt;. Esto fue fácil de hacer con &lt;em&gt;search and replace&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="otras-cosas-de-nikola"&gt;Otras cosas de Nikola&lt;/h2&gt;
+&lt;h3 id="localizacion-en-windows"&gt;Localización en Windows&lt;/h3&gt;
+&lt;p&gt;Si vas a usar la internalización en Windows, tenes que configurar los &lt;code&gt;LOCALES&lt;/code&gt; como (ejemplo):&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;LOCALES = {'en' : 'English_United States', 'es' : 'Spanish_Argentina'}
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;No importa tu idioma en Windows, funciona tanto en (Windows) inglés como español.&lt;/p&gt;
-&lt;h3 id="linkear-internamente"&gt;Linkear internamente
-&lt;/h3&gt;&lt;p&gt;Para linkear a otro post, tag, archivo, etc.&lt;/p&gt;
+&lt;h3 id="linkear-internamente"&gt;Linkear internamente&lt;/h3&gt;
+&lt;p&gt;Para linkear a otro post, tag, archivo, etc.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;galeria: &lt;code&gt;link://gallery/gallery_name&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;index de tags: &lt;code&gt;link://tag_index&lt;/code&gt;&lt;/li&gt;
@@ -135,14 +135,14 @@
 &lt;li&gt;feed del blog: &lt;code&gt;link://rss&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;otro post: &lt;code&gt;link://slug/the-nice-slug&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="pandoc"&gt;Pandoc
-&lt;/h3&gt;&lt;p&gt;Como Pandoc usa la extensión para reconocer el input, tenes que configurar esa extensión en &lt;code&gt;COMPILERS&lt;/code&gt; en la configuración. Si no se encuentra, usa Markdown como default.&lt;/p&gt;
+&lt;h3 id="pandoc"&gt;Pandoc&lt;/h3&gt;
+&lt;p&gt;Como Pandoc usa la extensión para reconocer el input, tenes que configurar esa extensión en &lt;code&gt;COMPILERS&lt;/code&gt; en la configuración. Si no se encuentra, usa Markdown como default.&lt;/p&gt;
 &lt;p&gt;Mientras que funcionó para mi usando markdown, no lo hizo con otros, como Mediawiki. No sé por qué.&lt;/p&gt;
-&lt;h3 id="carpetas-y-subcarpetas-de-posts"&gt;Carpetas y subcarpetas de posts
-&lt;/h3&gt;&lt;p&gt;&lt;a href="http://getnikola.com/"&gt;Nikola&lt;/a&gt; mantiene la estructura de carpetas y subcarpetas. Si tenés &lt;code&gt;file_g.txt&lt;/code&gt; dentro de &lt;code&gt;carpeta_abc&lt;/code&gt;, esta estructura se mantiene en el output. Puede ser bueno si lo queres usar como categorías en el output. No hay manera de configurarlo.&lt;/p&gt;
+&lt;h3 id="carpetas-y-subcarpetas-de-posts"&gt;Carpetas y subcarpetas de posts&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://getnikola.com/"&gt;Nikola&lt;/a&gt; mantiene la estructura de carpetas y subcarpetas. Si tenés &lt;code&gt;file_g.txt&lt;/code&gt; dentro de &lt;code&gt;carpeta_abc&lt;/code&gt;, esta estructura se mantiene en el output. Puede ser bueno si lo queres usar como categorías en el output. No hay manera de configurarlo.&lt;/p&gt;
 &lt;p&gt;En &lt;a href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt; podés tener varias subcarpetas y organizalos como vos quieras, y el output se puede configurar (por default, por fecha) como quieras.&lt;/p&gt;
-&lt;h2 id="testeando"&gt;Testeando
-&lt;/h2&gt;&lt;p&gt;Inicialmente los posts van en una carpeta &lt;code&gt;posts&lt;/code&gt; en el root y las páginas en &lt;code&gt;story&lt;/code&gt;. La carpeta de imágenes podría en &lt;code&gt;files&lt;/code&gt;. Todo esto se puede configurar.&lt;/p&gt;
+&lt;h2 id="testeando"&gt;Testeando&lt;/h2&gt;
+&lt;p&gt;Inicialmente los posts van en una carpeta &lt;code&gt;posts&lt;/code&gt; en el root y las páginas en &lt;code&gt;story&lt;/code&gt;. La carpeta de imágenes podría en &lt;code&gt;files&lt;/code&gt;. Todo esto se puede configurar.&lt;/p&gt;
 &lt;p&gt;Después de configurar el &lt;code&gt;conf.py&lt;/code&gt;, que esta muy bien comentado, se puede probar. &lt;/p&gt;
 &lt;p&gt;Crear el site con &lt;code&gt;nikola build&lt;/code&gt;. Después se puede abrir los archivos al navegador o usar un local server con: &lt;code&gt;nikola serve&lt;/code&gt; y yendo a &lt;code&gt;http://127.0.0.1:8000&lt;/code&gt;.&lt;/p&gt;
 &lt;div class="footnote"&gt;
@@ -195,18 +195,18 @@
 &lt;dd&gt;&lt;code&gt;commit&lt;/code&gt; seguido de &lt;code&gt;push&lt;/code&gt;&lt;/dd&gt;
 &lt;/dl&gt;
 
-&lt;h2 id="programas-para-windows"&gt;Programas para Windows
-&lt;/h2&gt;&lt;p&gt;En un principio, tener Git en Windows era mucho lio (porque fue creado por y para Linux) pero ahora hay varias opciones. Usualmente, si vas a usar solo GitHub, se recomienda GW. Pero si queres usar Git para otras cosas (como crear "servers" localmente y jugar ahi) recomiendo &lt;a href="http://tortoisegit.org/"&gt;TortoiseGit&lt;/a&gt; + &lt;a href="http://msysgit.github.io/"&gt;msysgit&lt;/a&gt; (git CLI) en lugar de GW:&lt;/p&gt;
+&lt;h2 id="programas-para-windows"&gt;Programas para Windows&lt;/h2&gt;
+&lt;p&gt;En un principio, tener Git en Windows era mucho lio (porque fue creado por y para Linux) pero ahora hay varias opciones. Usualmente, si vas a usar solo GitHub, se recomienda GW. Pero si queres usar Git para otras cosas (como crear "servers" localmente y jugar ahi) recomiendo &lt;a href="http://tortoisegit.org/"&gt;TortoiseGit&lt;/a&gt; + &lt;a href="http://msysgit.github.io/"&gt;msysgit&lt;/a&gt; (git CLI) en lugar de GW:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;te sirve para varias cosas y no solo para GitHub ("lee" el protocolo &lt;code&gt;github://&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;no tenes que pelear con el PATH por si queres usar git CLI (se instala en &lt;code&gt;%appdata%&lt;/code&gt; y no podes añadir solo &lt;code&gt;bin\&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;msysgit viene con "git Bash"; una CLI re linda con colores que además te muestra en qué &lt;code&gt;branch&lt;/code&gt; estas; ademas de personalizarla con &lt;code&gt;.bashrc&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img alt="muestra de git Bash personalizado" src="http://blog.quinzi.com.ar/images//2014/git_bash.png"&gt;&lt;/p&gt;
-&lt;h2 id="crear-repositorio"&gt;Crear repositorio
-&lt;/h2&gt;&lt;p&gt;En GitHub, crear un repositorio con el nombre que se quiera. Podes iniciar sesión e ir a &lt;a href="https://github.com/repositories/new"&gt;https://github.com/repositories/new&lt;/a&gt; o apretando en el "&lt;kbd&gt;librito&lt;/kbd&gt;".&lt;/p&gt;
-&lt;h2 id="activar-github-pages"&gt;"Activar" GitHub Pages
-&lt;/h2&gt;&lt;p&gt;Se activa magicamente creando un &lt;code&gt;branch&lt;/code&gt; llamado &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="crear-repositorio"&gt;Crear repositorio&lt;/h2&gt;
+&lt;p&gt;En GitHub, crear un repositorio con el nombre que se quiera. Podes iniciar sesión e ir a &lt;a href="https://github.com/repositories/new"&gt;https://github.com/repositories/new&lt;/a&gt; o apretando en el "&lt;kbd&gt;librito&lt;/kbd&gt;".&lt;/p&gt;
+&lt;h2 id="activar-github-pages"&gt;"Activar" GitHub Pages&lt;/h2&gt;
+&lt;p&gt;Se activa magicamente creando un &lt;code&gt;branch&lt;/code&gt; llamado &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Desde web es apretando en &lt;kbd&gt;branch master&lt;/kbd&gt;; en GW es apretando arriba donde dice &lt;kbd&gt;master&lt;/kbd&gt;. Buscar &lt;kbd&gt;gh-pages&lt;/kbd&gt; y apretar opción de crear (&lt;kbd&gt;create branch&lt;/kbd&gt;). Con CLI sería (previamente clonado, mirar abajo):&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git checkout --orphan gh-pages    # branch local
 &lt;/pre&gt;&lt;/div&gt;
@@ -216,14 +216,14 @@
 &lt;p class="admonition-title"&gt;Info&lt;/p&gt;
 &lt;p&gt;El &lt;code&gt;--orphan&lt;/code&gt; crea un &lt;code&gt;branch&lt;/code&gt; separado del resto del repo (sin &lt;em&gt;parents&lt;/em&gt;). Se crea primero localmente, después se manda al &lt;code&gt;origin&lt;/code&gt; (pasos mas abajo).&lt;/p&gt;
 &lt;/div&gt;
-&lt;h2 id="pasarlo-al-desktop-para-trabajar"&gt;Pasarlo al desktop (para trabajar)
-&lt;/h2&gt;&lt;p&gt;Desde GitHub apretar &lt;kbd&gt;Clone in desktop&lt;/kbd&gt; (que lo tomará GW o Tortoise) o desde CLI:&lt;/p&gt;
+&lt;h2 id="pasarlo-al-desktop-para-trabajar"&gt;Pasarlo al desktop (para trabajar)&lt;/h2&gt;
+&lt;p&gt;Desde GitHub apretar &lt;kbd&gt;Clone in desktop&lt;/kbd&gt; (que lo tomará GW o Tortoise) o desde CLI:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git clone https://github.com/user/repo_lindo.git
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="preparar-branch-gh-pages"&gt;Preparar branch gh-pages
-&lt;/h2&gt;&lt;p&gt;Cambiar a &lt;code&gt;gh-pages&lt;/code&gt;. En CLI, si se usó el comando anterior (&lt;code&gt;git checkout --orphan gh-pages&lt;/code&gt;) se cambia automáticamente, sino &lt;code&gt;git checkout -b gh-pages&lt;/code&gt; para cambiar y crear un &lt;code&gt;branch&lt;/code&gt; local llamado "gh-pages".&lt;/p&gt;
+&lt;h2 id="preparar-branch-gh-pages"&gt;Preparar branch gh-pages&lt;/h2&gt;
+&lt;p&gt;Cambiar a &lt;code&gt;gh-pages&lt;/code&gt;. En CLI, si se usó el comando anterior (&lt;code&gt;git checkout --orphan gh-pages&lt;/code&gt;) se cambia automáticamente, sino &lt;code&gt;git checkout -b gh-pages&lt;/code&gt; para cambiar y crear un &lt;code&gt;branch&lt;/code&gt; local llamado "gh-pages".&lt;/p&gt;
 &lt;div class="admonition info"&gt;
 &lt;p class="admonition-title"&gt;Info&lt;/p&gt;
 &lt;p&gt;Al cambiar &lt;em&gt;branches&lt;/em&gt;, Windows Explorer "refresca" la carpeta donde está con el contenido del &lt;code&gt;branch&lt;/code&gt; seleccionado.&lt;/p&gt;
@@ -235,8 +235,8 @@ $ git push -u origin gh-pages       # mandamos branch al origin
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="gh-pages-como-default-y-eliminar-master"&gt;gh-pages como default y eliminar master
-&lt;/h2&gt;&lt;p&gt;Esto es opcional, depende de tu &lt;em&gt;workflow&lt;/em&gt; o idea de uso. Si solo se va a usar &lt;code&gt;gh-pages&lt;/code&gt;, se puede usar como default y eliminar el &lt;code&gt;branch&lt;/code&gt; &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="gh-pages-como-default-y-eliminar-master"&gt;gh-pages como default y eliminar master&lt;/h2&gt;
+&lt;p&gt;Esto es opcional, depende de tu &lt;em&gt;workflow&lt;/em&gt; o idea de uso. Si solo se va a usar &lt;code&gt;gh-pages&lt;/code&gt;, se puede usar como default y eliminar el &lt;code&gt;branch&lt;/code&gt; &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Para ponerlo como default (y no usar el &lt;code&gt;master&lt;/code&gt;), en GitHub, ir a &lt;kbd&gt;settings &amp;gt; (settings &amp;gt;) Default branch&lt;/kbd&gt; y seleccionar &lt;kbd&gt;gh-pages&lt;/kbd&gt;.&lt;/p&gt;
 &lt;p&gt;Para eliminar el &lt;code&gt;master&lt;/code&gt; hay que tener el &lt;code&gt;gh-pages&lt;/code&gt; como default. Después ir al listado de &lt;em&gt;branches&lt;/em&gt; y apretar en &lt;kbd&gt;Delete branch&lt;/kbd&gt;. Con CLI:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git branch -d master     # eliminar local
@@ -244,8 +244,8 @@ $ git push origin :master  # eliminar de repo
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="its-alive-archivo-de-prueba-y-subida"&gt;It's alive! (Archivo de prueba y subida)
-&lt;/h2&gt;&lt;p&gt;Crear un &lt;code&gt;index.html&lt;/code&gt;, lo añadimos y hacemos c-p.&lt;/p&gt;
+&lt;h2 id="its-alive-archivo-de-prueba-y-subida"&gt;It's alive! (Archivo de prueba y subida)&lt;/h2&gt;
+&lt;p&gt;Crear un &lt;code&gt;index.html&lt;/code&gt;, lo añadimos y hacemos c-p.&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git add .                   # añade todo
 $ git commit -am "Primer commit a pages"
 $ git push origin gh-pages
@@ -254,8 +254,8 @@ $ git push origin gh-pages
 
 &lt;p&gt;(el &lt;code&gt;-a&lt;/code&gt; es abreviatura de &lt;code&gt;add&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;Esperar unos minutos y ver si se subió el &lt;code&gt;index&lt;/code&gt; en: &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt;&lt;/p&gt;
-&lt;h2 id="dominio-propio"&gt;Dominio propio
-&lt;/h2&gt;&lt;p&gt;Como seguramente no vas a querer entrar a &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt; porque es muy largo o queda poco profecional, GitHub permite ponerle un dominio/subdominio.&lt;/p&gt;
+&lt;h2 id="dominio-propio"&gt;Dominio propio&lt;/h2&gt;
+&lt;p&gt;Como seguramente no vas a querer entrar a &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt; porque es muy largo o queda poco profecional, GitHub permite ponerle un dominio/subdominio.&lt;/p&gt;
 &lt;p&gt;Solo basta con poner un archivo &lt;code&gt;CNAME&lt;/code&gt; que contiene el dominio/subdominio que se quiera usar, en el root de &lt;code&gt;gh-pages&lt;/code&gt; y cambiar los DNS del dominio en el host/registrar:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -265,11 +265,11 @@ $ git push origin gh-pages
 &lt;p&gt;Con un subdominio (sub.example.com): crear un &lt;code&gt;CNAME record&lt;/code&gt; que apunte al subdmonio del usuario en GitHub (&lt;kbd&gt;user.github.io&lt;/kbd&gt;). Esto deja que los DNS se adjusten automáticamente al IP de GitHub; se puede usar un &lt;code&gt;A record&lt;/code&gt; pero no se adjusta automáticamente.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="404-pages-todos-amamos-los-error-pages"&gt;404 pages! (Todos amamos los error pages)
-&lt;/h2&gt;&lt;p&gt;También es fácil: poner un &lt;code&gt;404.html&lt;/code&gt; en el root de &lt;code&gt;gh-pages&lt;/code&gt; y listo (no te olvides de agregarlo y c-p).&lt;/p&gt;
+&lt;h2 id="404-pages-todos-amamos-los-error-pages"&gt;404 pages! (Todos amamos los error pages)&lt;/h2&gt;
+&lt;p&gt;También es fácil: poner un &lt;code&gt;404.html&lt;/code&gt; en el root de &lt;code&gt;gh-pages&lt;/code&gt; y listo (no te olvides de agregarlo y c-p).&lt;/p&gt;
 &lt;section id="changes"&gt;
 
-&lt;h3&gt;Cambios&lt;/h3&gt;
+&lt;h2&gt;Cambios&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;time&gt;2014-01-02&lt;/time&gt; Reescrito para ser mas explicativo.&lt;/li&gt;
@@ -292,13 +292,13 @@ $ git push origin gh-pages
 &lt;/ol&gt;
 &lt;/div&gt;</description><category>windows</category><guid>http://blog.quinzi.com.ar/./es/windows7-shell-icons/</guid><pubDate>Thu, 12 Dec 2013 00:00:00 GMT</pubDate></item><item><title>pandy</title><link>http://blog.quinzi.com.ar/./es/pandy/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; es un wrapper para &lt;a href="http://johnmacfarlane.net/pandoc/"&gt;pandoc&lt;/a&gt; + cositas copadas (si usas markdown -&amp;gt; html)&lt;/p&gt;
 &lt;p&gt;Basicamente toma un archivo/carpeta, de qué convertir y a qué convertir, y lo corre por pandoc.&lt;/p&gt;
-&lt;h2 id="uso"&gt;Uso
-&lt;/h2&gt;&lt;p&gt;Para usar el script, solo llamalo con algo asi:&lt;/p&gt;
+&lt;h2 id="uso"&gt;Uso&lt;/h2&gt;
+&lt;p&gt;Para usar el script, solo llamalo con algo asi:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;pandy source format_from format/s_to [other options]
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="caracteristicas"&gt;Caracteristicas
+&lt;h2 id="caracteristicas"&gt;Caracteristicas&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Sintaxis un porquito mas facil para los comandos de pandoc&lt;/li&gt;
 &lt;li&gt;Carpeta de output manteniendo o no la estructura&lt;/li&gt;
@@ -311,7 +311,7 @@ $ git push origin gh-pages
 &lt;li&gt;Si usas markdown y convertis a HTML hay cositas lindas para vos: abbreviations (de las verdaderas, no como esas que son ignoradas por pandoc) y admonitions.&lt;/li&gt;
 &lt;li&gt;"WikiLinks" para tu index!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/h2&gt;&lt;p&gt;Para más información y explicación, ir a la &lt;a href="https://quinzi.com.ar/projects/pandy"&gt;página de proyecto de pandy&lt;/a&gt;.&lt;/p&gt;</description><category>python</category><category>code</category><category>pandoc</category><category>markdown</category><guid>http://blog.quinzi.com.ar/./es/pandy/</guid><pubDate>Wed, 11 Dec 2013 00:00:00 GMT</pubDate></item><item><title>svnlog: make changelog from SVN</title><link>http://blog.quinzi.com.ar/./es/svnlog/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; is a python script to create a changelog from a repository log.&lt;/p&gt;
+&lt;p&gt;Para más información y explicación, ir a la &lt;a href="https://quinzi.com.ar/projects/pandy"&gt;página de proyecto de pandy&lt;/a&gt;.&lt;/p&gt;</description><category>python</category><category>code</category><category>pandoc</category><category>markdown</category><guid>http://blog.quinzi.com.ar/./es/pandy/</guid><pubDate>Wed, 11 Dec 2013 00:00:00 GMT</pubDate></item><item><title>svnlog: make changelog from SVN</title><link>http://blog.quinzi.com.ar/./es/svnlog/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; is a python script to create a changelog from a repository log.&lt;/p&gt;
 &lt;p&gt;Examples of output (default):&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;2013-11-25:
     changed arguments (better handling)
@@ -358,7 +358,7 @@ $ git push origin gh-pages
 &lt;p&gt;pymd ahora esta en &lt;a href="https://pypi.python.org/pypi/pymd"&gt;PyPI&lt;/a&gt;. Eso significa que lo podes instalar como &lt;code&gt;pip install pymd&lt;/code&gt; :)&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/pymd"&gt;pymd&lt;/a&gt; es un wrapper para la librería &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python Markdown&lt;/a&gt;, basicamente te permite tener un HTML completo a comparación de lo que te tira la librería.&lt;/p&gt;
-&lt;h2 id="caracteristicas"&gt;Características
+&lt;h2 id="caracteristicas"&gt;Características&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Proceso en batch (en una carpeta o usando .list) con extensiones .md, .txt o .markdown&lt;/li&gt;
 &lt;li&gt;Especificar una carpeta de resultados/output (con creación automática)&lt;/li&gt;
@@ -369,15 +369,15 @@ $ git push origin gh-pages
 &lt;li&gt;Wiki links: &lt;code&gt;[](file|path) -&amp;gt; [title linked file](output_path)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Hecho con amor &amp;lt;3&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/h2&gt;&lt;p&gt;Más información y ejemplos en la &lt;a href="https://quinzi.com.ar/projects/pymd"&gt;página de proyecto de pymd&lt;/a&gt;&lt;/p&gt;</description><category>python</category><category>code</category><category>markdown</category><guid>http://blog.quinzi.com.ar/./es/pymd/</guid><pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate></item><item><title>foobar2000 theme: Tomorrow Night Bright</title><link>http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/</link><description>&lt;div class="toc"&gt;
+&lt;p&gt;Más información y ejemplos en la &lt;a href="https://quinzi.com.ar/projects/pymd"&gt;página de proyecto de pymd&lt;/a&gt;&lt;/p&gt;</description><category>python</category><category>code</category><category>markdown</category><guid>http://blog.quinzi.com.ar/./es/pymd/</guid><pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate></item><item><title>foobar2000 theme: Tomorrow Night Bright</title><link>http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/#requerimientos"&gt;Requerimientos&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Experimentando con el Default UI de foobar2000, salió este theme muy minimalista/simple con los colores de &lt;a href="https://github.com/ChrisKempson/Tomorrow-Theme"&gt;Tomorrow theme&lt;/a&gt; versión Night Bright.&lt;/p&gt;
-&lt;h2 id="screenshots"&gt;Screenshots
-&lt;/h2&gt;&lt;p&gt;Se tiene el menu + controles en una misma linea. Debajo, el seekbar + los playlists en un dropdown menu. En el status bar esta el tiempo, rating (vista) y volúmen.&lt;/p&gt;
+&lt;h2 id="screenshots"&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;Se tiene el menu + controles en una misma linea. Debajo, el seekbar + los playlists en un dropdown menu. En el status bar esta el tiempo, rating (vista) y volúmen.&lt;/p&gt;
 &lt;p&gt;Son cuatro vistas/tabs en total:&lt;/p&gt;
 &lt;p&gt;"Now" contiene el playlist actual, agrupado por artista (en azul) + album (verde). Los tracks solo muestran su titulo (rojo) y su comentario (naranja).&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Lista de reproducción activa" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_now.png"&gt;&lt;/p&gt;
@@ -388,14 +388,14 @@ $ git push origin gh-pages
 &lt;p&gt;"Library" es la biblioteca.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Biblioteca" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_library.png"&gt;&lt;/p&gt;
 &lt;p&gt;No tiene lista de playlist (solo el dropdown) porque no hay uno que me liste y prevenga el accidental borrado :P. Si necesitas manejarlos, vas a &lt;kbd&gt;View &amp;gt; Playlist Manager&lt;/kbd&gt;.&lt;/p&gt;
-&lt;h2 id="requerimientos"&gt;Requerimientos
+&lt;h2 id="requerimientos"&gt;Requerimientos&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.foobar2000.org/"&gt;foobar2000&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://foo2k.chottu.net/"&gt;EsPlaylist&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.foobar2000.org/components/view/foo_uie_lyrics3"&gt;Lyric Show Panel 3&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.mediafire.com/?qb2v62gt01uzr8h"&gt;theme + configuración&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/h2&gt;&lt;p&gt;Poner la configuración del EsPlaylist (&lt;code&gt;foo_uie_esplaylist.dll.cfg&lt;/code&gt;) en &lt;code&gt;[lugar_donde_esta_foobar]/configuration&lt;/code&gt; (cosa que no tengas que configurar a mano) y el theme (&lt;code&gt;tomorrowbright.fth&lt;/code&gt;) donde quieras.&lt;/p&gt;
+&lt;p&gt;Poner la configuración del EsPlaylist (&lt;code&gt;foo_uie_esplaylist.dll.cfg&lt;/code&gt;) en &lt;code&gt;[lugar_donde_esta_foobar]/configuration&lt;/code&gt; (cosa que no tengas que configurar a mano) y el theme (&lt;code&gt;tomorrowbright.fth&lt;/code&gt;) donde quieras.&lt;/p&gt;
 &lt;p&gt;Importá el theme (&lt;kbd&gt;Preferences &amp;gt; Display &amp;gt; Default User Interface &amp;gt; Import theme&lt;/kbd&gt;). En el playlist, hace &lt;kbd&gt;click derecho &amp;gt; grouping &amp;gt; inline - Tomorrow night bright&lt;/kbd&gt;. En el lyrics, edita el panel (&lt;kbd&gt;panel preferences&lt;/kbd&gt;) y pone el &lt;code&gt;highlight color&lt;/code&gt; a RGB &lt;code&gt;236,206,88&lt;/code&gt; (amarillito).&lt;/p&gt;
 &lt;p&gt;El color de los "separadores" de los titulos (en el playlist, el &lt;code&gt;%artist%&lt;/code&gt;, &lt;code&gt;%album%&lt;/code&gt;; y en el meta el "metadata", "location", "other"...) esta configurado en &lt;kbd&gt;Default User Interface &amp;gt; Colors and fonts&lt;/kbd&gt; (por si no te gusta el violeta).&lt;/p&gt;
 &lt;p&gt;Si queres poner otros botones de control, necesitas que esten en &lt;code&gt;.ico&lt;/code&gt; de 16x16.&lt;/p&gt;
@@ -409,8 +409,8 @@ $ git push origin gh-pages
 &lt;p&gt;Me aventuré con esto por que quería hacer un proyecto donde necesitaba un &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;. Ultimamente (o siempre fue así), no te dan la opción de hacerte cuenta de &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;, solo creando un sitio. Not interested. No tengo un server/computadora (es un pendiente) para hacerla server e instalarle &lt;a href="https://filezilla-project.org"&gt;FileZilla&lt;/a&gt;. Damnit. Me acordé de los servicios de sincronización/host de donde tengo cuenta y me aventuré.&lt;/p&gt;
 &lt;p&gt;Elegí &lt;a href="http://www.box.com"&gt;Box&lt;/a&gt;. Pensaba subir los archivos por web, ya que la sincronización es media-media en ese servicio, pero recordé que &lt;a href="https://www.sugarsync.com/"&gt;SugarSync&lt;/a&gt; tiene el "SugarSync Drive", donde podes acceder a tu cuenta con el explorador de archivos. Me puse a buscar si Box tenía la mismo o similar.&lt;/p&gt;
 &lt;p&gt;Tiene para acceder por &lt;abbr title='El coso "viejo"'&gt;FTP&lt;/abbr&gt;, pero solo en cuentas pagas. Después leí sobre WebDAV. Intenté configurarlo y, luego de pelear por bastante tiempo, acá está cómo hacerlo en Windows (7).&lt;/p&gt;
-&lt;h2 id="windows-explorer"&gt;Windows Explorer
-&lt;/h2&gt;&lt;p&gt;En "Equipo" (el viejo "Mi PC"), ir a &lt;kbd&gt;Conectar a unidad de red&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2 id="windows-explorer"&gt;Windows Explorer&lt;/h2&gt;
+&lt;p&gt;En "Equipo" (el viejo "Mi PC"), ir a &lt;kbd&gt;Conectar a unidad de red&lt;/kbd&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_es.png"&gt;&lt;/p&gt;
 &lt;p&gt;Seleccionar el disco (que no importa mucho parece), tildar &lt;kbd&gt;Conectar de nuevo al iniciar sesión&lt;/kbd&gt;. Clickear en &lt;kbd&gt;Conectarse a sitio web para usarlo como almacén...&lt;/kbd&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Ventana de configuración" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_config_es.png"&gt;&lt;/p&gt;
@@ -429,8 +429,8 @@ $ git push origin gh-pages
 &lt;p&gt;Y listo, asi queda:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Mostrando disco agregado" src="http://blog.quinzi.com.ar/images/2013/webdav_networks_computer.png"&gt;&lt;/p&gt;
 &lt;p&gt;Si no te funciona, podes usar &lt;a href="http://rei.to/carotdav_en.html"&gt;CarotDAV&lt;/a&gt; (que es para "unir" varios servicios en un mismo programa portable), el famoso &lt;a href="http://www.ghisler.com/download.htm"&gt;Total Commander&lt;/a&gt; o BitKinex.&lt;/p&gt;
-&lt;h2 id="bitkinex"&gt;BitKinex
-&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.bitkinex.com/download"&gt;Descargar BitKinex&lt;/a&gt;. Instalar normalmente, pero recomiendo (por que leí) destildar el "I want to configure data source now" por que parece que no hace nada).&lt;/p&gt;
+&lt;h2 id="bitkinex"&gt;BitKinex&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.bitkinex.com/download"&gt;Descargar BitKinex&lt;/a&gt;. Instalar normalmente, pero recomiendo (por que leí) destildar el "I want to configure data source now" por que parece que no hace nada).&lt;/p&gt;
 &lt;p&gt;Una vez iniciado (si, aparece asi chiquito por alguna razón), buscar en la lista el Http/WebDAV, &lt;kbd&gt;right click &amp;gt; New &amp;gt; Http/WebDAV&lt;/kbd&gt; e ingresar nombre.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Creando servicio" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_new.png"&gt;&lt;/p&gt;
 &lt;p&gt;Poner datos similares de los de arriba: &lt;code&gt;dav.box.com&lt;/code&gt;, seleccionar &lt;kbd&gt;&lt;abbr title="Seguridad ante todo"&gt;SSL&lt;/abbr&gt;&lt;/kbd&gt;. Poner usuario y contraseña en el apartado de abajo:&lt;/p&gt;
@@ -460,8 +460,8 @@ $ git push origin gh-pages
 &lt;p class="admonition-title"&gt;Atención&lt;/p&gt;
 &lt;p&gt;Si no te interesa la historia del por qué se escribió el script y/o no queres saber sobre programitas, adelantate hasta &lt;a href="http://blog.quinzi.com.ar/./es/prodo/#script"&gt;acá&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;h2 id="background"&gt;Background
-&lt;/h2&gt;&lt;p&gt;Cuando desarrollas o escribis código (o palabras, por qué no) necesitas algún tipo de bug/issue tracker. Eso es normal para proyectos grandes o con varias personas, pero al ser un solo individuo o el proyecto es chico, todas las opciones son como mucho.&lt;/p&gt;
+&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;Cuando desarrollas o escribis código (o palabras, por qué no) necesitas algún tipo de bug/issue tracker. Eso es normal para proyectos grandes o con varias personas, pero al ser un solo individuo o el proyecto es chico, todas las opciones son como mucho.&lt;/p&gt;
 &lt;p&gt;A algunos no les importa e instalan grandes bug trackers, otros usan algo mas simple. Otros vamos por la old school y escribimos en papel. Otras escribimos en un .txt, que puede ser un simple archivo o con esos ToDo.txt/&lt;a href="http://taskwarrior.org/"&gt;taskwarrior&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Si el proyecto es medianamente grande (más grande que un mero script), escribo en papel. Si es algo simple/un script, anoto las cosas dentro del archivo, como varias personas.&lt;/p&gt;
 &lt;p&gt;El problema que tengo es que me gusta listar todas las cositas esas con el numero de linea y/o click que me lleve a tal. No todos los editores lo hacen por default (creo que las grandes IDEs), seguro hay un plugin que ni ganas de configurar. Se puede hacer una búsqueda, que es lo mas cercano a lo que quiero.&lt;/p&gt;
@@ -477,8 +477,8 @@ $ git push origin gh-pages
 &lt;p&gt;Y &lt;a href="http://stefanstools.sourceforge.net/grepWin.html"&gt;grepWin&lt;/a&gt;, donde hay que tener cuidado de clickear solo en "Search" y seleccionar la opción de "Content"&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Resultados de búsqueda de grepWin" src="http://blog.quinzi.com.ar/images/2013/search_grepWin.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Este no estaba tan mal, pero eso de abrir programa &amp;gt; rellenar datos no me convencia mucho. Por lineas de comando solo podes poner el path y qué buscar (que no esta mal) pero quiero que, por lo menos, esté seleccionado el "Content".&lt;/p&gt;
-&lt;h2 id="script"&gt;Say hi to proDO
-&lt;/h2&gt;&lt;p&gt;Como estoy aprendiendo Python y mas que nada lo estoy usando para hacer varios scripts&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; y reemplazar/dejar de dar vueltas con los batch, me decidí a hacer el mío.&lt;/p&gt;
+&lt;h2 id="script"&gt;Say hi to proDO&lt;/h2&gt;
+&lt;p&gt;Como estoy aprendiendo Python y mas que nada lo estoy usando para hacer varios scripts&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/prodo/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; y reemplazar/dejar de dar vueltas con los batch, me decidí a hacer el mío.&lt;/p&gt;
 &lt;p&gt;Con los ejemplos anteriores, queda asi:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Resultados de búsqueda con proDO" src="http://blog.quinzi.com.ar/images/2013/search_nocolor.png"&gt;&lt;/p&gt;
 &lt;p&gt;Pero si tenes &lt;a href="https://pypi.python.org/pypi/colorama"&gt;colorama&lt;/a&gt; instalado queda asi (con mas onda):&lt;/p&gt;

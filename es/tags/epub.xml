@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (epub)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/epub.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Sat, 11 Jan 2014 20:07:25 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leer ePUB en Kindle 3</title><link>http://blog.quinzi.com.ar/./es/kindle3-epub/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (epub)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/epub.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 14 Jan 2014 14:18:14 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leer ePUB en Kindle 3</title><link>http://blog.quinzi.com.ar/./es/kindle3-epub/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/kindle3-epub/#jailbreak"&gt;Jailbreak&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/kindle3-epub/#launchpad"&gt;Launchpad&lt;/a&gt;&lt;/li&gt;
@@ -8,14 +8,14 @@
 &lt;/div&gt;
 &lt;p&gt;El otro día andaba buscando si era posible leer ePUBs en el Kindle y, si
 era asi, cómo leerlos. Sólo por curiosidad.&lt;/p&gt;
-&lt;h2 id="jailbreak"&gt;Jailbreak
-&lt;/h2&gt;&lt;p&gt;Primero hacerle Jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;bajando el archivo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="jailbreak"&gt;Jailbreak&lt;/h2&gt;
+&lt;p&gt;Primero hacerle Jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;bajando el archivo&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Descomprimirlo. Buscar el &lt;code&gt;update_*_install*.bin&lt;/code&gt;, donde * es
 dependiendo del Kindle y firmware que tenga (en el post y dentro del
 comprimido dice cómo) y pasarlo al root del kindle.&lt;/p&gt;
 &lt;p&gt;Liberar/eject el Kindle y apretar &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
-&lt;h2 id="launchpad"&gt;Launchpad
-&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Descargar este archivo&lt;/a&gt; y descomprimirlo.&lt;/p&gt;
+&lt;h2 id="launchpad"&gt;Launchpad&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Descargar este archivo&lt;/a&gt; y descomprimirlo.&lt;/p&gt;
 &lt;p&gt;Pasar el &lt;code&gt;update_launchpad_0.0.1c_*_install.bin&lt;/code&gt; (donde * es la version
 del Kindle que tengas) al root del kindle.&lt;/p&gt;
 &lt;p&gt;Liberar/eject el Kindle y apretar &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
@@ -28,8 +28,8 @@ El otro (Cool Reader) no acepta links, el furigana los muestra con line
 breaks, muestra bien las tablas y parece que todavia se desarolla. Aca
 sólo "muestro" como se instala el Cool Reader. (el otro es casi lo
 mismo)&lt;/p&gt;
-&lt;h2 id="cool-reader-3"&gt;Cool Reader 3
-&lt;/h2&gt;&lt;p&gt;Los formatos que Cool Reader 3 lee son: fb2, txt, html, rtf, chm, epub,
+&lt;h2 id="cool-reader-3"&gt;Cool Reader 3&lt;/h2&gt;
+&lt;p&gt;Los formatos que Cool Reader 3 lee son: fb2, txt, html, rtf, chm, epub,
 mobi. Se creó (y su "principal objetivo") para leer los &lt;a href="http://en.wikipedia.org/wiki/Fb2"&gt;fb2&lt;/a&gt;, por eso
 los epub (y seguro HTML y chm) no los lee "tan bien".&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=148850"&gt;Descargar el archivo&lt;/a&gt; y descomprimirlo.&lt;/p&gt;
@@ -46,7 +46,7 @@ apretar &lt;kbd&gt;Shift C R&lt;/kbd&gt;, aparece el “success!” y carga el p
 &lt;li&gt;En el dialogo de preferencias: &lt;kbd&gt;Home&lt;/kbd&gt; - guarda las opciones,
 &lt;kbd&gt;Back&lt;/kbd&gt; - sale sin guardar&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt; Comments &lt;/h4&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
 
 &lt;div id="comments"&gt;
 

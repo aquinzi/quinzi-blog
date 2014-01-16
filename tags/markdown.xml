@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (markdown)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/markdown.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 20:07:16 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>pandy</title><link>http://blog.quinzi.com.ar/pandy/</link><description>&lt;p&gt;&lt;a href="http://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; is a command line wrapper for &lt;a href="http://johnmacfarlane.net/pandoc/"&gt;pandoc&lt;/a&gt; + cool stuff (if you use markdown -&amp;gt; html)&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (markdown)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/markdown.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 14 Jan 2014 14:18:13 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>pandy</title><link>http://blog.quinzi.com.ar/pandy/</link><description>&lt;p&gt;&lt;a href="http://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; is a command line wrapper for &lt;a href="http://johnmacfarlane.net/pandoc/"&gt;pandoc&lt;/a&gt; + cool stuff (if you use markdown -&amp;gt; html)&lt;/p&gt;
 &lt;p&gt;Basically takes a file/folder, input the markup to convert from, the output markup and runs it through pandoc.&lt;/p&gt;
-&lt;h2 id="usage"&gt;Usage
-&lt;/h2&gt;&lt;p&gt;To use the script, just call it with something like:&lt;/p&gt;
+&lt;h2 id="usage"&gt;Usage&lt;/h2&gt;
+&lt;p&gt;To use the script, just call it with something like:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;pandy source format_from format/s_to [other options]
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="features"&gt;Features
+&lt;h2 id="features"&gt;Features&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;A bit easier syntax around pandoc commands (I can't never remember them)&lt;/li&gt;
 &lt;li&gt;Output folder keeping or not the folder structure&lt;/li&gt;
@@ -20,12 +20,12 @@
 &lt;li&gt;If you use markdown and convert to HTML there are some goodies for you! abbreviations (real abbreviations, like that they are parsed and not ignored as pandoc does) and admonitions.&lt;/li&gt;
 &lt;li&gt;"WikiLinks" for your custom index file!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/h2&gt;&lt;p&gt;For more information and explanation, go to &lt;a href="https://quinzi.com.ar/projects/pandy"&gt;pandy project page&lt;/a&gt;.&lt;/p&gt;</description><category>python</category><category>code</category><category>pandoc</category><category>markdown</category><guid>http://blog.quinzi.com.ar/pandy/</guid><pubDate>Wed, 11 Dec 2013 00:00:00 GMT</pubDate></item><item><title>pymd: wrapper for Python Markdown</title><link>http://blog.quinzi.com.ar/pymd/</link><description>&lt;div class="admonition info"&gt;
+&lt;p&gt;For more information and explanation, go to &lt;a href="https://quinzi.com.ar/projects/pandy"&gt;pandy project page&lt;/a&gt;.&lt;/p&gt;</description><category>python</category><category>code</category><category>pandoc</category><category>markdown</category><guid>http://blog.quinzi.com.ar/pandy/</guid><pubDate>Wed, 11 Dec 2013 00:00:00 GMT</pubDate></item><item><title>pymd: wrapper for Python Markdown</title><link>http://blog.quinzi.com.ar/pymd/</link><description>&lt;div class="admonition info"&gt;
 &lt;p class="admonition-title"&gt;Hey!&lt;/p&gt;
 &lt;p&gt;pymd is now available in &lt;a href="https://pypi.python.org/pypi/pymd"&gt;PyPI&lt;/a&gt;. That means that you can install it like &lt;code&gt;pip install pymd&lt;/code&gt; :)&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/pymd"&gt;pymd&lt;/a&gt; is a command line wrapper for &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python Markdown&lt;/a&gt; library but having a full HTML file instead of only what it's originally parsed.&lt;/p&gt;
-&lt;h2 id="features"&gt;Features
+&lt;h2 id="features"&gt;Features&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Batch process files (in folder or in a .list) with .md, .txt or .markdown extensions&lt;/li&gt;
 &lt;li&gt;Specify an output folder (with automatic creation)&lt;/li&gt;
@@ -36,4 +36,4 @@
 &lt;li&gt;Wiki links: &lt;code&gt;[](file|path) -&amp;gt; [title linked file](output_path)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Made with love &amp;lt;3&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/h2&gt;&lt;p&gt;Find more information and examples in &lt;a href="https://quinzi.com.ar/projects/pymd"&gt;pymd's project page&lt;/a&gt; &lt;/p&gt;</description><category>python</category><category>code</category><category>markdown</category><guid>http://blog.quinzi.com.ar/pymd/</guid><pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;Find more information and examples in &lt;a href="https://quinzi.com.ar/projects/pymd"&gt;pymd's project page&lt;/a&gt; &lt;/p&gt;</description><category>python</category><category>code</category><category>markdown</category><guid>http://blog.quinzi.com.ar/pymd/</guid><pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate></item></channel></rss>

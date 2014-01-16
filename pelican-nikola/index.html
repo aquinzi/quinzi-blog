@@ -17,12 +17,14 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
     
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        <link href="http://feeds.feedburner.com/intentode" type="application/atom+xml" rel="alternate" title="RSS Feed">
+    
     
         
     <link rel="icon" href="../favicon.ico" sizes="16x16">
     <link rel="icon" href="../favicon.png" sizes="16x16">
     
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
 
     
 
@@ -76,7 +78,7 @@
             <dl>
                     <dt class="date">Posted
                     </dt><dd>  
-    <time class="published dt-published" itemprop="datePublished" datetime="2014-01-11T00:00:00">2014-01-11</time>
+    <time class="published dt-published" itemprop="datePublished" datetime="2014-01-11T00:00:00+00:00">2014-01-11</time>
 </dd>
                      
             </dl>
@@ -110,8 +112,8 @@
 </div>
 <p>When I was thinking of moving my blog to this new domain, I thought of using <a href="http://www.johnmacfarlane.net/pandoc/">Pandoc</a> as the converter<sup id="fnref:1"><a class="footnote-ref" href=".#fn:1" rel="footnote">1</a></sup>. I even created <a href="http://quinzi.com.ar/projects/pandy">pandy</a> for that. But then I run into the "problems" (ok, I was kind of lazy) of generating RSS, listing posts with certain tags or categories (which I ended up not using), the index and archive, idealizing of using plugins, etc. and gave up. </p>
 <p>In the beginning, I would <a href="../wordpress-to-pelican">continue using Pelican</a> as is <a href="http://docs.getpelican.com/">it's easy and customizable</a>, even though it doesn't have Pandoc<sup id="fnref:2"><a class="footnote-ref" href=".#fn:2" rel="footnote">2</a></sup> support. But later I would be lazy to move to another system (not that I blog much, but <strong>I like Pandoc's markdown</strong>).</p>
-<h2 id="acrylamid">Acrylamid
-</h2><p>In my searching, I found <a href="http://posativ.org/acrylamid/index.html">Acrylamid</a> which looks pretty good. It's like the programmer/hacker blog generator, where you can do many things, including using template syntax <em>inside</em> your post. How cool is that?. It also has incremental builds, which means that it won't regenerate the whole site/blog again after a little edit, but only what it was changed. </p>
+<h2 id="acrylamid">Acrylamid</h2>
+<p>In my searching, I found <a href="http://posativ.org/acrylamid/index.html">Acrylamid</a> which looks pretty good. It's like the programmer/hacker blog generator, where you can do many things, including using template syntax <em>inside</em> your post. How cool is that?. It also has incremental builds, which means that it won't regenerate the whole site/blog again after a little edit, but only what it was changed. </p>
 <p>Other cool things include:</p>
 <ul>
 <li>different meta tags: you can choose between MultiMarkdown (like Pelican), YAML or rst.</li>
@@ -129,8 +131,8 @@
 </ul>
 <p>It doesn't have categories (but by using views <a href="https://github.com/posativ/acrylamid/issues/121">seems like it's posible</a>), automatic galleries creation (but you can use template syntax inside the post, <a href="http://posativ.org/acrylamid/howtos.html#image-gallery">so is covered</a>) and the <a href="http://posativ.org/acrylamid/theming.html">theme creation</a> it's not so automatic: you must list all the files that the theme uses inside an <code>__init.py</code> file.</p>
 <p>I really wanted to use Acrylamid, even without the missing bits, but it was kind of "complicated" to set up on Windows if you wanted to use <a href="https://github.com/ahupp/python-magic">python-magic</a> (at least I have problems with it). I skipped that part but for some kind of reason I was getting errors with the locale setting. I tested it with "Linux locale" and "Windows locale" and both threw me errors.</p>
-<h2 id="nikola">Nikola
-</h2><p>Then I remembered I once stumbled upon <a href="http://getnikola.com/">Nikola</a>, originally created by an Argentinian guy, so yeah, I had to try it out :P.</p>
+<h2 id="nikola">Nikola</h2>
+<p>Then I remembered I once stumbled upon <a href="http://getnikola.com/">Nikola</a>, originally created by an Argentinian guy, so yeah, I had to try it out :P.</p>
 <p>It does have <a href="http://www.johnmacfarlane.net/pandoc/">Pandoc</a> support; but it's not as "feature rich" (or easy customizable) as <a href="http://docs.getpelican.com/">Pelican</a>, and the documentation it's not so "complete" if you will. There are a couple of things that are not documented and you must find it in the Google Groups, GitHub or looking in the code. And also, not so feature-cool like <a href="http://posativ.org/acrylamid/index.html">Acrylamid</a>. However, I think it's on a good track and it's the newest of the three.</p>
 <p>It has cool things too:</p>
 <ul>
@@ -152,14 +154,14 @@
 <li>raw post/page support (to show the source in text)</li>
 </ul>
 <p>The draft state is applied in the "tag" metadata instead of a separate one, and they are deployed by default; it has no color support for the command line (but I think it's in the talks) and the "show source of the post and copy it" it's enabled by default.</p>
-<h2 id="the-moving">The moving
-<h3 id="install-nikola">Install Nikola
-</h3></h2><p>You start first by <a href="http://getnikola.com/">getting Nikola</a> and installing it. By default, it uses <a href="http://makotemplates.org">Mako</a> as the template engine, but it has support for <a href="http://jinja.pocoo.org/">Jinja2</a>. You can read about the <a href="http://getnikola.com/handbook.html#installing-nikola">dependencies in the documentation page</a> and if you want, you can use <code>pip install -r requirements.txt</code> or <code>requirements-full.txt</code> for the whole thing.</p>
+<h2 id="the-moving">The moving</h2>
+<h3 id="install-nikola">Install Nikola</h3>
+<p>You start first by <a href="http://getnikola.com/">getting Nikola</a> and installing it. By default, it uses <a href="http://makotemplates.org">Mako</a> as the template engine, but it has support for <a href="http://jinja.pocoo.org/">Jinja2</a>. You can read about the <a href="http://getnikola.com/handbook.html#installing-nikola">dependencies in the documentation page</a> and if you want, you can use <code>pip install -r requirements.txt</code> or <code>requirements-full.txt</code> for the whole thing.</p>
 <p>If you are running Windows, you must download and install the compiled versions of lxml and pillow. You can check in their <a href="https://pypi.python.org/">PyPI pages</a> or you can go to <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">http://www.lfd.uci.edu/~gohlke/pythonlibs/</a> and get them there. Remember to download and install according to your Python version and architecture (32 or 64 bits).</p>
-<h3 id="initiate">Initiate
-</h3><p>To initiate or create an empty site with the default settings and folder structures, run either <code>nikola init path/to/mysite</code> or, if you want some demo content, <code>nikola init --demo path/to/mysite</code>.</p>
-<h3 id="convert-metadata">Convert metadata
-</h3><p>Pelican uses the <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">Multimarkdown</a> style of metadata while Nikola uses something similar: the same syntax but with <code>..</code> in front.</p>
+<h3 id="initiate">Initiate</h3>
+<p>To initiate or create an empty site with the default settings and folder structures, run either <code>nikola init path/to/mysite</code> or, if you want some demo content, <code>nikola init --demo path/to/mysite</code>.</p>
+<h3 id="convert-metadata">Convert metadata</h3>
+<p>Pelican uses the <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">Multimarkdown</a> style of metadata while Nikola uses something similar: the same syntax but with <code>..</code> in front.</p>
 <p>An example would be:</p>
 <div class="code"><pre>Title: nice title! :D      # Pelican
 .. title: nice title! :D   # Nikola
@@ -171,13 +173,13 @@
 <p class="admonition-title">Note</p>
 <p>Nikola doesn't have/see the "modified" meta key internally, but you can have it like a custom key. You just access it differently in the themes.</p>
 </div>
-<h3 id="translations">Translations
-</h3><p>If you have posts or pages translations you must pay attention: Nikola handles the translations differently from Pelican. While in Pelican you only set the same slug or title in the posts, and have different file names (I think); Nikola relies on the file names.</p>
+<h3 id="translations">Translations</h3>
+<p>If you have posts or pages translations you must pay attention: Nikola handles the translations differently from Pelican. While in Pelican you only set the same slug or title in the posts, and have different file names (I think); Nikola relies on the file names.</p>
 <p>The easiness of this depends on your setup, but you must end up with something like: <code>nicefile.md</code> for the post in default language, and <code>nicefile.md.es</code> (spanish content) for the translated file.</p>
 <p>The cool thing of this is that you don't have to duplicate the meta tags. For example, you just create the "tags" meta key in the default language but don't specify it in the translated one. So when you update, you do only in the "master" or "parent" file and the "child" just copies it. </p>
 <p>If you don't feel like having duplicated metadata between files, and after you renamed and converted them, you can run <a href="https://gist.github.com/eikiu/8377186">this python script</a> to delete them. Remember this is optional (or at least it didn't break my setup).</p>
-<h3 id="images-paths">Images paths
-</h3><p>The syntax on this is also different but it can be easily done with search and replace. You can use whatever you want, like grep. If you are on Windows, I recommend <a href="http://stefanstools.sourceforge.net/grepWin.html">grepWin</a> if you want something with a GUI. This changes from setup to setup, but my settings were:</p>
+<h3 id="images-paths">Images paths</h3>
+<p>The syntax on this is also different but it can be easily done with search and replace. You can use whatever you want, like grep. If you are on Windows, I recommend <a href="http://stefanstools.sourceforge.net/grepWin.html">grepWin</a> if you want something with a GUI. This changes from setup to setup, but my settings were:</p>
 <p>For markdown syntax:</p>
 <ul>
 <li>Search <code>(|filename|../../images/</code> </li>
@@ -188,26 +190,26 @@
 <li>Search <code>&lt;img src="../../static/images/</code> </li>
 <li>Replace <code>&lt;img src="../images/</code></li>
 </ul>
-<h3 id="links-between-posts">Links between posts
-</h3><p>Again, this is totally different between the systems and it's going to be very easy or really difficult depending on your setup: Pelican uses the filenames for linking content while Nikola uses the slug of the post.</p>
+<h3 id="links-between-posts">Links between posts</h3>
+<p>Again, this is totally different between the systems and it's going to be very easy or really difficult depending on your setup: Pelican uses the filenames for linking content while Nikola uses the slug of the post.</p>
 <p>If you have the filename like the slug (or very similar) you can search and replace again. Like:</p>
 <ul>
 <li>Search: <code>\(\|filename\|(.+)\.md\)</code></li>
 <li>Replace: <code>(link://slug/$1)</code></li>
 </ul>
 <p>I recommend doing it after the images, and you must check the links afterwards.</p>
-<h3 id="plugins-syntax">Plugins syntax
-</h3><p>I didn't use many plugins that used syntax in my posts, just only one: <a href="http://quinzi.com.ar/projects/interlinks">interlinks</a>. This was easilly done with search and replace.</p>
-<h2 id="other-nikola-stuff">Other Nikola stuff
-<h3 id="locale-in-windows">Locale in Windows
-</h3></h2><p>If you are going to use the internationalization in Windows, you must configurate your <code>LOCALES</code> as (example):</p>
+<h3 id="plugins-syntax">Plugins syntax</h3>
+<p>I didn't use many plugins that used syntax in my posts, just only one: <a href="http://quinzi.com.ar/projects/interlinks">interlinks</a>. This was easilly done with search and replace.</p>
+<h2 id="other-nikola-stuff">Other Nikola stuff</h2>
+<h3 id="locale-in-windows">Locale in Windows</h3>
+<p>If you are going to use the internationalization in Windows, you must configurate your <code>LOCALES</code> as (example):</p>
 <div class="code"><pre>LOCALES = {'en' : 'English_United States', 'es' : 'Spanish_Argentina'}
 </pre></div>
 
 
 <p>It doesn't matter your Windows language setting, I think it only accepts english locales (I tested it with Windows in Spanish and it worked).</p>
-<h3 id="linking-internally">Linking internally
-</h3><p>If you want to link to another post, tag, archive, etc.:</p>
+<h3 id="linking-internally">Linking internally</h3>
+<p>If you want to link to another post, tag, archive, etc.:</p>
 <ul>
 <li>gallery: <code>link://gallery/gallery_name</code></li>
 <li>tags index: <code>link://tag_index</code></li>
@@ -220,14 +222,14 @@
 <li>blog's feed: <code>link://rss</code></li>
 <li>other post: <code>link://slug/the-nice-slug</code></li>
 </ul>
-<h3 id="pandoc">Pandoc
-</h3><p>As Pandoc uses the extension to recognize the input, you must configurate that extension in the <code>COMPILERS</code> option in the configuration file. If it's not found, it uses Markdown as default.</p>
+<h3 id="pandoc">Pandoc</h3>
+<p>As Pandoc uses the extension to recognize the input, you must configurate that extension in the <code>COMPILERS</code> option in the configuration file. If it's not found, it uses Markdown as default.</p>
 <p>While it worked for me using markdown, it didn't exactly work with some others, like Mediawiki. I don't know why.</p>
-<h3 id="posts-folder-and-subfolders">Posts folder and subfolders
-</h3><p><a href="http://getnikola.com/">Nikola</a> preserves the folder structure of the posts in the subfolders. If you have <code>file_g.txt</code> inside <code>folder_abc</code>, that structure is kept in the output. It can be good if you want to use it as categories in the output. There is no way to configurate it in the configuration.</p>
+<h3 id="posts-folder-and-subfolders">Posts folder and subfolders</h3>
+<p><a href="http://getnikola.com/">Nikola</a> preserves the folder structure of the posts in the subfolders. If you have <code>file_g.txt</code> inside <code>folder_abc</code>, that structure is kept in the output. It can be good if you want to use it as categories in the output. There is no way to configurate it in the configuration.</p>
 <p>In <a href="http://docs.getpelican.com/">Pelican</a> you can have many subfolders and sort of categorize your posts as you wish, and the output is configurated (by default, by date) as you want.</p>
-<h2 id="testing">Testing
-</h2><p>Initially your posts go to a <code>posts</code> folder in your root and the pages in <code>story</code>. The images folder would go to <code>files</code>. You can configurate all of this in the configuration file.</p>
+<h2 id="testing">Testing</h2>
+<p>Initially your posts go to a <code>posts</code> folder in your root and the pages in <code>story</code>. The images folder would go to <code>files</code>. You can configurate all of this in the configuration file.</p>
 <p>After configurating your <code>conf.py</code>, which is very well commented, you can try it. </p>
 <p>Build the site with <code>nikola build</code>. Then you can drag and drop pages to a browser or use the serve command: <code>nikola serve</code> and pointing your browser to <code>http://127.0.0.1:8000</code></p>
 <div class="footnote">
@@ -265,12 +267,74 @@
     <span class="badge badge-info"> windows</span> </a> </span>
  </dd>
                 </dl>
-
         </div>
-    </footer>
+		
+		<div id="post-comments">
+			
+				
 
-    
-    
+
+<div class="social-reaction">
+<ul>
+	<li data-icon="twitter">
+		Twitter
+		<ul>
+		
+		<li data-icon="star"><a href="https://twitter.com/intent/favorite?tweet_id=423823949231689728">1 Favs</a></li>
+		<li data-icon="retweet"><a href="https://twitter.com/intent/retweet?tweet_id=423823949231689728">2 Retweets</a></li>
+		<li> <a href="https://twitter.com/intent/tweet?in_reply_to=423823949231689728">Reply</a> </li>
+		
+		</ul>		
+	</li>
+</ul>
+</div>
+
+<h3> Tweets linking here</h3>
+<ul id="tweets"> 
+
+	<li><div>
+		<img src="../images/avatars/6ea256fca93ba01e670422f6ec197d82_normal.jpeg">
+		<p><span class="user">@eikiu</span> </p>
+		<p>Pelican to Nikola (guide) http://blog.quinzi.com.ar/pelican-nikola/ <time><a href="https://twitter.com/eikiu/status/423823949231689728">2014-01-16 14:27:58</a></time></p>
+	</div>
+	</li>
+
+	<li><div>
+		<img src="../images/avatars/WTF_normal.jpg">
+		<p><span class="user">@whattafack</span> </p>
+		<p>RT @eikiu: Pelican to Nikola (guide) http://blog.quinzi.com.ar/pelican-nikola/ <time><a href="https://twitter.com/whattafack/status/423831370998484992">2014-01-16 14:57:27</a></time></p>
+	</div>
+	</li>
+
+	<li><div>
+		<img src="../images/avatars/f08cfb8f3bc19660e6aa07f4dfb57341_normal.png">
+		<p><span class="user">@rokxx</span> </p>
+		<p>RT @eikiu: Pelican to Nikola (guide) http://blog.quinzi.com.ar/pelican-nikola/ <time><a href="https://twitter.com/rokxx/status/423831596236804096">2014-01-16 14:58:21</a></time></p>
+	</div>
+	</li>
+
+</ul>
+
+<h3> Mentions </h3>
+
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+
+
+
+
+			
+
+			
+			
     
         
     
@@ -297,7 +361,9 @@
 
     
 
-    
+			
+		</div>		
+    </footer>
 
     
     
@@ -306,6 +372,13 @@
 </article>
  </div>
 		<footer>
+			
+    <div id="vcard" class="vcard author p-author h-card vcard">
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> <a href="http://quinzi.com.ar/">A.Q.</a> </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        </p>
+    </div>
+
+			
 			<div id="search">
 				<p>Search: </p>
 				
@@ -322,12 +395,6 @@
 
 			</div>
 			
-			
-    <div id="vcard" class="vcard author p-author h-card vcard">
-        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> A.Q. </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="index.html#top"><i class="fa fa-chevron-circle-up"></i></a></span>
-        </p>
-    </div>
-
 		</footer>
 	</div>
 	

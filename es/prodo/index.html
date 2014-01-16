@@ -17,12 +17,14 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
     
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="../.././es/rss.xml">
+        <link href="http://feeds.feedburner.com/intentode" type="application/atom+xml" rel="alternate" title="RSS Feed">
+    
     
         
     <link rel="icon" href="../../favicon.ico" sizes="16x16">
     <link rel="icon" href="../../favicon.png" sizes="16x16">
     
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
 
     
 
@@ -72,7 +74,7 @@
             <dl>
                     <dt class="date">Publicado
                     </dt><dd>  
-    <time class="published dt-published" itemprop="datePublished" datetime="2013-07-26T00:00:00">2013-07-26</time>
+    <time class="published dt-published" itemprop="datePublished" datetime="2013-07-26T00:00:00+00:00">2013-07-26</time>
 </dd>
                      
             </dl>
@@ -90,8 +92,8 @@
 <p class="admonition-title">Atención</p>
 <p>Si no te interesa la historia del por qué se escribió el script y/o no queres saber sobre programitas, adelantate hasta <a href="../.././es/prodo/#script">acá</a></p>
 </div>
-<h2 id="background">Background
-</h2><p>Cuando desarrollas o escribis código (o palabras, por qué no) necesitas algún tipo de bug/issue tracker. Eso es normal para proyectos grandes o con varias personas, pero al ser un solo individuo o el proyecto es chico, todas las opciones son como mucho.</p>
+<h2 id="background">Background</h2>
+<p>Cuando desarrollas o escribis código (o palabras, por qué no) necesitas algún tipo de bug/issue tracker. Eso es normal para proyectos grandes o con varias personas, pero al ser un solo individuo o el proyecto es chico, todas las opciones son como mucho.</p>
 <p>A algunos no les importa e instalan grandes bug trackers, otros usan algo mas simple. Otros vamos por la old school y escribimos en papel. Otras escribimos en un .txt, que puede ser un simple archivo o con esos ToDo.txt/<a href="http://taskwarrior.org/">taskwarrior</a><sup id="fnref:1"><a class="footnote-ref" href="../.././es/prodo/#fn:1" rel="footnote">1</a></sup>.</p>
 <p>Si el proyecto es medianamente grande (más grande que un mero script), escribo en papel. Si es algo simple/un script, anoto las cosas dentro del archivo, como varias personas.</p>
 <p>El problema que tengo es que me gusta listar todas las cositas esas con el numero de linea y/o click que me lleve a tal. No todos los editores lo hacen por default (creo que las grandes IDEs), seguro hay un plugin que ni ganas de configurar. Se puede hacer una búsqueda, que es lo mas cercano a lo que quiero.</p>
@@ -107,8 +109,8 @@
 <p>Y <a href="http://stefanstools.sourceforge.net/grepWin.html">grepWin</a>, donde hay que tener cuidado de clickear solo en "Search" y seleccionar la opción de "Content"</p>
 <p><img alt="Resultados de búsqueda de grepWin" src="../../images/2013/search_grepWin.jpg"></p>
 <p>Este no estaba tan mal, pero eso de abrir programa &gt; rellenar datos no me convencia mucho. Por lineas de comando solo podes poner el path y qué buscar (que no esta mal) pero quiero que, por lo menos, esté seleccionado el "Content".</p>
-<h2 id="script">Say hi to proDO
-</h2><p>Como estoy aprendiendo Python y mas que nada lo estoy usando para hacer varios scripts<sup id="fnref:4"><a class="footnote-ref" href="../.././es/prodo/#fn:4" rel="footnote">5</a></sup> y reemplazar/dejar de dar vueltas con los batch, me decidí a hacer el mío.</p>
+<h2 id="script">Say hi to proDO</h2>
+<p>Como estoy aprendiendo Python y mas que nada lo estoy usando para hacer varios scripts<sup id="fnref:4"><a class="footnote-ref" href="../.././es/prodo/#fn:4" rel="footnote">5</a></sup> y reemplazar/dejar de dar vueltas con los batch, me decidí a hacer el mío.</p>
 <p>Con los ejemplos anteriores, queda asi:</p>
 <p><img alt="Resultados de búsqueda con proDO" src="../../images/2013/search_nocolor.png"></p>
 <p>Pero si tenes <a href="https://pypi.python.org/pypi/colorama">colorama</a> instalado queda asi (con mas onda):</p>
@@ -168,12 +170,13 @@
     <span class="badge badge-info"> grep</span> </a> </span>
  </dd>
                 </dl>
-
         </div>
-    </footer>
+		
+		<div id="post-comments">
+			
 
-    
-    
+			
+			
     
         
     
@@ -200,7 +203,9 @@
 
     
 
-    
+			
+		</div>		
+    </footer>
 
     
     
@@ -209,6 +214,13 @@
 </article>
  </div>
 		<footer>
+			
+    <div id="vcard" class="vcard author p-author h-card vcard">
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> <a href="http://quinzi.com.ar/">A.Q.</a> </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        </p>
+    </div>
+
+			
 			<div id="search">
 				<p>Search: </p>
 				
@@ -225,12 +237,6 @@
 
 			</div>
 			
-			
-    <div id="vcard" class="vcard author p-author h-card vcard">
-        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> A.Q. </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="index.html#top"><i class="fa fa-chevron-circle-up"></i></a></span>
-        </p>
-    </div>
-
 		</footer>
 	</div>
 	

@@ -17,12 +17,14 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
     
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        <link href="http://feeds.feedburner.com/intentode" type="application/atom+xml" rel="alternate" title="RSS Feed">
+    
     
         
     <link rel="icon" href="../favicon.ico" sizes="16x16">
     <link rel="icon" href="../favicon.png" sizes="16x16">
     
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
 
     
 
@@ -76,7 +78,7 @@
             <dl>
                     <dt class="date">Posted
                     </dt><dd>  
-    <time class="published dt-published" itemprop="datePublished" datetime="2011-12-30T00:00:00">2011-12-30</time>
+    <time class="published dt-published" itemprop="datePublished" datetime="2011-12-30T00:00:00+00:00">2011-12-30</time>
 </dd>
                      
             </dl>
@@ -93,13 +95,13 @@
 </div>
 <p>The other day I was looking if there was a possibility to read ePUBs in
 Kindle, and if yes, how to. Just for fun.</p>
-<h2 id="jailbreak">Jailbreak
-</h2><p>First you have to jailbreak <a href="http://www.mobileread.com/forums/showthread.php?t=88004">downloading the file</a>.</p>
+<h2 id="jailbreak">Jailbreak</h2>
+<p>First you have to jailbreak <a href="http://www.mobileread.com/forums/showthread.php?t=88004">downloading the file</a>.</p>
 <p>Unzip it. Find <code>update_*_install*.bin</code> where * is your kindle and
 firmware version. And copy it to (your kindle's) root.</p>
 <p>Eject Kindle and press <kbd>HOME &gt; MENU &gt; Settings &gt; MENU &gt; Update Your Kindle.</kbd></p>
-<h2 id="launchpad">Launchpad
-</h2><p><a href="http://www.mobileread.com/forums/showthread.php?t=97636">Download this file</a> and unzip it.</p>
+<h2 id="launchpad">Launchpad</h2>
+<p><a href="http://www.mobileread.com/forums/showthread.php?t=97636">Download this file</a> and unzip it.</p>
 <p>Copy <code>update_launchpad_0.0.1c_*_install.bin</code> where * is your kindle and
 firmware version. And copy it to (your kindle's) root.</p>
 <p>Eject Kindle and press <kbd>HOME &gt; MENU &gt; Settings &gt; MENU &gt; Update Your Kindle.</kbd></p>
@@ -111,8 +113,8 @@ think it's not developed anymore. The other one (Cool Reader) doesn't
 allow links, furigana it's shown with line breaks, does show tables
 propertly and it seems that it's still developed. Here I show how to
 install Cool Reader (the other one is almost the same)</p>
-<h2 id="cool-reader-3">Cool Reader 3
-</h2><p>The formats read by the Cool Reader are fb2, txt, html, rtf, chm, epub, mobi. It was
+<h2 id="cool-reader-3">Cool Reader 3</h2>
+<p>The formats read by the Cool Reader are fb2, txt, html, rtf, chm, epub, mobi. It was
 created (and it's "main objective") for reading <a href="http://en.wikipedia.org/wiki/Fb2">fb2</a>, that's why ePUB
 (and surely HTML and chm) are not read "propertly".</p>
 <p><a href="http://www.mobileread.com/forums/showthread.php?t=148850">Download the file</a> and unzip it.</p>
@@ -150,12 +152,13 @@ without saving</li>
     <span class="badge badge-info"> epub</span> </a> </span>
  </dd>
                 </dl>
-
         </div>
-    </footer>
+		
+		<div id="post-comments">
+			
 
-    
-    
+			
+			
     
         
     
@@ -182,7 +185,9 @@ without saving</li>
 
     
 
-    
+			
+		</div>		
+    </footer>
 
     
     
@@ -191,6 +196,13 @@ without saving</li>
 </article>
  </div>
 		<footer>
+			
+    <div id="vcard" class="vcard author p-author h-card vcard">
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> <a href="http://quinzi.com.ar/">A.Q.</a> </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        </p>
+    </div>
+
+			
 			<div id="search">
 				<p>Search: </p>
 				
@@ -207,12 +219,6 @@ without saving</li>
 
 			</div>
 			
-			
-    <div id="vcard" class="vcard author p-author h-card vcard">
-        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> A.Q. </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="index.html#top"><i class="fa fa-chevron-circle-up"></i></a></span>
-        </p>
-    </div>
-
 		</footer>
 	</div>
 	

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (github)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/github.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Sat, 11 Jan 2014 20:07:20 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GitHub Pages para proyectos</title><link>http://blog.quinzi.com.ar/./es/gh-pages-project/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (github)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/github.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 14 Jan 2014 14:18:11 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GitHub Pages para proyectos</title><link>http://blog.quinzi.com.ar/./es/gh-pages-project/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#programas-para-windows"&gt;Programas para Windows&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/gh-pages-project/#crear-repositorio"&gt;Crear repositorio&lt;/a&gt;&lt;/li&gt;
@@ -39,18 +39,18 @@
 &lt;dd&gt;&lt;code&gt;commit&lt;/code&gt; seguido de &lt;code&gt;push&lt;/code&gt;&lt;/dd&gt;
 &lt;/dl&gt;
 
-&lt;h2 id="programas-para-windows"&gt;Programas para Windows
-&lt;/h2&gt;&lt;p&gt;En un principio, tener Git en Windows era mucho lio (porque fue creado por y para Linux) pero ahora hay varias opciones. Usualmente, si vas a usar solo GitHub, se recomienda GW. Pero si queres usar Git para otras cosas (como crear "servers" localmente y jugar ahi) recomiendo &lt;a href="http://tortoisegit.org/"&gt;TortoiseGit&lt;/a&gt; + &lt;a href="http://msysgit.github.io/"&gt;msysgit&lt;/a&gt; (git CLI) en lugar de GW:&lt;/p&gt;
+&lt;h2 id="programas-para-windows"&gt;Programas para Windows&lt;/h2&gt;
+&lt;p&gt;En un principio, tener Git en Windows era mucho lio (porque fue creado por y para Linux) pero ahora hay varias opciones. Usualmente, si vas a usar solo GitHub, se recomienda GW. Pero si queres usar Git para otras cosas (como crear "servers" localmente y jugar ahi) recomiendo &lt;a href="http://tortoisegit.org/"&gt;TortoiseGit&lt;/a&gt; + &lt;a href="http://msysgit.github.io/"&gt;msysgit&lt;/a&gt; (git CLI) en lugar de GW:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;te sirve para varias cosas y no solo para GitHub ("lee" el protocolo &lt;code&gt;github://&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;no tenes que pelear con el PATH por si queres usar git CLI (se instala en &lt;code&gt;%appdata%&lt;/code&gt; y no podes añadir solo &lt;code&gt;bin\&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;msysgit viene con "git Bash"; una CLI re linda con colores que además te muestra en qué &lt;code&gt;branch&lt;/code&gt; estas; ademas de personalizarla con &lt;code&gt;.bashrc&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img alt="muestra de git Bash personalizado" src="http://blog.quinzi.com.ar/images//2014/git_bash.png"&gt;&lt;/p&gt;
-&lt;h2 id="crear-repositorio"&gt;Crear repositorio
-&lt;/h2&gt;&lt;p&gt;En GitHub, crear un repositorio con el nombre que se quiera. Podes iniciar sesión e ir a &lt;a href="https://github.com/repositories/new"&gt;https://github.com/repositories/new&lt;/a&gt; o apretando en el "&lt;kbd&gt;librito&lt;/kbd&gt;".&lt;/p&gt;
-&lt;h2 id="activar-github-pages"&gt;"Activar" GitHub Pages
-&lt;/h2&gt;&lt;p&gt;Se activa magicamente creando un &lt;code&gt;branch&lt;/code&gt; llamado &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="crear-repositorio"&gt;Crear repositorio&lt;/h2&gt;
+&lt;p&gt;En GitHub, crear un repositorio con el nombre que se quiera. Podes iniciar sesión e ir a &lt;a href="https://github.com/repositories/new"&gt;https://github.com/repositories/new&lt;/a&gt; o apretando en el "&lt;kbd&gt;librito&lt;/kbd&gt;".&lt;/p&gt;
+&lt;h2 id="activar-github-pages"&gt;"Activar" GitHub Pages&lt;/h2&gt;
+&lt;p&gt;Se activa magicamente creando un &lt;code&gt;branch&lt;/code&gt; llamado &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Desde web es apretando en &lt;kbd&gt;branch master&lt;/kbd&gt;; en GW es apretando arriba donde dice &lt;kbd&gt;master&lt;/kbd&gt;. Buscar &lt;kbd&gt;gh-pages&lt;/kbd&gt; y apretar opción de crear (&lt;kbd&gt;create branch&lt;/kbd&gt;). Con CLI sería (previamente clonado, mirar abajo):&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git checkout --orphan gh-pages    # branch local
 &lt;/pre&gt;&lt;/div&gt;
@@ -60,14 +60,14 @@
 &lt;p class="admonition-title"&gt;Info&lt;/p&gt;
 &lt;p&gt;El &lt;code&gt;--orphan&lt;/code&gt; crea un &lt;code&gt;branch&lt;/code&gt; separado del resto del repo (sin &lt;em&gt;parents&lt;/em&gt;). Se crea primero localmente, después se manda al &lt;code&gt;origin&lt;/code&gt; (pasos mas abajo).&lt;/p&gt;
 &lt;/div&gt;
-&lt;h2 id="pasarlo-al-desktop-para-trabajar"&gt;Pasarlo al desktop (para trabajar)
-&lt;/h2&gt;&lt;p&gt;Desde GitHub apretar &lt;kbd&gt;Clone in desktop&lt;/kbd&gt; (que lo tomará GW o Tortoise) o desde CLI:&lt;/p&gt;
+&lt;h2 id="pasarlo-al-desktop-para-trabajar"&gt;Pasarlo al desktop (para trabajar)&lt;/h2&gt;
+&lt;p&gt;Desde GitHub apretar &lt;kbd&gt;Clone in desktop&lt;/kbd&gt; (que lo tomará GW o Tortoise) o desde CLI:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git clone https://github.com/user/repo_lindo.git
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="preparar-branch-gh-pages"&gt;Preparar branch gh-pages
-&lt;/h2&gt;&lt;p&gt;Cambiar a &lt;code&gt;gh-pages&lt;/code&gt;. En CLI, si se usó el comando anterior (&lt;code&gt;git checkout --orphan gh-pages&lt;/code&gt;) se cambia automáticamente, sino &lt;code&gt;git checkout -b gh-pages&lt;/code&gt; para cambiar y crear un &lt;code&gt;branch&lt;/code&gt; local llamado "gh-pages".&lt;/p&gt;
+&lt;h2 id="preparar-branch-gh-pages"&gt;Preparar branch gh-pages&lt;/h2&gt;
+&lt;p&gt;Cambiar a &lt;code&gt;gh-pages&lt;/code&gt;. En CLI, si se usó el comando anterior (&lt;code&gt;git checkout --orphan gh-pages&lt;/code&gt;) se cambia automáticamente, sino &lt;code&gt;git checkout -b gh-pages&lt;/code&gt; para cambiar y crear un &lt;code&gt;branch&lt;/code&gt; local llamado "gh-pages".&lt;/p&gt;
 &lt;div class="admonition info"&gt;
 &lt;p class="admonition-title"&gt;Info&lt;/p&gt;
 &lt;p&gt;Al cambiar &lt;em&gt;branches&lt;/em&gt;, Windows Explorer "refresca" la carpeta donde está con el contenido del &lt;code&gt;branch&lt;/code&gt; seleccionado.&lt;/p&gt;
@@ -79,8 +79,8 @@ $ git push -u origin gh-pages       # mandamos branch al origin
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="gh-pages-como-default-y-eliminar-master"&gt;gh-pages como default y eliminar master
-&lt;/h2&gt;&lt;p&gt;Esto es opcional, depende de tu &lt;em&gt;workflow&lt;/em&gt; o idea de uso. Si solo se va a usar &lt;code&gt;gh-pages&lt;/code&gt;, se puede usar como default y eliminar el &lt;code&gt;branch&lt;/code&gt; &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="gh-pages-como-default-y-eliminar-master"&gt;gh-pages como default y eliminar master&lt;/h2&gt;
+&lt;p&gt;Esto es opcional, depende de tu &lt;em&gt;workflow&lt;/em&gt; o idea de uso. Si solo se va a usar &lt;code&gt;gh-pages&lt;/code&gt;, se puede usar como default y eliminar el &lt;code&gt;branch&lt;/code&gt; &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Para ponerlo como default (y no usar el &lt;code&gt;master&lt;/code&gt;), en GitHub, ir a &lt;kbd&gt;settings &amp;gt; (settings &amp;gt;) Default branch&lt;/kbd&gt; y seleccionar &lt;kbd&gt;gh-pages&lt;/kbd&gt;.&lt;/p&gt;
 &lt;p&gt;Para eliminar el &lt;code&gt;master&lt;/code&gt; hay que tener el &lt;code&gt;gh-pages&lt;/code&gt; como default. Después ir al listado de &lt;em&gt;branches&lt;/em&gt; y apretar en &lt;kbd&gt;Delete branch&lt;/kbd&gt;. Con CLI:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git branch -d master     # eliminar local
@@ -88,8 +88,8 @@ $ git push origin :master  # eliminar de repo
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id="its-alive-archivo-de-prueba-y-subida"&gt;It's alive! (Archivo de prueba y subida)
-&lt;/h2&gt;&lt;p&gt;Crear un &lt;code&gt;index.html&lt;/code&gt;, lo añadimos y hacemos c-p.&lt;/p&gt;
+&lt;h2 id="its-alive-archivo-de-prueba-y-subida"&gt;It's alive! (Archivo de prueba y subida)&lt;/h2&gt;
+&lt;p&gt;Crear un &lt;code&gt;index.html&lt;/code&gt;, lo añadimos y hacemos c-p.&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;$ git add .                   # añade todo
 $ git commit -am "Primer commit a pages"
 $ git push origin gh-pages
@@ -98,8 +98,8 @@ $ git push origin gh-pages
 
 &lt;p&gt;(el &lt;code&gt;-a&lt;/code&gt; es abreviatura de &lt;code&gt;add&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;Esperar unos minutos y ver si se subió el &lt;code&gt;index&lt;/code&gt; en: &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt;&lt;/p&gt;
-&lt;h2 id="dominio-propio"&gt;Dominio propio
-&lt;/h2&gt;&lt;p&gt;Como seguramente no vas a querer entrar a &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt; porque es muy largo o queda poco profecional, GitHub permite ponerle un dominio/subdominio.&lt;/p&gt;
+&lt;h2 id="dominio-propio"&gt;Dominio propio&lt;/h2&gt;
+&lt;p&gt;Como seguramente no vas a querer entrar a &lt;kbd&gt;http://user.github.io/projectName/&lt;/kbd&gt; porque es muy largo o queda poco profecional, GitHub permite ponerle un dominio/subdominio.&lt;/p&gt;
 &lt;p&gt;Solo basta con poner un archivo &lt;code&gt;CNAME&lt;/code&gt; que contiene el dominio/subdominio que se quiera usar, en el root de &lt;code&gt;gh-pages&lt;/code&gt; y cambiar los DNS del dominio en el host/registrar:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -109,11 +109,11 @@ $ git push origin gh-pages
 &lt;p&gt;Con un subdominio (sub.example.com): crear un &lt;code&gt;CNAME record&lt;/code&gt; que apunte al subdmonio del usuario en GitHub (&lt;kbd&gt;user.github.io&lt;/kbd&gt;). Esto deja que los DNS se adjusten automáticamente al IP de GitHub; se puede usar un &lt;code&gt;A record&lt;/code&gt; pero no se adjusta automáticamente.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="404-pages-todos-amamos-los-error-pages"&gt;404 pages! (Todos amamos los error pages)
-&lt;/h2&gt;&lt;p&gt;También es fácil: poner un &lt;code&gt;404.html&lt;/code&gt; en el root de &lt;code&gt;gh-pages&lt;/code&gt; y listo (no te olvides de agregarlo y c-p).&lt;/p&gt;
+&lt;h2 id="404-pages-todos-amamos-los-error-pages"&gt;404 pages! (Todos amamos los error pages)&lt;/h2&gt;
+&lt;p&gt;También es fácil: poner un &lt;code&gt;404.html&lt;/code&gt; en el root de &lt;code&gt;gh-pages&lt;/code&gt; y listo (no te olvides de agregarlo y c-p).&lt;/p&gt;
 &lt;section id="changes"&gt;
 
-&lt;h3&gt;Cambios&lt;/h3&gt;
+&lt;h2&gt;Cambios&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;time&gt;2014-01-02&lt;/time&gt; Reescrito para ser mas explicativo.&lt;/li&gt;

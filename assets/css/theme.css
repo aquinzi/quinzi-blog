@@ -496,6 +496,68 @@ div.footnote p { margin: 0.5em 1em 0.5em 0; line-height: 1.5em; }
 a.footnote-backref{ font-size:1.3em; border: none;}
 
 /* -----------------------
+ Post comments and social reaction
+----------------------- */
+
+/* move these clases somewhere above*/
+li[data-icon="twitter"]:before {
+font-family: "FontAwesome";
+content: "\f099";
+}
+
+li[data-icon="star"]:before {
+font-family: "FontAwesome";
+content: "\f005";
+padding-right: 0.3em;
+}
+
+li[data-icon="retweet"]:before {
+font-family: "FontAwesome";
+content: "\f079 ";
+padding-right: 0.3em;
+}
+
+#post-comments {border-top: 1px dashed #BDBDBD; margin-top: 2em}
+#post-comments h4, #post-comments h3 {border-bottom: none;}
+#post-comments ul {list-style-type: none; }
+
+.social-reaction a[href^="http"]:before {content: ""}
+.social-reaction ul {padding-left: 0em;}
+.social-reaction * {display: inline}
+
+.social-reaction {margin-top: 1em; color: #9B9B9B}
+
+.social-reaction ul ul {margin-left: 0.3em}
+.social-reaction ul ul li {padding: 0 0.5em}
+
+#tweets div {
+	background-color: #E5E5E5;
+	border: 1px solid #C1C1C1;
+	        border-radius: 0.5em;
+	     -o-border-radius: 0.5em;
+	    -ms-border-radius: 0.5em;
+	   -moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	margin: -0.1em;
+	max-width: 700px;
+	padding: 0.5em;
+}
+
+
+
+
+#tweets img {
+	float: left;
+	margin-right: 0.3em;
+	padding: 0.5em;
+	background-color: inherit;
+	border: none;
+}
+#tweets p {margin: 0px; display: inline;}
+#tweets time {font-size: small; }
+#tweets .user{font-weight: bold}
+
+/* -----------------------
  Admonition
 ----------------------- */
 

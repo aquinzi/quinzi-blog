@@ -17,12 +17,14 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
     
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        <link href="http://feeds.feedburner.com/intentode" type="application/atom+xml" rel="alternate" title="RSS Feed">
+    
     
         
     <link rel="icon" href="../favicon.ico" sizes="16x16">
     <link rel="icon" href="../favicon.png" sizes="16x16">
     
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
 
     
 
@@ -72,7 +74,7 @@
             <dl>
                     <dt class="date">Posted
                     </dt><dd>  
-    <time class="published dt-published" itemprop="datePublished" datetime="2009-08-22T00:00:00">2009-08-22</time>
+    <time class="published dt-published" itemprop="datePublished" datetime="2009-08-22T00:00:00+00:00">2009-08-22</time>
 </dd>
                      
             </dl>
@@ -85,7 +87,7 @@
 <p>Se arregla sólo cambiando el <em>Look &amp; Feel</em>:</p>
 <p><img alt="Problema del menu resuelto" src="../images/2009/netbeans02.jpg"></p>
 <p>Y parece que solo da problemas el <em>Look and feel</em> de GTK (<code>com.sun.java.swing.plaf.gtk.GTKLookAndFeel</code>)</p>
-<h2 id="como-se-arregla">Cómo se arregla
+<h2 id="como-se-arregla">Cómo se arregla</h2>
 <ol>
 <li>Ir a la carpeta de instalación del NetBeans. (ejemplo: <code>C:\Archivos de programa\Netbeans</code>).</li>
 <li>Entrar a la carpeta <code>etc</code>.</li>
@@ -96,10 +98,10 @@ javax.swing.plaf.metal.MetalLookAndFeel</code></li>
 <li>Guardar y cerrar.</li>
 <li>Reiniciá la IDE.</li>
 </ol>
-</h2><p><code>MetalLookAndFeel</code> no es el único que funciona, también podes usar "Nimbus" con: <code>com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel</code>:</p>
+<p><code>MetalLookAndFeel</code> no es el único que funciona, también podes usar "Nimbus" con: <code>com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel</code>:</p>
 <p><img alt="Muestra de skin" src="../images/2009/netbeans03.jpg"></p>
 <p>Fuente: <a href="http://blogs.sun.com/netbeansphp/entry/how_to_change_look_and">Sun blogs</a></p>
-<h4> Comments </h4>
+<h3> Comments </h3>
 
 <div id="comments">
 
@@ -170,12 +172,13 @@ August 25, 2009 at 2:35 pm    </div>
     <span class="badge badge-info"> java</span> </a> </span>
  </dd>
                 </dl>
-
         </div>
-    </footer>
+		
+		<div id="post-comments">
+			
 
-    
-    
+			
+			
     
         
     
@@ -202,7 +205,9 @@ August 25, 2009 at 2:35 pm    </div>
 
     
 
-    
+			
+		</div>		
+    </footer>
 
     
     
@@ -211,6 +216,13 @@ August 25, 2009 at 2:35 pm    </div>
 </article>
  </div>
 		<footer>
+			
+    <div id="vcard" class="vcard author p-author h-card vcard">
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> <a href="http://quinzi.com.ar/">A.Q.</a> </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        </p>
+    </div>
+
+			
 			<div id="search">
 				<p>Search: </p>
 				
@@ -227,12 +239,6 @@ August 25, 2009 at 2:35 pm    </div>
 
 			</div>
 			
-			
-    <div id="vcard" class="vcard author p-author h-card vcard">
-        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> A.Q. </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="index.html#top"><i class="fa fa-chevron-circle-up"></i></a></span>
-        </p>
-    </div>
-
 		</footer>
 	</div>
 	

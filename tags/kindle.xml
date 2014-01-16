@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (kindle)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/kindle.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 20:07:19 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Read ePUB in Kindle 3</title><link>http://blog.quinzi.com.ar/kindle3-epub/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (kindle)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/kindle.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 14 Jan 2014 14:18:13 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Read ePUB in Kindle 3</title><link>http://blog.quinzi.com.ar/kindle3-epub/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#jailbreak"&gt;Jailbreak&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#launchpad"&gt;Launchpad&lt;/a&gt;&lt;/li&gt;
@@ -8,13 +8,13 @@
 &lt;/div&gt;
 &lt;p&gt;The other day I was looking if there was a possibility to read ePUBs in
 Kindle, and if yes, how to. Just for fun.&lt;/p&gt;
-&lt;h2 id="jailbreak"&gt;Jailbreak
-&lt;/h2&gt;&lt;p&gt;First you have to jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;downloading the file&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="jailbreak"&gt;Jailbreak&lt;/h2&gt;
+&lt;p&gt;First you have to jailbreak &lt;a href="http://www.mobileread.com/forums/showthread.php?t=88004"&gt;downloading the file&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Unzip it. Find &lt;code&gt;update_*_install*.bin&lt;/code&gt; where * is your kindle and
 firmware version. And copy it to (your kindle's) root.&lt;/p&gt;
 &lt;p&gt;Eject Kindle and press &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
-&lt;h2 id="launchpad"&gt;Launchpad
-&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Download this file&lt;/a&gt; and unzip it.&lt;/p&gt;
+&lt;h2 id="launchpad"&gt;Launchpad&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=97636"&gt;Download this file&lt;/a&gt; and unzip it.&lt;/p&gt;
 &lt;p&gt;Copy &lt;code&gt;update_launchpad_0.0.1c_*_install.bin&lt;/code&gt; where * is your kindle and
 firmware version. And copy it to (your kindle's) root.&lt;/p&gt;
 &lt;p&gt;Eject Kindle and press &lt;kbd&gt;HOME &amp;gt; MENU &amp;gt; Settings &amp;gt; MENU &amp;gt; Update Your Kindle.&lt;/kbd&gt;&lt;/p&gt;
@@ -26,8 +26,8 @@ think it's not developed anymore. The other one (Cool Reader) doesn't
 allow links, furigana it's shown with line breaks, does show tables
 propertly and it seems that it's still developed. Here I show how to
 install Cool Reader (the other one is almost the same)&lt;/p&gt;
-&lt;h2 id="cool-reader-3"&gt;Cool Reader 3
-&lt;/h2&gt;&lt;p&gt;The formats read by the Cool Reader are fb2, txt, html, rtf, chm, epub, mobi. It was
+&lt;h2 id="cool-reader-3"&gt;Cool Reader 3&lt;/h2&gt;
+&lt;p&gt;The formats read by the Cool Reader are fb2, txt, html, rtf, chm, epub, mobi. It was
 created (and it's "main objective") for reading &lt;a href="http://en.wikipedia.org/wiki/Fb2"&gt;fb2&lt;/a&gt;, that's why ePUB
 (and surely HTML and chm) are not read "propertly".&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.mobileread.com/forums/showthread.php?t=148850"&gt;Download the file&lt;/a&gt; and unzip it.&lt;/p&gt;
@@ -56,8 +56,8 @@ without saving&lt;/li&gt;
 &lt;p&gt;Hace una semana (más o menos) recibí mi Kindle v3 Wi-Fi. El aparato es lindo,
 con estética bien cuidada, liviano, con un par de falencias en el diseño
 y funcionamiento/configuración.&lt;/p&gt;
-&lt;h2 id="caracteristicas"&gt;Caracteristicas
-&lt;/h2&gt;&lt;p&gt;Asi rapidito:&lt;/p&gt;
+&lt;h2 id="caracteristicas"&gt;Caracteristicas&lt;/h2&gt;
+&lt;p&gt;Asi rapidito:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;19cm de alto, 12.3cm de ancho y 0.85cm de grosor&lt;/li&gt;
 &lt;li&gt;Pesa 241 gramos&lt;/li&gt;
@@ -67,8 +67,8 @@ y funcionamiento/configuración.&lt;/p&gt;
 PRC, PNG...&lt;/li&gt;
 &lt;li&gt;Otras que no importan.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="recepcion"&gt;Recepción
-&lt;/h2&gt;&lt;p&gt;Vamos con lo primero, el momento de la recepción:&lt;/p&gt;
+&lt;h2 id="recepcion"&gt;Recepción&lt;/h2&gt;
+&lt;p&gt;Vamos con lo primero, el momento de la recepción:&lt;/p&gt;
 &lt;div class="caption"&gt;
 &lt;img src="http://blog.quinzi.com.ar/images/2011/kindle01.jpg" alt="Caja del Kindle"&gt;
 &lt;p&gt;Caja&lt;/p&gt;
@@ -114,8 +114,8 @@ prender/apagar/reiniciar/desbloquear que también indica si esta prendido
 (luz verde) o cargándose (luz naranja-similar).&lt;/p&gt;
 &lt;p&gt;Atrás tiene los parlantes + logo + información varia + mucho espacio en
 gris (tarararan pushhh).&lt;/p&gt;
-&lt;h2 id="botones"&gt;Botones
-&lt;/h2&gt;&lt;p&gt;Los botones del teclado tienen tamaño aceptable como para escribir notas (que
+&lt;h2 id="botones"&gt;Botones&lt;/h2&gt;
+&lt;p&gt;Los botones del teclado tienen tamaño aceptable como para escribir notas (que
 para eso estan). Un problema del teclado es el &lt;em&gt;layout&lt;/em&gt;; por alguna razón
 en vez de poner &lt;kbd&gt;.&lt;/kbd&gt; pongo &lt;kbd&gt;m&lt;/kbd&gt;, y en vez de &lt;kbd&gt;n&lt;/kbd&gt; pongo &lt;kbd&gt;m&lt;/kbd&gt;, pero solo son con esas tres teclas.&lt;/p&gt;
 &lt;div class="caption"&gt;
@@ -143,8 +143,8 @@ estilo "ñ", "á", "ü" y demas, hay que ponerle un hack. Malditos yankees.&lt;/
 (adelante y atrás). Estan justo en el medio de los laterales donde se
 suele agarrar el aparato. Tendrian que haberlos hechos más chicos y del mismo tamaño (el de
 siguiente es más grande/largo).&lt;/p&gt;
-&lt;h2 id="reading-timetesting"&gt;Reading time/testing
-&lt;/h2&gt;&lt;p&gt;Pantalla: teniendo en cuenta que es la primera vez que veo "en vivo y en
+&lt;h2 id="reading-timetesting"&gt;Reading time/testing&lt;/h2&gt;
+&lt;p&gt;Pantalla: teniendo en cuenta que es la primera vez que veo "en vivo y en
 directo" algo con e-Ink se ve bien; tanto texto como imágenes.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Pantalla" src="http://blog.quinzi.com.ar/images/2011/kindle10.jpg"&gt;&lt;/p&gt;
 &lt;div class="caption"&gt;
@@ -177,8 +177,8 @@ a PDF O "PDFs por sección" para poder leerlas con furigana. Si no puedo pasarlo
 &lt;p&gt;&lt;img alt="Close up de furigana" src="http://blog.quinzi.com.ar/images/2011/kindle14.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Luego de jugar con los formatos me decidi conectarme a internet. Acá
 lluvia de "problemas".&lt;/p&gt;
-&lt;h2 id="conexion-wi-fi"&gt;Conexión Wi-Fi
-&lt;/h2&gt;&lt;p&gt;Primero, me tuve que hacer cuenta en Amazon porque sino no podia crear
+&lt;h2 id="conexion-wi-fi"&gt;Conexión Wi-Fi&lt;/h2&gt;
+&lt;p&gt;Primero, me tuve que hacer cuenta en Amazon porque sino no podia crear
 colecciones ("categorias", cosa de organizar mejor el menú de selección)
 ni cambiarle la hora ni nada. O sea, si no te registras con Amazon y
 linkeas solo tenes 1 pantalla de opciones que no te sirve mucho. Si te
@@ -200,11 +200,11 @@ WPA-PSKloquesea, iba a cambiarlo pero me dije &lt;q&gt;nahh no puede ser. Tiene 
 &lt;li&gt;Conectarse.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img alt="Navegando por internet" src="http://blog.quinzi.com.ar/images/2011/kindle15.jpg"&gt;&lt;/p&gt;
-&lt;h2 id="browser-y-javascript"&gt;Browser y Javascript
-&lt;/h2&gt;&lt;p&gt;Ultimamente cualquier navegador de "cosas mobiles" acepta Javascript pero queria ver
+&lt;h2 id="browser-y-javascript"&gt;Browser y Javascript&lt;/h2&gt;
+&lt;p&gt;Ultimamente cualquier navegador de "cosas mobiles" acepta Javascript pero queria ver
 si te aceptaba el "heavy Javascript"/jQuery y que ande el script
 este que te toma las letras del teclado. Para mi sorpresa, funciona.&lt;/p&gt;
-&lt;h4&gt; Comments &lt;/h4&gt;
+&lt;h3&gt; Comments &lt;/h3&gt;
 
 &lt;div id="comments"&gt;
 

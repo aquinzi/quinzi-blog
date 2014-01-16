@@ -17,12 +17,14 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
     
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+        <link href="http://feeds.feedburner.com/intentode" type="application/atom+xml" rel="alternate" title="RSS Feed">
+    
     
         
     <link rel="icon" href="../favicon.ico" sizes="16x16">
     <link rel="icon" href="../favicon.png" sizes="16x16">
     
+	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
 
     
 
@@ -72,7 +74,7 @@
             <dl>
                     <dt class="date">Posted
                     </dt><dd>  
-    <time class="published dt-published" itemprop="datePublished" datetime="2012-11-26T00:00:00">2012-11-26</time>
+    <time class="published dt-published" itemprop="datePublished" datetime="2012-11-26T00:00:00+00:00">2012-11-26</time>
 </dd>
                      
             </dl>
@@ -88,8 +90,8 @@
 <li><a href=".#bugs">Bugs</a></li>
 </ul>
 </div>
-<h2 id="background-information">Background information
-</h2><p>I always wanted a way to say "Hey GPS, see this spot here? the one
+<h2 id="background-information">Background information</h2>
+<p>I always wanted a way to say "Hey GPS, see this spot here? the one
 you're indicating, can you pin it with text so I can retrieve it
 later?". All the ways I've found required to install apps. I'm fine with
 that but a) install 5MB or more just to get that functionality? I didn't
@@ -102,8 +104,8 @@ it's very cool, everyone recommends it, posts the same common examples
 that you don't need but you want to use it anyway. Yes, that one. There
 are many alternatives, and even free with some limitations. But (people
 say) they are not as complete as Tasker.</p>
-<h2 id="tasker-task">Tasker task
-</h2><p>Go to the task tab and add a new one:</p>
+<h2 id="tasker-task">Tasker task</h2>
+<p>Go to the task tab and add a new one:</p>
 <p><strong>Task:</strong> <em>Location to Txt</em></p>
 <p><strong>Actions</strong> for the task:</p>
 <ul>
@@ -143,8 +145,8 @@ keyboard. You can skip this (and the next) if you don't mind
 clicking the text box to type.</li>
 <li><kbd>Input &gt; Soft keyboard</kbd></li>
 </ul>
-<h2 id="homescreen">Homescreen
-</h2><p>The only thing that is left is the shortcut/widget!</p>
+<h2 id="homescreen">Homescreen</h2>
+<p>The only thing that is left is the shortcut/widget!</p>
 <p>Create a <kbd>widget &gt; task</kbd>. Pick <em>Pin Here</em></p>
 <div class="caption">
 <img src="../../images/2012/tasker_widget.jpg" alt="New Tasker widget">
@@ -159,8 +161,8 @@ boxy-box. Here is an example of what the text file could look like:</p>
 <p>When you open the link, it shows the waypoint/spot in the map (seems to
 only work with Google Maps, unless you change the format, that way it
 also works with OsmAnd - from all the maps I've tested-).</p>
-<h2 id="bugs">Bugs
-</h2><p>Nobody likes bugs but it's Android. If you choose to show the
+<h2 id="bugs">Bugs</h2>
+<p>Nobody likes bugs but it's Android. If you choose to show the
 keyboard when the scene it's shown, it won't close automatically; you
 must close it yourself (back button). It's not the script fault nor
 Tasker's, but Android's and how it handles things (according to the
@@ -188,12 +190,13 @@ This depends on the phone/tablet.</p>
     <span class="badge badge-info"> tasker</span> </a> </span>
  </dd>
                 </dl>
-
         </div>
-    </footer>
+		
+		<div id="post-comments">
+			
 
-    
-    
+			
+			
     
         
     
@@ -220,7 +223,9 @@ This depends on the phone/tablet.</p>
 
     
 
-    
+			
+		</div>		
+    </footer>
 
     
     
@@ -229,6 +234,13 @@ This depends on the phone/tablet.</p>
 </article>
  </div>
 		<footer>
+			
+    <div id="vcard" class="vcard author p-author h-card vcard">
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> <a href="http://quinzi.com.ar/">A.Q.</a> </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        </p>
+    </div>
+
+			
 			<div id="search">
 				<p>Search: </p>
 				
@@ -245,12 +257,6 @@ This depends on the phone/tablet.</p>
 
 			</div>
 			
-			
-    <div id="vcard" class="vcard author p-author h-card vcard">
-        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> A.Q. </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="index.html#top"><i class="fa fa-chevron-circle-up"></i></a></span>
-        </p>
-    </div>
-
 		</footer>
 	</div>
 	

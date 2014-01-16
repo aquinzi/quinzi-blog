@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (aero)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/aero.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 20:07:25 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Windows 7: Themes personalizados y Aero Glass</title><link>http://blog.quinzi.com.ar/windows7-themes-aero/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (aero)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/aero.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 14 Jan 2014 14:18:13 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Windows 7: Themes personalizados y Aero Glass</title><link>http://blog.quinzi.com.ar/windows7-themes-aero/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/windows7-themes-aero/#themes-personalizados"&gt;Themes personalizados&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/windows7-themes-aero/#mejor-theme-manager"&gt;Mejor theme manager&lt;/a&gt;&lt;/li&gt;
@@ -7,7 +7,7 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Tenés Windows 7 Home Basic (o similar), seguro que te aburriste del theme/tema &lt;em&gt;baby blue&lt;/em&gt; que trae por defecto que no se puede cambiar. No esperes más y cambialo ya.&lt;/p&gt;
-&lt;h2 id="themes-personalizados"&gt;Themes personalizados
+&lt;h2 id="themes-personalizados"&gt;Themes personalizados&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Desactivar el UAC: (&lt;kbd&gt;Panel de Control &amp;gt; Cambiar Configuración de Control del Usuario&lt;/kbd&gt;. O buscar &lt;kbd&gt;UAC&lt;/kbd&gt; en la cajita de búsqueda del menú inicio o panel de control). Lo que hay que hacer es desactivarlo o ponerlo en la segunda barrita (contando desde abajo).&lt;/li&gt;
 &lt;li&gt;Instalar el &lt;a href="http://uxstyle.com/"&gt;UxStyle Core&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/windows7-themes-aero/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;: Leer los Términos de Servicio y si se
@@ -19,9 +19,9 @@ el que más te guste. Acá hay un problemita, capaz que es mío,
 los themes tienen el mismo nombre (Windows 7 Standard/Basic) asi que
 no queda otra que ir clickeando y ver como queda en la muestra :)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/h2&gt;&lt;p&gt;Fuente: &lt;a href="http://www.sevenforums.com/tutorials/34579-enabling-custom-themes-windows-7-a.html"&gt;Seven forums: enabling custom themes&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="mejor-theme-manager"&gt;Mejor theme manager
-&lt;/h2&gt;&lt;p&gt;Como viene con Windows 7 Home Basic (yendo por &lt;kbd&gt;Panel de Control &amp;gt; Cambiar Combinación de colores&lt;/kbd&gt;):&lt;/p&gt;
+&lt;p&gt;Fuente: &lt;a href="http://www.sevenforums.com/tutorials/34579-enabling-custom-themes-windows-7-a.html"&gt;Seven forums: enabling custom themes&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="mejor-theme-manager"&gt;Mejor theme manager&lt;/h2&gt;
+&lt;p&gt;Como viene con Windows 7 Home Basic (yendo por &lt;kbd&gt;Panel de Control &amp;gt; Cambiar Combinación de colores&lt;/kbd&gt;):&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Theme manager de Windows 7 Home Basic" src="http://blog.quinzi.com.ar/images/2013/win7_themes_settings.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Al instalar themes, te repite el nombre "Windows 7 Standard/Basic" varias veces. Instalando &lt;a href="http://winaero.com/download.php?view.3"&gt;Personalization Panel&lt;/a&gt; (como administrador) tenes un mejor theme manager:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Personalization Panel" src="http://blog.quinzi.com.ar/images/2013/win7_themes_personalization_panel.jpg"&gt;&lt;/p&gt;
@@ -33,8 +33,8 @@ no queda otra que ir clickeando y ver como queda en la muestra :)&lt;/li&gt;
 &lt;li&gt;Dependiendo del theme, podes tener cierta transparencia:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img alt="Mostrando poca transparencia en los bordes" src="http://blog.quinzi.com.ar/images/2013/win7_themes_blacktrans.jpg"&gt;&lt;/p&gt;
-&lt;h2 id="aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)
-&lt;/h2&gt;&lt;p&gt;Siempre y cuando tu compu lo permita, podes activar el Aero instalando el &lt;a href="http://winaero.com/download.php?view.13"&gt;Aero Patch&lt;/a&gt;. Esto te da:&lt;/p&gt;
+&lt;h2 id="aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)&lt;/h2&gt;
+&lt;p&gt;Siempre y cuando tu compu lo permita, podes activar el Aero instalando el &lt;a href="http://winaero.com/download.php?view.13"&gt;Aero Patch&lt;/a&gt;. Esto te da:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Aero Glass y coloración&lt;/li&gt;
 &lt;li&gt;soporte full de themes incluyendo RSS y Slideshow&lt;/li&gt;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (box)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/box.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jan 2014 20:07:24 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Box: WebDAV access</title><link>http://blog.quinzi.com.ar/box-webdav/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (box)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/box.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 14 Jan 2014 14:18:13 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Box: WebDAV access</title><link>http://blog.quinzi.com.ar/box-webdav/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/box-webdav/#windows-explorer"&gt;Windows Explorer&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/box-webdav/#bitkinex"&gt;BitKinex&lt;/a&gt;&lt;/li&gt;
@@ -9,8 +9,8 @@
 &lt;p&gt;I decided to do this because I wanted to do something that needed a &lt;abbr title='The "old" thingy'&gt;FTP&lt;/abbr&gt;. Lately (or always was like that), you can't create a &lt;abbr title='The "old" thingy'&gt;FTP&lt;/abbr&gt; account only, you must create a web site first. Not interested. I don't have a server/computer (proyect pending)  acting as a server and install &lt;a href="https://filezilla-project.org"&gt;FileZilla&lt;/a&gt;. Damnit. I remembered the sync servicies that I have an account with and jumped into using them.&lt;/p&gt;
 &lt;p&gt;I chose &lt;a href="http://www.box.com"&gt;Box&lt;/a&gt;. I thought into uploading the files via the web interface, given that the synchronization is a bit bad, but I realized that &lt;a href="https://www.sugarsync.com/"&gt;SugarSync&lt;/a&gt; has the "SugarSync Drive" feature, that allows you to access your file through a file manager. I started to search if Box had something similar.&lt;/p&gt;
 &lt;p&gt;It has &lt;abbr title='The "old" thingy'&gt;FTP&lt;/abbr&gt; access but only for paid accounts. Then I read about WebDAV. Tried to configurate it and, after struggling for minutes, here is how to do it in Windows (7)&lt;/p&gt;
-&lt;h2 id="windows-explorer"&gt;Windows Explorer
-&lt;/h2&gt;&lt;p&gt;In "Computer" (the old "My PC"), go to &lt;kbd&gt;Map network drive&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2 id="windows-explorer"&gt;Windows Explorer&lt;/h2&gt;
+&lt;p&gt;In "Computer" (the old "My PC"), go to &lt;kbd&gt;Map network drive&lt;/kbd&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Context menu" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork.png"&gt;&lt;/p&gt;
 &lt;p&gt;Select the drive (doesn't matter apparently), check &lt;kbd&gt;Reconnect at logon&lt;/kbd&gt;. Click on &lt;kbd&gt;Connect to a Web site that you use to store...&lt;/kbd&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Configuration window" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_config.png"&gt;&lt;/p&gt;
@@ -29,8 +29,8 @@
 &lt;p&gt;And here is the hardwork done:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Showing mapped drive" src="http://blog.quinzi.com.ar/images/2013/webdav_networks_computer.png"&gt;&lt;/p&gt;
 &lt;p&gt;If this doesn't work for you, you can use &lt;a href="http://rei.to/carotdav_en.html"&gt;CarotDAV&lt;/a&gt; (to view al the servicies in one portable program), the famous &lt;a href="http://www.ghisler.com/download.htm"&gt;Total Commander&lt;/a&gt; or BitKinex.&lt;/p&gt;
-&lt;h2 id="bitkinex"&gt;BitKinex
-&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.bitkinex.com/download"&gt;Download BitKinex&lt;/a&gt;. Install normally, but I recommend (because I read somewhere) uncheck the "I want to configure data source now" option (apparently does nothing)&lt;/p&gt;
+&lt;h2 id="bitkinex"&gt;BitKinex&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.bitkinex.com/download"&gt;Download BitKinex&lt;/a&gt;. Install normally, but I recommend (because I read somewhere) uncheck the "I want to configure data source now" option (apparently does nothing)&lt;/p&gt;
 &lt;p&gt;Once initiated (yes, it looks very small for some reason), look for Http/WebDAV, &lt;kbd&gt;right click &amp;gt; New &amp;gt; Http/WebDAV&lt;/kbd&gt; and enter a name.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Creating service" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_new.png"&gt;&lt;/p&gt;
 &lt;p&gt;The address is similar to above: &lt;code&gt;dav.box.com&lt;/code&gt;, select &lt;kbd&gt;&lt;abbr title="Security before all"&gt;SSL&lt;/abbr&gt;&lt;/kbd&gt;. Enter user and password:&lt;/p&gt;
