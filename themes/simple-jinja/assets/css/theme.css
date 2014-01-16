@@ -557,6 +557,11 @@ padding-right: 0.3em;
 #tweets time {font-size: small; }
 #tweets .user{font-weight: bold}
 
+
+#post-comments form p {margin: 0px;}
+#post-comments form input[name="source"] {width: 20em;}
+
+
 /* -----------------------
  Admonition
 ----------------------- */

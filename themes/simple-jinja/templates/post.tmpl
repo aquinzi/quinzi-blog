@@ -65,9 +65,7 @@
         </div>
 		
 		<div id="post-comments">
-			{% if post.mentions %}
-				{% include 'post_mentions.tmpl' %}
-			{% endif %}
+			{% include 'post_mentions.tmpl' %}
 
 			{% if not post.meta('nocomments') and not LOCALHOST %}
 			{{ comments.comment_form(post.permalink(absolute=True), post.title(), post._base_path) }}

@@ -6,6 +6,7 @@ import os
 from nikola import filters
 
 MENTIONS_PATH = os.path.join(os.getcwd(),"_raw/mentions/")
+LOCALHOST = True 
 
 # ---------------
 # Configuration
@@ -141,7 +142,7 @@ ARCHIVE_FILENAME = "index.html"
 # To do manual deployment, set it to []
 DEPLOY_COMMANDS = [
 "rsync -rav --delete --exclude=.git --exclude='Thumbs.db' _output/ ../ghpages",
-"cd ..\ghpages",
+#"cd ..\ghpages",
 "git add .",
 "git commit -am 'Publication on {date}'".format(date=time.strftime("%Y-%m-%d", time.localtime())),
 "git push origin gh-pages",
@@ -153,7 +154,7 @@ GLOBAL_CONTEXT = {
     'index_posts_list' : True,
     'default_lang' : DEFAULT_LANG,
     'fake_index' : True,    
-	'LOCALHOST': True,
+	'LOCALHOST': LOCALHOST,
 }
 
 # Use content distribution networks for jquery and twitter-bootstrap css and js

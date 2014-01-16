@@ -2,10 +2,13 @@
 from __future__ import unicode_literals
 
 MESSAGES = {
-    "Updated": "Actualizado",
-    "More in": "Mas en",
-    "Category": "Categoría",
-    "Languages": "Idiomas",
-    "Get source" : "Obtener código"
+	"Updated": "Actualizado",
+	"More in": "Mas en",
+	"Category": "Categoría",
+	"Languages": "Idiomas",
+	"Get source" : "Obtener código",
+	"Tweets here" : "Tweets que linkean acá",
+	"Mentions" : "Menciones",
+	"Mentions_form" : "¿Escribiste una respuesta a este post? Dejámelo saber; poné la URL abajo.",
 
 }
