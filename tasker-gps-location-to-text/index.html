@@ -197,50 +197,19 @@ This depends on the phone/tablet.</p>
 
 
 
-<h3> Mentions </h3>
+<h3>Mentions</h3>
+<form action="https://webmention.herokuapp.com/api/webmention" method="post">
+<p>So you have written a response to this post? Cool, let me know; post the URL below.</p>
+<input name="source" type="url" placeholder="http://example.com/my-cool-post">
+<input name="target" value="http://blog.quinzi.com.ar/tasker-gps-location-to-text/" type="hidden">
+<input value="Send Webmention" type="submit">
 
-<script id="webmention-hosted">
-  (function () {
-    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
-    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
-    url = url && url[0] ? url[0].href : false;
-    sn.type = "text/javascript"; sn.async = true;
-    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
-    s.parentNode.insertBefore(sn, s);
-  }());
-</script>
+</form>
 
 
 
 
 
-			
-			
-    
-        
-    
-        <div id="disqus_thread"></div>
-        <script>
-        var disqus_shortname ="quinziblog",
-        
-            disqus_url="http://blog.quinzi.com.ar/tasker-gps-location-to-text/",
-        
-        disqus_title="Tutorial: save GPS location to text with Tasker",
-        disqus_identifier="cache/_raw/posts/guide_tasker-gps-location-to-text.html",
-        disqus_config = function () {
-            this.language = "";
-        };
-        (function() {
-            var dsq = document.createElement('script'); dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
-    
-
-    
 
 			
 		</div>		
