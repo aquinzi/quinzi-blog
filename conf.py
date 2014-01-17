@@ -23,10 +23,12 @@ if os.path.exists(local_conf):
 	#local_TIMEZONE = config.getboolean('other', 'timezone')
 	local_TIMEZONE = None
 	DISQUS_ID = config.get('other', 'disqus_id')
+	TWITTER_USER = config.get('mentions', 'twitter_username')
 	
 else:
 	LOCALHOST = False
 	local_TIMEZONE = None
+	TWITTER_USER = ''
 	
 # ---------------------
 # Nikola Configuration
@@ -93,6 +95,7 @@ NAVIGATION_LINKS = {
         #('/es/categories/index.html', 'Tags', 'tags'),
     )
 }
+
 
 # Also get gist, nikola & podcast because those are
 # done in the code, hope you don't mind ;-)
@@ -176,6 +179,7 @@ GLOBAL_CONTEXT = {
     'default_lang' : DEFAULT_LANG,
     'fake_index' : True,    
 	'LOCALHOST': LOCALHOST,
+	'twitter_user' : TWITTER_USER,
 }
 
 # Use content distribution networks for jquery and twitter-bootstrap css and js

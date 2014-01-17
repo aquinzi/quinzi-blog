@@ -10,4 +10,5 @@ MESSAGES = {
 	"Tweets here" : "Tweets linking here",
 	"Mentions" : "Mentions",
 	"Mentions_form" : "So you have written a response to this post? Cool, let me know; post the URL below.",
+	"Tweet appear" : "To appear here, just tweet your message with the URL.",
 }

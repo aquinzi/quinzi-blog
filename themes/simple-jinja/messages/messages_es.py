@@ -10,5 +10,6 @@ MESSAGES = {
 	"Tweets here" : "Tweets que linkean acá",
 	"Mentions" : "Menciones",
 	"Mentions_form" : "¿Escribiste una respuesta a este post? Dejámelo saber; poné la URL abajo.",
+	"Tweet appear" : "Para aparecer acá, tweeteá tu mensaje con la URL.",
 
 }

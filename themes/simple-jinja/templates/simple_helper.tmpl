@@ -44,7 +44,8 @@
     {% if comment_system == 'facebook' %}
         <meta property="fb:app_id" content="{{ comment_system_id }}">
     {% endif %}
-	<link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+	<link rel="http://webmention.org/" href="https://webmention.herokuapp.com/api/webmention" />
+	<link rel="webmention/" href="https://webmention.herokuapp.com/api/webmention" />
 {% endmacro %}
 
 {%- macro late_load_js() %}
@@ -134,6 +135,7 @@
     {% for url, text, icon in navigation_links[lang] %}
         <li {% if rel_link(permalink, url) == '#' %}class="{{ active }}" {% endif %} data-item="{{ icon }}"><a href="{{ url }}">{{ text }}</a></li>
     {%- endfor %}
+	<li data-item="feed"><a onclick="(function(){var z=document.createElement('script');z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})()" style="cursor: pointer;">SubToMe</a></li>
 {% endmacro %}
 
 
