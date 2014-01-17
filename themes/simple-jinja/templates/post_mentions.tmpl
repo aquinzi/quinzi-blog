@@ -31,13 +31,14 @@
 {% endif %}
 
 <h3>{{ messages("Mentions") }}</h3>
+{#
 <form action="https://webmention.herokuapp.com/api/webmention" method="post">
 <p>{{ messages("Mentions_form") }}</p>
 <input name="source" type="url" placeholder="http://example.com/my-cool-post" />
 <input name="target" value="{{ post.permalink(absolute=True) }}" type="hidden">
 <input value="Send Webmention" type="submit">
-
 </form>
+#}
 
 {% if not LOCALHOST %}
 <script id="webmention-hosted">
