@@ -44,6 +44,7 @@
     
         <li data-item="archives"><a href="../index.html">Index</a></li>
         <li data-item="feed"><a href="../rss.xml">RSS</a></li>
+	<li data-item="feed"><a onclick="(function(){var z=document.createElement('script');z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})()" style="cursor: pointer;">SubToMe</a></li>
 </ul>
 		</nav>
 		
@@ -168,16 +169,19 @@
 			
 
 
+<h3>Tweets linking here</h3>
+<p> To appear here, just tweet your message with the URL.</p>
+
+
+
 
 <h3>Mentions</h3>
-
 <form action="https://webmention.herokuapp.com/api/webmention" method="post">
 <p>So you have written a response to this post? Cool, let me know; post the URL below.</p>
 <input name="source" type="url" placeholder="http://example.com/my-cool-post">
 <input name="target" value="http://blog.quinzi.com.ar/box-webdav/" type="hidden">
 <input value="Send Webmention" type="submit">
 </form>
-
 
 
 <script id="webmention-hosted">
@@ -190,6 +194,8 @@
     s.parentNode.insertBefore(sn, s);
   }());
 </script>
+
+
 
 
 

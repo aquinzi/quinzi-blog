@@ -44,6 +44,7 @@
     
         <li data-item="archives"><a href="../index.html">Index</a></li>
         <li data-item="feed"><a href="../rss.xml">RSS</a></li>
+	<li data-item="feed"><a onclick="(function(){var z=document.createElement('script');z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})()" style="cursor: pointer;">SubToMe</a></li>
 </ul>
 		</nav>
 		
@@ -179,16 +180,19 @@ August 25, 2009 at 2:35 pm    </div>
 			
 
 
+<h3>Tweets que linkean acá</h3>
+<p> Para aparecer acá, tweeteá tu mensaje con la URL.</p>
+
+
+
 
 <h3>Menciones</h3>
-
 <form action="https://webmention.herokuapp.com/api/webmention" method="post">
 <p>¿Escribiste una respuesta a este post? Dejámelo saber; poné la URL abajo.</p>
 <input name="source" type="url" placeholder="http://example.com/my-cool-post">
 <input name="target" value="http://blog.quinzi.com.ar/./es/netbeans-problemas-menu/" type="hidden">
 <input value="Send Webmention" type="submit">
 </form>
-
 
 
 <script id="webmention-hosted">
@@ -201,6 +205,8 @@ August 25, 2009 at 2:35 pm    </div>
     s.parentNode.insertBefore(sn, s);
   }());
 </script>
+
+
 
 
 
