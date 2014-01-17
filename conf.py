@@ -166,13 +166,8 @@ ARCHIVE_FILENAME = "index.html"
 # And then do a backup, or run `nikola ping` from the `ping`
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
-DEPLOY_COMMANDS = [
-"rsync -rav --delete --exclude=.git --exclude='Thumbs.db' _output/ ../ghpages",
-#"cd ..\ghpages",
-"git add .",
-"git commit -am 'Publication on {date}'".format(date=time.strftime("%Y-%m-%d", time.localtime())),
-"git push origin gh-pages",
-]
+#DEPLOY_COMMANDS = ["rsync -rav --delete --exclude=.git --exclude='Thumbs.db' _output/ ../ghpages", "cd ..\ghpages", "git add .", "git commit -am 'Publication on {date}'".format(date=time.strftime("%Y-%m-%d", time.localtime())), "git push origin gh-pages"]
+DEPLOY_COMMANDS = []
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
