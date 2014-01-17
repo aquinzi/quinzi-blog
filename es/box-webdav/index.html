@@ -25,6 +25,7 @@
     <link rel="icon" href="../../favicon.png" sizes="16x16">
     
 	<link rel="http://webmention.org/" href="https://webmention.herokuapp.com/api/webmention">
+	<link rel="webmention/" href="https://webmention.herokuapp.com/api/webmention">
 
     
 
@@ -169,6 +170,13 @@
 
 
 <h3>Menciones</h3>
+
+<form action="https://webmention.herokuapp.com/api/webmention" method="post">
+<p>¿Escribiste una respuesta a este post? Dejámelo saber; poné la URL abajo.</p>
+<input name="source" type="url" placeholder="http://example.com/my-cool-post">
+<input name="target" value="http://blog.quinzi.com.ar/./es/box-webdav/" type="hidden">
+<input value="Send Webmention" type="submit">
+</form>
 
 
 

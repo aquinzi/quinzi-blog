@@ -25,6 +25,7 @@
     <link rel="icon" href="../favicon.png" sizes="16x16">
     
 	<link rel="http://webmention.org/" href="https://webmention.herokuapp.com/api/webmention">
+	<link rel="webmention/" href="https://webmention.herokuapp.com/api/webmention">
 
     
 
@@ -181,6 +182,13 @@ July 27, 2011 at 9:06 pm    </div><!-- .comment-meta .commentmetadata -->
 
 
 <h3>Mentions</h3>
+
+<form action="https://webmention.herokuapp.com/api/webmention" method="post">
+<p>So you have written a response to this post? Cool, let me know; post the URL below.</p>
+<input name="source" type="url" placeholder="http://example.com/my-cool-post">
+<input name="target" value="http://blog.quinzi.com.ar/tagaini-jisho-sincronizar-bd/" type="hidden">
+<input value="Send Webmention" type="submit">
+</form>
 
 
 
