@@ -47,10 +47,15 @@ basic styling
 ---------------- */
 
 body {
-	background-color: #EEEEEE;
+	/*background-color: #EEEEEE;*/
+	background-color: #d6d6d6;
     color: #4d4d4c;
     font:  1em/1.8em Segoe, "Segoe UI", 'Open Sans', Optima,Verdana, Geneva, sans-serif;
     /* size/line-height*/
+}
+
+body.index{
+	background-color: #EEEEEE;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -183,7 +188,7 @@ div.caption div.inner {height: auto; overflow: hidden; }
 
 .inline-list li {display: inline-block;}
 
-a[href^="http"]:before{
+.h-entry a[href^="http"]:before{
     font-family: "FontAwesome";
     content: "\f0ac"; /*world*/
     padding-right: 0.3em;
@@ -192,10 +197,28 @@ a[href^="http"]:before{
 
 .date:before {
     font-family: "FontAwesome";
-    content: "\f017";
+    content: "\f017"; /*clock*/
     padding-right: 0.2em;
 }
 
+
+/* move these clases somewhere above*/
+li[data-icon="twitter"]:before {
+font-family: "FontAwesome";
+content: "\f099";
+}
+
+li[data-icon="star"]:before {
+font-family: "FontAwesome";
+content: "\f005";
+padding-right: 0.3em;
+}
+
+li[data-icon="retweet"]:before {
+font-family: "FontAwesome";
+content: "\f079 ";
+padding-right: 0.3em;
+}
 
 /* ---------------------
 Basic Layout ("mobile")
@@ -376,6 +399,24 @@ article.postbox { word-wrap: break-word; }
 
 article.postbox header { margin-bottom: 1.5em; }
 
+.h-entry, #tweets div, .webmention-mention {
+	background-color: #efefef;
+        -os-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+	padding: 1em;
+	border: 1px solid #C1C1C1;
+	        border-radius: 0.5em;
+	     -o-border-radius: 0.5em;
+	    -ms-border-radius: 0.5em;
+	   -moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+}
+
+.h-entry {margin-bottom: 3em;}
+
 .post-meta {padding: 0; font-size: 0.9em; }
 
 article h1.p-name {
@@ -401,6 +442,27 @@ article h1.p-name {
 .post-meta dd { font-style: normal; padding-right: 0.5em }
 
 header .post-meta dl * {display: inline}
+
+.h-entry header { 
+	padding-bottom: 0.7em;
+	
+	/* "inset" style border */
+	border-bottom: 1px solid  #cccccc; 
+	box-shadow: 0 1px 0 #ffffff;  
+}
+
+.h-entry footer {
+	padding-top: 0.7em;
+	margin-top: 2em;
+	
+	/* "inset" style border */
+	border-top: 1px solid #ffffff ; 
+	box-shadow: 0 -1px 0 #cccccc;  
+}
+
+
+.e-content{margin: 0.3em}
+	
 
 footer .post-meta dl{   
   opacity: 0.3;
@@ -470,6 +532,102 @@ div.toc ul, div#TOC ul {
     margin: 0;
 }
 
+/* -----------------------
+ Post comments and social reaction
+----------------------- */
+
+
+.webmention-author:before, #webmentions p:first-child:before, li[data-icon="comment"]:before{
+	font-family: "FontAwesome";
+	content: "\f075";
+	margin-right: 0.5em;
+}
+
+
+
+
+#post-comments a, #post-comments a:hover{border:none}
+
+#post-comments h4, #post-comments h3 {border-bottom: none;}
+#post-comments ul {list-style-type: none; }
+#post-comments form {margin-top: 0em;}
+#post-comments form p {margin: 0px;}
+#post-comments form input[name="source"] {width: 20em;}
+
+
+.social-reaction {margin-top: 1em; color: #9B9B9B}
+.social-reaction ul {padding-left: 0em;display: inline}
+.social-reaction li {display: inline}
+.social-reaction ul ul {margin-left: 0.3em}
+.social-reaction ul ul li {padding: 0 0.5em}
+
+.social-reaction li[data-icon="twitter"] ul:before {content: "["}
+.social-reaction li[data-icon="twitter"] ul:after {content: "]"}
+
+#tweets div, .webmention-mention, #webmentions li {
+	background-color: #efefef;
+	border: 1px solid #C1C1C1;
+
+	margin: -0.1em auto;
+	padding: 0.7em 0.7em 0.7em 0.7em;
+	
+	        border-radius: 0em;
+	     -o-border-radius: 0em;
+	    -ms-border-radius: 0em;
+	   -moz-border-radius: 0em;
+	-webkit-border-radius: 0em;
+	
+}
+
+#tweets, #webmentions {padding-left: 0em;}
+#tweets div{height: 80px}
+#tweets img, #webmentions img {
+	/*
+	padding: 0.5em;
+	background-color: inherit;
+	*/
+	border: none;
+	float: left;
+	margin-right: 0.5em;
+}
+#tweets .user{font-weight: bold}
+#tweets p {margin: 0px; display: inline;}
+#webmentions p {margin: 0px; }
+#tweets time, #webmentions time, .webmention-published {font-size: small; display: block }
+
+.webmention-name{display: none;}
+.webmention-author, #webmentions .user{ display: inline; 	margin-right: 0.5em; }
+
+.webmention-author a:after{ content: ": "; }
+
+.webmention-summary, #webmentions p:nth-child(2) {
+	margin: 1em 3em;
+	padding-left: 0.5em;
+    border-left: 3px solid #8F8F8F;
+    font-style:  italic;
+    color:       #535353;
+}
+
+
+
+
+
+.webmention-published {
+	line-height: 1em;
+	border-top: 1px solid #C1C1C1;
+	padding-top: 0.5em;
+}
+
+.webmention-published, .webmention-published:hover {border-bottom: 0;}
+
+.webmention-published[href]:after 
+{content: " at " attr(href); font-family: inherit;}
+
+.how-to {margin: 3em auto; max-width: 800px;}
+.how-to h3, .how-to p {margin: 0}
+#post-comments .how-to ul{list-style-type: square}
+.how-to li{margin-top: 0.5em}
+
 
 /* -----------------------
  Footnotes
@@ -504,105 +662,6 @@ div.footnote p { margin: 0.5em 1em 0.5em 0; line-height: 1.5em; }
 .footnote ol   { list-style-type: decimal; font-size: 0.9em; }
 
 a.footnote-backref{ font-size:1.3em; border: none;}
-
-/* -----------------------
- Post comments and social reaction
------------------------ */
-
-/* move these clases somewhere above*/
-li[data-icon="twitter"]:before {
-font-family: "FontAwesome";
-content: "\f099";
-}
-
-li[data-icon="star"]:before {
-font-family: "FontAwesome";
-content: "\f005";
-padding-right: 0.3em;
-}
-
-li[data-icon="retweet"]:before {
-font-family: "FontAwesome";
-content: "\f079 ";
-padding-right: 0.3em;
-}
-
-.webmention-author:before{
-	font-family: "FontAwesome";
-	content: "\f075";
-}
-
-
-#post-comments {border-top: 1px dashed #BDBDBD; margin-top: 2em}
-#post-comments h4, #post-comments h3 {border-bottom: none;}
-#post-comments ul {list-style-type: none; }
-
-.social-reaction a[href^="http"]:before {content: ""}
-.social-reaction ul {padding-left: 0em;}
-.social-reaction * {display: inline}
-
-.social-reaction {margin-top: 1em; color: #9B9B9B}
-
-.social-reaction ul ul {margin-left: 0.3em}
-.social-reaction ul ul li {padding: 0 0.5em}
-
-#tweets div, .webmention-mention {
-	background-color: #E5E5E5;
-	border: 1px solid #C1C1C1;
-	        border-radius: 0.5em;
-	     -o-border-radius: 0.5em;
-	    -ms-border-radius: 0.5em;
-	   -moz-border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	margin: -0.1em auto;
-	max-width: 700px;
-	padding: 0.5em;
-}
-
-
-#tweets img {
-	float: left;
-	margin-right: 0.3em;
-	padding: 0.5em;
-	background-color: inherit;
-	border: none;
-}
-#tweets p {margin: 0px; display: inline;}
-#tweets time {font-size: small; }
-#tweets .user{font-weight: bold}
-
-
-#post-comments form {margin-bottom: 2em}
-#post-comments form p {margin: 0px;}
-#post-comments form input[name="source"] {width: 20em;}
-
-
-.webmention-author{ 	display: inline; 	margin-right: 0.5em; }
-.webmention-name{display: none;}
-.webmention-author a:after{ content: ": "; }
-
-.webmention-summary {
-	margin: 1em 3em;
-	padding-left: 0.5em;
-    border-left: 3px solid #8F8F8F;
-    font-style:  italic;
-    color:       #535353;
-}
-
-.webmention-published {
-	font-size: small;
-	line-height: 1em;
-	display: block;
-	border-top: 1px solid #C1C1C1;
-	padding-top: 0.5em;
-}
-
-.webmention-published, .webmention-published:hover {border-bottom: 0;}
-
-.webmention-published[href]:after 
-{content: " at " attr(href); font-family: inherit;}
-
-
 
 /* -----------------------
  Admonition
@@ -807,7 +866,7 @@ div[id^="comment-"]{
 
 /*author name*/
 div.comment-author {display: inline-block;}
-div.comment-author a[href^="http"]:before{font-style: normal; }
+
 
 div.comment-author img{
     float: left;
@@ -920,7 +979,7 @@ ul.bricks a {color: #EEE; border: none}
     content: ""; 
     height: 0; width: 0; 
     position: absolute;
-    border-right-color: #EEEEEE; 
+    border-right-color:  #d6d6d6; 
     border-width: 10px; 
     margin-top: 0px; 
     right: -1px;

@@ -141,3 +141,5 @@
 
 {%- macro text_prefix(text, prefix) %} {{ prefix }}{{ text }} {%- endmacro %}
 
+{# prettify 2013-12-28 10:45:00 to 2013-12-28 at 10:45 #}
+{%- macro date_readable(date) %}{{ date|replace("T", " at ")|truncate(19, true, "") }}{%- endmacro %}

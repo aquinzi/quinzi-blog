@@ -1,48 +1,19 @@
 {#  -*- coding: utf-8 -*- #}
 
 {% if post.mentions and post.mentions['tweets'] %}
-{# get RT and fav count #}
-<div class="social-reaction">
-<ul>
-	<li data-icon="twitter">
-		Twitter
-		<ul>
-		{% for tweets, prop in post.mentions['tweets'].iteritems() if prop['user_screen_name'] == twitter_user %}
-		<li data-icon="star"><a href="https://twitter.com/intent/favorite?tweet_id={{ prop['id'] }}">{{ prop['favorite_count'] }} Favs</a></li>
-		<li data-icon="retweet"><a href="https://twitter.com/intent/retweet?tweet_id={{ prop['id'] }}">{{ prop['retweet_count'] }} Retweets</a></li>
-		<li> <a href="https://twitter.com/intent/tweet?in_reply_to={{ prop['id'] }}">Reply</a> </li>
-		{% endfor %}
-		</ul>		
-	</li>
-</ul>
-</div>
 
-<h3>{{ messages("Tweets here") }}</h3>
 <ul id="tweets"> 
 {% for tweets, prop in post.mentions['tweets'].iteritems() if not prop['user_screen_name'] == twitter_user %}
 	<li><div>
 		<img src="/images/avatars/{{ prop['profile_image_local'] }}">
 		<p><span class="user">@{{ prop['user_screen_name'] }}</span> </p>
-		<p>{{ prop['text'] }} <time><a href="https://twitter.com/{{ prop['user_screen_name'] }}/status/{{ prop['id'] }}">{{ prop['created_at']|replace("T", " ") }}</a></time></p>
+		<p>{{ prop['text'] }} <time><a href="https://twitter.com/{{ prop['user_screen_name'] }}/status/{{ prop['id'] }}">{{ simple.date_readable(prop['created_at']) }}</a></time></p>
 	</div>
 	</li>
 {% endfor %}
 </ul>
 
-{% else %}
-<h3>{{ messages("Tweets here") }}</h3>
-<p> {{ messages ("Tweet appear") }}</p>
-
 {% endif %}
-
-
-<h3>{{ messages("Mentions") }}</h3>
-<form action="https://webmention.herokuapp.com/api/webmention" method="post">
-<p>{{ messages("Mentions_form") }}</p>
-<input name="source" type="url" placeholder="http://example.com/my-cool-post" />
-<input name="target" value="{{ post.permalink(absolute=True) }}" type="hidden">
-<input value="Send Webmention" type="submit">
-</form>
 
 {% if not LOCALHOST %}
 <script id="webmention-hosted">
@@ -55,9 +26,46 @@
     s.parentNode.insertBefore(sn, s);
   }());
 </script>
+<noscript>
+{% if post.mentions and post.mentions['webmention']%}
+<ul id="webmentions"> 
+{% for mentions, prop in post.mentions['webmention'].iteritems() %}
+	<li><div>
+		<p>Comment by <span class="author">
+		{% if prop['author_url'] %}
+		<a href="{{ prop['author_url'] }}">{{ prop['author_name'] }}</a>
+		{% else %}
+		{{ prop['author_name'] }}
+		{% endif %}
+		</span> at <a href="{{ prop['source']}}">{{ prop['source']}}</a></p>
+		<p>{{ prop['source_summary'] }}</p>
+		<time class="date">{{ simple.date_readable(prop['source_pub_date']) }}</time>
+	</div>
+	</li>
+{% endfor %}
+</ul>
+{% endif %}
+</noscript>
 {% endif %}
 
+{#For now just load the webmention yaml when in localhost#}
+{% if LOCALHOST and post.mentions and post.mentions['webmention']%}
 
-
-
+<ul id="webmentions"> 
+{% for mentions, prop in post.mentions['webmention'].iteritems() %}
+	<li><div>
+		<p>Comment by <span class="author">
+		{% if prop['author_url'] %}
+		<a href="{{ prop['author_url'] }}">{{ prop['author_name'] }}</a>
+		{% else %}
+		{{ prop['author_name'] }}
+		{% endif %}
+		</span> at <a href="{{ prop['source']}}">{{ prop['source']}}</a></p>
+		<p>{{ prop['source_summary'] }}</p>
+		<time class="date">{{ simple.date_readable(prop['source_pub_date']) }}</time>
+	</div>
+	</li>
+{% endfor %}
+</ul>
+{% endif %}
 

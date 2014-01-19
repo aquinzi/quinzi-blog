@@ -19,11 +19,13 @@ if os.path.exists(local_conf):
 
 	MENTIONS_PATH = os.path.join(os.getcwd(), config.get('mentions', 'path'))
 	MENTIONS_PATH_AVATARS = config.get('mentions', 'path_avatars')
+	MENTIONS_SERVER = config.get('mentions', 'webmention_server')
 	LOCALHOST = config.getboolean('local', 'localhost')
 	#local_TIMEZONE = config.getboolean('other', 'timezone')
 	local_TIMEZONE = None
 	DISQUS_ID = config.get('other', 'disqus_id')
 	TWITTER_USER = config.get('mentions', 'twitter_username')
+	SCRIPT_FOLDER = config.get('other', 'script_folder')
 	
 else:
 	LOCALHOST = False
@@ -84,14 +86,14 @@ TRANSLATIONS = {DEFAULT_LANG: "", "es": "./es", }
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/index.html', 'Index', 'archives'),
-        ('/rss.xml', 'RSS', 'feed'),
+        ('http://feeds.feedburner.com/intentode', 'RSS', 'feed'),
         #('/categories/index.html', 'Tags', 'tags'),
         #( #sub menu BAZ contiene FOO y BAR. But not working in jinja
         #(  ('/foo', 'FOO'), ('/bar', 'BAR')  ), 'BAZ', 'icon-X'),
     ),
     'es': (
         ('/es/index.html', 'Index', 'archives'),
-        ('/es/rss.xml', 'RSS', 'feed'),
+        ('http://feeds.feedburner.com/intentode', 'RSS', 'feed'),
         #('/es/categories/index.html', 'Tags', 'tags'),
     )
 }
@@ -414,12 +416,9 @@ PRETTY_URLS = True
 # custom search (http://www.google.com/cse/)
 # Or a duckduckgo search: https://duckduckgo.com/search_box.html
 # Default is no search form.
-# SEARCH_FORM = ""
-#
-SEARCH_FORM = """
-<!-- Custom search -->
-<form method="get" action="http://duckduckgo.com/"
- class="navbar-form">
+SEARCH_FORM = ""
+'''
+SEARCH_FORM = """<!-- Custom search --><form method="get" action="http://duckduckgo.com/" class="navbar-form">
 <input type="hidden" name="sites" value="%s"/>
 <input type="hidden" name="k8" value="#444444"/>
 <input type="hidden" name="k9" value="#D51920"/>
@@ -427,9 +426,9 @@ SEARCH_FORM = """
 <input type="text" name="q" maxlength="255"
  placeholder="Search&hellip;" class="span2" style="margin-top: 4px;"/>
 <input type="submit" value="Search"/>
-</form>
-<!-- End of custom search -->
+</form><!-- End of custom search -->
 """ % SITE_URL
+'''
 
 # Additional metadata that is added to a post when creating a new_post
 # ADDITIONAL_METADATA = {}

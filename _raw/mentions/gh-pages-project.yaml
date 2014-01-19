@@ -1,0 +1,14 @@
+tweets: {}
+url: !!python/unicode 'http://blog.quinzi.com.ar/gh-pages-project/'
+webmention:
+  &id001 1388188800000:
+    author_image: null
+    author_image_local: default.png
+    author_name: !!python/unicode 'Ei-Kiu'
+    source: !!python/unicode 'http://www.intentodeblog.com.ar/posts/gh-pages-project/en.html'
+    author_url: !!python/unicode 'http://www.twitter.com/eikiu'
+    source_epoch: *id001
+    source_pub_date: '2013-12-28T00:00:00'
+    source_summary: !!python/unicode 'Moved. Go to "GitHub Pages for projects"'
+    source_title: !!python/unicode 'GitHub Pages for projects'
+    target: gh-pages-project/

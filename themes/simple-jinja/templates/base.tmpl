@@ -7,7 +7,11 @@
     {% block extra_head %}{% endblock %}
     {{ extra_head_data }}
 </head>
-<body id="top">
+<body id="top"
+{%- if title|e == "Archive" %}
+class = "index"
+{% endif %}
+>
 	<div id="side-left" class="side">
 		<h1 id="blog-title"><a href="{{ abs_link('/') }}" title="{{ blog_title }}" rel="home">{{ blog_title }}</a></h1>
 		{% block belowtitle %}{% endblock %}
@@ -22,10 +26,7 @@
 		<footer>
 			{{ content_footer }}
 			
-			<div id="search">
-				<p>Search: </p>
-				{{ search_form }}
-			</div>
+			<div id="search">{{ search_form }}</div>
 			
 		</footer>
 	</div>

@@ -29,8 +29,8 @@ class ParseMentions(Task):
 				if os.path.exists(path_file) and os.path.isfile(path_file):		
 					with open (path_file, 'r') as yaml_file:
 						data_mentions = yaml.load(yaml_file)
-						if not 'webmention_io' in data_mentions:
-							data_mentions['webmention_io'] = {}
+						if not 'webmention' in data_mentions:
+							data_mentions['webmention'] = {}
 						if not 'tweets' in data_mentions:
 							data_mentions['tweets'] = {}
 							

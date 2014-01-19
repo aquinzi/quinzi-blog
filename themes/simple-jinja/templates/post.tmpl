@@ -39,6 +39,7 @@
                 <dd>{{ simple.html_source_link(post, text="Get source") }} </dd>
             {%- endif %} 
             </dl>
+
         </div>
     </header>
     
@@ -50,6 +51,7 @@
         <meta itemref="vcard" itemprop="author" itemscope itemtype="http://schema.org/Person" />
         
         <div class="post-meta">
+		{#
             {%- if post.meta('category') %}
                 <dl>
                     <dt class="categories"> {{ messages('Category') }}: </dt>
@@ -62,22 +64,78 @@
                     <dd> {{ simple.html_list_tags(post) }} </dd>
                 </dl>
             {%- endif %}
+		#}
+                <dl>
+            {%- if post.meta('category') %}
+                    <dt class="categories"> {{ messages('Category') }}: </dt>
+                    <dd> {{ simple.html_category(post) }} </dd>
+            {%- endif %}
+            {%- if post.alltags %} 
+                    <dt class="tags"> {{ messages('Tags') }}: </dt>
+                    <dd> {{ simple.html_list_tags(post) }} </dd>
+            {%- endif %}
+                </dl>
+				
+			<div class="social-reaction">
+			{%- if post.mentions %}
+			<ul>
+				{%- if post.mentions['tweets'] %}
+				{# get RT and fav count #}
+				<li data-icon="twitter">
+					Twitter
+					<ul>
+					{% for tweets, prop in post.mentions['tweets'].iteritems() if prop['user_screen_name'] == twitter_user %}
+					<li data-icon="star"><a href="https://twitter.com/intent/favorite?tweet_id={{ prop['id'] }}">{{ prop['favorite_count'] }} Favs</a></li>
+					<li data-icon="retweet"><a href="https://twitter.com/intent/retweet?tweet_id={{ prop['id'] }}">{{ prop['retweet_count'] }} Retweets</a></li>
+					<li> <a href="https://twitter.com/intent/tweet?in_reply_to={{ prop['id'] }}">Reply</a> </li>
+					{% endfor %}
+					</ul>		
+				</li>
+				{%- endif %}
+				{%- if post.mentions['webmention'] %}
+				<li data-icon="comment"> {{ post.mentions['webmention']|length }} Mentions	</li>
+				{%- endif %}
+			</ul>
+            {%- endif %}
+			
+	
+			
+			</div>
+				
+				
         </div>
 		
-		<div id="post-comments">
-			{% include 'post_mentions.tmpl' %}
-
-			{% if not post.meta('nocomments') and not LOCALHOST %}
-			{{ comments.comment_form(post.permalink(absolute=True), post.title(), post._base_path) }}
-			{% endif %}
-		</div>		
     </footer>
+    </div>
+		
+	<div id="post-comments">
+
+		{% include 'post_mentions.tmpl' %}
+
+		<div class="how-to">
+		<h3>How to comment</h3>
+		<ul>
+			<li>Tweet with an URL to this post (<code>{{ post.permalink(absolute=True) }}</code>)</li>
+			<li>Write a post linking here and send me a Webmention. 
+		<form action="https://webmention.herokuapp.com/api/webmention" method="post">
+		Paste your URL: <input name="source" type="url" placeholder="http://example.com/my-cool-post" />
+		<input name="target" value="{{ post.permalink(absolute=True) }}" type="hidden">
+		<input value="Send Webmention" type="submit">
+		</form>	</li>
+			<li>Commenting with disqus</li>
+		</ul>
+		</div>
+		
+		{% if not post.meta('nocomments') and not LOCALHOST %}
+		{{ comments.comment_form(post.permalink(absolute=True), post.title(), post._base_path) }}
+		{% endif %}
+	
+	</div>		
 	
     {%- if post.description() %}
         <meta content="{{ post.description() }}" itemprop="description">
     {%- endif %}
 
     {{ helper.mathjax_script(post) }}
-    </div>
 </article>
 {% endblock %}
