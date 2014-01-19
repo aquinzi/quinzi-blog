@@ -195,6 +195,10 @@ div.caption div.inner {height: auto; overflow: hidden; }
     font-size: 0.9em;
 }
 
+.h-entry header a[href^="http"]:before{
+content: "";
+}
+
 .date:before {
     font-family: "FontAwesome";
     content: "\f017"; /*clock*/

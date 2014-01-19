@@ -73,7 +73,7 @@
 
 
 {% macro html_category(post, prefix='') %}
-    <span itemprop="keywords"><a class="tag p-category" href="{{ _link('category', post.meta('category')) }}">{{ text_prefix(post.meta('category'), prefix) }}</a></span>
+    <span itemprop="keywords"><a class="p-category" href="{{ _link('category', post.meta('category')) }}">{{ text_prefix(post.meta('category'), prefix) }}</a></span>
 {% endmacro %}
 
 {% macro html_list_tags(post, prefix='', link=True, list=False) %}
@@ -84,7 +84,7 @@
     {#- list all tags from post instead of only from locale. Probably temporary setting #}
     {%- for tag in post.alltags %}
     {%- if list %} <li> {% endif %}
-    {%- if link %} <a class="tag p-category" href="{{ _link('tag', tag) }}"> {% endif %}
+    {%- if link %} <a class="p-category" href="{{ _link('tag', tag) }}"> {% endif %}
     <span class="badge badge-info">{{ text_prefix(tag, prefix) }}</span>
     {%- if link %} </a> {% endif %}
     {%- if list %} </li> {% endif %}
@@ -128,7 +128,7 @@
     {% if words %}
         {{ messages('Updated:') }}
     {% endif %}
-    <time class="published dt-published updated" datetime="{{ post.meta('updated') }}" itemprop="datePublished">{{ post.meta('updated') }}</time>
+    <time class="published dt-updated" datetime="{{ post.meta('updated') }}" itemprop="datePublished">{{ post.meta('updated') }}</time>
 {% endmacro %}
 
 {% macro html_navigation_links() %}

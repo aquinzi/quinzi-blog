@@ -22,7 +22,8 @@
     <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
 
     <header>
-        {{ helper.html_title() }}
+		<h1 class="p-name" itemprop="headline name">{{ title|e }}</h1>
+		
         <div class="post-meta">
             <dl>
                 {%- if not post.meta('updated') %}
@@ -39,7 +40,9 @@
                 <dd>{{ simple.html_source_link(post, text="Get source") }} </dd>
             {%- endif %} 
             </dl>
-
+		{%- if post.description() %}
+			<p class="p-summary" content="{{ post.description() }}" itemprop="description">{{ post.description() }}</p>
+		{%- endif %}
         </div>
     </header>
     
@@ -51,20 +54,6 @@
         <meta itemref="vcard" itemprop="author" itemscope itemtype="http://schema.org/Person" />
         
         <div class="post-meta">
-		{#
-            {%- if post.meta('category') %}
-                <dl>
-                    <dt class="categories"> {{ messages('Category') }}: </dt>
-                    <dd> {{ simple.html_category(post) }} </dd>
-                </dl>
-            {%- endif %}
-            {%- if post.alltags %} 
-                <dl>
-                    <dt class="tags"> {{ messages('Tags') }}: </dt>
-                    <dd> {{ simple.html_list_tags(post) }} </dd>
-                </dl>
-            {%- endif %}
-		#}
                 <dl>
             {%- if post.meta('category') %}
                     <dt class="categories"> {{ messages('Category') }}: </dt>
@@ -74,6 +63,8 @@
                     <dt class="tags"> {{ messages('Tags') }}: </dt>
                     <dd> {{ simple.html_list_tags(post) }} </dd>
             {%- endif %}
+					<dt>Permalink</dt>
+					<dd class="p-name u-url" itemprop="url" title="Permalink to {{ title|e }}">{{ post.permalink(absolute=True) }}</dd>
                 </dl>
 				
 			<div class="social-reaction">
@@ -97,9 +88,6 @@
 				{%- endif %}
 			</ul>
             {%- endif %}
-			
-	
-			
 			</div>
 				
 				
@@ -131,10 +119,7 @@
 		{% endif %}
 	
 	</div>		
-	
-    {%- if post.description() %}
-        <meta content="{{ post.description() }}" itemprop="description">
-    {%- endif %}
+
 
     {{ helper.mathjax_script(post) }}
 </article>

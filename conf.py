@@ -67,7 +67,7 @@ LICENSE = ""
 # A small copyright notice for the page footer (in HTML).
 CONTENT_FOOTER = '''
     <div id="vcard" class="vcard author p-author h-card vcard">
-        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> <a href="http://quinzi.com.ar/">{author}</a> </span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
+        <p>Hi, <i class="icon-user"></i> <span class="fn nickname p-name p-nickname" itemprop="name"> <a href="http://quinzi.com.ar/" class="u-url" rel="me" itemprop="url">{author}</a></span> over here. Sadly, you reached the end of the page. Why don't you go back to top and forget you came here? I won't say anything.<span><a href="#top"><i class="fa fa-chevron-circle-up"></i></a></span>
         </p>
     </div>
 '''
