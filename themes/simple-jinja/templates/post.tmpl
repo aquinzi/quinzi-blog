@@ -18,8 +18,8 @@
 
 
 {% block content %}
-    <article class="postbox">
-    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+    <article class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+    <div class="postbox">
 
     <header>
 		<h1 class="p-name" itemprop="headline name">{{ title|e }}</h1>
@@ -63,8 +63,6 @@
                     <dt class="tags"> {{ messages('Tags') }}: </dt>
                     <dd> {{ simple.html_list_tags(post) }} </dd>
             {%- endif %}
-					<dt>Permalink</dt>
-					<dd class="p-name u-url" itemprop="url" title="Permalink to {{ title|e }}">{{ post.permalink(absolute=True) }}</dd>
                 </dl>
 				
 			<div class="social-reaction">
@@ -89,8 +87,6 @@
 			</ul>
             {%- endif %}
 			</div>
-				
-				
         </div>
 		
     </footer>
@@ -103,7 +99,7 @@
 		<div class="how-to">
 		<h3>How to comment</h3>
 		<ul>
-			<li>Tweet with an URL to this post (<code>{{ post.permalink(absolute=True) }}</code>)</li>
+			<li>Tweet with an URL to this post (<code class="p-name u-url" itemprop="url" title="Permalink to: {{ title|e }}">{{ post.permalink(absolute=True) }}</code>)</li>
 			<li>Write a post linking here and send me a Webmention. 
 		<form action="https://webmention.herokuapp.com/api/webmention" method="post">
 		Paste your URL: <input name="source" type="url" placeholder="http://example.com/my-cool-post" />
