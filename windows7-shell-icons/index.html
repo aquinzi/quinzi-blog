@@ -43,7 +43,7 @@
 			<ul>
     
         <li data-item="archives"><a href="../index.html">Index</a></li>
-        <li data-item="feed"><a href="../rss.xml">RSS</a></li>
+        <li data-item="feed"><a href="http://feeds.feedburner.com/intentode">RSS</a></li>
 	<li data-item="feed"><a onclick="(function(){var z=document.createElement('script');z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})()" style="cursor: pointer;">SubToMe</a></li>
 </ul>
 		</nav>
@@ -80,6 +80,7 @@
 </dd>
                      
             </dl>
+
         </div>
     </header>
     
@@ -106,13 +107,12 @@
         <meta itemref="vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">
         
         <div class="post-meta">
+		
                 <dl>
                     <dt class="categories"> Category: </dt>
                     <dd> 
     <span itemprop="keywords"><a class="tag p-category" href="../tags/cat_solved.html"> solved</a></span>
- </dd>
-                </dl> 
-                <dl>
+ </dd> 
                     <dt class="tags"> Tags: </dt>
                     <dd>  
     
@@ -120,25 +120,24 @@
     <span class="badge badge-info"> windows</span> </a> </span>
  </dd>
                 </dl>
+				
+			<div class="social-reaction">
+			
+	
+			
+			</div>
+				
+				
         </div>
 		
-		<div id="post-comments">
-			
+    </footer>
+    </div>
+		
+	<div id="post-comments">
+
+		
 
 
-<h3>Tweets linking here</h3>
-<p> To appear here, just tweet your message with the URL.</p>
-
-
-
-
-<h3>Mentions</h3>
-<form action="https://webmention.herokuapp.com/api/webmention" method="post">
-<p>So you have written a response to this post? Cool, let me know; post the URL below.</p>
-<input name="source" type="url" placeholder="http://example.com/my-cool-post">
-<input name="target" value="http://blog.quinzi.com.ar/windows7-shell-icons/" type="hidden">
-<input value="Send Webmention" type="submit">
-</form>
 
 
 <script id="webmention-hosted">
@@ -151,15 +150,31 @@
     s.parentNode.insertBefore(sn, s);
   }());
 </script>
+<noscript>
+
+</noscript>
 
 
 
 
 
 
-
-			
-			
+		<div class="how-to">
+		<h3>How to comment</h3>
+		<ul>
+			<li>Tweet with an URL to this post (<code>http://blog.quinzi.com.ar/windows7-shell-icons/</code>)</li>
+			<li>Write a post linking here and send me a Webmention. 
+		<form action="https://webmention.herokuapp.com/api/webmention" method="post">
+		Paste your URL: <input name="source" type="url" placeholder="http://example.com/my-cool-post">
+		<input name="target" value="http://blog.quinzi.com.ar/windows7-shell-icons/" type="hidden">
+		<input value="Send Webmention" type="submit">
+		</form>	</li>
+			<li>Commenting with disqus</li>
+		</ul>
+		</div>
+		
+		
+		
     
         
     
@@ -186,14 +201,13 @@
 
     
 
-			
-		</div>		
-    </footer>
+		
+	
+	</div>
 
     
     
 
-    </div>
 </article>
  </div>
 		<footer>
@@ -204,21 +218,7 @@
     </div>
 
 			
-			<div id="search">
-				<p>Search: </p>
-				
-<!-- Custom search -->
-<form method="get" action="http://duckduckgo.com/" class="navbar-form">
-<input type="hidden" name="sites" value="http://blog.quinzi.com.ar/">
-<input type="hidden" name="k8" value="#444444">
-<input type="hidden" name="k9" value="#D51920">
-<input type="hidden" name="kt" value="h">
-<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
-<input type="submit" value="Search">
-</form>
-<!-- End of custom search -->
-
-			</div>
+			<div id="search"></div>
 			
 		</footer>
 	</div>

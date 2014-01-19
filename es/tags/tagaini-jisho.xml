@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (tagaini jisho)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/tagaini-jisho.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Fri, 17 Jan 2014 19:19:41 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sincronizar Tagaini Jisho con Dropbox</title><link>http://blog.quinzi.com.ar/./es/tagaini-jisho-sincronizar-bd/</link><description>&lt;p&gt;Buscando programas que me ayuden con mi aprendizaje de japonés,
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (tagaini jisho)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/tagaini-jisho.xml/" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Sat, 18 Jan 2014 19:41:37 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sincronizar Tagaini Jisho con Dropbox</title><link>http://blog.quinzi.com.ar/./es/tagaini-jisho-sincronizar-bd/</link><description>&lt;p&gt;Buscando programas que me ayuden con mi aprendizaje de japonés,
 andaba en busca de uno que manejara mi listado de vocabularios. Uno que
 no me deje poner duplicados, que me deje categorizar las palabras, con
 un par de datos extras.&lt;/p&gt;
 &lt;p&gt;En mi búsqueda, pense usar un Excel, pero no se puede... bah, hay que
 hacer "mucho lio" para que no deje duplicados y tal. Asique descartado.
-Busqué un par mas: como &lt;a href="http://blog.quinzi.com.ar/es/tagaini-jisho-sincronizar-bd/wakan.manga.cz/"&gt;wakan&lt;/a&gt; y &lt;a href="http://zkanji.sourceforge.net/"&gt;zkanji&lt;/a&gt;. El primero ademas de
+Busqué un par mas: como &lt;a href="http://wakan.manga.cz/"&gt;wakan&lt;/a&gt; y &lt;a href="http://zkanji.sourceforge.net/"&gt;zkanji&lt;/a&gt;. El primero ademas de
 diccionario y tal (como el segundo) tiene un editor de texto que te pone
 furigana (guia fonética) arriba de los kanji (también leí que se
 pueden poner de costado). Al fin, para lo que yo queria eran
