@@ -126,7 +126,7 @@ if DISQUS_ID:
 
 # Plugins you don't want to use. Be careful :-)
 DISABLED_PLUGINS = [
-"render_archive"
+"render_archive",
 #"render_archive_custom"
 ]
 

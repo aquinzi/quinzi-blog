@@ -1,0 +1,17 @@
+tweets:
+  &id001 424307263294418944:
+    created_at: !!python/tuple
+    - !!python/unicode 'Fri Jan 17 22:28:29 +0000 2014'
+    - '%a %b %d %H:%M:%S +0000 %Y'
+    favorite_count: 0
+    id: *id001
+    profile_image_local: !!python/unicode '7123a7fc7d93e42d957d57063f5c2df8.jpeg'
+    profile_image_url: !!python/unicode 'http://pbs.twimg.com/profile_images/378800000493840482/6ea256fca93ba01e670422f6ec197d82_normal.jpeg'
+    retweet_count: 0
+    text: !!python/unicode 'Mi blog ya acepta webmentions :) http://blog.quinzi.com.ar/'
+    text_orig: !!python/unicode 'Mi blog ya acepta webmentions :) http://t.co/EdvrMJ7mSt'
+    user_id: 61266492
+    user_name: 'エイ·キュー (Ei-Kiu) '
+    user_screen_name: !!python/unicode 'eikiu'
+url: !!python/unicode 'http://blog.quinzi.com.ar/'
+webmention: {}

@@ -3,49 +3,53 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% if description %}
-    <meta name="description" content="{{ description }}">
-    {% endif %}
+	<meta name="description" content="{{ description }}">
+	{% endif %}
     <meta name="author" content="{{ blog_author }}">
-    {%- if title|e != "Archive" or title|e == "Archive" and not fake_index %}
+	{% if title|e != "Archive" or title|e == "Archive" and not fake_index %}
     <title>{{ title|e }} | {{ blog_title|e }}</title>
     {% else %}
     <title>Index of | {{ blog_title|e }}</title>
     {% endif %}
-    
-    {%- if use_bundles %}
-        {% if use_cdn %}
-            <link href="/assets/css/all.css" rel="stylesheet" type="text/css">
-        {% else %}
-            <link href="/assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+	
+	<!-- webmentions -->
+	<link rel="http://webmention.org/" href="https://webmention.herokuapp.com/api/webmention" />
+	<link rel="webmention/" href="https://webmention.herokuapp.com/api/webmention" />
+
+    {% if rss_link %}
+	{{ rss_link }}
+    {% else %}
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ _link('rss', None) }}">
+    {% endif %}
+    {% if use_bundles %}
+        {% if use_cdn %}<link href="/assets/css/all.css" rel="stylesheet" type="text/css">
+        {% else %}<link href="/assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
         {% endif %}
     {% else %}
-    <!-- firefox is special -->
+	
+	<!-- firefox is special -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     
     <link href="/assets/css/code.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/theme.css" rel="stylesheet" type="text/css"/>
-    {% if has_custom_css %}
-        <link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
+		{% if has_custom_css %}
+		<link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
+		{% endif %}
     {% endif %}
-    {% endif %}
+	
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
-    {% if rss_link %}
-        {{ rss_link }}
-    {% else %}
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ _link('rss', None) }}">
-    {%- endif %}
+
     {% if favicons %}
-        {% for name, file, size in favicons %}
-    <link rel="{{ name }}" href="{{ file }}" sizes="{{ size }}"/> 
-        {%- endfor %}
-    {%- endif %}
-    {% if comment_system == 'facebook' %}
-        <meta property="fb:app_id" content="{{ comment_system_id }}">
+		{% for name, file, size in favicons %}
+	<link rel="{{ name }}" href="{{ file }}" sizes="{{ size }}"/>
+		{% endfor %}
     {% endif %}
-	<link rel="http://webmention.org/" href="https://webmention.herokuapp.com/api/webmention" />
-	<link rel="webmention/" href="https://webmention.herokuapp.com/api/webmention" />
+    {% if comment_system == 'facebook' %}
+	<meta property="fb:app_id" content="{{ comment_system_id }}">
+	{% endif %}
+
 {% endmacro %}
 
 {%- macro late_load_js() %}
@@ -73,45 +77,37 @@
 
 
 {% macro html_category(post, prefix='') %}
-    <span itemprop="keywords"><a class="p-category" href="{{ _link('category', post.meta('category')) }}">{{ text_prefix(post.meta('category'), prefix) }}</a></span>
+<a class="p-category" itemprop="keywords" href="{{ _link('category', post.meta('category')) }}">{{ text_prefix(post.meta('category'), prefix) }}</a>
 {% endmacro %}
 
 {% macro html_list_tags(post, prefix='', link=True, list=False) %}
-    {%- if not list %} {% set tag_format = "span" %}
-    {% else %} {% set tag_format = "ul" %}
-    {%- endif %}
-    <{{ tag_format }} itemprop="keywords">
-    {#- list all tags from post instead of only from locale. Probably temporary setting #}
-    {%- for tag in post.alltags %}
-    {%- if list %} <li> {% endif %}
-    {%- if link %} <a class="p-category" href="{{ _link('tag', tag) }}"> {% endif %}
-    <span class="badge badge-info">{{ text_prefix(tag, prefix) }}</span>
-    {%- if link %} </a> {% endif %}
-    {%- if list %} </li> {% endif %}
-    {%- endfor -%}
-    </{{ tag_format }}>
+    {# list all tags from post instead of only from locale. Probably temporary setting #}
+    {% if list %} {% set tag_format = "ul" %}
+    {% else %} {% set tag_format = "span" %}
+    {% endif %}
+<{{ tag_format }} itemprop="keywords">
+    {% for tag in post.alltags %}
+    {% if list %} <li> {% endif %}{% if link %} <a class="p-category" href="{{ _link('tag', tag) }}"> {% endif %}{{ text_prefix(tag, prefix) }}{% if link %} </a> {% endif %}{% if list %} </li> {% endif %}
+    {% endfor %}
+</{{ tag_format }}>
 {% endmacro %}
 
 
-{% macro html_translations(post, msg='Read in English', prefix='', short=False, include_post=False) %}
-    {%- if include_post and post.meta('lang') %}
-        <li><a href="{{ post.permalink() }}">
-            {%- if not short %} {{ text_prefix(messages(msg, post.meta('lang')), prefix) }}
-            {%- else %} {{ text_prefix(post.meta('lang'), prefix) }}
-            {%- endif %}
-        </a></li>
+{% macro html_translations(post, msg='Read in English', prefix='', short=False, include_post=False, list=True) %}
+    {% if include_post and post.meta('lang') %}
+		{% if list %}<li>{% endif %}
+		<a href="{{ post.permalink() }}">{% if not short %} {{ text_prefix(messages(msg, post.meta('lang')), prefix) }}{% else %} {{ text_prefix(post.meta('lang'), prefix) }} {% endif %}</a>
+		{% if list %}</li>{% endif %}
     {% endif %}
 
-    {%- if translations|length > 1 %}
-        {%- for langname in translations.keys() %}
-            {#- Print if translation available and it's different from post lang  #}
-            {%- if langname != lang and post.is_translation_available(langname) and langname != post.meta('lang') %}
-                {%- if lang == default_lang or post.meta('lang') != default_lang %}
-                    <li><a href="{{ post.permalink(langname) }}">
-                    {%- if not short %} {{ text_prefix(messages(msg, langname), prefix) }}
-                    {%- else %} {{ text_prefix(langname, prefix) }}
-                    {%- endif %}
-                    </a> </li>
+    {% if translations|length > 1 %}
+        {% for langname in translations.keys() %}
+            {# Print if translation available and it's different from post lang  #}
+            {% if langname != lang and post.is_translation_available(langname) and langname != post.meta('lang') %}
+                {% if lang == default_lang or post.meta('lang') != default_lang %}
+                    {% if list %}<li>{% endif %}
+<a href="{{ post.permalink(langname) }}">{% if not short %} {{ text_prefix(messages(msg, langname), prefix) }}{% else %} {{ text_prefix(langname, prefix) }}{% endif %}</a> 
+					{% if list %}</li>{% endif %}
                 {% endif %}
             {% endif %}
         {% endfor %}
@@ -119,27 +115,31 @@
 {% endmacro %}
 
 {% macro date_published(post, words=False, d_format=False) %}
-    {%- if words %} {{ messages('Posted:') }} {% endif %}
-    {%- if not d_format %} {% set d_format = date_format %} {% endif %}
-    <time class="published dt-published" itemprop="datePublished" datetime="{{ post.date.isoformat() }}">{{ post.formatted_date(d_format) }}</time>
+    {% if words %} 
+	{{ messages('Posted:') }} 
+	{% endif %}
+    {% if not d_format %} 
+	{% set d_format = date_format %} 
+	{% endif %}
+<time class="published dt-published" itemprop="datePublished" datetime="{{ post.date.isoformat() }}">{{ post.formatted_date(d_format) }}</time>
 {% endmacro %}
 
 {% macro date_updated(post, words=False) %}
     {% if words %}
-        {{ messages('Updated:') }}
+    {{ messages('Updated:') }}
     {% endif %}
-    <time class="published dt-updated" datetime="{{ post.meta('updated') }}" itemprop="datePublished">{{ post.meta('updated') }}</time>
+<time class="published dt-updated" datetime="{{ post.meta('updated') }}" itemprop="datePublished">{{ post.meta('updated') }}</time>
 {% endmacro %}
 
 {% macro html_navigation_links() %}
     {% for url, text, icon in navigation_links[lang] %}
-        <li {% if rel_link(permalink, url) == '#' %}class="{{ active }}" {% endif %} data-item="{{ icon }}"><a href="{{ url }}">{{ text }}</a></li>
-    {%- endfor %}
+    <li {% if rel_link(permalink, url) == '#' %}class="{{ active }}" {% endif %} data-item="{{ icon }}"><a href="{{ url }}">{{ text }}</a></li>
+    {% endfor %}
 	<li data-item="feed"><a onclick="(function(){var z=document.createElement('script');z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})()" style="cursor: pointer;">SubToMe</a></li>
 {% endmacro %}
 
 
-{%- macro text_prefix(text, prefix) %} {{ prefix }}{{ text }} {%- endmacro %}
+{% macro text_prefix(text, prefix) %} {{ prefix }}{{ text }} {%- endmacro %}
 
 {# prettify 2013-12-28 10:45:00 to 2013-12-28 at 10:45 #}
-{%- macro date_readable(date) %}{{ date|replace("T", " at ")|truncate(19, true, "") }}{%- endmacro %}
+{% macro date_readable(date) %}{{ date|replace("T", " at ")|truncate(19, true, "") }}{%- endmacro %}

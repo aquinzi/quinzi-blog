@@ -4,8 +4,8 @@
 <!DOCTYPE html>
 <head>
     {{ simple.html_head() }}
-    {% block extra_head %}{% endblock %}
-    {{ extra_head_data }}
+	{% block extra_head %}{% endblock %}
+	{{ extra_head_data }}
 </head>
 <body id="top"
 {%- if title|e == "Archive" %}
@@ -15,8 +15,13 @@ class = "index"
 	<div id="side-left" class="side">
 		<h1 id="blog-title"><a href="{{ abs_link('/') }}" title="{{ blog_title }}" rel="home">{{ blog_title }}</a></h1>
 		{% block belowtitle %}{% endblock %}
-		<nav>
-			<ul>{{ simple.html_navigation_links() }}</ul>
+        <nav>
+            <ul>
+			{% for url, text, icon in navigation_links[lang] %}
+				<li {% if rel_link(permalink, url) == '#' %}class="{{ active }}" {% endif %} data-item="{{ icon }}"><a href="{{ url }}">{{ text }}</a></li>
+			{% endfor %}
+				<li data-item="feed"><a onclick="(function(){var z=document.createElement('script');z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})()" style="cursor: pointer;">SubToMe</a></li>
+			</ul>
 		</nav>
 		{% block available_langs %}{% endblock %}
 	</div>
@@ -25,9 +30,7 @@ class = "index"
 		<div id="content">{% block content %}{% endblock %} </div>
 		<footer>
 			{{ content_footer }}
-			
 			<div id="search">{{ search_form }}</div>
-			
 		</footer>
 	</div>
 	

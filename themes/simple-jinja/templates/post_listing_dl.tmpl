@@ -1,16 +1,24 @@
 {% import 'simple_helper.tmpl' as simple with context %}
-
 	<dl id="listing_index">
-	    <dt class="title"> <a href="{{ post.permalink() }}">{{ post.title() }}</a> </dt>
-	    <dd class="date"> {{ simple.date_published(post, d_format='%d') }} </dd>
-
-	    <dd class="categories">{{ simple.html_category(post, prefix="#") }} </dd>
-	    <dd class="tags">{{ simple.html_list_tags(post, prefix="#") }} </dd>
-
-	    <dd class="languages"> 
-	    	<a href="{{ post.permalink() }}">{{ simple.text_prefix(post.meta('lang'), '#') }}</a> 
-	    	<ul class="inline-list"> {{ simple.html_translations(post, msg='LANGUAGE', prefix="#", short=True) }} </ul>
-	     </dd>
-	    {%- if post.meta('description') %} <dd class="description">{{ post.meta('description') }}</dd> {% endif %}
-	    {%- if index_teasers %} <dd class="teaser"> {{ post.text(teaser_only=True) }} </dd> {% endif %}
+	    <dt class="title"> 
+			<a href="{{ post.permalink() }}">{{ post.title() }}</a> 
+		</dt>
+	    <dd class="date"> 
+			{{ simple.date_published(post, d_format='%d') }} </dd>
+	    <dd class="categories">
+			{{ simple.html_category(post, prefix="#") }} </dd>
+	    <dd class="tags">
+			{{ simple.html_list_tags(post, prefix="#") }}</dd>
+	    <dd class="languages">
+			<a href="{{ post.permalink() }}">{{ simple.text_prefix(post.meta('lang'), '#') }}</a>{{ simple.html_translations(post, msg='LANGUAGE', prefix="#", short=True, list=False) }}</dd>
+	    {% if post.meta('description') %}
+		<dd class="description">
+			{{ post.meta('description') }}
+		</dd> 
+		{% endif %}
+	    {% if index_teasers %} 
+		<dd class="teaser"> 
+		{{ post.text(teaser_only=True) }} 
+		</dd> 
+		{% endif %}
 	</dl>
