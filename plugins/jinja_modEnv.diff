@@ -1,0 +1,5 @@
+53c53,54
+<         self.lookup = jinja2.Environment()
+---
+>         self.lookup = jinja2.Environment(trim_blocks=True, lstrip_blocks=True, 
+> 		extensions = ['jinja2.ext.loopcontrols','jinja2.ext.with_'])
