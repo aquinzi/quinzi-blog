@@ -1,11 +1,4 @@
-/*
-
-add (probably) @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
- */
-
-
-
+/*add (probably) @import url(http://fonts.googleapis.com/css?family=Open+Sans); */
 
 /* basic browser style - reset */
 * {margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -195,9 +188,11 @@ div.caption div.inner {height: auto; overflow: hidden; }
     font-size: 0.9em;
 }
 
-.h-entry header a[href^="http"]:before{
-content: "";
-}
+.h-entry header a[href^="http"]:before,
+.social-reaction a[href^="http"]:before,
+#post-comments a[href^="http"]:before
+{content: ""; padding-right: 0}
+
 
 .date:before {
     font-family: "FontAwesome";
@@ -394,16 +389,16 @@ dl#listing_index * { display: inline; }
 Page: post/article
 ----------------- */
 
-article.postbox h1, article.postbox h2,
-article.postbox h3, article.postbox h4,
-article.postbox h5, article.postbox h6
+.postbox h1, .postbox h2,
+.postbox h3, .postbox h4,
+.postbox h5, .postbox h6
 {border-bottom: 2px solid #8959a8; }
 
-article.postbox { word-wrap: break-word; }
+.postbox { word-wrap: break-word; margin-bottom: 3em;}
 
-article.postbox header { margin-bottom: 1.5em; }
+.postbox header { margin-bottom: 1.5em; }
 
-.h-entry, #tweets div, .webmention-mention {
+.postbox, #tweets div, .webmention-mention {
 	background-color: #efefef;
         -os-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
         -ms-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
@@ -419,7 +414,6 @@ article.postbox header { margin-bottom: 1.5em; }
 	-webkit-border-radius: 0.5em;
 }
 
-.h-entry {margin-bottom: 3em;}
 
 .post-meta {padding: 0; font-size: 0.9em; }
 
@@ -551,6 +545,7 @@ div.toc ul, div#TOC ul {
 
 
 #post-comments a, #post-comments a:hover{border:none}
+#post-comments a[href], #post-comments a:hover{border:none}
 
 #post-comments h4, #post-comments h3 {border-bottom: none;}
 #post-comments ul {list-style-type: none; }
@@ -565,6 +560,7 @@ div.toc ul, div#TOC ul {
 .social-reaction ul ul {margin-left: 0.3em}
 .social-reaction ul ul li {padding: 0 0.5em}
 
+.social-reaction li[data-icon="comment"]:before {margin-right: 0.1em}
 .social-reaction li[data-icon="twitter"] ul:before {content: "["}
 .social-reaction li[data-icon="twitter"] ul:after {content: "]"}
 
