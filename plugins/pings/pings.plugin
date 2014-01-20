@@ -1,0 +1,9 @@
+[Core]
+Name = pings
+Module = pings
+
+[Documentation]
+Author = A.Q.
+Version = 0.1
+Website = http://quinzi.com.ar/
+Description = Ping (webmention, fallback to pingback) links in latest post 

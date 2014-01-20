@@ -3,7 +3,7 @@ Name = parse_mentions
 Module = parse_mentions
 
 [Documentation]
-Author = Daniel Aleksandersen
+Author = A.Q.
 Version = 0.1
-Website = https://www.aeyoun.priv.no
-Description = Ping services with updates to the live site
+Website = Website = http://quinzi.com.ar/
+Description = Parse mentions in YAML file

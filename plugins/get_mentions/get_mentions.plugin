@@ -5,5 +5,5 @@ Module = get_mentions
 [Documentation]
 Author = A.Q.
 Version = 0.1
-Website = https://www.aeyoun.priv.no
+Website = http://quinzi.com.ar/
 Description = Get twitter mentions and save to YAML

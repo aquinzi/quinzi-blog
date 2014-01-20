@@ -1,1 +1,0 @@
-patch "C:\Python27\Lib\site-packages\nikola\plugins\template\jinja.py" jinja_modEnv.diff
