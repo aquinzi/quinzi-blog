@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Copyright © 2012-2013 Roberto Alsina and others.
+# Small personal tastes (A.Q)
 
 # Permission is hereby granted, free of charge, to any
 # person obtaining a copy of this software and associated
@@ -33,6 +34,8 @@ You will need, of course, to install pandoc
 import codecs
 import os
 import subprocess
+import sys
+
 
 from nikola.plugin_categories import PageCompiler
 from nikola.utils import req_missing, makedirs
@@ -47,11 +50,28 @@ class CompilePandoc(PageCompiler):
     """Compile markups into HTML using pandoc."""
 
     name = "pandoc"
+    doc_purpose = "Pandoc with special touches"
 
     def compile_html(self, source, dest, is_two_file=True):
+        
+        sys.path.append(self.site.config['SCRIPT_FOLDER'])
+        import pandy
+
         makedirs(os.path.dirname(dest))
+
+        with open(source, 'r') as magic_file:
+            new_text = magic_file.readlines()
+
+        new_text = pandy.parse_abbreviations(new_text) 
+        new_text = pandy.parse_admonitions(new_text)
+        new_text = "".join(new_text)
+
         try:
-            subprocess.check_call(('pandoc','-s', '--toc','-o', dest, source))
+            text = new_text.encode('utf-8')
+            #subprocess.check_call(('pandoc','-s', '-t','html', '--toc','-o', dest, gettit))
+            tmp  = subprocess.Popen(['pandoc','-s', '-t','html', '--toc','-o', dest], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+            tmp.communicate(text)[0]
+
         except OSError as e:
             if e.strreror == 'No such file or directory':
                 req_missing(['pandoc'], 'build this site (compile with pandoc)', python=False)

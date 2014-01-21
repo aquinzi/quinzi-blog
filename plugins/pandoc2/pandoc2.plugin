@@ -4,7 +4,6 @@ Module = pandoc2
 
 [Documentation]
 Author = A.Q.
-Version = 0.1
-Website = http://getnikola.com
-Description = Just adds some flags to Nikola's Pandoc compiler
-
+Version = 0.2
+Website = http://quinzi.com.ar/
+Description = Custom settings for Pandoc + admonitions and abbreviation parsing
