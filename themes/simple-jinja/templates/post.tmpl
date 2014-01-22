@@ -7,6 +7,7 @@
 {% block extra_head %}
 {{ helper.twitter_card_information(post) }}
 {% if post.meta('keywords') %} <meta name="keywords" content="{{ post.meta('keywords')|e }}"> {% endif %}
+{{ simple.meta_translations(post) }}
 {% endblock %}
 
 {% block available_langs %}
@@ -15,6 +16,7 @@
         {{ simple.html_translations(post, msg="LANGUAGE", include_post=True) }}
     </ul>
 {% endblock %}
+
 
 
 {% block content %}

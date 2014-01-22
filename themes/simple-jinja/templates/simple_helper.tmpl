@@ -146,3 +146,13 @@
 
 {# prettify 2013-12-28 10:45:00 to 2013-12-28 at 10:45 #}
 {% macro date_readable(date) %}{{ date|replace("T", " at ")|truncate(19, true, "") }}{%- endmacro %}
+
+{% macro meta_translations(post) %}
+    {% if translations|length > 1 %}
+        {% for langname in translations.keys() %}
+            {% if langname != lang and post.is_translation_available(langname) %}
+    <link rel="alternate" hreflang="{{ langname }}" href="{{ post.permalink(langname) }}">
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endmacro %}
