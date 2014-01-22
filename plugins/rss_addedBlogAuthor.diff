@@ -1,0 +1,6 @@
+58a59
+>             "blog_author": self.site.config['BLOG_AUTHOR'],
+83c84
+<                              kw["rss_teasers"], kw['feed_length'], feed_url))],
+---
+>                              kw["rss_teasers"], kw['feed_length'], feed_url, kw['blog_author']))],

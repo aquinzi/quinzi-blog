@@ -431,7 +431,8 @@ SEARCH_FORM = """<!-- Custom search --><form method="get" action="http://duckduc
 '''
 
 # Additional metadata that is added to a post when creating a new_post
-# ADDITIONAL_METADATA = {}
+ADDITIONAL_METADATA = {'author': BLOG_AUTHOR}
+
 
 # If webassets is installed, bundle JS and CSS to make site loading faster
 USE_BUNDLES = False

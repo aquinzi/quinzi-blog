@@ -1,0 +1,10 @@
+326c326
+<                          rss_teasers, feed_length=10, feed_url=None):
+---
+>                          rss_teasers, feed_length=10, feed_url=None, author=None):
+340a341,345
+> 
+> 
+>         if not args['author'] and author is not None:
+>             args['author'] = author
+> 
