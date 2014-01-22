@@ -943,7 +943,7 @@ ul.bricks a {color: #EEE; border: none}
     left:     0;
     top:      0;
     padding:  1em 0 1em 1em;
-    width:    200px; 
+    width:    17%; 
     height:   100%;
 }
 
@@ -991,7 +991,7 @@ ul.bricks a {color: #EEE; border: none}
 #side-right{
     position: relative;
     padding:  1.5em 1.5em 1.5em 4em;
-    margin:   0 0 0 200px;
+    margin:   0 0 0 17%;
 }
 
 div#content { max-width: 945px; }
@@ -1002,7 +1002,7 @@ div.toc, div#TOC {
     position: fixed;
     left: 0;
     margin-top: 12em;
-    width: 200px;
+    width: 17%;
     padding-left: 1em;
     color: #eab700;
     font-size: 0.8em;
