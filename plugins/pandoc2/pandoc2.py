@@ -62,14 +62,20 @@ class CompilePandoc(PageCompiler):
         with open(source, 'r') as magic_file:
             new_text = magic_file.readlines()
 
+        hasTOC, new_text = pandy.find_TOCinFile(new_text, placeholder="[TOC]", replace_with="") 
         new_text = pandy.parse_abbreviations(new_text) 
         new_text = pandy.parse_admonitions(new_text)
         new_text = "".join(new_text)
 
+        list_command = ['pandoc','-s', '-t','html', '-o', dest]
+        
+        if hasTOC:
+            list_command.append('--toc')
+
         try:
             text = new_text.encode('utf-8')
             #subprocess.check_call(('pandoc','-s', '-t','html', '--toc','-o', dest, gettit))
-            tmp  = subprocess.Popen(['pandoc','-s', '-t','html', '--toc','-o', dest], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+            tmp  = subprocess.Popen(list_command, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
             tmp.communicate(text)[0]
 
         except OSError as e:
