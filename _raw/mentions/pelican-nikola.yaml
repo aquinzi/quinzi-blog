@@ -32,5 +32,23 @@ tweets:
     user_id: 17824511
     user_name: !!python/unicode 'maruco'
     user_screen_name: !!python/unicode 'rokxx'
+  &id004 431778532256399360:
+    created_at: !!python/tuple
+    - !!python/unicode 'Fri Feb 07 13:16:38 +0000 2014'
+    - '%a %b %d %H:%M:%S +0000 %Y'
+    favorite_count: 0
+    id: *id004
+    profile_image_local: !!python/unicode '765703221e6060f0280652642105b719.gif'
+    profile_image_url: !!python/unicode 'http://pbs.twimg.com/profile_images/1800026713/yo-small_normal.gif'
+    retweet_count: 0
+    text: !!python/unicode 'Not 100% certain this is a site done with Nikola, but
+      it has a tutorial to migrate from Pelican http://blog.quinzi.com.ar/pelican-nikola/
+      @GetNikola'
+    text_orig: !!python/unicode 'Not 100% certain this is a site done with Nikola,
+      but it has a tutorial to migrate from Pelican http://t.co/LHfNnsruYJ @GetNikola'
+    user_id: 2957071
+    user_name: !!python/unicode 'Roberto Alsina'
+    user_screen_name: !!python/unicode 'ralsina'
 url: !!python/unicode 'http://blog.quinzi.com.ar/pelican-nikola/'
+webmention: {}
 webmention_io: {}

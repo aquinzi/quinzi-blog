@@ -1,0 +1,19 @@
+tweets:
+  &id001 431779812470824960:
+    created_at: !!python/tuple
+    - !!python/unicode 'Fri Feb 07 13:21:44 +0000 2014'
+    - '%a %b %d %H:%M:%S +0000 %Y'
+    favorite_count: 0
+    id: *id001
+    profile_image_local: !!python/unicode 'b1bf93be1bccab455ccdd925643b9e62.png'
+    profile_image_url: !!python/unicode 'http://pbs.twimg.com/profile_images/1517112715/profile_normal.png'
+    retweet_count: 0
+    text: !!python/unicode "@ralsina Look at the &lt;generator&gt; here: http://blog.quinzi.com.ar/rss.xml\n\
+      \ @GetNikola"
+    text_orig: !!python/unicode "@ralsina Look at the &lt;generator&gt; here: http://t.co/GqSb9SZjSF\n\
+      \ @GetNikola"
+    user_id: 282091940
+    user_name: !!python/unicode 'punchagan'
+    user_screen_name: !!python/unicode 'punchagan'
+url: !!python/unicode 'http://blog.quinzi.com.ar/rss.xml'
+webmention: {}
