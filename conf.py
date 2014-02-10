@@ -206,6 +206,7 @@ COMPILERS = {
     "html": ('.html', '.htm'),
     # Pandoc detects the input from the source filename
     "pandoc2": ('.txt'),
+    #"pandoc": ('.txt'),
 }
 
 # If True, publish future dated posts right away instead of scheduling them.
@@ -383,7 +384,7 @@ INDEX_TEASERS = False
 # Create index.html for story folders?
 #STORY_INDEX = True
 # Enable comments on story pages?
-# COMMENTS_IN_STORIES = False
+COMMENTS_IN_STORIES = True
 # Enable comments on picture gallery pages?
 # COMMENTS_IN_GALLERIES = False
 
