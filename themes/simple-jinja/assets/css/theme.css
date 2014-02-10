@@ -525,10 +525,14 @@ div.toc:before, div#TOC:before {
 }
 
 div.toc ul, div#TOC ul {
-    list-style-type: none;
-    padding-left: 0.6em;
+    list-style-type: decimal;
+    /*padding-left: 1.5em;*/
     margin: 0;
 }
+
+div.toc ul ul, div#TOC ul ul {list-style-type: lower-alpha; }
+
+div.toc ul ul ul, div#TOC ul ul ul {list-style-type: lower-roman; }
 
 /* -----------------------
  Post comments and social reaction
@@ -997,7 +1001,7 @@ ul.bricks a {color: #EEE; border: none}
 div#content { max-width: 945px; }
 
 #side-left h4 {margin-left: 0em;}
-
+/*
 div.toc, div#TOC {
     position: fixed;
     left: 0;
@@ -1025,5 +1029,5 @@ div.toc:before, div#TOC:before {
 
 .toc a, #TOC a             { color: #eab700; border: none}
 .toc a:hover, #TOC a:hover { color: #f5871f;}
-
+*/
 } /*end media query*/

@@ -59,7 +59,7 @@ class CompilePandoc(PageCompiler):
 
         makedirs(os.path.dirname(dest))
 
-        with open(source, 'r') as magic_file:
+        with codecs.open(source, 'rb', encoding="utf-8") as magic_file:
             new_text = magic_file.readlines()
 
         hasTOC, new_text = pandy.find_TOCinFile(new_text, placeholder="[TOC]", replace_with="") 
@@ -68,9 +68,11 @@ class CompilePandoc(PageCompiler):
         new_text = "".join(new_text)
 
         list_command = ['pandoc','-s', '-t','html', '-o', dest]
+       
         
         if hasTOC:
             list_command.append('--toc')
+            list_command.append("--toc-depth=4")
 
         try:
             text = new_text.encode('utf-8')
