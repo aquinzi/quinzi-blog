@@ -201,7 +201,6 @@ div.caption div.inner {height: auto; overflow: hidden; }
 }
 
 
-/* move these clases somewhere above*/
 li[data-icon="twitter"]:before {
 font-family: "FontAwesome";
 content: "\f099";
@@ -267,14 +266,19 @@ Sidebar Left
     color:       #1D1F21;
 }
 
-#side-left li[data-item="archives"] a       {background-color: #eab700;}
-#side-left li[data-item="archives"] a:hover {background-color: #ffcc66;}
+#side-left li[data-item="yellow"] a       {background-color: #eab700;}
+#side-left li[data-item="yellow"] a:hover {background-color: #ffcc66;}
 
-#side-left li[data-item="tags"] a       {background-color: #8959a8;}
-#side-left li[data-item="tags"] a:hover {background-color: #cc99cc;}
+#side-left li[data-item="purple"] a       {background-color: #8959a8;}
+#side-left li[data-item="purple"] a:hover {background-color: #cc99cc;}
 
-#side-left li[data-item="feed"] a       {background-color: #f5871f;}
-#side-left li[data-item="feed"] a:hover {background-color: #f99157;}
+#side-left li[data-item="orange"] a       {background-color: #f5871f;}
+#side-left li[data-item="orange"] a:hover {background-color: #f99157;}
+
+#side-left li[data-item="blue"] a       {background-color: #4271ae;}
+#side-left li[data-item="blue"] a:hover       {background-color: #7a9bc6;}
+
+
 
 #side-left h4 {font-weight: normal; display: inline; margin-left: 0.3em}
 
@@ -529,6 +533,9 @@ div.toc ul, div#TOC ul {
     /*padding-left: 1.5em;*/
     margin: 0;
 }
+
+div.toc ul:first-child, div#TOC ul:first-child {margin-top: 1em; }
+
 
 div.toc ul ul, div#TOC ul ul {list-style-type: lower-alpha; }
 
@@ -905,6 +912,18 @@ article section#changes time {
     padding-right: 10px;
     margin-right: 10px;
 }
+
+div.appinfo dt {
+    float: left; 
+    clear: left; 
+    padding-right: 0.5em; 
+    padding-left: 1em; 
+    margin: 0;
+}
+div.appinfo dt:after{content: ":"}
+div.appinfo dd {font-style: normal;}
+div.appinfo dl p {margin: 0.5em 0px;}
+
 
 /* ------------
 Page: Tags

@@ -33,9 +33,7 @@ tweets:
     user_name: !!python/unicode 'maruco'
     user_screen_name: !!python/unicode 'rokxx'
   &id004 431778532256399360:
-    created_at: !!python/tuple
-    - !!python/unicode 'Fri Feb 07 13:16:38 +0000 2014'
-    - '%a %b %d %H:%M:%S +0000 %Y'
+    created_at: !!python/unicode '2014-02-07T13:16:38'
     favorite_count: 0
     id: *id004
     profile_image_local: !!python/unicode '765703221e6060f0280652642105b719.gif'

@@ -1,11 +1,10 @@
-.. title: "Review de recursos para japonés"
+---
+.. title: Review de recursos para japonés
 .. date: 2014-02-09 
 .. slug: japanese-resources
 .. lang: es
-.. toc: inpost
-
-
-Recursos variados (programas, libros, etc) para aprender/practicar japonés, centrados en el aprendizaje por cuenta propia y/o por ser la primera vez que se hace. Incluye un par de opiniones/tips.
+.. description: Recursos variados (programas, libros, etc) para aprender/practicar japonés, centrados en el aprendizaje por cuenta propia y/o por ser la primera vez que se hace. Incluye un par de opiniones/tips.
+---
 
 [TOC]
 
@@ -22,6 +21,7 @@ Para los principiantes sirve bastante por tener falta de textos de nivel, poco v
 
 #### Anki
 
+<div class="appinfo">
 Sitio
 :	<http://ankisrs.net/>
 
@@ -36,7 +36,7 @@ Almacenamiento
 
 Clientes
 :	desktop, smartphones, web 
-
+</div>
 
   * Bastante popular. 
   * Muchos plugins y decks. 
@@ -47,7 +47,7 @@ Clientes
 
 
 #### Mnemosyne
-
+<div class="appinfo">
 Sitio
 :	<http://mnemosyne-proj.org/>
 
@@ -62,6 +62,7 @@ Almacenamiento
 
 Clientes
 :	desktop, [android](https://play.google.com/store/apps/details?id=org.tbrk.mnemododo), "web" (activar el webserver), teléfonos con J2ME
+</div>
 
   * No tan popular, pero está hace mucho tiempo
   * Es mas genérico que Anki. 
@@ -74,6 +75,7 @@ Clientes
 
 #### Tagaini Jisho
 
+<div class="appinfo">
 Sitio
 :	<http://www.tagaini.net/>
 
@@ -85,7 +87,7 @@ Código
 
 Almacenamiento
 :	SQLite
-
+</div>
 
   * Es un diccionario + buscador de kanji + herramienta/asistente de aprendizaje. 
   * Permite taggear, ponerle notas a las entradas y organizarlas en listas.
@@ -107,7 +109,57 @@ Son diccionarios popup para navegadores.
   * Chrome: [rikaikun](https://chrome.google.com/webstore/detail/rikaikun/jipdnfibhldikgcjhfnomkfpcebammhp)
   * Opera 12/legacy: [Rikaisan](https://addons.opera.com/en/extensions/details/rikaisan/)
   
-  
+#### JED 
+
+<div class="appinfo">
+
+URL
+:	<https://play.google.com/store/apps/details?id=com.umibouzu.jed>
+
+Plataforma
+:	Android. 
+
+Ads
+:	No
+
+</div>
+
+
+Diccionario offline. Parece que no se actualiza mas.
+
+  * Buscar mientras se tipea (lecturas, significado). 
+  * Se puede buscar en romaji y kana/kanji. 
+  * Japonés a varios idiomas (inglés, español, francés). 
+  * Tags. 
+  * Exportar a GDocs o Anki. 
+  * Copiar a clipboard. 
+  * Oraciones de ejemplo. 
+
+
+### Práctica
+
+#### Obenkyo
+
+<div class="appinfo">
+URL
+:	<https://play.google.com/store/apps/details?id=com.Obenkyo>
+
+Platform
+:	Android. 
+
+Ads
+:	Si: Ads y Analytics pero se pueden deshabilitar desde opciones. 
+</div>
+
+
+Programa para practicar/aprender kana, kanji y vocabulario (incl. números). 
+
+  * Kanji: 2300+ (nivel JLPT 1-5 o Jouyou 1-7), animación de trazos, lecturas. Flashcards/escribiendo.
+  * Vocabulario: 14600+ (en inglés) de EDICT con flashcard .
+  * Particulas: experimental (cerca de 100 oraciones)
+  * Tae Kim Japanese Grammar guide. 
+
+
 ### Lectura
 
 Programas que ayudan a leer textos: se carga el texto (usualmente .txt) y se van marcando las palabras que ya se conocen o se quieren estudiar y exportarlas. Las palabras que no se sepan se pueden buscar en el diccionario "popup" que tienen, ya sea haciendo click o hover.
@@ -115,15 +167,16 @@ Programas que ayudan a leer textos: se carga el texto (usualmente .txt) y se van
 
 #### Yomichan
 
+<div class="appinfo">
 Sitio
-:	<http://foosoft.net/pages/yomichan.html> o <https://ankiweb.net/shared/info/934748696>
+:	<http://foosoft.net/pages/yomichan.html> o [Anki plugin repo](https://ankiweb.net/shared/info/934748696)
 
 Plataforma
 :	Multiplataforma. 
 
 Código
 :	Abierto
-
+</div>
 
   * Plugin para Anki
   * Tiene búsqueda de diccionario incluido (EDICT, KANJIDICT). 
@@ -134,6 +187,7 @@ Código
 
 #### LWT (Learning with Texts)
 
+<div class="appinfo">
 Sitio
 :	<http://lwt.sourceforge.net/>
 
@@ -142,7 +196,7 @@ Plataforma
 
 Código
 :	Abierto
-
+</div>
 
   * Se instala en un servidor con PHP y MySQL
   * Para varios idiomas. 
@@ -155,6 +209,7 @@ Código
 
 #### fltr (Foreign Language Text Reader)
 
+<div class="appinfo">
 Sitio
 :	<https://code.google.com/p/fltr/>
 
@@ -163,7 +218,7 @@ Plataforma
 
 Código
 :	Abierto
-
+</div>
 
   * Como LWT pero en Java y archivos planos.
   * No tiene diccionario incluido (abre el navegador con el diccionario asignado). Tiene un par incluídos.
@@ -172,7 +227,7 @@ Código
   * Se puede importar/cargar un CSV con las palabras que se saben para que las marque como sabidas o cargar un texto y poner "I know all of them"
   * Para varios idiomas. 
   * Estadísticas básicas
-  * El logo es un 招き猫
+  * El logo es un <span title="maneki neko" lang="ja">招き猫</span>
 
 
 Textbooks 
@@ -180,7 +235,8 @@ Textbooks
 
 ### Kana 
 
-  * **Cualquier libro para aprender kana** no lo vale. 
+**Cualquier libro para aprender kana no lo vale**. 
+
   * No son muchos: 48 hiragana y 48 katakana "oficiales"
   * El vocabulario que te enseñan se pueden aprender con otro textbook. 
   * Es mejor aprenderlos escribiendolos/memorizandolos con SRS/Flashcards (o ambos). 
@@ -192,53 +248,123 @@ Textbooks
 
 #### Remembering the Kanji
 
-  * Para "aprender a escribir kanji basado en imágenes mentales". 
+<div class="appinfo">
+Método
+:	Mnemónica
+
+Kanji totales
+:	2042 kanji, incluyendo los del <span title="jouyou kanji" lang="ja">常用漢字</span> + 965 del tercero, totalizando 3007
+
+Vocabulario
+:	Si
+
+Ejercicios
+:	Si
+</div>
+
+
   * Más que nada se puede usar para **perderle el miedo a los kanji** y no asustarse al ver uno con muchos trazos
   * Los kanji se presentan "construyendose en bloques" (se aprende A y B primero, antes de aprender D).
-  * No enseña las lecturas (eso va en el 2). El 3 tiene un par de kanji que, si se consigue la versión nueva (la 6ta al momento de escribir), no sería tan necesario, ya que tiene kanji que no se usarán/verán mucho). 
-  * No tan recomendado si no interesa la parte de la escritura pura. 
+  * No enseña las lecturas (eso va en el 2). El 3 tiene un par de kanji que, si se consigue la versión nueva (6ta), no sería tan necesario, ya que tiene kanji que no se usarán/verán mucho). 
+  * No tan recomendado si no interesa la parte de la escritura pura (podes aprenderte las reglas básicas, que servirán para la mayor parte).
   * No todos los caracteres tienen historias, a partir de la mitad hay que crearselas uno.
-  * 2042 kanji, incluyendo los del 常用漢字 + 965 del tercero, totalizando 3007
+
 
 Se recomienda (si se tiene versiones anteriores a la 6ta): [eliminar kanji no necesarios](http://japaneselevelup.com/2011/08/03/filtering-out-remembering-the-kanji-flaws-1-500/) de las versiones 1 y 3 o [bajarse el deck de anki](http://japaneselevelup.com/2011/09/04/japanese-level-up-rtk-mod-anki-deck/).
 
 #### Kanji Damage
 
-<http://kanjidamage.com/>
+<div class="appinfo">
+Método
+:	Mnemónica
+
+Kanji totales
+:	1,700 kanji de manera "graciosa" ("Yo Mama jokes")
+
+URL
+:	<http://kanjidamage.com/>
+
+Vocabulario
+:	Si
+
+Ejercicios
+:	No
+</div>
+
 
   * Alternativa a RTK 
-  * 1,700 kanji de manera "graciosa" ("Yo Mama jokes") con imágenes mentales
   * Ayudas para distinguir kanji similares
   * Lecturas
-  * Palabras de ejemplo
   * Se aprenden con radicales
   
 
 #### Smart Kanji Book
 
-<http://smartkanjibook.com/> 
+<div class="appinfo">
+Método
+:	Mnemónica
+
+Kanji totales
+:	732 kanji más importantes/populares. 
+
+URL
+:	<http://smartkanjibook.com/> 
+
+Vocabulario
+:	Si
+
+Ejercicios
+:	No
+</div>
+
 
   * Alternativa a RTK
-  * Solo enseña 732 kanji más importantes/populares. 
   * Imagenes mentales "variadas y chistosas" y todos los caracteres tienen. 
-  * Palabras de ejemplo. 
   * Hay un [free sample](http://smartkanjibook.com/wp-content/uploads/2013/11/free_sample.pdf) de 140
 
   
 #### Basic Kanji Book
 
+<div class="appinfo">
+Método
+:	Repetición: escribir X veces. 
+
+Kanji totales
+:	500 (ambos vols.)
+
+Vocabulario
+:	Si
+
+Ejercicios
+:	Si
+</div>
+
   * Aprender kanji con su lectura y orden de trazos 
-  * Vocabulario. 
-  * Tiene ejercicios y explica un poquito la gramática
-  * El método es el de siempre: escribir X veces. 
+  * Explica un poquito la gramática
   * En los kanji básicos muestra la imagen de donde se basó el kanji.
 
   
 #### Kanji in MangaLand
 
-  * El "Remembering the kanji" pero orientado al manga: tiene el "dibujo" explicando el kanji (un elemento = un "elemento" del kanji, donde se van formando para mostrar el kanji completo), la historia asociada para que te acuerdes y orden de trazos
+<div class="appinfo">
+Método
+:	Mnemónica
+
+Kanji totales
+:	240 en el primero
+
+Vocabulario
+:	Si
+
+Ejercicios
+:	Si
+</div>
+
+
+  * El "Remembering the kanji" pero orientado al manga: tiene el "dibujo" explicando el kanji, la historia asociada para que te acuerdes y orden de trazos
   * Lista kanji parecidos y lectura
   * Vocabulario; pero como esta orientado al manga, tiene palabras "fantasiosas".
+
 
   
 #### Kanji De Manga
@@ -272,7 +398,7 @@ Se recomienda (si se tiene versiones anteriores a la 6ta): [eliminar kanji no ne
   * El libro sirve bastante para los que estudian por su cuenta, aunque tiene ejercicios para hacer grupales. 
   * Tiene vocabulario centrado en el ámbito escolar y algunas palabras "viejas".
   * La historia es de Mary como estudiante en Japón y su vida colegial ahí.
-  * "Muchas voces" en los listening (como 3-4 para la parte de japonés), esta inglés basicamente: esto puede ser bueno en un principio, pero estaria bueno que vaya sustituyendo a medida que pasan los capitulos
+  * "Muchas voces" en los listening (como 3-4 para la parte de japonés); esta inglés basicamente: esto puede ser bueno en un principio, pero estaria bueno que vaya sustituyendo a medida que pasan los capitulos
   * En el workbook, algunas veces en el listening, hay que responder en inglés.
 
 La segunda edición contiene un par de mejoras: como la eliminación de palabras "obsoletas" (video casette, vhs, cinta de audio), agrega notas culturales, etc.
@@ -286,7 +412,14 @@ La segunda edición contiene un par de mejoras: como la eliminación de palabras
 Otros recursos 
 ---------------
 
-#### Guía práctica de conversación: español - japonés
+### The Great ChokoChoko Library
+
+<https://chokochoko.wordpress.com/the-great-library/>
+
+Textos para practicar lectura dependiendo del nivel JLPT que tengas. Recomendado.
+
+
+### Guía práctica de conversación: español - japonés
 
   * Es una guía rápida, solo tiene gramática básica y mucho vocabulario. 
   * No está mal para la parte de vocabulario/oraciones
@@ -295,8 +428,3 @@ Otros recursos
   * También parece que el diccionario de atrás no está completo con todas las palabras utilizadas anteriormente. 
   
 
-#### The Great ChokoChoko Library
-
-<https://chokochoko.wordpress.com/the-great-library/>
-
-Textos para practicar lectura dependiendo del nivel JLPT que tengas. Recomendado.

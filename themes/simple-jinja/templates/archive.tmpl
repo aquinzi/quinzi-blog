@@ -6,6 +6,7 @@
 
 {% if not fake_index %} <h2>{{ title }}</h2> {% endif %}
 
+{# Posts #}
 {% for year, months in listing.iteritems() | sort(reverse=True)  %}
 <div class="listing_posts year">
 	<h3>{{ year }}</h3>

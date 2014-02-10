@@ -1,0 +1,423 @@
+---
+.. title: Resources review for Japanese
+.. date: 2014-02-09 
+.. slug: japanese-resources
+.. lang: en
+.. description: Misc. resources (programs, books, etc) to learn/practise japanese, with self-learning in mind and/or the first time that is done. Includes some opinions/tips.
+---
+
+[TOC]
+
+
+Programs, addons, plug-ins
+-----------------------------
+
+### SRS 
+
+Don't "kill yourself" with it. It's to review and not study (although some people do it). Just use it for a couple of minutes.
+
+For beginners it's very helpful for the lack of texts in that level, poor grammar and vocabulary. As you advance, decrease the usage and do more reading/listening.
+
+
+#### Anki
+
+<div class="appinfo">
+Site
+:	<http://ankisrs.net/>
+
+Platform
+:	Multiplatform. 
+
+Code
+:	Open
+
+Storage
+:	SQLite
+
+Clients
+:	desktop, smartphones, web 
+</div>
+
+  * Highly popular 
+  * Many plugins and decks. 
+  * Community very focused on Japanese 
+  * Sync with Ankiweb. 
+  * Very flexible and customizable.
+  * Graphics and statistics
+
+
+#### Mnemosyne
+<div class="appinfo">
+Site
+:	<http://mnemosyne-proj.org/>
+
+Platform
+:	Multiplatform. 
+
+Code
+:	Open
+
+Storage
+:	SQLite
+
+Clients
+:	desktop, [android](https://play.google.com/store/apps/details?id=org.tbrk.mnemododo), "web" (activate the webserver), phones with J2ME
+</div>
+
+  * No so popular, but has been around for a while
+  * More generic than Anki. 
+  * Shared decks and plugins. 
+  * Graphics and statistics
+  * Sync with devices (no web, one device acts like server).
+
+  
+### Dictionaries
+
+#### Tagaini Jisho
+<div class="appinfo">
+Site
+:	<http://www.tagaini.net/>
+
+Platform
+:	Multiplatform. 
+
+Code
+:	Open
+
+Storage
+:	SQLite
+</div>
+
+  * Dictionary + kanji lookup + learning tool/asistant.
+  * Can tag, add notes to entries and organize them in lists.
+  * Flashcards (no SRS) which highlight the entries based on the score (from red to green).
+  * Basic export to TSV (Anki) and booklet making
+
+Cons:
+
+  * Can't search inside lists.
+  * Can't separate the studied kanji from vocabulary
+  * You can only export thw word, pronunciation and definition. Notes are exported when ou create a booklet. Tags and lists can't be exported.
+  
+ 
+#### Rikai-family
+
+Popup dictionaries for browsers
+
+  * Firefox, Thunderbird, Seamonkey: [rikaichan](https://addons.mozilla.org/en-US/firefox/addon/rikaichan/) or [rikaisama](http://rikaisama.sourceforge.net/) fork that adds audio, more dictionaries, word frequency, pitch accents, advanced exporting/saving, export to Anki, specify the words you know/want to learn and more.
+  * Chrome: [rikaikun](https://chrome.google.com/webstore/detail/rikaikun/jipdnfibhldikgcjhfnomkfpcebammhp)
+  * Opera 12/legacy: [Rikaisan](https://addons.opera.com/en/extensions/details/rikaisan/)
+  
+
+#### JED 
+
+<div class="appinfo">
+URL
+:	<https://play.google.com/store/apps/details?id=com.umibouzu.jed>
+
+Platform
+:	Android. 
+
+Ads
+:	No
+
+</div>
+
+
+Offline dictionary. Doesn't seem to be updated anymore.
+
+  * Search while you type (in readings, meanings). 
+  * Can search in romaji and kana/kanji. 
+  * Japanese to many languages (english, spanish, french). 
+  * Tags. 
+  * Export to GDocs or Anki. 
+  * Copy to clipboard. 
+  * Sentences examples.
+  
+### Practise
+
+#### Obenkyo
+
+<div class="appinfo">
+URL
+:	<https://play.google.com/store/apps/details?id=com.Obenkyo>
+
+Platform
+:	Android. 
+
+Ads
+:	Yes: Ads and Analytics. However, can be disabled in settings.
+</div>
+
+
+Android app to practise/learn kana, kanji and vocabulary (incl. numbers). 
+
+  * Kanji: 2300+ (1-5 JLPT level or Jouyou 1-7), stroke animation, readings. Flashcards/writing.
+  * Vocabulary: 14600+ from EDICT with flashcard.
+  * Particles: experimental (about 100 sentences)
+  * Tae Kim Japanese Grammar guide. 
+
+
+### Reading
+
+Programs that help you read texts: load it (usually .txt) y mark the words you know or want to learn and export them. The unknown words can be searched with the "popup" dictionary provided, can be clicking or hovering.
+
+
+#### Yomichan
+
+<div class="appinfo">
+Site
+:	<http://foosoft.net/pages/yomichan.html> or [Anki plugin repo](https://ankiweb.net/shared/info/934748696)
+
+Platform
+:	Multiplatform. 
+
+Code
+:	Open
+</div>
+
+  * Anki plugin
+  * Included dictionary searching (EDICT, KANJIDICT). 
+  * Very confortable if you save the vocabulary/sentences to anki. You can also copy them to the clipboard.
+  * Doesn't highlight the words you know.
+  * Only for Japanese
+
+
+#### LWT (Learning with Texts)
+
+<div class="appinfo">
+Site
+:	<http://lwt.sourceforge.net/>
+
+Platform
+:	Multiplatform 
+
+Code
+:	Open
+</div>
+
+  * Installs to a server with PHP and MySQL
+  * For many languages
+  * Must configurate dictionaries to use (you have some included) and appears as popup.
+  * Statistics page.
+  * Export to TSV: words and expressions
+  * Import known words in CSV/TSV. 
+  * Words highlighting (known or not), by grade (different colors)
+
+
+#### fltr (Foreign Language Text Reader)
+
+<div class="appinfo">
+Site
+:	<https://code.google.com/p/fltr/>
+
+Platform
+:	Multiplatform 
+
+Code
+:	Open
+</div>
+
+  * Like LWT but in Java and plain files.
+  * No built-in dictionary (opens browser with the assigned dictionary). You have some included.
+  * Highlights the words (known or not) with different colors by grade.
+  * Export to TSV. 
+  * Importar a CSV with known words or load a text and click in "I know all of them"
+  * For many languages
+  * Basic statistics.
+  * The logo is a <span title="maneki neko" lang="ja">招き猫</span>
+
+
+Textbooks 
+-------------
+
+### Kana 
+
+**Any book to learn kana is not worth it** 
+
+  * There aren't many: 48 hiragana and 48 "official" katakana.
+  * Vocabulary tought can be learnt in another textbook.
+  * It's better to learn them by rewriting/memorizing them with SRS/Flashcards (or both). 
+  * Few + highly used = you learn them quickly.
+  * If you use a textbook, you can learn them with it.
+  
+
+### Kanji 
+
+#### Remembering the Kanji
+
+<div class="appinfo">
+Method
+:	Mnemonic
+
+Kanji count
+:	2042 kanji, including <span title="jouyou kanji" lang="ja">常用漢字</span> + 965 from the third, add up 3007 
+
+Vocabulary
+:	No
+
+Excercises
+:	No
+</div>
+
+  * You can use it to **not fear the kanji** and don't panic when you see one with many strokes.
+  * Kanji are presented as building upon previous already learnt kanji
+  * Doesn't teach readings (RTK 2). RTK 3 has some kanji that, if you get the new version (6th), shouldn't be so necessary, because includes some obscure kanji.
+  * No so recommended if you don't care the how-to-write part (You can learn the basic rules and write most of the kanji with that).
+  * Not all the characters have stories, about half-way onwards you have to create them yourself.
+
+It's recommended (if you have old versions from the 6th): [delete unnecessary kanji](http://japaneselevelup.com/2011/08/03/filtering-out-remembering-the-kanji-flaws-1-500/) of the first and third version or [download the anki deck](http://japaneselevelup.com/2011/09/04/japanese-level-up-rtk-mod-anki-deck/).
+
+#### Kanji Damage
+
+<div class="appinfo">
+Method
+:	Mnemonic
+
+Kanji count
+:	1,700 kanji in a funny way ("Yo Mama jokes")
+
+URL
+:	<http://kanjidamage.com/>
+
+Vocabulary
+:	Yes
+
+Excercises
+:	No
+</div>
+
+
+  * Alternative to RTK 
+  * Aids to tell apart similar kanji.
+  * Readings
+  * Learn with radicals
+  
+
+#### Smart Kanji Book
+
+<div class="appinfo">
+Method
+:	Mnemonic
+
+Kanji count
+:	most 732 important/popular kanji.
+
+URL
+:	<http://smartkanjibook.com/> 
+
+Vocabulary
+:	Yes
+
+Excercises
+:	No
+</div>
+
+
+  * Alternative to RTK 
+  * Funny stories and all the characters have.
+  * There's a [free sample](http://smartkanjibook.com/wp-content/uploads/2013/11/free_sample.pdf) of 140
+
+  
+#### Basic Kanji Book
+
+<div class="appinfo">
+Method
+:	Rote repetition: write X times
+
+Kanji count
+:	500 (both vols.)
+
+Vocabulary
+:	yes
+
+Excercises
+:	yes
+</div>
+
+  * Learn kanji with reading and stroke order
+  * Explains a bit of grammar.
+  * In basic kanji shows the image that was based on.
+
+  
+#### Kanji in MangaLand
+
+<div class="appinfo">
+Method
+:	Mnemonic
+
+Kanji count
+:	240 in the first
+
+Vocabulary
+:	Yes
+
+Excercises
+:	Yes
+</div>
+
+  * The "Remembering the kanji" but manga oriented: has a "drawing" explaining the kanji, associated story and stroke order.
+  * Similar kanji list and reading.
+  * Vocabulary manga oriented ("fantasy" words)
+
+
+  
+#### Kanji De Manga
+
+  * Like above but poorer.
+  * kanji and stroke order
+  * Vocabulary
+  * Cartoon with a dialogue using the kanji you're learning.
+  * Skip it, doesn't worth it.
+  
+  
+### Grammar 
+
+#### Japanese in Mangaland/Japonés en viñetas 1
+
+  * You can use it as a **introduction to the language** or as a companion to another textbook.
+  * Basic stuff like writing, greetings, conjugations, a bit of vocabulary (with kanji), cultural notes, etc, with cartoons to illustrate examples.
+  * The vocabulary, being manga oriented, will have words not common for everyday usage
+  * Some typos and corny humor.
+  * Workbook (first book): plain and manga oriented.
+  * 160 kanji
+  * Good to learn "informal" Japanese.
+
+  
+#### Genki (1, primera edición)
+
+  * Focus on grammar and basic vocabulary.
+  * Listening and workbook. 
+  * Good book to study by yourself, but you have to skip the group excercises.
+  * Vocabulary: school oriented and some outdated words.
+  * Story about Mary as a student.
+  * "Many voices" in the listening (like 3-4 for Japanese); it's basically in English: this can be good in the beginning.
+  * In the listening of the workbook, sometimes, you have to answer in English.
+
+The second edition have some updates: like the removal of outdated words (video casette, vhs, tape), adds cultural notes, etc.
+
+#### Japones con Yumiko
+
+  * Dont' even bother.
+  * The only thing that can be worth is the travel guide, but you can get it somewhere else.
+  
+
+Other resources
+---------------
+
+### The Great ChokoChoko Library
+
+<https://chokochoko.wordpress.com/the-great-library/>
+
+Texts to practise reading accoring to JLPT level. Recommended.
+
+
+### Guía práctica de conversación: español - japonés
+
+  * Quick guide, basic grammar and much vocabulary.
+  * It's not so bad for the vocabulary/sentences.
+  * "spanish" ("españolizado") romaji
+  * Typos in romaji, kanji, pronunciations, etc. 
+  * Seems that the back dictionary is not complete with all the used words in the book.
+  
+

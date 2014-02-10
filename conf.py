@@ -32,6 +32,11 @@ else:
 	local_TIMEZONE = None
 	TWITTER_USER = ''
 	
+
+FEEDBURNER_URL = "http://feeds.feedburner.com/intentode"
+
+
+
 # ---------------------
 # Nikola Configuration
 # ---------------------
@@ -85,15 +90,17 @@ TRANSLATIONS = {DEFAULT_LANG: "", "es": "./es", }
 # Links for the sidebar / navigation
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/index.html', 'Index', 'archives'),
-        ('http://feeds.feedburner.com/intentode', 'RSS', 'feed'),
+        ('/index.html', 'Index', 'yellow'),
+        ('/japanese-resources/index.html', 'Japanese', 'blue'),
+        ('http://feeds.feedburner.com/intentode', 'RSS', 'orange'),
         #('/categories/index.html', 'Tags', 'tags'),
         #( #sub menu BAZ contiene FOO y BAR. But not working in jinja
         #(  ('/foo', 'FOO'), ('/bar', 'BAR')  ), 'BAZ', 'icon-X'),
     ),
     'es': (
-        ('/es/index.html', 'Index', 'archives'),
-        ('http://feeds.feedburner.com/intentode', 'RSS', 'feed'),
+        ('/es/index.html', 'Index', 'yellow'),
+        ('/es/japanese-resources/index.html', 'Japonés', 'blue'),
+        ('http://feeds.feedburner.com/intentode', 'RSS', 'orange'),
         #('/es/categories/index.html', 'Tags', 'tags'),
     )
 }
@@ -276,7 +283,7 @@ FEED_LENGTH = 10
 # RSS_LINK is a HTML fragment to link the RSS/Atom feeds. If set to None,
 # the base.tmpl will use the feed Nikola generates. However, you may want to
 # change it for a feedburner or something else.
-RSS_LINK = """<link href="http://feeds.feedburner.com/intentode" type="application/atom+xml" rel="alternate" title="RSS Feed" />"""
+RSS_LINK = """<link href="{feed}" type="application/atom+xml" rel="alternate" title="RSS Feed" />""".format(feed=FEEDBURNER_URL)
 
 # Show only teasers in the RSS feed? Default to True
 # RSS_TEASERS = True
