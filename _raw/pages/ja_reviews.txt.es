@@ -1,6 +1,7 @@
 ---
 .. title: Review de recursos para japonés
 .. date: 2014-02-09 
+.. updated: 2014-01-11
 .. slug: japanese-resources
 .. lang: es
 .. description: Recursos variados (programas, libros, etc) para aprender/practicar japonés, centrados en el aprendizaje por cuenta propia y/o por ser la primera vez que se hace. Incluye un par de opiniones/tips.
@@ -158,6 +159,48 @@ Programa para practicar/aprender kana, kanji y vocabulario (incl. números).
   * Vocabulario: 14600+ (en inglés) de EDICT con flashcard .
   * Particulas: experimental (cerca de 100 oraciones)
   * Tae Kim Japanese Grammar guide. 
+
+### OCR
+
+#### Capture2text
+
+<div class="appinfo">
+Sitio
+:	<http://capture2text.sourceforge.net/>
+
+Plataforma
+:	Windows
+
+Código
+:	Abierto
+</div>
+
+  * Permite OCR desde varios idiomas (viene por default con japonés, inglés, francés, chino, alemán y español)
+  * Tiene Speech recognition via Google
+  * Copiar directamente al clipboard, ventana popup, donde se tenga el cursor, a una ventana (ej. Notepad++, Sublime Text)
+  * Forma gráfica y via linea de comandos.
+
+
+#### OCR Manga Reader
+
+<div class="appinfo">
+Sitio
+:	<https://play.google.com/store/apps/details?id=com.cb4960.ocrmr>
+
+Plataforma
+:	Android
+
+Ads
+:	No
+
+Código
+:	Abierto
+</div>
+
+  * Es un lector de comic/manga con OCR para buscar palabras en el diccionario, estilo popup.
+  * Formatos: CBZ, CBR, ZIP, RAR, PNG, JPG, BMP
+  * Texto en vertical u horizontal
+  * El texto con el que se hace OCR puede ir al clipboard, Aedict, AnkiDroid, varios diccionarios online, Google y Google Images.
 
 
 ### Lectura
@@ -428,3 +471,12 @@ Textos para practicar lectura dependiendo del nivel JLPT que tengas. Recomendado
   * También parece que el diccionario de atrás no está completo con todas las palabras utilizadas anteriormente. 
   
 
+
+<section id="changes">
+
+Cambios
+---------
+
+  #. <time>2014-02-11</time> Añadido OCR.
+
+</section>

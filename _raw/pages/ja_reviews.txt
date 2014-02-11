@@ -1,6 +1,7 @@
 ---
 .. title: Resources review for Japanese
 .. date: 2014-02-09 
+.. updated: 2014-01-11
 .. slug: japanese-resources
 .. lang: en
 .. description: Misc. resources (programs, books, etc) to learn/practise japanese, with self-learning in mind and/or the first time that is done. Includes some opinions/tips.
@@ -134,7 +135,7 @@ Offline dictionary. Doesn't seem to be updated anymore.
   * Copy to clipboard. 
   * Sentences examples.
   
-### Practise
+### Practice
 
 #### Obenkyo
 
@@ -156,6 +157,48 @@ Android app to practise/learn kana, kanji and vocabulary (incl. numbers).
   * Vocabulary: 14600+ from EDICT with flashcard.
   * Particles: experimental (about 100 sentences)
   * Tae Kim Japanese Grammar guide. 
+
+### OCR
+
+#### Capture2text
+
+<div class="appinfo">
+Site
+:	<http://capture2text.sourceforge.net/>
+
+Plataform
+:	Windows
+
+Code
+:	Open
+</div>
+
+  * OCR from many languages (by default comes with japanese, english, french, chinese, german and spanish)
+  * Speech recognition via Google
+  * Copy to clipboard, popup window, where the cursor is, to a window (ex. Notepad++, Sublime Text)
+  * Graphically and command line.
+
+
+#### OCR Manga Reader
+
+<div class="appinfo">
+Site
+:	<https://play.google.com/store/apps/details?id=com.cb4960.ocrmr>
+
+Plataform
+:	Android
+
+Ads
+:	No
+
+Code
+:	Open
+</div>
+
+  * Comic/manga reader with OCR to search words in a dictionary, popup style.
+  * Formats: CBZ, CBR, ZIP, RAR, PNG, JPG, BMP
+  * Vertical or horizontal text.
+  * OCR'd text can be sent to clipboard, Aedict, AnkiDroid, many online dictionaries, Google and Google Images.
 
 
 ### Reading
@@ -421,3 +464,11 @@ Texts to practise reading accoring to JLPT level. Recommended.
   * Seems that the back dictionary is not complete with all the used words in the book.
   
 
+<section id="changes">
+
+Changes
+---------
+
+  #. <time>2014-02-11</time> Add OCR.
+
+</section>
