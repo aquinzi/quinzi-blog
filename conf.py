@@ -2,7 +2,7 @@
 
 from __future__ import unicode_literals
 import time
-import os
+import os, sys
 from nikola import filters
 
 
@@ -12,20 +12,20 @@ from nikola import filters
 local_conf = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__),"..")), "local_conf.ini")
 
 if os.path.exists(local_conf):
-	import ConfigParser
-	
-	config = ConfigParser.ConfigParser()
-	config.read(local_conf)
+    import configparser
 
-	MENTIONS_PATH = os.path.join(os.getcwd(), config.get('mentions', 'path'))
-	MENTIONS_PATH_AVATARS = config.get('mentions', 'path_avatars')
-	MENTIONS_SERVER = config.get('mentions', 'webmention_server')
-	LOCALHOST = config.getboolean('local', 'localhost')
+    config = configparser.ConfigParser()
+    config.read(local_conf)
+
+    MENTIONS_PATH = os.path.join(os.getcwd(), config.get('mentions', 'path'))
+    MENTIONS_PATH_AVATARS = config.get('mentions', 'path_avatars')
+    MENTIONS_SERVER = config.get('mentions', 'webmention_server')
+    LOCALHOST = config.getboolean('local', 'localhost')
 	#local_TIMEZONE = config.getboolean('other', 'timezone')
-	local_TIMEZONE = None
-	DISQUS_ID = config.get('other', 'disqus_id')
-	TWITTER_USER = config.get('mentions', 'twitter_username')
-	SCRIPT_FOLDER = config.get('other', 'script_folder')
+    local_TIMEZONE = None
+    DISQUS_ID = config.get('other', 'disqus_id')
+    TWITTER_USER = config.get('mentions', 'twitter_username')
+    SCRIPT_FOLDER = config.get('other', 'script_folder')
 	
 else:
 	LOCALHOST = False
