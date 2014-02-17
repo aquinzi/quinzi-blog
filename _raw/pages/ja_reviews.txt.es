@@ -1,13 +1,16 @@
 ---
 .. title: Review de recursos para japonés
 .. date: 2014-02-09 
-.. updated: 2014-01-11
+.. updated: 2014-02-17
 .. slug: japanese-resources
 .. lang: es
 .. description: Recursos variados (programas, libros, etc) para aprender/practicar japonés, centrados en el aprendizaje por cuenta propia y/o por ser la primera vez que se hace. Incluye un par de opiniones/tips.
 ---
 
 [TOC]
+
+
+Recomiendo, si no lo hiciste antes, encontrar tu estilo de aprendizaje. Una guía puede ser haciendo el cuestionario de [vark-learn](http://www.vark-learn.com/english/page.asp?p=questionnaire)
 
 
 Programas, addons, plug-ins
@@ -137,6 +140,43 @@ Diccionario offline. Parece que no se actualiza mas.
   * Oraciones de ejemplo. 
 
 
+#### Akebi 
+
+<div class="appinfo">
+
+URL
+:	<https://play.google.com/store/apps/details?id=com.craxic.akebifree>
+
+Plataforma
+:	Android. 
+
+Ads
+:	No
+
+</div>
+  
+    
+Diccionario offline.
+
+  *  Reconocimiento de escritura independiente del orden de trazo
+  *  Oraciones de ejemplo (320k+)
+  *  Character mask (para filtrar palabras, usando radicales)
+  *  Libre forma de búsqueda: letras que aparezcan en cualquier lado de la palabra
+  *  Lista de palabras: para juntar palabras de facil acceso, para usar flashcards o exportar
+  *  Teclado para japonés integrado (se puede deshabilitar)
+  *  Información sobre kanji
+  *  Búsqueda inglés-japonés; japonés-inglés
+  *  Práctica de kanji
+  *  Deconjugador: búsqueda de un verbo conjugado y devuelve los resultados de su forma infinitiva/diccionario.
+  *  Holo theme
+  
+  
+Si no se puede descargar el diccionario, bajar de <https://www.mediafire.com/?qm4mitknkxxa77o> y ponerlo en ``sdcard u internal/Android/obb/`` quedando: ``sdcard/Android/obb/com.craxic.akebifree/main.33.com.craxic.akebifree.obb``
+
+Nota: lo subo porque el sitio oficial (para descargar) esta "muerto" (<http://craxic.com/akebi/files/>)
+  
+  
+  
 ### Práctica
 
 #### Obenkyo
@@ -273,6 +313,49 @@ Código
   * El logo es un <span title="maneki neko" lang="ja">招き猫</span>
 
 
+#### Jade Reader
+
+<div class="appinfo">
+
+Sitio
+:	<https://play.google.com/store/apps/details?id=com.zyz.mobile>
+
+Plataforma
+:	Android 
+
+Código
+:	Abierto
+
+</div>
+
+  * Lector de textos (planos, .txt)
+  * Diccionario japonés-inglés offline
+  * Exportar palabras o copiarlas al clipboard
+  * Modo horizontal-vertical
+  * Automaticamente deconjuga verbos y adjetivos
+  
+### Otros
+
+#### iAnnotate PDF
+
+<div class="appinfo">
+
+Sitio
+:	<https://play.google.com/store/apps/details?id=com.branchfire.iannotate>
+
+Plataforma
+:	Android 
+
+</div>
+
+  * Lector de pdf que permite anotar, manejar y buscar documentos
+  * Permite guardar anotaciones en Onecloud de Box
+  * Abrir múltiples archivos (en tabs)
+  * Permite resaltar texto, escribir y poner comentarios sobre el documento
+  
+  
+  
+  
 Textbooks 
 -------------
 
@@ -477,6 +560,7 @@ Textos para practicar lectura dependiendo del nivel JLPT que tengas. Recomendado
 Cambios
 ---------
 
+  #. <time>2014-02-17</time> Añadido Akebi, Jade, iAnnotate.
   #. <time>2014-02-11</time> Añadido OCR.
 
 </section>

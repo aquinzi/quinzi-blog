@@ -1,13 +1,16 @@
 ---
 .. title: Resources review for Japanese
 .. date: 2014-02-09 
-.. updated: 2014-01-11
+.. updated: 2014-02-17
 .. slug: japanese-resources
 .. lang: en
 .. description: Misc. resources (programs, books, etc) to learn/practise japanese, with self-learning in mind and/or the first time that is done. Includes some opinions/tips.
 ---
 
 [TOC]
+
+
+I recommend, if you haven't done it before, find your learning style. Taking the [vark-learn](http://www.vark-learn.com/english/page.asp?p=questionnaire) questionnaire can be a guide.
 
 
 Programs, addons, plug-ins
@@ -134,6 +137,44 @@ Offline dictionary. Doesn't seem to be updated anymore.
   * Export to GDocs or Anki. 
   * Copy to clipboard. 
   * Sentences examples.
+  
+  
+#### Akebi 
+
+<div class="appinfo">
+
+URL
+:	<https://play.google.com/store/apps/details?id=com.craxic.akebifree>
+
+Platform
+:	Android. 
+
+Ads
+:	No
+
+</div>
+  
+    
+Offline dictionary.
+
+  *  Stroke-order independent handwriting recognition
+  *  Example sentences (320k+)
+  *  Character mask (to filter words, using radicals)
+  *  Free search form: characters appear in any part of the word
+  *  Word lists: collect words for easy access, flashcards or exporting 
+  *  Inbuilt Japanese Keyboard (can be disabled)
+  *  Kanji info
+  *  Search in English-Japanese; Japanese-English
+  *  Kanji practice
+  *  Deconjugation: search a conjugated verb and shows results in its plain form.
+  *  Holo theme
+  
+  
+If you can't download the dictionary, download from <https://www.mediafire.com/?qm4mitknkxxa77o> and uncompress it in ``sdcard or internal/Android/obb/``. You must end up with something like: ``sdcard/Android/obb/com.craxic.akebifree/main.33.com.craxic.akebifree.obb``
+
+Note: I upload it because the official site (to download) is "dead" (<http://craxic.com/akebi/files/>)
+  
+  
   
 ### Practice
 
@@ -271,6 +312,45 @@ Code
   * The logo is a <span title="maneki neko" lang="ja">招き猫</span>
 
 
+#### Jade Reader
+
+<div class="appinfo">
+Site
+:	<https://play.google.com/store/apps/details?id=com.zyz.mobile>
+
+Plataform
+:	Android 
+
+Code
+:	Open 
+</div>
+
+  * Plain text reader (.txt)
+  * Offline Japanese-English dictionary
+  * Export words or copy to clipboard
+  * Horizontal/vertical mode 
+  * Automatically de-inflect verbs, adjectives
+  
+ 
+### Others
+
+#### iAnnotate PDF
+
+<div class="appinfo">
+Site
+:	<https://play.google.com/store/apps/details?id=com.branchfire.iannotate>
+
+Plataform
+:	Android 
+
+</div>
+
+  * PDF reader with option to annotate, manage and search documents
+  * Can save annotations to Box Onecloud
+  * Open multiple files (in tabs)
+  * Can highlight text, write and comment on the document
+
+ 
 Textbooks 
 -------------
 
@@ -469,6 +549,7 @@ Texts to practise reading accoring to JLPT level. Recommended.
 Changes
 ---------
 
+  #. <time>2014-02-17</time> Add Akebi, Jade, iAnnotate.
   #. <time>2014-02-11</time> Add OCR.
 
 </section>
