@@ -604,7 +604,7 @@ div.toc ul ul ul, div#TOC ul ul ul {list-style-type: lower-roman; }
 #tweets .user{font-weight: bold}
 #tweets p {margin: 0px; display: inline;}
 #webmentions p {margin: 0px; }
-#tweets time, #webmentions time, .webmention-published {font-size: small; display: block }
+#tweets time, #webmentions time, .webmention-published {font-size: small; /*display: block*/ }
 
 .webmention-name{display: none;}
 .webmention-author, #webmentions .user{ display: inline; 	margin-right: 0.5em; }
