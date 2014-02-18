@@ -1,9 +1,8 @@
 {#  -*- coding: utf-8 -*- #}
 
 {% if post.mentions and post.mentions['tweets'] %}
-
 <ul id="tweets"> 
-{% for tweets, prop in post.mentions['tweets'].iteritems() if not prop['user_screen_name'] == twitter_user %}
+{% for tweets, prop in post.mentions['tweets'].iteritems() %}
 	<li><div>
 		<img src="/images/avatars/{{ prop['profile_image_local'] }}">
 		<p><span class="user">@{{ prop['user_screen_name'] }}</span> </p>
