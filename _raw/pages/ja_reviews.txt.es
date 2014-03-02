@@ -1,7 +1,7 @@
 ---
 .. title: Review de recursos para japonés
 .. date: 2014-02-09 
-.. updated: 2014-02-17
+.. updated: 2014-03-02
 .. slug: japanese-resources
 .. lang: es
 .. description: Recursos variados (programas, libros, etc) para aprender/practicar japonés, centrados en el aprendizaje por cuenta propia y/o por ser la primera vez que se hace. Incluye un par de opiniones/tips.
@@ -101,7 +101,7 @@ Almacenamiento
 Contras:
 
   * No se pueden buscar entries en las listas. Ej: no se puede seleccionar una lista y buscar ahi X palabra/kanji.
-  * No se puede separar los kanji estudiados del vocabulario (sale todo junto)
+  * <del>No se puede separar los kanji estudiados del vocabulario (sale todo junto)</del>
   * Solo se puede exportar la palabra, pronunciación y definición. Las notas aparecen cuando se hace el booklet. Las tags y listas no se pueden exportar. 
   
  

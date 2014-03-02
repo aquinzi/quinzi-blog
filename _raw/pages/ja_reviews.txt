@@ -1,7 +1,7 @@
----
+﻿---
 .. title: Resources review for Japanese
 .. date: 2014-02-09 
-.. updated: 2014-02-17
+.. updated: 2014-03-02
 .. slug: japanese-resources
 .. lang: en
 .. description: Misc. resources (programs, books, etc) to learn/practise japanese, with self-learning in mind and/or the first time that is done. Includes some opinions/tips.
@@ -100,8 +100,8 @@ Storage
 Cons:
 
   * Can't search inside lists.
-  * Can't separate the studied kanji from vocabulary
-  * You can only export thw word, pronunciation and definition. Notes are exported when ou create a booklet. Tags and lists can't be exported.
+  * <del>Can't separate the studied kanji from vocabulary</del>
+  * You can only export the word, pronunciation and definition. Notes are exported when ou create a booklet. Tags and lists can't be exported.
   
  
 #### Rikai-family
