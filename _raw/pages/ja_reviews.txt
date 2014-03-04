@@ -101,7 +101,7 @@ Cons:
 
   * Can't search inside lists.
   * <del>Can't separate the studied kanji from vocabulary</del>
-  * You can only export the word, pronunciation and definition. Notes are exported when ou create a booklet. Tags and lists can't be exported.
+  * You can only export the word, pronunciation and definition. Notes are exported when you create a booklet. Tags and lists can't be exported.
   
  
 #### Rikai-family
@@ -549,6 +549,7 @@ Texts to practise reading accoring to JLPT level. Recommended.
 Changes
 ---------
 
+  #. <time>2014-03-02</time> Update info.
   #. <time>2014-02-17</time> Add Akebi, Jade, iAnnotate.
   #. <time>2014-02-11</time> Add OCR.
 

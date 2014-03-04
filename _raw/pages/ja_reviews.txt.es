@@ -1,8 +1,5 @@
 ---
 .. title: Review de recursos para japonés
-.. date: 2014-02-09 
-.. updated: 2014-03-02
-.. slug: japanese-resources
 .. lang: es
 .. description: Recursos variados (programas, libros, etc) para aprender/practicar japonés, centrados en el aprendizaje por cuenta propia y/o por ser la primera vez que se hace. Incluye un par de opiniones/tips.
 ---
@@ -51,6 +48,7 @@ Clientes
 
 
 #### Mnemosyne
+
 <div class="appinfo">
 Sitio
 :	<http://mnemosyne-proj.org/>
@@ -560,6 +558,7 @@ Textos para practicar lectura dependiendo del nivel JLPT que tengas. Recomendado
 Cambios
 ---------
 
+  #. <time>2014-03-02</time> Actualización info.
   #. <time>2014-02-17</time> Añadido Akebi, Jade, iAnnotate.
   #. <time>2014-02-11</time> Añadido OCR.
 
