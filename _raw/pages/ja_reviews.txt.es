@@ -23,7 +23,7 @@ Para los principiantes sirve bastante por tener falta de textos de nivel, poco v
 #### Anki
 
 <div class="appinfo">
-Sitio
+URL
 :	<http://ankisrs.net/>
 
 Plataforma
@@ -50,7 +50,7 @@ Clientes
 #### Mnemosyne
 
 <div class="appinfo">
-Sitio
+URL
 :	<http://mnemosyne-proj.org/>
 
 Plataforma
@@ -78,7 +78,7 @@ Clientes
 #### Tagaini Jisho
 
 <div class="appinfo">
-Sitio
+URL
 :	<http://www.tagaini.net/>
 
 Plataforma
@@ -203,7 +203,7 @@ Programa para practicar/aprender kana, kanji y vocabulario (incl. números).
 #### Capture2text
 
 <div class="appinfo">
-Sitio
+URL
 :	<http://capture2text.sourceforge.net/>
 
 Plataforma
@@ -222,7 +222,7 @@ Código
 #### OCR Manga Reader
 
 <div class="appinfo">
-Sitio
+URL
 :	<https://play.google.com/store/apps/details?id=com.cb4960.ocrmr>
 
 Plataforma
@@ -249,7 +249,7 @@ Programas que ayudan a leer textos: se carga el texto (usualmente .txt) y se van
 #### Yomichan
 
 <div class="appinfo">
-Sitio
+URL
 :	<http://foosoft.net/pages/yomichan.html> o [Anki plugin repo](https://ankiweb.net/shared/info/934748696)
 
 Plataforma
@@ -269,7 +269,7 @@ Código
 #### LWT (Learning with Texts)
 
 <div class="appinfo">
-Sitio
+URL
 :	<http://lwt.sourceforge.net/>
 
 Plataforma
@@ -291,7 +291,7 @@ Código
 #### fltr (Foreign Language Text Reader)
 
 <div class="appinfo">
-Sitio
+URL
 :	<https://code.google.com/p/fltr/>
 
 Plataforma
@@ -315,7 +315,7 @@ Código
 
 <div class="appinfo">
 
-Sitio
+URL
 :	<https://play.google.com/store/apps/details?id=com.zyz.mobile>
 
 Plataforma
@@ -338,7 +338,7 @@ Código
 
 <div class="appinfo">
 
-Sitio
+URL
 :	<https://play.google.com/store/apps/details?id=com.branchfire.iannotate>
 
 Plataforma
@@ -352,9 +352,8 @@ Plataforma
   * Permite resaltar texto, escribir y poner comentarios sobre el documento
   
   
-  
-  
-Textbooks 
+    
+Kana, Kanji  
 -------------
 
 ### Kana 
@@ -370,7 +369,7 @@ Textbooks
 
 ### Kanji 
 
-#### Remembering the Kanji
+#### Remembering the Kanji/Kanji para Recordar
 
 <div class="appinfo">
 Método
@@ -384,6 +383,9 @@ Vocabulario
 
 Ejercicios
 :	Si
+
+Metadata
+:	<http://books.google.com/books?id=TtEaylKrGaMC>
 </div>
 
 
@@ -461,6 +463,9 @@ Vocabulario
 
 Ejercicios
 :	Si
+
+Metadata
+:	<http://www.amazon.com/o/ASIN/4893580914>
 </div>
 
   * Aprender kanji con su lectura y orden de trazos 
@@ -482,6 +487,9 @@ Vocabulario
 
 Ejercicios
 :	Si
+
+Metadata
+:	<http://books.google.com/books?id=q_lqefFs8EcC>
 </div>
 
 
@@ -493,6 +501,12 @@ Ejercicios
   
 #### Kanji De Manga
 
+<div class="appinfo">
+
+Metadata
+:	<http://www.amazon.com/o/ASIN/4921205027/>
+</div>
+
   * Parecido al anterior pero "mas pobre". 
   * Muestra el kanji y el orden de trazos
   * Vocabulario 
@@ -500,10 +514,46 @@ Ejercicios
   * Saltearlo, no lo vale.
   
   
-### Gramática 
+
+#### A Guide to Reading & Writing Japanese
+
+<div class="appinfo">
+Método
+:	Repetición
+
+Kanji totales
+:	1945
+
+Vocabulario
+:	Si
+
+Ejercicios
+:	No
+
+Metadata
+:	<http://books.google.com/books?id=c8X-BxJUpZYC>
+</div>
+
+  * Los 1006 kanji mas esenciales separados en seis grados.
+  * Muestra lecturas (mas comunes) y significado
+  * Palabras de ejemplo
+  * Orden de trazos y la cantidad.
+  * Trae tabla de kana
+  * No lo recomiendo
 
 
-#### Japanese in Mangaland/Japonés en viñetas 1
+
+
+
+Gramática 
+-------------
+
+### Japanese in Mangaland/Japonés en viñetas 1
+
+<div class="appinfo">
+Metadata
+:	<http://www.amazon.com/o/ASIN/4889961151/>
+</div>
 
   * Sirve para una **entrada general al idioma** o acompañamiento de una clase u otro textbook (aunque no creo que lo valga). 
   * Se detallan cosas básicas como escritura, saludos, las conjugaciones, un poco de vocabulario (con kanji), notas culturales y demas, con viñetas dibujadas para dar ejemplos. 
@@ -514,24 +564,37 @@ Ejercicios
   * Es bueno para aprender el japonés "informal" 
 
   
-#### Genki (1, primera edición)
+### Genki
+
+<div class="appinfo">
+Metadata
+:	<http://www.amazon.com/o/ASIN/4789014401/>
+</div>
 
   * Textbook para centrarse en la gramática y vocabulario básico. 
   * Para principiantes y va muy bien. 
   * Tiene listening y un workbook. 
   * El libro sirve bastante para los que estudian por su cuenta, aunque tiene ejercicios para hacer grupales. 
-  * Tiene vocabulario centrado en el ámbito escolar y algunas palabras "viejas".
+  * Tiene vocabulario centrado en el ámbito escolar.
   * La historia es de Mary como estudiante en Japón y su vida colegial ahí.
   * "Muchas voces" en los listening (como 3-4 para la parte de japonés); esta inglés basicamente: esto puede ser bueno en un principio, pero estaria bueno que vaya sustituyendo a medida que pasan los capitulos
   * En el workbook, algunas veces en el listening, hay que responder en inglés.
 
-La segunda edición contiene un par de mejoras: como la eliminación de palabras "obsoletas" (video casette, vhs, cinta de audio), agrega notas culturales, etc.
 
-#### Japones con Yumiko
+
+### Japones con Yumiko
+
+<div class="appinfo">
+Metadata
+:	<http://books.google.com/books?id=pzGzAgAACAAJ>, <www.amazon.com/o/ASIN/8493543780/>
+</div>
 
   * Ni molestarse. 
   * Lo unico que puede servir es la guía de viaje que se puede conseguir de otros lados.
   
+
+
+
 
 Otros recursos 
 ---------------
@@ -545,6 +608,11 @@ Textos para practicar lectura dependiendo del nivel JLPT que tengas. Recomendado
 
 ### Guía práctica de conversación: español - japonés
 
+<div class="appinfo">
+Metadata
+:	<http://www.amazon.com/o/ASIN/8495948222>
+</div>
+
   * Es una guía rápida, solo tiene gramática básica y mucho vocabulario. 
   * No está mal para la parte de vocabulario/oraciones
   * El romaji es "españolizado"
@@ -552,12 +620,35 @@ Textos para practicar lectura dependiendo del nivel JLPT que tengas. Recomendado
   * También parece que el diccionario de atrás no está completo con todas las palabras utilizadas anteriormente. 
   
 
+### Tanos
+
+
+<div class="appinfo">
+URL
+:	<http://tanos.co.uk/jlpt/>
+
+Gratuito
+:	Si
+
+Contenido
+:	Listados para JLPT
+
+</div>
+
+
+  * Listas no oficiales del JLPT
+  * Listas de kanji, vocabulario y puntos gramaticales
+  * Links a ejemplos
+  * Las listas se pueden descargar en .pdf, .doc, .mem y .anki
+
+
 
 <section id="changes">
 
 Cambios
 ---------
 
+  #. <time>2014-03-11</time> Añadido Tanos, A Guide to Reading & Writing Japanese; reorden; links a metadata
   #. <time>2014-03-02</time> Actualización info.
   #. <time>2014-02-17</time> Añadido Akebi, Jade, iAnnotate.
   #. <time>2014-02-11</time> Añadido OCR.

@@ -1,7 +1,7 @@
 ﻿---
 .. title: Resources review for Japanese
 .. date: 2014-02-09 
-.. updated: 2014-03-02
+.. updated: 2014-03-11
 .. slug: japanese-resources
 .. lang: en
 .. description: Misc. resources (programs, books, etc) to learn/practise japanese, with self-learning in mind and/or the first time that is done. Includes some opinions/tips.
@@ -26,7 +26,7 @@ For beginners it's very helpful for the lack of texts in that level, poor gramma
 #### Anki
 
 <div class="appinfo">
-Site
+URL
 :	<http://ankisrs.net/>
 
 Platform
@@ -52,7 +52,7 @@ Clients
 
 #### Mnemosyne
 <div class="appinfo">
-Site
+URL
 :	<http://mnemosyne-proj.org/>
 
 Platform
@@ -79,7 +79,7 @@ Clients
 
 #### Tagaini Jisho
 <div class="appinfo">
-Site
+URL
 :	<http://www.tagaini.net/>
 
 Platform
@@ -204,7 +204,7 @@ Android app to practise/learn kana, kanji and vocabulary (incl. numbers).
 #### Capture2text
 
 <div class="appinfo">
-Site
+URL
 :	<http://capture2text.sourceforge.net/>
 
 Plataform
@@ -223,7 +223,7 @@ Code
 #### OCR Manga Reader
 
 <div class="appinfo">
-Site
+URL
 :	<https://play.google.com/store/apps/details?id=com.cb4960.ocrmr>
 
 Plataform
@@ -250,7 +250,7 @@ Programs that help you read texts: load it (usually .txt) y mark the words you k
 #### Yomichan
 
 <div class="appinfo">
-Site
+URL
 :	<http://foosoft.net/pages/yomichan.html> or [Anki plugin repo](https://ankiweb.net/shared/info/934748696)
 
 Platform
@@ -270,7 +270,7 @@ Code
 #### LWT (Learning with Texts)
 
 <div class="appinfo">
-Site
+URL
 :	<http://lwt.sourceforge.net/>
 
 Platform
@@ -292,7 +292,7 @@ Code
 #### fltr (Foreign Language Text Reader)
 
 <div class="appinfo">
-Site
+URL
 :	<https://code.google.com/p/fltr/>
 
 Platform
@@ -315,7 +315,7 @@ Code
 #### Jade Reader
 
 <div class="appinfo">
-Site
+URL
 :	<https://play.google.com/store/apps/details?id=com.zyz.mobile>
 
 Plataform
@@ -337,7 +337,7 @@ Code
 #### iAnnotate PDF
 
 <div class="appinfo">
-Site
+URL
 :	<https://play.google.com/store/apps/details?id=com.branchfire.iannotate>
 
 Plataform
@@ -351,7 +351,7 @@ Plataform
   * Can highlight text, write and comment on the document
 
  
-Textbooks 
+Kana, Kanji  
 -------------
 
 ### Kana 
@@ -381,6 +381,10 @@ Vocabulary
 
 Excercises
 :	No
+
+Metadata
+:	<http://books.google.com/books?id=TtEaylKrGaMC>
+
 </div>
 
   * You can use it to **not fear the kanji** and don't panic when you see one with many strokes.
@@ -456,6 +460,9 @@ Vocabulary
 
 Excercises
 :	yes
+
+Metadata
+:	<http://www.amazon.com/o/ASIN/4893580914>
 </div>
 
   * Learn kanji with reading and stroke order
@@ -477,6 +484,9 @@ Vocabulary
 
 Excercises
 :	Yes
+
+Metadata
+:	<http://books.google.com/books?id=q_lqefFs8EcC>
 </div>
 
   * The "Remembering the kanji" but manga oriented: has a "drawing" explaining the kanji, associated story and stroke order.
@@ -487,6 +497,12 @@ Excercises
   
 #### Kanji De Manga
 
+<div class="appinfo">
+
+Metadata
+:	<http://www.amazon.com/o/ASIN/4921205027/>
+</div>
+
   * Like above but poorer.
   * kanji and stroke order
   * Vocabulary
@@ -494,9 +510,43 @@ Excercises
   * Skip it, doesn't worth it.
   
   
+
+#### A Guide to Reading & Writing Japanese
+
+<div class="appinfo">
+Method
+:	Repetition
+
+Kanji count
+:	1945
+
+Vocabulary
+:	Yes
+
+Excercises
+:	No
+
+Metadata
+:	<http://books.google.com/books?id=c8X-BxJUpZYC>
+</div>
+
+  * The most 1006 essential kanji broken into six grades.
+  * Readings (most common) and meaning
+  * Word examples
+  * Stroke order and count.
+  * Kana tables
+  * I don't recommend it
+
+
+
 ### Grammar 
 
 #### Japanese in Mangaland/Japonés en viñetas 1
+
+<div class="appinfo">
+Metadata
+:	<http://www.amazon.com/o/ASIN/4889961151/>
+</div>
 
   * You can use it as a **introduction to the language** or as a companion to another textbook.
   * Basic stuff like writing, greetings, conjugations, a bit of vocabulary (with kanji), cultural notes, etc, with cartoons to illustrate examples.
@@ -507,23 +557,35 @@ Excercises
   * Good to learn "informal" Japanese.
 
   
-#### Genki (1, first edition)
+#### Genki
+
+<div class="appinfo">
+Metadata
+:	<http://www.amazon.com/o/ASIN/4789014401/>
+</div>
 
   * Focus on grammar and basic vocabulary.
   * Listening and workbook. 
   * Good book to study by yourself, but you have to skip the group excercises.
-  * Vocabulary: school oriented and some outdated words.
+  * Vocabulary: school oriented.
   * Story about Mary as a student.
   * "Many voices" in the listening (like 3-4 for Japanese); it's basically in English: this can be good in the beginning.
   * In the listening of the workbook, sometimes, you have to answer in English.
 
-The second edition have some updates: like the removal of outdated words (video casette, vhs, tape), adds cultural notes, etc.
+
 
 #### Japones con Yumiko
 
-  * Dont' even bother.
+<div class="appinfo">
+Metadata
+:	<http://books.google.com/books?id=pzGzAgAACAAJ>, <www.amazon.com/o/ASIN/8493543780/>
+</div>
+
+  * Don't even bother.
   * The only thing that can be worth is the travel guide, but you can get it somewhere else.
   
+
+
 
 Other resources
 ---------------
@@ -537,6 +599,11 @@ Texts to practise reading accoring to JLPT level. Recommended.
 
 ### Guía práctica de conversación: español - japonés
 
+<div class="appinfo">
+Metadata
+:	<http://www.amazon.com/o/ASIN/8495948222>
+</div>
+
   * Quick guide, basic grammar and much vocabulary.
   * It's not so bad for the vocabulary/sentences.
   * "spanish" ("españolizado") romaji
@@ -544,11 +611,34 @@ Texts to practise reading accoring to JLPT level. Recommended.
   * Seems that the back dictionary is not complete with all the used words in the book.
   
 
+### Tanos
+
+<div class="appinfo">
+URL
+:	<http://tanos.co.uk/jlpt/>
+
+Free
+:	Yes
+
+Content
+:	JLPT lists
+</div>
+
+
+  * Not official lists for JLPT
+  * Lists for kanji, vocabulary and grammar points
+  * Links to examples
+  * Lists can be downloaded as .pdf, .doc, .mem and .anki
+
+
+
+
 <section id="changes">
 
 Changes
 ---------
 
+  #. <time>2014-03-11</time> Add Tanos, A Guide to Reading & Writing Japanese; reorder; links to metadata
   #. <time>2014-03-02</time> Update info.
   #. <time>2014-02-17</time> Add Akebi, Jade, iAnnotate.
   #. <time>2014-02-11</time> Add OCR.
