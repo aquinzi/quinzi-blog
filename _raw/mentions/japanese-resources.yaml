@@ -66,5 +66,19 @@ tweets:
     user_id: 61266492
     user_name: 'エイ·キュー (Ei-Kiu) '
     user_screen_name: !!python/unicode 'eikiu'
+  &id006 443551658211950592:
+    created_at: '2014-03-12T00:58:50'
+    favorite_count: 0
+    id: *id006
+    profile_image_local: !!python/unicode '7123a7fc7d93e42d957d57063f5c2df8.jpeg'
+    profile_image_url: !!python/unicode 'http://pbs.twimg.com/profile_images/378800000493840482/6ea256fca93ba01e670422f6ec197d82_normal.jpeg'
+    retweet_count: 0
+    text: Añadí un par mas de cosas a mi lista de recursos para japones, reordene
+      y puse links a metadata for your pleasure http://blog.quinzi.com.ar/japanese-resources/
+    text_orig: Añadí un par mas de cosas a mi lista de recursos para japones, reordene
+      y puse links a metadata for your pleasure http://t.co/bDYt34UIBD
+    user_id: 61266492
+    user_name: 'エイ·キュー (Ei-Kiu) '
+    user_screen_name: !!python/unicode 'eikiu'
 url: !!python/unicode 'http://blog.quinzi.com.ar/es/japanese-resources/'
 webmention: {}

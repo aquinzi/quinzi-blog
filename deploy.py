@@ -6,7 +6,8 @@ import time
 commit_msg = "Publication on {date}"
 path_pages = "../ghpages"
 source_dir = "_output/"
-git_branch_pages = "gh-pages"
+#git_branch_pages = "gh-pages"
+git_branch_pages = "gh-pages:gh-pages"
 git_origin = "origin"
 
 

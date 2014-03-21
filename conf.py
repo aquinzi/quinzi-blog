@@ -43,7 +43,7 @@ FEEDBURNER_URL = "http://feeds.feedburner.com/intentode"
 
 BLOG_AUTHOR = "A.Q."
 BLOG_TITLE = "A-Qute blog"
-SITE_URL = "http://blog.quinzi.com.ar/"
+SITE_URL = "http://blog.aquinzi.com/"
 BLOG_DESCRIPTION = "Blog for A.Q."
 # Post's dates are considered in UTC by default
 DATE_FORMAT = '%Y-%m-%d'
