@@ -1,7 +1,7 @@
 quinzi-blog
 ===========
 
-Source of [my blog](http://blog.quinzi.com.ar/) hosted on GitHub, using [Nikola](http://getnikola.com).
+Source of [my blog](http://blog.aquinzi.com/) hosted on GitHub, using [Nikola](http://getnikola.com).
 
 Also some "plugins" as:
 
