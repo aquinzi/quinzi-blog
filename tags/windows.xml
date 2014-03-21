@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (windows)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/windows.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 18 Feb 2014 11:00:28 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pelican to Nikola (and tutorial)</title><link>http://blog.quinzi.com.ar/pelican-nikola/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (windows)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/tags/windows.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 21 Mar 2014 17:50:50 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pelican to Nikola (and tutorial)</title><link>http://blog.aquinzi.com/pelican-nikola/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#acrylamid"&gt;Acrylamid&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#nikola"&gt;Nikola&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#the-moving"&gt;The moving&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#install-nikola"&gt;Install Nikola&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#initiate"&gt;Initiate&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#convert-metadata"&gt;Convert metadata&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#translations"&gt;Translations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#images-paths"&gt;Images paths&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#links-between-posts"&gt;Links between posts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#plugins-syntax"&gt;Plugins syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#acrylamid"&gt;Acrylamid&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#nikola"&gt;Nikola&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#the-moving"&gt;The moving&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#install-nikola"&gt;Install Nikola&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#initiate"&gt;Initiate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#convert-metadata"&gt;Convert metadata&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#translations"&gt;Translations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#images-paths"&gt;Images paths&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#links-between-posts"&gt;Links between posts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#plugins-syntax"&gt;Plugins syntax&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#other-nikola-stuff"&gt;Other Nikola stuff&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#locale-in-windows"&gt;Locale in Windows&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#linking-internally"&gt;Linking internally&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#pandoc"&gt;Pandoc&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#posts-folder-and-subfolders"&gt;Posts folder and subfolders&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#other-nikola-stuff"&gt;Other Nikola stuff&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#locale-in-windows"&gt;Locale in Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#linking-internally"&gt;Linking internally&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#pandoc"&gt;Pandoc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#posts-folder-and-subfolders"&gt;Posts folder and subfolders&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#testing"&gt;Testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#testing"&gt;Testing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;When I was thinking of moving my blog to this new domain, I thought of using &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; as the converter&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/pelican-nikola/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;. I even created &lt;a href="http://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; for that. But then I run into the "problems" (ok, I was kind of lazy) of generating RSS, listing posts with certain tags or categories (which I ended up not using), the index and archive, idealizing of using plugins, etc. and gave up. &lt;/p&gt;
-&lt;p&gt;In the beginning, I would &lt;a href="link://slug/wordpress-to-pelican"&gt;continue using Pelican&lt;/a&gt; as is &lt;a href="http://docs.getpelican.com/"&gt;it's easy and customizable&lt;/a&gt;, even though it doesn't have Pandoc&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/pelican-nikola/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; support. But later I would be lazy to move to another system (not that I blog much, but &lt;strong&gt;I like Pandoc's markdown&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;When I was thinking of moving my blog to this new domain, I thought of using &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; as the converter&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/pelican-nikola/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;. I even created &lt;a href="http://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; for that. But then I run into the "problems" (ok, I was kind of lazy) of generating RSS, listing posts with certain tags or categories (which I ended up not using), the index and archive, idealizing of using plugins, etc. and gave up. &lt;/p&gt;
+&lt;p&gt;In the beginning, I would &lt;a href="link://slug/wordpress-to-pelican"&gt;continue using Pelican&lt;/a&gt; as is &lt;a href="http://docs.getpelican.com/"&gt;it's easy and customizable&lt;/a&gt;, even though it doesn't have Pandoc&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/pelican-nikola/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; support. But later I would be lazy to move to another system (not that I blog much, but &lt;strong&gt;I like Pandoc's markdown&lt;/strong&gt;).&lt;/p&gt;
 &lt;h2 id="acrylamid"&gt;Acrylamid&lt;/h2&gt;
 &lt;p&gt;In my searching, I found &lt;a href="http://posativ.org/acrylamid/index.html"&gt;Acrylamid&lt;/a&gt; which looks pretty good. It's like the programmer/hacker blog generator, where you can do many things, including using template syntax &lt;em&gt;inside&lt;/em&gt; your post. How cool is that?. It also has incremental builds, which means that it won't regenerate the whole site/blog again after a little edit, but only what it was changed. &lt;/p&gt;
 &lt;p&gt;Other cool things include:&lt;/p&gt;
@@ -149,28 +149,28 @@
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;Because I hate opening an HTML block tag and the markdown inside is not parsed. I know, it's said in the &lt;a href="http://daringfireball.net/projects/markdown/"&gt;markdown&lt;/a&gt; reference, but hey: &lt;strong&gt;it's 2014&lt;/strong&gt; and I need that. But I still love the admonition implementation in &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python-Markdown&lt;/a&gt; &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/pelican-nikola/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Because I hate opening an HTML block tag and the markdown inside is not parsed. I know, it's said in the &lt;a href="http://daringfireball.net/projects/markdown/"&gt;markdown&lt;/a&gt; reference, but hey: &lt;strong&gt;it's 2014&lt;/strong&gt; and I need that. But I still love the admonition implementation in &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python-Markdown&lt;/a&gt; &lt;a class="footnote-backref" href="http://blog.aquinzi.com/pelican-nikola/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;Which &lt;a href="http://docs.getpelican.com/en/3.3.0/internals.html#how-to-implement-a-new-reader"&gt;now I see&lt;/a&gt; it looks pretty easy to implement. Oh well. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/pelican-nikola/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Which &lt;a href="http://docs.getpelican.com/en/3.3.0/internals.html#how-to-implement-a-new-reader"&gt;now I see&lt;/a&gt; it looks pretty easy to implement. Oh well. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/pelican-nikola/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><category>pelican</category><category>nikola</category><category>static</category><category>python</category><category>windows</category><guid>http://blog.quinzi.com.ar/pelican-nikola/</guid><pubDate>Sat, 11 Jan 2014 00:00:00 GMT</pubDate></item><item><title>Windows 7: Arreglar los iconos en Explorer</title><link>http://blog.quinzi.com.ar/windows7-shell-icons/</link><description>&lt;p&gt;Con esta era de usar programitas varios para sincronizar, otros para control de código, y otros que no puedo recordar ahora; es necesario tener los overlay icons en Windows Explorer:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Ejemplo de iconos de estado" src="http://blog.quinzi.com.ar/images/2013/win7_shell_icons.png"&gt;&lt;/p&gt;
+&lt;/div&gt;</description><category>pelican</category><category>nikola</category><category>static</category><category>python</category><category>windows</category><guid>http://blog.aquinzi.com/pelican-nikola/</guid><pubDate>Sat, 11 Jan 2014 00:00:00 GMT</pubDate></item><item><title>Windows 7: Arreglar los iconos en Explorer</title><link>http://blog.aquinzi.com/windows7-shell-icons/</link><description>&lt;p&gt;Con esta era de usar programitas varios para sincronizar, otros para control de código, y otros que no puedo recordar ahora; es necesario tener los overlay icons en Windows Explorer:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ejemplo de iconos de estado" src="http://blog.aquinzi.com/images/2013/win7_shell_icons.png"&gt;&lt;/p&gt;
 &lt;p&gt;Personalmente se me desaparecían y, aunque limpiara la cache de los programas, nunca aparecían. Hay algunos que podes vivir sin ellos, pero otros no. Capaz instalaste un &lt;a href="https://copy.com?r=hQHBH9"&gt;programa&lt;/a&gt; y te desplazó los de &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;otro&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;¿Pero cuál es el problema? Que los genios de Microsoft limitan la cantidad de iconos que se pueden usar a unos meros &lt;strong&gt;11 iconos totales para el usuario&lt;/strong&gt;. WHAT THE HELL.&lt;/p&gt;
 &lt;p&gt;Para arreglar el tema hay que pasar por el registro. Entrá al bonito &lt;code&gt;regedit&lt;/code&gt; y navegá hasta &lt;code&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\&lt;/code&gt;. Antes de tocar mano, hacete un backup del &lt;code&gt;.reg&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;La idea es que de los 30 que debes tener, solo elegis los 11 mas importantes. ¿Cómo decidis la importancia? renombrandolos, porque Windows los elige por orden alfabético. Poneles números adelante o "z", "x", "y", esas letras que no se usan. Yo prioricé algunos de TortoiseSVN, un par de &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;Dropbox&lt;/a&gt;, y el resto como sea el orden.&lt;/p&gt;
-&lt;p&gt;Una vez que estás feliz, reiniciá el explorer.exe: &lt;kbd&gt;Administrador de tareas &amp;gt; matar explorer&lt;/kbd&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/windows7-shell-icons/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;. Después lo inicias en &lt;kbd&gt;Nueva tarea&lt;/kbd&gt; (o si queres desloguearte y loguearte, si queres reiniciar también, pero no hace falta).&lt;/p&gt;
+&lt;p&gt;Una vez que estás feliz, reiniciá el explorer.exe: &lt;kbd&gt;Administrador de tareas &amp;gt; matar explorer&lt;/kbd&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/windows7-shell-icons/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;. Después lo inicias en &lt;kbd&gt;Nueva tarea&lt;/kbd&gt; (o si queres desloguearte y loguearte, si queres reiniciar también, pero no hace falta).&lt;/p&gt;
 &lt;p&gt;Fuente: &lt;a href="http://www.oliverpearmain.com/blog/dropbox-and-tortoise-svnsubversion-icon-overlays-in-harmony/"&gt;oliverpearmain: Dropbox and TortoiseSVN icons overlays in harmony&lt;/a&gt;&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;Kill, kill, kill! &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/windows7-shell-icons/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kill, kill, kill! &lt;a class="footnote-backref" href="http://blog.aquinzi.com/windows7-shell-icons/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><guid>http://blog.quinzi.com.ar/windows7-shell-icons/</guid><pubDate>Thu, 12 Dec 2013 00:00:00 GMT</pubDate></item><item><title>Templates en Zim Wiki</title><link>http://blog.quinzi.com.ar/zim-templates/</link><description>&lt;p&gt;&lt;a href="http://zim-wiki.org/"&gt;Zim&lt;/a&gt; es un programa de wiki de escritorio multiplataforma. En
+&lt;/div&gt;</description><guid>http://blog.aquinzi.com/windows7-shell-icons/</guid><pubDate>Thu, 12 Dec 2013 00:00:00 GMT</pubDate></item><item><title>Templates en Zim Wiki</title><link>http://blog.aquinzi.com/zim-templates/</link><description>&lt;p&gt;&lt;a href="http://zim-wiki.org/"&gt;Zim&lt;/a&gt; es un programa de wiki de escritorio multiplataforma. En
 los foros decian que iban a presentar templates para las páginas por
 namespaces. Desconozco si las últimas versiones ya lo traen, pero en la versión para Windows no está. &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Nota&lt;/em&gt;: es un template para toooodas las paginas nuevas, no por
@@ -179,7 +179,7 @@ namespace.&lt;/p&gt;
 modificar para que cada vez que pongas "Crear una nueva pagina" salga
 con ese template.&lt;/p&gt;
 &lt;p&gt;En &lt;a href="http://zim-wiki.org/manual/Help/Templates.html"&gt;esta parte de la página oficial&lt;/a&gt; tenes un poco mas sobre el tema
-de los templates como variables y sintaxis.&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/zim-templates/</guid><pubDate>Fri, 15 Jul 2011 00:00:00 GMT</pubDate></item><item><title>XAMPP: Status Check Failure [3]</title><link>http://blog.quinzi.com.ar/xampp-status-check-failure-3/</link><description>&lt;p&gt;Un día, al actualizar &lt;a href="http://www.apachefriends.org/"&gt;XAMPP&lt;/a&gt; (el cliente de desarrollo que uso), empezó a tirar un "Status Check Failure [3]" al iniciar. Era medio molesto el mensaje por más que los servicios siguieran andando.&lt;/p&gt;
+de los templates como variables y sintaxis.&lt;/p&gt;</description><guid>http://blog.aquinzi.com/zim-templates/</guid><pubDate>Fri, 15 Jul 2011 00:00:00 GMT</pubDate></item><item><title>XAMPP: Status Check Failure [3]</title><link>http://blog.aquinzi.com/xampp-status-check-failure-3/</link><description>&lt;p&gt;Un día, al actualizar &lt;a href="http://www.apachefriends.org/"&gt;XAMPP&lt;/a&gt; (el cliente de desarrollo que uso), empezó a tirar un "Status Check Failure [3]" al iniciar. Era medio molesto el mensaje por más que los servicios siguieran andando.&lt;/p&gt;
 &lt;p&gt;Busqué vaias soluciones, algunas decian que era el puerto ocupado y que
 lo usaba Skype. Skype no tengo. Otros decian que era el instalador, que
 no funcionaba con Windows 7 64 bits, pero aún descargando el archivo comprimido daba el mismo problema.&lt;/p&gt;
@@ -190,7 +190,7 @@ no funcionaba con Windows 7 64 bits, pero aún descargando el archivo comprimido
 &lt;li&gt;Buscan el acceso directo del &lt;code&gt;xampp-control-panel.exe&lt;/code&gt; y van a sus propiedades.&lt;/li&gt;
 &lt;li&gt;Borren lo que dice en &lt;code&gt;Iniciar en...&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Fuente: &lt;a href="http://www.apachefriends.org/f/viewtopic.php?p=174321#p174507"&gt;Resolver el error explicado con imágenes en portugués&lt;/a&gt;&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/xampp-status-check-failure-3/</guid><pubDate>Tue, 31 May 2011 00:00:00 GMT</pubDate></item><item><title>Lanzar aplicaciones desde Ejecutar</title><link>http://blog.quinzi.com.ar/programas-ejecutar/</link><description>&lt;p&gt;Hace un par de semanas/meses instalé nuevamente &lt;a href="http://www.launchy.net/"&gt;Launchy&lt;/a&gt;. Al poco
+&lt;p&gt;Fuente: &lt;a href="http://www.apachefriends.org/f/viewtopic.php?p=174321#p174507"&gt;Resolver el error explicado con imágenes en portugués&lt;/a&gt;&lt;/p&gt;</description><guid>http://blog.aquinzi.com/xampp-status-check-failure-3/</guid><pubDate>Tue, 31 May 2011 00:00:00 GMT</pubDate></item><item><title>Lanzar aplicaciones desde Ejecutar</title><link>http://blog.aquinzi.com/programas-ejecutar/</link><description>&lt;p&gt;Hace un par de semanas/meses instalé nuevamente &lt;a href="http://www.launchy.net/"&gt;Launchy&lt;/a&gt;. Al poco
 tiempo (minutos) lo saqué. Me pareció no-muy-de-mi-gusto teniendo las
 aplicaciones que tenía corriendo en ese momento.&lt;/p&gt;
 &lt;p&gt;Pocos minutos después, me acordé de que había visto por algún lado hacer
@@ -198,14 +198,14 @@ lo que hace Launchy (lanzador de aplicaciones) con la &lt;strong&gt;ventana de
 Ejecutar&lt;/strong&gt;. &lt;/p&gt;
 &lt;p&gt;Hay que ir a &lt;kbd&gt;Mi PC &amp;gt; propiedades &amp;gt; Sistema &amp;gt; Opciones avanzadas&lt;/kbd&gt;.
 Abajo hay un botón que dice &lt;kbd&gt;Variables de entorno&lt;/kbd&gt;, entramos ahí.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Propiedades del sistema" src="http://blog.quinzi.com.ar/images/2009/run01.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Propiedades del sistema" src="http://blog.aquinzi.com/images/2009/run01.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Se abre una ventanita. Abajo, en &lt;code&gt;Variables del Sistema&lt;/code&gt;, buscamos
 &lt;code&gt;Path&lt;/code&gt; y damos click en &lt;kbd&gt;Modificar&lt;/kbd&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Variables del sistema" src="http://blog.quinzi.com.ar/images/2009/run02.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Variables del sistema" src="http://blog.aquinzi.com/images/2009/run02.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Sale otro Pop Up, y modificamos el valor de la variable. Lo único
 que hay que hacer es ir hasta el final, agregar &lt;code&gt;;&lt;/code&gt; (punto y coma)
 seguido de la ruta en donde se encuentran los shorcuts/atajos/accesos directos.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Editar variable del sistema" src="http://blog.quinzi.com.ar/images/2009/run03.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Editar variable del sistema" src="http://blog.aquinzi.com/images/2009/run03.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Aceptar, aceptar, aceptar. Listo! ahora &lt;kbd&gt;Win + r&lt;/kbd&gt;, el nombre del shortcut
 .. et voilà!&lt;/p&gt;
 &lt;h3 id="update"&gt;UPDATE&lt;/h3&gt;
@@ -335,4 +335,4 @@ dependiendo el gusto de cada uno).&lt;/p&gt;
 &lt;p&gt;Pingback: &lt;a href="http://www.eikiu.com.ar/intentode/subram-sociedad-de-subrameados" rel="external nofollow" class="url"&gt;Intento de Blog » subRAM, sociedad de subRAMeados&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/programas-ejecutar/</guid><pubDate>Sat, 18 Jul 2009 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.aquinzi.com/programas-ejecutar/</guid><pubDate>Sat, 18 Jul 2009 00:00:00 GMT</pubDate></item></channel></rss>

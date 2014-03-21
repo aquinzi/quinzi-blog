@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (download)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/cat_download.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 18 Feb 2014 11:00:30 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>foobar2000 theme: Tomorrow Night Bright</title><link>http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (download)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/tags/cat_download.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 21 Mar 2014 17:50:49 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>foobar2000 theme: Tomorrow Night Bright</title><link>http://blog.aquinzi.com/foobar2000-theme-tomorrow-night/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/#requirements"&gt;Requirements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/foobar2000-theme-tomorrow-night/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/foobar2000-theme-tomorrow-night/#requirements"&gt;Requirements&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Playing with foobar2000's Default UI, I made this minimalistic/simple theme with &lt;a href="https://github.com/ChrisKempson/Tomorrow-Theme"&gt;Tomorrow theme&lt;/a&gt; colors (Night Bright version).&lt;/p&gt;
@@ -10,13 +10,13 @@
 &lt;p&gt;You've got the menu + playback controls in the same line. Underneath, seekbar + playlist dropdown. In the status bar is the time, rating (view) and volume.&lt;/p&gt;
 &lt;p&gt;There four views/tabs in total:&lt;/p&gt;
 &lt;p&gt;"Now" has the active playlist, grouped by artist (in blue) + album (green). Tracks only show their title (red) and comment (orange).&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Active playlist" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_now.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Active playlist" src="http://blog.aquinzi.com/images/2013/foobar_tomorrow_now.png"&gt;&lt;/p&gt;
 &lt;p&gt;"Lyrics" has the cover art and the lyrics.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Lyrics panel" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_lyrics.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Lyrics panel" src="http://blog.aquinzi.com/images/2013/foobar_tomorrow_lyrics.png"&gt;&lt;/p&gt;
 &lt;p&gt;"Meta" is the playing track details.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Track properties" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_meta.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Track properties" src="http://blog.aquinzi.com/images/2013/foobar_tomorrow_meta.png"&gt;&lt;/p&gt;
 &lt;p&gt;"Library" is self explanatory.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Tree library" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_library.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Tree library" src="http://blog.aquinzi.com/images/2013/foobar_tomorrow_library.png"&gt;&lt;/p&gt;
 &lt;p&gt;There's no playlist list (only the dropdown) because I couldn't find one that prevents me from accidental deletion :P. If you want to manage them, go to &lt;kbd&gt;View &amp;gt; Playlist Manager&lt;/kbd&gt;&lt;/p&gt;
 &lt;h2 id="requirements"&gt;Requirements&lt;/h2&gt;
 &lt;ul&gt;
@@ -29,12 +29,12 @@
 &lt;p&gt;Import the theme (&lt;kbd&gt;Preferences &amp;gt; Display &amp;gt; Default User Interface &amp;gt; Import theme&lt;/kbd&gt;). In the playlist, &lt;kbd&gt;right click &amp;gt; grouping &amp;gt; inline - Tomorrow night bright&lt;/kbd&gt;. In the lyrics panel, edit the preferences (&lt;kbd&gt;panel preferences&lt;/kbd&gt;) and change the &lt;code&gt;highlight color&lt;/code&gt; to RGB &lt;code&gt;236,206,88&lt;/code&gt; (yellow).&lt;/p&gt;
 &lt;p&gt;The "headers" colors (in playlist, the &lt;code&gt;%artist%&lt;/code&gt;, &lt;code&gt;%album%&lt;/code&gt;; and in "meta", the "metadata", "location", "other"...) is configurated in &lt;kbd&gt;Default User Interface &amp;gt; Colors and fonts&lt;/kbd&gt; (if you don't like violet).&lt;/p&gt;
 &lt;p&gt;If you want to change the control buttons, you must use 16x16 &lt;code&gt;.ico&lt;/code&gt; files.&lt;/p&gt;
-&lt;p&gt;The Windows theme is &lt;a href="http://www.deviantart.com/art/SlanXP-2-0-For-7-134955170"&gt;SlanXP2 for 7&lt;/a&gt;, that's way the DUI looks better than defaults.&lt;/p&gt;</description><category>foobar2000</category><category>theme</category><guid>http://blog.quinzi.com.ar/foobar2000-theme-tomorrow-night/</guid><pubDate>Thu, 07 Nov 2013 00:00:00 GMT</pubDate></item><item><title>foobar2000 theme: Simple Colorful</title><link>http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/</link><description>&lt;div class="toc"&gt;
+&lt;p&gt;The Windows theme is &lt;a href="http://www.deviantart.com/art/SlanXP-2-0-For-7-134955170"&gt;SlanXP2 for 7&lt;/a&gt;, that's way the DUI looks better than defaults.&lt;/p&gt;</description><category>foobar2000</category><category>theme</category><guid>http://blog.aquinzi.com/foobar2000-theme-tomorrow-night/</guid><pubDate>Thu, 07 Nov 2013 00:00:00 GMT</pubDate></item><item><title>foobar2000 theme: Simple Colorful</title><link>http://blog.aquinzi.com/foobar2000-theme-simple-colorful/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/#requerimientos"&gt;Requerimientos&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/#instalacion"&gt;Instalación&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/#a-tener-en-cuenta"&gt;A tener en cuenta&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/foobar2000-theme-simple-colorful/#requerimientos"&gt;Requerimientos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/foobar2000-theme-simple-colorful/#instalacion"&gt;Instalación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/foobar2000-theme-simple-colorful/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/foobar2000-theme-simple-colorful/#a-tener-en-cuenta"&gt;A tener en cuenta&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;¿De que se trata esto? Esto es un theme x2 para &lt;a href="http://www.foobar2000.org/"&gt;foobar2000&lt;/a&gt;, que es
@@ -82,14 +82,14 @@ cambiar, editas la columna.&lt;/p&gt;
 quieras. Yo tengo tiempo transcurrido - tiempo total.&lt;/p&gt;
 &lt;h2 id="screenshots"&gt;Screenshots&lt;/h2&gt;
 &lt;p&gt;Veamos primero el theme en la UI default:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Playlist de foobar2000 con Default UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_dui01.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Librería de foobar2000 (facets) con Default UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_dui02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playlist de foobar2000 con Default UI" src="http://blog.aquinzi.com/images/2012/foobar_simplecolorful_dui01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Librería de foobar2000 (facets) con Default UI" src="http://blog.aquinzi.com/images/2012/foobar_simplecolorful_dui02.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Nada mal para ser la vista default con sus limitaciones (como la falta
 de colores en la interfaz... how dare you). Crease a no, los botones de
 playback se pueden cambiar, pero requieren &lt;code&gt;.ico&lt;/code&gt; que no tenia a mano.&lt;/p&gt;
 &lt;p&gt;Ahora el que uso, el theme con Columns UI.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Playlist de foobar2000 con Columns UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_cui01.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Librería de foobar2000 (EsPlaylist) con Columns UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_cui02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playlist de foobar2000 con Columns UI" src="http://blog.aquinzi.com/images/2012/foobar_simplecolorful_cui01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Librería de foobar2000 (EsPlaylist) con Columns UI" src="http://blog.aquinzi.com/images/2012/foobar_simplecolorful_cui02.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Esta mas lindo, no? :D Como veras, esta configuracion no tiene seekbar
 que ande/se pueda adelantar atrasar un tema. Eso esta... escondido.
 Posate unos segundos debajo del cover art y aparece.&lt;/p&gt;
@@ -117,7 +117,7 @@ plugin+script.&lt;/p&gt;
 &lt;p&gt;Parece que el title bar no te lo guarda; tampoco es difícil cambiarlo.&lt;/p&gt;
 &lt;p&gt;Vuelvo a repetir, esto es lo que uso, vos lo tomas como base y editalo
 como quieras. Leyendo el &lt;a href="http://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Reference"&gt;Titleformat Reference&lt;/a&gt; vas a poder modificar
-cosas sin entrar a nada de programación (a no ser que lo quieras). &lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/foobar2000-theme-simple-colorful/</guid><pubDate>Thu, 13 Dec 2012 00:00:00 GMT</pubDate></item><item><title>Juegos Win3.1</title><link>http://blog.quinzi.com.ar/win31-juegos/</link><description>&lt;p&gt;Son recuerdos de nuestra infancia (por lo menos de la mia). Esos juegos
+cosas sin entrar a nada de programación (a no ser que lo quieras). &lt;/p&gt;</description><guid>http://blog.aquinzi.com/foobar2000-theme-simple-colorful/</guid><pubDate>Thu, 13 Dec 2012 00:00:00 GMT</pubDate></item><item><title>Juegos Win3.1</title><link>http://blog.aquinzi.com/win31-juegos/</link><description>&lt;p&gt;Son recuerdos de nuestra infancia (por lo menos de la mia). Esos juegos
 que nos podian divertir sin tanta gráfica y que nos (o me) pasaba horas jugando.&lt;/p&gt;
 &lt;p&gt;A qué viene esa nostalgia? Además de recordar una época en que cualquier
 personita no tenía obligaciones
@@ -134,18 +134,18 @@ pura. Entre ellos estan mis preferidos:&lt;/p&gt;
 explotar, como quieran. Es por turnos y se tiene que tener en cuenta
 algunas variables como el viento, ángulo y velocidad añadiendo la
 dificultad de diferentes tipos de terreno.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Juego Bang! Bang!" src="http://blog.quinzi.com.ar/images/2009/win31_bangbang.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Juego Bang! Bang!" src="http://blog.aquinzi.com/images/2009/win31_bangbang.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Same&lt;/strong&gt;: típico juego de "destruye 3 o mas X (cubos, bichitos, animales, gelatina...) del
 mismo color". Se llena la pantalla de cubos de varios colores con letras (unos
 4) que se deben eliminar de la forma anteriormente mencionada.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Juego Same" src="http://blog.quinzi.com.ar/images/2009/win31_same.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Juego Same" src="http://blog.aquinzi.com/images/2009/win31_same.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Empipe:&lt;/strong&gt; otro juego que no puede faltar. Es una versión (y/o tantas versiones) del Dream
 Pipe, ese que tenes que armar la cañería. Version lite.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Juego Empipe" src="http://blog.quinzi.com.ar/images/2009/win31_empipe.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Juego Empipe" src="http://blog.aquinzi.com/images/2009/win31_empipe.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Las aventuras del MicroMan&lt;/strong&gt;: las aventuras de un astronauta/robot(?)-hombre, que
 tiene un arma y tiene que llegar a una base. De este juego no me acuerdo mucho porque siempre
 perdía en el mismo nivel :P.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Juego MicroMan" src="http://blog.quinzi.com.ar/images/2009/win31_microman.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Juego MicroMan" src="http://blog.aquinzi.com/images/2009/win31_microman.png"&gt;&lt;/p&gt;
 &lt;p&gt;Después estan las diferentes "variantes"/clones de varios juegos (como
 del Dream Pipe hay 237... mil). Y obviamente no podia faltar el Tetris (y
 sus clones).&lt;/p&gt;
@@ -174,7 +174,7 @@ Buen post!&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/win31-juegos/</guid><pubDate>Sun, 01 Mar 2009 00:00:00 GMT</pubDate></item><item><title>Thinx</title><link>http://blog.quinzi.com.ar/thinx/</link><description>&lt;p&gt;Despues de un flashaso nostálgico, recordé que quería encontrar si o si
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.aquinzi.com/win31-juegos/</guid><pubDate>Sun, 01 Mar 2009 00:00:00 GMT</pubDate></item><item><title>Thinx</title><link>http://blog.aquinzi.com/thinx/</link><description>&lt;p&gt;Despues de un flashaso nostálgico, recordé que quería encontrar si o si
 el "Thinx" y que funcione para Windows XP. Después de un intento fallido en una
 página el año pasado, me decidí a buscarlo nuevamente... Y LO ENCONTRE!!! y funciona bajo XP sin problema y sin la opción de compatibilidad.&lt;/p&gt;
 &lt;p&gt;El Thinx es un juego de lógica creado por "crystal-interactive" (creo que
@@ -182,5 +182,5 @@ hizo capuz). Es simple y tiene como objetivo acomodar los bloques de distintos
 grabados y colores según indica la imágen a un costado. Más adelante
 se complica más la cosa, ya que las paredes/bordes son sectores que
 cambian de color al bloque, o flechas que cambian la dirección. Tiene 33 nivles en total más un final. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Muestra de nivel de Thinx" src="http://blog.quinzi.com.ar/images/2009/thinx01.jpg"&gt; &lt;img alt="Muestra de nivel de Thinx" src="http://blog.quinzi.com.ar/images/2009/thinx02.jpg"&gt; &lt;img alt="Muestra de nivel de Thinx" src="http://blog.quinzi.com.ar/images/2009/thinx03.jpg"&gt; &lt;img alt="Muestra de nivel de Thinx" src="http://blog.quinzi.com.ar/images/2009/thinx05.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;Me tomé la libertad de subirlo para compartirlo; &lt;a href="http://www.mediafire.com/download.php?q4zqeirqwmz"&gt;descargar Thinx&lt;/a&gt;.&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/thinx/</guid><pubDate>Mon, 23 Feb 2009 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;img alt="Muestra de nivel de Thinx" src="http://blog.aquinzi.com/images/2009/thinx01.jpg"&gt; &lt;img alt="Muestra de nivel de Thinx" src="http://blog.aquinzi.com/images/2009/thinx02.jpg"&gt; &lt;img alt="Muestra de nivel de Thinx" src="http://blog.aquinzi.com/images/2009/thinx03.jpg"&gt; &lt;img alt="Muestra de nivel de Thinx" src="http://blog.aquinzi.com/images/2009/thinx05.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Me tomé la libertad de subirlo para compartirlo; &lt;a href="http://www.mediafire.com/download.php?q4zqeirqwmz"&gt;descargar Thinx&lt;/a&gt;.&lt;/p&gt;</description><guid>http://blog.aquinzi.com/thinx/</guid><pubDate>Mon, 23 Feb 2009 00:00:00 GMT</pubDate></item></channel></rss>

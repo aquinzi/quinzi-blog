@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (autohotkey)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/autohotkey.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 18 Feb 2014 11:00:31 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AutoHotkey: Reemplazo</title><link>http://blog.quinzi.com.ar/autohotkey-reemplazo/</link><description>&lt;p&gt;Como había escrito &lt;a href="link://slug/autohotkey-nueva-carpeta"&gt;anteriormente&lt;/a&gt;, se puede usar tranquilamente el
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (autohotkey)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/tags/autohotkey.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 21 Mar 2014 17:50:50 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AutoHotkey: Reemplazo</title><link>http://blog.aquinzi.com/autohotkey-reemplazo/</link><description>&lt;p&gt;Como había escrito &lt;a href="link://slug/autohotkey-nueva-carpeta"&gt;anteriormente&lt;/a&gt;, se puede usar tranquilamente el
 AutoHotkey para suplantar texto. También existe una app un poco más
 simple (y más gráfica) basada en este, que es &lt;a href="http://www.lifehacker.com/software/texter/lifehacker-code-texter-windows-238306.php"&gt;Texter&lt;/a&gt;, asique depende de tus necesidades, elegí.&lt;/p&gt;
 &lt;p&gt;El texto se puede sustituir de dos formas: auto-sustisución o mediante
@@ -50,7 +50,7 @@ mail), hay que escribir (ademas del primer renglón):&lt;/p&gt;
 
 
 &lt;p&gt;Con esto, y si escribis todo el tiempo lo mismo, te puede ayudar a
-reducir el tiempo.&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/autohotkey-reemplazo/</guid><pubDate>Mon, 01 Jun 2009 15:33:00 GMT</pubDate></item><item><title>AutoHotkey: Nueva Carpeta</title><link>http://blog.quinzi.com.ar/autohotkey-nueva-carpeta/</link><description>&lt;p&gt;Uso Windows. Qué se extraña de otros
+reducir el tiempo.&lt;/p&gt;</description><guid>http://blog.aquinzi.com/autohotkey-reemplazo/</guid><pubDate>Mon, 01 Jun 2009 15:33:00 GMT</pubDate></item><item><title>AutoHotkey: Nueva Carpeta</title><link>http://blog.aquinzi.com/autohotkey-nueva-carpeta/</link><description>&lt;p&gt;Uso Windows. Qué se extraña de otros
 Sistemas Operativos? Keyboard Shortcuts (Atajos de teclado /
 Comandos, Ctrl + C…) para una nueva carpeta. Sé que se puede apretando:
 &lt;kbd&gt;AppMenu&lt;/kbd&gt; (ese que funciona como el botón derecho) &lt;kbd&gt;arriba x2 &amp;gt; enter/derecha &amp;gt; enter&lt;/kbd&gt;. O desde el menu de arriba en una
@@ -64,10 +64,10 @@ comprimido.&lt;/p&gt;
 &lt;p&gt;Una vez que lo instalaste, en una carpetita donde vas a
 guardar los scripts hacé: &lt;kbd&gt;boton derecho&amp;gt;crear nuevo AutoHotkey Script&lt;/kbd&gt;.
 Si bajaste el Zip, creas un archivo de texto con la extensión .ahk.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.quinzi.com.ar/images/2009/ahk_01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.aquinzi.com/images/2009/ahk_01.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Te aparece el archivo, le cambias el nombre (como &lt;code&gt;nuevacarpeta&lt;/code&gt;). Sobre éste, botón &lt;kbd&gt;derecho&amp;gt;Edit Script&lt;/kbd&gt;. Te aparece el bloc
 de notas. El archivo contiene lo siguiente:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Código default" src="http://blog.quinzi.com.ar/images/2009/ahk_02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Código default" src="http://blog.aquinzi.com/images/2009/ahk_02.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Eliminá todo y poné:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;#n::send {AppsKey}{up}{up}{right}{enter}
 &lt;/pre&gt;&lt;/div&gt;
@@ -82,7 +82,7 @@ lo que hariamos por mouse, o por la descripción por teclado que habia
 escrito al principio.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Una vez esto, hacemos &lt;kbd&gt;botón derecho&lt;/kbd&gt; sobre el archivo &lt;kbd&gt;abrir con &amp;gt; AutoHotkey&lt;/kbd&gt; o se puede configurar para que haciendo doble click lo lance.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.quinzi.com.ar/images/2009/ahk_03.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.aquinzi.com/images/2009/ahk_03.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Se nos carga el programita y ya está. Apretas &lt;kbd&gt;Win+N&lt;/kbd&gt; y tenes tu carpetita nueva, aguardando renombrarla.&lt;/p&gt;
 &lt;p&gt;Podes poner que el AutoHotkey se cargue con Windows y asi
 automaticamente el script; compilarlo y que te quede un exe que lo pones
@@ -133,4 +133,4 @@ May 24, 2009 at 11:29 am        &lt;/div&gt;
 &lt;p&gt;Pingback: &lt;a href="http://eikiu.wordpress.com/2012/12/17/goodbye-dropbox/" rel="external nofollow" class="url"&gt;Goodbye, Dropbox? | Intento de blog&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/autohotkey-nueva-carpeta/</guid><pubDate>Sat, 09 May 2009 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.aquinzi.com/autohotkey-nueva-carpeta/</guid><pubDate>Sat, 09 May 2009 00:00:00 GMT</pubDate></item></channel></rss>

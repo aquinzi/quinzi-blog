@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (epub)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/epub.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 18 Feb 2014 11:00:28 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Read ePUB in Kindle 3</title><link>http://blog.quinzi.com.ar/kindle3-epub/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (epub)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/tags/epub.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 21 Mar 2014 17:50:50 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Read ePUB in Kindle 3</title><link>http://blog.aquinzi.com/kindle3-epub/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#jailbreak"&gt;Jailbreak&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#launchpad"&gt;Launchpad&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#cool-reader-3"&gt;Cool Reader 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/kindle3-epub/#jailbreak"&gt;Jailbreak&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/kindle3-epub/#launchpad"&gt;Launchpad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/kindle3-epub/#cool-reader-3"&gt;Cool Reader 3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;The other day I was looking if there was a possibility to read ePUBs in
@@ -43,4 +43,4 @@ message it's shown on the bottom left corner. Press &lt;kbd&gt;Shift C R&lt;/kbd
 &lt;li&gt;&lt;kbd&gt;Alt Shift&lt;/kbd&gt; - Collapse \ deploy Cool Reader&lt;/li&gt;
 &lt;li&gt;In preferences dialogue: &lt;kbd&gt;Home&lt;/kbd&gt; - saves options, &lt;kbd&gt;Back&lt;/kbd&gt; - quit
 without saving&lt;/li&gt;
-&lt;/ul&gt;</description><category>kindle</category><category>epub</category><guid>http://blog.quinzi.com.ar/kindle3-epub/</guid><pubDate>Fri, 30 Dec 2011 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>kindle</category><category>epub</category><guid>http://blog.aquinzi.com/kindle3-epub/</guid><pubDate>Fri, 30 Dec 2011 00:00:00 GMT</pubDate></item></channel></rss>

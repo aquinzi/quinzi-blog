@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (guide)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/cat_guide.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 18 Feb 2014 11:00:28 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pelican to Nikola (and tutorial)</title><link>http://blog.quinzi.com.ar/pelican-nikola/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (guide)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/tags/cat_guide.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 21 Mar 2014 17:50:53 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pelican to Nikola (and tutorial)</title><link>http://blog.aquinzi.com/pelican-nikola/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#acrylamid"&gt;Acrylamid&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#nikola"&gt;Nikola&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#the-moving"&gt;The moving&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#install-nikola"&gt;Install Nikola&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#initiate"&gt;Initiate&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#convert-metadata"&gt;Convert metadata&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#translations"&gt;Translations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#images-paths"&gt;Images paths&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#links-between-posts"&gt;Links between posts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#plugins-syntax"&gt;Plugins syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#acrylamid"&gt;Acrylamid&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#nikola"&gt;Nikola&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#the-moving"&gt;The moving&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#install-nikola"&gt;Install Nikola&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#initiate"&gt;Initiate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#convert-metadata"&gt;Convert metadata&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#translations"&gt;Translations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#images-paths"&gt;Images paths&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#links-between-posts"&gt;Links between posts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#plugins-syntax"&gt;Plugins syntax&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#other-nikola-stuff"&gt;Other Nikola stuff&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#locale-in-windows"&gt;Locale in Windows&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#linking-internally"&gt;Linking internally&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#pandoc"&gt;Pandoc&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#posts-folder-and-subfolders"&gt;Posts folder and subfolders&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#other-nikola-stuff"&gt;Other Nikola stuff&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#locale-in-windows"&gt;Locale in Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#linking-internally"&gt;Linking internally&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#pandoc"&gt;Pandoc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#posts-folder-and-subfolders"&gt;Posts folder and subfolders&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/pelican-nikola/#testing"&gt;Testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#testing"&gt;Testing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;When I was thinking of moving my blog to this new domain, I thought of using &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; as the converter&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/pelican-nikola/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;. I even created &lt;a href="http://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; for that. But then I run into the "problems" (ok, I was kind of lazy) of generating RSS, listing posts with certain tags or categories (which I ended up not using), the index and archive, idealizing of using plugins, etc. and gave up. &lt;/p&gt;
-&lt;p&gt;In the beginning, I would &lt;a href="link://slug/wordpress-to-pelican"&gt;continue using Pelican&lt;/a&gt; as is &lt;a href="http://docs.getpelican.com/"&gt;it's easy and customizable&lt;/a&gt;, even though it doesn't have Pandoc&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/pelican-nikola/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; support. But later I would be lazy to move to another system (not that I blog much, but &lt;strong&gt;I like Pandoc's markdown&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;When I was thinking of moving my blog to this new domain, I thought of using &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; as the converter&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/pelican-nikola/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;. I even created &lt;a href="http://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; for that. But then I run into the "problems" (ok, I was kind of lazy) of generating RSS, listing posts with certain tags or categories (which I ended up not using), the index and archive, idealizing of using plugins, etc. and gave up. &lt;/p&gt;
+&lt;p&gt;In the beginning, I would &lt;a href="link://slug/wordpress-to-pelican"&gt;continue using Pelican&lt;/a&gt; as is &lt;a href="http://docs.getpelican.com/"&gt;it's easy and customizable&lt;/a&gt;, even though it doesn't have Pandoc&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/pelican-nikola/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; support. But later I would be lazy to move to another system (not that I blog much, but &lt;strong&gt;I like Pandoc's markdown&lt;/strong&gt;).&lt;/p&gt;
 &lt;h2 id="acrylamid"&gt;Acrylamid&lt;/h2&gt;
 &lt;p&gt;In my searching, I found &lt;a href="http://posativ.org/acrylamid/index.html"&gt;Acrylamid&lt;/a&gt; which looks pretty good. It's like the programmer/hacker blog generator, where you can do many things, including using template syntax &lt;em&gt;inside&lt;/em&gt; your post. How cool is that?. It also has incremental builds, which means that it won't regenerate the whole site/blog again after a little edit, but only what it was changed. &lt;/p&gt;
 &lt;p&gt;Other cool things include:&lt;/p&gt;
@@ -149,23 +149,23 @@
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;Because I hate opening an HTML block tag and the markdown inside is not parsed. I know, it's said in the &lt;a href="http://daringfireball.net/projects/markdown/"&gt;markdown&lt;/a&gt; reference, but hey: &lt;strong&gt;it's 2014&lt;/strong&gt; and I need that. But I still love the admonition implementation in &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python-Markdown&lt;/a&gt; &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/pelican-nikola/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Because I hate opening an HTML block tag and the markdown inside is not parsed. I know, it's said in the &lt;a href="http://daringfireball.net/projects/markdown/"&gt;markdown&lt;/a&gt; reference, but hey: &lt;strong&gt;it's 2014&lt;/strong&gt; and I need that. But I still love the admonition implementation in &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python-Markdown&lt;/a&gt; &lt;a class="footnote-backref" href="http://blog.aquinzi.com/pelican-nikola/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;Which &lt;a href="http://docs.getpelican.com/en/3.3.0/internals.html#how-to-implement-a-new-reader"&gt;now I see&lt;/a&gt; it looks pretty easy to implement. Oh well. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/pelican-nikola/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Which &lt;a href="http://docs.getpelican.com/en/3.3.0/internals.html#how-to-implement-a-new-reader"&gt;now I see&lt;/a&gt; it looks pretty easy to implement. Oh well. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/pelican-nikola/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><category>pelican</category><category>nikola</category><category>static</category><category>python</category><category>windows</category><guid>http://blog.quinzi.com.ar/pelican-nikola/</guid><pubDate>Sat, 11 Jan 2014 00:00:00 GMT</pubDate></item><item><title>GitHub Pages for projects</title><link>http://blog.quinzi.com.ar/gh-pages-project/</link><description>&lt;div class="toc"&gt;
+&lt;/div&gt;</description><category>pelican</category><category>nikola</category><category>static</category><category>python</category><category>windows</category><guid>http://blog.aquinzi.com/pelican-nikola/</guid><pubDate>Sat, 11 Jan 2014 00:00:00 GMT</pubDate></item><item><title>GitHub Pages for projects</title><link>http://blog.aquinzi.com/gh-pages-project/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#programs-for-windows"&gt;Programs for Windows&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#create-repository"&gt;Create repository&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#activate-github-pages"&gt;"Activate" GitHub Pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#get-it-in-desktop-to-work-with-it"&gt;Get it in desktop (to work with it)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#prepare-gh-pages-branch"&gt;Prepare gh-pages branch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#gh-pages-as-default-and-delete-master"&gt;gh-pages as default and delete master&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#its-alive-testing-file-and-upload"&gt;It's alive! (Testing file and upload)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#custom-domain"&gt;Custom domain&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/gh-pages-project/#404-pages-everyone-loves-error-pages"&gt;404 pages! (Everyone loves error pages)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/gh-pages-project/#programs-for-windows"&gt;Programs for Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/gh-pages-project/#create-repository"&gt;Create repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/gh-pages-project/#activate-github-pages"&gt;"Activate" GitHub Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/gh-pages-project/#get-it-in-desktop-to-work-with-it"&gt;Get it in desktop (to work with it)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/gh-pages-project/#prepare-gh-pages-branch"&gt;Prepare gh-pages branch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/gh-pages-project/#gh-pages-as-default-and-delete-master"&gt;gh-pages as default and delete master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/gh-pages-project/#its-alive-testing-file-and-upload"&gt;It's alive! (Testing file and upload)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/gh-pages-project/#custom-domain"&gt;Custom domain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/gh-pages-project/#404-pages-everyone-loves-error-pages"&gt;404 pages! (Everyone loves error pages)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Simple steps to create &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; for projects/per repo (not user nor organization) plus some other stuff.&lt;/p&gt;
@@ -202,7 +202,7 @@
 &lt;li&gt;you don't have to mess around with the PATH if you want to use git CLI (it installs in &lt;code&gt;%appdata%&lt;/code&gt; and you can't only include &lt;code&gt;bin\&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;msysgit comes with "git Bash"; a cool CLI with colors that shows in which &lt;code&gt;branch&lt;/code&gt; you're in; what is more, you can customize it with &lt;code&gt;.bashrc&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img alt="showing customized git Bash" src="http://blog.quinzi.com.ar/images/2014/git_bash.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="showing customized git Bash" src="http://blog.aquinzi.com/images/2014/git_bash.png"&gt;&lt;/p&gt;
 &lt;h2 id="create-repository"&gt;Create repository&lt;/h2&gt;
 &lt;p&gt;In GitHub, create a repository with the desired name. You can log in and go to &lt;a href="https://github.com/repositories/new"&gt;https://github.com/repositories/new&lt;/a&gt; o clicking in the "&lt;kbd&gt;book&lt;/kbd&gt;".&lt;/p&gt;
 &lt;h2 id="activate-github-pages"&gt;"Activate" GitHub Pages&lt;/h2&gt;
@@ -275,25 +275,25 @@ $ git push origin gh-pages
 &lt;li&gt;&lt;time&gt;2014-01-02&lt;/time&gt; Rewritten to be more explanatory.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;/section&gt;</description><category>git</category><category>github</category><guid>http://blog.quinzi.com.ar/gh-pages-project/</guid><pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate></item><item><title>Box: WebDAV access</title><link>http://blog.quinzi.com.ar/box-webdav/</link><description>&lt;div class="toc"&gt;
+&lt;/section&gt;</description><category>git</category><category>github</category><guid>http://blog.aquinzi.com/gh-pages-project/</guid><pubDate>Wed, 01 Jan 2014 00:00:00 GMT</pubDate></item><item><title>Box: WebDAV access</title><link>http://blog.aquinzi.com/box-webdav/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/box-webdav/#windows-explorer"&gt;Windows Explorer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/box-webdav/#bitkinex"&gt;BitKinex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/box-webdav/#windows-explorer"&gt;Windows Explorer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/box-webdav/#bitkinex"&gt;BitKinex&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;To access to syncing servicies via &lt;a href="http://en.wikipedia.org/wiki/WebDAV"&gt;WebDAV&lt;/a&gt;, and see them in a file manager without installing the client -&amp;gt; wait to load -&amp;gt; index -&amp;gt; do the sync dance just to get one file&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/box-webdav/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, it's priceless&lt;sup id="fnref:priceless"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/box-webdav/#fn:priceless" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;To access to syncing servicies via &lt;a href="http://en.wikipedia.org/wiki/WebDAV"&gt;WebDAV&lt;/a&gt;, and see them in a file manager without installing the client -&amp;gt; wait to load -&amp;gt; index -&amp;gt; do the sync dance just to get one file&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/box-webdav/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, it's priceless&lt;sup id="fnref:priceless"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/box-webdav/#fn:priceless" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;I decided to do this because I wanted to do something that needed a &lt;abbr title='The "old" thingy'&gt;FTP&lt;/abbr&gt;. Lately (or always was like that), you can't create a &lt;abbr title='The "old" thingy'&gt;FTP&lt;/abbr&gt; account only, you must create a web site first. Not interested. I don't have a server/computer (proyect pending)  acting as a server and install &lt;a href="https://filezilla-project.org"&gt;FileZilla&lt;/a&gt;. Damnit. I remembered the sync servicies that I have an account with and jumped into using them.&lt;/p&gt;
 &lt;p&gt;I chose &lt;a href="http://www.box.com"&gt;Box&lt;/a&gt;. I thought into uploading the files via the web interface, given that the synchronization is a bit bad, but I realized that &lt;a href="https://www.sugarsync.com/"&gt;SugarSync&lt;/a&gt; has the "SugarSync Drive" feature, that allows you to access your file through a file manager. I started to search if Box had something similar.&lt;/p&gt;
 &lt;p&gt;It has &lt;abbr title='The "old" thingy'&gt;FTP&lt;/abbr&gt; access but only for paid accounts. Then I read about WebDAV. Tried to configurate it and, after struggling for minutes, here is how to do it in Windows (7)&lt;/p&gt;
 &lt;h2 id="windows-explorer"&gt;Windows Explorer&lt;/h2&gt;
 &lt;p&gt;In "Computer" (the old "My PC"), go to &lt;kbd&gt;Map network drive&lt;/kbd&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Context menu" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Context menu" src="http://blog.aquinzi.com/images/2013/webdav_mapnetwork.png"&gt;&lt;/p&gt;
 &lt;p&gt;Select the drive (doesn't matter apparently), check &lt;kbd&gt;Reconnect at logon&lt;/kbd&gt;. Click on &lt;kbd&gt;Connect to a Web site that you use to store...&lt;/kbd&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_config.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.aquinzi.com/images/2013/webdav_mapnetwork_config.png"&gt;&lt;/p&gt;
 &lt;p&gt;In the new popup window, select &lt;kbd&gt;Choose a custom network location&lt;/kbd&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_location.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.aquinzi.com/images/2013/webdav_mapnetwork_location.png"&gt;&lt;/p&gt;
 &lt;p&gt;Now the fun part that gave me headaches: the address.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_address.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.aquinzi.com/images/2013/webdav_mapnetwork_address.png"&gt;&lt;/p&gt;
 &lt;p&gt;You can input:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;For the whole folder/account: &lt;code&gt;https://dav.box.com&lt;/code&gt;&lt;/li&gt;
@@ -301,47 +301,47 @@ $ git push origin gh-pages
 &lt;/ul&gt;
 &lt;p&gt;New popup window for log in. Enter the Box user/e-mail and password.&lt;/p&gt;
 &lt;p&gt;Optional, in the next window rename the folder:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.quinzi.com.ar/images/2013/webdav_mapnetwork_name.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.aquinzi.com/images/2013/webdav_mapnetwork_name.png"&gt;&lt;/p&gt;
 &lt;p&gt;And here is the hardwork done:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Showing mapped drive" src="http://blog.quinzi.com.ar/images/2013/webdav_networks_computer.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Showing mapped drive" src="http://blog.aquinzi.com/images/2013/webdav_networks_computer.png"&gt;&lt;/p&gt;
 &lt;p&gt;If this doesn't work for you, you can use &lt;a href="http://rei.to/carotdav_en.html"&gt;CarotDAV&lt;/a&gt; (to view al the servicies in one portable program), the famous &lt;a href="http://www.ghisler.com/download.htm"&gt;Total Commander&lt;/a&gt; or BitKinex.&lt;/p&gt;
 &lt;h2 id="bitkinex"&gt;BitKinex&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.bitkinex.com/download"&gt;Download BitKinex&lt;/a&gt;. Install normally, but I recommend (because I read somewhere) uncheck the "I want to configure data source now" option (apparently does nothing)&lt;/p&gt;
 &lt;p&gt;Once initiated (yes, it looks very small for some reason), look for Http/WebDAV, &lt;kbd&gt;right click &amp;gt; New &amp;gt; Http/WebDAV&lt;/kbd&gt; and enter a name.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Creating service" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_new.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Creating service" src="http://blog.aquinzi.com/images/2013/webdav_bitkinex_new.png"&gt;&lt;/p&gt;
 &lt;p&gt;The address is similar to above: &lt;code&gt;dav.box.com&lt;/code&gt;, select &lt;kbd&gt;&lt;abbr title="Security before all"&gt;SSL&lt;/abbr&gt;&lt;/kbd&gt;. Enter user and password:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_server.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.aquinzi.com/images/2013/webdav_bitkinex_server.png"&gt;&lt;/p&gt;
 &lt;p&gt;I also read (optional) that you can include a path in the Site map (don't know why, didn't noticed a difference). You configurate it going to &lt;kbd&gt;Site Map&lt;/kbd&gt; (under where you're now/Server) and adding/modifyng the path with &lt;code&gt;/dav&lt;/code&gt;, picking &lt;kbd&gt;Directory WebDAV-compliant&lt;/kbd&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_sitemap.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Configuration window" src="http://blog.aquinzi.com/images/2013/webdav_bitkinex_sitemap.png"&gt;&lt;/p&gt;
 &lt;p&gt;And done, you just doble click it to connect:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Service added" src="http://blog.quinzi.com.ar/images/2013/webdav_bitkinex_connection.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Service added" src="http://blog.aquinzi.com/images/2013/webdav_bitkinex_connection.png"&gt;&lt;/p&gt;
 &lt;p&gt;Source: &lt;a href="https://box.zendesk.com/entries/21534903"&gt;Box zendesk&lt;/a&gt;&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;The mayority of people use the servicies as file hosting &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/box-webdav/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The mayority of people use the servicies as file hosting &lt;a class="footnote-backref" href="http://blog.aquinzi.com/box-webdav/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:priceless"&gt;
-&lt;p&gt;literally. Nowadays, the operative systems have the feature built-in (more, less or not bugged) &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/box-webdav/#fnref:priceless" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;literally. Nowadays, the operative systems have the feature built-in (more, less or not bugged) &lt;a class="footnote-backref" href="http://blog.aquinzi.com/box-webdav/#fnref:priceless" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><category>box</category><category>sync</category><category>windows7</category><category>webdav</category><guid>http://blog.quinzi.com.ar/box-webdav/</guid><pubDate>Sun, 04 Aug 2013 00:00:00 GMT</pubDate></item><item><title>Dynamic to Static (Wordpress a Pelican)</title><link>http://blog.quinzi.com.ar/wordpress-to-pelican/</link><description>&lt;div class="toc"&gt;
+&lt;/div&gt;</description><category>box</category><category>sync</category><category>windows7</category><category>webdav</category><guid>http://blog.aquinzi.com/box-webdav/</guid><pubDate>Sun, 04 Aug 2013 00:00:00 GMT</pubDate></item><item><title>Dynamic to Static (Wordpress a Pelican)</title><link>http://blog.aquinzi.com/wordpress-to-pelican/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#presentacion"&gt;Presentación&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#instalacion-en-windows"&gt;Instalación en Windows&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#configuracion"&gt;Configuración&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#andando"&gt;Andando&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#themes"&gt;Themes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#migracion-wordpress-pelican"&gt;Migración Wordpress -&amp;gt; Pelican&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#posts-y-paginas"&gt;Posts y páginas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#imagenes"&gt;Imágenes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#categorias-y-tags"&gt;Categorías y tags&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#comentarios"&gt;Comentarios&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#presentacion"&gt;Presentación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#instalacion-en-windows"&gt;Instalación en Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#configuracion"&gt;Configuración&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#andando"&gt;Andando&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#themes"&gt;Themes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#migracion-wordpress-pelican"&gt;Migración Wordpress -&amp;gt; Pelican&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#posts-y-paginas"&gt;Posts y páginas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#imagenes"&gt;Imágenes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#categorias-y-tags"&gt;Categorías y tags&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#comentarios"&gt;Comentarios&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#pros-y-cons"&gt;Pros y Cons&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/wordpress-to-pelican/#conclusion"&gt;Conclusión&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#pros-y-cons"&gt;Pros y Cons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/wordpress-to-pelican/#conclusion"&gt;Conclusión&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Por qué: &lt;/p&gt;
@@ -360,10 +360,10 @@ $ git push origin gh-pages
 &lt;h2 id="presentacion"&gt;Presentación&lt;/h2&gt;
 &lt;p&gt;Teniendo Wordpress hosteado/.com gratuito, no tengo mucha libertad para ciertas cosas. Pasé de wordpress.org a wordpress.com para evitar el tema de las actualizaciones seguidas, spam, seguridad y eso.&lt;/p&gt;
 &lt;p&gt;Todo iba bien, hasta que los de Wordpress decidieron &lt;strong&gt;abrirse mas como CMS&lt;/strong&gt; que como sistema de blogging. Lo entiendo, es natural. Bien. No me gusta. No se si porque yo asocio Wordpress con blog y no un CMS completo a lo Joomla! o Drupal, o porque si las cosas en el backend estan mal organizadas para ser CMS/orientadas a blog, o si es mi conexión que no me deja disfrutar al máximo o qué. &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Por temas de conexión y que el editor de Wordpress apesta&lt;/strong&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, añadido a tener una wiki en localhost y encariñarme con los &lt;a href="http://en.wikipedia.org/wiki/Lightweight_markup_languages"&gt;LML&lt;/a&gt;, &lt;strong&gt;escribía los posts en markdown&lt;/strong&gt; (que antes no me caía bien, hasta que empecé a usar &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt;), los pasaba a HTML, hacia search &amp;amp; replace para las imágenes (aunque se puede obviar si se suben primero las imágenes), y &lt;strong&gt;recien ahí lo pasaba a Wordpress&lt;/strong&gt;. No es lo mas cómodo del mundo, pero servía.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Por temas de conexión y que el editor de Wordpress apesta&lt;/strong&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, añadido a tener una wiki en localhost y encariñarme con los &lt;a href="http://en.wikipedia.org/wiki/Lightweight_markup_languages"&gt;LML&lt;/a&gt;, &lt;strong&gt;escribía los posts en markdown&lt;/strong&gt; (que antes no me caía bien, hasta que empecé a usar &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt;), los pasaba a HTML, hacia search &amp;amp; replace para las imágenes (aunque se puede obviar si se suben primero las imágenes), y &lt;strong&gt;recien ahí lo pasaba a Wordpress&lt;/strong&gt;. No es lo mas cómodo del mundo, pero servía.&lt;/p&gt;
 &lt;p&gt;Por alguna razón que ahora no recuerdo, empecé a buscar (o encontré de casualidad) scripts que pasan &lt;code&gt;.txts&lt;/code&gt; con LML a html. Eso me hizo pensar: "hey, capaz me puede servir". Después de descartar un par que no me servían (estan apuntados a los usuarios de Linux y para usarlos en Windows era mucho lio), me decanté por &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Pelican es un script de Python que toma archivos de texto con markdown, reStructuredText o AsciiDoc, los pasa por un theme, y te genera un blog estático/html. Puro y duro, a la vieja escuela. Con categorias, tags, rss, páginas. Vamos, lo básico para un blog.&lt;/p&gt;
-&lt;p&gt;Yo lo estoy hosteando en &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;Dropbox&lt;/a&gt;, después de decidir que subir las cosas por FTP era bastante molesto &lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;/las únicas razones por la que quiería un host apache era por el &lt;code&gt;.htaccess&lt;/code&gt; (el rewrite) para hacer magia pero no valía mucho hacer eso para mi humilde blog. &lt;strong&gt;También lo podes hostear en GitHub&lt;/strong&gt; si ya tenes cuenta ahi y no te molesta hacer commits. CAPAZ que algun día lo pase ahi (tengo como pendiente GitHub).&lt;/p&gt;
+&lt;p&gt;Yo lo estoy hosteando en &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;Dropbox&lt;/a&gt;, después de decidir que subir las cosas por FTP era bastante molesto &lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;/las únicas razones por la que quiería un host apache era por el &lt;code&gt;.htaccess&lt;/code&gt; (el rewrite) para hacer magia pero no valía mucho hacer eso para mi humilde blog. &lt;strong&gt;También lo podes hostear en GitHub&lt;/strong&gt; si ya tenes cuenta ahi y no te molesta hacer commits. CAPAZ que algun día lo pase ahi (tengo como pendiente GitHub).&lt;/p&gt;
 &lt;p&gt;Si solo te interesa hacer la parte de archivos de texto en Dropbox SIN generar html y demas, tenes opciones como &lt;a href="http://calepin.co/"&gt;Calepin&lt;/a&gt; y &lt;a href="http://scriptogr.am/"&gt;scriptogr.am&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="instalacion-en-windows"&gt;Instalación en Windows&lt;/h2&gt;
 &lt;p&gt;Porque en Linux este tipo de cosas es mas fácil.&lt;/p&gt;
@@ -449,11 +449,11 @@ $ git push origin gh-pages
 &lt;li&gt;es Wordpress&lt;/li&gt;
 &lt;li&gt;editor de posts feo/lento&lt;/li&gt;
 &lt;li&gt;seguridad (normal)&lt;/li&gt;
-&lt;li&gt;Le falta un par de cosas, como poner footnotes facilmente&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Le falta un par de cosas, como poner footnotes facilmente&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Pelican, pros:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;puedo escribir en markdown&lt;/strong&gt;, y usar los &lt;strong&gt;markdown extentions&lt;/strong&gt; (que lo hacen mas copado/completo). Al escribir en puro texto, puedo elegir el editor que yo quiera: &lt;a href="http://www.notepad-plus-plus.org/"&gt;Notepad++&lt;/a&gt;, &lt;a href="http://www.sublimetext.com/"&gt;Sublime Text&lt;/a&gt; &lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fn:6" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;, o hacerme la cool y abrir un precesador de texto completo de una suite ofimatica, el Wordpad, o algun editor designado para Markdown.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;puedo escribir en markdown&lt;/strong&gt;, y usar los &lt;strong&gt;markdown extentions&lt;/strong&gt; (que lo hacen mas copado/completo). Al escribir en puro texto, puedo elegir el editor que yo quiera: &lt;a href="http://www.notepad-plus-plus.org/"&gt;Notepad++&lt;/a&gt;, &lt;a href="http://www.sublimetext.com/"&gt;Sublime Text&lt;/a&gt; &lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fn:6" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;, o hacerme la cool y abrir un precesador de texto completo de una suite ofimatica, el Wordpad, o algun editor designado para Markdown.&lt;/li&gt;
 &lt;li&gt;para actualizarlo es rapido: escribis, pones el archivo en la carpeta de input, corres el script y listo. Nada de andar loggeandote &amp;gt; click en nuevo post &amp;gt; esperar a que cargue &amp;gt; titulo &amp;gt; esperar que genere el slug &amp;gt; escribir &amp;gt; seleccionar categoria y tags &amp;gt; publicar&lt;/li&gt;
 &lt;li&gt;tenes un "backup"/raw de tus posts, faciles de transportar o convertir a otro formato.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;no tenes que lidear con un WYSIWYG&lt;/strong&gt;. Para ciertas cosas esta bueno, pero muchas veces te obstaculizan al escribir el contenido.&lt;/li&gt;
@@ -474,37 +474,37 @@ $ git push origin gh-pages
 &lt;h2 id="conclusion"&gt;Conclusión&lt;/h2&gt;
 &lt;p&gt;Esta mudanza la hice para probar cosas nuevas, solo actualizo el blog una vez al mes/cada 3-6 meses y ni tengo host propio. No es que este todos los dias escribiendo un post, o cada semana; tengo mis periodos de "ay si, hoy escribo y oh! ay mira escribi uno la semana pasada. Me siento re blogger" y de "ah mira, hace 6 meses que no escribo... qué se le va a hacer, no?".&lt;/p&gt;
 &lt;p&gt;Pero cada vez que SI actualizaba, odiaba profundamente el paso a Wordpress. Esta bien, si, podes ponerle un plugin para que tome la sintaxis markdown y todo eso, recordá que yo estoy/aba en wordpress.com y no pienso/aba instalar Wordpress en el host. Ya lo hice una vez y no me gustó, por eso me pasé a .com.&lt;/p&gt;
-&lt;p&gt;La actualización por medio de este sistema&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; es muy cómodo, solo pongo el post terminado en la carpeta (o lo creo ahi directamente), corro el script y listo. Solo tengo que tener Dropbox corriendo para que actualice. Si quiero hacerlo aun mas simple, puedo usar los servicios nombrados más arriba y solo poner el txt en Dropbox y listo. Sitio actualizado. También es muy rápido generar los &lt;code&gt;.html&lt;/code&gt;, con mi blogcito ni tarda 5 segundos (y eso que linkeo a otros posts).&lt;/p&gt;
-&lt;p&gt;Por que no un host cualquiera/FTP? Por que tenia que hacer un paso "extra" y sincronizar a FTP o anotarme a otro servicio para que haga un sync/backup de carpeta X de dropbox a carpeta X del host&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fn:5" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
+&lt;p&gt;La actualización por medio de este sistema&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fn:4" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; es muy cómodo, solo pongo el post terminado en la carpeta (o lo creo ahi directamente), corro el script y listo. Solo tengo que tener Dropbox corriendo para que actualice. Si quiero hacerlo aun mas simple, puedo usar los servicios nombrados más arriba y solo poner el txt en Dropbox y listo. Sitio actualizado. También es muy rápido generar los &lt;code&gt;.html&lt;/code&gt;, con mi blogcito ni tarda 5 segundos (y eso que linkeo a otros posts).&lt;/p&gt;
+&lt;p&gt;Por que no un host cualquiera/FTP? Por que tenia que hacer un paso "extra" y sincronizar a FTP o anotarme a otro servicio para que haga un sync/backup de carpeta X de dropbox a carpeta X del host&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fn:5" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
 &lt;p&gt;No digo que me vaya a quedar con este sistema, capaz que algun dia diga "para que quiero gastar X espacio en mi disco/dropbox si con wordpress.com no me preocupo" o "hago mucho lio para lo que actualizo", etc., elimino las cosas, hago un par de cambios por alli y por allá y listo, vuelvo a wordpress.com, quien sabe. Solo quiero probar. &lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;y por alguna razón, ya no hay tantos &lt;em&gt;offline blogging systems&lt;/em&gt; como Raven o Windows Live Writer. Creo que Wordpress habia puesto la opción de actualizar por e-mail, pero nunca la probé. Debe ser un dolor si queres poner imágenes &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;y por alguna razón, ya no hay tantos &lt;em&gt;offline blogging systems&lt;/em&gt; como Raven o Windows Live Writer. Creo que Wordpress habia puesto la opción de actualizar por e-mail, pero nunca la probé. Debe ser un dolor si queres poner imágenes &lt;a class="footnote-backref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;en realidad no, podes crearte una cuenta en &lt;a href="http://mybackupbox.com"&gt;mybackupbox&lt;/a&gt; y que se sincronice/backup-ee automáticamente a un FTP. Esto abre la posibilidad de usar cosas como base de datos y php. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;en realidad no, podes crearte una cuenta en &lt;a href="http://mybackupbox.com"&gt;mybackupbox&lt;/a&gt; y que se sincronice/backup-ee automáticamente a un FTP. Esto abre la posibilidad de usar cosas como base de datos y php. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:3"&gt;
-&lt;p&gt;una vez que los usas, no podes parar. Son adictivos. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;una vez que los usas, no podes parar. Son adictivos. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:6"&gt;
-&lt;p&gt;Que ahora me cae mejor. Te instalas el package control y tenes infinidad de plugins. Mas o menos le tomas la mano en la parte de configuración (puro texto) y lo dejas (casi) como quieras. Solo me falta buscar algo simple para que el editor se haga de dos columnas y pase el archivo activo a la otra "vista", sin presionar 10 teclas por acción. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fnref:6" rev="footnote" title="Jump back to footnote 4 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Que ahora me cae mejor. Te instalas el package control y tenes infinidad de plugins. Mas o menos le tomas la mano en la parte de configuración (puro texto) y lo dejas (casi) como quieras. Solo me falta buscar algo simple para que el editor se haga de dos columnas y pase el archivo activo a la otra "vista", sin presionar 10 teclas por acción. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fnref:6" rev="footnote" title="Jump back to footnote 4 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:4"&gt;
-&lt;p&gt;txt -&amp;gt; pelican -&amp;gt; dropbox &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fnref:4" rev="footnote" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;txt -&amp;gt; pelican -&amp;gt; dropbox &lt;a class="footnote-backref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fnref:4" rev="footnote" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:5"&gt;
-&lt;p&gt;ahora que lo pienso, capaz que se pueda poner el sitio en FTP como disco en red (o como se llame) en Windows. Lo hice una vez para pasar cosas al celular. Ahi puedo hacer las cosas directamente y me ahorraría unos pasos. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/wordpress-to-pelican/#fnref:5" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ahora que lo pienso, capaz que se pueda poner el sitio en FTP como disco en red (o como se llame) en Windows. Lo hice una vez para pasar cosas al celular. Ahi puedo hacer las cosas directamente y me ahorraría unos pasos. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/wordpress-to-pelican/#fnref:5" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><guid>http://blog.quinzi.com.ar/wordpress-to-pelican/</guid><pubDate>Tue, 22 Jan 2013 00:00:00 GMT</pubDate></item><item><title>Tutorial: save GPS location to text with Tasker</title><link>http://blog.quinzi.com.ar/tasker-gps-location-to-text/</link><description>&lt;div class="toc"&gt;
+&lt;/div&gt;</description><guid>http://blog.aquinzi.com/wordpress-to-pelican/</guid><pubDate>Tue, 22 Jan 2013 00:00:00 GMT</pubDate></item><item><title>Tutorial: save GPS location to text with Tasker</title><link>http://blog.aquinzi.com/tasker-gps-location-to-text/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/tasker-gps-location-to-text/#background-information"&gt;Background information&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/tasker-gps-location-to-text/#tasker-task"&gt;Tasker task&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/tasker-gps-location-to-text/#homescreen"&gt;Homescreen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/tasker-gps-location-to-text/#bugs"&gt;Bugs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/tasker-gps-location-to-text/#background-information"&gt;Background information&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/tasker-gps-location-to-text/#tasker-task"&gt;Tasker task&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/tasker-gps-location-to-text/#homescreen"&gt;Homescreen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/tasker-gps-location-to-text/#bugs"&gt;Bugs&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;h2 id="background-information"&gt;Background information&lt;/h2&gt;
@@ -533,7 +533,7 @@ box that you always see (the black one).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Go to the Scene tab and create a new one.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Scene:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Scene creation" src="http://blog.quinzi.com.ar/images/2012/tasker_scene.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Scene creation" src="http://blog.aquinzi.com/images/2012/tasker_scene.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;The necessary things are: the &lt;strong&gt;TextEdit&lt;/strong&gt; (to input a description, you
 can skip this if you only want to save the coordinates. If that's the
 case, you don't even need the scene) and the &lt;strong&gt;button&lt;/strong&gt;. You can add a
@@ -566,15 +566,15 @@ clicking the text box to type.&lt;/li&gt;
 &lt;p&gt;The only thing that is left is the shortcut/widget!&lt;/p&gt;
 &lt;p&gt;Create a &lt;kbd&gt;widget &amp;gt; task&lt;/kbd&gt;. Pick &lt;em&gt;Pin Here&lt;/em&gt;&lt;/p&gt;
 &lt;div class="caption"&gt;
-&lt;img src="http://blog.quinzi.com.ar/../images/2012/tasker_widget.jpg" alt="New Tasker widget"&gt;
+&lt;img src="http://blog.aquinzi.com/../images/2012/tasker_widget.jpg" alt="New Tasker widget"&gt;
 &lt;p&gt;Here, here! touch me!&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Tap and you get this!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Using task" src="http://blog.quinzi.com.ar/images/2012/tasker_working.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Using task" src="http://blog.aquinzi.com/images/2012/tasker_working.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;When you tap "save" it saves and shows the black info popup
 boxy-box. Here is an example of what the text file could look like:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Text results" src="http://blog.quinzi.com.ar/images/2012/tasker_txt.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Text results" src="http://blog.aquinzi.com/images/2012/tasker_txt.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;When you open the link, it shows the waypoint/spot in the map (seems to
 only work with Google Maps, unless you change the format, that way it
 also works with OsmAnd - from all the maps I've tested-).&lt;/p&gt;
@@ -585,7 +585,7 @@ must close it yourself (back button). It's not the script fault nor
 Tasker's, but Android's and how it handles things (according to the
 developer). Remember that we created a "wait" action? that was to bypass
 the "bug" opening the keyboard. This might be necessary for you or not.
-This depends on the phone/tablet.&lt;/p&gt;</description><category>android</category><category>tasker</category><guid>http://blog.quinzi.com.ar/tasker-gps-location-to-text/</guid><pubDate>Mon, 26 Nov 2012 00:00:00 GMT</pubDate></item><item><title>Conseguir RSS de los canales/channels de YouTube</title><link>http://blog.quinzi.com.ar/rss-youtube/</link><description>&lt;p&gt;Me quejé por Twitter de que &lt;del&gt;YouTube&lt;/del&gt; Google habia toqueteado algo en
+This depends on the phone/tablet.&lt;/p&gt;</description><category>android</category><category>tasker</category><guid>http://blog.aquinzi.com/tasker-gps-location-to-text/</guid><pubDate>Mon, 26 Nov 2012 00:00:00 GMT</pubDate></item><item><title>Conseguir RSS de los canales/channels de YouTube</title><link>http://blog.aquinzi.com/rss-youtube/</link><description>&lt;p&gt;Me quejé por Twitter de que &lt;del&gt;YouTube&lt;/del&gt; Google habia toqueteado algo en
 YouTube que rompió el código de los podcasts managers (en mi caso
 gPodder). En todo los pios de twits,
 alguien salto con cómo había hecho para tener las suscripciones de
@@ -630,11 +630,11 @@ October 9, 2012 at 7:01 pm      &lt;/div&gt;&lt;!-- .comment-meta .commentmetada
 
 &lt;p&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/rss-youtube/</guid><pubDate>Fri, 28 Sep 2012 00:00:00 GMT</pubDate></item><item><title>Read ePUB in Kindle 3</title><link>http://blog.quinzi.com.ar/kindle3-epub/</link><description>&lt;div class="toc"&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.aquinzi.com/rss-youtube/</guid><pubDate>Fri, 28 Sep 2012 00:00:00 GMT</pubDate></item><item><title>Read ePUB in Kindle 3</title><link>http://blog.aquinzi.com/kindle3-epub/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#jailbreak"&gt;Jailbreak&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#launchpad"&gt;Launchpad&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/kindle3-epub/#cool-reader-3"&gt;Cool Reader 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/kindle3-epub/#jailbreak"&gt;Jailbreak&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/kindle3-epub/#launchpad"&gt;Launchpad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/kindle3-epub/#cool-reader-3"&gt;Cool Reader 3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;The other day I was looking if there was a possibility to read ePUBs in
@@ -674,18 +674,18 @@ message it's shown on the bottom left corner. Press &lt;kbd&gt;Shift C R&lt;/kbd
 &lt;li&gt;&lt;kbd&gt;Alt Shift&lt;/kbd&gt; - Collapse \ deploy Cool Reader&lt;/li&gt;
 &lt;li&gt;In preferences dialogue: &lt;kbd&gt;Home&lt;/kbd&gt; - saves options, &lt;kbd&gt;Back&lt;/kbd&gt; - quit
 without saving&lt;/li&gt;
-&lt;/ul&gt;</description><category>kindle</category><category>epub</category><guid>http://blog.quinzi.com.ar/kindle3-epub/</guid><pubDate>Fri, 30 Dec 2011 00:00:00 GMT</pubDate></item><item><title>Windows 7: Themes personalizados y Aero Glass</title><link>http://blog.quinzi.com.ar/windows7-themes-aero/</link><description>&lt;div class="toc"&gt;
+&lt;/ul&gt;</description><category>kindle</category><category>epub</category><guid>http://blog.aquinzi.com/kindle3-epub/</guid><pubDate>Fri, 30 Dec 2011 00:00:00 GMT</pubDate></item><item><title>Windows 7: Themes personalizados y Aero Glass</title><link>http://blog.aquinzi.com/windows7-themes-aero/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/windows7-themes-aero/#themes-personalizados"&gt;Themes personalizados&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/windows7-themes-aero/#mejor-theme-manager"&gt;Mejor theme manager&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/windows7-themes-aero/#aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/windows7-themes-aero/#themes-personalizados"&gt;Themes personalizados&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/windows7-themes-aero/#mejor-theme-manager"&gt;Mejor theme manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/windows7-themes-aero/#aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Tenés Windows 7 Home Basic (o similar), seguro que te aburriste del theme/tema &lt;em&gt;baby blue&lt;/em&gt; que trae por defecto que no se puede cambiar. No esperes más y cambialo ya.&lt;/p&gt;
 &lt;h2 id="themes-personalizados"&gt;Themes personalizados&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Desactivar el UAC: (&lt;kbd&gt;Panel de Control &amp;gt; Cambiar Configuración de Control del Usuario&lt;/kbd&gt;. O buscar &lt;kbd&gt;UAC&lt;/kbd&gt; en la cajita de búsqueda del menú inicio o panel de control). Lo que hay que hacer es desactivarlo o ponerlo en la segunda barrita (contando desde abajo).&lt;/li&gt;
-&lt;li&gt;Instalar el &lt;a href="http://uxstyle.com/"&gt;UxStyle Core&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/windows7-themes-aero/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;: Leer los Términos de Servicio y si se
+&lt;li&gt;Instalar el &lt;a href="http://uxstyle.com/"&gt;UxStyle Core&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/windows7-themes-aero/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;: Leer los Términos de Servicio y si se
 está de acuerdo, siguiente. Si no se está de acuerdo, igual.&lt;/li&gt;
 &lt;li&gt;Opcional: Poner la configuración de UAC como se tenia anteriormente&lt;/li&gt;
 &lt;li&gt;Descargar e instalar los temas. Éstos van en &lt;code&gt;C:\Windows\Resources\Themes&lt;/code&gt;&lt;/li&gt;
@@ -697,9 +697,9 @@ no queda otra que ir clickeando y ver como queda en la muestra :)&lt;/li&gt;
 &lt;p&gt;Fuente: &lt;a href="http://www.sevenforums.com/tutorials/34579-enabling-custom-themes-windows-7-a.html"&gt;Seven forums: enabling custom themes&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="mejor-theme-manager"&gt;Mejor theme manager&lt;/h2&gt;
 &lt;p&gt;Como viene con Windows 7 Home Basic (yendo por &lt;kbd&gt;Panel de Control &amp;gt; Cambiar Combinación de colores&lt;/kbd&gt;):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Theme manager de Windows 7 Home Basic" src="http://blog.quinzi.com.ar/images/2013/win7_themes_settings.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Theme manager de Windows 7 Home Basic" src="http://blog.aquinzi.com/images/2013/win7_themes_settings.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Al instalar themes, te repite el nombre "Windows 7 Standard/Basic" varias veces. Instalando &lt;a href="http://winaero.com/download.php?view.3"&gt;Personalization Panel&lt;/a&gt; (como administrador) tenes un mejor theme manager:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Personalization Panel" src="http://blog.quinzi.com.ar/images/2013/win7_themes_personalization_panel.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Personalization Panel" src="http://blog.aquinzi.com/images/2013/win7_themes_personalization_panel.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Ademas de que:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Podes cambiar el wallpaper en Windows 7 Starter&lt;/li&gt;
@@ -707,7 +707,7 @@ no queda otra que ir clickeando y ver como queda en la muestra :)&lt;/li&gt;
 &lt;li&gt;Tiene asociaciones de archivos &lt;code&gt;*.theme&lt;/code&gt;, &lt;code&gt;*.msstyles&lt;/code&gt; y &lt;code&gt;*.themepack&lt;/code&gt;. Basicamente permite hacer doble click sobre el theme y te salta el programa para que eligas.&lt;/li&gt;
 &lt;li&gt;Dependiendo del theme, podes tener cierta transparencia:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Mostrando poca transparencia en los bordes" src="http://blog.quinzi.com.ar/images/2013/win7_themes_blacktrans.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mostrando poca transparencia en los bordes" src="http://blog.aquinzi.com/images/2013/win7_themes_blacktrans.jpg"&gt;&lt;/p&gt;
 &lt;h2 id="aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)&lt;/h2&gt;
 &lt;p&gt;Siempre y cuando tu compu lo permita, podes activar el Aero instalando el &lt;a href="http://winaero.com/download.php?view.13"&gt;Aero Patch&lt;/a&gt;. Esto te da:&lt;/p&gt;
 &lt;ul&gt;
@@ -717,16 +717,16 @@ no queda otra que ir clickeando y ver como queda en la muestra :)&lt;/li&gt;
 &lt;li&gt;Soporte de themes de terceros (con lo que parece no necesitar el &lt;a href="http://uxstyle.com/"&gt;UxStyle Core&lt;/a&gt;, but you tell me)&lt;/li&gt;
 &lt;li&gt;El theme manager de los "Windows 7 polenta":&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Theme manager Windows 7" src="http://blog.quinzi.com.ar/images/2013/win7_themes_manager.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Theme manager Windows 7" src="http://blog.aquinzi.com/images/2013/win7_themes_manager.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;e incluso te da la opción en el menú contextual, que antes no estaba:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.quinzi.com.ar/images/2013/win7_themes_contextmenu.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.aquinzi.com/images/2013/win7_themes_contextmenu.png"&gt;&lt;/p&gt;
 &lt;p&gt;Instalas normalmente (como administrador) y se aplica el patch. No tiene forma grafica de avisarte que terminó (teoricamente se reinicia el sistema solo), asique esperá unos segundos (como 10, o cuando parece que no esta procesando nada) y reiniciá (&lt;strong&gt;REINICIÁ&lt;/strong&gt;, no cierres y entres de nuevo a la sesión, que no funciona). Para desinstalar, volves a correr el patch.&lt;/p&gt;
 &lt;p&gt;Transparencia "full" (&lt;a href="http://ap-graphik.deviantart.com/art/Soft7-2-0-161602097"&gt;Soft7&lt;/a&gt;):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Estilo Visual, mucha transparencia" src="http://blog.quinzi.com.ar/images/2013/win7_themes_soft.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Estilo Visual, mucha transparencia" src="http://blog.aquinzi.com/images/2013/win7_themes_soft.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;También podes usar totalmente opaco (&lt;a href="http://www.deviantart.com/art/1-268398605"&gt;+1 Dark&lt;/a&gt;):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Estilo Visual, opaco" src="http://blog.quinzi.com.ar/images/2013/win7_themes_flat.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Estilo Visual, opaco" src="http://blog.aquinzi.com/images/2013/win7_themes_flat.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;O miti y miti (&lt;a href="http://snipes2.deviantart.com/art/mini-em-all-Update-276670844"&gt;mini'em all, alien 1&lt;/a&gt;):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Estilo Visual, opaco y transparencia" src="http://blog.quinzi.com.ar/images/2013/win7_themes_miniem.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Estilo Visual, opaco y transparencia" src="http://blog.aquinzi.com/images/2013/win7_themes_miniem.jpg"&gt;&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -737,10 +737,10 @@ un servicio (lo pueden encontrar en el &lt;kbd&gt;Administrador de
 tareas &amp;gt; servicios&lt;/kbd&gt;, se llama &lt;code&gt;UnsignedThemes.exe&lt;/code&gt;) que ocupa un poquito de
 memoria y "es un poco más seguro" (para el sistema) que los parches. El
 proceso "engaña" a Windows en pensar que todos los temas estan firmados
-y asi poder usar los personalizados. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/windows7-themes-aero/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+y asi poder usar los personalizados. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/windows7-themes-aero/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><guid>http://blog.quinzi.com.ar/windows7-themes-aero/</guid><pubDate>Sat, 13 Feb 2010 00:00:00 GMT</pubDate></item><item><title>Crear Javadoc</title><link>http://blog.quinzi.com.ar/javadoc/</link><description>&lt;p&gt;Un Javadoc es un generador de documentación para API en HTML. Para los demás mortales: esa
+&lt;/div&gt;</description><guid>http://blog.aquinzi.com/windows7-themes-aero/</guid><pubDate>Sat, 13 Feb 2010 00:00:00 GMT</pubDate></item><item><title>Crear Javadoc</title><link>http://blog.aquinzi.com/javadoc/</link><description>&lt;p&gt;Un Javadoc es un generador de documentación para API en HTML. Para los demás mortales: esa
 información que sale al escribir algun nombre de una
 variable/objeto/método seguido de un punto, seleccionando después el
 método que se quiere.&lt;/p&gt;
@@ -764,19 +764,19 @@ tal. Comenzar un comentario (&lt;code&gt;/**&lt;/code&gt;) y den &lt;kbd&gt;ente
 
 &lt;p&gt;Nótese que al poner &lt;code&gt;@&lt;/code&gt; se despliegan un par opciones, pero no creo que se necesiten mucho.&lt;/p&gt;
 &lt;p&gt;Ahora van a x lugar, empiezan a tipear y:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Javadoc tooltip" src="http://blog.quinzi.com.ar/images/2009/javadoc01.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Javadoc tooltip" src="http://blog.aquinzi.com/images/2009/javadoc01.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Qué lindo no? Ahora no tienen que estar adivinando qué hace,
 qué retorna (si es &lt;code&gt;true-false&lt;/code&gt; para hacer algo que no tiene que ver con
 verdadero-falso).&lt;/p&gt;
 &lt;p&gt;Para los atributos/variables es lo mismo. No sé para qué puede servir
 pero si le pones nombres genéricos del estilo "a", "b", "foo1", "foo2",
 "foodos" y por el estilo, sirve.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Javadoc Tooltip para variables" src="http://blog.quinzi.com.ar/images/2009/javadoc02.gif"&gt;&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/javadoc/</guid><pubDate>Tue, 24 Nov 2009 00:00:00 GMT</pubDate></item><item><title>Editar menú contextual de Opera</title><link>http://blog.quinzi.com.ar/opera-editar-menu-contextual/</link><description>&lt;p&gt;Teniendo problemas con la conexión, me decidí a volver a usar gestores de descargas, pero tales (o mejor, &lt;a href="http://www.orbitdownloader.com/"&gt;Orbit Downloader&lt;/a&gt;) no se integraban con Opera. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Javadoc Tooltip para variables" src="http://blog.aquinzi.com/images/2009/javadoc02.gif"&gt;&lt;/p&gt;</description><guid>http://blog.aquinzi.com/javadoc/</guid><pubDate>Tue, 24 Nov 2009 00:00:00 GMT</pubDate></item><item><title>Editar menú contextual de Opera</title><link>http://blog.aquinzi.com/opera-editar-menu-contextual/</link><description>&lt;p&gt;Teniendo problemas con la conexión, me decidí a volver a usar gestores de descargas, pero tales (o mejor, &lt;a href="http://www.orbitdownloader.com/"&gt;Orbit Downloader&lt;/a&gt;) no se integraban con Opera. &lt;/p&gt;
 &lt;p&gt;En Opera vayan a &lt;kbd&gt;Herramientas &amp;gt; Preferencias&lt;/kbd&gt; (o
 &lt;kbd&gt;alt+p&lt;/kbd&gt;), pestaña &lt;kbd&gt;Avanzado&lt;/kbd&gt; y a la barra de la izquierda
 vayan a &lt;kbd&gt;Barras&lt;/kbd&gt;.&lt;/p&gt;
 &lt;p&gt;Opcional: duplicar el &lt;code&gt;Opera Standard&lt;/code&gt; en &lt;kbd&gt;Configurar menú&lt;/kbd&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Menu Setup de Opera" src="http://blog.quinzi.com.ar/images/2009/opera01.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menu Setup de Opera" src="http://blog.aquinzi.com/images/2009/opera01.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Una vez duplicado, cierren Opera. Vayan a su profile + menu, usualmente es en: &lt;code&gt;C:\Documents and Settings\[usuario]\Datos de programa\Opera\[versión de Opera]\menu&lt;/code&gt;. Si no saben, vayan a &lt;kbd&gt;opera:about&lt;/kbd&gt; (yendo por el menu &lt;kbd&gt;Ayuda &amp;gt; Acerca de Opera&lt;/kbd&gt;) y fijense en la sección de
 &lt;code&gt;Rutas&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;En esa carpeta se encuentra un archivo &lt;code&gt;.ini&lt;/code&gt;. En mi caso, como no le
@@ -795,7 +795,7 @@ click derecho/menú contextual. &lt;/p&gt;
 &lt;code&gt;%l&lt;/code&gt; es el &lt;code&gt;lnk&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Guarden el archivo, (re)inicien Opera. Vayan a un link de descarga
 (cualquier tipo de archivo) y et voilà! aparece en el menú!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.quinzi.com.ar/images/2009/opera02.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.aquinzi.com/images/2009/opera02.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Hay otra opción que es para descargar contenido multimedia al estilo
 Youtube. Obviamente, se puede hacer abriendo &lt;code&gt;grab++&lt;/code&gt; (viene incluído
 en el paquete), pero como a veces no hay ganas de abrirlo, también se
@@ -808,10 +808,10 @@ click en un lugar "limpio" (sin imágenes, links, etc). Agreguen y modifiquen al
 
 &lt;p&gt;Guarden y reinicien Opera. En un lugar X de la página (en este ejemplo, un video
 de Youtube, al lado del video), y sale el menú:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.quinzi.com.ar/images/2009/opera03.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.aquinzi.com/images/2009/opera03.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Esto abre el &lt;code&gt;Grab++&lt;/code&gt; (un addon sería) y trae el video (previa
 recarga de la página). &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Muestra del addon" src="http://blog.quinzi.com.ar/images/2009/opera04.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Muestra del addon" src="http://blog.aquinzi.com/images/2009/opera04.gif"&gt;&lt;/p&gt;
 &lt;h3&gt; Comments &lt;/h3&gt;
 
 &lt;div id="comments"&gt;
@@ -836,4 +836,4 @@ August 16, 2009 at 4:52 pm    &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata
 
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/opera-editar-menu-contextual/</guid><pubDate>Sun, 16 Aug 2009 16:10:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.aquinzi.com/opera-editar-menu-contextual/</guid><pubDate>Sun, 16 Aug 2009 16:10:00 GMT</pubDate></item></channel></rss>

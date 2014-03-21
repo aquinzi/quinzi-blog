@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (nihongo)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/nihongo.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 18 Feb 2014 11:00:30 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ultimate Poor Man's Kanji Poster</title><link>http://blog.quinzi.com.ar/kanji-poster/</link><description>&lt;p&gt;If you don't know already, I'm learning Japanese by myself. I'll not get into the whole by yourself-classes discussion. You've got the rest of the internet for that matter.&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (nihongo)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/tags/nihongo.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 21 Mar 2014 17:50:50 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ultimate Poor Man's Kanji Poster</title><link>http://blog.aquinzi.com/kanji-poster/</link><description>&lt;p&gt;If you don't know already, I'm learning Japanese by myself. I'll not get into the whole by yourself-classes discussion. You've got the rest of the internet for that matter.&lt;/p&gt;
 &lt;p&gt;If you're learning any CJK (not so much Korean I think), in one point or
 another you'll need this kanji/hanzi poster thingy, so you can highlight
 the kanji/hanzi you know just for the fun of it, competition, bragging,
@@ -9,9 +9,9 @@ Poster" (for me at least, I believe I'll not print any other for the time
 being).&lt;/p&gt;
 &lt;p&gt;Here are the download links. They're in &lt;code&gt;.pdf&lt;/code&gt; format, A4 page size, with a 1.5 cm top margin (to write your kanji count progress or any notes) and 0.60cm right margin (for highlighted kanji count in that row, or any other characters). Comes in two different flavors:&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.mediafire.com/view/?574al175dwc959t"&gt;Handwritten style&lt;/a&gt;, if you're feeling adventurous&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Sample of handwriten style" src="http://blog.quinzi.com.ar/images/2012/kanjiposter-handwrittenthumb.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sample of handwriten style" src="http://blog.aquinzi.com/images/2012/kanjiposter-handwrittenthumb.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Or &lt;a href="http://www.mediafire.com/view/?ymbmdwkdotd07z7"&gt;Mincho style&lt;/a&gt;, for normal computing... ermm.. reading?&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Sample of mincho style" src="http://blog.quinzi.com.ar/images/2012/kanjiposter-minchothumb.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sample of mincho style" src="http://blog.aquinzi.com/images/2012/kanjiposter-minchothumb.gif"&gt;&lt;/p&gt;
 &lt;p&gt;This "Ultimate Poor Man's Kanji Poster" sorts the kanji by frequency. Not
 newspaper frequency as you usually find, no my dear, it's the frequency
 from a word/kanji frequency program I've found online. This means that
@@ -112,7 +112,7 @@ Imaginate que no entiendo ni jota, pero me gusta mirar! Hay dos o  tres que ya l
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>kanji</category><category>nihongo</category><guid>http://blog.quinzi.com.ar/kanji-poster/</guid><pubDate>Mon, 08 Oct 2012 00:00:00 GMT</pubDate></item><item><title>Sincronizar Tagaini Jisho con Dropbox</title><link>http://blog.quinzi.com.ar/tagaini-jisho-sincronizar-bd/</link><description>&lt;p&gt;Buscando programas que me ayuden con mi aprendizaje de japonés,
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>kanji</category><category>nihongo</category><guid>http://blog.aquinzi.com/kanji-poster/</guid><pubDate>Mon, 08 Oct 2012 00:00:00 GMT</pubDate></item><item><title>Sincronizar Tagaini Jisho con Dropbox</title><link>http://blog.aquinzi.com/tagaini-jisho-sincronizar-bd/</link><description>&lt;p&gt;Buscando programas que me ayuden con mi aprendizaje de japonés,
 andaba en busca de uno que manejara mi listado de vocabularios. Uno que
 no me deje poner duplicados, que me deje categorizar las palabras, con
 un par de datos extras.&lt;/p&gt;
@@ -180,4 +180,4 @@ July 27, 2011 at 9:06 pm    &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata -
 
 &lt;p&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/tagaini-jisho-sincronizar-bd/</guid><pubDate>Tue, 26 Jul 2011 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.aquinzi.com/tagaini-jisho-sincronizar-bd/</guid><pubDate>Tue, 26 Jul 2011 00:00:00 GMT</pubDate></item></channel></rss>

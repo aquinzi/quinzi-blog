@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (foobar2000)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/foobar2000.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 18 Feb 2014 11:00:28 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>foobar2000 theme: Tomorrow Night Bright</title><link>http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (foobar2000)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/es/tags/foobar2000.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Fri, 21 Mar 2014 17:50:50 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>foobar2000 theme: Tomorrow Night Bright</title><link>http://blog.aquinzi.com/./es/foobar2000-theme-tomorrow-night/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/#requerimientos"&gt;Requerimientos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/foobar2000-theme-tomorrow-night/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/foobar2000-theme-tomorrow-night/#requerimientos"&gt;Requerimientos&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Experimentando con el Default UI de foobar2000, salió este theme muy minimalista/simple con los colores de &lt;a href="https://github.com/ChrisKempson/Tomorrow-Theme"&gt;Tomorrow theme&lt;/a&gt; versión Night Bright.&lt;/p&gt;
@@ -10,13 +10,13 @@
 &lt;p&gt;Se tiene el menu + controles en una misma linea. Debajo, el seekbar + los playlists en un dropdown menu. En el status bar esta el tiempo, rating (vista) y volúmen.&lt;/p&gt;
 &lt;p&gt;Son cuatro vistas/tabs en total:&lt;/p&gt;
 &lt;p&gt;"Now" contiene el playlist actual, agrupado por artista (en azul) + album (verde). Los tracks solo muestran su titulo (rojo) y su comentario (naranja).&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Lista de reproducción activa" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_now.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Lista de reproducción activa" src="http://blog.aquinzi.com/images/2013/foobar_tomorrow_now.png"&gt;&lt;/p&gt;
 &lt;p&gt;"Lyrics" tiene el cover art y la letra.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Panel con letra de canción" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_lyrics.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Panel con letra de canción" src="http://blog.aquinzi.com/images/2013/foobar_tomorrow_lyrics.png"&gt;&lt;/p&gt;
 &lt;p&gt;"Meta" son los datos del track que se esta reproduciendo.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Propiedades del tema" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_meta.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Propiedades del tema" src="http://blog.aquinzi.com/images/2013/foobar_tomorrow_meta.png"&gt;&lt;/p&gt;
 &lt;p&gt;"Library" es la biblioteca.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Biblioteca" src="http://blog.quinzi.com.ar/images/2013/foobar_tomorrow_library.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Biblioteca" src="http://blog.aquinzi.com/images/2013/foobar_tomorrow_library.png"&gt;&lt;/p&gt;
 &lt;p&gt;No tiene lista de playlist (solo el dropdown) porque no hay uno que me liste y prevenga el accidental borrado :P. Si necesitas manejarlos, vas a &lt;kbd&gt;View &amp;gt; Playlist Manager&lt;/kbd&gt;.&lt;/p&gt;
 &lt;h2 id="requerimientos"&gt;Requerimientos&lt;/h2&gt;
 &lt;ul&gt;
@@ -29,12 +29,12 @@
 &lt;p&gt;Importá el theme (&lt;kbd&gt;Preferences &amp;gt; Display &amp;gt; Default User Interface &amp;gt; Import theme&lt;/kbd&gt;). En el playlist, hace &lt;kbd&gt;click derecho &amp;gt; grouping &amp;gt; inline - Tomorrow night bright&lt;/kbd&gt;. En el lyrics, edita el panel (&lt;kbd&gt;panel preferences&lt;/kbd&gt;) y pone el &lt;code&gt;highlight color&lt;/code&gt; a RGB &lt;code&gt;236,206,88&lt;/code&gt; (amarillito).&lt;/p&gt;
 &lt;p&gt;El color de los "separadores" de los titulos (en el playlist, el &lt;code&gt;%artist%&lt;/code&gt;, &lt;code&gt;%album%&lt;/code&gt;; y en el meta el "metadata", "location", "other"...) esta configurado en &lt;kbd&gt;Default User Interface &amp;gt; Colors and fonts&lt;/kbd&gt; (por si no te gusta el violeta).&lt;/p&gt;
 &lt;p&gt;Si queres poner otros botones de control, necesitas que esten en &lt;code&gt;.ico&lt;/code&gt; de 16x16.&lt;/p&gt;
-&lt;p&gt;El theme para Windows es &lt;a href="http://www.deviantart.com/art/SlanXP-2-0-For-7-134955170"&gt;SlanXP2 for 7&lt;/a&gt;, por eso el DUI se ve lindo.&lt;/p&gt;</description><category>foobar2000</category><category>theme</category><guid>http://blog.quinzi.com.ar/./es/foobar2000-theme-tomorrow-night/</guid><pubDate>Thu, 07 Nov 2013 00:00:00 GMT</pubDate></item><item><title>foobar2000 theme: Simple Colorful</title><link>http://blog.quinzi.com.ar/./es/foobar2000-theme-simple-colorful/</link><description>&lt;div class="toc"&gt;
+&lt;p&gt;El theme para Windows es &lt;a href="http://www.deviantart.com/art/SlanXP-2-0-For-7-134955170"&gt;SlanXP2 for 7&lt;/a&gt;, por eso el DUI se ve lindo.&lt;/p&gt;</description><category>foobar2000</category><category>theme</category><guid>http://blog.aquinzi.com/./es/foobar2000-theme-tomorrow-night/</guid><pubDate>Thu, 07 Nov 2013 00:00:00 GMT</pubDate></item><item><title>foobar2000 theme: Simple Colorful</title><link>http://blog.aquinzi.com/./es/foobar2000-theme-simple-colorful/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/foobar2000-theme-simple-colorful/#requerimientos"&gt;Requerimientos&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/foobar2000-theme-simple-colorful/#instalacion"&gt;Instalación&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/foobar2000-theme-simple-colorful/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/foobar2000-theme-simple-colorful/#a-tener-en-cuenta"&gt;A tener en cuenta&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/foobar2000-theme-simple-colorful/#requerimientos"&gt;Requerimientos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/foobar2000-theme-simple-colorful/#instalacion"&gt;Instalación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/foobar2000-theme-simple-colorful/#screenshots"&gt;Screenshots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/foobar2000-theme-simple-colorful/#a-tener-en-cuenta"&gt;A tener en cuenta&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;¿De que se trata esto? Esto es un theme x2 para &lt;a href="http://www.foobar2000.org/"&gt;foobar2000&lt;/a&gt;, que es
@@ -82,14 +82,14 @@ cambiar, editas la columna.&lt;/p&gt;
 quieras. Yo tengo tiempo transcurrido - tiempo total.&lt;/p&gt;
 &lt;h2 id="screenshots"&gt;Screenshots&lt;/h2&gt;
 &lt;p&gt;Veamos primero el theme en la UI default:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Playlist de foobar2000 con Default UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_dui01.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Librería de foobar2000 (facets) con Default UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_dui02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playlist de foobar2000 con Default UI" src="http://blog.aquinzi.com/images/2012/foobar_simplecolorful_dui01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Librería de foobar2000 (facets) con Default UI" src="http://blog.aquinzi.com/images/2012/foobar_simplecolorful_dui02.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Nada mal para ser la vista default con sus limitaciones (como la falta
 de colores en la interfaz... how dare you). Crease a no, los botones de
 playback se pueden cambiar, pero requieren &lt;code&gt;.ico&lt;/code&gt; que no tenia a mano.&lt;/p&gt;
 &lt;p&gt;Ahora el que uso, el theme con Columns UI.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Playlist de foobar2000 con Columns UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_cui01.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Librería de foobar2000 (EsPlaylist) con Columns UI" src="http://blog.quinzi.com.ar/images/2012/foobar_simplecolorful_cui02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playlist de foobar2000 con Columns UI" src="http://blog.aquinzi.com/images/2012/foobar_simplecolorful_cui01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Librería de foobar2000 (EsPlaylist) con Columns UI" src="http://blog.aquinzi.com/images/2012/foobar_simplecolorful_cui02.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Esta mas lindo, no? :D Como veras, esta configuracion no tiene seekbar
 que ande/se pueda adelantar atrasar un tema. Eso esta... escondido.
 Posate unos segundos debajo del cover art y aparece.&lt;/p&gt;
@@ -117,4 +117,4 @@ plugin+script.&lt;/p&gt;
 &lt;p&gt;Parece que el title bar no te lo guarda; tampoco es difícil cambiarlo.&lt;/p&gt;
 &lt;p&gt;Vuelvo a repetir, esto es lo que uso, vos lo tomas como base y editalo
 como quieras. Leyendo el &lt;a href="http://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Reference"&gt;Titleformat Reference&lt;/a&gt; vas a poder modificar
-cosas sin entrar a nada de programación (a no ser que lo quieras). &lt;/p&gt;</description><category>foobar2000</category><category>theme</category><guid>http://blog.quinzi.com.ar/./es/foobar2000-theme-simple-colorful/</guid><pubDate>Thu, 13 Dec 2012 00:00:00 GMT</pubDate></item></channel></rss>
+cosas sin entrar a nada de programación (a no ser que lo quieras). &lt;/p&gt;</description><category>foobar2000</category><category>theme</category><guid>http://blog.aquinzi.com/./es/foobar2000-theme-simple-colorful/</guid><pubDate>Thu, 13 Dec 2012 00:00:00 GMT</pubDate></item></channel></rss>

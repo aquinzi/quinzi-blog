@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (sd)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/sd.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 18 Feb 2014 11:00:27 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SD Write Protected Syndrome</title><link>http://blog.quinzi.com.ar/./es/sd-write-protected-syndrome/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (sd)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/es/tags/sd.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Fri, 21 Mar 2014 17:50:51 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SD Write Protected Syndrome</title><link>http://blog.aquinzi.com/./es/sd-write-protected-syndrome/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/sd-write-protected-syndrome/#de-que-se-trata"&gt;De qué se trata?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/sd-write-protected-syndrome/#experienciasarreglos-anteriores"&gt;Experiencias/Arreglos anteriores&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/sd-write-protected-syndrome/#problemas-actuales"&gt;Problemas actuales&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/sd-write-protected-syndrome/#arreglo"&gt;Arreglo&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/sd-write-protected-syndrome/#solucion-original"&gt;Solución original&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/sd-write-protected-syndrome/#mi-solucion"&gt;Mi solución&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/sd-write-protected-syndrome/#de-que-se-trata"&gt;De qué se trata?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/sd-write-protected-syndrome/#experienciasarreglos-anteriores"&gt;Experiencias/Arreglos anteriores&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/sd-write-protected-syndrome/#problemas-actuales"&gt;Problemas actuales&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/sd-write-protected-syndrome/#arreglo"&gt;Arreglo&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/sd-write-protected-syndrome/#solucion-original"&gt;Solución original&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/sd-write-protected-syndrome/#mi-solucion"&gt;Mi solución&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -48,7 +48,7 @@ dos?", felizmente puse cinta en casi todos lados y... no funcionó!
 PERO, me surgió una idea, pense:
 "mmmm, y si le pongo la &lt;strong&gt;trabita en el medio&lt;/strong&gt;?". Ahora SI funcionó.
 Yupi, wheee, y todas las alegrias.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Diagrama de cómo colocar cinta y trabita" src="http://blog.quinzi.com.ar/images/2009/sdfix_01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Diagrama de cómo colocar cinta y trabita" src="http://blog.aquinzi.com/images/2009/sdfix_01.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Ok, todo muy bonito pero, cada vez que quiera hacer un cambio tengo que
 poner cinta? mmmm.... a ver, probemos &lt;strong&gt;SIN cinta&lt;/strong&gt;, dejando el switch en
 el medio. Funcionó! :D&lt;/p&gt;
@@ -158,4 +158,4 @@ to SD Adapters no.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>sd</category><category>cards</category><guid>http://blog.quinzi.com.ar/./es/sd-write-protected-syndrome/</guid><pubDate>Sun, 27 Sep 2009 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><category>sd</category><category>cards</category><guid>http://blog.aquinzi.com/./es/sd-write-protected-syndrome/</guid><pubDate>Sun, 27 Sep 2009 00:00:00 GMT</pubDate></item></channel></rss>

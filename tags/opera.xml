@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (opera)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/opera.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 18 Feb 2014 11:00:28 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Editar menú contextual de Opera</title><link>http://blog.quinzi.com.ar/opera-editar-menu-contextual/</link><description>&lt;p&gt;Teniendo problemas con la conexión, me decidí a volver a usar gestores de descargas, pero tales (o mejor, &lt;a href="http://www.orbitdownloader.com/"&gt;Orbit Downloader&lt;/a&gt;) no se integraban con Opera. &lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (opera)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/tags/opera.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 21 Mar 2014 17:50:50 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Editar menú contextual de Opera</title><link>http://blog.aquinzi.com/opera-editar-menu-contextual/</link><description>&lt;p&gt;Teniendo problemas con la conexión, me decidí a volver a usar gestores de descargas, pero tales (o mejor, &lt;a href="http://www.orbitdownloader.com/"&gt;Orbit Downloader&lt;/a&gt;) no se integraban con Opera. &lt;/p&gt;
 &lt;p&gt;En Opera vayan a &lt;kbd&gt;Herramientas &amp;gt; Preferencias&lt;/kbd&gt; (o
 &lt;kbd&gt;alt+p&lt;/kbd&gt;), pestaña &lt;kbd&gt;Avanzado&lt;/kbd&gt; y a la barra de la izquierda
 vayan a &lt;kbd&gt;Barras&lt;/kbd&gt;.&lt;/p&gt;
 &lt;p&gt;Opcional: duplicar el &lt;code&gt;Opera Standard&lt;/code&gt; en &lt;kbd&gt;Configurar menú&lt;/kbd&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Menu Setup de Opera" src="http://blog.quinzi.com.ar/images/2009/opera01.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menu Setup de Opera" src="http://blog.aquinzi.com/images/2009/opera01.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Una vez duplicado, cierren Opera. Vayan a su profile + menu, usualmente es en: &lt;code&gt;C:\Documents and Settings\[usuario]\Datos de programa\Opera\[versión de Opera]\menu&lt;/code&gt;. Si no saben, vayan a &lt;kbd&gt;opera:about&lt;/kbd&gt; (yendo por el menu &lt;kbd&gt;Ayuda &amp;gt; Acerca de Opera&lt;/kbd&gt;) y fijense en la sección de
 &lt;code&gt;Rutas&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;En esa carpeta se encuentra un archivo &lt;code&gt;.ini&lt;/code&gt;. En mi caso, como no le
@@ -23,7 +23,7 @@ click derecho/menú contextual. &lt;/p&gt;
 &lt;code&gt;%l&lt;/code&gt; es el &lt;code&gt;lnk&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Guarden el archivo, (re)inicien Opera. Vayan a un link de descarga
 (cualquier tipo de archivo) y et voilà! aparece en el menú!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.quinzi.com.ar/images/2009/opera02.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.aquinzi.com/images/2009/opera02.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Hay otra opción que es para descargar contenido multimedia al estilo
 Youtube. Obviamente, se puede hacer abriendo &lt;code&gt;grab++&lt;/code&gt; (viene incluído
 en el paquete), pero como a veces no hay ganas de abrirlo, también se
@@ -36,10 +36,10 @@ click en un lugar "limpio" (sin imágenes, links, etc). Agreguen y modifiquen al
 
 &lt;p&gt;Guarden y reinicien Opera. En un lugar X de la página (en este ejemplo, un video
 de Youtube, al lado del video), y sale el menú:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.quinzi.com.ar/images/2009/opera03.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Botón contextual con opción agregada" src="http://blog.aquinzi.com/images/2009/opera03.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Esto abre el &lt;code&gt;Grab++&lt;/code&gt; (un addon sería) y trae el video (previa
 recarga de la página). &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Muestra del addon" src="http://blog.quinzi.com.ar/images/2009/opera04.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Muestra del addon" src="http://blog.aquinzi.com/images/2009/opera04.gif"&gt;&lt;/p&gt;
 &lt;h3&gt; Comments &lt;/h3&gt;
 
 &lt;div id="comments"&gt;
@@ -64,4 +64,4 @@ August 16, 2009 at 4:52 pm    &lt;/div&gt;&lt;!-- .comment-meta .commentmetadata
 
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/opera-editar-menu-contextual/</guid><pubDate>Sun, 16 Aug 2009 16:10:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.aquinzi.com/opera-editar-menu-contextual/</guid><pubDate>Sun, 16 Aug 2009 16:10:00 GMT</pubDate></item></channel></rss>

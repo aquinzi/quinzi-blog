@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (java)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/java.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 18 Feb 2014 11:00:28 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Crear Javadoc</title><link>http://blog.quinzi.com.ar/javadoc/</link><description>&lt;p&gt;Un Javadoc es un generador de documentación para API en HTML. Para los demás mortales: esa
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (java)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/tags/java.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 21 Mar 2014 17:50:50 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Crear Javadoc</title><link>http://blog.aquinzi.com/javadoc/</link><description>&lt;p&gt;Un Javadoc es un generador de documentación para API en HTML. Para los demás mortales: esa
 información que sale al escribir algun nombre de una
 variable/objeto/método seguido de un punto, seleccionando después el
 método que se quiere.&lt;/p&gt;
@@ -23,17 +23,17 @@ tal. Comenzar un comentario (&lt;code&gt;/**&lt;/code&gt;) y den &lt;kbd&gt;ente
 
 &lt;p&gt;Nótese que al poner &lt;code&gt;@&lt;/code&gt; se despliegan un par opciones, pero no creo que se necesiten mucho.&lt;/p&gt;
 &lt;p&gt;Ahora van a x lugar, empiezan a tipear y:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Javadoc tooltip" src="http://blog.quinzi.com.ar/images/2009/javadoc01.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Javadoc tooltip" src="http://blog.aquinzi.com/images/2009/javadoc01.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Qué lindo no? Ahora no tienen que estar adivinando qué hace,
 qué retorna (si es &lt;code&gt;true-false&lt;/code&gt; para hacer algo que no tiene que ver con
 verdadero-falso).&lt;/p&gt;
 &lt;p&gt;Para los atributos/variables es lo mismo. No sé para qué puede servir
 pero si le pones nombres genéricos del estilo "a", "b", "foo1", "foo2",
 "foodos" y por el estilo, sirve.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Javadoc Tooltip para variables" src="http://blog.quinzi.com.ar/images/2009/javadoc02.gif"&gt;&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/javadoc/</guid><pubDate>Tue, 24 Nov 2009 00:00:00 GMT</pubDate></item><item><title>NetBeans: problemas con el menú</title><link>http://blog.quinzi.com.ar/netbeans-problemas-menu/</link><description>&lt;p&gt;Si tenes el NetBeans (u otro programa de Java, bajo Windows), lo inicias y tenes unos caracteres raros/extraños que no son de un idioma, como:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Problema del menu en programa" src="http://blog.quinzi.com.ar/images/2009/netbeans01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Javadoc Tooltip para variables" src="http://blog.aquinzi.com/images/2009/javadoc02.gif"&gt;&lt;/p&gt;</description><guid>http://blog.aquinzi.com/javadoc/</guid><pubDate>Tue, 24 Nov 2009 00:00:00 GMT</pubDate></item><item><title>NetBeans: problemas con el menú</title><link>http://blog.aquinzi.com/netbeans-problemas-menu/</link><description>&lt;p&gt;Si tenes el NetBeans (u otro programa de Java, bajo Windows), lo inicias y tenes unos caracteres raros/extraños que no son de un idioma, como:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Problema del menu en programa" src="http://blog.aquinzi.com/images/2009/netbeans01.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Se arregla sólo cambiando el &lt;em&gt;Look &amp;amp; Feel&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Problema del menu resuelto" src="http://blog.quinzi.com.ar/images/2009/netbeans02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Problema del menu resuelto" src="http://blog.aquinzi.com/images/2009/netbeans02.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Y parece que solo da problemas el &lt;em&gt;Look and feel&lt;/em&gt; de GTK (&lt;code&gt;com.sun.java.swing.plaf.gtk.GTKLookAndFeel&lt;/code&gt;)&lt;/p&gt;
 &lt;h2 id="como-se-arregla"&gt;Cómo se arregla&lt;/h2&gt;
 &lt;ol&gt;
@@ -47,7 +47,7 @@ javax.swing.plaf.metal.MetalLookAndFeel&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Reiniciá la IDE.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;code&gt;MetalLookAndFeel&lt;/code&gt; no es el único que funciona, también podes usar "Nimbus" con: &lt;code&gt;com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Muestra de skin" src="http://blog.quinzi.com.ar/images/2009/netbeans03.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Muestra de skin" src="http://blog.aquinzi.com/images/2009/netbeans03.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Fuente: &lt;a href="http://blogs.sun.com/netbeansphp/entry/how_to_change_look_and"&gt;Sun blogs&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt; Comments &lt;/h3&gt;
 
@@ -99,4 +99,4 @@ August 25, 2009 at 2:35 pm    &lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><guid>http://blog.quinzi.com.ar/netbeans-problemas-menu/</guid><pubDate>Sat, 22 Aug 2009 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><guid>http://blog.aquinzi.com/netbeans-problemas-menu/</guid><pubDate>Sat, 22 Aug 2009 00:00:00 GMT</pubDate></item></channel></rss>

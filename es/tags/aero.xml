@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (aero)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/es/tags/aero.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 18 Feb 2014 11:00:27 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Windows 7: Themes personalizados y Aero Glass</title><link>http://blog.quinzi.com.ar/./es/windows7-themes-aero/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (aero)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/es/tags/aero.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Fri, 21 Mar 2014 17:50:49 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Windows 7: Themes personalizados y Aero Glass</title><link>http://blog.aquinzi.com/./es/windows7-themes-aero/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/windows7-themes-aero/#themes-personalizados"&gt;Themes personalizados&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/windows7-themes-aero/#mejor-theme-manager"&gt;Mejor theme manager&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/./es/windows7-themes-aero/#aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/windows7-themes-aero/#themes-personalizados"&gt;Themes personalizados&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/windows7-themes-aero/#mejor-theme-manager"&gt;Mejor theme manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/windows7-themes-aero/#aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;Tenés Windows 7 Home Basic (o similar), seguro que te aburriste del theme/tema &lt;em&gt;baby blue&lt;/em&gt; que trae por defecto que no se puede cambiar. No esperes más y cambialo ya.&lt;/p&gt;
 &lt;h2 id="themes-personalizados"&gt;Themes personalizados&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Desactivar el UAC: (&lt;kbd&gt;Panel de Control &amp;gt; Cambiar Configuración de Control del Usuario&lt;/kbd&gt;. O buscar &lt;kbd&gt;UAC&lt;/kbd&gt; en la cajita de búsqueda del menú inicio o panel de control). Lo que hay que hacer es desactivarlo o ponerlo en la segunda barrita (contando desde abajo).&lt;/li&gt;
-&lt;li&gt;Instalar el &lt;a href="http://uxstyle.com/"&gt;UxStyle Core&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/./es/windows7-themes-aero/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;: Leer los Términos de Servicio y si se
+&lt;li&gt;Instalar el &lt;a href="http://uxstyle.com/"&gt;UxStyle Core&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/./es/windows7-themes-aero/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;: Leer los Términos de Servicio y si se
 está de acuerdo, siguiente. Si no se está de acuerdo, igual.&lt;/li&gt;
 &lt;li&gt;Opcional: Poner la configuración de UAC como se tenia anteriormente&lt;/li&gt;
 &lt;li&gt;Descargar e instalar los temas. Éstos van en &lt;code&gt;C:\Windows\Resources\Themes&lt;/code&gt;&lt;/li&gt;
@@ -22,9 +22,9 @@ no queda otra que ir clickeando y ver como queda en la muestra :)&lt;/li&gt;
 &lt;p&gt;Fuente: &lt;a href="http://www.sevenforums.com/tutorials/34579-enabling-custom-themes-windows-7-a.html"&gt;Seven forums: enabling custom themes&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="mejor-theme-manager"&gt;Mejor theme manager&lt;/h2&gt;
 &lt;p&gt;Como viene con Windows 7 Home Basic (yendo por &lt;kbd&gt;Panel de Control &amp;gt; Cambiar Combinación de colores&lt;/kbd&gt;):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Theme manager de Windows 7 Home Basic" src="http://blog.quinzi.com.ar/images/2013/win7_themes_settings.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Theme manager de Windows 7 Home Basic" src="http://blog.aquinzi.com/images/2013/win7_themes_settings.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Al instalar themes, te repite el nombre "Windows 7 Standard/Basic" varias veces. Instalando &lt;a href="http://winaero.com/download.php?view.3"&gt;Personalization Panel&lt;/a&gt; (como administrador) tenes un mejor theme manager:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Personalization Panel" src="http://blog.quinzi.com.ar/images/2013/win7_themes_personalization_panel.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Personalization Panel" src="http://blog.aquinzi.com/images/2013/win7_themes_personalization_panel.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Ademas de que:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Podes cambiar el wallpaper en Windows 7 Starter&lt;/li&gt;
@@ -32,7 +32,7 @@ no queda otra que ir clickeando y ver como queda en la muestra :)&lt;/li&gt;
 &lt;li&gt;Tiene asociaciones de archivos &lt;code&gt;*.theme&lt;/code&gt;, &lt;code&gt;*.msstyles&lt;/code&gt; y &lt;code&gt;*.themepack&lt;/code&gt;. Basicamente permite hacer doble click sobre el theme y te salta el programa para que eligas.&lt;/li&gt;
 &lt;li&gt;Dependiendo del theme, podes tener cierta transparencia:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Mostrando poca transparencia en los bordes" src="http://blog.quinzi.com.ar/images/2013/win7_themes_blacktrans.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mostrando poca transparencia en los bordes" src="http://blog.aquinzi.com/images/2013/win7_themes_blacktrans.jpg"&gt;&lt;/p&gt;
 &lt;h2 id="aero-transparencias-y-mas"&gt;Aero (Transparencias y mas)&lt;/h2&gt;
 &lt;p&gt;Siempre y cuando tu compu lo permita, podes activar el Aero instalando el &lt;a href="http://winaero.com/download.php?view.13"&gt;Aero Patch&lt;/a&gt;. Esto te da:&lt;/p&gt;
 &lt;ul&gt;
@@ -42,16 +42,16 @@ no queda otra que ir clickeando y ver como queda en la muestra :)&lt;/li&gt;
 &lt;li&gt;Soporte de themes de terceros (con lo que parece no necesitar el &lt;a href="http://uxstyle.com/"&gt;UxStyle Core&lt;/a&gt;, but you tell me)&lt;/li&gt;
 &lt;li&gt;El theme manager de los "Windows 7 polenta":&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Theme manager Windows 7" src="http://blog.quinzi.com.ar/images/2013/win7_themes_manager.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Theme manager Windows 7" src="http://blog.aquinzi.com/images/2013/win7_themes_manager.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;e incluso te da la opción en el menú contextual, que antes no estaba:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.quinzi.com.ar/images/2013/win7_themes_contextmenu.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Menú contextual" src="http://blog.aquinzi.com/images/2013/win7_themes_contextmenu.png"&gt;&lt;/p&gt;
 &lt;p&gt;Instalas normalmente (como administrador) y se aplica el patch. No tiene forma grafica de avisarte que terminó (teoricamente se reinicia el sistema solo), asique esperá unos segundos (como 10, o cuando parece que no esta procesando nada) y reiniciá (&lt;strong&gt;REINICIÁ&lt;/strong&gt;, no cierres y entres de nuevo a la sesión, que no funciona). Para desinstalar, volves a correr el patch.&lt;/p&gt;
 &lt;p&gt;Transparencia "full" (&lt;a href="http://ap-graphik.deviantart.com/art/Soft7-2-0-161602097"&gt;Soft7&lt;/a&gt;):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Estilo Visual, mucha transparencia" src="http://blog.quinzi.com.ar/images/2013/win7_themes_soft.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Estilo Visual, mucha transparencia" src="http://blog.aquinzi.com/images/2013/win7_themes_soft.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;También podes usar totalmente opaco (&lt;a href="http://www.deviantart.com/art/1-268398605"&gt;+1 Dark&lt;/a&gt;):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Estilo Visual, opaco" src="http://blog.quinzi.com.ar/images/2013/win7_themes_flat.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Estilo Visual, opaco" src="http://blog.aquinzi.com/images/2013/win7_themes_flat.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;O miti y miti (&lt;a href="http://snipes2.deviantart.com/art/mini-em-all-Update-276670844"&gt;mini'em all, alien 1&lt;/a&gt;):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Estilo Visual, opaco y transparencia" src="http://blog.quinzi.com.ar/images/2013/win7_themes_miniem.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Estilo Visual, opaco y transparencia" src="http://blog.aquinzi.com/images/2013/win7_themes_miniem.jpg"&gt;&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -62,7 +62,7 @@ un servicio (lo pueden encontrar en el &lt;kbd&gt;Administrador de
 tareas &amp;gt; servicios&lt;/kbd&gt;, se llama &lt;code&gt;UnsignedThemes.exe&lt;/code&gt;) que ocupa un poquito de
 memoria y "es un poco más seguro" (para el sistema) que los parches. El
 proceso "engaña" a Windows en pensar que todos los temas estan firmados
-y asi poder usar los personalizados. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/./es/windows7-themes-aero/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+y asi poder usar los personalizados. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/./es/windows7-themes-aero/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><category>Windows 7</category><category>aero</category><category>themes</category><guid>http://blog.quinzi.com.ar/./es/windows7-themes-aero/</guid><pubDate>Sat, 13 Feb 2010 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>Windows 7</category><category>aero</category><category>themes</category><guid>http://blog.aquinzi.com/./es/windows7-themes-aero/</guid><pubDate>Sat, 13 Feb 2010 00:00:00 GMT</pubDate></item></channel></rss>

@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (solved)</title><link>http://blog.quinzi.com.ar/</link><description></description><atom:link href="http://blog.quinzi.com.ar/tags/cat_solved.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 18 Feb 2014 11:00:29 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Windows 7: Arreglar los iconos en Explorer</title><link>http://blog.quinzi.com.ar/windows7-shell-icons/</link><description>&lt;p&gt;Con esta era de usar programitas varios para sincronizar, otros para control de código, y otros que no puedo recordar ahora; es necesario tener los overlay icons en Windows Explorer:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Ejemplo de iconos de estado" src="http://blog.quinzi.com.ar/images/2013/win7_shell_icons.png"&gt;&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (solved)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/tags/cat_solved.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 21 Mar 2014 17:50:51 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Windows 7: Arreglar los iconos en Explorer</title><link>http://blog.aquinzi.com/windows7-shell-icons/</link><description>&lt;p&gt;Con esta era de usar programitas varios para sincronizar, otros para control de código, y otros que no puedo recordar ahora; es necesario tener los overlay icons en Windows Explorer:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ejemplo de iconos de estado" src="http://blog.aquinzi.com/images/2013/win7_shell_icons.png"&gt;&lt;/p&gt;
 &lt;p&gt;Personalmente se me desaparecían y, aunque limpiara la cache de los programas, nunca aparecían. Hay algunos que podes vivir sin ellos, pero otros no. Capaz instalaste un &lt;a href="https://copy.com?r=hQHBH9"&gt;programa&lt;/a&gt; y te desplazó los de &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;otro&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;¿Pero cuál es el problema? Que los genios de Microsoft limitan la cantidad de iconos que se pueden usar a unos meros &lt;strong&gt;11 iconos totales para el usuario&lt;/strong&gt;. WHAT THE HELL.&lt;/p&gt;
 &lt;p&gt;Para arreglar el tema hay que pasar por el registro. Entrá al bonito &lt;code&gt;regedit&lt;/code&gt; y navegá hasta &lt;code&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\&lt;/code&gt;. Antes de tocar mano, hacete un backup del &lt;code&gt;.reg&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;La idea es que de los 30 que debes tener, solo elegis los 11 mas importantes. ¿Cómo decidis la importancia? renombrandolos, porque Windows los elige por orden alfabético. Poneles números adelante o "z", "x", "y", esas letras que no se usan. Yo prioricé algunos de TortoiseSVN, un par de &lt;a href="https://www.dropbox.com/referrals/NTYxNzc3MDQ5"&gt;Dropbox&lt;/a&gt;, y el resto como sea el orden.&lt;/p&gt;
-&lt;p&gt;Una vez que estás feliz, reiniciá el explorer.exe: &lt;kbd&gt;Administrador de tareas &amp;gt; matar explorer&lt;/kbd&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/windows7-shell-icons/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;. Después lo inicias en &lt;kbd&gt;Nueva tarea&lt;/kbd&gt; (o si queres desloguearte y loguearte, si queres reiniciar también, pero no hace falta).&lt;/p&gt;
+&lt;p&gt;Una vez que estás feliz, reiniciá el explorer.exe: &lt;kbd&gt;Administrador de tareas &amp;gt; matar explorer&lt;/kbd&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/windows7-shell-icons/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;. Después lo inicias en &lt;kbd&gt;Nueva tarea&lt;/kbd&gt; (o si queres desloguearte y loguearte, si queres reiniciar también, pero no hace falta).&lt;/p&gt;
 &lt;p&gt;Fuente: &lt;a href="http://www.oliverpearmain.com/blog/dropbox-and-tortoise-svnsubversion-icon-overlays-in-harmony/"&gt;oliverpearmain: Dropbox and TortoiseSVN icons overlays in harmony&lt;/a&gt;&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;Kill, kill, kill! &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/windows7-shell-icons/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kill, kill, kill! &lt;a class="footnote-backref" href="http://blog.aquinzi.com/windows7-shell-icons/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><guid>http://blog.quinzi.com.ar/windows7-shell-icons/</guid><pubDate>Thu, 12 Dec 2013 00:00:00 GMT</pubDate></item><item><title>Android: dpi por app</title><link>http://blog.quinzi.com.ar/android-dpi-app/</link><description>&lt;p&gt;Todos sabemos que Android tiene sus problemas, que Google los esta tratando de mejorar poco a poco. Todos sabemos que Google tiene servicios copados gratuitos. Y todos sabemos que Google dejó de lado las interfaces hechas por ingenieros&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/android-dpi-app/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; y contrató diseñadores. También sabemos que están tirando a la interfaz flat/minimalista, que no es fácil de dominar para que quede apetecible a los ojos.&lt;/p&gt;
+&lt;/div&gt;</description><guid>http://blog.aquinzi.com/windows7-shell-icons/</guid><pubDate>Thu, 12 Dec 2013 00:00:00 GMT</pubDate></item><item><title>Android: dpi por app</title><link>http://blog.aquinzi.com/android-dpi-app/</link><description>&lt;p&gt;Todos sabemos que Android tiene sus problemas, que Google los esta tratando de mejorar poco a poco. Todos sabemos que Google tiene servicios copados gratuitos. Y todos sabemos que Google dejó de lado las interfaces hechas por ingenieros&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; y contrató diseñadores. También sabemos que están tirando a la interfaz flat/minimalista, que no es fácil de dominar para que quede apetecible a los ojos.&lt;/p&gt;
 &lt;p&gt;¿A que voy con esto? Al "moco" que se metió al actualizar la Play Store. Acá te refresco un poco:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Playstore opciones grandes" src="http://blog.quinzi.com.ar/images/2013/android_playstoreflat-orig.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;En las tablets no es tan mala. En los celulares con mucha resolución creo que tampoco. El problema va con los celus con poca resolución&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/android-dpi-app/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;, como el mío (&lt;a href="http://www.gsmarena.com/lg_optimus_one_p500-3516.php"&gt;LG Optimus One (p500)&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playstore opciones grandes" src="http://blog.aquinzi.com/images/2013/android_playstoreflat-orig.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;En las tablets no es tan mala. En los celulares con mucha resolución creo que tampoco. El problema va con los celus con poca resolución&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;, como el mío (&lt;a href="http://www.gsmarena.com/lg_optimus_one_p500-3516.php"&gt;LG Optimus One (p500)&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;¿Cómo arreglar esto y dejar la Play Store mas usable? Cambiando el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt;. ¿Cómo arreglar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt;? La opción mas popular es instalando &lt;a href="http://paranoid-rom.com/"&gt;Paranoid Android&lt;/a&gt; (me encanta el loguito). Cambiando a esta ROM, podes cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa (cambiar el color de la status bar y nav bar, otras cucherías pero no viene al cuento). La había probado (por otras razones) pero en mi celu era muy lenta y no daba dejarla solo para cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por uno o dos programas.&lt;/p&gt;
-&lt;p&gt;Dejé de lado esto hasta que encontré otra forma navegando por ahí: instalando el &lt;a href="http://forum.xda-developers.com/showthread.php?t=2072081"&gt;Xposed Framework y el Per App Settings Module&lt;/a&gt; &lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/android-dpi-app/#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;. Esto es algo asi como "instalo esta app y este módulo, y puedo cambiar el dpi :D".&lt;/p&gt;
+&lt;p&gt;Dejé de lado esto hasta que encontré otra forma navegando por ahí: instalando el &lt;a href="http://forum.xda-developers.com/showthread.php?t=2072081"&gt;Xposed Framework y el Per App Settings Module&lt;/a&gt; &lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;. Esto es algo asi como "instalo esta app y este módulo, y puedo cambiar el dpi :D".&lt;/p&gt;
 &lt;p&gt;Es fácil de usar. Solo tenes que buscar la app que queres toquetear, le pones el "on", toqueteas, ponés guardar y reinicias el programa. Listo. Cambios hechos.&lt;/p&gt;
 &lt;p&gt;Jugando, llegué a poner así la Play Store:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Playstore opciones en cuadrados" src="http://blog.quinzi.com.ar/images/2013/android_playstoreflat-squares.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;De cuatro pobres opciones a nueve. Mucho mejor, pero eso de los cuadraditos no me gustaba mucho&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/android-dpi-app/#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;, asi que lo cambié a lista:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Playstore más opciones en lista" src="http://blog.quinzi.com.ar/images/2013/android_playstoreflat-list.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;De los 4 originales a 8.5. Nada mal y sigue usable. Eso si, no todo es color de rosas, porque donde te muestra la info + capturas de pantalla + descarga + comentarios + +1&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/android-dpi-app/#fn:5" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; + etc. (las capturas) se ven medio deformes:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Información de programa en Playstore" src="http://blog.quinzi.com.ar/images/2013/android_playstoreflat-info.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playstore opciones en cuadrados" src="http://blog.aquinzi.com/images/2013/android_playstoreflat-squares.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;De cuatro pobres opciones a nueve. Mucho mejor, pero eso de los cuadraditos no me gustaba mucho&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;, asi que lo cambié a lista:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Playstore más opciones en lista" src="http://blog.aquinzi.com/images/2013/android_playstoreflat-list.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;De los 4 originales a 8.5. Nada mal y sigue usable. Eso si, no todo es color de rosas, porque donde te muestra la info + capturas de pantalla + descarga + comentarios + +1&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:5" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; + etc. (las capturas) se ven medio deformes:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Información de programa en Playstore" src="http://blog.aquinzi.com/images/2013/android_playstoreflat-info.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Y, obviamente, al cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa, por lo menos en un celu como el mío, tarda unos segundos (contados) en abrir o cambiar de pantalla, pero puedo vivir con eso.&lt;/p&gt;
 &lt;p&gt;Si quieren saber los datos que usé para la Play Store, para que se den una idea:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Configuración de DPI del Playstore" src="http://blog.quinzi.com.ar/images/2013/android_playstoreflat-settings.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;También "mejoré" la app de DropBox (ahora me entran mas carpetitas en la vista), Contactos, gMail (que no lo uso en el celu, pero queda linda la tablet UI) y la cámara. Si quieren mejorar ésta última, y si usan Android 4.1&lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/android-dpi-app/#fn:6" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt; o superior, por alguna razón, el señorito Google unió la cámara con la galería, y tienen que modificar esa.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Configuración de DPI del Playstore" src="http://blog.aquinzi.com/images/2013/android_playstoreflat-settings.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;También "mejoré" la app de DropBox (ahora me entran mas carpetitas en la vista), Contactos, gMail (que no lo uso en el celu, pero queda linda la tablet UI) y la cámara. Si quieren mejorar ésta última, y si usan Android 4.1&lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:6" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt; o superior, por alguna razón, el señorito Google unió la cámara con la galería, y tienen que modificar esa.&lt;/p&gt;
 &lt;p&gt;Asi que si, no necesitan cambiar de ROM para cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa. Instalen lo de arriba y PUM. Listo.&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;y con eso me refiero a los que no les importa el diseño y se centran en la funcionalidad. Como eran antes los productos de Google. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/android-dpi-app/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;y con eso me refiero a los que no les importa el diseño y se centran en la funcionalidad. Como eran antes los productos de Google. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;usualmente los de gama media-baja/antiguos/los de menos de $1500 &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/android-dpi-app/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;usualmente los de gama media-baja/antiguos/los de menos de $1500 &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:3"&gt;
-&lt;p&gt;&amp;lt;3 xda developers &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/android-dpi-app/#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;3 xda developers &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:4"&gt;
-&lt;p&gt;En realidad, me gustaba pero los iconos eran muy grandes, lo cambié y después me olvidé de cómo habia puesto los cuadraditos. &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/android-dpi-app/#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En realidad, me gustaba pero los iconos eran muy grandes, lo cambié y después me olvidé de cómo habia puesto los cuadraditos. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:5"&gt;
-&lt;p&gt;Maldito Google+ &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/android-dpi-app/#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Maldito Google+ &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:6"&gt;
-&lt;p&gt;JellyBean para los amigos &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/android-dpi-app/#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;JellyBean para los amigos &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><guid>http://blog.quinzi.com.ar/android-dpi-app/</guid><pubDate>Wed, 29 May 2013 00:00:00 GMT</pubDate></item><item><title>Android: solving battery drain</title><link>http://blog.quinzi.com.ar/android-battery-drain/</link><description>&lt;div class="toc"&gt;
+&lt;/div&gt;</description><guid>http://blog.aquinzi.com/android-dpi-app/</guid><pubDate>Wed, 29 May 2013 00:00:00 GMT</pubDate></item><item><title>Android: solving battery drain</title><link>http://blog.aquinzi.com/android-battery-drain/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/android-battery-drain/#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/android-battery-drain/#tell-me-how-to-solve-the-problem-already-goddamn"&gt;Tell me how to solve the problem already, goddamn!&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/android-battery-drain/#procedure"&gt;Procedure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/android-battery-drain/#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/android-battery-drain/#tell-me-how-to-solve-the-problem-already-goddamn"&gt;Tell me how to solve the problem already, goddamn!&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/android-battery-drain/#procedure"&gt;Procedure&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -130,7 +130,7 @@ freeze/uninstall one by one. Don't get crazy.&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://forum.xda-developers.com/showthread.php?t=1308030"&gt;http://forum.xda-developers.com/showthread.php?t=1308030&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://forum.xda-developers.com/showthread.php?t=1878828"&gt;http://forum.xda-developers.com/showthread.php?t=1878828&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://forum.xda-developers.com/showthread.php?t=1179809"&gt;http://forum.xda-developers.com/showthread.php?t=1179809&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><category>android</category><category>battery</category><guid>http://blog.quinzi.com.ar/android-battery-drain/</guid><pubDate>Thu, 01 Nov 2012 00:00:00 GMT</pubDate></item><item><title>Pro Tip: cartuchos</title><link>http://blog.quinzi.com.ar/pro-tip-cartuchos/</link><description>&lt;p&gt;Alguna vez les pasó que imprimen algo y les sale con espacios "no
+&lt;/ul&gt;</description><category>android</category><category>battery</category><guid>http://blog.aquinzi.com/android-battery-drain/</guid><pubDate>Thu, 01 Nov 2012 00:00:00 GMT</pubDate></item><item><title>Pro Tip: cartuchos</title><link>http://blog.aquinzi.com/pro-tip-cartuchos/</link><description>&lt;p&gt;Alguna vez les pasó que imprimen algo y les sale con espacios "no
 impresos"? esas tipicas lineas les digo. A veces se arregla con la
 limpieza de cabezales. Muchas veces se opta por cambiar el cartucho.
 Usualmente hago lo segundo pero esta vez no pude, no queria tirar
@@ -139,7 +139,7 @@ cartucho medio-1/4 cartucho llenito.&lt;/p&gt;
 estaban con la lineas feas esas, re imprimirlas... rinse and repeat.
 Cortar y pegar. Quedando algo asi (que sirve si es para listados y cosas
 no formales):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Arreglando impresiones" src="http://blog.quinzi.com.ar/images/2012/cartuchos_01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Arreglando impresiones" src="http://blog.aquinzi.com/images/2012/cartuchos_01.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Pero por esas casualidades de la vida, en uno de los
 podcasts que escucho/veo, salió alguien diciendo que habia que ponerle
 calor al cartucho (donde sale la tinta/abajo) con una secadora de pelo
@@ -149,13 +149,13 @@ calor al cartucho (donde sale la tinta/abajo) con una secadora de pelo
 estaba en minimo-medio/no piloto). No se si tuvo efecto porque no tenia
 para comparar. Después hice eso de la secadora de pelo y dejenme
 decirles que... parece que funciona! (and it makes sense!). &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Hojas impresas mostrando cómo se arreglaba el problema" src="http://blog.quinzi.com.ar/images/2012/cartuchos_02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Hojas impresas mostrando cómo se arreglaba el problema" src="http://blog.aquinzi.com/images/2012/cartuchos_02.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Desde la izquierda: la primera es la normal/después de la estufa. La del
 medio es con la secadora de pelo. La última es otra vez con la secadora
 de pelo. Seguro que si lo hacia una tercera vez imprime
 de-lu-jo pero el cartucho se estaba por terminar (no lo valía) y
-explotó&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/pro-tip-cartuchos/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Dedos manchados con tinta" src="http://blog.quinzi.com.ar/images/2012/cartuchos_03.jpg"&gt;&lt;/p&gt;
+explotó&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/pro-tip-cartuchos/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Dedos manchados con tinta" src="http://blog.aquinzi.com/images/2012/cartuchos_03.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;(también en la mesa, pero a esa no le saqué foto, no vaya a pasar que se
 seque y sea un lio limpiarla. Menos mal que no lo hice sobre la
 alfombra)&lt;/p&gt;
@@ -164,7 +164,7 @@ alfombra)&lt;/p&gt;
 &lt;li&gt;secadora de pelo. La estufa como que mucho no me sirvió y me quemaba
 las manitos.&lt;/li&gt;
 &lt;li&gt;mantener el flujo de aire caliente por 30 seg - 1 minuto. No mas de
-eso o puede explotar&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.quinzi.com.ar/pro-tip-cartuchos/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; (como me pasó a mi). Si se requiere varias
+eso o puede explotar&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/pro-tip-cartuchos/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; (como me pasó a mi). Si se requiere varias
 aplicaciones, "dejar" descansar el cartucho por unos minutos y
 volver a intentar.&lt;/li&gt;
 &lt;li&gt;Hacerlo en una superficie que se limpie fácil/descartable por si chorrea tinta o estar atenti.&lt;/li&gt;
@@ -210,10 +210,10 @@ October 8, 2012 at 12:57 pm   &lt;/div&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;se chorreó tinta... bastante... &lt;a class="footnote-backref" href="http://blog.quinzi.com.ar/pro-tip-cartuchos/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;se chorreó tinta... bastante... &lt;a class="footnote-backref" href="http://blog.aquinzi.com/pro-tip-cartuchos/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><guid>http://blog.quinzi.com.ar/pro-tip-cartuchos/</guid><pubDate>Tue, 09 Oct 2012 00:00:00 GMT</pubDate></item><item><title>Templates en Zim Wiki</title><link>http://blog.quinzi.com.ar/zim-templates/</link><description>&lt;p&gt;&lt;a href="http://zim-wiki.org/"&gt;Zim&lt;/a&gt; es un programa de wiki de escritorio multiplataforma. En
+&lt;/div&gt;</description><guid>http://blog.aquinzi.com/pro-tip-cartuchos/</guid><pubDate>Tue, 09 Oct 2012 00:00:00 GMT</pubDate></item><item><title>Templates en Zim Wiki</title><link>http://blog.aquinzi.com/zim-templates/</link><description>&lt;p&gt;&lt;a href="http://zim-wiki.org/"&gt;Zim&lt;/a&gt; es un programa de wiki de escritorio multiplataforma. En
 los foros decian que iban a presentar templates para las páginas por
 namespaces. Desconozco si las últimas versiones ya lo traen, pero en la versión para Windows no está. &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Nota&lt;/em&gt;: es un template para toooodas las paginas nuevas, no por
@@ -222,7 +222,7 @@ namespace.&lt;/p&gt;
 modificar para que cada vez que pongas "Crear una nueva pagina" salga
 con ese template.&lt;/p&gt;
 &lt;p&gt;En &lt;a href="http://zim-wiki.org/manual/Help/Templates.html"&gt;esta parte de la página oficial&lt;/a&gt; tenes un poco mas sobre el tema
-de los templates como variables y sintaxis.&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/zim-templates/</guid><pubDate>Fri, 15 Jul 2011 00:00:00 GMT</pubDate></item><item><title>Pasar de sintaxis DokuWiki a html</title><link>http://blog.quinzi.com.ar/dokuwiki-a-html/</link><description>&lt;p&gt;Para pasar de sintaxis DokuWiki a HTML necesitas poner el siguiente php:&lt;/p&gt;
+de los templates como variables y sintaxis.&lt;/p&gt;</description><guid>http://blog.aquinzi.com/zim-templates/</guid><pubDate>Fri, 15 Jul 2011 00:00:00 GMT</pubDate></item><item><title>Pasar de sintaxis DokuWiki a html</title><link>http://blog.aquinzi.com/dokuwiki-a-html/</link><description>&lt;p&gt;Para pasar de sintaxis DokuWiki a HTML necesitas poner el siguiente php:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'cli'&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="nb"&gt;php_sapi_name&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; &lt;span class="k"&gt;die&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
 &lt;span class="nb"&gt;ini_set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'memory_limit'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'128M'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -243,7 +243,7 @@ de los templates como variables y sintaxis.&lt;/p&gt;</description><guid>http://
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Fuente: &lt;a href="http://www.dokuwiki.org/tips:dokuwiki_parser_cli"&gt;Dokuwiki Tips&lt;/a&gt;&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/dokuwiki-a-html/</guid><pubDate>Sat, 11 Jun 2011 00:00:00 GMT</pubDate></item><item><title>XAMPP: Status Check Failure [3]</title><link>http://blog.quinzi.com.ar/xampp-status-check-failure-3/</link><description>&lt;p&gt;Un día, al actualizar &lt;a href="http://www.apachefriends.org/"&gt;XAMPP&lt;/a&gt; (el cliente de desarrollo que uso), empezó a tirar un "Status Check Failure [3]" al iniciar. Era medio molesto el mensaje por más que los servicios siguieran andando.&lt;/p&gt;
+&lt;p&gt;Fuente: &lt;a href="http://www.dokuwiki.org/tips:dokuwiki_parser_cli"&gt;Dokuwiki Tips&lt;/a&gt;&lt;/p&gt;</description><guid>http://blog.aquinzi.com/dokuwiki-a-html/</guid><pubDate>Sat, 11 Jun 2011 00:00:00 GMT</pubDate></item><item><title>XAMPP: Status Check Failure [3]</title><link>http://blog.aquinzi.com/xampp-status-check-failure-3/</link><description>&lt;p&gt;Un día, al actualizar &lt;a href="http://www.apachefriends.org/"&gt;XAMPP&lt;/a&gt; (el cliente de desarrollo que uso), empezó a tirar un "Status Check Failure [3]" al iniciar. Era medio molesto el mensaje por más que los servicios siguieran andando.&lt;/p&gt;
 &lt;p&gt;Busqué vaias soluciones, algunas decian que era el puerto ocupado y que
 lo usaba Skype. Skype no tengo. Otros decian que era el instalador, que
 no funcionaba con Windows 7 64 bits, pero aún descargando el archivo comprimido daba el mismo problema.&lt;/p&gt;
@@ -254,14 +254,14 @@ no funcionaba con Windows 7 64 bits, pero aún descargando el archivo comprimido
 &lt;li&gt;Buscan el acceso directo del &lt;code&gt;xampp-control-panel.exe&lt;/code&gt; y van a sus propiedades.&lt;/li&gt;
 &lt;li&gt;Borren lo que dice en &lt;code&gt;Iniciar en...&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Fuente: &lt;a href="http://www.apachefriends.org/f/viewtopic.php?p=174321#p174507"&gt;Resolver el error explicado con imágenes en portugués&lt;/a&gt;&lt;/p&gt;</description><guid>http://blog.quinzi.com.ar/xampp-status-check-failure-3/</guid><pubDate>Tue, 31 May 2011 00:00:00 GMT</pubDate></item><item><title>SD Write Protected Syndrome</title><link>http://blog.quinzi.com.ar/sd-write-protected-syndrome/</link><description>&lt;div class="toc"&gt;
+&lt;p&gt;Fuente: &lt;a href="http://www.apachefriends.org/f/viewtopic.php?p=174321#p174507"&gt;Resolver el error explicado con imágenes en portugués&lt;/a&gt;&lt;/p&gt;</description><guid>http://blog.aquinzi.com/xampp-status-check-failure-3/</guid><pubDate>Tue, 31 May 2011 00:00:00 GMT</pubDate></item><item><title>SD Write Protected Syndrome</title><link>http://blog.aquinzi.com/sd-write-protected-syndrome/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#de-que-se-trata"&gt;De qué se trata?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#experienciasarreglos-anteriores"&gt;Experiencias/Arreglos anteriores&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#problemas-actuales"&gt;Problemas actuales&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#arreglo"&gt;Arreglo&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#solucion-original"&gt;Solución original&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.quinzi.com.ar/sd-write-protected-syndrome/#mi-solucion"&gt;Mi solución&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/sd-write-protected-syndrome/#de-que-se-trata"&gt;De qué se trata?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/sd-write-protected-syndrome/#experienciasarreglos-anteriores"&gt;Experiencias/Arreglos anteriores&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/sd-write-protected-syndrome/#problemas-actuales"&gt;Problemas actuales&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/sd-write-protected-syndrome/#arreglo"&gt;Arreglo&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/sd-write-protected-syndrome/#solucion-original"&gt;Solución original&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aquinzi.com/sd-write-protected-syndrome/#mi-solucion"&gt;Mi solución&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -303,7 +303,7 @@ dos?", felizmente puse cinta en casi todos lados y... no funcionó!
 PERO, me surgió una idea, pense:
 "mmmm, y si le pongo la &lt;strong&gt;trabita en el medio&lt;/strong&gt;?". Ahora SI funcionó.
 Yupi, wheee, y todas las alegrias.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Diagrama de cómo colocar cinta y trabita" src="http://blog.quinzi.com.ar/images/2009/sdfix_01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Diagrama de cómo colocar cinta y trabita" src="http://blog.aquinzi.com/images/2009/sdfix_01.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Ok, todo muy bonito pero, cada vez que quiera hacer un cambio tengo que
 poner cinta? mmmm.... a ver, probemos &lt;strong&gt;SIN cinta&lt;/strong&gt;, dejando el switch en
 el medio. Funcionó! :D&lt;/p&gt;
@@ -413,10 +413,10 @@ to SD Adapters no.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.quinzi.com.ar/sd-write-protected-syndrome/</guid><pubDate>Sun, 27 Sep 2009 00:00:00 GMT</pubDate></item><item><title>NetBeans: problemas con el menú</title><link>http://blog.quinzi.com.ar/netbeans-problemas-menu/</link><description>&lt;p&gt;Si tenes el NetBeans (u otro programa de Java, bajo Windows), lo inicias y tenes unos caracteres raros/extraños que no son de un idioma, como:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Problema del menu en programa" src="http://blog.quinzi.com.ar/images/2009/netbeans01.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;</description><guid>http://blog.aquinzi.com/sd-write-protected-syndrome/</guid><pubDate>Sun, 27 Sep 2009 00:00:00 GMT</pubDate></item><item><title>NetBeans: problemas con el menú</title><link>http://blog.aquinzi.com/netbeans-problemas-menu/</link><description>&lt;p&gt;Si tenes el NetBeans (u otro programa de Java, bajo Windows), lo inicias y tenes unos caracteres raros/extraños que no son de un idioma, como:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Problema del menu en programa" src="http://blog.aquinzi.com/images/2009/netbeans01.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Se arregla sólo cambiando el &lt;em&gt;Look &amp;amp; Feel&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Problema del menu resuelto" src="http://blog.quinzi.com.ar/images/2009/netbeans02.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Problema del menu resuelto" src="http://blog.aquinzi.com/images/2009/netbeans02.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Y parece que solo da problemas el &lt;em&gt;Look and feel&lt;/em&gt; de GTK (&lt;code&gt;com.sun.java.swing.plaf.gtk.GTKLookAndFeel&lt;/code&gt;)&lt;/p&gt;
 &lt;h2 id="como-se-arregla"&gt;Cómo se arregla&lt;/h2&gt;
 &lt;ol&gt;
@@ -430,7 +430,7 @@ javax.swing.plaf.metal.MetalLookAndFeel&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Reiniciá la IDE.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;code&gt;MetalLookAndFeel&lt;/code&gt; no es el único que funciona, también podes usar "Nimbus" con: &lt;code&gt;com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Muestra de skin" src="http://blog.quinzi.com.ar/images/2009/netbeans03.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Muestra de skin" src="http://blog.aquinzi.com/images/2009/netbeans03.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Fuente: &lt;a href="http://blogs.sun.com/netbeansphp/entry/how_to_change_look_and"&gt;Sun blogs&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt; Comments &lt;/h3&gt;
 
@@ -482,4 +482,4 @@ August 25, 2009 at 2:35 pm    &lt;/div&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comment-##  --&gt;
 &lt;p&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><guid>http://blog.quinzi.com.ar/netbeans-problemas-menu/</guid><pubDate>Sat, 22 Aug 2009 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- #comments --&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><guid>http://blog.aquinzi.com/netbeans-problemas-menu/</guid><pubDate>Sat, 22 Aug 2009 00:00:00 GMT</pubDate></item></channel></rss>
