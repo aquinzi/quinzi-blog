@@ -37,6 +37,10 @@ Almacenamiento
 
 Clientes
 :	desktop, smartphones, web 
+
+Precio
+:	Gratis
+
 </div>
 
   * Bastante popular. 
@@ -64,6 +68,10 @@ Almacenamiento
 
 Clientes
 :	desktop, [android](https://play.google.com/store/apps/details?id=org.tbrk.mnemododo), "web" (activar el webserver), teléfonos con J2ME
+
+Precio
+:	Gratis
+
 </div>
 
   * No tan popular, pero está hace mucho tiempo
@@ -89,6 +97,9 @@ Código
 
 Almacenamiento
 :	SQLite
+
+Precio
+:	Gratis
 </div>
 
   * Es un diccionario + buscador de kanji + herramienta/asistente de aprendizaje. 
@@ -98,7 +109,7 @@ Almacenamiento
 
 Contras:
 
-  * No se pueden buscar entries en las listas. Ej: no se puede seleccionar una lista y buscar ahi X palabra/kanji.
+  * No se pueden buscar entries en las listas. Ej: no se puede seleccionar una lista y buscar ahi X palabra/kanji (solo en la lista de estudio)
   * <del>No se puede separar los kanji estudiados del vocabulario (sale todo junto)</del>
   * Solo se puede exportar la palabra, pronunciación y definición. Las notas aparecen cuando se hace el booklet. Las tags y listas no se pueden exportar. 
   
@@ -124,6 +135,8 @@ Plataforma
 Ads
 :	No
 
+Precio
+:	Gratis
 </div>
 
 
@@ -151,6 +164,8 @@ Plataforma
 Ads
 :	No
 
+Precio
+:	Gratis
 </div>
   
     
@@ -174,6 +189,38 @@ Si no se puede descargar el diccionario, bajar de <https://www.mediafire.com/?qm
 Nota: lo subo porque el sitio oficial (para descargar) esta "muerto" (<http://craxic.com/akebi/files/>)
   
   
+#### Jisho.org
+
+<div class="appinfo">
+URL
+: <http://jisho.org/>
+
+Plataforma
+: Online 
+</div>
+
+  * Muestra oraciones de ejemplo
+  * Muestra palabras comunes
+  * Muestra grados del JLPT, WaniKani
+  * Audio de palabras
+
+
+#### Tangorin
+
+<div class="appinfo">
+URL
+: <http://tangorin.com/>
+
+Plataforma
+: Online 
+</div>
+
+  * Muestra oraciones de ejemplo
+  * Se pueden crear listas de vocabularios para exportar
+  * Muestra palabras comunes
+
+
+
   
 ### Práctica
 
@@ -188,6 +235,9 @@ Platform
 
 Ads
 :	Si: Ads y Analytics pero se pueden deshabilitar desde opciones. 
+
+Precio
+:	Gratis
 </div>
 
 
@@ -211,6 +261,9 @@ Plataforma
 
 Código
 :	Abierto
+
+Precio
+:	Gratis
 </div>
 
   * Permite OCR desde varios idiomas (viene por default con japonés, inglés, francés, chino, alemán y español)
@@ -233,6 +286,9 @@ Ads
 
 Código
 :	Abierto
+
+Precio
+:	Gratis
 </div>
 
   * Es un lector de comic/manga con OCR para buscar palabras en el diccionario, estilo popup.
@@ -257,6 +313,9 @@ Plataforma
 
 Código
 :	Abierto
+
+Precio
+:	Gratis
 </div>
 
   * Plugin para Anki
@@ -277,6 +336,9 @@ Plataforma
 
 Código
 :	Abierto
+
+Precio
+:	Gratis
 </div>
 
   * Se instala en un servidor con PHP y MySQL
@@ -299,6 +361,9 @@ Plataforma
 
 Código
 :	Abierto
+
+Precio
+:	Gratis
 </div>
 
   * Como LWT pero en Java y archivos planos.
@@ -324,6 +389,8 @@ Plataforma
 Código
 :	Abierto
 
+Precio
+:	Gratis
 </div>
 
   * Lector de textos (planos, .txt)
@@ -379,13 +446,17 @@ Kanji totales
 :	2042 kanji, incluyendo los del <span title="jouyou kanji" lang="ja">常用漢字</span> + 965 del tercero, totalizando 3007
 
 Vocabulario
-:	Si
+:	No
 
 Ejercicios
-:	Si
+:	No
 
 Metadata
 :	<http://books.google.com/books?id=TtEaylKrGaMC>
+
+Precio
+:	Pago
+
 </div>
 
 
@@ -397,6 +468,7 @@ Metadata
 
 
 Se recomienda (si se tiene versiones anteriores a la 6ta): [eliminar kanji no necesarios](http://japaneselevelup.com/2011/08/03/filtering-out-remembering-the-kanji-flaws-1-500/) de las versiones 1 y 3 o [bajarse el deck de anki](http://japaneselevelup.com/2011/09/04/japanese-level-up-rtk-mod-anki-deck/).
+
 
 #### Kanji Damage
 
@@ -415,6 +487,9 @@ Vocabulario
 
 Ejercicios
 :	No
+
+Precio
+:	Gratis
 </div>
 
 
@@ -441,12 +516,15 @@ Vocabulario
 
 Ejercicios
 :	No
+
+Precio
+:	Pago. Hay un [free sample](http://smartkanjibook.com/wp-content/uploads/2013/11/free_sample.pdf) de 140
 </div>
 
 
   * Alternativa a RTK
   * Imagenes mentales "variadas y chistosas" y todos los caracteres tienen. 
-  * Hay un [free sample](http://smartkanjibook.com/wp-content/uploads/2013/11/free_sample.pdf) de 140
+
 
   
 #### Basic Kanji Book
@@ -466,6 +544,9 @@ Ejercicios
 
 Metadata
 :	<http://www.amazon.com/o/ASIN/4893580914>
+
+Precio
+:	Pago
 </div>
 
   * Aprender kanji con su lectura y orden de trazos 
@@ -490,6 +571,9 @@ Ejercicios
 
 Metadata
 :	<http://books.google.com/books?id=q_lqefFs8EcC>
+
+Precio
+:	Pago
 </div>
 
 
@@ -505,6 +589,10 @@ Metadata
 
 Metadata
 :	<http://www.amazon.com/o/ASIN/4921205027/>
+
+Precio
+:	Pago
+
 </div>
 
   * Parecido al anterior pero "mas pobre". 
@@ -532,6 +620,9 @@ Ejercicios
 
 Metadata
 :	<http://books.google.com/books?id=c8X-BxJUpZYC>
+
+Precio
+:	Pago
 </div>
 
   * Los 1006 kanji mas esenciales separados en seis grados.
@@ -553,6 +644,9 @@ Gramática
 <div class="appinfo">
 Metadata
 :	<http://www.amazon.com/o/ASIN/4889961151/>
+
+Precio
+:	Pago
 </div>
 
   * Sirve para una **entrada general al idioma** o acompañamiento de una clase u otro textbook (aunque no creo que lo valga). 
@@ -569,6 +663,9 @@ Metadata
 <div class="appinfo">
 Metadata
 :	<http://www.amazon.com/o/ASIN/4789014401/>
+
+Precio
+:	Pago
 </div>
 
   * Textbook para centrarse en la gramática y vocabulario básico. 
@@ -582,35 +679,64 @@ Metadata
 
 
 
-### Japones con Yumiko
+### Japonés con Yumiko
 
 <div class="appinfo">
 Metadata
 :	<http://books.google.com/books?id=pzGzAgAACAAJ>, <www.amazon.com/o/ASIN/8493543780/>
+
+Precio
+:	Pago
 </div>
 
   * Ni molestarse. 
   * Lo unico que puede servir es la guía de viaje que se puede conseguir de otros lados.
   
 
+Lectura
+----------------
 
+### The Great ChokoChoko Library
+
+<div class="appinfo">
+URL
+: <https://chokochoko.wordpress.com/the-great-library/>
+
+Precio
+:	Gratis
+
+Nivel
+:	Todos
+</div>
+Textos para practicar lectura dependiendo del nivel JLPT que tengas. Recomendado.
+
+
+### Japanese Graded Readers
+<div class="appinfo">
+URL
+: <http://japanesegradedreaders.com/>
+
+Precio
+:	Pago
+
+Nivel
+:	Todos
+</div>
+
+Audio libros separados por diferentes niveles (de JLPT). Recomendado. También tienen versiones para iPad.
 
 
 Otros recursos 
 ---------------
-
-### The Great ChokoChoko Library
-
-<https://chokochoko.wordpress.com/the-great-library/>
-
-Textos para practicar lectura dependiendo del nivel JLPT que tengas. Recomendado.
-
 
 ### Guía práctica de conversación: español - japonés
 
 <div class="appinfo">
 Metadata
 :	<http://www.amazon.com/o/ASIN/8495948222>
+
+Precio
+:	Pago
 </div>
 
   * Es una guía rápida, solo tiene gramática básica y mucho vocabulario. 
@@ -622,13 +748,12 @@ Metadata
 
 ### Tanos
 
-
 <div class="appinfo">
 URL
 :	<http://tanos.co.uk/jlpt/>
 
-Gratuito
-:	Si
+Precio
+:	Gratis
 
 Contenido
 :	Listados para JLPT
@@ -642,12 +767,21 @@ Contenido
   * Las listas se pueden descargar en .pdf, .doc, .mem y .anki
 
 
+### Mis notas de gramática
+
+URL
+: <http://eikiu.github.io/jp-wiki/>
+
+Mis notas de gramática de japonés en español.
+
+
 
 <section id="changes">
 
 Cambios
 ---------
 
+  #. <time>2015-01-06</time> Arreglos varios; añadido diccionarios online (jisho, tangorin); añadido mis notas gramática; añadido Japanese Graded Readers
   #. <time>2014-03-11</time> Añadido Tanos, A Guide to Reading & Writing Japanese; reorden; links a metadata
   #. <time>2014-03-02</time> Actualización info.
   #. <time>2014-02-17</time> Añadido Akebi, Jade, iAnnotate.

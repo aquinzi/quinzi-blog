@@ -40,6 +40,9 @@ Storage
 
 Clients
 :	desktop, smartphones, web 
+
+Price
+:	Free
 </div>
 
   * Highly popular 
@@ -66,6 +69,9 @@ Storage
 
 Clients
 :	desktop, [android](https://play.google.com/store/apps/details?id=org.tbrk.mnemododo), "web" (activate the webserver), phones with J2ME
+
+Price
+:	Free
 </div>
 
   * No so popular, but has been around for a while
@@ -90,6 +96,9 @@ Code
 
 Storage
 :	SQLite
+
+Price
+:	Free
 </div>
 
   * Dictionary + kanji lookup + learning tool/asistant.
@@ -99,7 +108,7 @@ Storage
 
 Cons:
 
-  * Can't search inside lists.
+  * Can't search inside lists (only in study lists)
   * <del>Can't separate the studied kanji from vocabulary</del>
   * You can only export the word, pronunciation and definition. Notes are exported when you create a booklet. Tags and lists can't be exported.
   
@@ -125,6 +134,8 @@ Platform
 Ads
 :	No
 
+Price
+:	Free
 </div>
 
 
@@ -152,6 +163,8 @@ Platform
 Ads
 :	No
 
+Price
+:	Free
 </div>
   
     
@@ -175,6 +188,38 @@ If you can't download the dictionary, download from <https://www.mediafire.com/?
 Note: I upload it because the official site (to download) is "dead" (<http://craxic.com/akebi/files/>)
   
   
+#### Jisho.org
+
+<div class="appinfo">
+URL
+: <http://jisho.org/>
+
+Plataform
+: Online 
+</div>
+
+  * Shows example sentences
+  * Shows common words
+  * Shows JLPT levels and WaniKani
+  * Play words audio 
+
+
+#### Tangorin
+
+<div class="appinfo">
+URL
+: <http://tangorin.com/>
+
+Plataform
+: Online 
+</div>
+
+  * Shows example sentences
+  * Can create word lists to export
+  * Shows common words
+
+
+
   
 ### Practice
 
@@ -189,6 +234,9 @@ Platform
 
 Ads
 :	Yes: Ads and Analytics. However, can be disabled in settings.
+
+Price
+:	Free
 </div>
 
 
@@ -212,6 +260,9 @@ Plataform
 
 Code
 :	Open
+
+Price
+:	Free
 </div>
 
   * OCR from many languages (by default comes with japanese, english, french, chinese, german and spanish)
@@ -234,6 +285,9 @@ Ads
 
 Code
 :	Open
+
+Price
+:	Free
 </div>
 
   * Comic/manga reader with OCR to search words in a dictionary, popup style.
@@ -258,6 +312,9 @@ Platform
 
 Code
 :	Open
+
+Price
+:	Free
 </div>
 
   * Anki plugin
@@ -278,6 +335,9 @@ Platform
 
 Code
 :	Open
+
+Price
+:	Free
 </div>
 
   * Installs to a server with PHP and MySQL
@@ -300,6 +360,9 @@ Platform
 
 Code
 :	Open
+
+Price
+:	Free
 </div>
 
   * Like LWT but in Java and plain files.
@@ -323,6 +386,9 @@ Plataform
 
 Code
 :	Open 
+
+Price
+:	Free
 </div>
 
   * Plain text reader (.txt)
@@ -385,6 +451,8 @@ Excercises
 Metadata
 :	<http://books.google.com/books?id=TtEaylKrGaMC>
 
+Price
+:	Paid
 </div>
 
   * You can use it to **not fear the kanji** and don't panic when you see one with many strokes.
@@ -394,6 +462,7 @@ Metadata
   * Not all the characters have stories, about half-way onwards you have to create them yourself.
 
 It's recommended (if you have old versions from the 6th): [delete unnecessary kanji](http://japaneselevelup.com/2011/08/03/filtering-out-remembering-the-kanji-flaws-1-500/) of the first and third version or [download the anki deck](http://japaneselevelup.com/2011/09/04/japanese-level-up-rtk-mod-anki-deck/).
+
 
 #### Kanji Damage
 
@@ -412,6 +481,9 @@ Vocabulary
 
 Excercises
 :	No
+
+Price
+:	Free
 </div>
 
 
@@ -438,12 +510,15 @@ Vocabulary
 
 Excercises
 :	No
+
+Price
+:	Paid. There's a [free sample](http://smartkanjibook.com/wp-content/uploads/2013/11/free_sample.pdf) of 140
 </div>
 
 
   * Alternative to RTK 
   * Funny stories and all the characters have.
-  * There's a [free sample](http://smartkanjibook.com/wp-content/uploads/2013/11/free_sample.pdf) of 140
+
 
   
 #### Basic Kanji Book
@@ -463,6 +538,9 @@ Excercises
 
 Metadata
 :	<http://www.amazon.com/o/ASIN/4893580914>
+
+Price
+:	Paid
 </div>
 
   * Learn kanji with reading and stroke order
@@ -487,6 +565,9 @@ Excercises
 
 Metadata
 :	<http://books.google.com/books?id=q_lqefFs8EcC>
+
+Price
+:	Paid
 </div>
 
   * The "Remembering the kanji" but manga oriented: has a "drawing" explaining the kanji, associated story and stroke order.
@@ -501,6 +582,9 @@ Metadata
 
 Metadata
 :	<http://www.amazon.com/o/ASIN/4921205027/>
+
+Price
+:	Paid
 </div>
 
   * Like above but poorer.
@@ -528,6 +612,9 @@ Excercises
 
 Metadata
 :	<http://books.google.com/books?id=c8X-BxJUpZYC>
+
+Price
+:	Paid
 </div>
 
   * The most 1006 essential kanji broken into six grades.
@@ -546,6 +633,9 @@ Metadata
 <div class="appinfo">
 Metadata
 :	<http://www.amazon.com/o/ASIN/4889961151/>
+
+Price
+:	Paid
 </div>
 
   * You can use it as a **introduction to the language** or as a companion to another textbook.
@@ -562,6 +652,9 @@ Metadata
 <div class="appinfo">
 Metadata
 :	<http://www.amazon.com/o/ASIN/4789014401/>
+
+Price
+:	Paid
 </div>
 
   * Focus on grammar and basic vocabulary.
@@ -574,34 +667,67 @@ Metadata
 
 
 
-#### Japones con Yumiko
+#### Japonés con Yumiko
 
 <div class="appinfo">
 Metadata
 :	<http://books.google.com/books?id=pzGzAgAACAAJ>, <www.amazon.com/o/ASIN/8493543780/>
+
+Price
+:	Paid
 </div>
 
   * Don't even bother.
   * The only thing that can be worth is the travel guide, but you can get it somewhere else.
   
 
+Reading
+----------------
+
+### The Great ChokoChoko Library
+
+<div class="appinfo">
+URL
+: <https://chokochoko.wordpress.com/the-great-library/>
+
+Price
+:	Free
+
+Level
+: All
+</div>
+
+Free texts to practise reading accoring to JLPT level. Recommended.
+
+
+### Japanese Graded Readers
+
+<div class="appinfo">
+URL
+: <http://japanesegradedreaders.com/>
+
+Price
+:	Paid
+
+Level
+:	All
+</div>
+
+Audio-books in different levels (JLPT). Recommended. Also has iPad versions.
+
 
 
 Other resources
 ---------------
-
-### The Great ChokoChoko Library
-
-<https://chokochoko.wordpress.com/the-great-library/>
-
-Texts to practise reading accoring to JLPT level. Recommended.
-
 
 ### Guía práctica de conversación: español - japonés
 
 <div class="appinfo">
 Metadata
 :	<http://www.amazon.com/o/ASIN/8495948222>
+
+Price
+:	Paid
 </div>
 
   * Quick guide, basic grammar and much vocabulary.
@@ -617,8 +743,8 @@ Metadata
 URL
 :	<http://tanos.co.uk/jlpt/>
 
-Free
-:	Yes
+Price
+:	Free
 
 Content
 :	JLPT lists
@@ -631,6 +757,15 @@ Content
   * Lists can be downloaded as .pdf, .doc, .mem and .anki
 
 
+### My grammar notes (spanish)
+
+URL
+: <http://eikiu.github.io/jp-wiki/>
+
+My japanese grammar notes in spanish
+
+
+
 
 
 <section id="changes">
@@ -638,6 +773,7 @@ Content
 Changes
 ---------
 
+  #. <time>2015-01-06</time> misc fixes; add online dictionaries (jisho, tangorin); add my grammar notes; add Japanese Graded Readers
   #. <time>2014-03-11</time> Add Tanos, A Guide to Reading & Writing Japanese; reorder; links to metadata
   #. <time>2014-03-02</time> Update info.
   #. <time>2014-02-17</time> Add Akebi, Jade, iAnnotate.
