@@ -1,7 +1,7 @@
 ---
 .. title: Review de recursos para japonés
 .. lang: es
-.. description: Recursos variados (programas, libros, etc) para aprender/practicar japonés, centrados en el aprendizaje por cuenta propia y/o por ser la primera vez que se hace. Incluye un par de opiniones/tips.
+.. description:	Recursos variados (programas, libros, etc) para aprender/practicar japonés, centrados en el aprendizaje por cuenta propia y/o por ser la primera vez que se hace. Incluye un par de opiniones/tips.
 ---
 
 [TOC]
@@ -15,7 +15,7 @@ Programas, addons, plug-ins
 
 ### SRS 
 
-No matarse con el programa. Sirve para reveer/repasar las cosas y no para estudiar (aunque algunos lo hacen para eso). Solo usarlo por unos minutos y ya. Aprenderse las palabras/oraciones **fuera** del programa: textbooks, audio, peliculas, textos varios, etc.
+No matarse con el programa. Sirve para reveer/repasar las cosas y no para estudiar (aunque algunos lo hacen para eso). Solo usarlo por unos minutos y ya. Aprenderse las palabras/oraciones **fuera** del programa:	textbooks, audio, peliculas, textos varios, etc.
 
 Para los principiantes sirve bastante por tener falta de textos de nivel, poco vocabulario y gramática. A medida que se avanza, ir decrementando el uso y hacer más lectura/escucha
 
@@ -109,7 +109,7 @@ Precio
 
 Contras:
 
-  * No se pueden buscar entries en las listas. Ej: no se puede seleccionar una lista y buscar ahi X palabra/kanji (solo en la lista de estudio)
+  * No se pueden buscar entries en las listas. Ej:	no se puede seleccionar una lista y buscar ahi X palabra/kanji (solo en la lista de estudio)
   * <del>No se puede separar los kanji estudiados del vocabulario (sale todo junto)</del>
   * Solo se puede exportar la palabra, pronunciación y definición. Las notas aparecen cuando se hace el booklet. Las tags y listas no se pueden exportar. 
   
@@ -118,9 +118,9 @@ Contras:
 
 Son diccionarios popup para navegadores. 
 
-  * Firefox, Thunderbird, Seamonkey: [rikaichan](https://addons.mozilla.org/en-US/firefox/addon/rikaichan/) o [rikaisama](http://rikaisama.sourceforge.net/) fork que agrega audio, mas diccionarios, frecuencia de palabras, pitch accents, exportación/guardado avanzado, exportación a Anki, indicar palabras que se sepan/queres aprender, y mas.
-  * Chrome: [rikaikun](https://chrome.google.com/webstore/detail/rikaikun/jipdnfibhldikgcjhfnomkfpcebammhp)
-  * Opera 12/legacy: [Rikaisan](https://addons.opera.com/en/extensions/details/rikaisan/)
+  * Firefox, Thunderbird, Seamonkey:	[rikaichan](https://addons.mozilla.org/en-US/firefox/addon/rikaichan/) o [rikaisama](http://rikaisama.sourceforge.net/) fork que agrega audio, mas diccionarios, frecuencia de palabras, pitch accents, exportación/guardado avanzado, exportación a Anki, indicar palabras que se sepan/queres aprender, y mas.
+  * Chrome:	[rikaikun](https://chrome.google.com/webstore/detail/rikaikun/jipdnfibhldikgcjhfnomkfpcebammhp)
+  * Opera 12/legacy:	[Rikaisan](https://addons.opera.com/en/extensions/details/rikaisan/)
   
 #### JED 
 
@@ -174,13 +174,13 @@ Diccionario offline.
   *  Reconocimiento de escritura independiente del orden de trazo
   *  Oraciones de ejemplo (320k+)
   *  Character mask (para filtrar palabras, usando radicales)
-  *  Libre forma de búsqueda: letras que aparezcan en cualquier lado de la palabra
-  *  Lista de palabras: para juntar palabras de facil acceso, para usar flashcards o exportar
+  *  Libre forma de búsqueda:	letras que aparezcan en cualquier lado de la palabra
+  *  Lista de palabras:	para juntar palabras de facil acceso, para usar flashcards o exportar
   *  Teclado para japonés integrado (se puede deshabilitar)
   *  Información sobre kanji
   *  Búsqueda inglés-japonés; japonés-inglés
   *  Práctica de kanji
-  *  Deconjugador: búsqueda de un verbo conjugado y devuelve los resultados de su forma infinitiva/diccionario.
+  *  Deconjugador:	búsqueda de un verbo conjugado y devuelve los resultados de su forma infinitiva/diccionario.
   *  Holo theme
   
   
@@ -193,10 +193,10 @@ Nota: lo subo porque el sitio oficial (para descargar) esta "muerto" (<http://cr
 
 <div class="appinfo">
 URL
-: <http://jisho.org/>
+:	<http://jisho.org/>
 
 Plataforma
-: Online 
+:	Online 
 </div>
 
   * Muestra oraciones de ejemplo
@@ -209,10 +209,10 @@ Plataforma
 
 <div class="appinfo">
 URL
-: <http://tangorin.com/>
+:	<http://tangorin.com/>
 
 Plataforma
-: Online 
+:	Online 
 </div>
 
   * Muestra oraciones de ejemplo
@@ -234,7 +234,7 @@ Platform
 :	Android. 
 
 Ads
-:	Si: Ads y Analytics pero se pueden deshabilitar desde opciones. 
+:	Si:	Ads y Analytics pero se pueden deshabilitar desde opciones. 
 
 Precio
 :	Gratis
@@ -243,9 +243,9 @@ Precio
 
 Programa para practicar/aprender kana, kanji y vocabulario (incl. números). 
 
-  * Kanji: 2300+ (nivel JLPT 1-5 o Jouyou 1-7), animación de trazos, lecturas. Flashcards/escribiendo.
-  * Vocabulario: 14600+ (en inglés) de EDICT con flashcard .
-  * Particulas: experimental (cerca de 100 oraciones)
+  * Kanji:	2300+ (nivel JLPT 1-5 o Jouyou 1-7), animación de trazos, lecturas. Flashcards/escribiendo.
+  * Vocabulario:	14600+ (en inglés) de EDICT con flashcard .
+  * Particulas:	experimental (cerca de 100 oraciones)
   * Tae Kim Japanese Grammar guide. 
 
 ### OCR
@@ -292,14 +292,14 @@ Precio
 </div>
 
   * Es un lector de comic/manga con OCR para buscar palabras en el diccionario, estilo popup.
-  * Formatos: CBZ, CBR, ZIP, RAR, PNG, JPG, BMP
+  * Formatos:	CBZ, CBR, ZIP, RAR, PNG, JPG, BMP
   * Texto en vertical u horizontal
   * El texto con el que se hace OCR puede ir al clipboard, Aedict, AnkiDroid, varios diccionarios online, Google y Google Images.
 
 
 ### Lectura
 
-Programas que ayudan a leer textos: se carga el texto (usualmente .txt) y se van marcando las palabras que ya se conocen o se quieren estudiar y exportarlas. Las palabras que no se sepan se pueden buscar en el diccionario "popup" que tienen, ya sea haciendo click o hover.
+Programas que ayudan a leer textos:	se carga el texto (usualmente .txt) y se van marcando las palabras que ya se conocen o se quieren estudiar y exportarlas. Las palabras que no se sepan se pueden buscar en el diccionario "popup" que tienen, ya sea haciendo click o hover.
 
 
 #### Yomichan
@@ -427,7 +427,7 @@ Kana, Kanji
 
 **Cualquier libro para aprender kana no lo vale**. 
 
-  * No son muchos: 48 hiragana y 48 katakana "oficiales"
+  * No son muchos:	48 hiragana y 48 katakana "oficiales"
   * El vocabulario que te enseñan se pueden aprender con otro textbook. 
   * Es mejor aprenderlos escribiendolos/memorizandolos con SRS/Flashcards (o ambos). 
   * Son pocos + se usan bastante = se aprenden rápido.
@@ -467,7 +467,7 @@ Precio
   * No todos los caracteres tienen historias, a partir de la mitad hay que crearselas uno.
 
 
-Se recomienda (si se tiene versiones anteriores a la 6ta): [eliminar kanji no necesarios](http://japaneselevelup.com/2011/08/03/filtering-out-remembering-the-kanji-flaws-1-500/) de las versiones 1 y 3 o [bajarse el deck de anki](http://japaneselevelup.com/2011/09/04/japanese-level-up-rtk-mod-anki-deck/).
+Se recomienda (si se tiene versiones anteriores a la 6ta):	[eliminar kanji no necesarios](http://japaneselevelup.com/2011/08/03/filtering-out-remembering-the-kanji-flaws-1-500/) de las versiones 1 y 3 o [bajarse el deck de anki](http://japaneselevelup.com/2011/09/04/japanese-level-up-rtk-mod-anki-deck/).
 
 
 #### Kanji Damage
@@ -531,7 +531,7 @@ Precio
 
 <div class="appinfo">
 Método
-:	Repetición: escribir X veces. 
+:	Repetición:	escribir X veces. 
 
 Kanji totales
 :	500 (ambos vols.)
@@ -577,7 +577,7 @@ Precio
 </div>
 
 
-  * El "Remembering the kanji" pero orientado al manga: tiene el "dibujo" explicando el kanji, la historia asociada para que te acuerdes y orden de trazos
+  * El "Remembering the kanji" pero orientado al manga:	tiene el "dibujo" explicando el kanji, la historia asociada para que te acuerdes y orden de trazos
   * Lista kanji parecidos y lectura
   * Vocabulario; pero como esta orientado al manga, tiene palabras "fantasiosas".
 
@@ -674,7 +674,7 @@ Precio
   * El libro sirve bastante para los que estudian por su cuenta, aunque tiene ejercicios para hacer grupales. 
   * Tiene vocabulario centrado en el ámbito escolar.
   * La historia es de Mary como estudiante en Japón y su vida colegial ahí.
-  * "Muchas voces" en los listening (como 3-4 para la parte de japonés); esta inglés basicamente: esto puede ser bueno en un principio, pero estaria bueno que vaya sustituyendo a medida que pasan los capitulos
+  * "Muchas voces" en los listening (como 3-4 para la parte de japonés); esta inglés basicamente:	esto puede ser bueno en un principio, pero estaria bueno que vaya sustituyendo a medida que pasan los capitulos
   * En el workbook, algunas veces en el listening, hay que responder en inglés.
 
 
@@ -700,7 +700,7 @@ Lectura
 
 <div class="appinfo">
 URL
-: <https://chokochoko.wordpress.com/the-great-library/>
+:	<https://chokochoko.wordpress.com/the-great-library/>
 
 Precio
 :	Gratis
@@ -714,7 +714,7 @@ Textos para practicar lectura dependiendo del nivel JLPT que tengas. Recomendado
 ### Japanese Graded Readers
 <div class="appinfo">
 URL
-: <http://japanesegradedreaders.com/>
+:	<http://japanesegradedreaders.com/>
 
 Precio
 :	Pago
@@ -729,7 +729,7 @@ Audio libros separados por diferentes niveles (de JLPT). Recomendado. También t
 Otros recursos 
 ---------------
 
-### Guía práctica de conversación: español - japonés
+### Guía práctica de conversación:	español - japonés
 
 <div class="appinfo">
 Metadata
@@ -770,7 +770,7 @@ Contenido
 ### Mis notas de gramática
 
 URL
-: <http://eikiu.github.io/jp-wiki/>
+:	<http://eikiu.github.io/jp-wiki/>
 
 Mis notas de gramática de japonés en español.
 

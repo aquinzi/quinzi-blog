@@ -153,7 +153,6 @@ Offline dictionary. Doesn't seem to be updated anymore.
 #### Akebi 
 
 <div class="appinfo">
-
 URL
 :	<https://play.google.com/store/apps/details?id=com.craxic.akebifree>
 
@@ -192,11 +191,12 @@ Note: I upload it because the official site (to download) is "dead" (<http://cra
 
 <div class="appinfo">
 URL
-: <http://jisho.org/>
+:	<http://jisho.org/>
 
-Plataform
-: Online 
+Platform
+:	Online 
 </div>
+
 
   * Shows example sentences
   * Shows common words
@@ -208,11 +208,13 @@ Plataform
 
 <div class="appinfo">
 URL
-: <http://tangorin.com/>
+:	<http://tangorin.com/>
 
-Plataform
-: Online 
+Platform
+:	Online 
 </div>
+
+
 
   * Shows example sentences
   * Can create word lists to export
@@ -688,7 +690,7 @@ Reading
 
 <div class="appinfo">
 URL
-: <https://chokochoko.wordpress.com/the-great-library/>
+:	<https://chokochoko.wordpress.com/the-great-library/>
 
 Price
 :	Free
@@ -704,7 +706,7 @@ Free texts to practise reading accoring to JLPT level. Recommended.
 
 <div class="appinfo">
 URL
-: <http://japanesegradedreaders.com/>
+:	<http://japanesegradedreaders.com/>
 
 Price
 :	Paid
@@ -760,7 +762,7 @@ Content
 ### My grammar notes (spanish)
 
 URL
-: <http://eikiu.github.io/jp-wiki/>
+:	<http://eikiu.github.io/jp-wiki/>
 
 My japanese grammar notes in spanish
 
