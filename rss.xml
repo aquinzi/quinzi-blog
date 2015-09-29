@@ -1,5 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog</title><link>http://blog.aquinzi.com/</link><description>Blog for A.Q.</description><atom:link href="http://blog.aquinzi.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 06 Jan 2015 14:12:51 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pelican to Nikola (and tutorial)</title><link>http://blog.aquinzi.com/pelican-nikola/</link><dc:creator>A.Q.</dc:creator><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog</title><link>http://blog.aquinzi.com/</link><description>Blog for A.Q.</description><atom:link href="http://blog.aquinzi.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 29 Sep 2015 18:36:12 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Instalar Jekyll (y Ruby) en Windows</title><link>http://blog.aquinzi.com/windows-jekyll/</link><dc:creator>A.Q.</dc:creator><description>&lt;p&gt;Pequeña guía para tener una instalación de GitHub Pages en Windows, para testear Jekyll antes de "pushear" los cambios. Recomendado cuando estas haciendo un theme de un blog o creando un sitio.&lt;/p&gt;
+&lt;h2 id="instalar-ruby"&gt;Instalar Ruby&lt;/h2&gt;
+&lt;p&gt;Se necesita Ruby y Ruby Dev-kit para poder instalar los "gems".&lt;/p&gt;
+&lt;p&gt;Primero descargar ruby de &lt;a href="http://rubyinstaller.org/downloads/"&gt;Ruby Installer&lt;/a&gt;. Al instalar, checkear la opcion de "&lt;code&gt;Add Ruby executables to your PATH&lt;/code&gt;".&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;Al 2015-09-28, GitHub Pages usa la versión 2.1.1; la mas cercana listada es la 2.1.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Del &lt;a href="http://rubyinstaller.org/downloads/"&gt;mismo sitio&lt;/a&gt;, descargar el Ruby DevKit correspondiente a la versión. La descarga es un archivo descomprimible &lt;code&gt;.exe&lt;/code&gt;. Descomprimirlo en alguna carpeta sin espacios (por ejemplo: &lt;code&gt;C:\Ruby\DevKit\&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Para "unir" el devkit e instalarlo, seguir los siguientes pasos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;con la línea de comandos ir a la carpeta (&lt;code&gt;cd path\carpeta\&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Ejecutar &lt;code&gt;ruby dk.rb init&lt;/code&gt;, esto auto-detecta las instalaciones de Ruby y añade a un archivo de configuración necesario para el próximo paso.&lt;/li&gt;
+&lt;li&gt;Ejecutar &lt;code&gt;ruby dk.rb install&lt;/code&gt; para "unir" el DevKit.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;Si da error de "Comando no encontrado" verificar que en el &lt;code&gt;PATH&lt;/code&gt; este como &lt;code&gt;[path\a\ruby\]bin\&lt;/code&gt; (notar barra invertida final)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Si vas a necesitar "Syntax Highlighting" y elegiste &lt;code&gt;pygments&lt;/code&gt;, tenés que instalar Python (para Jekyll 2 o inferior).&lt;/p&gt;
+&lt;h2 id="github-pages-local-instalacion-de-jekyll-y-complementos"&gt;GitHub Pages local: instalación de Jekyll y complementos&lt;/h2&gt;
+&lt;p&gt;En Windows no se puede instalar el &lt;a href="https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll"&gt;gem de GitHub Pages&lt;/a&gt; por que tira error al querer instalar RDiscount&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;(RDiscount) It uses a POSIX function that is not available under Windows, even if you adjusted most of it. &lt;/p&gt;
+&lt;p&gt;(&lt;a href="http://superuser.com/a/87438"&gt;Luis Lavena en Super User&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Por esto, es mejor instalar bundler (&lt;code&gt;gem install bundler&lt;/code&gt;) y usar un &lt;code&gt;gemfile&lt;/code&gt; (llamado "Gemfile") en donde se encuentra el proyecto, listando lo de arriba con las versiones que se usan:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;    &lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="s1"&gt;'https://rubygems.org'&lt;/span&gt;
+
+    &lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s2"&gt;"json"&lt;/span&gt;
+    &lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s2"&gt;"open-uri"&lt;/span&gt;
+    &lt;span class="c1"&gt;#get versions specific to github&lt;/span&gt;
+    &lt;span class="n"&gt;versions&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;JSON&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"https://pages.github.com/versions.json"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-coffeescript"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-coffeescript"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-sass-converter"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-sass-converter"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"kramdown"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"kramdown"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"maruku"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"maruku"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="c1"&gt;#gem "rdiscount", versions["rdiscount"] #we cant install it under windows&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"redcarpet"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"redcarpet"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"RedCloth"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"RedCloth"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"liquid"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"liquid"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"pygments.rb"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"pygments.rb"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jemoji"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jemoji"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-mentions"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-mentions"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-redirect-from"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-redirect-from"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-sitemap"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-sitemap"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-feed"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-feed"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="c1"&gt;#gem "ruby", versions["ruby"] #avoid problems in windows&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"github-pages"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"github-pages"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"html-pipeline"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"html-pipeline"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"sass"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"sass"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"safe_yaml"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"safe_yaml"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;(idea del código de &lt;a href="https://jamesjoshuahill.github.io/note/2015/01/08/handling-failed-builds-on-github-pages/"&gt;jamesjoshuahill&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Se instalan los gems (con bundler) yendo al directorio con el Gemfile y ejecutar &lt;code&gt;bundle install&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Puede haber problemas con el sertificado de &lt;code&gt;https://rubygems.org&lt;/code&gt;. Si no se quiere probar, instalar (eliminado rdiscount, sin documentacion) los gems con el siguiente comando (al 2015-09-28):&lt;/p&gt;
+&lt;p&gt;gem install github-pages:39 --no-rdoc --no-ri html-pipeline:1.9.0 --no-rdoc --no-ri jekyll:2.4.0 --no-rdoc --no-ri jekyll-coffeescript:1.0.1 --no-rdoc --no-ri jekyll-sass-converter:1.3.0 --no-rdoc --no-ri jekyll-mentions:0.2.1 --no-rdoc --no-ri jekyll-redirect-from:0.8.0 --no-rdoc --no-ri jekyll-sitemap:0.8.1 --no-rdoc --no-ri jekyll-feed:0.3.1 --no-rdoc --no-ri jemoji:0.5.0 --no-rdoc --no-ri kramdown:1.5.0 --no-rdoc --no-ri liquid:2.6.2 --no-rdoc --no-ri maruku:0.7.0 --no-rdoc --no-ri pygments.rb:0.6.3 --no-rdoc --no-ri redcarpet:3.3.2 RedCloth:4.2.9 --no-rdoc --no-ri ruby:2.1.1 --no-rdoc --no-ri sass:3.4.16 --no-rdoc --no-ri safe_yaml:1.0.4 &lt;/p&gt;
+&lt;p&gt;El error de certificado es un similar a:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;[!] There was an error parsing `Gemfile`: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed. Bundler cannot continue.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Se soluciona de la siguiente manera:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://curl.haxx.se/ca/cacert.pem"&gt;descargar&lt;/a&gt; el archivo &lt;code&gt;cacert.pem&lt;/code&gt; y guardarlo en (por ejemplo ejemplo) &lt;code&gt;C:\RailsInstaller\cacert.pem&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Settear el &lt;code&gt;SSL_CERT_FILE&lt;/code&gt; usando la línea de comandos: &lt;code&gt;set SSL_CERT_FILE=C:\RailsInstaller\cacert.pem&lt;/code&gt;. Se puede dejar "permanente" poniendolo en el &lt;code&gt;PATH&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;También se puede hacer por proyecto:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Guardar el archivo &lt;code&gt;cacert.pem&lt;/code&gt; en el proyecto.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A list item with a code block:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;  ENV['SSL_CERT_FILE'] = File.expand_path(File.dirname(__FILE__)) + "/config/cacert.pem"
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="correr-jekyll"&gt;Correr Jekyll&lt;/h2&gt;
+&lt;p&gt;Seguramente va a tirar un error de encoding, estilo:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;jekyll 2.4.0 | Error:  incompatible character encodings: CP850 and UTF-8
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;para solucionarlo ejecutar en la línea de comandos &lt;code&gt;chcp 65001&lt;/code&gt; antes de ejecutar Jekyll.&lt;/p&gt;
+&lt;p&gt;En la carpeta donde se tiene los archivos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Si se usó el fix de OpenSSL, hay que usar bundler: &lt;code&gt;bundle exec jekyll serve&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Si no: &lt;code&gt;jekyll serve&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Abrir en &lt;code&gt;http://127.0.0.1:4000/&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Fuentes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://jekyll-windows.juthilo.com/"&gt;Run Jekyll on Windows: Step by step guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://railsapps.github.io/openssl-certificate-verify-failed.html"&gt;Solución al &lt;code&gt;SSL_connect&lt;/code&gt;&lt;/a&gt;, que linkea a &lt;a href="https://gist.github.com/fnichol/867550"&gt;un gist con las instrucciones&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://bendetat.com/utf-issue-when-running-jekyll-on-windows.html"&gt;UTF issue when running Jekyll on Windows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><guid>http://blog.aquinzi.com/windows-jekyll/</guid><pubDate>Tue, 29 Sep 2015 00:00:00 GMT</pubDate></item><item><title>Pelican to Nikola (and tutorial)</title><link>http://blog.aquinzi.com/pelican-nikola/</link><dc:creator>A.Q.</dc:creator><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#acrylamid"&gt;Acrylamid&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.aquinzi.com/pelican-nikola/#nikola"&gt;Nikola&lt;/a&gt;&lt;/li&gt;
@@ -515,44 +616,4 @@ $ git push origin gh-pages
 &lt;p&gt;en Linux es más fácil (por lo menos en xfce): &lt;kbd&gt;botón derecho &amp;gt; terminal&lt;/kbd&gt;. En Windows tenes que apretar &lt;kbd&gt;shift + botón derecho&lt;/kbd&gt;. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/prodo/#fnref:5" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><guid>http://blog.aquinzi.com/prodo/</guid><pubDate>Fri, 26 Jul 2013 00:00:00 GMT</pubDate></item><item><title>Android: dpi por app</title><link>http://blog.aquinzi.com/android-dpi-app/</link><dc:creator>A.Q.</dc:creator><description>&lt;p&gt;Todos sabemos que Android tiene sus problemas, que Google los esta tratando de mejorar poco a poco. Todos sabemos que Google tiene servicios copados gratuitos. Y todos sabemos que Google dejó de lado las interfaces hechas por ingenieros&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; y contrató diseñadores. También sabemos que están tirando a la interfaz flat/minimalista, que no es fácil de dominar para que quede apetecible a los ojos.&lt;/p&gt;
-&lt;p&gt;¿A que voy con esto? Al "moco" que se metió al actualizar la Play Store. Acá te refresco un poco:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Playstore opciones grandes" src="http://blog.aquinzi.com/images/2013/android_playstoreflat-orig.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;En las tablets no es tan mala. En los celulares con mucha resolución creo que tampoco. El problema va con los celus con poca resolución&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;, como el mío (&lt;a href="http://www.gsmarena.com/lg_optimus_one_p500-3516.php"&gt;LG Optimus One (p500)&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;¿Cómo arreglar esto y dejar la Play Store mas usable? Cambiando el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt;. ¿Cómo arreglar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt;? La opción mas popular es instalando &lt;a href="http://paranoid-rom.com/"&gt;Paranoid Android&lt;/a&gt; (me encanta el loguito). Cambiando a esta ROM, podes cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa (cambiar el color de la status bar y nav bar, otras cucherías pero no viene al cuento). La había probado (por otras razones) pero en mi celu era muy lenta y no daba dejarla solo para cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por uno o dos programas.&lt;/p&gt;
-&lt;p&gt;Dejé de lado esto hasta que encontré otra forma navegando por ahí: instalando el &lt;a href="http://forum.xda-developers.com/showthread.php?t=2072081"&gt;Xposed Framework y el Per App Settings Module&lt;/a&gt; &lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;. Esto es algo asi como "instalo esta app y este módulo, y puedo cambiar el dpi :D".&lt;/p&gt;
-&lt;p&gt;Es fácil de usar. Solo tenes que buscar la app que queres toquetear, le pones el "on", toqueteas, ponés guardar y reinicias el programa. Listo. Cambios hechos.&lt;/p&gt;
-&lt;p&gt;Jugando, llegué a poner así la Play Store:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Playstore opciones en cuadrados" src="http://blog.aquinzi.com/images/2013/android_playstoreflat-squares.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;De cuatro pobres opciones a nueve. Mucho mejor, pero eso de los cuadraditos no me gustaba mucho&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;, asi que lo cambié a lista:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Playstore más opciones en lista" src="http://blog.aquinzi.com/images/2013/android_playstoreflat-list.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;De los 4 originales a 8.5. Nada mal y sigue usable. Eso si, no todo es color de rosas, porque donde te muestra la info + capturas de pantalla + descarga + comentarios + +1&lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:5" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; + etc. (las capturas) se ven medio deformes:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Información de programa en Playstore" src="http://blog.aquinzi.com/images/2013/android_playstoreflat-info.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;Y, obviamente, al cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa, por lo menos en un celu como el mío, tarda unos segundos (contados) en abrir o cambiar de pantalla, pero puedo vivir con eso.&lt;/p&gt;
-&lt;p&gt;Si quieren saber los datos que usé para la Play Store, para que se den una idea:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Configuración de DPI del Playstore" src="http://blog.aquinzi.com/images/2013/android_playstoreflat-settings.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;También "mejoré" la app de DropBox (ahora me entran mas carpetitas en la vista), Contactos, gMail (que no lo uso en el celu, pero queda linda la tablet UI) y la cámara. Si quieren mejorar ésta última, y si usan Android 4.1&lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/android-dpi-app/#fn:6" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt; o superior, por alguna razón, el señorito Google unió la cámara con la galería, y tienen que modificar esa.&lt;/p&gt;
-&lt;p&gt;Asi que si, no necesitan cambiar de ROM para cambiar el &lt;abbr title="dots per inch"&gt;DPI&lt;/abbr&gt; por programa. Instalen lo de arriba y PUM. Listo.&lt;/p&gt;
-&lt;div class="footnote"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;y con eso me refiero a los que no les importa el diseño y se centran en la funcionalidad. Como eran antes los productos de Google. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:2"&gt;
-&lt;p&gt;usualmente los de gama media-baja/antiguos/los de menos de $1500 &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:3"&gt;
-&lt;p&gt;&amp;lt;3 xda developers &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:4"&gt;
-&lt;p&gt;En realidad, me gustaba pero los iconos eran muy grandes, lo cambié y después me olvidé de cómo habia puesto los cuadraditos. &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:5"&gt;
-&lt;p&gt;Maldito Google+ &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:6"&gt;
-&lt;p&gt;JellyBean para los amigos &lt;a class="footnote-backref" href="http://blog.aquinzi.com/android-dpi-app/#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description><guid>http://blog.aquinzi.com/android-dpi-app/</guid><pubDate>Wed, 29 May 2013 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>http://blog.aquinzi.com/prodo/</guid><pubDate>Fri, 26 Jul 2013 00:00:00 GMT</pubDate></item></channel></rss>

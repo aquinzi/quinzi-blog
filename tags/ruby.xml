@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (ruby)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/tags/ruby.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 29 Sep 2015 18:36:13 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Instalar Jekyll (y Ruby) en Windows</title><link>http://blog.aquinzi.com/windows-jekyll/</link><description>&lt;p&gt;Pequeña guía para tener una instalación de GitHub Pages en Windows, para testear Jekyll antes de "pushear" los cambios. Recomendado cuando estas haciendo un theme de un blog o creando un sitio.&lt;/p&gt;
+&lt;h2 id="instalar-ruby"&gt;Instalar Ruby&lt;/h2&gt;
+&lt;p&gt;Se necesita Ruby y Ruby Dev-kit para poder instalar los "gems".&lt;/p&gt;
+&lt;p&gt;Primero descargar ruby de &lt;a href="http://rubyinstaller.org/downloads/"&gt;Ruby Installer&lt;/a&gt;. Al instalar, checkear la opcion de "&lt;code&gt;Add Ruby executables to your PATH&lt;/code&gt;".&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;Al 2015-09-28, GitHub Pages usa la versión 2.1.1; la mas cercana listada es la 2.1.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Del &lt;a href="http://rubyinstaller.org/downloads/"&gt;mismo sitio&lt;/a&gt;, descargar el Ruby DevKit correspondiente a la versión. La descarga es un archivo descomprimible &lt;code&gt;.exe&lt;/code&gt;. Descomprimirlo en alguna carpeta sin espacios (por ejemplo: &lt;code&gt;C:\Ruby\DevKit\&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Para "unir" el devkit e instalarlo, seguir los siguientes pasos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;con la línea de comandos ir a la carpeta (&lt;code&gt;cd path\carpeta\&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Ejecutar &lt;code&gt;ruby dk.rb init&lt;/code&gt;, esto auto-detecta las instalaciones de Ruby y añade a un archivo de configuración necesario para el próximo paso.&lt;/li&gt;
+&lt;li&gt;Ejecutar &lt;code&gt;ruby dk.rb install&lt;/code&gt; para "unir" el DevKit.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;Si da error de "Comando no encontrado" verificar que en el &lt;code&gt;PATH&lt;/code&gt; este como &lt;code&gt;[path\a\ruby\]bin\&lt;/code&gt; (notar barra invertida final)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Si vas a necesitar "Syntax Highlighting" y elegiste &lt;code&gt;pygments&lt;/code&gt;, tenés que instalar Python (para Jekyll 2 o inferior).&lt;/p&gt;
+&lt;h2 id="github-pages-local-instalacion-de-jekyll-y-complementos"&gt;GitHub Pages local: instalación de Jekyll y complementos&lt;/h2&gt;
+&lt;p&gt;En Windows no se puede instalar el &lt;a href="https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll"&gt;gem de GitHub Pages&lt;/a&gt; por que tira error al querer instalar RDiscount&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;(RDiscount) It uses a POSIX function that is not available under Windows, even if you adjusted most of it. &lt;/p&gt;
+&lt;p&gt;(&lt;a href="http://superuser.com/a/87438"&gt;Luis Lavena en Super User&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Por esto, es mejor instalar bundler (&lt;code&gt;gem install bundler&lt;/code&gt;) y usar un &lt;code&gt;gemfile&lt;/code&gt; (llamado "Gemfile") en donde se encuentra el proyecto, listando lo de arriba con las versiones que se usan:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;    &lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="s1"&gt;'https://rubygems.org'&lt;/span&gt;
+
+    &lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s2"&gt;"json"&lt;/span&gt;
+    &lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s2"&gt;"open-uri"&lt;/span&gt;
+    &lt;span class="c1"&gt;#get versions specific to github&lt;/span&gt;
+    &lt;span class="n"&gt;versions&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;JSON&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"https://pages.github.com/versions.json"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-coffeescript"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-coffeescript"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-sass-converter"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-sass-converter"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"kramdown"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"kramdown"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"maruku"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"maruku"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="c1"&gt;#gem "rdiscount", versions["rdiscount"] #we cant install it under windows&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"redcarpet"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"redcarpet"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"RedCloth"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"RedCloth"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"liquid"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"liquid"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"pygments.rb"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"pygments.rb"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jemoji"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jemoji"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-mentions"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-mentions"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-redirect-from"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-redirect-from"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-sitemap"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-sitemap"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"jekyll-feed"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"jekyll-feed"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="c1"&gt;#gem "ruby", versions["ruby"] #avoid problems in windows&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"github-pages"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"github-pages"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"html-pipeline"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"html-pipeline"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"sass"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"sass"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;"safe_yaml"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;versions&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"safe_yaml"&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;(idea del código de &lt;a href="https://jamesjoshuahill.github.io/note/2015/01/08/handling-failed-builds-on-github-pages/"&gt;jamesjoshuahill&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Se instalan los gems (con bundler) yendo al directorio con el Gemfile y ejecutar &lt;code&gt;bundle install&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Puede haber problemas con el sertificado de &lt;code&gt;https://rubygems.org&lt;/code&gt;. Si no se quiere probar, instalar (eliminado rdiscount, sin documentacion) los gems con el siguiente comando (al 2015-09-28):&lt;/p&gt;
+&lt;p&gt;gem install github-pages:39 --no-rdoc --no-ri html-pipeline:1.9.0 --no-rdoc --no-ri jekyll:2.4.0 --no-rdoc --no-ri jekyll-coffeescript:1.0.1 --no-rdoc --no-ri jekyll-sass-converter:1.3.0 --no-rdoc --no-ri jekyll-mentions:0.2.1 --no-rdoc --no-ri jekyll-redirect-from:0.8.0 --no-rdoc --no-ri jekyll-sitemap:0.8.1 --no-rdoc --no-ri jekyll-feed:0.3.1 --no-rdoc --no-ri jemoji:0.5.0 --no-rdoc --no-ri kramdown:1.5.0 --no-rdoc --no-ri liquid:2.6.2 --no-rdoc --no-ri maruku:0.7.0 --no-rdoc --no-ri pygments.rb:0.6.3 --no-rdoc --no-ri redcarpet:3.3.2 RedCloth:4.2.9 --no-rdoc --no-ri ruby:2.1.1 --no-rdoc --no-ri sass:3.4.16 --no-rdoc --no-ri safe_yaml:1.0.4 &lt;/p&gt;
+&lt;p&gt;El error de certificado es un similar a:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;[!] There was an error parsing `Gemfile`: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed. Bundler cannot continue.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Se soluciona de la siguiente manera:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://curl.haxx.se/ca/cacert.pem"&gt;descargar&lt;/a&gt; el archivo &lt;code&gt;cacert.pem&lt;/code&gt; y guardarlo en (por ejemplo ejemplo) &lt;code&gt;C:\RailsInstaller\cacert.pem&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Settear el &lt;code&gt;SSL_CERT_FILE&lt;/code&gt; usando la línea de comandos: &lt;code&gt;set SSL_CERT_FILE=C:\RailsInstaller\cacert.pem&lt;/code&gt;. Se puede dejar "permanente" poniendolo en el &lt;code&gt;PATH&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;También se puede hacer por proyecto:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Guardar el archivo &lt;code&gt;cacert.pem&lt;/code&gt; en el proyecto.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A list item with a code block:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;  ENV['SSL_CERT_FILE'] = File.expand_path(File.dirname(__FILE__)) + "/config/cacert.pem"
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="correr-jekyll"&gt;Correr Jekyll&lt;/h2&gt;
+&lt;p&gt;Seguramente va a tirar un error de encoding, estilo:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;jekyll 2.4.0 | Error:  incompatible character encodings: CP850 and UTF-8
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;para solucionarlo ejecutar en la línea de comandos &lt;code&gt;chcp 65001&lt;/code&gt; antes de ejecutar Jekyll.&lt;/p&gt;
+&lt;p&gt;En la carpeta donde se tiene los archivos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Si se usó el fix de OpenSSL, hay que usar bundler: &lt;code&gt;bundle exec jekyll serve&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Si no: &lt;code&gt;jekyll serve&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Abrir en &lt;code&gt;http://127.0.0.1:4000/&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Fuentes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://jekyll-windows.juthilo.com/"&gt;Run Jekyll on Windows: Step by step guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://railsapps.github.io/openssl-certificate-verify-failed.html"&gt;Solución al &lt;code&gt;SSL_connect&lt;/code&gt;&lt;/a&gt;, que linkea a &lt;a href="https://gist.github.com/fnichol/867550"&gt;un gist con las instrucciones&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://bendetat.com/utf-issue-when-running-jekyll-on-windows.html"&gt;UTF issue when running Jekyll on Windows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><guid>http://blog.aquinzi.com/windows-jekyll/</guid><pubDate>Tue, 29 Sep 2015 00:00:00 GMT</pubDate></item></channel></rss>
