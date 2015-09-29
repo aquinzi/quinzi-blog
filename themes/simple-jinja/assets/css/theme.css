@@ -80,6 +80,12 @@ dd { padding-left: 2em; }
 pre, code, kbd {
     font-family: Consolas, "Liberation Mono", Courier, monospace;  
     padding:     0.2em 0.5em;     
+    /* wrap long lines*/
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 pre, code { font-size: 0.9em; }
