@@ -151,9 +151,9 @@ Fuentes:
 
 <section id="changes">
 
-Cambios
----------
-
-  #. <time>2016-02-09</time> actualización a GitHub Pages usando Jekyll 3
+<h2>Cambios</h2>
+<ol>
+  <li> <time>2016-02-09</time> actualización a GitHub Pages usando Jekyll 3</li>
+</ol>
 
 </section>

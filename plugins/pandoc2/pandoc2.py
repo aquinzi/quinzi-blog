@@ -81,8 +81,9 @@ class CompilePandoc(PageCompiler):
             tmp.communicate(text)[0]
 
         except OSError as e:
+            #pass
             if e.strreror == 'No such file or directory':
-                req_missing(['pandoc'], 'build this site (compile with pandoc)', python=False)
+                req_missing(['pandoc'], 'build this site (#compile with pandoc)', python=False)
 
     def create_post(self, path, onefile=False, **kw):
         if OrderedDict is not None:
