@@ -61,11 +61,13 @@
 		
         <div class="post-meta">
             <dl>                    <dt class="date">Posted
-                    </dt><dd> 
+                    </dt><dd> <del> 
  
 <time class="published dt-published" itemprop="datePublished" datetime="2014-01-11T00:00:00+00:00">2014-01-11</time>
-</dd>
- 
+</del>
+                         <ins><time class="published dt-updated" datetime="2016-02-09" itemprop="datePublished">2016-02-09</time>
+</ins> (Updated)
+                    </dd> 
             </dl>        </div>
     </header>
     
@@ -94,7 +96,7 @@
 <li><a href=".#testing">Testing</a></li>
 </ul>
 </div>
-<p>When I was thinking of moving my blog to this new domain, I thought of using <a href="http://www.johnmacfarlane.net/pandoc/">Pandoc</a> as the converter<sup id="fnref:1"><a class="footnote-ref" href=".#fn:1" rel="footnote">1</a></sup>. I even created <a href="http://quinzi.com.ar/projects/pandy">pandy</a> for that. But then I run into the "problems" (ok, I was kind of lazy) of generating RSS, listing posts with certain tags or categories (which I ended up not using), the index and archive, idealizing of using plugins, etc. and gave up. </p>
+<p>When I was thinking of moving my blog to this new domain, I thought of using <a href="http://www.johnmacfarlane.net/pandoc/">Pandoc</a> as the converter<sup id="fnref:1"><a class="footnote-ref" href=".#fn:1" rel="footnote">1</a></sup>. I even created <a href="http://aquinzi.com/projects/pandy.php">pandy</a> for that. But then I run into the "problems" (ok, I was kind of lazy) of generating RSS, listing posts with certain tags or categories (which I ended up not using), the index and archive, idealizing of using plugins, etc. and gave up. </p>
 <p>In the beginning, I would <a href="../wordpress-to-pelican">continue using Pelican</a> as is <a href="http://docs.getpelican.com/">it's easy and customizable</a>, even though it doesn't have Pandoc<sup id="fnref:2"><a class="footnote-ref" href=".#fn:2" rel="footnote">2</a></sup> support. But later I would be lazy to move to another system (not that I blog much, but <strong>I like Pandoc's markdown</strong>).</p>
 <h2 id="acrylamid">Acrylamid</h2>
 <p>In my searching, I found <a href="http://posativ.org/acrylamid/index.html">Acrylamid</a> which looks pretty good. It's like the programmer/hacker blog generator, where you can do many things, including using template syntax <em>inside</em> your post. How cool is that?. It also has incremental builds, which means that it won't regenerate the whole site/blog again after a little edit, but only what it was changed. </p>
@@ -183,7 +185,7 @@
 </ul>
 <p>I recommend doing it after the images, and you must check the links afterwards.</p>
 <h3 id="plugins-syntax">Plugins syntax</h3>
-<p>I didn't use many plugins that used syntax in my posts, just only one: <a href="http://quinzi.com.ar/projects/interlinks">interlinks</a>. This was easilly done with search and replace.</p>
+<p>I didn't use many plugins that used syntax in my posts, just only one: <a href="http://aquinzi.com/projects/interlinks.php">interlinks</a>. This was easilly done with search and replace.</p>
 <h2 id="other-nikola-stuff">Other Nikola stuff</h2>
 <h3 id="locale-in-windows">Locale in Windows</h3>
 <p>If you are going to use the internationalization in Windows, you must configurate your <code>LOCALES</code> as (example):</p>

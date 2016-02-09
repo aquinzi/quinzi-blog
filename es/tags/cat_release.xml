@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (release)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/es/tags/cat_release.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 29 Sep 2015 18:36:11 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>pandy</title><link>http://blog.aquinzi.com/./es/pandy/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; es un wrapper para &lt;a href="http://johnmacfarlane.net/pandoc/"&gt;pandoc&lt;/a&gt; + cositas copadas (si usas markdown -&amp;gt; html)&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (release)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/es/tags/cat_release.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 09 Feb 2016 11:17:30 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>pandy</title><link>http://blog.aquinzi.com/./es/pandy/</link><description>&lt;p&gt;&lt;a href="http://aquinzi.com/es/projects/pandy.php"&gt;pandy&lt;/a&gt; es un wrapper para &lt;a href="http://johnmacfarlane.net/pandoc/"&gt;pandoc&lt;/a&gt; + cositas copadas (si usas markdown -&amp;gt; html)&lt;/p&gt;
 &lt;p&gt;Basicamente toma un archivo/carpeta, de qué convertir y a qué convertir, y lo corre por pandoc.&lt;/p&gt;
 &lt;h2 id="uso"&gt;Uso&lt;/h2&gt;
 &lt;p&gt;Para usar el script, solo llamalo con algo asi:&lt;/p&gt;
@@ -20,7 +20,7 @@
 &lt;li&gt;Si usas markdown y convertis a HTML hay cositas lindas para vos: abbreviations (de las verdaderas, no como esas que son ignoradas por pandoc) y admonitions.&lt;/li&gt;
 &lt;li&gt;"WikiLinks" para tu index!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Para más información y explicación, ir a la &lt;a href="https://quinzi.com.ar/projects/pandy"&gt;página de proyecto de pandy&lt;/a&gt;.&lt;/p&gt;</description><category>python</category><category>code</category><category>pandoc</category><category>markdown</category><guid>http://blog.aquinzi.com/./es/pandy/</guid><pubDate>Wed, 11 Dec 2013 00:00:00 GMT</pubDate></item><item><title>svnlog: make changelog from SVN</title><link>http://blog.aquinzi.com/./es/svnlog/</link><description>&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; is a python script to create a changelog from a repository log.&lt;/p&gt;
+&lt;p&gt;Para más información y explicación, ir a la &lt;a href="http://aquinzi.com/es/projects/pandy.php"&gt;página de proyecto de pandy&lt;/a&gt;.&lt;/p&gt;</description><category>python</category><category>code</category><category>pandoc</category><category>markdown</category><guid>http://blog.aquinzi.com/./es/pandy/</guid><pubDate>Wed, 11 Dec 2013 00:00:00 GMT</pubDate></item><item><title>svnlog: make changelog from SVN</title><link>http://blog.aquinzi.com/./es/svnlog/</link><description>&lt;p&gt;&lt;a href="http://aquinzi.com/projects/svnlog.php"&gt;svnlog&lt;/a&gt; is a python script to create a changelog from a repository log.&lt;/p&gt;
 &lt;p&gt;Examples of output (default):&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre&gt;2013-11-25:
     changed arguments (better handling)
@@ -62,11 +62,11 @@
 &lt;li&gt;Also group revisions with &lt;code&gt;--subgroup&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Or group dates but show it inline: &lt;code&gt;--inline&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Just make sure you have a SVN CLI in your path and then run &lt;a href="https://quinzi.com.ar/projects/svnlog"&gt;svnlog&lt;/a&gt; with the options you desire&lt;/p&gt;</description><guid>http://blog.aquinzi.com/./es/svnlog/</guid><pubDate>Mon, 02 Dec 2013 00:00:00 GMT</pubDate></item><item><title>pymd: wrapper para Python Markdown</title><link>http://blog.aquinzi.com/./es/pymd/</link><description>&lt;div class="admonition info"&gt;
+&lt;p&gt;Just make sure you have a SVN CLI in your path and then run &lt;a href="http://aquinzi.com/projects/svnlog.php"&gt;svnlog&lt;/a&gt; with the options you desire&lt;/p&gt;</description><guid>http://blog.aquinzi.com/./es/svnlog/</guid><pubDate>Mon, 02 Dec 2013 00:00:00 GMT</pubDate></item><item><title>pymd: wrapper para Python Markdown</title><link>http://blog.aquinzi.com/./es/pymd/</link><description>&lt;div class="admonition info"&gt;
 &lt;p class="admonition-title"&gt;Hey!&lt;/p&gt;
 &lt;p&gt;pymd ahora esta en &lt;a href="https://pypi.python.org/pypi/pymd"&gt;PyPI&lt;/a&gt;. Eso significa que lo podes instalar como &lt;code&gt;pip install pymd&lt;/code&gt; :)&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;a href="https://quinzi.com.ar/projects/pymd"&gt;pymd&lt;/a&gt; es un wrapper para la librería &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python Markdown&lt;/a&gt;, basicamente te permite tener un HTML completo a comparación de lo que te tira la librería.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://aquinzi.com/es/projects/pymd.php"&gt;pymd&lt;/a&gt; es un wrapper para la librería &lt;a href="http://pythonhosted.org/Markdown/"&gt;Python Markdown&lt;/a&gt;, basicamente te permite tener un HTML completo a comparación de lo que te tira la librería.&lt;/p&gt;
 &lt;h2 id="caracteristicas"&gt;Características&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Proceso en batch (en una carpeta o usando .list) con extensiones .md, .txt o .markdown&lt;/li&gt;
@@ -78,7 +78,7 @@
 &lt;li&gt;Wiki links: &lt;code&gt;[](file|path) -&amp;gt; [title linked file](output_path)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Hecho con amor &amp;lt;3&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Más información y ejemplos en la &lt;a href="https://quinzi.com.ar/projects/pymd"&gt;página de proyecto de pymd&lt;/a&gt;&lt;/p&gt;</description><category>python</category><category>code</category><category>markdown</category><guid>http://blog.aquinzi.com/./es/pymd/</guid><pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate></item><item><title>proDO: super simple bug/issue tracker</title><link>http://blog.aquinzi.com/./es/prodo/</link><description>&lt;div class="toc"&gt;
+&lt;p&gt;Más información y ejemplos en la &lt;a href="http://aquinzi.com/es/projects/pymd.php"&gt;página de proyecto de pymd&lt;/a&gt;&lt;/p&gt;</description><category>python</category><category>code</category><category>markdown</category><guid>http://blog.aquinzi.com/./es/pymd/</guid><pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate></item><item><title>proDO: super simple bug/issue tracker</title><link>http://blog.aquinzi.com/./es/prodo/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/prodo/#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/prodo/#script"&gt;Say hi to proDO&lt;/a&gt;&lt;/li&gt;
@@ -120,7 +120,7 @@
 &lt;li&gt;Si necesitas ejemplos de lo de arriba o queres mirar qué linda hice la ayuda: &lt;code&gt;proDO.py -h&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Si no queres escribir &lt;code&gt;proDO.py&lt;/code&gt; (la extensión es importante en Windows), podes crear un "wrapper batch": en (ejemplo) proDO.bat poner: &lt;code&gt;proDO.py %*&lt;/code&gt;. Guardás y listo, ya lo podes llamar como &lt;code&gt;proDO&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Decarga y más información en la &lt;a href="https://quinzi.com.ar/projects/prodo"&gt;página de proDO&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Decarga y más información en la &lt;a href="http://aquinzi.com/es/projects/prodo.php"&gt;página de proDO&lt;/a&gt;&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;

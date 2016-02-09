@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (grep)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/es/tags/grep.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 29 Sep 2015 18:36:14 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>proDO: super simple bug/issue tracker</title><link>http://blog.aquinzi.com/./es/prodo/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (grep)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/es/tags/grep.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 09 Feb 2016 11:17:28 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>proDO: super simple bug/issue tracker</title><link>http://blog.aquinzi.com/./es/prodo/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/prodo/#background"&gt;Background&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/prodo/#script"&gt;Say hi to proDO&lt;/a&gt;&lt;/li&gt;
@@ -41,7 +41,7 @@
 &lt;li&gt;Si necesitas ejemplos de lo de arriba o queres mirar qué linda hice la ayuda: &lt;code&gt;proDO.py -h&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Si no queres escribir &lt;code&gt;proDO.py&lt;/code&gt; (la extensión es importante en Windows), podes crear un "wrapper batch": en (ejemplo) proDO.bat poner: &lt;code&gt;proDO.py %*&lt;/code&gt;. Guardás y listo, ya lo podes llamar como &lt;code&gt;proDO&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Decarga y más información en la &lt;a href="https://quinzi.com.ar/projects/prodo"&gt;página de proDO&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Decarga y más información en la &lt;a href="http://aquinzi.com/es/projects/prodo.php"&gt;página de proDO&lt;/a&gt;&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;

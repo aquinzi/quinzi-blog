@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (static)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/es/tags/static.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 29 Sep 2015 18:36:15 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>De Pelican a Nikola (tutorial)</title><link>http://blog.aquinzi.com/./es/pelican-nikola/</link><description>&lt;div class="toc"&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A-Qute blog (static)</title><link>http://blog.aquinzi.com/</link><description></description><atom:link href="http://blog.aquinzi.com/es/tags/static.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 09 Feb 2016 11:17:31 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>De Pelican a Nikola (tutorial)</title><link>http://blog.aquinzi.com/./es/pelican-nikola/</link><description>&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/pelican-nikola/#acrylamid"&gt;Acrylamid&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/pelican-nikola/#nikola"&gt;Nikola&lt;/a&gt;&lt;/li&gt;
@@ -23,7 +23,7 @@
 &lt;li&gt;&lt;a href="http://blog.aquinzi.com/./es/pelican-nikola/#testeando"&gt;Testeando&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;Cuando pensaba en mover mi blog a este nuevo dominio, pensé en usar &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; como conversor&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/./es/pelican-nikola/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;; incluso creé &lt;a href="http://quinzi.com.ar/projects/pandy"&gt;pandy&lt;/a&gt; para eso. Pero después tuve los "problemas" (ok, estaba vaga) de RSS, categorias, tags, index, etc. y lo dejé.&lt;/p&gt;
+&lt;p&gt;Cuando pensaba en mover mi blog a este nuevo dominio, pensé en usar &lt;a href="http://www.johnmacfarlane.net/pandoc/"&gt;Pandoc&lt;/a&gt; como conversor&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/./es/pelican-nikola/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;; incluso creé &lt;a href="http://aquinzi.com/es/projects/pandy.php"&gt;pandy&lt;/a&gt; para eso. Pero después tuve los "problemas" (ok, estaba vaga) de RSS, categorias, tags, index, etc. y lo dejé.&lt;/p&gt;
 &lt;p&gt;En un principio pensé en &lt;a href="link://slug/wordpress-to-pelican"&gt;seguir usando Pelican&lt;/a&gt; ya que es &lt;a href="http://docs.getpelican.com/"&gt;fácil y personalizable&lt;/a&gt; aunque no tuviera soporte para Pandoc&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="http://blog.aquinzi.com/./es/pelican-nikola/#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;. Pero mas tarde me daría vagancia pasarme a otro sistema (no que postee mucho, pero &lt;strong&gt;me encanta el markdown de Pandoc&lt;/strong&gt;).&lt;/p&gt;
 &lt;h2 id="acrylamid"&gt;Acrylamid&lt;/h2&gt;
 &lt;p&gt;En mis búsquedas encontré &lt;a href="http://posativ.org/acrylamid/index.html"&gt;Acrylamid&lt;/a&gt; que se ve bastante bien. Es como el &lt;em&gt;blog generator&lt;/em&gt; de programadores/hackers, donde podés hacer varias cosas. También tiene &lt;em&gt;incremental builds&lt;/em&gt; así no regenera todo desde cero.&lt;/p&gt;
@@ -112,7 +112,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Recomiendo hacerlo seguido de las imágenes, y tenes que checkear (posiblemente a mano) después.&lt;/p&gt;
 &lt;h3 id="sintaxis-de-plugins"&gt;Sintaxis de Plugins&lt;/h3&gt;
-&lt;p&gt;No usé muchos plugins que usaran sintaxis en mis posts, solo uno: &lt;a href="http://quinzi.com.ar/projects/interlinks"&gt;interlinks&lt;/a&gt;. Esto fue fácil de hacer con &lt;em&gt;search and replace&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;No usé muchos plugins que usaran sintaxis en mis posts, solo uno: &lt;a href="http://aquinzi.com/es/projects/interlinks.php"&gt;interlinks&lt;/a&gt;. Esto fue fácil de hacer con &lt;em&gt;search and replace&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id="otras-cosas-de-nikola"&gt;Otras cosas de Nikola&lt;/h2&gt;
 &lt;h3 id="localizacion-en-windows"&gt;Localización en Windows&lt;/h3&gt;
 &lt;p&gt;Si vas a usar la internalización en Windows, tenes que configurar los &lt;code&gt;LOCALES&lt;/code&gt; como (ejemplo):&lt;/p&gt;
