@@ -1,5 +1,6 @@
 .. title: Kindle 3 review... ish
 .. date: 2011-06-15
+.. updated: 2016-02-09
 .. category: review
 .. tags: kindle
 .. lang: es
@@ -262,7 +263,7 @@ June 16, 2011 at 9:57 am    </div><!-- .comment-meta .commentmetadata -->
 <li class="comment even thread-even depth-1" id="li-comment-192">
 <div id="comment-192">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">
 June 16, 2011 at 2:52 pm   </div><!-- .comment-meta .commentmetadata -->

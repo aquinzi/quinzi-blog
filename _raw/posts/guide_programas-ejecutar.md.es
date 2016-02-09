@@ -1,5 +1,6 @@
 .. title: Lanzar aplicaciones desde Ejecutar
 .. date: 2009-07-18 
+.. updated: 2016-02-09
 .. category: guide
 .. tags: run forest run, windows
 .. lang: es
@@ -63,7 +64,7 @@ dependiendo el gusto de cada uno).
 <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-35">
 <div id="comment-35">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>    </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>    </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">July 19, 2009 at 7:28 pm    </div><!-- .comment-meta .commentmetadata -->
 
@@ -92,7 +93,7 @@ dependiendo el gusto de cada uno).
 <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-37">
 <div id="comment-37">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>    </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>    </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">July 20, 2009 at 2:27 pm    </div><!-- .comment-meta .commentmetadata -->
 
@@ -122,7 +123,7 @@ dependiendo el gusto de cada uno).
 <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-39">
 <div id="comment-39">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>    </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>    </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">July 20, 2009 at 3:16 pm    </div><!-- .comment-meta .commentmetadata -->
 
@@ -151,7 +152,7 @@ dependiendo el gusto de cada uno).
 <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-41">
 <div id="comment-41">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>    </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>    </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">July 21, 2009 at 2:17 pm    </div><!-- .comment-meta .commentmetadata -->
 

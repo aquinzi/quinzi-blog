@@ -1,5 +1,6 @@
 .. title: Leer ePUB en Kindle 3
 .. lang: es
+.. updated: 2016-02-09
 
 [TOC]
 
@@ -90,7 +91,7 @@ Usualmente soy un freak que jailbreakea/upgradea firmware en todos los dispositi
 <li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-228">
 <div id="comment-228">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">
 February 10, 2012 at 11:25 am		</div><!-- .comment-meta .commentmetadata -->

@@ -3,7 +3,7 @@
 
 [TOC]
 
-Cuando pensaba en mover mi blog a este nuevo dominio, pensé en usar [Pandoc][] como conversor[^1]; incluso creé [pandy](http://quinzi.com.ar/projects/pandy) para eso. Pero después tuve los "problemas" (ok, estaba vaga) de RSS, categorias, tags, index, etc. y lo dejé.
+Cuando pensaba en mover mi blog a este nuevo dominio, pensé en usar [Pandoc][] como conversor[^1]; incluso creé [pandy](http://aquinzi.com/es/projects/pandy.php) para eso. Pero después tuve los "problemas" (ok, estaba vaga) de RSS, categorias, tags, index, etc. y lo dejé.
 
 [Pandoc]: http://www.johnmacfarlane.net/pandoc/
 [^1]: Porque odio abrir un HTML block y el markdown de adentro no se *parsea*. Sé que dice en la referencia de [markdown](http://daringfireball.net/projects/markdown/) pero hey: **es 2014** y necesito eso. Pero igual me encanta los admonition en [Python-Markdown](http://pythonhosted.org/Markdown/)
@@ -143,7 +143,7 @@ Recomiendo hacerlo seguido de las imágenes, y tenes que checkear (posiblemente 
 
 ### Sintaxis de Plugins 
 
-No usé muchos plugins que usaran sintaxis en mis posts, solo uno: [interlinks](http://quinzi.com.ar/projects/interlinks). Esto fue fácil de hacer con *search and replace*.
+No usé muchos plugins que usaran sintaxis en mis posts, solo uno: [interlinks](http://aquinzi.com/es/projects/interlinks.php). Esto fue fácil de hacer con *search and replace*.
 
 
 Otras cosas de Nikola 

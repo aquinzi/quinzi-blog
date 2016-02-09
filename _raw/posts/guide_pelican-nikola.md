@@ -1,5 +1,6 @@
 .. title: Pelican to Nikola (and tutorial)
 .. date: 2014-01-11
+.. updated: 2016-02-09
 .. tags: pelican, nikola, static, python, windows
 .. category: guide
 .. slug: pelican-nikola
@@ -8,7 +9,7 @@
 
 [TOC]
 
-When I was thinking of moving my blog to this new domain, I thought of using [Pandoc][] as the converter[^1]. I even created [pandy](http://quinzi.com.ar/projects/pandy) for that. But then I run into the "problems" (ok, I was kind of lazy) of generating RSS, listing posts with certain tags or categories (which I ended up not using), the index and archive, idealizing of using plugins, etc. and gave up. 
+When I was thinking of moving my blog to this new domain, I thought of using [Pandoc][] as the converter[^1]. I even created [pandy](http://aquinzi.com/projects/pandy.php) for that. But then I run into the "problems" (ok, I was kind of lazy) of generating RSS, listing posts with certain tags or categories (which I ended up not using), the index and archive, idealizing of using plugins, etc. and gave up. 
 
 [Pandoc]: http://www.johnmacfarlane.net/pandoc/
 [^1]: Because I hate opening an HTML block tag and the markdown inside is not parsed. I know, it's said in the [markdown](http://daringfireball.net/projects/markdown/) reference, but hey: **it's 2014** and I need that. But I still love the admonition implementation in [Python-Markdown](http://pythonhosted.org/Markdown/)
@@ -151,7 +152,7 @@ I recommend doing it after the images, and you must check the links afterwards.
 
 ### Plugins syntax
 
-I didn't use many plugins that used syntax in my posts, just only one: [interlinks](http://quinzi.com.ar/projects/interlinks). This was easilly done with search and replace.
+I didn't use many plugins that used syntax in my posts, just only one: [interlinks](http://aquinzi.com/projects/interlinks.php). This was easilly done with search and replace.
 
 
 Other Nikola stuff

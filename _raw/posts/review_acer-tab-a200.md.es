@@ -1,5 +1,6 @@
 .. title: Review: Acer iconia tab A200
 .. date: 2012-12-03
+.. updated: 2016-02-09
 .. category: review
 .. tags: acer, tablet, android
 .. lang: es
@@ -230,7 +231,7 @@ El sistema de pulgadas es obsoleto.</p>
 <li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-329">
 <div id="comment-329">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">December 4, 2012 at 1:19 pm		</div><!-- .comment-meta .commentmetadata -->
 
@@ -263,7 +264,7 @@ Buena review, entretenida jajaja. Keep on!!</p>
 <li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-331">
 <div id="comment-331">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">December 24, 2012 at 10:46 am		</div><!-- .comment-meta .commentmetadata -->
 

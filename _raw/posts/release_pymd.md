@@ -1,6 +1,6 @@
 .. title: pymd: wrapper for Python Markdown
 .. date: 2013-11-17
-.. updated: 2013-12-09
+.. updated: 2016-02-09
 .. category: release
 .. tags: python, code, markdown
 .. slug: pymd
@@ -9,7 +9,7 @@
 !!! info "Hey!"
 	pymd is now available in [PyPI](https://pypi.python.org/pypi/pymd). That means that you can install it like ```pip install pymd``` :)
 
-[pymd](https://quinzi.com.ar/projects/pymd) is a command line wrapper for [Python Markdown](http://pythonhosted.org/Markdown/) library but having a full HTML file instead of only what it's originally parsed.
+[pymd](http://aquinzi.com/projects/pymd.php) is a command line wrapper for [Python Markdown](http://pythonhosted.org/Markdown/) library but having a full HTML file instead of only what it's originally parsed.
 
 Features
 -----------
@@ -23,4 +23,4 @@ Features
 * Wiki links: ```[](file|path) -> [title linked file](output_path)```
 * Made with love <3
 
-Find more information and examples in [pymd's project page](https://quinzi.com.ar/projects/pymd) 
+Find more information and examples in [pymd's project page](http://aquinzi.com/projects/pymd.php) 

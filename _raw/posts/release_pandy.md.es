@@ -1,7 +1,7 @@
 .. title: pandy
 .. lang: es
 
-[pandy](https://quinzi.com.ar/projects/pandy) es un wrapper para [pandoc](http://johnmacfarlane.net/pandoc/) + cositas copadas (si usas markdown -> html)
+[pandy](http://aquinzi.com/es/projects/pandy.php) es un wrapper para [pandoc](http://johnmacfarlane.net/pandoc/) + cositas copadas (si usas markdown -> html)
 
 Basicamente toma un archivo/carpeta, de qué convertir y a qué convertir, y lo corre por pandoc.
 
@@ -28,4 +28,4 @@ Caracteristicas
 * "WikiLinks" para tu index!
 
 
-Para más información y explicación, ir a la [página de proyecto de pandy](https://quinzi.com.ar/projects/pandy).
+Para más información y explicación, ir a la [página de proyecto de pandy](http://aquinzi.com/es/projects/pandy.php).

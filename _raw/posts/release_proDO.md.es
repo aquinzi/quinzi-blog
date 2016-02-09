@@ -1,5 +1,6 @@
 .. title: proDO: super simple bug/issue tracker
 .. date: 2013-07-26
+.. updated: 2016-02-09
 .. category: release
 .. tags: code, python, grep
 .. slug: prodo
@@ -77,5 +78,5 @@ Datos:
 
 [^5]: en Linux es más fácil (por lo menos en xfce): <kbd>botón derecho > terminal</kbd>. En Windows tenes que apretar <kbd>shift + botón derecho</kbd>.
 
-Decarga y más información en la [página de proDO](https://quinzi.com.ar/projects/prodo)
+Decarga y más información en la [página de proDO](http://aquinzi.com/es/projects/prodo.php)
 

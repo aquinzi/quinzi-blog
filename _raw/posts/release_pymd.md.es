@@ -4,7 +4,7 @@
 !!! info "Hey!"
 	pymd ahora esta en [PyPI](https://pypi.python.org/pypi/pymd). Eso significa que lo podes instalar como ```pip install pymd``` :)
 
-[pymd](https://quinzi.com.ar/projects/pymd) es un wrapper para la librería [Python Markdown](http://pythonhosted.org/Markdown/), basicamente te permite tener un HTML completo a comparación de lo que te tira la librería.
+[pymd](http://aquinzi.com/es/projects/pymd.php) es un wrapper para la librería [Python Markdown](http://pythonhosted.org/Markdown/), basicamente te permite tener un HTML completo a comparación de lo que te tira la librería.
 
 Características
 ----------------
@@ -19,4 +19,4 @@ Características
 * Hecho con amor <3
 
 
-Más información y ejemplos en la [página de proyecto de pymd](https://quinzi.com.ar/projects/pymd)
+Más información y ejemplos en la [página de proyecto de pymd](http://aquinzi.com/es/projects/pymd.php)

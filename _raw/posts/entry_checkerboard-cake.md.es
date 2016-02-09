@@ -1,5 +1,6 @@
 .. title: Torta ajedrez con ganache de chocolate y cosas varias
 .. date: 2012-02-04
+.. updated: 2016-02-09
 .. category: entry
 .. tags: yummy
 .. lang: es
@@ -325,10 +326,10 @@ Son adictivos esos programas en TLC :mrgreen:.</p>
 </div><!-- #comment-##  -->
 
 </li>
-<li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-253">
+<li class="comment byuser comment-author bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-253">
 <div id="comment-253">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">February 4, 2012 at 4:10 pm   </div><!-- .comment-meta .commentmetadata -->
 
@@ -369,10 +370,10 @@ Son adictivos esos programas en TLC :mrgreen:.</p>
 </div><!-- #comment-##  -->
 
 </li>
-<li class="comment byuser comment-author-eikiu bypostauthor even thread-even depth-1" id="li-comment-256">
+<li class="comment byuser comment-author bypostauthor even thread-even depth-1" id="li-comment-256">
 <div id="comment-256">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">February 5, 2012 at 11:42 am    </div><!-- .comment-meta .commentmetadata -->
 
@@ -384,10 +385,10 @@ Son adictivos esos programas en TLC :mrgreen:.</p>
 </div><!-- #comment-##  -->
 
 </li>
-<li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-257">
+<li class="comment byuser comment-author bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-257">
 <div id="comment-257">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">February 5, 2012 at 11:43 am    </div><!-- .comment-meta .commentmetadata -->
 

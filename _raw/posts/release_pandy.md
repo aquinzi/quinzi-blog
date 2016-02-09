@@ -1,11 +1,12 @@
 .. title: pandy
 .. date: 2013-12-11
+.. updated: 2016-02-09
 .. category: release
 .. tags: python, code, pandoc, markdown
 .. slug: pandy
 .. lang: en
 
-[pandy](http://quinzi.com.ar/projects/pandy) is a command line wrapper for [pandoc](http://johnmacfarlane.net/pandoc/) + cool stuff (if you use markdown -> html)
+[pandy](http://aquinzi.com/projects/pandy.php) is a command line wrapper for [pandoc](http://johnmacfarlane.net/pandoc/) + cool stuff (if you use markdown -> html)
 
 Basically takes a file/folder, input the markup to convert from, the output markup and runs it through pandoc.
 
@@ -30,4 +31,4 @@ Features
 * If you use markdown and convert to HTML there are some goodies for you! abbreviations (real abbreviations, like that they are parsed and not ignored as pandoc does) and admonitions.
 * "WikiLinks" for your custom index file!
 
-For more information and explanation, go to [pandy project page](https://quinzi.com.ar/projects/pandy).
+For more information and explanation, go to [pandy project page](http://aquinzi.com/projects/pandy.php).

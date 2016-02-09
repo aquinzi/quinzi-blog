@@ -1,5 +1,6 @@
 .. title: Pro Tip: cartuchos
 .. date: 2012-10-09
+.. updated: 2016-02-09
 .. category: solved
 .. tags: cartuchos, printers from hell
 .. lang: es
@@ -76,10 +77,10 @@ October 8, 2012 at 12:39 pm</div><!-- .comment-meta .commentmetadata -->
 </div><!-- #comment-##  -->
 
 </li>
-<li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-319">
+<li class="comment byuser comment-author bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-319">
 <div id="comment-319">
 <div class="comment-author vcard">
-<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.quinzi.com.ar/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
+<img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />      <cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>   </div><!-- .comment-author .vcard -->
 
 <div class="comment-meta commentmetadata">
 October 8, 2012 at 12:57 pm   </div><!-- .comment-meta .commentmetadata -->

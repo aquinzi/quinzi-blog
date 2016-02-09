@@ -1,5 +1,6 @@
 .. title: svnlog: make changelog from SVN
 .. date: 2013-12-02
+.. updated: 2016-02-09
 .. category: release
 .. tags: python, code, svn
 .. slug: svnlog
@@ -48,4 +49,4 @@ It has some basic options:
 
 Just make sure you have a SVN CLI in your path and then run [svnlog][] with the options you desire
 
-[svnlog]: https://quinzi.com.ar/projects/svnlog
+[svnlog]: http://aquinzi.com/projects/svnlog.php
