@@ -202,7 +202,7 @@ Cambios
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;You can do that by hand or &lt;a href="https://gist.github.com/eikiu/8377090"&gt;download my python script&lt;/a&gt; to take care of that. It also moves "draft" status to Nikola's tag, and Pelican's summary to Nikola's description (activated by default). &lt;/p&gt;
+&lt;p&gt;You can do that by hand or &lt;a href="https://gist.github.com/aquinzi/8377090"&gt;download my python script&lt;/a&gt; to take care of that. It also moves "draft" status to Nikola's tag, and Pelican's summary to Nikola's description (activated by default). &lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="admonition-title"&gt;Note&lt;/p&gt;
 &lt;p&gt;Nikola doesn't have/see the "modified" meta key internally, but you can have it like a custom key. You just access it differently in the themes.&lt;/p&gt;
@@ -211,7 +211,7 @@ Cambios
 &lt;p&gt;If you have posts or pages translations you must pay attention: Nikola handles the translations differently from Pelican. While in Pelican you only set the same slug or title in the posts, and have different file names (I think); Nikola relies on the file names.&lt;/p&gt;
 &lt;p&gt;The easiness of this depends on your setup, but you must end up with something like: &lt;code&gt;nicefile.md&lt;/code&gt; for the post in default language, and &lt;code&gt;nicefile.md.es&lt;/code&gt; (spanish content) for the translated file.&lt;/p&gt;
 &lt;p&gt;The cool thing of this is that you don't have to duplicate the meta tags. For example, you just create the "tags" meta key in the default language but don't specify it in the translated one. So when you update, you do only in the "master" or "parent" file and the "child" just copies it. &lt;/p&gt;
-&lt;p&gt;If you don't feel like having duplicated metadata between files, and after you renamed and converted them, you can run &lt;a href="https://gist.github.com/eikiu/8377186"&gt;this python script&lt;/a&gt; to delete them. Remember this is optional (or at least it didn't break my setup).&lt;/p&gt;
+&lt;p&gt;If you don't feel like having duplicated metadata between files, and after you renamed and converted them, you can run &lt;a href="https://gist.github.com/aquinzi/8377186"&gt;this python script&lt;/a&gt; to delete them. Remember this is optional (or at least it didn't break my setup).&lt;/p&gt;
 &lt;h3 id="images-paths"&gt;Images paths&lt;/h3&gt;
 &lt;p&gt;The syntax on this is also different but it can be easily done with search and replace. You can use whatever you want, like grep. If you are on Windows, I recommend &lt;a href="http://stefanstools.sourceforge.net/grepWin.html"&gt;grepWin&lt;/a&gt; if you want something with a GUI. This changes from setup to setup, but my settings were:&lt;/p&gt;
 &lt;p&gt;For markdown syntax:&lt;/p&gt;

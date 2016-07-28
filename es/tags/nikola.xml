@@ -81,7 +81,7 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Lo podés hacer a mano o &lt;a href="https://gist.github.com/eikiu/8377090"&gt;descargar mi script de python&lt;/a&gt;. También mueve el estatus de "draft" al tag de Nikola, y el "summary" de Pelican al "description" de Nikola (activado por default). &lt;/p&gt;
+&lt;p&gt;Lo podés hacer a mano o &lt;a href="https://gist.github.com/aquinzi/8377090"&gt;descargar mi script de python&lt;/a&gt;. También mueve el estatus de "draft" al tag de Nikola, y el "summary" de Pelican al "description" de Nikola (activado por default). &lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="admonition-title"&gt;Note&lt;/p&gt;
 &lt;p&gt;Nikola no tiene/ve el meta key "modified" internamente, pero se puede tener como uno personalizado. Solo se accede diferente en los themes.&lt;/p&gt;
@@ -90,7 +90,7 @@
 &lt;p&gt;Si tenes posts o páginas traducidas tenés que prestar atención: los sistemas entre los generadores son distintos. En Pelican tenés el mismo slug o título en los posts, y diferentes nombres de archivos (creo); Nikola usa los nombres de archivos.&lt;/p&gt;
 &lt;p&gt;La facilidad de esto depende de tu setup, pero tenes que terminar con algo como: &lt;code&gt;nicefile.md&lt;/code&gt; para el post en el idioma default, y &lt;code&gt;nicefile.md.es&lt;/code&gt; (contenido en español) para el traducido.&lt;/p&gt;
 &lt;p&gt;Lo bueno de esto es que no duplicas el meta. Por ejemplo, creas el meta key "tags" en el idioma default pero no lo especficas en el traducido. Así al actualizar, lo haces solo en el "master" o "padre" y el "hijo" solo lo copia.&lt;/p&gt;
-&lt;p&gt;Si no queres tener metadata duplicada en los archivos, y después de que renombraste y convertiste los archivos, podes correr &lt;a href="https://gist.github.com/eikiu/8377186"&gt;este script de python&lt;/a&gt; para eliminarlos. Recordá que solo es opcional (o por lo menos no rompió mi setup).&lt;/p&gt;
+&lt;p&gt;Si no queres tener metadata duplicada en los archivos, y después de que renombraste y convertiste los archivos, podes correr &lt;a href="https://gist.github.com/aquinzi/8377186"&gt;este script de python&lt;/a&gt; para eliminarlos. Recordá que solo es opcional (o por lo menos no rompió mi setup).&lt;/p&gt;
 &lt;h3 id="rutas-de-imagenes"&gt;Rutas de imágenes&lt;/h3&gt;
 &lt;p&gt;La sintaxis también es diferente pero se puede hacer facilmente con &lt;em&gt;search and replace&lt;/em&gt;. Podés usar lo que quieras, como grep. Si estas en Windows, recomiendo &lt;a href="http://stefanstools.sourceforge.net/grepWin.html"&gt;grepWin&lt;/a&gt; si queres algo con GUI. Esto es depende de como tengas los archivos pero yo hice algo asi:&lt;/p&gt;
 &lt;p&gt;Sintaxis markdown:&lt;/p&gt;
