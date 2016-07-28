@@ -770,7 +770,7 @@ Contenido
 ### Mis notas de gramática
 
 URL
-:	<http://eikiu.github.io/jp-wiki/>
+:	<http://aquinzi.github.io/jp-wiki/>
 
 Mis notas de gramática de japonés en español.
 

@@ -88,12 +88,6 @@ May 24, 2009 at 11:29 am		</div><!-- .comment-meta .commentmetadata -->
 </div><!-- #comment-##  -->
 
 </li>
-<li class="post pingback">
-<p>Pingback: <a href='http://eikiu.wordpress.com/2009/06/01/autohotkey-reemplazo/' rel='external nofollow' class='url'>AutoHotkey + Reemplazo | Intento de blog</a></p>
-</li>
-<li class="post pingback">
-<p>Pingback: <a href='http://eikiu.wordpress.com/2012/12/17/goodbye-dropbox/' rel='external nofollow' class='url'>Goodbye, Dropbox? | Intento de blog</a></p>
-</li>
 </ol>
 
 

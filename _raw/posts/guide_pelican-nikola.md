@@ -1,6 +1,6 @@
 .. title: Pelican to Nikola (and tutorial)
 .. date: 2014-01-11
-.. updated: 2016-02-09
+.. updated: 2016-07-28
 .. tags: pelican, nikola, static, python, windows
 .. category: guide
 .. slug: pelican-nikola
@@ -103,7 +103,7 @@ An example would be:
 	Title: nice title! :D      # Pelican
 	.. title: nice title! :D   # Nikola
 
-You can do that by hand or [download my python script](https://gist.github.com/eikiu/8377090) to take care of that. It also moves "draft" status to Nikola's tag, and Pelican's summary to Nikola's description (activated by default). 
+You can do that by hand or [download my python script](https://gist.github.com/aquinzi/8377090) to take care of that. It also moves "draft" status to Nikola's tag, and Pelican's summary to Nikola's description (activated by default). 
 
 !!! note
 	Nikola doesn't have/see the "modified" meta key internally, but you can have it like a custom key. You just access it differently in the themes.
@@ -117,7 +117,7 @@ The easiness of this depends on your setup, but you must end up with something l
 
 The cool thing of this is that you don't have to duplicate the meta tags. For example, you just create the "tags" meta key in the default language but don't specify it in the translated one. So when you update, you do only in the "master" or "parent" file and the "child" just copies it. 
 
-If you don't feel like having duplicated metadata between files, and after you renamed and converted them, you can run [this python script](https://gist.github.com/eikiu/8377186) to delete them. Remember this is optional (or at least it didn't break my setup).
+If you don't feel like having duplicated metadata between files, and after you renamed and converted them, you can run [this python script](https://gist.github.com/aquinzi/8377186) to delete them. Remember this is optional (or at least it didn't break my setup).
 
 
 ### Images paths

@@ -1,7 +1,7 @@
 ﻿---
 .. title: Resources review for Japanese
 .. date: 2014-02-09 
-.. updated: 2015-01-06
+.. updated: 2016-07-28
 .. slug: japanese-resources
 .. lang: en
 .. description: Misc. resources (programs, books, etc) to learn/practise japanese, with self-learning in mind and/or the first time that is done. Includes some opinions/tips.
@@ -762,7 +762,7 @@ Content
 ### My grammar notes (spanish)
 
 URL
-:	<http://eikiu.github.io/jp-wiki/>
+:	<http://aquinzi.github.io/jp-wiki/>
 
 My japanese grammar notes in spanish
 

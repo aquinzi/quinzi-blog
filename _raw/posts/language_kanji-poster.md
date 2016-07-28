@@ -57,7 +57,7 @@ kanji (2046. Each page has 1032 kanji, except the sixth).
 </div><!-- #comment-##  -->
 
 </li>
-<li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-321">
+<li class="comment byuser comment-author-aq bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-321">
 <div id="comment-321">
 <div class="comment-author vcard">
 <img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
@@ -70,9 +70,6 @@ kanji (2046. Each page has 1032 kanji, except the sixth).
 
 </div><!-- #comment-##  -->
 
-</li>
-<li class="post pingback">
-<p>Pingback: <a href='http://eikiu.wordpress.com/2012/10/08/pro-tip-cartuchos/' rel='external nofollow' class='url'>Pro Tip: cartuchos | Intento de blog</a></p>
 </li>
 <li class="comment even thread-even depth-1" id="li-comment-323">
 <div id="comment-323">
@@ -88,7 +85,7 @@ kanji (2046. Each page has 1032 kanji, except the sixth).
 </div><!-- #comment-##  -->
 
 </li>
-<li class="comment byuser comment-author-eikiu bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-324">
+<li class="comment byuser comment-author-aq bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-324">
 <div id="comment-324">
 <div class="comment-author vcard">
 <img alt='' src='http://1.gravatar.com/avatar/5ebd81318e7abfbd688508fb6d46f802?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn"><a href='http://blog.aquinzi.com/' rel='external nofollow' class='url'>A.Q.</a></cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->

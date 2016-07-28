@@ -94,7 +94,7 @@ Un ejemplo sería:
 	Title: nice title! :D      # Pelican
 	.. title: nice title! :D   # Nikola
 
-Lo podés hacer a mano o [descargar mi script de python](https://gist.github.com/eikiu/8377090). También mueve el estatus de "draft" al tag de Nikola, y el "summary" de Pelican al "description" de Nikola (activado por default). 
+Lo podés hacer a mano o [descargar mi script de python](https://gist.github.com/aquinzi/8377090). También mueve el estatus de "draft" al tag de Nikola, y el "summary" de Pelican al "description" de Nikola (activado por default). 
 
 !!! note
 	Nikola no tiene/ve el meta key "modified" internamente, pero se puede tener como uno personalizado. Solo se accede diferente en los themes.
@@ -108,7 +108,7 @@ La facilidad de esto depende de tu setup, pero tenes que terminar con algo como:
 
 Lo bueno de esto es que no duplicas el meta. Por ejemplo, creas el meta key "tags" en el idioma default pero no lo especficas en el traducido. Así al actualizar, lo haces solo en el "master" o "padre" y el "hijo" solo lo copia.
 
-Si no queres tener metadata duplicada en los archivos, y después de que renombraste y convertiste los archivos, podes correr [este script de python](https://gist.github.com/eikiu/8377186) para eliminarlos. Recordá que solo es opcional (o por lo menos no rompió mi setup).
+Si no queres tener metadata duplicada en los archivos, y después de que renombraste y convertiste los archivos, podes correr [este script de python](https://gist.github.com/aquinzi/8377186) para eliminarlos. Recordá que solo es opcional (o por lo menos no rompió mi setup).
 
 
 ### Rutas de imágenes
